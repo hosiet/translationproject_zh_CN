@@ -1,21 +1,22 @@
 # Chinese simplified translation for man-db-manpages.
 # Copyright (C) 2013 Free Software Foundation, Inc.
 # This file is distributed under the same license as the man-db package.
+# Boyuan Yang <073plan@gmail.com>, 2017.
 # Wylmer Wang <wantinghard@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: man-db-manpages-2.7.6.1\n"
 "POT-Creation-Date: 2016-12-11 13:52+0000\n"
-"PO-Revision-Date: 2016-12-13 10:25+0800\n"
-"Last-Translator: Tianze Wang <zwpwjwtz@126.com>\n"
+"PO-Revision-Date: 2017-11-15 17:57+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.0.4\n"
 "X-Poedit-Bookmarks: -1,102,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #. type: TH
@@ -176,11 +177,11 @@ msgid "B<-s> I<list>, B<--sections> I<list>, B<--section> I<list>"
 msgstr "B<-s> I<列表>, B<--sections> I<列表>, B<--section> I<列表>"
 
 #
-#.  Due to the rather silly limit of 6 args per request in some `native'
-#.  *roff compilers, we have do the following to get the two-line
-#.  hanging tag on one line. .PP to begin a new paragraph, then the
-#.  tag, then .RS (start relative indent), the text, finally .RE
-#.  (end relative indent).
+#. Due to the rather silly limit of 6 args per request in some `native'
+#. *roff compilers, we have do the following to get the two-line
+#. hanging tag on one line. .PP to begin a new paragraph, then the
+#. tag, then .RS (start relative indent), the text, finally .RE
+#. (end relative indent).
 #. type: Plain text
 #: ../../man/man1/apropos.man1:123 ../../man/man1/whatis.man1:127
 msgid "Search only the given manual sections.  I<list> is a colon- or comma-separated list of sections.  If an entry in I<list> is a simple section, for example \"3\", then the displayed list of descriptions will include pages in sections \"3\", \"3perl\", \"3x\", and so on; while if an entry in I<list> has an extension, for example \"3perl\", then the list will only include pages in that exact part of the manual section."
@@ -580,44 +581,44 @@ msgstr "%thman%"
 msgid "%man% - an interface to the on-line reference manuals"
 msgstr "%man% - 在线参考手册的接口"
 
-#.  The general command line
-#.  The apropos command line
+#. The general command line
+#. The apropos command line
 #. type: Plain text
 #: ../../man/man1/man.man1:67
 msgid "B<%man%> [\\|B<-C> I<file>\\|] [\\|B<-d>\\|] [\\|B<-D>\\|] [\\|B<--warnings>\\|[\\|=I<warnings>\\|]\\|] [\\|B<-R> I<encoding>\\|] [\\|B<-L> I<locale>\\|] [\\|B<-m> I<system>\\|[\\|,.\\|.\\|.\\|]\\|] [\\|B<-M> I<path>\\|] [\\|B<-S> I<list>\\|] [\\|B<-e> I<extension>\\|] [\\|B<-i>\\||\\|B<-I>\\|] [\\|B<--regex>\\||\\|B<--wildcard>\\|] [\\|B<--names-only>\\|] [\\|B<-a>\\|] [\\|B<-u>\\|] [\\|B<--no-subpages>\\|] [\\|B<-P> I<pager>\\|] [\\|B<-r> I<prompt>\\|] [\\|B<-7>\\|] [\\|B<-E> I<encoding>\\|] [\\|B<--no-hyphenation>\\|] [\\|B<--no-justification>\\|] [\\|B<-p> I<string>\\|] [\\|B<-t>\\|] [\\|B<-T>\\|[\\|I<device>\\|]\\|] [\\|B<-H>\\|[\\|I<browser>\\|]\\|] [\\|B<-X>\\|[\\|I<dpi>\\|]\\|] [\\|B<-Z>\\|] [\\|[\\|I<section>\\|] I<page>[.\\|I<section>\\|]\\ \\|.\\|.\\|.\\|]\\ .\\|.\\|.\\&"
 msgstr "B<%man%> [\\|B<-C> I<文件>\\|] [\\|B<-d>\\|] [\\|B<-D>\\|] [\\|B<--warnings>\\|[\\|=I<警告>\\|]\\|] [\\|B<-R> I<编码>\\|] [\\|B<-L> I<区域>\\|] [\\|B<-m> I<系统>\\|[\\|,.\\|.\\|.\\|]\\|] [\\|B<-M> I<路径>\\|] [\\|B<-S> I<列表>\\|] [\\|B<-e> I<扩展>\\|] [\\|B<-i>\\||\\|B<-I>\\|] [\\|B<--regex>\\||\\|B<--wildcard>\\|] [\\|B<--names-only>\\|] [\\|B<-a>\\|] [\\|B<-u>\\|] [\\|B<--no-subpages>\\|] [\\|B<-P> I<分页程序>\\|] [\\|B<-r> I<提示>\\|] [\\|B<-7>\\|] [\\|B<-E> I<编码>\\|] [\\|B<--no-hyphenation>\\|] [\\|B<--no-justification>\\|] [\\|B<-p> I<字符串>\\|] [\\|B<-t>\\|] [\\|B<-T>\\|[\\|I<设备>\\|]\\|] [\\|B<-H>\\|[\\|I<浏览器>\\|]\\|] [\\|B<-X>\\|[\\|I<dpi>\\|]\\|] [\\|B<-Z>\\|] [\\|[\\|I<章节>\\|] I<页>[.\\|I<章节>\\|]\\ \\|.\\|.\\|.\\|]\\ .\\|.\\|.\\&"
 
-#.  The --global-apropos command line
+#. The --global-apropos command line
 #. type: Plain text
 #: ../../man/man1/man.man1:75
 msgid "B<%man%> B<-k> [\\|I<apropos> I<options>\\|] I<regexp> \\&.\\|.\\|.\\&"
 msgstr "B<%man%> B<-k> [\\|I<apropos> I<选项>\\|] I<正则表达式> \\&.\\|.\\|.\\&"
 
-#.  The whatis command line
+#. The whatis command line
 #. type: Plain text
 #: ../../man/man1/man.man1:86
 msgid "B<%man%> B<-K> [\\|B<-w>\\||\\|B<-W>\\|] [\\|B<-S> I<list>\\|] [\\|B<-i>\\||\\|B<-I>\\|] [\\|B<--regex>\\|] [\\|I<section>\\|] I<term>\\ .\\|.\\|.\\&"
 msgstr "B<%man%> B<-K> [\\|B<-w>\\||\\|B<-W>\\|] [\\|B<-S> I<list>\\|] [\\|B<-i>\\||\\|B<-I>\\|] [\\|B<--regex>\\|] [\\|I<章节>\\|] I<词语>\\ .\\|.\\|.\\&"
 
-#.  The --local command line
+#. The --local command line
 #. type: Plain text
 #: ../../man/man1/man.man1:94
 msgid "B<%man%> B<-f> [\\|I<whatis> I<options>\\|] I<page> \\&.\\|.\\|.\\&"
 msgstr "B<%man%> B<-f> [\\|I<whatis> I<选项>\\|] I<页> \\&.\\|.\\|.\\&"
 
-#.  The --where/--where-cat command line
+#. The --where/--where-cat command line
 #. type: Plain text
 #: ../../man/man1/man.man1:127
 msgid "B<%man%> B<-l> [\\|B<-C> I<file>\\|] [\\|B<-d>\\|] [\\|B<-D>\\|] [\\|B<--warnings>\\|[\\|=I<warnings>\\|]\\|] [\\|B<-R> I<encoding>\\|] [\\|B<-L> I<locale>\\|] [\\|B<-P> I<pager>\\|] [\\|B<-r> I<prompt>\\|] [\\|B<-7>\\|] [\\|B<-E> I<encoding>\\|] [\\|B<-p> I<string>\\|] [\\|B<-t>\\|] [\\|B<-T>\\|[\\|I<device>\\|]\\|] [\\|B<-H>\\|[\\|I<browser>\\|]\\|] [\\|B<-X>\\|[\\|I<dpi>\\|]\\|] [\\|B<-Z>\\|] I<file> \\&.\\|.\\|.\\&"
 msgstr "B<%man%> B<-l> [\\|B<-C> I<文件>\\|] [\\|B<-d>\\|] [\\|B<-D>\\|] [\\|B<--warnings>\\|[\\|=I<警告>\\|]\\|] [\\|B<-R> I<编码>\\|] [\\|B<-L> I<区域>\\|] [\\|B<-P> I<分页程序>\\|] [\\|B<-r> I<提示>\\|] [\\|B<-7>\\|] [\\|B<-E> I<编码>\\|] [\\|B<-p> I<字符串>\\|] [\\|B<-t>\\|] [\\|B<-T>\\|[\\|I<设备>\\|]\\|] [\\|B<-H>\\|[\\|I<浏览器>\\|]\\|] [\\|B<-X>\\|[\\|I<dpi>\\|]\\|] [\\|B<-Z>\\|] I<文件> \\&.\\|.\\|.\\&"
 
-#.  The --catman command line
+#. The --catman command line
 #. type: Plain text
 #: ../../man/man1/man.man1:137
 msgid "B<%man%> B<-w>\\||\\|B<-W> [\\|B<-C> I<file>\\|] [\\|B<-d>\\|] [\\|B<-D>\\|] I<page> \\&.\\|.\\|.\\&"
 msgstr "B<%man%> B<-w>\\||\\|B<-W> [\\|B<-C> I<文件>\\|] [\\|B<-d>\\|] [\\|B<-D>\\|] I<页> \\&.\\|.\\|.\\&"
 
-#.  --help and --version
+#. --help and --version
 #. type: Plain text
 #: ../../man/man1/man.man1:147
 msgid "B<%man%> B<-c> [\\|B<-C> I<file>\\|] [\\|B<-d>\\|] [\\|B<-D>\\|] I<page> \\&.\\|.\\|.\\&"
@@ -908,7 +909,7 @@ msgid "International support is available with this package.  Native language ma
 msgstr "此包提供了国际化支持。本地语言的手册页(如果系统上有)可以通过使用 I<locale> 功能来访问。要启用本地语言支持，需要将 $B<LC_MESSAGES> 或 $B<LANG> 或其他系统相关的环境变量设置为您的语言区域代码；该代码通常以基于 B<POSIX 1003.1> 的格式指定："
 
 #
-#.  Need a \c to make sure we don't get a space where we don't want one
+#. Need a \c to make sure we don't get a space where we don't want one
 #. type: Plain text
 #: ../../man/man1/man.man1:461
 msgid "E<lt>I<language>E<gt>[\\|B<_>E<lt>I<territory>E<gt>\\|[\\|B<.>E<lt>I<character-set>E<gt>\\|[\\|B<,>E<lt>I<version>E<gt>\\|]\\|]\\|]"
@@ -970,7 +971,7 @@ msgstr "其中 B<字符串> 可以是下面 B<-p> 选项所描述的任何字符
 msgid "If none of the above methods provide any filter information, a default set is used."
 msgstr "如果以上方法都没有提供过滤程序信息，将使用默认程序集。"
 
-#.  ********************************************************************
+#. ********************************************************************
 #. type: Plain text
 #: ../../man/man1/man.man1:558
 msgid "A formatting pipeline is formed from the filters and the primary formatter (B<nroff> or [B<tg>]B<roff> with B<-t>)  and executed.  Alternatively, if an executable program I<mandb_nfmt> (or I<mandb_tfmt> with B<-t>)  exists in the man tree root, it is executed instead.  It gets passed the manual source file, the preprocessor string, and optionally the device specified with B<-T> or B<-E> as arguments."
@@ -1029,9 +1030,9 @@ msgstr "在所有手册中搜索文本。这是蛮力搜索，需要花费一定
 msgid "Note that this searches the I<sources> of the manual pages, not the rendered text, and so may include false positives due to things like comments in source files.  Searching the rendered text would be much slower."
 msgstr "注意，这种做法应用于搜索手册页的 I<资源>，而非渲染后的文本，所以可能会包含一些不相干的内容（如源文件中的注释）。若要搜索渲染后的文本，速度会比较慢。"
 
-#.  Compressed nroff source files with a supported compression
-#.  extension will be decompressed by man prior to being displaying via the
-#.  usual filters.
+#. Compressed nroff source files with a supported compression
+#. extension will be decompressed by man prior to being displaying via the
+#. usual filters.
 #. type: Plain text
 #: ../../man/man1/man.man1:644
 msgid "Activate `local' mode.  Format and display local manual files instead of searching through the system's manual collection.  Each manual page argument will be interpreted as an nroff source file in the correct format.  No cat file is produced.  If '-' is listed as one of the arguments, input will be taken from stdin.  When this option is not used, and man fails to find the page required, before displaying the error message, it attempts to act as if this option was supplied, using the name as a filename and looking for an exact match."
@@ -1591,11 +1592,11 @@ msgid "Produce a catpath as opposed to a manpath.  Once the manpath is determine
 msgstr "生成针对 manpath 的 catpath。一旦确定了 manpath，每个路径元素将转换为它的相对 catpath。"
 
 #
-#.  Due to the rather silly limit of 6 args per request in some `native'
-#.  *roff compilers, we have do the following to get the two-line
-#.  hanging tag on one line. .PP to begin a new paragraph, then the
-#.  tag, then .RS (start relative indent), the text, finally .RE
-#.  (end relative indent).
+#. Due to the rather silly limit of 6 args per request in some `native'
+#. *roff compilers, we have do the following to get the two-line
+#. hanging tag on one line. .PP to begin a new paragraph, then the
+#. tag, then .RS (start relative indent), the text, finally .RE
+#. (end relative indent).
 #. type: Plain text
 #: ../../man/man1/manpath.man1:60
 msgid "Produce a manpath consisting of all paths named as `global' within the man-db configuration file."
@@ -2122,7 +2123,7 @@ msgstr "不显示警告。"
 #. type: Plain text
 #: ../../man/man8/mandb.man8:91
 msgid "Do not spend time looking for or adding information to the databases regarding stray cats."
-msgstr "不花时间查找或向数据库添加有关野猫(stray cats)的信息。"
+msgstr "不花时间查找或向数据库添加有关孤立 cat 页面的信息。"
 
 #. type: Plain text
 #: ../../man/man8/mandb.man8:95

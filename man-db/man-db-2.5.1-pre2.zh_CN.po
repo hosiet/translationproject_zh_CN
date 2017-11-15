@@ -22,11 +22,11 @@ msgstr ""
 "PO-Revision-Date: 2017-11-15 09:45+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_CN\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
 "X-Generator: Poedit 2.0.4\n"
 
 #: lib/pipeline.c:217 lib/pipeline.c:229

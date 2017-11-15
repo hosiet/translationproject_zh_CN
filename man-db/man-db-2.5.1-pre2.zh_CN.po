@@ -1,6 +1,7 @@
 # Simplified Chinese translations for man-db package
 # Copyright (C) 2008 Colin Watson
 # Copyright (C) 2008 Ming Hua
+# Copyright (C) 2017 Boyuan Yang
 # This file is distributed under the same license as the man-db package.
 # Ming Hua <minghua-guest@users.alioth.debian.org>, 2007-2008.
 #
@@ -12,39 +13,42 @@
 # Copyright © 2008 Colin Watson <cjwatson@debian.org>
 # The translations (msgstr) are:
 # Copyright © 2007-2008 Ming Hua <minghua-guest@users.alioth.debian.org>
+# Copyright © 2017 Boyuan Yang <073plan@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: man-db 2.5.1-pre2\n"
 "Report-Msgid-Bugs-To: Colin Watson <cjwatson@debian.org>\n"
 "POT-Creation-Date: 2008-01-14 00:21+0000\n"
-"PO-Revision-Date: 2008-01-16 17:49-0600\n"
-"Last-Translator: Ming Hua <minghua-guest@users.alioth.debian.org>\n"
+"PO-Revision-Date: 2017-11-15 09:38+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: lib/pipeline.c:217 lib/pipeline.c:229
 #, c-format
 msgid "badly formed configuration directive: '%s'"
-msgstr ""
+msgstr "格式错误的配置指令：“%s”"
 
 #: lib/pipeline.c:615
 #, c-format
 msgid "pipeline input not open"
-msgstr ""
+msgstr "管道输入未打开"
 
 #: lib/pipeline.c:628
 #, c-format
 msgid "pipeline output not open"
-msgstr ""
+msgstr "管道输出未打开"
 
 #: lib/pipeline.c:772 lib/pipeline.c:791
 #, c-format
 msgid "pipe failed"
-msgstr ""
+msgstr "pipe 失败"
 
 #: lib/pipeline.c:780 src/lexgrog.l:423 src/manconv.c:347 src/straycats.c:212
 #: src/ult_src.c:277 src/ult_src.c:287 src/zsoelim.l:420
@@ -60,108 +64,108 @@ msgstr "fork 失败"
 #: lib/pipeline.c:828 lib/pipeline.c:837
 #, c-format
 msgid "dup2 failed"
-msgstr ""
+msgstr "dup2 失败"
 
 #: lib/pipeline.c:831 lib/pipeline.c:840 lib/pipeline.c:847 lib/pipeline.c:856
 #: lib/pipeline.c:913 lib/pipeline.c:917
 #, c-format
 msgid "close failed"
-msgstr ""
+msgstr "close 失败"
 
 #: lib/pipeline.c:907
 #, c-format
 msgid "can't execute %s"
-msgstr ""
+msgstr "无法执行 %s"
 
 #: lib/pipeline.c:1009
 #, c-format
 msgid "closing pipeline input stream failed"
-msgstr ""
+msgstr "关闭管道输入流失败"
 
 #: lib/pipeline.c:1014 lib/pipeline.c:1269
 #, c-format
 msgid "closing pipeline input failed"
-msgstr ""
+msgstr "关闭管道输入失败"
 
 #: lib/pipeline.c:1021
 #, c-format
 msgid "closing pipeline output stream failed"
-msgstr ""
+msgstr "关闭管道输出流失败"
 
 #: lib/pipeline.c:1028 lib/pipeline.c:1294
 #, c-format
 msgid "closing pipeline output failed"
-msgstr ""
+msgstr "关闭管道输出失败"
 
 #: lib/pipeline.c:1076
 #, c-format
 msgid "%s: %s (core dumped)"
-msgstr ""
+msgstr "%s：%s（核心已转储）"
 
 #: lib/pipeline.c:1081
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s：%s"
 
 #: lib/pipeline.c:1106
 #, c-format
 msgid "waitpid failed"
-msgstr ""
+msgstr "waitpid 失败"
 
 #: lib/pipeline.c:1164
 #, c-format
 msgid "can't install SIGCHLD handler"
-msgstr ""
+msgstr "无法设置 SIGCHLD 的处理例程"
 
 #: libdb/db_delete.c:103
 #, c-format
 msgid "multi key %s does not exist"
-msgstr ""
+msgstr "按键组合 %s 不存在"
 
 #: libdb/db_lookup.c:66
 #, c-format
 msgid "can't lock index cache %s"
-msgstr ""
+msgstr "无法锁定索引缓存 %s"
 
 #: libdb/db_lookup.c:73
 #, c-format
 msgid "index cache %s corrupt"
-msgstr ""
+msgstr "索引缓存 %s 已损坏"
 
 #: libdb/db_lookup.c:79
 #, c-format
 msgid "cannot replace key %s"
-msgstr ""
+msgstr "无法替换按键 %s"
 
 #: libdb/db_lookup.c:186 libdb/db_lookup.c:196
 #, c-format
 msgid "only %d fields in content"
-msgstr ""
+msgstr "内容中仅有 %d 个字段"
 
 #: libdb/db_lookup.c:376
 #, c-format
 msgid "bad fetch on multi key %s"
-msgstr ""
+msgstr "获取了无效的按键组合 %s"
 
 #: libdb/db_store.c:48
 #, c-format
 msgid "cannot insert unused key %s"
-msgstr ""
+msgstr "无法插入未使用的按键 %s"
 
 #: libdb/db_ver.c:53
 #, c-format
 msgid "warning: %s has no version identifier\n"
-msgstr ""
+msgstr "警告：%s 没有版本识别符\n"
 
 #: libdb/db_ver.c:56
 #, c-format
 msgid "warning: %s is version %s, expecting %s\n"
-msgstr ""
+msgstr "警告：%s 的版本是 %s，期望为 %s\n"
 
 #: libdb/db_ver.c:78
 #, c-format
 msgid "fatal: unable to insert version identifier into %s"
-msgstr ""
+msgstr "致命错误：无法将版本识别符插入 %s"
 
 #: src/accessdb.c:61
 msgid "[MAN DATABASE]"
@@ -194,7 +198,7 @@ msgstr "路径"
 
 #: src/catman.c:100 src/man.c:264 src/whatis.c:123
 msgid "set search path for manual pages to PATH"
-msgstr "设置搜索手册页的路径为“路径”"
+msgstr "设置搜索手册页的路径为 PATH"
 
 #: src/catman.c:101 src/man.c:244 src/mandb.c:105 src/manpath.c:68
 #: src/whatis.c:125
@@ -350,7 +354,7 @@ msgstr "查找手册页时不区分大小写字母 (默认)"
 
 #: src/globbing_test.c:60 src/man.c:272
 msgid "look for pages case-sensitively"
-msgstr "查找手册页时区分大小写字母。"
+msgstr "查找手册页时区分大小写字母"
 
 #: src/lexgrog.l:345
 #, c-format
@@ -867,7 +871,7 @@ msgstr "警告：无法创建 catdir %s"
 #: src/manp.c:784
 #, c-format
 msgid "can't parse directory list `%s'"
-msgstr "无法解读目录列表 %s"
+msgstr "无法解析目录列表“%s”"
 
 #: src/manp.c:831
 #, c-format

@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: man-db 2.5.1-pre2\n"
 "Report-Msgid-Bugs-To: Colin Watson <cjwatson@debian.org>\n"
 "POT-Creation-Date: 2008-01-14 00:21+0000\n"
-"PO-Revision-Date: 2017-11-15 09:38+0800\n"
+"PO-Revision-Date: 2017-11-15 09:45+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
@@ -120,7 +120,7 @@ msgstr "无法设置 SIGCHLD 的处理例程"
 #: libdb/db_delete.c:103
 #, c-format
 msgid "multi key %s does not exist"
-msgstr "按键组合 %s 不存在"
+msgstr "多重词条 %s 不存在"
 
 #: libdb/db_lookup.c:66
 #, c-format
@@ -135,7 +135,7 @@ msgstr "索引缓存 %s 已损坏"
 #: libdb/db_lookup.c:79
 #, c-format
 msgid "cannot replace key %s"
-msgstr "无法替换按键 %s"
+msgstr "无法替换词条 %s"
 
 #: libdb/db_lookup.c:186 libdb/db_lookup.c:196
 #, c-format
@@ -145,12 +145,12 @@ msgstr "内容中仅有 %d 个字段"
 #: libdb/db_lookup.c:376
 #, c-format
 msgid "bad fetch on multi key %s"
-msgstr "获取了无效的按键组合 %s"
+msgstr "获取了无效的多重词条 %s"
 
 #: libdb/db_store.c:48
 #, c-format
 msgid "cannot insert unused key %s"
-msgstr "无法插入未使用的按键 %s"
+msgstr "无法插入未使用的词条 %s"
 
 #: libdb/db_ver.c:53
 #, c-format

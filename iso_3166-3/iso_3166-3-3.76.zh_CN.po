@@ -1,11 +1,9 @@
-# Translation of ISO 3166-3 to LANGUAGE
+# Translation of ISO 3166-3 to Simplified Chinese.
 # Codes for the representation of names of countries and their subdivisions
 # Part 3: Code for formerly used names of countries
 #
 # This file is distributed under the same license as the iso-codes package.
-#
-# Copyright ©
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) Boyuan Yang <073plan@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
@@ -13,12 +11,16 @@ msgstr ""
 "Report-Msgid-Bugs-To: Debian iso-codes team <pkg-isocodes-devel@lists.alioth."
 "debian.org>\n"
 "POT-Creation-Date: 2016-03-05 21:58+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2017-11-15 18:38+0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #. Name for AIDJ
 msgid "French Afars and Issas"
@@ -46,7 +48,7 @@ msgstr ""
 
 #. Name for CSXX
 msgid "Serbia and Montenegro"
-msgstr ""
+msgstr "塞尔维亚和黑山"
 
 #. Name for CTKI
 msgid "Canton and Enderbury Islands"
@@ -82,7 +84,7 @@ msgstr ""
 
 #. Name for MIUM
 msgid "Midway Islands"
-msgstr ""
+msgstr "中途岛"
 
 #. Name for NHVU
 msgid "New Hebrides"
@@ -130,7 +132,7 @@ msgstr ""
 
 #. Name for WKUM
 msgid "Wake Island"
-msgstr ""
+msgstr "威克岛"
 
 #. Name for YDYE
 msgid "Yemen, Democratic, People's Democratic Republic of"

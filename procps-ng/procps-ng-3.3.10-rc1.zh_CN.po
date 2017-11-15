@@ -1,23 +1,24 @@
 # procps-ng in zh_CN
 # Copyright (C) 2015 Free Software Foundation, Inc.
 # This file is distributed under the same license as the procps-ng package.
+# Boyuan Yang <073plan@gmail.com>, 2017.
 # Mingye Wang <arthur200126@gmail.com>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: procps-ng 3.3.10-rc1\n"
 "Report-Msgid-Bugs-To: procps@freelists.org\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "POT-Creation-Date: 2014-09-09 19:05+0200\n"
-"PO-Revision-Date: 2015-10-30 09:39-0400\n"
-"Last-Translator: Mingye Wang (Arthur2e5) <arthur200126@gmail.com>\n"
+"PO-Revision-Date: 2017-11-15 18:55+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.4\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: free.c:74 slabtop.c:189 uptime.c:59 w.c:443
 #, c-format
@@ -42,7 +43,7 @@ msgstr " -g, --giga          以吉字节显示输出\n"
 
 #: free.c:80
 msgid "     --tera          show output in terabytes\n"
-msgstr ""
+msgstr "     --tera          以太字节显示输出\n"
 
 #: free.c:81
 msgid " -h, --human         show human-readable output\n"
@@ -73,9 +74,8 @@ msgid " -w, --wide          wide output\n"
 msgstr " -w, --wide          宽版输出\n"
 
 #: free.c:89 w.c:452
-#, fuzzy
 msgid "     --help     display this help and exit\n"
-msgstr "      --help\t\t显示此帮助信息并退出\n"
+msgstr "     --help     显示此帮助信息并退出\n"
 
 #: free.c:267
 #, fuzzy, c-format
@@ -1196,9 +1196,8 @@ msgid "embedded '-' among SysV options makes no sense"
 msgstr ""
 
 #: ps/parser.c:513
-#, fuzzy
 msgid "unsupported SysV option"
-msgstr "=选项"
+msgstr "不支持的 SysV 选项"
 
 #: ps/parser.c:526
 msgid "cannot happen - problem #1"
@@ -2771,9 +2770,8 @@ msgid "Failed signal pid '%d' with '%d': %s"
 msgstr "%s(%s) 短脚本运行失败，信号 %d\n"
 
 #: top/top_nls.c:342
-#, fuzzy
 msgid "Invalid signal"
-msgstr "%s：无效的信号"
+msgstr "无效的信号"
 
 #: top/top_nls.c:343
 #, fuzzy, c-format
@@ -2871,9 +2869,8 @@ msgid "Unavailable in secure mode"
 msgstr ""
 
 #: top/top_nls.c:363
-#, fuzzy
 msgid "Only 1 cpu detected"
-msgstr "%s 只接受 1 个参数"
+msgstr "仅探测到 1 个 CPU"
 
 #: top/top_nls.c:364
 #, fuzzy
@@ -3089,9 +3086,8 @@ msgid "ignoring case"
 msgstr "(未知的案例)"
 
 #: top/top_nls.c:453
-#, fuzzy
 msgid "case sensitive"
-msgstr "(未知的案例)"
+msgstr "大小写敏感"
 
 #: top/top_nls.c:454
 #, fuzzy
@@ -3221,6 +3217,8 @@ msgid ""
 "  k,r       Manipulate tasks: '~1k~2' kill; '~1r~2' renice\n"
 "  d or s    Set update interval\n"
 msgstr ""
+"  k,r       操作进程：'~1k~2' 杀死；'~1r~2' 设置优先级\n"
+"  d or s    设定更新间隔\n"
 
 #: top/top_nls.c:537
 #, c-format
@@ -3647,7 +3645,7 @@ msgstr "用于生成简单的手册页的实用程序"
 
 #: vmstat.c:699
 msgid "your kernel does not support slabinfo or your permissions are insufficient"
-msgstr ""
+msgstr "您的内核不支持 slabinfo 或您的权限不够"
 
 #: vmstat.c:751
 #, c-format
@@ -3914,9 +3912,8 @@ msgid "unable to create IPC pipes"
 msgstr "无法创建不可改变的头区。\n"
 
 #: watch.c:443
-#, fuzzy
 msgid "unable to fork process"
-msgstr "创建系统进程(fork)出错"
+msgstr "无法创建 (fork) 进程"
 
 #: watch.c:448
 #, fuzzy
@@ -4060,7 +4057,7 @@ msgstr ""
 
 #: include/c.h:155
 msgid "\n"
-msgstr ""
+msgstr "\n"
 
 #: include/c.h:156
 msgid " -h, --help     display this help and exit\n"

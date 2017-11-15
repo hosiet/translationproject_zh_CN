@@ -14,7 +14,6 @@
 # The translations (msgstr) are:
 # Copyright © 2007-2008 Ming Hua <minghua-guest@users.alioth.debian.org>
 # Copyright © 2017 Boyuan Yang <073plan@gmail.com>
-
 #
 msgid ""
 msgstr ""

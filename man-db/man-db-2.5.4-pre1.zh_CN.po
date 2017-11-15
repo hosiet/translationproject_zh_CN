@@ -1,6 +1,7 @@
 # Simplified Chinese translations for man-db package
-# Copyright (C) 2008 Colin Watson
+# Copyright (C) 2008 Colin Watson (msgids)
 # Copyright (C) 2008 Ming Hua
+# Copyright (C) 2017 Boyuan Yang
 # This file is distributed under the same license as the man-db package.
 # Ming Hua <minghua-guest@users.alioth.debian.org>, 2007-2008.
 #
@@ -12,39 +13,43 @@
 # Copyright © 2008 Colin Watson <cjwatson@debian.org>
 # The translations (msgstr) are:
 # Copyright © 2007-2008 Ming Hua <minghua-guest@users.alioth.debian.org>
+# Copyright © 2017 Boyuan Yang <073plan@gmail.com>
+
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: man-db 2.5.1-pre2\n"
+"Project-Id-Version: man-db 2.5.4-pre1\n"
 "Report-Msgid-Bugs-To: Colin Watson <cjwatson@debian.org>\n"
 "POT-Creation-Date: 2008-12-27 23:11+0000\n"
-"PO-Revision-Date: 2008-01-16 17:49-0600\n"
-"Last-Translator: Ming Hua <minghua-guest@users.alioth.debian.org>\n"
+"PO-Revision-Date: 2017-11-15 10:31+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: lib/pipeline.c:217 lib/pipeline.c:229
 #, c-format
 msgid "badly formed configuration directive: '%s'"
-msgstr ""
+msgstr "格式错误的配置指令：“%s”"
 
 #: lib/pipeline.c:627
 #, c-format
 msgid "pipeline input not open"
-msgstr ""
+msgstr "管道输入未打开"
 
 #: lib/pipeline.c:640
 #, c-format
 msgid "pipeline output not open"
-msgstr ""
+msgstr "管道输出未打开"
 
 #: lib/pipeline.c:785 lib/pipeline.c:804
 #, c-format
 msgid "pipe failed"
-msgstr ""
+msgstr "pipe 失败"
 
 #: lib/pipeline.c:793 src/lexgrog.l:611 src/man.c:2261 src/man.c:2338
 #: src/man.c:2431 src/manconv_main.c:172 src/straycats.c:212 src/ult_src.c:277
@@ -61,58 +66,58 @@ msgstr "fork 失败"
 #: lib/pipeline.c:841 lib/pipeline.c:850
 #, c-format
 msgid "dup2 failed"
-msgstr ""
+msgstr "dup2 失败"
 
 #: lib/pipeline.c:844 lib/pipeline.c:853 lib/pipeline.c:860 lib/pipeline.c:869
 #: lib/pipeline.c:932 lib/pipeline.c:936
 #, c-format
 msgid "close failed"
-msgstr ""
+msgstr "close 失败"
 
 #: lib/pipeline.c:926
 #, c-format
 msgid "can't execute %s"
-msgstr ""
+msgstr "无法执行 %s"
 
 #: lib/pipeline.c:1028
 #, c-format
 msgid "closing pipeline input stream failed"
-msgstr ""
+msgstr "关闭管道输入流失败"
 
 #: lib/pipeline.c:1033 lib/pipeline.c:1301
 #, c-format
 msgid "closing pipeline input failed"
-msgstr ""
+msgstr "关闭管道输入失败"
 
 #: lib/pipeline.c:1040
 #, c-format
 msgid "closing pipeline output stream failed"
-msgstr ""
+msgstr "关闭管道输出流失败"
 
 #: lib/pipeline.c:1047 lib/pipeline.c:1326
 #, c-format
 msgid "closing pipeline output failed"
-msgstr ""
+msgstr "关闭管道输出失败"
 
 #: lib/pipeline.c:1095
 #, c-format
 msgid "%s: %s (core dumped)"
-msgstr ""
+msgstr "%s：%s（核心已转储）"
 
 #: lib/pipeline.c:1100
 #, c-format
 msgid "%s: %s"
-msgstr ""
+msgstr "%s：%s"
 
 #: lib/pipeline.c:1136
 #, c-format
 msgid "waitpid failed"
-msgstr ""
+msgstr "waitpid 失败"
 
 #: lib/pipeline.c:1195
 #, c-format
 msgid "can't install SIGCHLD handler"
-msgstr ""
+msgstr "无法设置 SIGCHLD 的处理例程"
 
 #  need-proofread
 #: lib/xregcomp.c:47
@@ -123,32 +128,32 @@ msgstr "致命错误：regex `%s'：%s"
 #: libdb/db_delete.c:103
 #, c-format
 msgid "multi key %s does not exist"
-msgstr ""
+msgstr "多重词条 %s 不存在"
 
 #: libdb/db_lookup.c:71
 #, c-format
 msgid "can't lock index cache %s"
-msgstr ""
+msgstr "无法锁定索引缓存 %s"
 
 #: libdb/db_lookup.c:78
 #, c-format
 msgid "index cache %s corrupt"
-msgstr ""
+msgstr "索引缓存 %s 已损坏"
 
 #: libdb/db_lookup.c:84
 #, c-format
 msgid "cannot replace key %s"
-msgstr ""
+msgstr "无法替换词条 %s"
 
 #: libdb/db_lookup.c:181 libdb/db_lookup.c:191
 #, c-format
 msgid "only %d fields in content"
-msgstr ""
+msgstr "内容中仅有 %d 个字段"
 
 #: libdb/db_lookup.c:371
 #, c-format
 msgid "bad fetch on multi key %s"
-msgstr ""
+msgstr "获取了无效的多重词条 %s"
 
 #  need-proofread
 #: libdb/db_lookup.c:443 src/whatis.c:513
@@ -159,22 +164,22 @@ msgstr "数据库 %s 毁坏；请用 mandb --create 命令重建"
 #: libdb/db_store.c:48
 #, c-format
 msgid "cannot insert unused key %s"
-msgstr ""
+msgstr "无法插入未使用的词条 %s"
 
 #: libdb/db_ver.c:53
 #, c-format
 msgid "warning: %s has no version identifier\n"
-msgstr ""
+msgstr "警告：%s 没有版本识别符\n"
 
 #: libdb/db_ver.c:56
 #, c-format
 msgid "warning: %s is version %s, expecting %s\n"
-msgstr ""
+msgstr "警告：%s 的版本是 %s，期望为 %s\n"
 
 #: libdb/db_ver.c:78
 #, c-format
 msgid "fatal: unable to insert version identifier into %s"
-msgstr ""
+msgstr "致命错误：无法将版本识别符插入 %s"
 
 #: src/accessdb.c:61
 msgid "[MAN DATABASE]"
@@ -207,7 +212,7 @@ msgstr "路径"
 
 #: src/catman.c:100 src/man.c:277 src/whatis.c:126
 msgid "set search path for manual pages to PATH"
-msgstr "设置搜索手册页的路径为“路径”"
+msgstr "设置搜索手册页的路径为 PATH"
 
 #: src/catman.c:101 src/man.c:255 src/mandb.c:105 src/manpath.c:68
 #: src/whatis.c:128
@@ -363,17 +368,15 @@ msgstr "查找手册页时不区分大小写字母 (默认)"
 
 #: src/globbing_test.c:62 src/man.c:283
 msgid "look for pages case-sensitively"
-msgstr "查找手册页时区分大小写字母。"
+msgstr "查找手册页时区分大小写字母"
 
 #: src/globbing_test.c:63
-#, fuzzy
 msgid "interpret page name as a regex"
-msgstr "把每个关键词都当作正则表达式解读"
+msgstr "把页面名称当作正则表达式解读"
 
 #: src/globbing_test.c:64
-#, fuzzy
 msgid "the page name contains wildcards"
-msgstr "关键词里包含通配符"
+msgstr "页面名称里包含通配符"
 
 #: src/lexgrog.l:510
 #, c-format
@@ -409,9 +412,8 @@ msgid "ENCODING"
 msgstr "编码"
 
 #: src/lexgrog_test.c:71 src/man.c:295
-#, fuzzy
 msgid "use selected output encoding"
-msgstr "必须指定输出所用的编码"
+msgstr "使用选中的输出编码"
 
 #: src/lexgrog_test.c:114 src/man.c:515 src/man.c:525
 #, c-format
@@ -468,7 +470,6 @@ msgid "used by catman to reformat out of date cat pages"
 msgstr "由 catman 使用，用来对过时的 cat 页重新排版"
 
 #: src/man.c:272
-#, fuzzy
 msgid "output source page encoded in ENCODING"
 msgstr "以指定编码输出手册页源码"
 
@@ -489,9 +490,8 @@ msgid "SYSTEM"
 msgstr "系统"
 
 #: src/man.c:276 src/manpath.c:69 src/whatis.c:125
-#, fuzzy
 msgid "use manual pages from other systems"
-msgstr "搜索其它 unix 系统的手册页"
+msgstr "使用来自其它系统的手册页"
 
 #: src/man.c:278
 msgid "LIST"
@@ -503,15 +503,15 @@ msgstr "使用以半角冒号分隔的章节列表"
 
 #: src/man.c:284
 msgid "show all pages matching regex"
-msgstr ""
+msgstr "显示所有匹配正则表达式的页面"
 
 #: src/man.c:285
 msgid "show all pages matching wildcard"
-msgstr ""
+msgstr "显示所有匹配通配符的页面"
 
 #: src/man.c:286
 msgid "make --regex and --wildcard match page names only, not descriptions"
-msgstr ""
+msgstr "使得 --regex 和 --wildcard 仅匹配页面名称，不匹配描述信息"
 
 #: src/man.c:288
 msgid "find all matching manual pages"
@@ -548,7 +548,7 @@ msgstr "显示某些 latin1 字符的 ASCII 翻译形式"
 
 #: src/man.c:297
 msgid "turn off hyphenation"
-msgstr ""
+msgstr "关闭连字符"
 
 #: src/man.c:298
 msgid ""
@@ -729,14 +729,12 @@ msgid "iconv: incomplete character at end of buffer"
 msgstr "iconv：在缓冲区末尾有不完全的字符"
 
 #: src/manconv_main.c:88
-#, fuzzy
 msgid "-f CODE[:...] -t CODE [FILENAME]"
-msgstr "-f 编码:... -t 编码 [文件名]"
+msgstr "-f 编码[:...] -t 编码 [文件名]"
 
 #: src/manconv_main.c:91
-#, fuzzy
 msgid "CODE[:...]"
-msgstr "编码:..."
+msgstr "编码[:...]"
 
 #: src/manconv_main.c:92
 msgid "possible encodings of original text"
@@ -913,7 +911,7 @@ msgstr "警告：无法创建 catdir %s"
 #: src/manp.c:799
 #, c-format
 msgid "can't parse directory list `%s'"
-msgstr "无法解读目录列表 %s"
+msgstr "无法解析目录列表“%s”"
 
 #: src/manp.c:846
 #, c-format

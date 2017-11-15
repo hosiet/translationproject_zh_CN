@@ -1,7 +1,6 @@
 # Simplified Chinese translations for man-db package
-# Copyright (C) 2008 Colin Watson
+# Copyright (C) 2008 Colin Watson (msgids)
 # Copyright (C) 2008 Ming Hua
-# Copyright (C) 2017 Boyuan Yang
 # This file is distributed under the same license as the man-db package.
 # Ming Hua <minghua-guest@users.alioth.debian.org>, 2007-2008.
 #

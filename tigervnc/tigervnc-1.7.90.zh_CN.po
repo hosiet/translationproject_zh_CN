@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: tigervnc 1.5.90\n"
 "Report-Msgid-Bugs-To: tigervnc-devel@googlegroups.com\n"
 "POT-Creation-Date: 2017-04-19 13:05+0000\n"
-"PO-Revision-Date: 2016-04-27 20:52-0400\n"
-"Last-Translator: Mingye Wang (Arthur2e5) <arthur200126@gmail.com>\n"
+"PO-Revision-Date: 2017-11-15 10:05+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.0.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: vncviewer/CConn.cxx:110
@@ -127,7 +127,7 @@ msgstr "正在调整窗口大小以避免意外的全屏请求"
 #: vncviewer/DesktopWindow.cxx:478
 #, c-format
 msgid "Press %s to open the context menu"
-msgstr ""
+msgstr "按下 %s 以打开上下文菜单"
 
 #: vncviewer/DesktopWindow.cxx:741 vncviewer/DesktopWindow.cxx:747
 #: vncviewer/DesktopWindow.cxx:760
@@ -262,17 +262,15 @@ msgstr "接受来自服务器的剪切板内容"
 
 #: vncviewer/OptionsDialog.cxx:710
 msgid "Also set primary selection"
-msgstr ""
+msgstr "同样设定鼠标选择内容"
 
 #: vncviewer/OptionsDialog.cxx:717
 msgid "Send clipboard to server"
 msgstr "发送剪切板内容到服务器"
 
 #: vncviewer/OptionsDialog.cxx:725
-#, fuzzy
-#| msgid "Send primary selection and cut buffer as clipboard"
 msgid "Send primary selection as clipboard"
-msgstr "将首个选择及剪切缓存作为剪切板内容发送"
+msgstr "将鼠标选择内容作为剪切板内容发送"
 
 #: vncviewer/OptionsDialog.cxx:732
 msgid "Pass system keys directly to server (full screen)"

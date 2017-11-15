@@ -1,6 +1,7 @@
 # Chinese simplified translation for aspell.
 # Copyright (C) 2011 Kevin Atkinson
 # This file is distributed under the same license as the aspell package.
+# Boyuan Yang <073plan@gmail.com>, 2017.
 # Wylmer Wang <wantinghard@gmail.com>, 2011, 2013.
 # lite <litekok@gmail.com>, 2013.
 #
@@ -9,16 +10,16 @@ msgstr ""
 "Project-Id-Version: aspell-0.60.7\n"
 "Report-Msgid-Bugs-To: kevina@gnu.org\n"
 "POT-Creation-Date: 2011-07-04 20:06-0600\n"
-"PO-Revision-Date: 2013-07-16 18:15+0200\n"
-"Last-Translator: Wylmer Wang <wantinghard@gmail.com>\n"
+"PO-Revision-Date: 2017-11-15 10:44+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.0.5\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: common/info.cpp:232
 msgid "a number between 0 and 1"
@@ -145,7 +146,7 @@ msgstr "检查单词时忽略大小写"
 
 #: common/config.cpp:1392
 msgid "ignore commands to store replacement pairs"
-msgstr "忽略 保存替换配对的命令"
+msgstr "忽略保存替换配对的命令"
 
 #: common/config.cpp:1394 common/config.cpp:1461
 msgid "extra information for the word list"
@@ -321,7 +322,6 @@ msgid "use byte offsets instead of character offsets"
 msgstr "使用字节偏移量而非字符偏移量"
 
 #: common/config.cpp:1502
-#, fuzzy
 msgid "create missing root/affix combinations"
 msgstr "创建丢失的根/词缀组合"
 
@@ -349,7 +349,7 @@ msgstr "这也可能意味着文件“%s”无法打开读取或不存在。"
 #: common/convert.cpp:582 common/convert.cpp:689 common/convert.cpp:735
 #, c-format
 msgid "The Unicode code point U+%04X is unsupported."
-msgstr "不支持的 Unicode 代码点 U+%04X 。"
+msgstr "不支持的 Unicode 码点 U+%04X 。"
 
 #: common/convert.cpp:859
 #, c-format
@@ -372,7 +372,7 @@ msgstr "%file:1:"
 #: common/errors.cpp:59
 #, c-format
 msgid "The file \"%file:1\" can not be opened"
-msgstr "打不开文件“%file:1”"
+msgstr "无法打开文件“%file:1”"
 
 #: common/errors.cpp:67
 #, c-format
@@ -470,7 +470,7 @@ msgstr "没有找到语言“%lang:1”的单词表。"
 #: common/errors.cpp:267
 #, c-format
 msgid "Expected language \"%lang:1\" but got \"%prev:2\"."
-msgstr "语言应为“%lang:1”但实际是“%prev:2”"
+msgstr "语言应为“%lang:1”但实际是“%prev:2”。"
 
 #: common/errors.cpp:283
 #, c-format
@@ -483,9 +483,9 @@ msgid "The condition \"%cond:1\" is invalid."
 msgstr "条件“%cond:1”无效。"
 
 #: common/errors.cpp:299
-#, fuzzy, c-format
+#, c-format
 msgid "The condition \"%cond:1\" does not guarantee that \"%strip:2\" can always be stripped."
-msgstr "条件“%cond:1”不能保证“%strip:2”可以随时被截取。"
+msgstr "条件“%cond:1”不能保证“%strip:2“总能被截取。"
 
 #: common/errors.cpp:307
 #, c-format
@@ -759,7 +759,6 @@ msgid "Add"
 msgstr "添加"
 
 #: prog/aspell.cpp:1038
-#, fuzzy
 msgid "Add Lower"
 msgstr "添加更少"
 
@@ -1185,13 +1184,12 @@ msgid "The total word length, with soundslike data, is larger than 240 character
 msgstr "带 soundslike 数据的总单词长度大于 240 个字符。"
 
 #: modules/speller/default/multi_ws.cpp:58
-#, fuzzy
 msgid "There must be at least one \"add\" line."
 msgstr "必须有至少一行“添加”行。"
 
 #: modules/speller/default/suggest.cpp:1403
 msgid "one of ultra, fast, normal, slow, or bad-spellers"
-msgstr "ultra, fast, normal, slow, 或 bad-spellers其中之一"
+msgstr "ultra、fast、normal、slow 或 bad-spellers 其中之一"
 
 #: modules/speller/default/data.cpp:404
 msgid "is not one of the allowed types"
@@ -1214,7 +1212,7 @@ msgid "a string of 'o','O','p',or 'P'"
 msgstr "'o','O','p',或 'P' 组成的一个字符串"
 
 #. TRANSLATORS: Like the strings in config.cpp, all strings in *-filter.opt
-#. should be under 50 characters, begin with a lower case character and 
+#. should be under 50 characters, begin with a lower case character and
 #. not include any trailing punctuation marks.
 #: modules/filter/context-filter.info:7
 msgid "experimental filter for hiding delimited contexts"

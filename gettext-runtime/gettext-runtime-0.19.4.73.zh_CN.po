@@ -8,21 +8,23 @@
 # LI Daobing <lidaobing@gmail.com>, 2008.
 # Aron Xu <happyaron.xu@gmail.com>, 2010.
 # Ji ZhengYu <zhengyuji@gmail.com>, 2015.
+# Boyuan Yang <073plan@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: gettext-runtime 0.19.4.73\n"
 "Report-Msgid-Bugs-To: bug-gnu-gettext@gnu.org\n"
 "POT-Creation-Date: 2015-06-23 15:18+0900\n"
-"PO-Revision-Date: 2015-09-01 10:02中国标准时间\n"
-"Last-Translator: Ji ZhengYu <zhengyuji@gmail.com>\n"
+"PO-Revision-Date: 2017-11-15 18:21+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #: gnulib-lib/closeout.c:66
 msgid "write error"
@@ -251,16 +253,7 @@ msgstr ""
 "  [文本域] MSGID            由<文本域>读取相应于 MSGID 的翻译消息\n"
 
 #: src/gettext.c:265
-#, fuzzy, c-format, no-wrap
-#| msgid ""
-#| "If the TEXTDOMAIN parameter is not given, the domain is determined from the\n"
-#| "environment variable TEXTDOMAIN.  If the message catalog is not found in the\n"
-#| "regular directory, another location can be specified with the environment\n"
-#| "variable TEXTDOMAINDIR.\n"
-#| "When used with the -s option the program behaves like the `echo' command.\n"
-#| "But it does not simply copy its arguments to stdout.  Instead those messages\n"
-#| "found in the selected catalog are translated.\n"
-#| "Standard search directory: %s\n"
+#, c-format, no-wrap
 msgid ""
 "If the TEXTDOMAIN parameter is not given, the domain is determined from the\n"
 "environment variable TEXTDOMAIN.  If the message catalog is not found in the\n"

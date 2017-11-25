@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the binutils package.
 # Meng Jie <zuxyhere@eastday.com>, 2005.
 # Mingye Wang <arthur200126@gmail.com>, 2015.
+# Boyuan Yang <073plan@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: opcodes 2.24.90\n"
+"Project-Id-Version: opcodes 2.28.90\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2017-07-03 16:55+0200\n"
-"PO-Revision-Date: 2015-10-30 09:13-0400\n"
-"Last-Translator: Mingye Wang (Arthur2e5) <arthur200126@gmail.com>\n"
+"PO-Revision-Date: 2017-11-25 20:10+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.0.4\n"
 
 #. Invalid option.
 #: aarch64-dis.c:81 arc-dis.c:775 arm-dis.c:6132
@@ -184,16 +185,12 @@ msgid "invalid shift operator"
 msgstr "无效的移位操作符"
 
 #: aarch64-opc.c:1980
-#, fuzzy
-#| msgid "shift amount expected to be 0 or 12"
 msgid "shift amount must be 0 or 12"
-msgstr "移位量预计为 0 或 12"
+msgstr "移位量必须为 0 或 12"
 
 #: aarch64-opc.c:2003
-#, fuzzy
-#| msgid "shift amount should be a multiple of 16"
 msgid "shift amount must be a multiple of 16"
-msgstr "移位量应该是 16 的倍数"
+msgstr "移位量必须是 16 的倍数"
 
 #: aarch64-opc.c:2015
 msgid "negative immediate value not allowed"
@@ -228,9 +225,8 @@ msgid "invalid value for immediate"
 msgstr "不允许负立即数"
 
 #: aarch64-opc.c:2264
-#, fuzzy
 msgid "shift amount must be 0 or 16"
-msgstr "移位量预计为 0 或 12"
+msgstr "移位量必须为 0 或 16"
 
 #: aarch64-opc.c:2285
 msgid "floating-point immediate expected"
@@ -241,10 +237,8 @@ msgid "no shift amount allowed for 8-bit constants"
 msgstr ""
 
 #: aarch64-opc.c:2329
-#, fuzzy
-#| msgid "shift amount expected to be 0 or 12"
 msgid "shift amount must be 0 or 8"
-msgstr "移位量预计为 0 或 12"
+msgstr "移位量必须为 0 或 8"
 
 #: aarch64-opc.c:2342
 msgid "immediate too big for element size"
@@ -285,9 +279,8 @@ msgid "missing extend operator"
 msgstr "扩展%s 失败"
 
 #: aarch64-opc.c:2547
-#, fuzzy
 msgid "'LSL' operator not allowed"
-msgstr "不允许 'ROR' 操作符"
+msgstr "不允许 'LSL' 操作符"
 
 #: aarch64-opc.c:2568
 msgid "W register expected"
@@ -318,10 +311,9 @@ msgid ""
 msgstr ""
 
 #: arc-dis.c:817
-#, fuzzy, c-format
-#| msgid "Unrecognised disassembler option: %s\n"
+#, c-format
 msgid "Unrecognised disassembler CPU option: %s\n"
-msgstr "无法识别的反汇编器选项：%s\n"
+msgstr "无法识别的反汇编器 CPU 选项：%s\n"
 
 #: arc-dis.c:1344
 #, fuzzy, c-format
@@ -338,34 +330,19 @@ msgstr ""
 "下列 AARCH64 特定的反汇编器选项可通过 -M 开关启用（使用逗号分隔多个选项）：\n"
 
 #: arc-dis.c:1356
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "  msa             Recognize MSA instructions.\n"
+#, c-format
 msgid "  dsp             Recognize DSP instructions.\n"
-msgstr ""
-"\n"
-"  msa             识别 MSA 指令。\n"
+msgstr "  dsp             识别 DSP 指令。\n"
 
 #: arc-dis.c:1358
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "  msa             Recognize MSA instructions.\n"
+#, c-format
 msgid "  spfp            Recognize FPX SP instructions.\n"
-msgstr ""
-"\n"
-"  msa             识别 MSA 指令。\n"
+msgstr "  spfp            识别 FPX SP 指令。\n"
 
 #: arc-dis.c:1360
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "  msa             Recognize MSA instructions.\n"
+#, c-format
 msgid "  dpfp            Recognize FPX DP instructions.\n"
-msgstr ""
-"\n"
-"  msa             识别 MSA 指令。\n"
+msgstr "  dpfp            识别 FPX DP 指令。\n"
 
 #: arc-dis.c:1362
 #, fuzzy, c-format
@@ -388,24 +365,14 @@ msgstr ""
 "  msa             识别 MSA 指令。\n"
 
 #: arc-dis.c:1366
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "  virt            Recognize the virtualization ASE instructions.\n"
+#, c-format
 msgid "  fpus            Recognize single precision FPU instructions.\n"
-msgstr ""
-"\n"
-"  virt            识别虚拟化 ASE 指令。\n"
+msgstr "  fpus            识别单精度 FPU 指令。\n"
 
 #: arc-dis.c:1368
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "  virt            Recognize the virtualization ASE instructions.\n"
+#, c-format
 msgid "  fpud            Recognize double precision FPU instructions.\n"
-msgstr ""
-"\n"
-"  virt            识别虚拟化 ASE 指令。\n"
+msgstr "  fpud            识别双精度 FPU 指令。\n"
 
 #: arc-opc.c:41 arc-opc.c:64 arc-opc.c:90
 msgid "LP_COUNT register cannot be used as destination register"
@@ -420,10 +387,8 @@ msgid "cannot use odd number source register"
 msgstr ""
 
 #: arc-opc.c:114
-#, fuzzy
-#| msgid "Operand is not a symbol"
 msgid "operand is not zero"
-msgstr "操作数不是一个符号"
+msgstr "操作数不是 0"
 
 #: arc-opc.c:173
 msgid "Register R30 is a limm indicator"
@@ -542,11 +507,11 @@ msgstr "不允许负立即数"
 
 #: arc-opc.c:877
 msgid "Invalid position, should be 0, 16, 32, 48 or 64."
-msgstr ""
+msgstr "无效的位置，应当为 0、16、32、48 或 64。"
 
 #: arc-opc.c:911
 msgid "Invalid position, should be 16, 32, 64 or 128."
-msgstr ""
+msgstr "无效的位置，应当为 16、32、64 或 128。"
 
 #: arc-opc.c:933
 #, fuzzy
@@ -556,7 +521,7 @@ msgstr "立即数越界"
 
 #: arc-opc.c:964
 msgid "Invalid position, should be 0, 8, 16, or 24"
-msgstr ""
+msgstr "无效的位置，应当为 0、8、16 或 24"
 
 #: arc-opc.c:989
 #, fuzzy
@@ -578,21 +543,19 @@ msgstr "DO 步进值为零"
 
 #: arc-opc.c:1125
 msgid "Value must be in the range 0 to 28"
-msgstr ""
+msgstr "值必须在 0 到 28 的范围中"
 
 #: arc-opc.c:1147
 msgid "Value must be in the range 1 to "
-msgstr ""
+msgstr "值的范围必须在 1 到 "
 
 #: arc-opc.c:1177
 msgid "Value must be in the range 0 to 240"
-msgstr ""
+msgstr "值必须在 0 到 240 的范围中"
 
 #: arc-opc.c:1179
-#, fuzzy
-#| msgid "shift amount should be a multiple of 16"
 msgid "Value must be a multiple of 16"
-msgstr "移位量应该是 16 的倍数"
+msgstr "值必须是 16 的倍数"
 
 #: arc-opc.c:1199
 msgid "Invalid address type for operand"
@@ -600,11 +563,11 @@ msgstr ""
 
 #: arc-opc.c:1233
 msgid "Value must be in the range 0 to 31"
-msgstr ""
+msgstr "值必须在 0 到 31 的范围中"
 
 #: arc-opc.c:1258
 msgid "Invalid position, should be 0,4, 8,...124."
-msgstr ""
+msgstr "无效的位置，应当为 0、4、8、...、124。"
 
 #: arm-dis.c:3202
 #, fuzzy
@@ -741,9 +704,8 @@ msgid "missing `)'"
 msgstr "缺少‘)’"
 
 #: epiphany-asm.c:269
-#, fuzzy
 msgid "ABORT: unknown operand"
-msgstr "正在进行放弃"
+msgstr "中止：未知的操作数"
 
 #: epiphany-asm.c:295
 #, fuzzy
@@ -772,12 +734,12 @@ msgstr "语法字符串中没有助记符"
 #: ip2k-asm.c:789 ip2k-asm.c:896 iq2000-asm.c:644 iq2000-asm.c:648
 #: iq2000-asm.c:737 iq2000-asm.c:844 lm32-asm.c:534 lm32-asm.c:538
 #: lm32-asm.c:627 lm32-asm.c:734 m32c-asm.c:1769 m32c-asm.c:1773
-#: m32c-asm.c:1862 m32c-asm.c:1969 m32r-asm.c:513 m32r-asm.c:517
-#: m32r-asm.c:606 m32r-asm.c:713 mep-asm.c:1472 mep-asm.c:1476 mep-asm.c:1565
-#: mep-asm.c:1672 mt-asm.c:780 mt-asm.c:784 mt-asm.c:873 mt-asm.c:980
-#: or1k-asm.c:688 or1k-asm.c:692 or1k-asm.c:781 or1k-asm.c:888 xc16x-asm.c:561
-#: xc16x-asm.c:565 xc16x-asm.c:654 xc16x-asm.c:761 xstormy16-asm.c:461
-#: xstormy16-asm.c:465 xstormy16-asm.c:554 xstormy16-asm.c:661
+#: m32c-asm.c:1862 m32c-asm.c:1969 m32r-asm.c:513 m32r-asm.c:517 m32r-asm.c:606
+#: m32r-asm.c:713 mep-asm.c:1472 mep-asm.c:1476 mep-asm.c:1565 mep-asm.c:1672
+#: mt-asm.c:780 mt-asm.c:784 mt-asm.c:873 mt-asm.c:980 or1k-asm.c:688
+#: or1k-asm.c:692 or1k-asm.c:781 or1k-asm.c:888 xc16x-asm.c:561 xc16x-asm.c:565
+#: xc16x-asm.c:654 xc16x-asm.c:761 xstormy16-asm.c:461 xstormy16-asm.c:465
+#: xstormy16-asm.c:554 xstormy16-asm.c:661
 msgid "unrecognized instruction"
 msgstr "无法识别的指令"
 
@@ -835,9 +797,8 @@ msgid "*unknown*"
 msgstr "*未知*"
 
 #: epiphany-dis.c:277 fr30-dis.c:298 frv-dis.c:395 ip2k-dis.c:287
-#: iq2000-dis.c:188 lm32-dis.c:146 m32c-dis.c:890 m32r-dis.c:278
-#: mep-dis.c:1186 mt-dis.c:289 or1k-dis.c:140 xc16x-dis.c:419
-#: xstormy16-dis.c:167
+#: iq2000-dis.c:188 lm32-dis.c:146 m32c-dis.c:890 m32r-dis.c:278 mep-dis.c:1186
+#: mt-dis.c:289 or1k-dis.c:140 xc16x-dis.c:419 xstormy16-dis.c:167
 #, c-format
 msgid "Unrecognized field %d while printing insn.\n"
 msgstr "打印 insn 时遇到无法识别的字段 %d。\n"
@@ -985,14 +946,14 @@ msgstr ""
 "下列 i386/x86-64 特定的反汇编器选项在使用 -M 开关时可用（使用逗号分隔多个选项）：\n"
 
 #: i386-dis.c:12583
-#, fuzzy, c-format
+#, c-format
 msgid "  x86-64      Disassemble in 64bit mode\n"
-msgstr "生成 64 位 x86-64 代码"
+msgstr "  x86-64      在 64 位模式下反汇编\n"
 
 #: i386-dis.c:12584
-#, fuzzy, c-format
+#, c-format
 msgid "  i386        Disassemble in 32bit mode\n"
-msgstr "生成 32 位 i386 代码"
+msgstr "  i386        在 32 位模式下反汇编\n"
 
 #: i386-dis.c:12585
 #, c-format
@@ -1067,7 +1028,7 @@ msgstr "  intel       用 Intel 语法显示指令\n"
 
 #: i386-dis.c:13150
 msgid "64-bit address is disabled"
-msgstr ""
+msgstr "64 位地址已禁用"
 
 #: i386-gen.c:683 ia64-gen.c:306
 #, c-format
@@ -1116,9 +1077,9 @@ msgid "CpuMax != %d!\n"
 msgstr ""
 
 #: i386-gen.c:1496
-#, fuzzy, c-format
+#, c-format
 msgid "%d unused bits in i386_cpu_flags.\n"
-msgstr "%d 未使用的钻头在 i386_cpu_flags。"
+msgstr ""
 
 #: i386-gen.c:1503
 #, fuzzy, c-format
@@ -1241,7 +1202,7 @@ msgstr "W 关键字非法，在 FR 操作数槽位中。"
 #. Invalid offset present.
 #: ip2k-asm.c:105
 msgid "offset(IP) is not a valid form"
-msgstr ""
+msgstr "偏移量（IP）不是合法格式"
 
 #. Found something there in front of (DP) but it's out
 #. of range.
@@ -1635,12 +1596,12 @@ msgstr "%s：未知的重定位类型 %d"
 #: msp430-dis.c:59
 #, c-format
 msgid "Warning: disassembly unreliable - not enough bytes available"
-msgstr ""
+msgstr "警告：反汇编不可靠 - 没有足够的可用字节"
 
 #: msp430-dis.c:65
 #, c-format
 msgid "Error: read from memory failed"
-msgstr ""
+msgstr "错误：从内存读取失败"
 
 #: msp430-dis.c:499
 #, fuzzy
@@ -1707,10 +1668,8 @@ msgstr ""
 "下列 PPC 特定的反汇编器选项在使用 -M 开关时可用（使用逗号分隔多个选项）：\n"
 
 #: ppc-opc.c:992 ppc-opc.c:1015 ppc-opc.c:1040 ppc-opc.c:1069
-#, fuzzy
-#| msgid "Bad register name"
 msgid "invalid register"
-msgstr "%q+D的寄存器名无效"
+msgstr "无效的寄存器"
 
 #: ppc-opc.c:1317 ppc-opc.c:1347
 msgid "invalid conditional option"
@@ -1766,9 +1725,8 @@ msgid "invalid register operand when updating"
 msgstr ""
 
 #: ppc-opc.c:1989
-#, fuzzy
 msgid "illegal immediate value"
-msgstr "立即数"
+msgstr "非法的立即数"
 
 #: ppc-opc.c:2136
 #, fuzzy

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: man-db-manpages-2.7.6.1\n"
 "POT-Creation-Date: 2016-12-11 13:52+0000\n"
-"PO-Revision-Date: 2017-11-17 08:57+0800\n"
+"PO-Revision-Date: 2017-11-25 20:25+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -1110,7 +1110,7 @@ msgstr "B<-e\\ >I<sub-extension>,\\ B<--extension=>I<sub-extension>"
 #. type: Plain text
 #: ../../man/man1/man.man1:784
 msgid "Some systems incorporate large packages of manual pages, such as those that accompany the B<Tcl> package, into the main manual page hierarchy.  To get around the problem of having two manual pages with the same name such as B<exit>(3), the B<Tcl> pages were usually all assigned to section B<l>.  As this is unfortunate, it is now possible to put the pages in the correct section, and to assign a specific `extension' to them, in this case, B<exit>(3tcl).  Under normal operation, B<%man%> will display B<exit>(3)  in preference to B<exit>(3tcl).  To negotiate this situation and to avoid having to know which section the page you require resides in, it is now possible to give B<%man%> a I<sub-extension> string indicating which package the page must belong to.  Using the above example, supplying the option B<-e\\ tcl> to B<%man%> will restrict the search to pages having an extension of B<*tcl>."
-msgstr "某些系统包含大量的手册页包，例如某些系统将 B<Tcl> (手册)包并入主手册页层次目录。为避免两个手册页重名，如 B<exit>(3)，B<Tcl> 手册页通常都归于 B<l> 章节。为解决这一不便，现在可以将页面放在正确的节，分配给它们一个特定的“扩展(extension”即可；这个例子中，就是 B<exit>(3tcl>。正常操作时，B<%man%> 会优先显示 B<exit>(3) 而不是 B<exit>(3tcl>。为协调这一状况并避免要记住所需手册页属于哪个章节，现在可以给 B<%man%> 指定一个 I<sub-extension>字符串，指示该手册页必须属于哪个包。对于上面的例子，给 B<%man%> 加上 B<-e\\ tcl> 选项，就能限制只搜索带有 B<*tcl> 扩展的页面。"
+msgstr "某些系统包含大量的手册页包，例如某些系统将 B<Tcl> (手册)包并入主手册页层次目录。为避免两个手册页重名，如 B<exit>(3)，B<Tcl> 手册页通常都归于 B<l> 章节。为解决这一不便，现在可以将页面放在正确的节，分配给它们一个特定的“扩展(extension”即可；这个例子中，就是 B<exit>(3tcl)。正常操作时，B<%man%> 会优先显示 B<exit>(3) 而不是 B<exit>(3tcl)。为协调这一状况并避免要记住所需手册页属于哪个章节，现在可以给 B<%man%> 指定一个 I<sub-extension>字符串，指示该手册页必须属于哪个包。对于上面的例子，给 B<%man%> 加上 B<-e\\ tcl> 选项，就能限制只搜索带有 B<*tcl> 扩展的页面。"
 
 #. type: Plain text
 #: ../../man/man1/man.man1:788

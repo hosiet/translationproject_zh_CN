@@ -1,5 +1,5 @@
 # Simplified Chinese Translation.
-# Copyright � 2000-2002
+# Copyright (C) 2000-2002
 # Wang Li <charle@linux.net.cn>, 2002
 #
 msgid ""
@@ -14886,3 +14886,4 @@ msgstr "未知的错误"
 # camlibs/polaroid/pdc700.c:175
 #~ msgid "XGA (1024x768"
 #~ msgstr "XGA (1024x768"
+

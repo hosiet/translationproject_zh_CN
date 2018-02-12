@@ -2,14 +2,15 @@
 # Copyright (C) 2015 Free Software Foundation, Inc.
 # This file is distributed under the same license as the guix package.
 # Mingye Wang <arthur200126@gmail.com>, 2016.
+# Boyuan Yang <073plan@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: guix 0.9.1\n"
+"Project-Id-Version: guix 0.14.0\n"
 "Report-Msgid-Bugs-To: ludo@gnu.org\n"
 "POT-Creation-Date: 2017-11-28 08:56+0100\n"
-"PO-Revision-Date: 2016-04-27 20:31-0400\n"
-"Last-Translator: Mingye Wang (Arthur2e5) <arthur200126@gmail.com>\n"
+"PO-Revision-Date: 2018-02-12 16:47+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -17,13 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: gnu.scm:82
-#, fuzzy, scheme-format
-#| msgid "~a: patch not found"
+#, scheme-format
 msgid "module ~a not found"
-msgstr "~a: 未找到补丁"
+msgstr "未找到模块 ~a"
 
 #: gnu.scm:100
 msgid ""
@@ -423,16 +423,15 @@ msgid ""
 msgstr ""
 
 #: guix/scripts/build.scm:508 guix/scripts/download.scm:83
-#: guix/scripts/package.scm:425 guix/scripts/gc.scm:74
-#: guix/scripts/hash.scm:59 guix/scripts/import.scm:92
-#: guix/scripts/import/cran.scm:47 guix/scripts/pull.scm:110
-#: guix/scripts/substitute.scm:889 guix/scripts/system.scm:870
-#: guix/scripts/lint.scm:1090 guix/scripts/publish.scm:94
-#: guix/scripts/edit.scm:44 guix/scripts/size.scm:243
-#: guix/scripts/graph.scm:432 guix/scripts/challenge.scm:241
-#: guix/scripts/copy.scm:122 guix/scripts/pack.scm:349
-#: guix/scripts/weather.scm:156 guix/scripts/container.scm:33
-#: guix/scripts/container/exec.scm:43
+#: guix/scripts/package.scm:425 guix/scripts/gc.scm:74 guix/scripts/hash.scm:59
+#: guix/scripts/import.scm:92 guix/scripts/import/cran.scm:47
+#: guix/scripts/pull.scm:110 guix/scripts/substitute.scm:889
+#: guix/scripts/system.scm:870 guix/scripts/lint.scm:1090
+#: guix/scripts/publish.scm:94 guix/scripts/edit.scm:44
+#: guix/scripts/size.scm:243 guix/scripts/graph.scm:432
+#: guix/scripts/challenge.scm:241 guix/scripts/copy.scm:122
+#: guix/scripts/pack.scm:349 guix/scripts/weather.scm:156
+#: guix/scripts/container.scm:33 guix/scripts/container/exec.scm:43
 msgid ""
 "\n"
 "  -h, --help             display this help and exit"
@@ -441,16 +440,15 @@ msgstr ""
 "  -h, --help                 显示这份说明然后离开"
 
 #: guix/scripts/build.scm:510 guix/scripts/download.scm:85
-#: guix/scripts/package.scm:427 guix/scripts/gc.scm:76
-#: guix/scripts/hash.scm:61 guix/scripts/import.scm:94
-#: guix/scripts/import/cran.scm:49 guix/scripts/pull.scm:112
-#: guix/scripts/substitute.scm:891 guix/scripts/system.scm:872
-#: guix/scripts/lint.scm:1094 guix/scripts/publish.scm:96
-#: guix/scripts/edit.scm:46 guix/scripts/size.scm:245
-#: guix/scripts/graph.scm:434 guix/scripts/challenge.scm:243
-#: guix/scripts/copy.scm:124 guix/scripts/pack.scm:351
-#: guix/scripts/weather.scm:158 guix/scripts/container.scm:35
-#: guix/scripts/container/exec.scm:45
+#: guix/scripts/package.scm:427 guix/scripts/gc.scm:76 guix/scripts/hash.scm:61
+#: guix/scripts/import.scm:94 guix/scripts/import/cran.scm:49
+#: guix/scripts/pull.scm:112 guix/scripts/substitute.scm:891
+#: guix/scripts/system.scm:872 guix/scripts/lint.scm:1094
+#: guix/scripts/publish.scm:96 guix/scripts/edit.scm:46
+#: guix/scripts/size.scm:245 guix/scripts/graph.scm:434
+#: guix/scripts/challenge.scm:243 guix/scripts/copy.scm:124
+#: guix/scripts/pack.scm:351 guix/scripts/weather.scm:158
+#: guix/scripts/container.scm:35 guix/scripts/container/exec.scm:45
 msgid ""
 "\n"
 "  -V, --version          display version information and exit"
@@ -538,7 +536,7 @@ msgstr ""
 #: guix/scripts/download.scm:161
 #, scheme-format
 msgid "~a: download failed~%"
-msgstr ""
+msgstr "~a：下载失败~%"
 
 #: guix/scripts/package.scm:112
 #, scheme-format
@@ -595,7 +593,7 @@ msgstr[0] ""
 #: guix/scripts/package.scm:313
 #, scheme-format
 msgid "package '~a' no longer exists~%"
-msgstr ""
+msgstr "软件包“~a”已不再存在~%"
 
 #: guix/scripts/package.scm:351
 #, scheme-format
@@ -708,7 +706,7 @@ msgid ""
 "      --verbose          produce verbose output"
 msgstr ""
 "\n"
-"      --verbose          生成详细啰嗦的输出"
+"      --verbose          生成详细的输出"
 
 #: guix/scripts/package.scm:410
 msgid ""
@@ -1052,19 +1050,17 @@ msgstr ""
 #: guix/scripts/pull.scm:218
 #, scheme-format
 msgid "please upgrade Guile-Git~%"
-msgstr ""
+msgstr "请升级 Guile-Git~%"
 
 #: guix/scripts/pull.scm:226
-#, fuzzy, scheme-format
-#| msgid "~a: error: ~a~%"
+#, scheme-format
 msgid "Git error ~a~%"
-msgstr "~a：错误：~a~%"
+msgstr "Git 错误 ~a~%"
 
 #: guix/scripts/pull.scm:228
-#, fuzzy, scheme-format
-#| msgid "~a: error: ~a~%"
+#, scheme-format
 msgid "Git error: ~a~%"
-msgstr "~a：错误：~a~%"
+msgstr "Git 错误：~a~%"
 
 #: guix/scripts/pull.scm:262
 #, scheme-format
@@ -1532,7 +1528,7 @@ msgstr ""
 #: guix/scripts/system.scm:959
 #, scheme-format
 msgid "no configuration file specified~%"
-msgstr ""
+msgstr "未指定配置文件~%"
 
 #: guix/scripts/system.scm:1057
 #, scheme-format
@@ -1565,7 +1561,7 @@ msgstr ""
 
 #: guix/scripts/lint.scm:162
 msgid "description should not be empty"
-msgstr ""
+msgstr "描述不应为空"
 
 #: guix/scripts/lint.scm:172
 msgid "Texinfo markup in description is invalid"
@@ -1596,10 +1592,9 @@ msgid ""
 msgstr ""
 
 #: guix/scripts/lint.scm:236
-#, fuzzy, scheme-format
-#| msgid "ambiguous package specification `~a'~%"
+#, scheme-format
 msgid "invalid description: ~s"
-msgstr "含糊的软件包规范 `~a'~%"
+msgstr "无效的描述：~s"
 
 #: guix/scripts/lint.scm:281
 #, scheme-format
@@ -1679,16 +1674,16 @@ msgstr ""
 #: guix/scripts/lint.scm:562
 #, scheme-format
 msgid "TLS certificate error: ~a"
-msgstr ""
+msgstr "TLS 证书错误：~a"
 
 #: guix/scripts/lint.scm:583
 msgid "invalid value for home page"
-msgstr ""
+msgstr "无效的主页值"
 
 #: guix/scripts/lint.scm:586
 #, scheme-format
 msgid "invalid home page URL: ~s"
-msgstr ""
+msgstr "无效的主页 URL：~s"
 
 #: guix/scripts/lint.scm:606
 msgid "file names of patches should start with the package name"
@@ -1729,7 +1724,7 @@ msgstr ""
 
 #: guix/scripts/lint.scm:783
 msgid "invalid license field"
-msgstr ""
+msgstr "无效的许可证字段"
 
 #: guix/scripts/lint.scm:799
 #, scheme-format
@@ -1744,7 +1739,7 @@ msgstr ""
 #: guix/scripts/lint.scm:814
 #, scheme-format
 msgid "~a: TLS certificate error: ~a"
-msgstr ""
+msgstr "~a：TLS 证书错误：~a"
 
 #: guix/scripts/lint.scm:829
 msgid "while retrieving CVE vulnerabilities"
@@ -1763,7 +1758,7 @@ msgstr ""
 #: guix/scripts/lint.scm:881
 #, scheme-format
 msgid "can be upgraded to ~a"
-msgstr ""
+msgstr "可升级至 ~a"
 
 #: guix/scripts/lint.scm:896
 #, scheme-format
@@ -2136,10 +2131,9 @@ msgid "~a: unknown node type~%"
 msgstr "~a: 未知节点类型~%"
 
 #: guix/scripts/graph.scm:361
-#, fuzzy, scheme-format
-#| msgid "~a: unknown action~%"
+#, scheme-format
 msgid "~a: unknown backend~%"
-msgstr "~a：未知操作~%"
+msgstr "~a：未知后端~%"
 
 #: guix/scripts/graph.scm:365
 msgid "The available node types are:\n"
@@ -2344,10 +2338,9 @@ msgid ""
 msgstr ""
 
 #: guix/scripts/pack.scm:390
-#, fuzzy, scheme-format
-#| msgid "~A: unknown package~%"
+#, scheme-format
 msgid "~a: unknown pack format"
-msgstr "~A: 未知包~%"
+msgstr ""
 
 #: guix/scripts/weather.scm:74
 msgid "computing ~h package derivations for ~a...~%"
@@ -2599,7 +2592,7 @@ msgstr ""
 
 #: guix/ui.scm:395
 msgid "the Guix authors\n"
-msgstr ""
+msgstr "Guix 作者\n"
 
 #: guix/ui.scm:396
 #, fuzzy
@@ -2630,7 +2623,7 @@ msgid ""
 msgstr ""
 "\n"
 "报告程序缺陷到：~a。\n"
-"报告翻译错误到：https://translationproject.org/teams"
+"报告简体中文翻译错误到：https://translationproject.org/team/zh_CN.html ."
 
 #: guix/ui.scm:410
 #, scheme-format
@@ -2913,7 +2906,7 @@ msgstr ""
 #: guix/ui.scm:1474
 #, scheme-format
 msgid "guix: unrecognized option '~a'~%"
-msgstr ""
+msgstr "guix: 无法识别的选项“~a”~%"
 
 #: guix/http-client.scm:269
 #, scheme-format
@@ -3035,7 +3028,7 @@ msgstr ""
 
 #: nix/nix-daemon/guix-daemon.cc:113
 msgid "URLS"
-msgstr "网址们"
+msgstr "网址"
 
 #: nix/nix-daemon/guix-daemon.cc:114
 msgid "use URLS as the default list of substitute providers"
@@ -3047,7 +3040,7 @@ msgstr ""
 
 #: nix/nix-daemon/guix-daemon.cc:118
 msgid "cache build failures"
-msgstr ""
+msgstr "对构建失败进行缓存"
 
 #: nix/nix-daemon/guix-daemon.cc:120
 msgid "build each derivation N times in a row"
@@ -3055,11 +3048,11 @@ msgstr ""
 
 #: nix/nix-daemon/guix-daemon.cc:122
 msgid "do not keep build logs"
-msgstr ""
+msgstr "不要保留构建日志"
 
 #: nix/nix-daemon/guix-daemon.cc:124
 msgid "disable compression of the build logs"
-msgstr ""
+msgstr "禁用构建日志压缩"
 
 #: nix/nix-daemon/guix-daemon.cc:129
 msgid "disable automatic file \"deduplication\" in the store"

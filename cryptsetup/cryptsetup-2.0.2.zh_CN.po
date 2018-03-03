@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the cryptsetup package.
 # Mingcong Bai <jeffbai@aosc.xyz>, 2015.
 # Mingye Wang <arthur200126@gmail.com>, 2015.
+# Boyuan Yang <073plan@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cryptsetup 1.7.1\n"
+"Project-Id-Version: cryptsetup 2.0.2\n"
 "Report-Msgid-Bugs-To: dm-crypt@saout.de\n"
 "POT-Creation-Date: 2018-03-01 15:09+0100\n"
-"PO-Revision-Date: 2016-04-27 20:38-0400\n"
-"Last-Translator: Mingye Wang (Arthur2e5) <arthur200126@gmail.com>\n"
+"PO-Revision-Date: 2018-03-02 17:44+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 2.0.6\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: lib/libdevmapper.c:331
@@ -29,10 +30,8 @@ msgid "Cannot initialize device-mapper. Is dm_mod kernel module loaded?\n"
 msgstr "无法初始化设备映射器。dm_mod 内核模块装载了吗？\n"
 
 #: lib/libdevmapper.c:935
-#, fuzzy
-#| msgid "Requested LUKS hash %s is not supported.\n"
 msgid "Requested deferred flag is not supported.\n"
-msgstr "不支持请求的 LUKS 哈希 %s。\n"
+msgstr "不支持请求的推迟（deferred）标记。\n"
 
 #: lib/libdevmapper.c:1000
 #, c-format
@@ -40,34 +39,24 @@ msgid "DM-UUID for device %s was truncated.\n"
 msgstr "设备 %s 的 DM-UUID 被截断。\n"
 
 #: lib/libdevmapper.c:1220
-#, fuzzy
-#| msgid "Requested dmcrypt performance options are not supported.\n"
 msgid "Requested dm-crypt performance options are not supported.\n"
-msgstr "不支持请求的 dmcrypt 性能选项。\n"
+msgstr "不支持请求的 dm-crypt 性能选项。\n"
 
 #: lib/libdevmapper.c:1226
-#, fuzzy
-#| msgid "Requested dmcrypt performance options are not supported.\n"
 msgid "Requested dm-verity data corruption handling options are not supported.\n"
-msgstr "不支持请求的 dmcrypt 性能选项。\n"
+msgstr "不支持请求的 dm-verity 数据损坏处理选项。\n"
 
 #: lib/libdevmapper.c:1230
-#, fuzzy
-#| msgid "Requested dmcrypt performance options are not supported.\n"
 msgid "Requested dm-verity FEC options are not supported.\n"
-msgstr "不支持请求的 dmcrypt 性能选项。\n"
+msgstr "不支持请求的 dm-verity FEC 选项。\n"
 
 #: lib/libdevmapper.c:1234
-#, fuzzy
-#| msgid "Requested dmcrypt performance options are not supported.\n"
 msgid "Requested data integrity options are not supported.\n"
-msgstr "不支持请求的 dmcrypt 性能选项。\n"
+msgstr "不支持请求的数据完整性选项。\n"
 
 #: lib/libdevmapper.c:1236
-#, fuzzy
-#| msgid "Requested dmcrypt performance options are not supported.\n"
 msgid "Requested sector_size option is not supported.\n"
-msgstr "不支持请求的 dmcrypt 性能选项。\n"
+msgstr "不支持请求的 sector_size 选项。\n"
 
 #: lib/random.c:80
 msgid ""
@@ -95,10 +84,8 @@ msgid "Unknown RNG quality requested.\n"
 msgstr "未知的随机数生成器质量请求。\n"
 
 #: lib/random.c:218
-#, fuzzy
-#| msgid "Error %d reading from RNG: %s\n"
 msgid "Error reading from RNG.\n"
-msgstr "从 RNG 读取错误 %d: %s\n"
+msgstr "从 RNG 读取时出错。\n"
 
 #: lib/setup.c:200
 msgid "Cannot initialize crypto RNG backend.\n"
@@ -127,10 +114,8 @@ msgid "This operation is supported only for LUKS device.\n"
 msgstr "此操作只适用 LUKS 设备。\n"
 
 #: lib/setup.c:334
-#, fuzzy
-#| msgid "This operation is supported only for LUKS device.\n"
 msgid "This operation is supported only for LUKS2 device.\n"
-msgstr "此操作只适用 LUKS 设备。\n"
+msgstr "此操作只适用 LUKS2 设备。\n"
 
 #: lib/setup.c:379
 msgid "All key slots full.\n"
@@ -177,12 +162,9 @@ msgstr "无效的密钥大小。\n"
 msgid "UUID is not supported for this crypt type.\n"
 msgstr "此加密类型不支持 UUID。\n"
 
-#: lib/setup.c:1353 lib/setup.c:1493 src/cryptsetup.c:960
-#: src/cryptsetup.c:2418
-#, fuzzy
-#| msgid "Cannot read reencryption log file.\n"
+#: lib/setup.c:1353 lib/setup.c:1493 src/cryptsetup.c:960 src/cryptsetup.c:2418
 msgid "Unsupported encryption sector size.\n"
-msgstr "无法读取重加密日志文件。\n"
+msgstr "不支持的加密扇区大小。\n"
 
 #: lib/setup.c:1399 lib/setup.c:1487
 msgid "Can't format LUKS without device.\n"
@@ -223,16 +205,14 @@ msgid "Cannot format integrity for device %s.\n"
 msgstr "无法写入设备 %s。\n"
 
 #: lib/setup.c:1626
-#, fuzzy, c-format
-#| msgid "Cannot format device %s which is still in use.\n"
+#, c-format
 msgid "Cannot format device %s in use.\n"
 msgstr "无法格式化正在使用的设备 %s。\n"
 
 #: lib/setup.c:1633
-#, fuzzy, c-format
-#| msgid "Cannot read device %s.\n"
+#, c-format
 msgid "Cannot format device %s\n"
-msgstr "无法读取设备 %s.\n"
+msgstr "无法格式化设备 %s\n"
 
 #: lib/setup.c:1656
 msgid "Can't format LOOPAES without device.\n"
@@ -467,12 +447,8 @@ msgid "Failed to open key file.\n"
 msgstr "打开 (open) 密钥文件失败。\n"
 
 #: lib/utils.c:426
-#, fuzzy
-#| msgid "Cannot read keyfile %s.\n"
 msgid "Cannot read keyfile from a terminal.\n"
-msgstr ""
-"无法读取密钥文件 %s。\n"
-"\n"
+msgstr "无法从终端读取密钥文件 %s。\n"
 
 # stat() 主要就是出来一个各种文件信息……
 #: lib/utils.c:443
@@ -542,7 +518,7 @@ msgstr "设备 %s 太小。\n"
 #: lib/utils_pbkdf.c:74
 #, c-format
 msgid "Unknown PBKDF type %s.\n"
-msgstr ""
+msgstr "未知的 PBKDF 类型 %s。\n"
 
 #: lib/utils_pbkdf.c:85
 #, fuzzy
@@ -652,10 +628,9 @@ msgid "IO error while decrypting keyslot.\n"
 msgstr "解密密钥槽时发生输入输出错误。\n"
 
 #: lib/luks1/keymanage.c:128
-#, fuzzy, c-format
-#| msgid "Device %s is too small. (LUKS requires at least %<PRIu64> bytes.)\n"
+#, c-format
 msgid "Device %s is too small. (LUKS1 requires at least %<PRIu64> bytes.)\n"
-msgstr "设备 %s  过小。（LUKS 需要至少 %<PRIu64> 字节。）\n"
+msgstr "设备 %s 过小。（LUKS1 需要至少 %<PRIu64> 字节。）\n"
 
 #: lib/luks1/keymanage.c:149 lib/luks1/keymanage.c:157
 #: lib/luks1/keymanage.c:169 lib/luks1/keymanage.c:180
@@ -773,10 +748,8 @@ msgid "Writing LUKS header to disk.\n"
 msgstr "正在将 LUKS 标头写入磁盘。\n"
 
 #: lib/luks1/keymanage.c:471
-#, fuzzy
-#| msgid "Repair failed."
 msgid "Repair failed.\n"
-msgstr "修复失败。"
+msgstr "修复失败。\n"
 
 #: lib/luks1/keymanage.c:493
 #, c-format
@@ -970,7 +943,7 @@ msgstr "为 VERITY 设备提供的大小指标无效。\n"
 
 #: lib/verity/verity_hash.c:293
 msgid "Hash area overflow.\n"
-msgstr ""
+msgstr "哈希区域溢出。\n"
 
 #: lib/verity/verity_hash.c:370
 msgid "Verification of data area failed.\n"
@@ -1270,7 +1243,7 @@ msgstr "确定要尝试修复 LUKS 设备标头吗？"
 #: src/cryptsetup.c:887 src/cryptsetup.c:968 src/cryptsetup.c:991
 #: src/cryptsetup.c:1476
 msgid "Operation aborted.\n"
-msgstr ""
+msgstr "操作中止。\n"
 
 #: src/cryptsetup.c:902 src/integritysetup.c:140
 msgid ""
@@ -2428,7 +2401,7 @@ msgstr ""
 
 #: src/integritysetup.c:494
 msgid "Sector size"
-msgstr ""
+msgstr "扇区大小"
 
 #: src/integritysetup.c:495
 msgid "Buffers size"
@@ -2831,7 +2804,7 @@ msgstr "命令成功。\n"
 
 #: src/utils_tools.c:187
 msgid "wrong or missing parameters"
-msgstr ""
+msgstr "错误或缺失的参数"
 
 #: src/utils_tools.c:189
 #, fuzzy
@@ -2840,20 +2813,16 @@ msgid "no permission or bad passphrase"
 msgstr "输入任意密码："
 
 #: src/utils_tools.c:191
-#, fuzzy
-#| msgid "Cannot unlock memory.\n"
 msgid "out of memory"
-msgstr "无法解锁内存。\n"
+msgstr "内存耗尽"
 
 #: src/utils_tools.c:193
 msgid "wrong device or file specified"
 msgstr ""
 
 #: src/utils_tools.c:195
-#, fuzzy
-#| msgid "Device %s already exists.\n"
 msgid "device already exists or device is busy"
-msgstr "设备 %s 已存在。\n"
+msgstr "设备已存在或设备正忙"
 
 #: src/utils_tools.c:197
 msgid "unknown error"

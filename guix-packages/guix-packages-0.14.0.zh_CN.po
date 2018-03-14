@@ -5,10 +5,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: guix 0.14.0\n"
+"Project-Id-Version: guix-packages 0.14.0\n"
 "Report-Msgid-Bugs-To: ludo@gnu.org\n"
 "POT-Creation-Date: 2017-11-28 08:56+0100\n"
-"PO-Revision-Date: 2018-03-04 23:19+0800\n"
+"PO-Revision-Date: 2018-03-05 00:15+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -47,6 +47,9 @@ msgid ""
 "documents written in the UTF-8 encoding and its ability to use multiple\n"
 "dictionaries, including personal ones."
 msgstr ""
+"Aspell 是一款拼写检查器，它既可作为库使用，也可作为独立程序运行。  其重要\n"
+"功能包括对 UTF-8 编写的文档的完整支持以及对多个词典，包括自定义词典在内的支"
+"持。"
 
 #: gnu/packages/aspell.scm:114
 msgid "This package provides a dictionary for the GNU Aspell spell checker."
@@ -60,11 +63,11 @@ msgstr ""
 
 #: gnu/packages/aspell.scm:303
 msgid "Hunspell dictionary for English"
-msgstr ""
+msgstr "英语的 Hunspell 词典"
 
 #: gnu/packages/aspell.scm:307
 msgid "Hunspell dictionary for Australian English"
-msgstr ""
+msgstr "澳大利亚英语的 Hunspell 词典"
 
 #: gnu/packages/aspell.scm:311
 msgid "Hunspell dictionary for Canadian English"
@@ -351,7 +354,7 @@ msgstr ""
 
 #: gnu/packages/audio.scm:1125
 msgid "Signal processing language"
-msgstr ""
+msgstr "信号处理语言"
 
 #: gnu/packages/audio.scm:1127
 msgid "Faust is a programming language for realtime audio signal processing."
@@ -542,7 +545,7 @@ msgstr ""
 
 #: gnu/packages/audio.scm:1857
 msgid "C++ libraries for LV2 plugins"
-msgstr ""
+msgstr "LV2 插件的 C++ 库"
 
 #: gnu/packages/audio.scm:1859
 msgid ""
@@ -553,7 +556,7 @@ msgstr ""
 
 #: gnu/packages/audio.scm:1900
 msgid "3D audio API"
-msgstr ""
+msgstr "3D 音频 API"
 
 #: gnu/packages/audio.scm:1902
 msgid ""
@@ -752,7 +755,7 @@ msgstr ""
 
 #: gnu/packages/audio.scm:2469
 msgid "Sound processing utility"
-msgstr ""
+msgstr "声音处理实用工具"
 
 #: gnu/packages/audio.scm:2471
 msgid ""
@@ -1028,7 +1031,7 @@ msgstr ""
 
 #: gnu/packages/backup.scm:347
 msgid "Tar-compatible archiver"
-msgstr ""
+msgstr "Tar-兼容的归档工具"
 
 #: gnu/packages/backup.scm:349
 msgid ""
@@ -1205,7 +1208,7 @@ msgstr ""
 
 #: gnu/packages/base.scm:196
 msgid "Managing tar archives"
-msgstr ""
+msgstr "管理 tar 归档"
 
 #: gnu/packages/base.scm:198
 msgid ""
@@ -1233,7 +1236,7 @@ msgstr ""
 
 #: gnu/packages/base.scm:243
 msgid "Comparing and merging files"
-msgstr ""
+msgstr "比较和合并文件"
 
 #: gnu/packages/base.scm:245
 msgid ""
@@ -1460,7 +1463,7 @@ msgstr ""
 
 #: gnu/packages/bittorrent.scm:342
 msgid "Universal download manager with GTK+ interface"
-msgstr ""
+msgstr "带有 GTK+ 界面的通用下载管理器"
 
 #: gnu/packages/bittorrent.scm:344
 msgid ""
@@ -1644,7 +1647,7 @@ msgstr ""
 
 #: gnu/packages/compression.scm:362
 msgid "General-purpose data compression"
-msgstr ""
+msgstr "通用数据压缩"
 
 #: gnu/packages/compression.scm:364
 msgid ""
@@ -2243,7 +2246,7 @@ msgstr ""
 
 #: gnu/packages/databases.scm:350
 msgid "Fast key-value storage library"
-msgstr ""
+msgstr "快速的键值对存储库"
 
 #: gnu/packages/databases.scm:352
 msgid ""
@@ -19671,7 +19674,7 @@ msgstr ""
 
 #: gnu/packages/web.scm:4272
 msgid "HTML5 compliant parsing library"
-msgstr ""
+msgstr "兼容 HTML5 的解析库"
 
 #: gnu/packages/web.scm:4274
 msgid ""
@@ -19787,7 +19790,7 @@ msgstr ""
 
 #: gnu/packages/web.scm:4704
 msgid "Web browser"
-msgstr ""
+msgstr "网页浏览器"
 
 #: gnu/packages/web.scm:4706
 msgid ""

@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: nano 2.9.4-pre1\n"
 "Report-Msgid-Bugs-To: nano-devel@gnu.org\n"
 "POT-Creation-Date: 2018-03-02 10:41+0100\n"
-"PO-Revision-Date: 2018-03-14 10:35+0800\n"
+"PO-Revision-Date: 2018-03-14 19:17+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -256,10 +256,9 @@ msgid "Command to execute"
 msgstr "要执行的命令"
 
 #: src/files.c:1055
-#, fuzzy, c-format
-#| msgid "File to insert into new buffer [from %s] "
+#, c-format
 msgid "File to insert into new buffer [from %s]"
-msgstr "要插入新缓冲区的文件 [从%s] "
+msgstr "要插入新缓冲区的文件 [来自 %s]"
 
 #: src/files.c:1058
 #, c-format
@@ -275,10 +274,8 @@ msgid "Invalid operating directory\n"
 msgstr "无效的操作目录\n"
 
 #: src/files.c:1463
-#, fuzzy
-#| msgid "Failed to write backup file, continue saving? (Say N if unsure) "
 msgid "Failed to write backup file; continue saving? (Say N if unsure.) "
-msgstr "写入备份文件失败，继续保存吗？(如果不确定请输入N)"
+msgstr "写入备份文件失败；继续保存吗？(如果不确定请输入N)"
 
 #: src/files.c:1480
 msgid "Invalid backup directory\n"
@@ -373,10 +370,8 @@ msgid "File on disk has changed"
 msgstr "磁盘上的文件已改变"
 
 #: src/files.c:2227
-#, fuzzy
-#| msgid "File was modified since you opened it, continue saving ? "
 msgid "File was modified since you opened it; continue saving? "
-msgstr "在您打开文件后文件已被改变，是否继续保存？"
+msgstr "在您打开文件后文件已被改变；是否继续保存？"
 
 #: src/files.c:2646
 msgid "(more)"
@@ -446,7 +441,7 @@ msgstr "刷新"
 #. TRANSLATORS: Try to keep this string at most 12 characters.
 #: src/global.c:510
 msgid "WhereIs Next"
-msgstr "何处是下一个"
+msgstr "搜索下一个"
 
 #. TRANSLATORS: The next long series of strings are shortcut descriptions;
 #. * they are best kept shorter than 56 characters, but may be longer.
@@ -463,10 +458,8 @@ msgid "Close the current buffer / Exit from nano"
 msgstr "关闭当前缓冲区 / 离开 nano"
 
 #: src/global.c:520
-#, fuzzy
-#| msgid "Write the current file to disk"
 msgid "Write the current buffer (or the marked region) to disk"
-msgstr "写入当前文件至磁盘"
+msgstr "将当前缓冲区（或标记的区域）写入磁盘"
 
 #: src/global.c:522
 msgid "Insert another file into current buffer (or into new buffer)"
@@ -521,10 +514,8 @@ msgid "Go one screenful down"
 msgstr "向下跳转一屏"
 
 #: src/global.c:540
-#, fuzzy
-#| msgid "Cut the current line and store it in the cutbuffer"
 msgid "Cut current line (or marked region) and store it in cutbuffer"
-msgstr "剪切当前这行并存至剪贴板"
+msgstr "剪切当前行（或者标记的区域）并存至剪贴缓冲区"
 
 #: src/global.c:542
 msgid "Uncut from the cutbuffer into the current line"
@@ -551,16 +542,12 @@ msgid "Repeat the last search"
 msgstr "重复上次搜索"
 
 #: src/global.c:551
-#, fuzzy
-#| msgid "Mark text at the cursor position"
 msgid "Mark text starting from the cursor position"
-msgstr "标记游标所在文字"
+msgstr "标记游标所在位置开始的文本"
 
 #: src/global.c:553
-#, fuzzy
-#| msgid "Copy the current line and store it in the cutbuffer"
 msgid "Copy current line (or marked region) and store it in cutbuffer"
-msgstr "拷贝当前行至剪贴板"
+msgstr "复制当前行（或者标记的区域）并存至剪贴缓冲区"
 
 #: src/global.c:554
 msgid "Indent the current line (or marked lines)"
@@ -611,16 +598,12 @@ msgid "Go to end of current line"
 msgstr "跳至当前行尾"
 
 #: src/global.c:567
-#, fuzzy
-#| msgid "Go to previous line"
 msgid "Go to previous block of text"
-msgstr "跳至前一行"
+msgstr "跳至前一段文本"
 
 #: src/global.c:568
-#, fuzzy
-#| msgid "Go to next line"
 msgid "Go to next block of text"
-msgstr "跳至后一行"
+msgstr "跳至后一段文本"
 
 #: src/global.c:571
 msgid "Go to beginning of paragraph; then of previous paragraph"
@@ -679,16 +662,12 @@ msgid "Delete the character to the left of the cursor"
 msgstr "删除游标左侧的字符"
 
 #: src/global.c:596
-#, fuzzy
-#| msgid "Cut from cursor to end of line"
 msgid "Cut backward from cursor to word start"
-msgstr "从游标剪切至行尾"
+msgstr "从游标剪切至单词开始位置"
 
 #: src/global.c:598
-#, fuzzy
-#| msgid "Cut from cursor to end of line"
 msgid "Cut forward from cursor to next word start"
-msgstr "从游标剪切至行尾"
+msgstr "从游标剪切至下一个单词开始位置"
 
 #: src/global.c:600
 msgid "Cut from the cursor position to the end of the file"
@@ -711,16 +690,12 @@ msgid "Refresh (redraw) the current screen"
 msgstr "重新显示当前画面"
 
 #: src/global.c:613
-#, fuzzy
-#| msgid "Suspend the editor (if suspend is enabled)"
 msgid "Suspend the editor (if suspension is enabled)"
-msgstr "暂停编辑器(如果启用了暂停)"
+msgstr "挂起编辑器（如果启用了挂起功能）"
 
 #: src/global.c:615
-#, fuzzy
-#| msgid "Indent the current line"
 msgid "Try and complete the current word"
-msgstr "缩进当前行"
+msgstr "尝试补全当前单词"
 
 #: src/global.c:619
 msgid "Comment/uncomment the current line (or marked lines)"
@@ -827,26 +802,20 @@ msgid "Go to directory"
 msgstr "跳至目录"
 
 #: src/global.c:662
-#, fuzzy
-#| msgid "Invoke the spell checker, if available"
 msgid "Invoke the linter, if available"
-msgstr "尝试运行拼写检查"
+msgstr "尝试运行代码语法检查"
 
 #: src/global.c:663
-#, fuzzy
-#| msgid "Go to previous line"
 msgid "Go to previous linter msg"
-msgstr "跳至前一行"
+msgstr "跳至上一个 linter 信息"
 
 #: src/global.c:664
-#, fuzzy
-#| msgid "Go to next line"
 msgid "Go to next linter msg"
-msgstr "跳至后一行"
+msgstr "跳至下一个 linter 信息"
 
 #: src/global.c:666
 msgid "Invoke formatter, if available"
-msgstr "如果可用，调用格式化工具"
+msgstr "尝试运行文本格式化工具"
 
 #. TRANSLATORS: Try to keep the following strings at most 10 characters.
 #: src/global.c:681
@@ -880,10 +849,8 @@ msgid "To Linter"
 msgstr "跳行"
 
 #: src/global.c:775
-#, fuzzy
-#| msgid "DOS Format"
 msgid "Formatter"
-msgstr "DOS 格式"
+msgstr "格式化工具"
 
 #: src/global.c:781
 msgid "Cur Pos"
@@ -970,16 +937,12 @@ msgid "Scroll Down"
 msgstr "向下卷动"
 
 #: src/global.c:870
-#, fuzzy
-#| msgid "Prev Word"
 msgid "Prev Block"
-msgstr "前一个字"
+msgstr "上一段"
 
 #: src/global.c:872
-#, fuzzy
-#| msgid "Next Word"
 msgid "Next Block"
-msgstr "后一个字"
+msgstr "下一段"
 
 #: src/global.c:875
 msgid "Beg of Par"
@@ -1046,7 +1009,7 @@ msgstr "原本形式"
 
 #: src/global.c:952
 msgid "Suspend"
-msgstr "暂停"
+msgstr "挂起"
 
 #: src/global.c:956
 msgid "Indent Text"
@@ -1232,7 +1195,7 @@ msgstr "不从 DOS/Mac 格式转换"
 
 #: src/global.c:1428
 msgid "Suspension"
-msgstr "暂停"
+msgstr "挂起"
 
 #: src/global.c:1430
 msgid "Line numbering"
@@ -1431,23 +1394,21 @@ msgstr ""
 " "
 
 #: src/help.c:436
-#, fuzzy
-#| msgid ""
-#| "The bottom two lines show the most commonly used shortcuts in the editor.\n"
-#| "\n"
-#| " The notation for shortcuts is as follows: Control-key sequences are notated with a caret (^) symbol and can be entered either by using the Control (Ctrl) key or pressing the Escape (Esc) key twice.  Escape-key sequences are notated with the Meta (M-) symbol and can be entered using either the Esc, Alt, or Meta key depending on your keyboard setup.  "
 msgid ""
 "The bottom two lines show the most commonly used shortcuts in the editor.\n"
 "\n"
 " Shortcuts are written as follows: Control-key sequences are notated with a '^' and can be entered either by using the Ctrl key or pressing the Esc key twice.  Meta-key sequences are notated with 'M-' and can be entered using either the Alt, Cmd, or Esc key, depending on your keyboard setup.  "
-msgstr "快捷键的记号定义如下：控制键组(Control-key) 序列是以一个 \"帽子\" (caret, ^)符号来表示，它可以通过Ctrl键或是按两次Esc 键来输入。脱离键组(Escape-key) 序列是以\"中介\" (Meta, M) 符号表示，它可以依照您的键盘设定，利用Esc，Alt 或Meta 来输入。"
+msgstr ""
+"底部的两行显示了编辑器中最常用的快捷键。\n"
+"\n"
+"快捷键用如下方式进行表示：控制键序列使用一个“^”符号标记，它可以用 Ctrl 键或按 Esc 键两次的方式进行输入。Meta 键序列使用“M-”符号标记，它可以用 Alt、Cmd 或 Esc 键输入，具体取决于您的键盘设置。"
 
 #: src/help.c:443
 msgid ""
 "Also, pressing Esc twice and then typing a three-digit decimal number from 000 to 255 will enter the character with the corresponding value.  The following keystrokes are available in the main editor window.  Alternative keys are shown in parentheses:\n"
 "\n"
 msgstr ""
-"另外，按Esc 两次之后再键入从000 到255 之间的三位数字，则会输入该ASCII 码对应的字符。下列按键组合可用于主要编辑区，替代按键则显示于括号内“\n"
+"另外，按 Esc 两次之后再键入从 000 到 255 之间的三位数字，则会输入该 ASCII 码对应的字符。下列按键组合可用于主要编辑区，替代按键则显示于括号内：\n"
 "\n"
 
 #: src/help.c:475 src/help.c:556
@@ -1809,7 +1770,7 @@ msgstr "不要显示辅助区"
 
 #: src/nano.c:907
 msgid "Enable suspension"
-msgstr "启用暂停功能"
+msgstr "启用挂起功能"
 
 #: src/nano.c:909
 msgid "Enable soft line wrapping"
@@ -1872,7 +1833,7 @@ msgstr "使用\"fg\" 返回nano\n"
 
 #: src/nano.c:1272
 msgid "Suspension is not enabled"
-msgstr ""
+msgstr "挂起功能未启用"
 
 #: src/nano.c:1417
 msgid "enabled"
@@ -1884,26 +1845,26 @@ msgstr "已禁用"
 
 #: src/nano.c:1554
 msgid "Unbound key"
-msgstr ""
+msgstr "按键未绑定"
 
 #: src/nano.c:1557
 msgid "Unbindable key: M-["
-msgstr ""
+msgstr "不可绑定的按键：M-["
 
 #: src/nano.c:1559
 #, c-format
 msgid "Unbound key: M-%c"
-msgstr ""
+msgstr "按键未绑定：M-%c"
 
 #: src/nano.c:1561
 #, c-format
 msgid "Unbound key: ^%c"
-msgstr ""
+msgstr "按键未绑定：^%c"
 
 #: src/nano.c:1563
 #, c-format
 msgid "Unbound key: %c"
-msgstr ""
+msgstr "按键未绑定：%c"
 
 #: src/nano.c:2141 src/rcfile.c:1174
 #, c-format
@@ -1918,7 +1879,7 @@ msgstr "所要求的填满行数\"%s\" 无效"
 #: src/nano.c:2266
 #, c-format
 msgid "Type '%s -h' for a list of available options.\n"
-msgstr ""
+msgstr "输入“%s -h”以获取所有可用选项的列表。\n"
 
 #: src/nano.c:2584 src/search.c:796
 msgid "Invalid line or column number"
@@ -1999,19 +1960,16 @@ msgstr "缺少键名称"
 
 #: src/rcfile.c:364 src/rcfile.c:375
 msgid "Key name is too short"
-msgstr ""
+msgstr "键名称过短"
 
 #: src/rcfile.c:385
-#, fuzzy
-#| msgid "keybindings must begin with \"^\", \"M\", or \"F\""
 msgid "Key name must begin with \"^\", \"M\", or \"F\""
-msgstr "键绑定必须以\"^\", \"M\" 或 \"F\" 开始"
+msgstr "键名称必须以“^”、“M”或“F”开始"
 
 #: src/rcfile.c:388
-#, fuzzy, c-format
-#| msgid "Requested tab size \"%s\" is invalid"
+#, c-format
 msgid "Key name %s is invalid"
-msgstr "所要求的制表符宽度%s 无效"
+msgstr "键名称 %s 无效"
 
 #: src/rcfile.c:397
 msgid "Must specify a function to bind the key to"
@@ -2039,10 +1997,9 @@ msgid "Function '%s' does not exist in menu '%s'"
 msgstr "功能“%s”在菜单“%s”中不存在"
 
 #: src/rcfile.c:468
-#, fuzzy, c-format
-#| msgid "Sorry, keystr \"%s\" is an illegal binding"
+#, c-format
 msgid "Sorry, keystroke \"%s\" may not be rebound"
-msgstr "对不起，键\"%s\" 属非法绑定"
+msgstr "对不起，按键“%s”无法重新绑定"
 
 #: src/rcfile.c:568
 #, c-format

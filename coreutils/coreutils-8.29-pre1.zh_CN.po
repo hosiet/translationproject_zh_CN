@@ -7,23 +7,21 @@
 # Funda Wang <fundawang@linux.net.cn>, 2004, 2005.
 # Ji ZhengYu <zhengyuji@gmail.com>, 2009.
 # Aron Xu <happyaron.xu@gmail.com>, 2009, 2010, 2011, 2015.
-# Boyuan Yang <073plan@gmail.com>, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: coreutils 8.23-pre2\n"
+"Project-Id-Version: coreutils 8.23-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
-"POT-Creation-Date: 2017-08-29 01:20-0700\n"
-"PO-Revision-Date: 2017-11-22 20:19+0800\n"
-"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
+"POT-Creation-Date: 2017-12-21 12:18+0000\n"
+"PO-Revision-Date: 2015-02-20 23:59+0800\n"
+"Last-Translator: Aron Xu <happyaron.xu@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 2.0.4\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: lib/argmatch.c:134
 #, c-format
@@ -45,10 +43,10 @@ msgstr "关闭文件时出错"
 
 #: lib/closeout.c:122 src/base64.c:139 src/base64.c:151 src/base64.c:157
 #: src/base64.c:198 src/base64.c:255 src/cat.c:187 src/cat.c:203 src/cat.c:287
-#: src/cksum.c:246 src/expand.c:150 src/expand.c:175 src/factor.c:2387
+#: src/cksum.c:251 src/expand.c:150 src/expand.c:175 src/factor.c:2387
 #: src/mktemp.c:339 src/od.c:968 src/paste.c:163 src/seq.c:287 src/shuf.c:590
 #: src/split.c:935 src/split.c:1189 src/split.c:1194 src/tail.c:1267
-#: src/tail.c:1421 src/tail.c:2476 src/tr.c:1587 src/tr.c:1807 src/tr.c:1899
+#: src/tail.c:1421 src/tail.c:2483 src/tr.c:1587 src/tr.c:1807 src/tr.c:1899
 #: src/unexpand.c:234 src/unexpand.c:250
 #, c-format
 msgid "write error"
@@ -128,8 +126,10 @@ msgid "multiplexed file"
 msgstr "复用文件"
 
 #: lib/file-type.c:90
+#, fuzzy
+#| msgid "weird file"
 msgid "named file"
-msgstr "命名文件"
+msgstr "古怪文件"
 
 #: lib/file-type.c:93
 msgid "network special file"
@@ -236,29 +236,34 @@ msgid "Unknown error"
 msgstr "未知错误"
 
 #: lib/getopt.c:278
-#, c-format
+#, fuzzy, c-format
+#| msgid "%s: option '-W %s' is ambiguous\n"
 msgid "%s: option '%s%s' is ambiguous\n"
-msgstr "%s：选项\"%s%s\"存在歧义\n"
+msgstr "%s：选项\"-W %s\"歧义\n"
 
 #: lib/getopt.c:284
-#, c-format
+#, fuzzy, c-format
+#| msgid "%s: option '%s' is ambiguous\n"
 msgid "%s: option '%s%s' is ambiguous; possibilities:"
-msgstr "%s：选项\"%s%s\"存在歧义；可能为："
+msgstr "%s：选项\"%s\"歧义\n"
 
 #: lib/getopt.c:319
-#, c-format
+#, fuzzy, c-format
+#| msgid "%s: unrecognized option '%c%s'\n"
 msgid "%s: unrecognized option '%s%s'\n"
-msgstr "%s：无法识别的选项\"%s%s\"\n"
+msgstr "%s：无法识别的选项\"%c%s\"\n"
 
 #: lib/getopt.c:345
-#, c-format
+#, fuzzy, c-format
+#| msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgid "%s: option '%s%s' doesn't allow an argument\n"
-msgstr "%s：选项\"%s%s\"不允许带参数\n"
+msgstr "%s：选项\"%c%s\"不允许带参数\n"
 
 #: lib/getopt.c:360
-#, c-format
+#, fuzzy, c-format
+#| msgid "%s: option '--%s' requires an argument\n"
 msgid "%s: option '%s%s' requires an argument\n"
-msgstr "%s：选项\"%s%s\"必须带参数\n"
+msgstr "%s：选项\"--%s\"必需带参数\n"
 
 #: lib/getopt.c:621
 #, c-format
@@ -315,7 +320,7 @@ msgstr "返回到初始工作目录失败"
 #. for your locale.
 #.
 #. If you don't know what to put here, please see
-#. <http://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. <https://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
 #. and use glyphs suitable for your language.
 #: lib/quotearg.c:362
 msgid "`"
@@ -330,8 +335,8 @@ msgstr "\""
 msgid "%s: end of file"
 msgstr "%s：文件结束"
 
-#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:794 src/od.c:952 src/tac.c:251
-#: src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:787
+#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:795 src/od.c:952
+#: src/tac.c:251 src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:787
 #, c-format
 msgid "%s: read error"
 msgstr "%s：读取出错"
@@ -365,8 +370,10 @@ msgid "Invalid back reference"
 msgstr "无效的后向引用"
 
 #: lib/regcomp.c:156
+#, fuzzy
+#| msgid "Unmatched [ or [^"
 msgid "Unmatched [, [^, [:, [., or [="
-msgstr "未匹配的 [、[^、[:、[. 或 [="
+msgstr "未匹配的[ 或[^"
 
 #: lib/regcomp.c:159
 msgid "Unmatched ( or \\("
@@ -404,7 +411,7 @@ msgstr "正则表达式过长"
 msgid "Unmatched ) or \\)"
 msgstr "未匹配的 ) 或 \\)"
 
-#: lib/regcomp.c:687
+#: lib/regcomp.c:689
 msgid "No previous regular expression"
 msgstr "缺少之前的正则表达式"
 
@@ -651,9 +658,16 @@ msgid "(C)"
 msgstr "(C)"
 
 #: lib/version-etc.c:86
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
+#| "This is free software: you are free to change and redistribute it.\n"
+#| "There is NO WARRANTY, to the extent permitted by law.\n"
+#| "\n"
 msgid ""
 "\n"
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
+"License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\n"
 "This is free software: you are free to change and redistribute it.\n"
 "There is NO WARRANTY, to the extent permitted by law.\n"
 "\n"
@@ -796,20 +810,24 @@ msgid "%s home page: <%s>\n"
 msgstr "%s 的主页：<%s>\n"
 
 #: lib/version-etc.c:253
-#, c-format
-msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+#, fuzzy, c-format
+#| msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
+msgid "%s home page: <https://www.gnu.org/software/%s/>\n"
 msgstr "%s 项目主页：<http://www.gnu.org/software/%s/>\n"
 
 #: lib/version-etc.c:256
-msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+#, fuzzy
+#| msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
+msgid "General help using GNU software: <https://www.gnu.org/gethelp/>\n"
 msgstr "GNU 软件一般性帮助：<http://www.gnu.org/gethelp/>\n"
 
 #: lib/xbinary-io.c:37
-#, c-format
+#, fuzzy, c-format
+#| msgid "failed to set the security context of %s to %s"
 msgid "failed to set file descriptor text/binary mode"
-msgstr "设置文件描述符文本/二进制模式失败"
+msgstr "设置%s 的安全环境为%s 失败"
 
-#: lib/xmemcoll.c:39 src/expr.c:1015
+#: lib/xmemcoll.c:39 src/expr.c:1026
 #, c-format
 msgid "string comparison failed"
 msgstr "字符串比较出现错误"
@@ -912,13 +930,13 @@ msgid "invalid wrap size"
 msgstr "无效的换行字符数：%s"
 
 #: src/base64.c:313 src/basename.c:176 src/comm.c:489 src/cp.c:622
-#: src/date.c:470 src/dircolors.c:449 src/du.c:1018 src/hostid.c:74
-#: src/hostname.c:113 src/id.c:190 src/install.c:985 src/join.c:970
-#: src/link.c:86 src/ln.c:551 src/logname.c:72 src/mknod.c:182 src/mv.c:448
-#: src/nproc.c:115 src/od.c:1865 src/ptx.c:2077 src/seq.c:619 src/shuf.c:491
-#: src/sort.c:4595 src/split.c:1553 src/tr.c:1762 src/tsort.c:561 src/tty.c:114
-#: src/uname.c:252 src/uniq.c:533 src/uniq.c:550 src/unlink.c:82
-#: src/uptime.c:253 src/users.c:147 src/wc.c:721 src/who.c:830 src/whoami.c:80
+#: src/date.c:470 src/dircolors.c:449 src/du.c:1018 src/hostid.c:79
+#: src/hostname.c:118 src/id.c:190 src/install.c:985 src/join.c:970
+#: src/link.c:91 src/ln.c:551 src/logname.c:77 src/mknod.c:182 src/mv.c:448
+#: src/nproc.c:115 src/od.c:1865 src/ptx.c:2082 src/seq.c:619 src/shuf.c:491
+#: src/sort.c:4595 src/split.c:1553 src/tr.c:1762 src/tsort.c:566
+#: src/tty.c:113 src/uname.c:252 src/uniq.c:533 src/uniq.c:550 src/unlink.c:87
+#: src/uptime.c:258 src/users.c:152 src/wc.c:721 src/who.c:830 src/whoami.c:85
 #, c-format
 msgid "extra operand %s"
 msgstr "额外的操作数 %s"
@@ -928,16 +946,17 @@ msgid "closing standard input"
 msgstr "关闭标准输入"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37 src/comm.c:39
-#: src/cp.c:58 src/csplit.c:45 src/cut.c:46 src/date.c:40 src/dd.c:45
-#: src/df.c:45 src/dirname.c:32 src/du.c:54 src/env.c:34 src/expand.c:49
-#: src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42 src/install.c:51
-#: src/ln.c:43 src/ls.c:130 src/mkdir.c:39 src/mkfifo.c:36 src/mknod.c:37
-#: src/mv.c:42 src/nice.c:40 src/nl.c:42 src/paste.c:53 src/pathchk.c:32
-#: src/pinky.c:38 src/printenv.c:44 src/printf.c:68 src/rm.c:41 src/rmdir.c:37
-#: src/stty.c:68 src/sum.c:39 src/tac.c:58 src/tail.c:73 src/tee.c:38
-#: src/touch.c:45 src/tty.c:45 src/uname.c:61 src/unexpand.c:50 src/uniq.c:43
-#: src/uptime.c:47 src/users.c:37 src/wc.c:51 src/who.c:51 src/yes.c:33
+#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37
+#: src/comm.c:39 src/cp.c:58 src/csplit.c:45 src/cut.c:46 src/date.c:40
+#: src/dd.c:46 src/df.c:45 src/dirname.c:32 src/du.c:54 src/env.c:34
+#: src/expand.c:49 src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42
+#: src/install.c:51 src/ln.c:43 src/ls.c:130 src/mkdir.c:39 src/mkfifo.c:36
+#: src/mknod.c:37 src/mv.c:42 src/nice.c:40 src/nl.c:42 src/paste.c:53
+#: src/pathchk.c:32 src/pinky.c:38 src/printenv.c:44 src/printf.c:68
+#: src/rm.c:41 src/rmdir.c:37 src/stty.c:68 src/sum.c:39 src/tac.c:58
+#: src/tail.c:73 src/tee.c:38 src/touch.c:45 src/tty.c:44 src/uname.c:61
+#: src/unexpand.c:50 src/uniq.c:43 src/uptime.c:47 src/users.c:37 src/wc.c:51
+#: src/who.c:51 src/yes.c:33
 msgid "David MacKenzie"
 msgstr "David MacKenzie"
 
@@ -984,11 +1003,11 @@ msgstr ""
 
 #: src/basename.c:170 src/chcon.c:536 src/chgrp.c:279 src/chmod.c:529
 #: src/chown.c:280 src/chroot.c:278 src/comm.c:481 src/csplit.c:1402
-#: src/dirname.c:116 src/expr.c:460 src/join.c:1160 src/link.c:78
-#: src/mkdir.c:252 src/mkfifo.c:130 src/mknod.c:171 src/nohup.c:109
+#: src/dirname.c:116 src/expr.c:454 src/join.c:1160 src/link.c:83
+#: src/mkdir.c:252 src/mkfifo.c:130 src/mknod.c:171 src/nohup.c:114
 #: src/pathchk.c:147 src/printf.c:693 src/readlink.c:145 src/realpath.c:237
-#: src/rm.c:322 src/rmdir.c:222 src/seq.c:613 src/sleep.c:119 src/stat.c:1638
-#: src/stdbuf.c:370 src/tr.c:1747 src/unlink.c:76
+#: src/rm.c:322 src/rmdir.c:222 src/seq.c:613 src/sleep.c:124 src/stat.c:1663
+#: src/stdbuf.c:370 src/tr.c:1747 src/unlink.c:81
 #, c-format
 msgid "missing operand"
 msgstr "缺少操作数"
@@ -1081,8 +1100,8 @@ msgstr ""
 msgid "cannot do ioctl on %s"
 msgstr "无法在 %s 上执行 ioctrl"
 
-#: src/cat.c:638 src/dd.c:2395 src/sort.c:417 src/tail.c:2413 src/tee.c:207
-#: src/yes.c:126
+#: src/cat.c:638 src/dd.c:2433 src/sort.c:417 src/tail.c:2420 src/tee.c:207
+#: src/yes.c:131
 #, c-format
 msgid "standard output"
 msgstr "标准输出"
@@ -1093,7 +1112,7 @@ msgid "%s: input file is output file"
 msgstr "%s：输入文件是输出文件"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/chcon.c:36 src/runcon.c:61
+#: src/chcon.c:36 src/runcon.c:57
 msgid "Russell Coker"
 msgstr "Russell Coker"
 
@@ -1106,7 +1125,7 @@ msgstr "Russell Coker"
 msgid "Jim Meyering"
 msgstr "Jim Meyering"
 
-#: src/chcon.c:100 src/runcon.c:230 src/runcon.c:261
+#: src/chcon.c:100 src/runcon.c:202 src/runcon.c:233
 #, c-format
 msgid "failed to create security context: %s"
 msgstr "创建安全环境失败：%s"
@@ -1116,8 +1135,8 @@ msgstr "创建安全环境失败：%s"
 msgid "failed to set %s security context component to %s"
 msgstr "设置%s 安全环境组件到%s 失败"
 
-#: src/chcon.c:156 src/chcon.c:547 src/copy.c:923 src/runcon.c:244
-#: src/stat.c:783
+#: src/chcon.c:156 src/chcon.c:547 src/copy.c:923 src/runcon.c:216
+#: src/stat.c:793
 #, c-format
 msgid "failed to get security context of %s"
 msgstr "无法取得%s 的安全环境"
@@ -1292,13 +1311,13 @@ msgid "-R -h requires -P"
 msgstr "-R -h 需要-P"
 
 #: src/chcon.c:538 src/chgrp.c:281 src/chmod.c:531 src/chown.c:282
-#: src/comm.c:483 src/csplit.c:1404 src/join.c:1162 src/link.c:80
+#: src/comm.c:483 src/csplit.c:1404 src/join.c:1162 src/link.c:85
 #: src/mknod.c:173 src/tr.c:1750
 #, c-format
 msgid "missing operand after %s"
 msgstr "%s 后缺少操作数"
 
-#: src/chcon.c:561 src/runcon.c:278
+#: src/chcon.c:561 src/runcon.c:250
 #, c-format
 msgid "invalid context: %s"
 msgstr "无效模式：%s"
@@ -1461,7 +1480,7 @@ msgstr ""
 
 #: src/chmod.c:397
 msgid "  -R, --recursive        change files and directories recursively\n"
-msgstr "  -R, --recursive        递归修改文件和目录\n"
+msgstr ""
 
 #: src/chmod.c:402
 #, fuzzy
@@ -1715,10 +1734,14 @@ msgid "no group specified for unknown uid: %d"
 msgstr "没有为未知 UID 指定组：%d"
 
 #: src/chroot.c:401
+#, fuzzy
+#| msgid "failed to set supplemental group(s)"
 msgid "failed to get supplemental groups"
-msgstr "获取附加组失败"
+msgstr "设置附加组失败"
 
 #: src/chroot.c:413
+#, fuzzy
+#| msgid "failed to set supplemental group(s)"
 msgid "failed to set supplemental groups"
 msgstr "设置附加组失败"
 
@@ -1730,7 +1753,7 @@ msgstr "设置组ID 失败"
 msgid "failed to set user-ID"
 msgstr "设置用户ID 失败"
 
-#: src/chroot.c:428 src/nohup.c:224 src/stdbuf.c:391 src/timeout.c:490
+#: src/chroot.c:428 src/nohup.c:229 src/stdbuf.c:391 src/timeout.c:519
 #, c-format
 msgid "failed to run command %s"
 msgstr "无法运行命令%s"
@@ -1740,12 +1763,12 @@ msgstr "无法运行命令%s"
 msgid "Q. Frank Xia"
 msgstr "Q. Frank Xia"
 
-#: src/cksum.c:211
+#: src/cksum.c:216
 #, c-format
 msgid "%s: file too long"
 msgstr "%s：文件太大"
 
-#: src/cksum.c:258
+#: src/cksum.c:263
 #, c-format
 msgid ""
 "Usage: %s [FILE]...\n"
@@ -1754,7 +1777,7 @@ msgstr ""
 "用法：%s [文件]...\n"
 "　或：%s [选项]\n"
 
-#: src/cksum.c:263
+#: src/cksum.c:268
 msgid ""
 "Print CRC checksum and byte counts of each FILE.\n"
 "\n"
@@ -1824,8 +1847,8 @@ msgstr "  --output-delimiter=STR\t依照STR 分列\n"
 msgid "  --total           output a summary\n"
 msgstr ""
 
-#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945 src/paste.c:452
-#: src/tail.c:308
+#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945
+#: src/paste.c:452 src/tail.c:308
 #, fuzzy
 #| msgid "  -z, --zero-terminated     end lines with 0 byte, not newline\n"
 msgid "  -z, --zero-terminated    line delimiter is NUL, not newline\n"
@@ -1882,24 +1905,25 @@ msgstr "无法lseek %s"
 msgid "error deallocating %s"
 msgstr "读取%s 时出错"
 
-#: src/copy.c:241 src/dd.c:1831 src/dd.c:2161 src/du.c:1133 src/head.c:156
+#: src/copy.c:241 src/dd.c:1864 src/dd.c:2200 src/du.c:1133 src/head.c:156
 #: src/head.c:307 src/head.c:389 src/head.c:585 src/head.c:667 src/head.c:736
 #: src/head.c:786 src/head.c:809 src/tail.c:441 src/tail.c:534 src/tail.c:583
-#: src/tail.c:676 src/tail.c:804 src/tail.c:852 src/tail.c:889 src/tail.c:2006
-#: src/tail.c:2039 src/uniq.c:473
+#: src/tail.c:676 src/tail.c:804 src/tail.c:852 src/tail.c:889 src/tail.c:2013
+#: src/tail.c:2046 src/uniq.c:473
 #, c-format
 msgid "error reading %s"
 msgstr "读取%s 时出错"
 
-#: src/copy.c:274 src/dd.c:2225 src/dd.c:2287 src/head.c:184 src/tail.c:415
+#: src/copy.c:274 src/dd.c:2263 src/dd.c:2325 src/head.c:184 src/tail.c:415
 #, c-format
 msgid "error writing %s"
 msgstr "写入%s 出错"
 
 #: src/copy.c:305
-#, c-format
+#, fuzzy, c-format
+#| msgid "error reading %s"
 msgid "overflow reading %s"
-msgstr "读取%s 时溢出"
+msgstr "读取%s 时出错"
 
 #: src/copy.c:418
 #, c-format
@@ -1955,13 +1979,13 @@ msgid "failed to set the security context of %s"
 msgstr "设置%s 的安全环境为%s 失败"
 
 #: src/copy.c:1037 src/csplit.c:655 src/du.c:1025 src/fmt.c:439 src/head.c:888
-#: src/split.c:1569 src/tail.c:1980 src/wc.c:733
+#: src/split.c:1569 src/tail.c:1987 src/wc.c:733
 #, c-format
 msgid "cannot open %s for reading"
 msgstr "无法打开%s 读取数据"
 
-#: src/copy.c:1043 src/copy.c:1196 src/dd.c:1756 src/dd.c:2299 src/dd.c:2439
-#: src/head.c:847 src/tail.c:1827 src/tail.c:1883 src/truncate.c:114
+#: src/copy.c:1043 src/copy.c:1196 src/dd.c:1789 src/dd.c:2337 src/dd.c:2477
+#: src/head.c:847 src/tail.c:1827 src/tail.c:1890 src/truncate.c:114
 #, c-format
 msgid "cannot fstat %s"
 msgstr "无法获取%s 的文件状态(fstat)"
@@ -2005,9 +2029,10 @@ msgstr "正在保留 %s 的时间"
 
 #: src/copy.c:1399 src/copy.c:1405 src/head.c:896 src/sync.c:162
 #: src/touch.c:173 src/truncate.c:392
-#, c-format
+#, fuzzy, c-format
+#| msgid "failed to clone %s"
 msgid "failed to close %s"
-msgstr "关闭%s 失败"
+msgstr "克隆%s 失败"
 
 #: src/copy.c:1683
 #, fuzzy, c-format
@@ -2041,15 +2066,16 @@ msgstr "无法创建指向%2$s 的硬链接%1$s"
 
 #: src/copy.c:1875 src/copy.c:1932 src/copy.c:2499 src/copy.c:2858
 #: src/find-mount-point.c:84 src/install.c:702 src/realpath.c:146
-#: src/stat.c:1379 src/truncate.c:338
+#: src/stat.c:1389 src/truncate.c:338
 #, c-format
 msgid "cannot stat %s"
 msgstr "无法获取%s 的文件状态(stat)"
 
 #: src/copy.c:1884
-#, c-format
+#, fuzzy, c-format
+#| msgid "omitting directory %s"
 msgid "-r not specified; omitting directory %s"
-msgstr "未指定 -r；略过目录%s"
+msgstr "略过目录%s"
 
 #: src/copy.c:1885
 #, c-format
@@ -2156,9 +2182,10 @@ msgid "cannot copy cyclic symbolic link %s"
 msgstr "无法复制循环的符号链接%s"
 
 #: src/copy.c:2530
-#, c-format
+#, fuzzy, c-format
+#| msgid "created directory %s"
 msgid "created directory %s\n"
-msgstr "已创建目录 %s\n"
+msgstr "已创建目录 %s"
 
 #: src/copy.c:2593
 #, c-format
@@ -2180,7 +2207,7 @@ msgstr "无法创建先进先出文件%s"
 msgid "cannot create special file %s"
 msgstr "无法创建特殊文件%s"
 
-#: src/copy.c:2676 src/ls.c:3452 src/stat.c:1061
+#: src/copy.c:2676 src/ls.c:3452 src/stat.c:1071
 #, c-format
 msgid "cannot read symbolic link %s"
 msgstr "无法读取符号链接%s"
@@ -2444,11 +2471,12 @@ msgstr "%s 存在但并非目录"
 
 #: src/cp.c:587 src/cp.c:1086 src/install.c:407 src/install.c:942 src/ln.c:134
 #: src/ln.c:198 src/ln.c:219 src/ln.c:503 src/mv.c:157 src/mv.c:390
-#, c-format
+#, fuzzy, c-format
+#| msgid "failed to clone %s"
 msgid "failed to access %s"
-msgstr "访问%s 失败"
+msgstr "克隆%s 失败"
 
-#: src/cp.c:607 src/install.c:970 src/ln.c:534 src/mv.c:433 src/shred.c:1284
+#: src/cp.c:607 src/install.c:970 src/ln.c:534 src/mv.c:433 src/shred.c:1283
 #: src/touch.c:430 src/truncate.c:329
 #, c-format
 msgid "missing file operand"
@@ -2519,7 +2547,7 @@ msgid "cannot preserve extended attributes, cp is built without xattr support"
 msgstr "无法保留扩展属性，当前使用的 cp 副本编译时没有启用 xattr 支持"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/csplit.c:44 src/dd.c:46
+#: src/csplit.c:44 src/dd.c:47
 msgid "Stuart Kemp"
 msgstr "Stuart Kemp"
 
@@ -2563,7 +2591,8 @@ msgid "%s: integer expected after delimiter"
 msgstr "%s：分界符后应该跟随整数"
 
 #: src/csplit.c:1106
-#, c-format
+#, fuzzy, c-format
+#| msgid "%s: `}' is required in repeat count"
 msgid "%s: '}' is required in repeat count"
 msgstr "%s：在重复计数中需要\"}\"字符"
 
@@ -2574,9 +2603,10 @@ msgid "%s}: integer required between '{' and '}'"
 msgstr "%s}：在\"{\"和\"}\"之间需要一个整数声明"
 
 #: src/csplit.c:1144
-#, c-format
+#, fuzzy, c-format
+#| msgid "%s: closing delimiter `%c' missing"
 msgid "%s: closing delimiter '%c' missing"
-msgstr "%s：闭合定界符\"%c\"缺失"
+msgstr "%s：闭合定义符\"%c\"缺失"
 
 #: src/csplit.c:1161
 #, c-format
@@ -2632,9 +2662,11 @@ msgstr "下标中出现过多的%% 转换规格字符"
 msgid "missing %% conversion specification in suffix"
 msgstr "下标中丢失了%% 转换规格字符"
 
-#: src/csplit.c:1375 src/dd.c:1468 src/nproc.c:105 src/tail.c:2133
+#: src/csplit.c:1375 src/dd.c:1499 src/nproc.c:105 src/tail.c:2140
+#, fuzzy
+#| msgid "invalid number %s"
 msgid "invalid number"
-msgstr "无效的数字"
+msgstr "无效的数字%s"
 
 #: src/csplit.c:1482
 #, c-format
@@ -3148,11 +3180,10 @@ msgid ""
 "  $ date --date='TZ=\"America/Los_Angeles\" 09:00 next Fri'\n"
 msgstr ""
 
-#: src/date.c:300 src/dd.c:2378 src/head.c:880 src/md5sum.c:663
-#: src/md5sum.c:1087 src/od.c:913 src/od.c:1978 src/pr.c:1148 src/pr.c:1347
-#: src/pr.c:1470 src/stty.c:1381 src/tac.c:574 src/tail.c:364 src/tee.c:174
-#: src/tr.c:1905 src/tsort.c:536 src/tty.c:131 src/wc.c:205
-#, c-format
+#: src/date.c:300 src/dd.c:2416 src/head.c:880 src/md5sum.c:664
+#: src/md5sum.c:1088 src/od.c:913 src/od.c:1978 src/pr.c:1148 src/pr.c:1347
+#: src/pr.c:1470 src/stty.c:1368 src/tac.c:574 src/tail.c:364 src/tee.c:174
+#: src/tr.c:1905 src/tsort.c:541 src/wc.c:205
 msgid "standard input"
 msgstr "标准输入"
 
@@ -3200,12 +3231,12 @@ msgid "time %s is out of range"
 msgstr "时间%s 超出范围"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/dd.c:44 src/factor.c:128 src/rm.c:40 src/tail.c:72 src/touch.c:42
+#: src/dd.c:45 src/factor.c:128 src/rm.c:40 src/tail.c:72 src/touch.c:42
 #: src/wc.c:50
 msgid "Paul Rubin"
 msgstr "Paul Rubin"
 
-#: src/dd.c:555
+#: src/dd.c:564
 #, c-format
 msgid ""
 "Usage: %s [OPERAND]...\n"
@@ -3214,7 +3245,7 @@ msgstr ""
 "用法：%s [操作数] ...\n"
 "　或：%s 选项\n"
 
-#: src/dd.c:560
+#: src/dd.c:569
 #, fuzzy
 #| msgid ""
 #| "Copy a file, converting and formatting according to the operands.\n"
@@ -3242,7 +3273,7 @@ msgstr ""
 "  count=块数\t只将指定个块数复制到块\n"
 "  ibs=比特数\t一次读取的比特数(默认：512)\n"
 
-#: src/dd.c:570
+#: src/dd.c:579
 #, fuzzy
 #| msgid ""
 #| "  if=FILE         read from FILE instead of stdin\n"
@@ -3275,7 +3306,7 @@ msgstr ""
 "  skip=块数\t在输入开始处跳过指定的块数\n"
 "  status=noxfer\t禁止传输统计\n"
 
-#: src/dd.c:583
+#: src/dd.c:592
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -3302,7 +3333,7 @@ msgstr ""
 "每个 CONV 符号可能为：\n"
 "\n"
 
-#: src/dd.c:592
+#: src/dd.c:601
 #, fuzzy
 #| msgid ""
 #| "  ascii     from EBCDIC to ASCII\n"
@@ -3339,7 +3370,7 @@ msgstr ""
 "  sync\t\t将每个输入数据块以NUL 字符填满至ibs 的大小；当配合block\n"
 "\t\t或unblock 时，会以空格代替NUL 字符填充\n"
 
-#: src/dd.c:605
+#: src/dd.c:614
 msgid ""
 "  excl      fail if the output file already exists\n"
 "  nocreat   do not create the output file\n"
@@ -3355,7 +3386,7 @@ msgstr ""
 "  fdatasync\t结束前将输出文件数据写入磁盘\n"
 "  fsync\t类似上面，但是元数据也一同写入\n"
 
-#: src/dd.c:613
+#: src/dd.c:622
 msgid ""
 "\n"
 "Each FLAG symbol may be:\n"
@@ -3367,75 +3398,75 @@ msgstr ""
 "\n"
 "  append\t追加模式(仅对输出有意义；隐含了conv=notrunc)\n"
 
-#: src/dd.c:620
+#: src/dd.c:629
 msgid "  cio       use concurrent I/O for data\n"
 msgstr "  cio\t使用并行I/O 存取模式\n"
 
-#: src/dd.c:622
+#: src/dd.c:631
 msgid "  direct    use direct I/O for data\n"
 msgstr "  direct\t使用直接I/O 存取模式\n"
 
-#: src/dd.c:624
+#: src/dd.c:633
 msgid "  directory  fail unless a directory\n"
 msgstr "  directory\t除非是目录，否则 directory 失败\n"
 
-#: src/dd.c:626
+#: src/dd.c:635
 msgid "  dsync     use synchronized I/O for data\n"
 msgstr "  dsync\t\t使用同步I/O 存取模式\n"
 
-#: src/dd.c:628
+#: src/dd.c:637
 msgid "  sync      likewise, but also for metadata\n"
 msgstr "  sync\t\t与上者类似，但同时也对元数据生效\n"
 
-#: src/dd.c:629
+#: src/dd.c:638
 msgid "  fullblock  accumulate full blocks of input (iflag only)\n"
 msgstr "  fullblock\t为输入积累完整块(仅iflag)\n"
 
-#: src/dd.c:632
+#: src/dd.c:641
 msgid "  nonblock  use non-blocking I/O\n"
 msgstr "  nonblock\t使用无阻塞I/O 存取模式\n"
 
-#: src/dd.c:634
+#: src/dd.c:643
 msgid "  noatime   do not update access time\n"
 msgstr "  noatime\t不更新存取时间\n"
 
-#: src/dd.c:637
+#: src/dd.c:646
 msgid "  nocache   Request to drop cache.  See also oflag=sync\n"
 msgstr ""
 
-#: src/dd.c:641
+#: src/dd.c:650
 msgid "  noctty    do not assign controlling terminal from file\n"
 msgstr "  noctty\t不根据文件指派控制终端\n"
 
-#: src/dd.c:644
+#: src/dd.c:653
 msgid "  nofollow  do not follow symlinks\n"
 msgstr "  nofollow\t不跟随链接文件\n"
 
-#: src/dd.c:646
+#: src/dd.c:655
 msgid "  nolinks   fail if multiply-linked\n"
 msgstr "  nolinks\t如果有多重链接，则nolinks 失败\n"
 
-#: src/dd.c:648
+#: src/dd.c:657
 msgid "  binary    use binary I/O for data\n"
 msgstr "  binary\t使用二进制I/O 存取模式\n"
 
-#: src/dd.c:650
+#: src/dd.c:659
 msgid "  text      use text I/O for data\n"
 msgstr "  text\t使用文本I/O 存取模式\n"
 
-#: src/dd.c:652
+#: src/dd.c:661
 msgid "  count_bytes  treat 'count=N' as a byte count (iflag only)\n"
 msgstr ""
 
-#: src/dd.c:655
+#: src/dd.c:664
 msgid "  skip_bytes  treat 'skip=N' as a byte count (iflag only)\n"
 msgstr ""
 
-#: src/dd.c:658
+#: src/dd.c:667
 msgid "  seek_bytes  treat 'seek=N' as a byte count (oflag only)\n"
 msgstr ""
 
-#: src/dd.c:662
+#: src/dd.c:671
 #, c-format
 msgid ""
 "\n"
@@ -3446,25 +3477,25 @@ msgid ""
 "\n"
 msgstr ""
 
-#: src/dd.c:698
+#: src/dd.c:707
 #, fuzzy, c-format
 #| msgid "memory exhausted by input buffer of size %zu bytes (%s)"
 msgid "memory exhausted by input buffer of size %<PRIuMAX> bytes (%s)"
 msgstr "%zu 字节的输入缓冲导致内存耗尽(%s)"
 
-#: src/dd.c:726
+#: src/dd.c:735
 #, fuzzy, c-format
 #| msgid "memory exhausted by output buffer of size %zu bytes (%s)"
 msgid "memory exhausted by output buffer of size %<PRIuMAX> bytes (%s)"
 msgstr "%zu 字节的输出缓冲导致内存耗尽(%s)"
 
-#: src/dd.c:794 src/du.c:400
+#: src/dd.c:803 src/du.c:400
 #, fuzzy
 #| msgid "Infinity B"
 msgid "Infinity"
 msgstr "无穷量 B"
 
-#: src/dd.c:813
+#: src/dd.c:822
 #, fuzzy, c-format
 #| msgid "%<PRIuMAX> byte (%s) copied"
 #| msgid_plural "%<PRIuMAX> bytes (%s) copied"
@@ -3472,21 +3503,21 @@ msgid "%<PRIuMAX> byte copied, %s, %s"
 msgid_plural "%<PRIuMAX> bytes copied, %s, %s"
 msgstr[0] "%<PRIuMAX>字节(%s)已复制"
 
-#: src/dd.c:819
+#: src/dd.c:828
 #, fuzzy, c-format
 #| msgid "%<PRIuMAX> byte (%s) copied"
 #| msgid_plural "%<PRIuMAX> bytes (%s) copied"
 msgid "%<PRIuMAX> bytes (%s) copied, %s, %s"
 msgstr "%<PRIuMAX>字节(%s)已复制"
 
-#: src/dd.c:822
+#: src/dd.c:831
 #, fuzzy, c-format
 #| msgid "%<PRIuMAX> byte (%s) copied"
 #| msgid_plural "%<PRIuMAX> bytes (%s) copied"
 msgid "%<PRIuMAX> bytes (%s, %s) copied, %s, %s"
 msgstr "%<PRIuMAX>字节(%s)已复制"
 
-#: src/dd.c:854
+#: src/dd.c:863
 #, c-format
 msgid ""
 "%<PRIuMAX>+%<PRIuMAX> records in\n"
@@ -3495,79 +3526,81 @@ msgstr ""
 "记录了%<PRIuMAX>+%<PRIuMAX> 的读入\n"
 "记录了%<PRIuMAX>+%<PRIuMAX> 的写出\n"
 
-#: src/dd.c:860
+#: src/dd.c:869
 #, c-format
 msgid "%<PRIuMAX> truncated record\n"
 msgid_plural "%<PRIuMAX> truncated records\n"
 msgstr[0] "%<PRIuMAX> 个被截断了的块\n"
 
-#: src/dd.c:945
+#: src/dd.c:954
 #, c-format
 msgid "closing input file %s"
 msgstr "正在关闭输入文件%s"
 
-#: src/dd.c:952
+#: src/dd.c:961
 #, c-format
 msgid "closing output file %s"
 msgstr "正在关闭输出文件%s"
 
-#: src/dd.c:1167
+#: src/dd.c:1194
 #, c-format
 msgid "failed to turn off O_DIRECT: %s"
 msgstr "无法关闭O_DIRECT：%s"
 
-#: src/dd.c:1238 src/dd.c:2105
+#: src/dd.c:1269 src/dd.c:2138
 #, c-format
 msgid "writing to %s"
 msgstr "正在写入%s"
 
-#: src/dd.c:1357
+#: src/dd.c:1388
 #, c-format
 msgid "warning: %s is a zero multiplier; use %s if that is intended"
 msgstr ""
 
-#: src/dd.c:1395 src/dd.c:1456
+#: src/dd.c:1426 src/dd.c:1487
 #, c-format
 msgid "unrecognized operand %s"
 msgstr "无法识别的操作数%s"
 
-#: src/dd.c:1407
+#: src/dd.c:1438
 msgid "invalid conversion"
 msgstr "转换无效"
 
-#: src/dd.c:1410 src/dd.c:1499
+#: src/dd.c:1441 src/dd.c:1530
 msgid "invalid input flag"
 msgstr "输入标志无效"
 
-#: src/dd.c:1413 src/dd.c:1493 src/dd.c:1505
+#: src/dd.c:1444 src/dd.c:1524 src/dd.c:1536
 msgid "invalid output flag"
 msgstr "输出标志无效"
 
-#: src/dd.c:1416
+#: src/dd.c:1447
+#, fuzzy
+#| msgid "invalid status flag"
 msgid "invalid status level"
-msgstr "状态等级无效"
+msgstr "状态标志无效"
 
-#: src/dd.c:1551
+#: src/dd.c:1582
 msgid "cannot combine any two of {ascii,ebcdic,ibm}"
 msgstr "不可将{ascii、ebcdic、idm}中的任意两个结合使用"
 
-#: src/dd.c:1553
+#: src/dd.c:1584
 msgid "cannot combine block and unblock"
 msgstr "不可将block 和unblock 结合使用"
 
-#: src/dd.c:1555
+#: src/dd.c:1586
 msgid "cannot combine lcase and ucase"
 msgstr "不可将lcase 和ucase 结合使用"
 
-#: src/dd.c:1557
+#: src/dd.c:1588
 msgid "cannot combine excl and nocreat"
 msgstr "不可将excl 和nocreat 结合使用"
 
-#: src/dd.c:1560
+#: src/dd.c:1591
 msgid "cannot combine direct and nocache"
 msgstr "不可将direct 和nocreat 结合使用"
 
-#: src/dd.c:1715
+#: src/dd.c:1748
 #, c-format
 msgid ""
 "warning: working around lseek kernel bug for file (%s)\n"
@@ -3576,73 +3609,73 @@ msgstr ""
 "警告：暂时避免有关文件%s 的lseek 内核错误\n"
 "  错误地址在mt_type=0x%0lx -- 有关mt_type 类型的列表请参考<sys/mtio.h>"
 
-#: src/dd.c:1803
+#: src/dd.c:1836
 #, c-format
 msgid "%s: cannot skip"
 msgstr "%s：无法跳过"
 
-#: src/dd.c:1805 src/dd.c:1836 src/dd.c:1897
+#: src/dd.c:1838 src/dd.c:1869 src/dd.c:1930
 #, c-format
 msgid "%s: cannot seek"
 msgstr "%s：无法搜索"
 
-#: src/dd.c:1877
+#: src/dd.c:1910
 #, c-format
 msgid "offset overflow while reading file %s"
 msgstr "读入文件%s 时偏移量溢出"
 
-#: src/dd.c:1889
+#: src/dd.c:1922
 #, c-format
 msgid "warning: invalid file offset after failed read"
 msgstr "警告：文件读取失败后偏移错误"
 
-#: src/dd.c:1893
+#: src/dd.c:1926
 #, c-format
 msgid "cannot work around kernel bug after all"
 msgstr "无法避免内核的错误"
 
-#: src/dd.c:2032
+#: src/dd.c:2065
 #, c-format
 msgid "setting flags for %s"
 msgstr "正在设置%s 的标记"
 
-#: src/dd.c:2086
+#: src/dd.c:2119
 #, c-format
 msgid "%s: cannot skip to specified offset"
 msgstr "%s：无法跳至指定偏移量"
 
-#: src/dd.c:2310
+#: src/dd.c:2348
 #, fuzzy, c-format
 #| msgid "failed to truncate to %<PRIuMAX> bytes in output file %s"
 msgid "failed to truncate to %<PRIdMAX> bytes in output file %s"
 msgstr "无法针对输出文件%2$s 的%1$<PRIuMAX> 字节处实施截断"
 
-#: src/dd.c:2323
+#: src/dd.c:2361
 #, c-format
 msgid "fdatasync failed for %s"
 msgstr "%s 的fdatasync 失败"
 
-#: src/dd.c:2333
+#: src/dd.c:2371
 #, c-format
 msgid "fsync failed for %s"
 msgstr "%s 的fsync 失败"
 
-#: src/dd.c:2384 src/dd.c:2414 src/nohup.c:159 src/nohup.c:161
+#: src/dd.c:2422 src/dd.c:2452 src/nohup.c:164 src/nohup.c:166
 #, c-format
 msgid "failed to open %s"
 msgstr "打开%s 失败"
 
-#: src/dd.c:2424
+#: src/dd.c:2462
 #, c-format
 msgid "offset too large: cannot truncate to a length of seek=%<PRIuMAX> (%lu-byte) blocks"
 msgstr "偏移量过大：无法在seek=%<PRIuMAX> (%lu-字节) 块的长度上实施截断"
 
-#: src/dd.c:2445
+#: src/dd.c:2483
 #, c-format
 msgid "failed to truncate to %<PRIuMAX> bytes in output file %s"
 msgstr "无法针对输出文件%2$s 的%1$<PRIuMAX> 字节处实施截断"
 
-#: src/dd.c:2462 src/dd.c:2468
+#: src/dd.c:2500 src/dd.c:2506
 #, c-format
 msgid "failed to discard cache for: %s"
 msgstr "无法丢弃缓存：%s"
@@ -3862,15 +3895,15 @@ msgstr "选项--compare (-C) 和--strip 是互斥的"
 msgid "file system type %s both selected and excluded"
 msgstr "不能同时选择和排除文件系统类型%s"
 
-#: src/df.c:1748
+#: src/df.c:1749
 msgid "Warning: "
 msgstr "警告："
 
-#: src/df.c:1750 src/stat.c:894
+#: src/df.c:1751 src/stat.c:904
 msgid "cannot read table of mounted file systems"
 msgstr "%s 无法读取已挂载上的文件系统的目录"
 
-#: src/df.c:1787
+#: src/df.c:1788
 msgid "no file systems processed"
 msgstr "未处理文件系统"
 
@@ -3879,7 +3912,7 @@ msgstr "未处理文件系统"
 msgid "H. Peter Anvin"
 msgstr "H. Peter Anvin"
 
-#: src/dircolors.c:99 src/uptime.c:199 src/users.c:106
+#: src/dircolors.c:99 src/uptime.c:204 src/users.c:111
 #, c-format
 msgid "Usage: %s [OPTION]... [FILE]\n"
 msgstr "用法：%s [选项]... [文件]\n"
@@ -4589,28 +4622,51 @@ msgstr ""
 "若表达式的值既不是空也不是 0，退出状态值为 0；若表达式的值为空或为 0，\n"
 "退出状态值为 1。如果表达式的句法无效，则会在出错时返回退出状态值 3。\n"
 
-#: src/expr.c:420
-msgid "syntax error"
-msgstr "语法错误"
+#: src/expr.c:462
+#, c-format
+msgid "syntax error: unexpected argument %s"
+msgstr ""
 
-#: src/expr.c:740 src/ptx.c:289
+#: src/expr.c:665
+#, fuzzy, c-format
+#| msgid "missing argument after %s"
+msgid "syntax error: missing argument after %s"
+msgstr "%s 后缺少参数"
+
+#: src/expr.c:748 src/ptx.c:289
 msgid "error in regular expression matcher"
 msgstr "正则表达式匹配器出错"
 
-#: src/expr.c:920 src/expr.c:957
+#: src/expr.c:776
+#, c-format
+msgid "syntax error: expecting ')' after %s"
+msgstr ""
+
+#: src/expr.c:779
+#, c-format
+msgid "syntax error: expecting ')' instead of %s"
+msgstr ""
+
+#: src/expr.c:785
+#, fuzzy
+#| msgid "%s: unary operator expected"
+msgid "syntax error: unexpected ')'"
+msgstr "%s: 预期为单目运算符"
+
+#: src/expr.c:931 src/expr.c:968
 msgid "non-integer argument"
 msgstr "非整数参数"
 
-#: src/expr.c:922 src/truncate.c:289
+#: src/expr.c:933 src/truncate.c:289
 msgid "division by zero"
 msgstr "除以零"
 
-#: src/expr.c:1016 src/sort.c:2113
+#: src/expr.c:1027 src/sort.c:2113
 #, c-format
 msgid "set LC_ALL='C' to work around the problem"
 msgstr "请设置LC_ALL='C' 以避免出现问题。"
 
-#: src/expr.c:1018
+#: src/expr.c:1029
 #, c-format
 msgid "the strings compared were %s and %s"
 msgstr "已比较的字符串为%s 和%s"
@@ -4618,7 +4674,7 @@ msgstr "已比较的字符串为%s 和%s"
 #. This is a proper name. See the gettext manual, section Names.
 #: src/factor.c:130
 msgid "Niels Moller"
-msgstr "Niels Moller"
+msgstr ""
 
 #: src/factor.c:1276 src/factor.c:1376 src/factor.c:1452
 #, c-format
@@ -4731,8 +4787,10 @@ msgid ""
 msgstr "无效选项 -- %c；宽度必须是第一个选项才能被正确识别；请使用 -w N"
 
 #: src/fmt.c:399 src/fmt.c:406
+#, fuzzy
+#| msgid "invalid width: %s"
 msgid "invalid width"
-msgstr "无效的宽度"
+msgstr "无效的宽度：%s"
 
 #: src/fold.c:70
 #, fuzzy
@@ -4756,8 +4814,10 @@ msgstr ""
 "  -w, --width=宽度\t使用指定的列宽度代替默认的80\n"
 
 #: src/fold.c:284 src/pr.c:840
+#, fuzzy
+#| msgid "invalid number of columns: %s"
 msgid "invalid number of columns"
-msgstr "无效的列数"
+msgstr "无效的列数：%s"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/getlimits.c:30 src/md5sum.c:107 src/realpath.c:33 src/stdbuf.c:38
@@ -4825,7 +4885,8 @@ msgid "cannot get real GID"
 msgstr "无法设置用户ID"
 
 #: src/groups.c:130 src/id.c:249
-#, c-format
+#, fuzzy, c-format
+#| msgid "%s: No such user"
 msgid "%s: no such user"
 msgstr "%s：无此用户"
 
@@ -4915,12 +4976,12 @@ msgstr "%s：无法检索相对偏移量 %s"
 msgid "%s: number of bytes is too large"
 msgstr "%s：字节数过大"
 
-#: src/head.c:912 src/split.c:1367 src/split.c:1534 src/tail.c:2174
+#: src/head.c:912 src/split.c:1367 src/split.c:1534 src/tail.c:2181
 msgid "invalid number of lines"
 msgstr "无效的号码%s"
 
 #: src/head.c:913 src/head.c:1077 src/split.c:1359 src/split.c:1375
-#: src/tail.c:2175
+#: src/tail.c:2182
 msgid "invalid number of bytes"
 msgstr "无效的号码%s"
 
@@ -4929,7 +4990,7 @@ msgstr "无效的号码%s"
 msgid "invalid trailing option -- %c"
 msgstr "无效的加附选项 -- %c"
 
-#: src/hostid.c:42
+#: src/hostid.c:47
 #, c-format
 msgid ""
 "Usage: %s [OPTION]\n"
@@ -4940,7 +5001,7 @@ msgstr ""
 "显示当前主机的数字标识符(十六进制)。\n"
 "\n"
 
-#: src/hostname.c:57
+#: src/hostname.c:62
 #, c-format
 msgid ""
 "Usage: %s [NAME]\n"
@@ -4953,16 +5014,16 @@ msgstr ""
 "显示或设置当前系统的主机名。\n"
 "\n"
 
-#: src/hostname.c:95
+#: src/hostname.c:100
 #, c-format
 msgid "cannot set name to %s"
 msgstr "无法设置主机名为%s"
 
-#: src/hostname.c:99
+#: src/hostname.c:104
 msgid "cannot set hostname; this system lacks the functionality"
 msgstr "无法设置主机名，此系统似乎不具备此功能"
 
-#: src/hostname.c:107
+#: src/hostname.c:112
 msgid "cannot determine hostname"
 msgstr "无法确定主机名"
 
@@ -5059,33 +5120,40 @@ msgid "can't get process context"
 msgstr "不能得到进程环境"
 
 #: src/id.c:268
+#, fuzzy
+#| msgid "cannot dereference %s"
 msgid "cannot get effective UID"
-msgstr "无法获取有效 UID"
+msgstr "无法取消%s 的引用"
 
 #: src/id.c:357
-#, c-format
+#, fuzzy, c-format
+#| msgid "cannot find name for user ID %lu"
 msgid "cannot find name for user ID %s"
-msgstr "无法找到ID 为%s 的用户的名称"
+msgstr "无法找到ID 为%lu 的用户的名称"
 
 #: src/id.c:375
-#, c-format
+#, fuzzy, c-format
+#| msgid "uid=%lu"
 msgid "uid=%s"
-msgstr "uid=%s"
+msgstr "uid=%lu"
 
 #: src/id.c:380
-#, c-format
+#, fuzzy, c-format
+#| msgid " gid=%lu"
 msgid " gid=%s"
-msgstr " gid=%s"
+msgstr " gid=%lu"
 
 #: src/id.c:387
-#, c-format
+#, fuzzy, c-format
+#| msgid " euid=%lu"
 msgid " euid=%s"
-msgstr " euid=%s"
+msgstr " euid=%lu"
 
 #: src/id.c:395
-#, c-format
+#, fuzzy, c-format
+#| msgid " egid=%lu"
 msgid " egid=%s"
-msgstr " egid=%s"
+msgstr " egid=%lu"
 
 #: src/id.c:423
 msgid " groups="
@@ -5129,7 +5197,7 @@ msgstr "无法更改%s 的所有权"
 msgid "cannot set timestamps for %s"
 msgstr "无法设置%s 的时间戳"
 
-#: src/install.c:556 src/split.c:522 src/timeout.c:477
+#: src/install.c:556 src/split.c:522 src/timeout.c:506
 #, c-format
 msgid "fork system call failed"
 msgstr "创建系统进程(fork)出错"
@@ -5265,10 +5333,10 @@ msgid ""
 "                            SELinux or SMACK security context to CTX\n"
 msgstr ""
 
-#: src/install.c:711 src/unlink.c:87
+#: src/install.c:711 src/unlink.c:92
 #, c-format
 msgid "cannot unlink %s"
-msgstr "无法对%s 执行 unlink 操作"
+msgstr "无法清除%s 的链接"
 
 #: src/install.c:892
 #, c-format
@@ -5574,7 +5642,7 @@ msgstr "无法将%2$s 的缓冲模式设置为%1$s\n"
 msgid "Michael Stone"
 msgstr "Michael Ston"
 
-#: src/link.c:46
+#: src/link.c:51
 #, c-format
 msgid ""
 "Usage: %s FILE1 FILE2\n"
@@ -5583,7 +5651,7 @@ msgstr ""
 "用法：%s 文件1 文件2\n"
 "　或：%s 选项\n"
 
-#: src/link.c:49
+#: src/link.c:54
 msgid ""
 "Call the link function to create a link named FILE2 to an existing FILE1.\n"
 "\n"
@@ -5591,7 +5659,7 @@ msgstr ""
 "调用 link 函数创建从既存的文件1 到文件2 的链接。\n"
 "\n"
 
-#: src/link.c:91
+#: src/link.c:96
 #, c-format
 msgid "cannot create link %s to %s"
 msgstr "无法创建指向%2$s 的链接%1$s"
@@ -5767,12 +5835,12 @@ msgstr "无法创建符号链接%s"
 msgid "FIXME: unknown"
 msgstr "FIXME：未知"
 
-#: src/logname.c:40
+#: src/logname.c:45
 #, c-format
 msgid "Usage: %s [OPTION]\n"
 msgstr "用法：%s [选项]\n"
 
-#: src/logname.c:41
+#: src/logname.c:46
 msgid ""
 "Print the name of the current user.\n"
 "\n"
@@ -5780,7 +5848,7 @@ msgstr ""
 "显示当前用户的名称。\n"
 "\n"
 
-#: src/logname.c:80
+#: src/logname.c:85
 msgid "no login name"
 msgstr "无登录名"
 
@@ -5847,7 +5915,7 @@ msgstr "无法识别的前缀：%s"
 msgid "unparsable value for LS_COLORS environment variable"
 msgstr "LS_COLORS 环境变量中存在无法解些的值"
 
-#: src/ls.c:2658 src/stat.c:1028
+#: src/ls.c:2658 src/stat.c:1038
 #, c-format
 msgid "ignoring invalid value of environment variable QUOTING_STYLE: %s"
 msgstr "忽略无效的环境变量QUOTING_STYLE 的键值：%s"
@@ -5915,6 +5983,12 @@ msgstr ""
 "  -b, --escape\t\t\t以八进制溢出序列表示不可打印的字符\n"
 
 #: src/ls.c:5142
+msgid ""
+"      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;\n"
+"                               e.g., '--block-size=M'; see SIZE format below\n"
+msgstr ""
+
+#: src/ls.c:5146
 #, fuzzy
 #| msgid ""
 #| "      --block-size=SIZE      scale sizes by SIZE before printing them.  E.g.,\n"
@@ -5926,9 +6000,6 @@ msgstr ""
 #| "                               with -l: show ctime and sort by name\n"
 #| "                               otherwise: sort by ctime\n"
 msgid ""
-"      --block-size=SIZE      scale sizes by SIZE before printing them; e.g.,\n"
-"                               '--block-size=M' prints sizes in units of\n"
-"                               1,048,576 bytes; see SIZE format below\n"
 "  -B, --ignore-backups       do not list implied entries ending with ~\n"
 "  -c                         with -lt: sort by, and show, ctime (time of last\n"
 "                               modification of file status information);\n"
@@ -5941,7 +6012,7 @@ msgstr ""
 "\t\t\t\t状态最后更改的时间)\n"
 "\t\t\t\t配合-l：显示ctime 但根据名称排序\t\t\t\t其他情况：按ctime 排序\n"
 
-#: src/ls.c:5152
+#: src/ls.c:5153
 #, fuzzy
 #| msgid ""
 #| "  -C                         list entries by columns\n"
@@ -5963,7 +6034,7 @@ msgstr ""
 "  -d, --directory\t\t当遇到目录时列出目录本身而非目录内的文件\n"
 "  -D, --dired\t\t\t产生适合Emacs 的dired 模式使用的结果\n"
 
-#: src/ls.c:5161
+#: src/ls.c:5162
 #, fuzzy
 #| msgid ""
 #| "  -f                         do not sort, enable -aU, disable -ls --color\n"
@@ -5986,11 +6057,11 @@ msgstr ""
 "\t\t\t\t单栏-1，详细-l，垂直-C\n"
 "      --full-time\t\t即-l --time-style=full-iso\n"
 
-#: src/ls.c:5169
+#: src/ls.c:5170
 msgid "  -g                         like -l, but do not list owner\n"
 msgstr "  -g\t\t\t\t类似-l，但不列出所有者\n"
 
-#: src/ls.c:5172
+#: src/ls.c:5173
 #, fuzzy
 #| msgid ""
 #| "      --group-directories-first\n"
@@ -6007,7 +6078,11 @@ msgstr ""
 "\t\t\t在文件前分组目录。此选项可与--sort 一起使用，\n"
 "\t\t\t但是一旦使用--sort=none (-U)将禁用分组\n"
 
-#: src/ls.c:5178
+#: src/ls.c:5179
+msgid "  -G, --no-group             in a long listing, don't print group names\n"
+msgstr ""
+
+#: src/ls.c:5182
 #, fuzzy
 #| msgid ""
 #| "  -G, --no-group             in a long listing, don't print group names\n"
@@ -6015,9 +6090,7 @@ msgstr ""
 #| "                               (e.g., 1K 234M 2G)\n"
 #| "      --si                   likewise, but use powers of 1000 not 1024\n"
 msgid ""
-"  -G, --no-group             in a long listing, don't print group names\n"
-"  -h, --human-readable       with -l and/or -s, print human readable sizes\n"
-"                               (e.g., 1K 234M 2G)\n"
+"  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.\n"
 "      --si                   likewise, but use powers of 1000 not 1024\n"
 msgstr ""
 "  -G, --no-group\t\t以一个长列表的形式，不输出组名\n"
@@ -6025,7 +6098,7 @@ msgstr ""
 "\t\t\t\t(例如 1K 234M 2G)\n"
 "      --si\t\t\t同上面类似，但是使用1000 为基底而非1024\n"
 
-#: src/ls.c:5184
+#: src/ls.c:5186
 #, fuzzy
 #| msgid ""
 #| "  -H, --dereference-command-line\n"
@@ -6051,13 +6124,13 @@ msgstr ""
 "      --hide=PATTERN         \t隐藏符合PATTERN 模式的项目\n"
 "\t\t\t\t(-a 或 -A 将覆盖此选项)\n"
 
-#: src/ls.c:5194
+#: src/ls.c:5196
 msgid ""
 "      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'\n"
 "                               (default if omitted), 'auto', or 'never'\n"
 msgstr ""
 
-#: src/ls.c:5198
+#: src/ls.c:5200
 #, fuzzy
 #| msgid ""
 #| "      --indicator-style=WORD  append indicator with style WORD to entry names:\n"
@@ -6072,7 +6145,6 @@ msgid ""
 "                               file-type (--file-type), classify (-F)\n"
 "  -i, --inode                print the index number of each file\n"
 "  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN\n"
-"  -k, --kibibytes            default to 1024-byte blocks for disk usage\n"
 msgstr ""
 "      --indicator-style=方式\t指定在每个项目名称后加上指示符号方式：\n"
 "\t\t\t\tnone (默认)，classify (-F)，file-type (-p)\n"
@@ -6080,7 +6152,19 @@ msgstr ""
 "  -I, --ignore=PATTERN\t\t不显示任何符合指定shell PATTERN 的项目\n"
 "  -k\t\t\t\t即--block-size=1K\n"
 
-#: src/ls.c:5208
+#: src/ls.c:5209
+#, fuzzy
+#| msgid ""
+#| "  -c, --bytes=K            output the last K bytes; alternatively, use -c +K\n"
+#| "                           to output bytes starting with the Kth of each file\n"
+msgid ""
+"  -k, --kibibytes            default to 1024-byte blocks for disk usage;\n"
+"                               used only with -s and per directory totals\n"
+msgstr ""
+"  -c, --bytes=K\t\t输出最后K 字节；另外，使用-c +K 从每个文件的\n"
+"\t\t\t第K 字节输出\n"
+
+#: src/ls.c:5213
 msgid ""
 "  -l                         use a long listing format\n"
 "  -L, --dereference          when showing file information for a symbolic\n"
@@ -6093,7 +6177,7 @@ msgstr ""
 "\t\t\t\t的对象而并非符号链接本身的信息\n"
 "  -m\t\t\t\t所有项目以逗号分隔，并填满整行行宽\n"
 
-#: src/ls.c:5216
+#: src/ls.c:5221
 #, fuzzy
 #| msgid ""
 #| "  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs\n"
@@ -6114,7 +6198,7 @@ msgstr ""
 "  -o\t\t\t\t类似 -l，但不列出有关组的信息\n"
 "  -p,  --indicator-style=slash\t对目录加上表示符号\"/\"\n"
 
-#: src/ls.c:5223
+#: src/ls.c:5228
 #, fuzzy
 #| msgid ""
 #| "  -q, --hide-control-chars   print ? instead of non graphic characters\n"
@@ -6131,6 +6215,7 @@ msgid ""
 "      --quoting-style=WORD   use quoting style WORD for entry names:\n"
 "                               literal, locale, shell, shell-always,\n"
 "                               shell-escape, shell-escape-always, c, escape\n"
+"                               (overrides QUOTING_STYLE environment variable)\n"
 msgstr ""
 "  -q, --hide-control-chars\t以\"?\"字符代替无法打印的字符\n"
 "      --show-control-chars\t直接显示无法打印的字符 (这是默认方式，除非调用\n"
@@ -6139,7 +6224,7 @@ msgstr ""
 "      --quoting-style=方式\t使用指定的quoting 方式显示条目的名称：\n"
 "\t\t\t\tliteral、locale、shell、shell-always、c、escape\n"
 
-#: src/ls.c:5233
+#: src/ls.c:5239
 msgid ""
 "  -r, --reverse              reverse order while sorting\n"
 "  -R, --recursive            list subdirectories recursively\n"
@@ -6149,7 +6234,7 @@ msgstr ""
 "  -R, --recursive\t\t递归显示子目录\n"
 "  -s, --size\t\t\t以块数形式显示每个文件分配的尺寸\n"
 
-#: src/ls.c:5238
+#: src/ls.c:5244
 #, fuzzy
 #| msgid ""
 #| "  -S                         sort by file size\n"
@@ -6179,36 +6264,11 @@ msgstr ""
 "\t\t\t\t间：atime、access、use、ctime 或status；加上\n"
 "\t\t\t\t--sort=time 选项时会以指定时间作为排序关键字\n"
 
-#: src/ls.c:5249
-#, fuzzy
-#| msgid ""
-#| "      --time-style=STYLE     with -l, show times using style STYLE:\n"
-#| "                             full-iso, long-iso, iso, locale, +FORMAT.\n"
-#| "                             FORMAT is interpreted like `date'; if FORMAT is\n"
-#| "                             FORMAT1<newline>FORMAT2, FORMAT1 applies to\n"
-#| "                             non-recent files and FORMAT2 to recent files;\n"
-#| "                             if STYLE is prefixed with `posix-', STYLE\n"
-#| "                             takes effect only outside the POSIX locale\n"
-msgid ""
-"      --time-style=STYLE     with -l, show times using style STYLE:\n"
-"                               full-iso, long-iso, iso, locale, or +FORMAT;\n"
-"                               FORMAT is interpreted like in 'date'; if FORMAT\n"
-"                               is FORMAT1<newline>FORMAT2, then FORMAT1 applies\n"
-"                               to non-recent files and FORMAT2 to recent files;\n"
-"                               if STYLE is prefixed with 'posix-', STYLE\n"
-"                               takes effect only outside the POSIX locale\n"
+#: src/ls.c:5255
+msgid "      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below\n"
 msgstr ""
-"      --time-style=STYLE\t和-l 同时使用时根据STYLE 代表的格式显示时间：\n"
-"\t\t\t\tfull-iso、iso、locale、posix-iso、+FORMAT。\n"
-"\t\t\t\tFORMAT 即是\"date\"所用的时间格式；如果FORMAT\n"
-"\t\t\t\t是FORMAT1<换行>FORMAT2，FORMAT1 适用于较旧\n"
-"\t\t\t\t的文件而FORMAT2 适用于较新的文件；如果STYLE\n"
-"\t\t\t\t以\"posix-\"开头，则STYLE 仅在POSIX 语系之外\n"
-"\t\t\t\t生效。\n"
-"  -t\t\t\t\t根据修改时间排序\n"
-"  -T, --tabsize=宽度\t指定制表符(Tab)的宽度，而非8 个字符\n"
 
-#: src/ls.c:5261
+#: src/ls.c:5258
 #, fuzzy
 #| msgid ""
 #| "  -t                         sort by modification time\n"
@@ -6220,7 +6280,7 @@ msgstr ""
 "  -t\t\t\t按修改时间排序\n"
 "  -T, --tabsize=COLS\t指定制表符(Tab)的宽度，而非8个字符\n"
 
-#: src/ls.c:5265
+#: src/ls.c:5262
 #, fuzzy
 #| msgid ""
 #| "  -u                         with -lt: sort by, and show, access time\n"
@@ -6241,7 +6301,7 @@ msgstr ""
 "  -U\t\t\t不进行排序；按照目录顺序列出项目\n"
 "  -v\t\t\t在文本中进行数字(版本)的自然排序\n"
 
-#: src/ls.c:5272
+#: src/ls.c:5269
 #, fuzzy
 #| msgid ""
 #| "  -w, --width=COLS           assume screen width instead of current value\n"
@@ -6261,7 +6321,17 @@ msgstr ""
 "  -X\t\t\t根据扩展名排序\n"
 "  -1\t\t\t每行只列出一个文件\n"
 
-#: src/ls.c:5283
+#: src/ls.c:5280
+msgid ""
+"\n"
+"The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.\n"
+"FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,\n"
+"then FORMAT1 applies to non-recent files and FORMAT2 to recent files.\n"
+"TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.\n"
+"Also the TIME_STYLE environment variable sets the default style to use.\n"
+msgstr ""
+
+#: src/ls.c:5288
 msgid ""
 "\n"
 "Using color to distinguish file types is disabled both by default and\n"
@@ -6275,7 +6345,7 @@ msgstr ""
 "LS_COLORS 环境变量可改变此设置，可使用 dircolors 命令来设置。\n"
 "\n"
 
-#: src/ls.c:5290
+#: src/ls.c:5295
 msgid ""
 "\n"
 "Exit status:\n"
@@ -6410,117 +6480,117 @@ msgstr ""
 "样板格式相同。默认的输出模式时输出一行校验和的校验结果，并有一个字符来\n"
 "表示文件类型(\"*\"代表二进制，\" \"代表纯文本)，并同时显示每个文件的名称。\n"
 
-#: src/md5sum.c:688
+#: src/md5sum.c:689
 #, c-format
 msgid "%s: too many checksum lines"
 msgstr "%s：校验和的行数过多"
 
-#: src/md5sum.c:711
+#: src/md5sum.c:712
 #, c-format
 msgid "%s: %<PRIuMAX>: improperly formatted %s checksum line"
 msgstr "%s：%<PRIuMAX>：%s 的校验和行目格式不适当"
 
-#: src/md5sum.c:743
+#: src/md5sum.c:744
 #, fuzzy
 #| msgid "%s: FAILED open or read\n"
 msgid "FAILED open or read"
 msgstr "%s：打开或读取失败\n"
 
-#: src/md5sum.c:781
+#: src/md5sum.c:782
 msgid "FAILED"
 msgstr "失败"
 
-#: src/md5sum.c:783
+#: src/md5sum.c:784
 msgid "OK"
 msgstr "成功"
 
-#: src/md5sum.c:807
+#: src/md5sum.c:808
 #, c-format
 msgid "%s: no properly formatted %s checksum lines found"
 msgstr "%s：找不到格式适用的%s 校验和"
 
-#: src/md5sum.c:817
+#: src/md5sum.c:818
 #, c-format
 msgid "WARNING: %<PRIuMAX> line is improperly formatted"
 msgid_plural "WARNING: %<PRIuMAX> lines are improperly formatted"
 msgstr[0] "警告：%<PRIuMAX> 行的格式不适当"
 
-#: src/md5sum.c:825
+#: src/md5sum.c:826
 #, c-format
 msgid "WARNING: %<PRIuMAX> listed file could not be read"
 msgid_plural "WARNING: %<PRIuMAX> listed files could not be read"
 msgstr[0] "警告：%<PRIuMAX> 个列出的文件无法读取"
 
-#: src/md5sum.c:833
+#: src/md5sum.c:834
 #, c-format
 msgid "WARNING: %<PRIuMAX> computed checksum did NOT match"
 msgid_plural "WARNING: %<PRIuMAX> computed checksums did NOT match"
 msgstr[0] "警告：%<PRIuMAX> 个校验和不匹配"
 
-#: src/md5sum.c:839
+#: src/md5sum.c:840
 #, fuzzy, c-format
 #| msgid "%s: file has negative size"
 msgid "%s: no file was verified"
 msgstr "%s：文件的大小为负数"
 
-#: src/md5sum.c:889
+#: src/md5sum.c:890
 #, fuzzy
 #| msgid "invalid input"
 msgid "invalid length"
 msgstr "输入无效"
 
-#: src/md5sum.c:893 src/md5sum.c:942
+#: src/md5sum.c:894 src/md5sum.c:943
 #, fuzzy, c-format
 #| msgid "invalid line width: %s"
 msgid "invalid length: %s"
 msgstr "无效的行宽：%s"
 
-#: src/md5sum.c:894
+#: src/md5sum.c:895
 msgid "length is not a multiple of 8"
 msgstr ""
 
-#: src/md5sum.c:944
+#: src/md5sum.c:945
 #, c-format
 msgid "maximum digest length for %s is %<PRIuMAX> bits"
 msgstr ""
 
-#: src/md5sum.c:962
+#: src/md5sum.c:963
 #, c-format
 msgid "--tag does not support --text mode"
 msgstr "--tag 不支持--text 模式"
 
-#: src/md5sum.c:968
+#: src/md5sum.c:969
 #, c-format
 msgid "the --tag option is meaningless when verifying checksums"
 msgstr "在校验时--tag 选项无意义"
 
-#: src/md5sum.c:975
+#: src/md5sum.c:976
 #, c-format
 msgid "the --binary and --text options are meaningless when verifying checksums"
 msgstr "在校验时--binary 和--text 选项无意义"
 
-#: src/md5sum.c:983
+#: src/md5sum.c:984
 #, fuzzy, c-format
 #| msgid "the --warn option is meaningful only when verifying checksums"
 msgid "the --ignore-missing option is meaningful only when verifying checksums"
 msgstr "仅在校验时--warn 选项才有意义"
 
-#: src/md5sum.c:991
+#: src/md5sum.c:992
 #, c-format
 msgid "the --status option is meaningful only when verifying checksums"
 msgstr "仅在校验时--status 选项有意义"
 
-#: src/md5sum.c:998
+#: src/md5sum.c:999
 #, c-format
 msgid "the --warn option is meaningful only when verifying checksums"
 msgstr "仅在校验时--warn 选项才有意义"
 
-#: src/md5sum.c:1005
+#: src/md5sum.c:1006
 #, c-format
 msgid "the --quiet option is meaningful only when verifying checksums"
 msgstr "只有在校验时--quiet 选项才有意义"
 
-#: src/md5sum.c:1012
+#: src/md5sum.c:1013
 #, fuzzy, c-format
 #| msgid "the --status option is meaningful only when verifying checksums"
 msgid "the --strict option is meaningful only when verifying checksums"
@@ -7095,7 +7165,7 @@ msgstr "无效的行宽数值：%s"
 msgid "invalid line numbering format: %s"
 msgstr "无效的编号格式：%s"
 
-#: src/nohup.c:51
+#: src/nohup.c:56
 #, c-format
 msgid ""
 "Usage: %s COMMAND [ARG]...\n"
@@ -7104,7 +7174,7 @@ msgstr ""
 "用法：%s 命令 [参数]...\n"
 "　或：%s 选项\n"
 
-#: src/nohup.c:57
+#: src/nohup.c:62
 msgid ""
 "Run COMMAND, ignoring hangup signals.\n"
 "\n"
@@ -7112,7 +7182,7 @@ msgstr ""
 "忽略挂起信号运行指定的命令。\n"
 "\n"
 
-#: src/nohup.c:63
+#: src/nohup.c:68
 #, fuzzy, c-format
 #| msgid ""
 #| "\n"
@@ -7136,37 +7206,37 @@ msgstr ""
 "如果标准错误输出是一个终端，重定向它到标准输出。\n"
 "要保存输出内容到一个文件，使用 \"%s COMMAND > FILE\" 形式的命令。\n"
 
-#: src/nohup.c:125
+#: src/nohup.c:130
 #, c-format
 msgid "failed to render standard input unusable"
 msgstr "标准输入不可用，无法重定向"
 
-#: src/nohup.c:127
+#: src/nohup.c:132
 #, c-format
 msgid "ignoring input"
 msgstr "忽略输入"
 
-#: src/nohup.c:171
+#: src/nohup.c:176
 #, c-format
 msgid "ignoring input and appending output to %s"
 msgstr "忽略输入并把输出追加到%s"
 
-#: src/nohup.c:172
+#: src/nohup.c:177
 #, c-format
 msgid "appending output to %s"
 msgstr "把输出追加到%s"
 
-#: src/nohup.c:190
+#: src/nohup.c:195
 #, c-format
 msgid "ignoring input and redirecting stderr to stdout"
 msgstr "忽略输入重定向错误到标准输出端"
 
-#: src/nohup.c:191
+#: src/nohup.c:196
 #, c-format
 msgid "redirecting stderr to stdout"
 msgstr "重定向标准错误到标准输出"
 
-#: src/nohup.c:195
+#: src/nohup.c:200
 #, c-format
 msgid "failed to redirect standard error"
 msgstr "重定向标准错误失败"
@@ -7176,7 +7246,7 @@ msgstr "重定向标准错误失败"
 msgid "Giuseppe Scrivano"
 msgstr "Giuseppe Scrivano"
 
-#: src/nproc.c:57 src/pwd.c:57 src/tty.c:66 src/uname.c:121 src/whoami.c:45
+#: src/nproc.c:57 src/pwd.c:57 src/tty.c:65 src/uname.c:121 src/whoami.c:50
 #, c-format
 msgid "Usage: %s [OPTION]...\n"
 msgstr "用法：%s [选项]...\n"
@@ -8064,7 +8134,11 @@ msgstr ""
 "  -q\t在短格式中省略用户全名、远程主机以及空闲时间\n"
 
 #: src/pinky.c:507
-#, c-format
+#, fuzzy, c-format
+#| msgid ""
+#| "\n"
+#| "A lightweight `finger' program;  print user information.\n"
+#| "The utmp file will be %s.\n"
 msgid ""
 "\n"
 "A lightweight 'finger' program;  print user information.\n"
@@ -8090,8 +8164,10 @@ msgid "Roland Huebner"
 msgstr "Roland Huebner"
 
 #: src/pr.c:777
+#, fuzzy
+#| msgid "line number overflow"
 msgid "integer overflow"
-msgstr "整数溢出"
+msgstr "行号溢出"
 
 #: src/pr.c:916
 #, fuzzy
@@ -8150,7 +8226,7 @@ msgstr "有多余字符\"-%c\"或无效数字出现在参数%s 中"
 
 #: src/pr.c:1281
 msgid "page width too narrow"
-msgstr "页宽过窄"
+msgstr "过窄"
 
 #: src/pr.c:2337
 #, c-format
@@ -8526,7 +8602,13 @@ msgstr "F. Pinard"
 msgid "%s (for regexp %s)"
 msgstr "%s (正则表达式 %s)"
 
-#: src/ptx.c:1809
+#: src/ptx.c:823
+#, fuzzy, c-format
+#| msgid "error in regular expression matcher"
+msgid "error: regular expression has a match of length zero: %s"
+msgstr "正则表达式匹配器出错"
+
+#: src/ptx.c:1814
 #, c-format
 msgid ""
 "Usage: %s [OPTION]... [INPUT]...   (without -G)\n"
@@ -8535,7 +8617,7 @@ msgstr ""
 "用法：%s [选项]... [输入]... (不包括 -G 选项)\n"
 "　或：%s -G [选项]... [输入 [输出]]\n"
 
-#: src/ptx.c:1813
+#: src/ptx.c:1818
 #, fuzzy
 #| msgid ""
 #| "Output a permuted index, including context, of the words in the input files.\n"
@@ -8545,7 +8627,7 @@ msgstr ""
 "输出一串预排的文件索引信息，包括输入文件中各单词的环境。\n"
 "\n"
 
-#: src/ptx.c:1820
+#: src/ptx.c:1825
 #, fuzzy
 #| msgid ""
 #| "  -A, --auto-reference           output automatically generated references\n"
@@ -8559,13 +8641,13 @@ msgstr ""
 "  -G,--traditional\t\t行为类似System V 的\"ptx\"\n"
 "  -F,--flag-trunctaion=字符串\t使用指定字符串来标识行的截断\n"
 
-#: src/ptx.c:1824
+#: src/ptx.c:1829
 msgid ""
 "  -F, --flag-truncation=STRING   use STRING for flagging line truncations.\n"
 "                                 The default is '/'\n"
 msgstr ""
 
-#: src/ptx.c:1828
+#: src/ptx.c:1833
 #, fuzzy
 #| msgid ""
 #| "  -M, --macro-name=STRING        macro name to use instead of `xx'\n"
@@ -8586,7 +8668,7 @@ msgstr ""
 "  -S, --sentence-regexp=正则表达式\t用于匹配行末或句末\n"
 "  -T, --format=tex\t\t生成TeX 格式输出\n"
 
-#: src/ptx.c:1835
+#: src/ptx.c:1840
 msgid ""
 "  -W, --word-regexp=REGEXP       use REGEXP to match each keyword\n"
 "  -b, --break-file=FILE          word break characters in this FILE\n"
@@ -8602,7 +8684,7 @@ msgstr ""
 "  -i, --ignore-file=文件\t从指定文件中读取忽略单词的列表\n"
 "  -o, --only-file=文件\t\t只从指定文件中读取单词列表\n"
 
-#: src/ptx.c:1843
+#: src/ptx.c:1848
 msgid ""
 "  -r, --references               first field of each line is a reference\n"
 "  -t, --typeset-mode               - not implemented -\n"
@@ -8612,12 +8694,12 @@ msgstr ""
 "  -t, --typeset-mode\t\t -- 此功能尚未实现 --\n"
 "  -w, --width=数值\t\t每列的输出宽度，不计关联引用\n"
 
-#: src/ptx.c:1940
+#: src/ptx.c:1945
 #, c-format
 msgid "invalid gap width: %s"
 msgstr "无效的间隙宽度：%s"
 
-#: src/ptx.c:1967
+#: src/ptx.c:1972
 #, c-format
 msgid "invalid line width: %s"
 msgstr "无效的行宽：%s"
@@ -8669,7 +8751,7 @@ msgstr "忽略不是选项的参数"
 msgid "Dmitry V. Levin"
 msgstr "Dmitry V. Levin"
 
-#: src/readlink.c:62 src/realpath.c:71 src/shred.c:170 src/stat.c:1489
+#: src/readlink.c:62 src/realpath.c:71 src/shred.c:170 src/stat.c:1497
 #: src/touch.c:213
 #, c-format
 msgid "Usage: %s [OPTION]... FILE...\n"
@@ -8712,7 +8794,7 @@ msgid ""
 "                                every component of the given name recursively,\n"
 "                                without requirements on components existence\n"
 "  -n, --no-newline              do not output the trailing delimiter\n"
-"  -q, --quiet,\n"
+"  -q, --quiet\n"
 "  -s, --silent                  suppress most error messages (on by default)\n"
 "  -v, --verbose                 report error messages\n"
 "  -z, --zero                    end each output line with NUL, not newline\n"
@@ -8781,9 +8863,10 @@ msgid "%s: remove %s %s? "
 msgstr "%s：是否删除%s %s？"
 
 #: src/remove.c:374
-#, c-format
+#, fuzzy, c-format
+#| msgid "removed directory: %s\n"
 msgid "removed directory %s\n"
-msgstr "已删除目录%s\n"
+msgstr "已删除目录：%s\n"
 
 #: src/remove.c:446
 #, fuzzy, c-format
@@ -8927,7 +9010,7 @@ msgstr ""
 
 #: src/rm.c:292
 msgid "you may not abbreviate the --no-preserve-root option"
-msgstr "您不能缩写 --no-preserve-root 选项"
+msgstr ""
 
 #: src/rm.c:343
 #, fuzzy, c-format
@@ -8986,7 +9069,7 @@ msgstr ""
 msgid "failed to remove %s"
 msgstr "删除 %s 失败"
 
-#: src/runcon.c:82
+#: src/runcon.c:78
 #, c-format
 msgid ""
 "Usage: %s CONTEXT COMMAND [args]\n"
@@ -8995,13 +9078,13 @@ msgstr ""
 "用法: %s 环境 命令 [参数]\n"
 "　或: %s [ -c ] [-u 用户] [-r 角色] [-t 类型] [-l 范围] 命令 [参数]\n"
 
-#: src/runcon.c:86
+#: src/runcon.c:82
 msgid ""
 "Run a program in a different SELinux security context.\n"
 "With neither CONTEXT nor COMMAND, print the current security context.\n"
 msgstr ""
 
-#: src/runcon.c:93
+#: src/runcon.c:89
 #, fuzzy
 #| msgid ""
 #| "Run a program in a different security context.\n"
@@ -9034,92 +9117,70 @@ msgstr ""
 "  -l, --range=范围\t级别范围\n"
 "\n"
 
-#: src/runcon.c:115
-#, fuzzy
-#| msgid "failed to get file system create context"
-msgid "failed to initialize seccomp context"
-msgstr "获取文件系统创建环境失败"
-
-#: src/runcon.c:118
-#, fuzzy
-#| msgid "failed to set user-ID"
-msgid "failed to add seccomp rule"
-msgstr "设置用户ID 失败"
-
-#: src/runcon.c:120
-#, fuzzy
-#| msgid "failed to lookup file %s"
-msgid "failed to load seccomp rule"
-msgstr "查阅文件%s 失败"
-
-#: src/runcon.c:126
-msgid "cannot create session"
-msgstr "无法创建会话"
-
-#: src/runcon.c:165
+#: src/runcon.c:139
 msgid "multiple roles"
 msgstr "多角色"
 
-#: src/runcon.c:170
+#: src/runcon.c:144
 msgid "multiple types"
 msgstr "多类型"
 
-#: src/runcon.c:175
+#: src/runcon.c:149
 msgid "multiple users"
 msgstr "多用户"
 
-#: src/runcon.c:180
+#: src/runcon.c:154
 msgid "multiple levelranges"
 msgstr "复合级别范围"
 
-#: src/runcon.c:198 src/runcon.c:236
+#: src/runcon.c:172 src/runcon.c:208
 msgid "failed to get current context"
 msgstr "无法获得当前安全环境"
 
-#: src/runcon.c:208
+#: src/runcon.c:182
 #, c-format
 msgid "you must specify -c, -t, -u, -l, -r, or context"
 msgstr "您必须指定-c，-t，-u，-l，-r 或环境"
 
-#: src/runcon.c:216
+#: src/runcon.c:190
 #, c-format
 msgid "no command specified"
 msgstr "没有指定命令"
 
-#: src/runcon.c:221
+#: src/runcon.c:195
 #, c-format
 msgid "%s may be used only on a SELinux kernel"
 msgstr "%s 只能用于启用了SELinux 支持的内核"
 
-#: src/runcon.c:250
+#: src/runcon.c:222
 msgid "failed to compute a new context"
 msgstr "计算新的环境失败"
 
-#: src/runcon.c:264
+#: src/runcon.c:236
 #, fuzzy, c-format
 #| msgid "failed to set new user %s"
 msgid "failed to set new user: %s"
 msgstr "设置新用户%s 失败"
 
-#: src/runcon.c:267
+#: src/runcon.c:239
 #, fuzzy, c-format
 #| msgid "failed to set new type %s"
 msgid "failed to set new type: %s"
 msgstr "设置新类型%s 失败"
 
-#: src/runcon.c:270
+#: src/runcon.c:242
 #, fuzzy, c-format
 #| msgid "failed to set new range %s"
 msgid "failed to set new range: %s"
 msgstr "设置新范围%s 失败"
 
-#: src/runcon.c:273
+#: src/runcon.c:245
 #, fuzzy, c-format
 #| msgid "failed to set new role %s"
 msgid "failed to set new role: %s"
 msgstr "设置新角色%s 失败"
 
-#: src/runcon.c:282
+#: src/runcon.c:254
 #, c-format
 msgid "unable to set security context %s"
 msgstr "无法设置安全环境%s"
@@ -9257,9 +9318,10 @@ msgid "invalid decreasing range"
 msgstr "无效的缩小的范围"
 
 #: src/set-fields.c:259
-#, c-format
+#, fuzzy, c-format
+#| msgid "byte offset %s is too large"
 msgid "byte/character offset %s is too large"
-msgstr "字节/字符偏移量%s 过大"
+msgstr "字节偏移量%s 过大"
 
 #: src/set-fields.c:260
 #, c-format
@@ -9340,7 +9402,7 @@ msgstr ""
 #| "                   this is the default for non-regular files\n"
 #| "  -z, --zero     add a final overwrite with zeros to hide shredding\n"
 msgid ""
-"  -u             truncate and remove file after overwriting\n"
+"  -u             deallocate and remove file after overwriting\n"
 "      --remove[=HOW]  like -u but give control on HOW to delete;  See below\n"
 "  -v, --verbose  show progress\n"
 "  -x, --exact    do not round file sizes up to the next full block;\n"
@@ -9544,39 +9606,41 @@ msgstr "%s：正在删除"
 msgid "%s: renamed to %s"
 msgstr "%s：名称已更改为 %s"
 
-#: src/shred.c:1126
+#: src/shred.c:1125
 #, c-format
 msgid "%s: failed to remove"
 msgstr "%s：删除失败"
 
-#: src/shred.c:1130
+#: src/shred.c:1129
 #, c-format
 msgid "%s: removed"
 msgstr "%s：已删除"
 
-#: src/shred.c:1137 src/shred.c:1180
+#: src/shred.c:1136 src/shred.c:1179
 #, c-format
 msgid "%s: failed to close"
 msgstr "%s：无法关闭"
 
-#: src/shred.c:1173
+#: src/shred.c:1172
 #, c-format
 msgid "%s: failed to open for writing"
 msgstr "%s：无法以写模式打开"
 
-#: src/shred.c:1236
+#: src/shred.c:1235
 #, fuzzy
 #| msgid "%s: invalid number of passes"
 msgid "invalid number of passes"
 msgstr "%s：覆盖次数无效"
 
-#: src/shred.c:1241 src/shuf.c:462 src/sort.c:4507
+#: src/shred.c:1240 src/shuf.c:462 src/sort.c:4507
 msgid "multiple random sources specified"
 msgstr "指定了多个随机源"
 
-#: src/shred.c:1255
+#: src/shred.c:1254
+#, fuzzy
+#| msgid "%s: invalid file size"
 msgid "invalid file size"
-msgstr "文件大小无效"
+msgstr "%s：文件大小无效"
 
 #: src/shuf.c:62
 #, c-format
@@ -9624,16 +9688,20 @@ msgstr ""
 "  -z, --zero-terminated\t以0 结束行而非新行\n"
 
 #: src/shuf.c:226
+#, fuzzy
+#| msgid "too many repeated lines"
 msgid "too many input lines"
-msgstr "输入行过多"
+msgstr "重复行过多"
 
 #: src/shuf.c:418
 msgid "multiple -i options specified"
 msgstr "指定了多个-i 选项"
 
 #: src/shuf.c:425 src/shuf.c:431 src/shuf.c:436
+#, fuzzy
+#| msgid "invalid input range %s"
 msgid "invalid input range"
-msgstr "无效的输入范围"
+msgstr "无效的输入范围：%s"
 
 #: src/shuf.c:449
 #, fuzzy, c-format
@@ -9654,7 +9722,7 @@ msgstr "不能同时指定-e 和-i 选项"
 msgid "no lines to repeat"
 msgstr ""
 
-#: src/sleep.c:45
+#: src/sleep.c:50
 #, fuzzy, c-format
 #| msgid ""
 #| "Usage: %s NUMBER[SUFFIX]...\n"
@@ -9682,12 +9750,12 @@ msgstr ""
 "如果参数个数超过2 个，暂停的总时间为各个参数的值的和。\n"
 "\n"
 
-#: src/sleep.c:135 src/timeout.c:319
+#: src/sleep.c:140 src/timeout.c:332
 #, c-format
 msgid "invalid time interval %s"
 msgstr "无效的时间间隔%s"
 
-#: src/sleep.c:146 src/tail.c:1287
+#: src/sleep.c:151 src/tail.c:1287
 msgid "cannot read realtime clock"
 msgstr "无法读取实时时钟"
 
@@ -10268,8 +10336,10 @@ msgid "executing with FILE=%s\n"
 msgstr ""
 
 #: src/split.c:491
+#, fuzzy
+#| msgid "failed to create hard link %s"
 msgid "failed to create pipe"
-msgstr "无法创建管道"
+msgstr "无法创建硬链接%s"
 
 #: src/split.c:505
 #, fuzzy
@@ -10302,12 +10372,16 @@ msgid "failed to run command: \"%s -c %s\""
 msgstr "无法运行命令%s"
 
 #: src/split.c:524
+#, fuzzy
+#| msgid "failed to close directory %s"
 msgid "failed to close input pipe"
-msgstr "关闭输入管道失败"
+msgstr "关闭目录 %s 失败"
 
 #: src/split.c:560
+#, fuzzy
+#| msgid "waiting for strip"
 msgid "waiting for child process"
-msgstr "等待子进程"
+msgstr "等待拆解"
 
 #: src/split.c:570
 #, c-format
@@ -10402,49 +10476,49 @@ msgid "%s: cannot determine file size"
 msgstr "%s：无法确定文件大小"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/stat.c:180
+#: src/stat.c:190
 msgid "Michael Meskes"
 msgstr "Michael Meskes"
 
-#: src/stat.c:939
+#: src/stat.c:949
 #, c-format
 msgid "failed to canonicalize %s"
 msgstr "标准化%s 失败"
 
-#: src/stat.c:1207
+#: src/stat.c:1217
 #, fuzzy, c-format
 #| msgid "warning: unrecognized escape `\\%c'"
 msgid "warning: unrecognized escape '\\%c'"
 msgstr "警告：无法识别的转义字符\"\\%c\""
 
-#: src/stat.c:1262
+#: src/stat.c:1272
 #, c-format
 msgid "%s: invalid directive"
 msgstr "%s：无效指令"
 
-#: src/stat.c:1309
+#: src/stat.c:1319
 #, c-format
 msgid "warning: backslash at end of format"
 msgstr "警告：格式末尾出现反斜杠"
 
-#: src/stat.c:1340
+#: src/stat.c:1350
 #, c-format
 msgid "using %s to denote standard input does not work in file system mode"
 msgstr "用 %s 进行标准输入在文件系统模式下无法工作"
 
-#: src/stat.c:1347
+#: src/stat.c:1357
 #, c-format
 msgid "cannot read file system information for %s"
 msgstr "无法为 %s 读取文件系统信息"
 
-#: src/stat.c:1368
+#: src/stat.c:1378
 #, c-format
 msgid "cannot stat standard input"
 msgstr "无法从标准输入获取文件信息(stat)"
 
 #. TRANSLATORS: This string uses format specifiers from
 #. 'stat --help' with --file-system, and NOT from printf.
-#: src/stat.c:1404
+#: src/stat.c:1414
 msgid ""
 "  File: \"%n\"\n"
 "    ID: %-8i Namelen: %-7l Type: %T\n"
@@ -10460,7 +10534,7 @@ msgstr ""
 
 #. TRANSLATORS: This string uses format specifiers from
 #. 'stat --help' without --file-system, and NOT from printf.
-#: src/stat.c:1427
+#: src/stat.c:1435
 msgid ""
 "  File: %N\n"
 "  Size: %-10s\tBlocks: %-10b IO Block: %-6o %F\n"
@@ -10470,30 +10544,30 @@ msgstr ""
 
 #. TRANSLATORS: This string uses format specifiers from
 #. 'stat --help' without --file-system, and NOT from printf.
-#: src/stat.c:1437
+#: src/stat.c:1445
 msgid "Device: %Dh/%dd\tInode: %-10i  Links: %-5h Device type: %t,%T\n"
 msgstr "设备：%Dh/%dd\tInode：%-10i  硬链接：%-5h 设备类型：%t,%T\n"
 
 #. TRANSLATORS: This string uses format specifiers from
 #. 'stat --help' without --file-system, and NOT from printf.
-#: src/stat.c:1445
+#: src/stat.c:1453
 msgid "Device: %Dh/%dd\tInode: %-10i  Links: %h\n"
 msgstr "设备：%Dh/%dd\tInode：%-10i  硬链接：%h\n"
 
 #. TRANSLATORS: This string uses format specifiers from
 #. 'stat --help' without --file-system, and NOT from printf.
-#: src/stat.c:1454
+#: src/stat.c:1462
 msgid "Access: (%04a/%10.10A)  Uid: (%5u/%8U)   Gid: (%5g/%8G)\n"
 msgstr "权限：(%04a/%10.10A)  Uid：(%5u/%8U)   Gid：(%5g/%8G)\n"
 
 #. TRANSLATORS: This string uses format specifiers from
 #. 'stat --help' without --file-system, and NOT from printf.
-#: src/stat.c:1464
+#: src/stat.c:1472
 #, c-format
 msgid "Context: %C\n"
 msgstr "环境：%C\n"
 
-#: src/stat.c:1472
+#: src/stat.c:1480
 msgid ""
 "Access: %x\n"
 "Modify: %y\n"
@@ -10505,11 +10579,11 @@ msgstr ""
 "最近改动：%z\n"
 "创建时间：%w\n"
 
-#: src/stat.c:1490
+#: src/stat.c:1498
 msgid "Display file or file system status.\n"
 msgstr ""
 
-#: src/stat.c:1496
+#: src/stat.c:1504
 #, fuzzy
 #| msgid ""
 #| "Display file or file system status.\n"
@@ -10525,7 +10599,7 @@ msgstr ""
 "  -L, --dereference\t跟随链接\n"
 "  -f, --file-system\t显示文件系统状态而非文件状态\n"
 
-#: src/stat.c:1500
+#: src/stat.c:1508
 #, fuzzy
 #| msgid ""
 #| "  -c  --format=FORMAT   use the specified FORMAT instead of the default;\n"
@@ -10548,7 +10622,7 @@ msgstr ""
 "\t\t\t\t加入\"\\n\"\n"
 "  -t, --terse\t\t使用简洁格式输出\n"
 
-#: src/stat.c:1511
+#: src/stat.c:1519
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -10578,7 +10652,7 @@ msgstr ""
 "  %B   以字节为单位输出%b 所报告的每个块的大小\n"
 "  %C   SELinux 安全环境字符串\n"
 
-#: src/stat.c:1520
+#: src/stat.c:1528
 #, fuzzy
 #| msgid ""
 #| "  %d   Device number in decimal\n"
@@ -10602,7 +10676,7 @@ msgstr ""
 "  %g\t文件的属组ID\n"
 "  %G\t文件的属组组名\n"
 
-#: src/stat.c:1528
+#: src/stat.c:1536
 #, fuzzy
 #| msgid ""
 #| "  %h   Number of hard links\n"
@@ -10635,7 +10709,7 @@ msgstr ""
 "  %t\t十六进制主设备类型\n"
 "  %T\t十六进制子设备类型\n"
 
-#: src/stat.c:1539
+#: src/stat.c:1547
 #, fuzzy
 #| msgid ""
 #| "  %u   User ID of owner\n"
@@ -10674,7 +10748,7 @@ msgstr ""
 "  %Z\t从UNIX 元年起以秒计的上次更改时间\n"
 "\n"
 
-#: src/stat.c:1553
+#: src/stat.c:1561
 #, fuzzy
 #| msgid ""
 #| "Valid format sequences for file systems:\n"
@@ -10701,7 +10775,7 @@ msgstr ""
 "  %d\t文件系统中空闲文件节点数\n"
 "  %f\t文件系统中空闲块数\n"
 
-#: src/stat.c:1562
+#: src/stat.c:1570
 #, fuzzy
 #| msgid ""
 #| "  %i   File System ID in hex\n"
@@ -10727,6 +10801,21 @@ msgstr ""
 "  %S\t基本块大小(用于块计数)\n"
 "  %t\t十六进制类型描述\n"
 "  %T\t可读性较好的类型描述\n"
+
+#: src/stat.c:1580
+#, c-format
+msgid ""
+"\n"
+"--terse is equivalent to the following FORMAT:\n"
+"    %s"
+msgstr ""
+
+#: src/stat.c:1591
+#, c-format
+msgid ""
+"--terse --file-system is equivalent to the following FORMAT:\n"
+"    %s"
+msgstr ""
 
 #: src/stdbuf.c:91
 #, c-format
@@ -11530,59 +11619,61 @@ msgstr ""
 "规则以及与标准stty 设置间的偏差。在设置中，字符会被逐字读取或是被编码为^c、\n"
 "0x37、0177 或127 这样的字符，其中有特殊值^- 或undef 被用于禁止特殊字符。\n"
 
-#: src/stty.c:1129 src/stty.c:1271
-#, c-format
-msgid "invalid argument %s"
-msgstr "无效的参数 %s"
-
-#: src/stty.c:1140 src/stty.c:1157 src/stty.c:1171 src/stty.c:1203
-#: src/stty.c:1217 src/stty.c:1241
+#: src/stty.c:1097
 #, c-format
 msgid "missing argument to %s"
 msgstr "缺少%s 的参数"
 
-#: src/stty.c:1193
+#: src/stty.c:1140 src/stty.c:1258
 #, c-format
-msgid "%s: error setting %s"
-msgstr "%s：设置%s 出错"
+msgid "invalid argument %s"
+msgstr "无效的参数 %s"
 
-#: src/stty.c:1247
+#: src/stty.c:1192
+#, fuzzy, c-format
+#| msgid "%s: error truncating"
+msgid "%s: error setting %s"
+msgstr "%s：截断文件时出错"
+
+#: src/stty.c:1234
 #, c-format
 msgid "invalid line discipline %s"
 msgstr "无效的行约束%s"
 
-#: src/stty.c:1339
+#: src/stty.c:1326
 msgid "only one device may be specified"
 msgstr "只能指定一个设备"
 
-#: src/stty.c:1373
+#: src/stty.c:1360
 msgid ""
 "the options for verbose and stty-readable output styles are\n"
 "mutually exclusive"
 msgstr "verbose 和 stty-readable 两种输入风格的选项是互相抵触的"
 
-#: src/stty.c:1379
+#: src/stty.c:1366
 msgid "when specifying an output style, modes may not be set"
 msgstr "当指定了输出风格时，模式不能再被设置"
 
-#: src/stty.c:1397
+#: src/stty.c:1384
 #, c-format
 msgid "%s: couldn't reset non-blocking mode"
 msgstr "%s：无法重置非阻塞模式"
 
-#: src/stty.c:1460
+#: src/stty.c:1447
 #, c-format
 msgid "%s: unable to perform all requested operations"
 msgstr "%s：无法执行所有请求的操作"
 
-#: src/stty.c:1805
+#: src/stty.c:1792
 #, c-format
 msgid "%s: no size information for this device"
 msgstr "%s：此设备没有大小信息"
 
-#: src/stty.c:2334
+#: src/stty.c:2321
+#, fuzzy
+#| msgid "invalid integer argument %s"
 msgid "invalid integer argument"
-msgstr "无效的整数参数"
+msgstr "无效的整数参数%s"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/sum.c:38
@@ -11629,11 +11720,6 @@ msgid ""
 "or their containing file systems.\n"
 "\n"
 msgstr ""
-"将缓存内容同步写入持久性存储中\n"
-"\n"
-"如果指定了多于一个文件，只同步它们，\n"
-"或者包含它们的文件系统。\n"
-"\n"
 
 #: src/sync.c:73
 msgid "  -d, --data             sync only file data, no unneeded metadata\n"
@@ -11641,12 +11727,13 @@ msgstr ""
 
 #: src/sync.c:76
 msgid "  -f, --file-system      sync the file systems that contain the files\n"
-msgstr "  -f, --file-system      同步包含这些文件的文件系统\n"
+msgstr ""
 
 #: src/sync.c:114
-#, c-format
+#, fuzzy, c-format
+#| msgid "error reading %s"
 msgid "error opening %s"
-msgstr "打开%s 时出错"
+msgstr "读取%s 时出错"
 
 #: src/sync.c:124
 #, fuzzy, c-format
@@ -11655,17 +11742,18 @@ msgid "couldn't reset non-blocking mode %s"
 msgstr "%s：无法重置非阻塞模式"
 
 #: src/sync.c:155
-#, c-format
+#, fuzzy, c-format
+#| msgid "error reading %s"
 msgid "error syncing %s"
-msgstr "同步%s 时出错"
+msgstr "读取%s 时出错"
 
 #: src/sync.c:213
 msgid "cannot specify both --data and --file-system"
-msgstr "无法同时指定 --data 和 --file-system。"
+msgstr ""
 
 #: src/sync.c:217
 msgid "--data needs at least one argument"
-msgstr "--data 需要至少一个参数"
+msgstr ""
 
 #: src/system.h:344
 #, c-format
@@ -11757,35 +11845,36 @@ msgstr ""
 "  simple, never   永远使用普通方式备份\n"
 
 #: src/system.h:651
-#, c-format
+#, fuzzy, c-format
+#| msgid "%s home page: <%s>\n"
 msgid ""
 "\n"
 "%s online help: <%s>\n"
-msgstr ""
-"\n"
-"%s 的在线帮助：<%s>\n"
+msgstr "%s 的主页：<%s>\n"
 
 #. TRANSLATORS: Replace LANG_CODE in this URL with your language code
-#. <http://translationproject.org/team/LANG_CODE.html> to form one of
-#. the URLs at http://translationproject.org/team/.  Otherwise, replace
+#. <https://translationproject.org/team/LANG_CODE.html> to form one of
+#. the URLs at https://translationproject.org/team/.  Otherwise, replace
 #. the entire URL with your translation team's email address.
 #: src/system.h:662
-#, c-format
-msgid "Report %s translation bugs to <http://translationproject.org/team/>\n"
+#, fuzzy, c-format
+#| msgid "Report %s translation bugs to <http://translationproject.org/team/>\n"
+msgid "Report %s translation bugs to <https://translationproject.org/team/>\n"
 msgstr "请向<http://translationproject.org/team/zh_CN.html> 报告%s 的翻译错误\n"
 
 #: src/system.h:665
 #, c-format
 msgid "Full documentation at: <%s%s>\n"
-msgstr "完整文档请见：<%s%s>\n"
+msgstr ""
 
 #: src/system.h:667
 #, c-format
 msgid "or available locally via: info '(coreutils) %s%s'\n"
-msgstr "或者在本地运行：info '(coreutils) %s%s'\n"
+msgstr ""
 
 #: src/system.h:678
-#, c-format
+#, fuzzy, c-format
+#| msgid "Try `%s --help' for more information.\n"
 msgid "Try '%s --help' for more information.\n"
 msgstr "请尝试执行\"%s --help\"来获取更多信息。\n"
 
@@ -12053,7 +12142,7 @@ msgstr "%s 已不可访问"
 msgid "%s has been replaced with an untailable file%s"
 msgstr "%s 已被替换为tail 无法处理的文件，放弃跟踪"
 
-#: src/tail.c:1018 src/tail.c:2017
+#: src/tail.c:1018 src/tail.c:2024
 msgid "; giving up on this name"
 msgstr ""
 
@@ -12129,67 +12218,69 @@ msgstr "读取inotify 事件出错"
 #: src/tail.c:1690
 #, c-format
 msgid "directory containing watched file was removed"
-msgstr "包含被监视文件的目录已被删除"
+msgstr ""
 
-#: src/tail.c:2015
+#: src/tail.c:2022
 #, fuzzy, c-format
 #| msgid "%s: cannot follow end of this type of file; giving up on this name"
 msgid "%s: cannot follow end of this type of file%s"
 msgstr "%s：无法跟随此类型文件的末尾，已放弃"
 
-#: src/tail.c:2196
+#: src/tail.c:2203
 #, fuzzy
 #| msgid "%s: invalid maximum number of unchanged stats between opens"
 msgid "invalid maximum number of unchanged stats between opens"
 msgstr "%s：两次打开的间隔因过大而无效"
 
-#: src/tail.c:2204
+#: src/tail.c:2211
+#, fuzzy
+#| msgid "%s: invalid PID"
 msgid "invalid PID"
-msgstr "无效的进程号"
+msgstr "%s：无效的进程号"
 
-#: src/tail.c:2220
+#: src/tail.c:2227
 #, fuzzy, c-format
 #| msgid "invalid number of columns: %s"
 msgid "invalid number of seconds: %s"
 msgstr "无效的列数：%s"
 
-#: src/tail.c:2239
+#: src/tail.c:2246
 #, c-format
 msgid "option used in invalid context -- %c"
 msgstr "在未定义环境中的无效选项 -- %c"
 
-#: src/tail.c:2251
+#: src/tail.c:2258
 #, fuzzy, c-format
 #| msgid "warning: PID ignored; --pid=PID is useful only when following"
 msgid "warning: --retry ignored; --retry is useful only when following"
 msgstr "警告：已忽略进程号，只有在跟随模式下--pid=PID 选项才是有用的"
 
-#: src/tail.c:2255
+#: src/tail.c:2262
 #, c-format
 msgid "warning: --retry only effective for the initial open"
 msgstr ""
 
-#: src/tail.c:2260
+#: src/tail.c:2267
 #, c-format
 msgid "warning: PID ignored; --pid=PID is useful only when following"
 msgstr "警告：已忽略进程号，只有在跟随模式下--pid=PID 选项才是有用的"
 
-#: src/tail.c:2263
+#: src/tail.c:2270
 #, c-format
 msgid "warning: --pid=PID is not supported on this system"
 msgstr "警告：此系统不支持--pid=PID"
 
-#: src/tail.c:2369
+#: src/tail.c:2376
 #, c-format
 msgid "cannot follow %s by name"
 msgstr "无法按名称跟随%s"
 
-#: src/tail.c:2384
+#: src/tail.c:2391
 #, c-format
 msgid "warning: following standard input indefinitely is ineffective"
 msgstr "警告：无限期跟随标准输入是无用的"
 
-#: src/tail.c:2481
+#: src/tail.c:2488
 #, c-format
 msgid "inotify cannot be used, reverting to polling"
 msgstr "无法使用 inotify 机制，回归为 polling 机制"
@@ -12237,9 +12328,10 @@ msgid "invalid integer %s"
 msgstr "无效的整数%s"
 
 #: src/test.c:245
-#, c-format
+#, fuzzy, c-format
+#| msgid "')' expected"
 msgid "%s expected"
-msgstr "预期为 %s"
+msgstr "预期为')'"
 
 #: src/test.c:248
 #, fuzzy, c-format
@@ -12265,9 +12357,10 @@ msgid "-ot does not accept -l"
 msgstr "-ot 不能于-l 同时使用"
 
 #: src/test.c:372
-#, c-format
+#, fuzzy, c-format
+#| msgid "unknown binary operator"
 msgid "%s: unknown binary operator"
-msgstr "%s: 未知双目运算符"
+msgstr "未知双目运算符"
 
 #: src/test.c:651
 #, c-format
@@ -12466,26 +12559,32 @@ msgid "Matthew Bradburn"
 msgstr "Matthew Bradburn"
 
 #: src/test.c:868
-#, c-format
+#, fuzzy, c-format
+#| msgid "missing `]'"
 msgid "missing %s"
-msgstr "缺少 %s"
+msgstr "缺少\"]\""
 
 #: src/test.c:882
 #, c-format
 msgid "extra argument %s"
 msgstr "多余的参数%s"
 
-#: src/timeout.c:132
+#: src/timeout.c:135
 #, c-format
 msgid "warning: timer_settime"
 msgstr ""
 
-#: src/timeout.c:137
+#: src/timeout.c:140
 #, c-format
 msgid "warning: timer_create"
 msgstr ""
 
-#: src/timeout.c:224
+#: src/timeout.c:207
+#, c-format
+msgid "sending signal %s to command %s"
+msgstr ""
+
+#: src/timeout.c:235
 #, c-format
 msgid ""
 "Usage: %s [OPTION] DURATION COMMAND [ARG]...\n"
@@ -12494,11 +12593,11 @@ msgstr ""
 "用法：%s [选项] 停留时间 命令 [参数]...\n"
 "　或：%s 选项\n"
 
-#: src/timeout.c:228
+#: src/timeout.c:239
 msgid "Start COMMAND, and kill it if still running after DURATION.\n"
 msgstr "运行指定命令，在指定的停留时间后若该命令仍在运行则将其中止。\n"
 
-#: src/timeout.c:234
+#: src/timeout.c:245
 #, fuzzy
 #| msgid ""
 #| "  -k, --kill-after=DURATION\n"
@@ -12529,7 +12628,11 @@ msgstr ""
 "\t\t指定在超时时发送的信号。信号可以是类似\"HUP\"的信号名或是信号数。\n"
 "\t\t查看\"kill -l\"以获得信号列表\n"
 
-#: src/timeout.c:253
+#: src/timeout.c:260
+msgid "  -v, --verbose  diagnose to stderr any signal sent upon timeout\n"
+msgstr ""
+
+#: src/timeout.c:266
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -12545,7 +12648,7 @@ msgstr ""
 "\"s\"代表秒(默认值)，\"m\"代表分，\"h\"代表小时，\"d\"代表天。\n"
 "\n"
 
-#: src/timeout.c:258
+#: src/timeout.c:271
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -12568,27 +12671,27 @@ msgstr ""
 "如果没有指定信号则默认为TERM 信号。TERM 信号在进程没有捕获此信号时杀死进程。\n"
 "对于另一些进程可能需要使用KILL (9)信号，当然此信号不能被捕获。\n"
 
-#: src/timeout.c:369 src/timeout.c:379
+#: src/timeout.c:346 src/timeout.c:403
 #, c-format
 msgid "warning: sigprocmask"
 msgstr ""
 
-#: src/timeout.c:401
+#: src/timeout.c:425
 #, c-format
 msgid "warning: disabling core dumps failed"
 msgstr ""
 
-#: src/timeout.c:515
+#: src/timeout.c:544
 #, c-format
 msgid "error waiting for command"
 msgstr "等待命令出错"
 
-#: src/timeout.c:526
+#: src/timeout.c:555
 #, c-format
 msgid "the monitored command dumped core"
 msgstr ""
 
-#: src/timeout.c:539
+#: src/timeout.c:568
 #, fuzzy, c-format
 #| msgid "unknown status from command (0x%X)"
 msgid "unknown status from command (%d)"
@@ -13107,31 +13210,38 @@ msgstr "无法打开%s 读取数据"
 msgid "Mark Kettenis"
 msgstr "Mark Kettenis"
 
-#: src/tsort.c:83
-#, c-format
+#: src/tsort.c:88
+#, fuzzy, c-format
+#| msgid ""
+#| "Usage: %s [OPTION] [FILE]\n"
+#| "Write totally ordered list consistent with the partial ordering in FILE.\n"
+#| "With no FILE, or when FILE is -, read standard input.\n"
+#| "\n"
 msgid ""
 "Usage: %s [OPTION] [FILE]\n"
 "Write totally ordered list consistent with the partial ordering in FILE.\n"
 msgstr ""
 "用法：%s [选项] [文件]\n"
 "对不完全排序的文件实行完整的列表排序。\n"
+"如果不指定文件，或者文件为\"-\"，则从标准输入读取数据。\n"
+"\n"
 
-#: src/tsort.c:90 src/uptime.c:213
+#: src/tsort.c:95 src/uptime.c:218
 #, c-format
 msgid "\n"
 msgstr "\n"
 
-#: src/tsort.c:476
+#: src/tsort.c:481
 #, c-format
 msgid "%s: input contains an odd number of tokens"
 msgstr "%s：输入内容的行数为奇数"
 
-#: src/tsort.c:522
+#: src/tsort.c:527
 #, c-format
 msgid "%s: input contains a loop:"
 msgstr "%s：输入内容中含有循环段落："
 
-#: src/tty.c:67
+#: src/tty.c:66
 msgid ""
 "Print the file name of the terminal connected to standard input.\n"
 "\n"
@@ -13141,7 +13251,7 @@ msgstr ""
 "\n"
 "  -s, --silent, --quiet\t什么也不显示，只返回退出状态值\n"
 
-#: src/tty.c:132
+#: src/tty.c:127
 msgid "not a tty"
 msgstr "不是一个 tty"
 
@@ -13353,7 +13463,7 @@ msgstr "同时输出重复的行和重复计数是没有意义的"
 msgid "printing all duplicated lines and repeat counts is meaningless"
 msgstr "同时输出重复的行和重复计数是没有意义的"
 
-#: src/unlink.c:46
+#: src/unlink.c:51
 #, c-format
 msgid ""
 "Usage: %s FILE\n"
@@ -13362,7 +13472,7 @@ msgstr ""
 "用法：%s 文件\n"
 "　或：%s 选项\n"
 
-#: src/unlink.c:49
+#: src/unlink.c:54
 msgid ""
 "Call the unlink function to remove the specified FILE.\n"
 "\n"
@@ -13370,52 +13480,52 @@ msgstr ""
 "调用 unlink 函数删除指定的文件。\n"
 "\n"
 
-#: src/uptime.c:126
+#: src/uptime.c:131
 msgid "couldn't get boot time"
 msgstr "无法获取启动时间"
 
 #. TRANSLATORS: This prints the current clock time.
-#: src/uptime.c:137
+#: src/uptime.c:142
 #, fuzzy
 #| msgid " %H:%M%P  "
 msgid " %H:%M:%S  "
 msgstr " %H:%M "
 
-#: src/uptime.c:139
+#: src/uptime.c:144
 #, c-format
 msgid " ??:????  "
 msgstr " ??:????  "
 
-#: src/uptime.c:141
+#: src/uptime.c:146
 #, c-format
 msgid "up ???? days ??:??,  "
 msgstr "已启动???? 天 ??:??，"
 
-#: src/uptime.c:145
+#: src/uptime.c:150
 #, c-format
 msgid "up %ld day %2d:%02d,  "
 msgid_plural "up %ld days %2d:%02d,  "
 msgstr[0] "已启动%ld 天%2d:%02d，"
 
-#: src/uptime.c:150
+#: src/uptime.c:155
 #, fuzzy, c-format
 #| msgid "up %ld day %2d:%02d,  "
 #| msgid_plural "up %ld days %2d:%02d,  "
 msgid "up  %2d:%02d,  "
 msgstr "已启动%ld 天%2d:%02d，"
 
-#: src/uptime.c:152
+#: src/uptime.c:157
 #, c-format
 msgid "%lu user"
 msgid_plural "%lu users"
 msgstr[0] "%lu 个用户"
 
-#: src/uptime.c:162
+#: src/uptime.c:167
 #, c-format
 msgid ",  load average: %.2f"
 msgstr "，平均负载：%.2f"
 
-#: src/uptime.c:200
+#: src/uptime.c:205
 #, c-format
 msgid ""
 "Print the current time, the length of time the system has been up,\n"
@@ -13425,14 +13535,14 @@ msgstr ""
 "输出当前时间，系统启动时间，当前登录用户数以及最近1、5 和15 分钟系统运行\n"
 "队列中的平均任务数。"
 
-#: src/uptime.c:209
+#: src/uptime.c:214
 #, c-format
 msgid ""
 "  Processes in\n"
 "an uninterruptible sleep state also contribute to the load average.\n"
 msgstr "  处于不可中断睡眠状态的程序同样影响系统平均负载。\n"
 
-#: src/uptime.c:215
+#: src/uptime.c:220
 #, c-format
 msgid ""
 "If FILE is not specified, use %s.  %s as FILE is common.\n"
@@ -13441,7 +13551,7 @@ msgstr ""
 "如果文件没有指定，则使用%s，%s 是通用的相关文件。\n"
 "\n"
 
-#: src/users.c:107
+#: src/users.c:112
 #, c-format
 msgid ""
 "Output who is currently logged in according to FILE.\n"
@@ -13653,7 +13763,7 @@ msgstr ""
 "如果给定了参数1 和参数2，-m 会假定：\"am i\"或\"mom likes\"\n"
 "为参数。\n"
 
-#: src/whoami.c:46
+#: src/whoami.c:51
 msgid ""
 "Print the user name associated with the current effective user ID.\n"
 "Same as id -un.\n"
@@ -13663,13 +13773,13 @@ msgstr ""
 "与id -un 相同。\n"
 "\n"
 
-#: src/whoami.c:88
+#: src/whoami.c:93
 #, fuzzy, c-format
 #| msgid "cannot find name for user ID %lu"
 msgid "cannot find name for user ID %lu"
 msgstr "无法找到ID 为%lu 的用户的名称"
 
-#: src/yes.c:42
+#: src/yes.c:47
 #, c-format
 msgid ""
 "Usage: %s [STRING]...\n"
@@ -13678,7 +13788,7 @@ msgstr ""
 "用法：%s [字符串]...\n"
 "　或：%s 选项\n"
 
-#: src/yes.c:48
+#: src/yes.c:53
 #, fuzzy
 #| msgid ""
 #| "Repeatedly output a line with all specified STRING(s), or `y'.\n"
@@ -13778,6 +13888,9 @@ msgstr ""
 #~ msgid ", %g s, %s/s\n"
 #~ msgstr "，%g 秒，%s/秒\n"
 
+#~ msgid "syntax error"
+#~ msgstr "语法错误"
+
 #~ msgid "%s: %s is so large that it is not representable"
 #~ msgstr "%s：%s 过大以至于无法表示"
 
@@ -13789,6 +13902,34 @@ msgstr ""
 
 #~ msgid "error initializing month strings"
 #~ msgstr "初始化月份字符串出错"
+
+#, fuzzy
+#~| msgid ""
+#~| "      --time-style=STYLE     with -l, show times using style STYLE:\n"
+#~| "                             full-iso, long-iso, iso, locale, +FORMAT.\n"
+#~| "                             FORMAT is interpreted like `date'; if FORMAT is\n"
+#~| "                             FORMAT1<newline>FORMAT2, FORMAT1 applies to\n"
+#~| "                             non-recent files and FORMAT2 to recent files;\n"
+#~| "                             if STYLE is prefixed with `posix-', STYLE\n"
+#~| "                             takes effect only outside the POSIX locale\n"
+#~ msgid ""
+#~ "      --time-style=STYLE     with -l, show times using style STYLE:\n"
+#~ "                               full-iso, long-iso, iso, locale, or +FORMAT;\n"
+#~ "                               FORMAT is interpreted like in 'date'; if FORMAT\n"
+#~ "                               is FORMAT1<newline>FORMAT2, then FORMAT1 applies\n"
+#~ "                               to non-recent files and FORMAT2 to recent files;\n"
+#~ "                               if STYLE is prefixed with 'posix-', STYLE\n"
+#~ "                               takes effect only outside the POSIX locale\n"
+#~ msgstr ""
+#~ "      --time-style=STYLE\t和-l 同时使用时根据STYLE 代表的格式显示时间：\n"
+#~ "\t\t\t\tfull-iso、iso、locale、posix-iso、+FORMAT。\n"
+#~ "\t\t\t\tFORMAT 即是\"date\"所用的时间格式；如果FORMAT\n"
+#~ "\t\t\t\t是FORMAT1<换行>FORMAT2，FORMAT1 适用于较旧\n"
+#~ "\t\t\t\t的文件而FORMAT2 适用于较新的文件；如果STYLE\n"
+#~ "\t\t\t\t以\"posix-\"开头，则STYLE 仅在POSIX 语系之外\n"
+#~ "\t\t\t\t生效。\n"
+#~ "  -t\t\t\t\t根据修改时间排序\n"
+#~ "  -T, --tabsize=宽度\t指定制表符(Tab)的宽度，而非8 个字符\n"
 
 #~ msgid "failed to set the copy of stderr to close on exec"
 #~ msgstr "执行时关闭标准错误失败"
@@ -14137,6 +14278,9 @@ msgstr ""
 
 #~ msgid "writing %s"
 #~ msgstr "正在写入%s"
+
+#~ msgid "failed to get file system create context"
+#~ msgstr "获取文件系统创建环境失败"
 
 #~ msgid "closing %s"
 #~ msgstr "正在关闭 %s"

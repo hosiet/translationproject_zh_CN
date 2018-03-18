@@ -5,52 +5,46 @@
 # Xin Ye <alyex.ye@gmail.com>, 2009.
 # Eleanor Chen <chenyueg@gmail.com>, 2010.
 # Aron Xu <happyaron.xu@gmail.com>, 2009, 2010, 2011.
+# Boyuan Yang <073plan@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: grub 1.97+20110101\n"
+"Project-Id-Version: grub 2.02-pre3\n"
 "Report-Msgid-Bugs-To: bug-grub@gnu.org\n"
 "POT-Creation-Date: 2017-02-03 12:45+0100\n"
-"PO-Revision-Date: 2011-12-04 21:02+0800\n"
-"Last-Translator: Aron Xu <happyaron.xu@gmail.com>\n"
+"PO-Revision-Date: 2018-03-18 11:30+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: grub-core/bus/usb/serial/ftdi.c:145 grub-core/bus/usb/serial/pl2303.c:158
 #: grub-core/term/ieee1275/escc.c:169 grub-core/term/ns8250.c:202
-#, fuzzy
-#| msgid "Set the serial port speed."
 msgid "unsupported serial port speed"
-msgstr "设置串行端口速度。"
+msgstr "不支持的串行端口速度"
 
 #: grub-core/bus/usb/serial/ftdi.c:151 grub-core/bus/usb/serial/pl2303.c:164
 #: grub-core/term/efi/serial.c:116 grub-core/term/ieee1275/escc.c:175
 #: grub-core/term/ns8250.c:208 grub-core/term/serial.c:227
 #: grub-core/term/serial.c:243
-#, fuzzy
-#| msgid "Set the serial port parity."
 msgid "unsupported serial port parity"
-msgstr "设置串行端口奇偶校验。"
+msgstr "不支持的串行端口奇偶校验"
 
 #: grub-core/bus/usb/serial/ftdi.c:157 grub-core/bus/usb/serial/pl2303.c:170
 #: grub-core/term/efi/serial.c:122 grub-core/term/ieee1275/escc.c:181
 #: grub-core/term/ns8250.c:213 grub-core/term/serial.c:267
-#, fuzzy
-#| msgid "Set the serial port stop bits."
 msgid "unsupported serial port stop bits number"
-msgstr "设置串行端口停止位。"
+msgstr "不支持的串行端口停止位"
 
 #: grub-core/bus/usb/serial/ftdi.c:161 grub-core/bus/usb/serial/pl2303.c:174
 #: grub-core/term/efi/serial.c:126 grub-core/term/ieee1275/escc.c:185
 #: grub-core/term/ns8250.c:217
-#, fuzzy
-#| msgid "Set the serial port word length."
 msgid "unsupported serial port word length"
-msgstr "设置串行端口字长。"
+msgstr "不支持的串行端口字长"
 
 #: grub-core/commands/acpi.c:42
 msgid "Don't load host tables specified by comma-separated list."
@@ -61,16 +55,12 @@ msgid "Load only tables specified by comma-separated list."
 msgstr "只载入指定的主机表(多个表用逗号分隔)。"
 
 #: grub-core/commands/acpi.c:46
-#, fuzzy
-#| msgid "Export variables."
 msgid "Export version 1 tables to the OS."
-msgstr "导出变量。"
+msgstr "导出版本 1 表至操作系统。"
 
 #: grub-core/commands/acpi.c:47
-#, fuzzy
-#| msgid "Expose v2 and v3 tables."
 msgid "Export version 2 and version 3 tables to the OS."
-msgstr "显示 v2 和 v3 表。"
+msgstr "导出版本 2 和版本 3 表至操作系统。"
 
 #: grub-core/commands/acpi.c:48
 msgid "Set OEMID of RSDP, XSDT and RSDT."
@@ -94,10 +84,8 @@ msgstr "设置 RSDP，XSDT 和 RSDT 中的制造商版本信息。"
 
 #. TRANSLATORS: "hangs" here is a noun, not a verb.
 #: grub-core/commands/acpi.c:58
-#, fuzzy
-#| msgid "Don't update EBDA. May fix failures or hangs on some. BIOSes but makes it ineffective with OS not receiving RSDP from GRUB."
 msgid "Don't update EBDA. May fix failures or hangs on some BIOSes but makes it ineffective with OS not receiving RSDP from GRUB."
-msgstr "不更新 EBDA。有些时候能解决引导失败和挂起的问题。但因为 BIOS 的原因，对不从 GRUB 接收 RSDP 的操作系统无效。"
+msgstr "不更新 EBDA。有些时候能解决某些 BIOS 上引导失败和挂起的问题。但对不从 GRUB 接收 RSDP 的操作系统无效。"
 
 #: grub-core/commands/acpi.c:650 grub-core/commands/acpi.c:667
 #: grub-core/commands/i386/pc/play.c:105 grub-core/commands/keylayouts.c:230
@@ -144,16 +132,13 @@ msgstr "不更新 EBDA。有些时候能解决引导失败和挂起的问题。�
 #: grub-core/loader/xnu.c:943 grub-core/loader/xnu_resume.c:68
 #: grub-core/loader/xnu_resume.c:153 grub-core/loader/xnu_resume.c:165
 #: util/grub-mkimagexx.c:1920
-#, fuzzy, c-format
-#| msgid "cannot open file %s"
+#, c-format
 msgid "premature end of file %s"
-msgstr "无法打开文件 %s"
+msgstr "过早的文件终止符 %s"
 
 #: grub-core/commands/acpi.c:779
-#, fuzzy
-#| msgid "[-1|-2] [--exclude=TABLE1,TABLE2|--load-only=table1,table2] FILE1 [FILE2] [...]"
 msgid "[-1|-2] [--exclude=TABLE1,TABLE2|--load-only=TABLE1,TABLE2] FILE1 [FILE2] [...]"
-msgstr "[-1|-2] [--exclude=表1,表2|--load-on=表1,表2] 文件1 [文件2] [...]"
+msgstr "[-1|-2] [--exclude=表1,表2|--load-only=表1,表2] 文件1 [文件2] [...]"
 
 #: grub-core/commands/acpi.c:782
 msgid "Load host ACPI tables and tables specified by arguments."
@@ -176,10 +161,8 @@ msgstr "错误：%s。\n"
 #: grub-core/loader/efi/chainloader.c:283 grub-core/osdep/unix/dl.c:48
 #: grub-core/osdep/windows/dl.c:46 grub-core/script/lexer.c:156
 #: grub-core/script/lexer.c:182
-#, fuzzy
-#| msgid "Dump memory."
 msgid "out of memory"
-msgstr "转储内存。"
+msgstr "内存耗尽"
 
 #: grub-core/commands/acpihalt.c:374 grub-core/disk/cryptodisk.c:586
 #: grub-core/disk/cryptodisk.c:631 grub-core/kern/emu/hostdisk.c:307
@@ -190,21 +173,18 @@ msgstr "转储内存。"
 #: util/grub-install-common.c:918 util/grub-mkrescue.c:624
 #: util/grub-mkrescue.c:867 util/grub-mount.c:506 util/grub-render-label.c:176
 #: util/misc.c:95 util/setup.c:734 util/setup.c:753
-#, fuzzy, c-format
-#| msgid "cannot read `%s' correctly"
+#, c-format
 msgid "cannot read `%s': %s"
-msgstr "无法正确读取“%s”"
+msgstr "无法读取“%s”：%s"
 
 #. TRANSLATORS: It's computer shutdown using ACPI, not disabling ACPI.
 #: grub-core/commands/acpihalt.c:452
 msgid "ACPI shutdown failed"
-msgstr ""
+msgstr "ACPI 关机失败"
 
 #: grub-core/commands/arc/lsdev.c:51
-#, fuzzy
-#| msgid "List PCI devices."
 msgid "List devices."
-msgstr "列出 PCI 设备。"
+msgstr "列出设备。"
 
 #: grub-core/commands/blocklist.c:122 grub-core/commands/cat.c:57
 #: grub-core/commands/configfile.c:35 grub-core/commands/efi/loadbios.c:168
@@ -242,10 +222,8 @@ msgstr "列出 PCI 设备。"
 #: grub-core/loader/xnu.c:883 grub-core/loader/xnu.c:1268
 #: grub-core/loader/xnu.c:1418 grub-core/loader/xnu.c:1444
 #: grub-core/video/readers/jpeg.c:811 grub-core/video/readers/png.c:1123
-#, fuzzy
-#| msgid "Exclude file name (deprecated)"
 msgid "filename expected"
-msgstr "排除文件名(不建议使用)"
+msgstr "期望为文件名"
 
 #. TRANSLATORS: "embed" is a verb (command description).  "
 #: grub-core/commands/blocklist.c:154 grub-core/commands/cat.c:163
@@ -297,7 +275,7 @@ msgstr "显示块列表。"
 #: grub-core/loader/xnu.c:1249 grub-core/loader/xnu.c:1280
 #: grub-core/loader/xnu.c:1421
 msgid "you need to load the kernel first"
-msgstr ""
+msgstr "您需要先加载内核"
 
 #: grub-core/commands/boot.c:189
 msgid "Boot an operating system."
@@ -306,26 +284,24 @@ msgstr "引导操作系统。"
 #: grub-core/commands/boottime.c:36
 #: grub-core/commands/i386/coreboot/cb_timestamps.c:108
 msgid "No boot time statistics is available\n"
-msgstr ""
+msgstr "没有可用的启动时间统计信息\n"
 
 #: grub-core/commands/boottime.c:59
 msgid "Show boot time statistics."
-msgstr ""
+msgstr "显示启动时间统计信息。"
 
 #: grub-core/commands/cacheinfo.c:40
 #, c-format
 msgid "Disk cache statistics: hits = %lu (%lu.%02lu%%), misses = %lu\n"
-msgstr ""
+msgstr "磁盘缓存统计：命中 = %lu（%lu.%02lu%%），未命中 = %lu\n"
 
 #: grub-core/commands/cacheinfo.c:45
 msgid "No disk cache statistics available\n"
-msgstr ""
+msgstr "没有可用的磁盘缓存统计信息\n"
 
 #: grub-core/commands/cacheinfo.c:56
-#, fuzzy
-#| msgid "Retrieve device info."
 msgid "Get disk cache info."
-msgstr "获取设备信息。"
+msgstr "获取设备缓存信息。"
 
 #: grub-core/commands/cat.c:33
 msgid "Accept DOS-style CR/NL line endings."
@@ -341,27 +317,27 @@ msgstr "显示文件内容。"
 #: grub-core/commands/regexp.c:113 grub-core/commands/verify.c:767
 #: grub-core/mmap/mmap.c:517 grub-core/net/dns.c:639
 msgid "two arguments expected"
-msgstr ""
+msgstr "需要两个参数"
 
 #: grub-core/commands/cmp.c:45
 #, c-format
 msgid "Compare file `%s' with `%s':\n"
-msgstr ""
+msgstr "比较文件“%s”和“%s”：\n"
 
 #: grub-core/commands/cmp.c:54
 #, c-format
 msgid "Files differ in size: %llu [%s], %llu [%s]\n"
-msgstr ""
+msgstr "文件大小的区别：%llu [%s], %llu [%s]\n"
 
 #: grub-core/commands/cmp.c:81
 #, c-format
 msgid "Files differ at the offset %llu: 0x%x [%s], 0x%x [%s]\n"
-msgstr ""
+msgstr "文件在偏移量 %llu 的区别：0x%x [%s], 0x%x [%s]\n"
 
 #. TRANSLATORS: it's always exactly 2 files.
 #: grub-core/commands/cmp.c:93
 msgid "The files are identical.\n"
-msgstr ""
+msgstr "文件完全相同。\n"
 
 #: grub-core/commands/cmp.c:113
 msgid "FILE1 FILE2"
@@ -396,10 +372,8 @@ msgid "[[year-]month-day] [hour:minute[:second]]"
 msgstr "[[年-]月-日] [时:分[:秒]]"
 
 #: grub-core/commands/date.c:142
-#, fuzzy
-#| msgid "Command to display/set current datetime."
 msgid "Display/set current datetime."
-msgstr "显示/设置时间的命令"
+msgstr "显示/设置日期与时间。"
 
 #: grub-core/commands/echo.c:30
 msgid "Do not output the trailing newline."
@@ -419,19 +393,19 @@ msgstr "显示文本"
 
 #: grub-core/commands/efi/efifwsetup.c:82
 msgid "Reboot into firmware setup menu."
-msgstr ""
+msgstr "重启进入固件设置菜单。"
 
 #: grub-core/commands/efi/fixvideo.c:107
 msgid "Fix video problem."
-msgstr "修正显示问题"
+msgstr "修正视频问题。"
 
 #: grub-core/commands/efi/loadbios.c:52
 msgid "ROM image is present."
-msgstr ""
+msgstr "ROM 镜像存在。"
 
 #: grub-core/commands/efi/loadbios.c:70
 msgid "Can't enable ROM area."
-msgstr ""
+msgstr "无法启用 ROM 区域。"
 
 #: grub-core/commands/efi/loadbios.c:209
 msgid "Create BIOS-like structures for backward compatibility with existing OS."
@@ -446,10 +420,8 @@ msgid "Load BIOS dump."
 msgstr "载入 BIOS 转储。"
 
 #: grub-core/commands/eval.c:63
-#, fuzzy
-#| msgid "STRING"
 msgid "STRING ..."
-msgstr "字符串"
+msgstr "字符串 ..."
 
 #: grub-core/commands/eval.c:64
 msgid "Evaluate arguments as GRUB commands"
@@ -711,10 +683,8 @@ msgstr ""
 "(1=最低，...，254=最高，255=关闭)。"
 
 #: grub-core/commands/hdparm.c:36
-#, fuzzy
-#| msgid "Check power mode."
 msgid "Display power mode."
-msgstr "检查电源模式。"
+msgstr "显示电源模式。"
 
 #: grub-core/commands/hdparm.c:37
 msgid "Freeze ATA security settings until reset."
@@ -995,7 +965,7 @@ msgstr "无效命令%s。\n"
 #: grub-core/net/http.c:120
 #, c-format
 msgid "file `%s' not found"
-msgstr ""
+msgstr "文件“%s”未找到"
 
 #: grub-core/commands/i386/pc/play.c:162 grub-core/commands/i386/pc/play.c:171
 #: grub-core/kern/misc.c:418 grub-core/script/execute.c:137
@@ -2248,11 +2218,11 @@ msgstr ""
 #: grub-core/commands/videoinfo.c:176
 #, c-format
 msgid "Adapter `%s':\n"
-msgstr ""
+msgstr "适配器“%s”：\n"
 
 #: grub-core/commands/videoinfo.c:180
 msgid "  No info available"
-msgstr ""
+msgstr "  没有可用信息"
 
 #: grub-core/commands/videoinfo.c:198
 msgid "  Failed to initialize video adapter"
@@ -2632,10 +2602,8 @@ msgstr ""
 
 #: grub-core/fs/zfs/zfscrypt.c:437 util/grub-fstest.c:553
 #: util/grub-mount.c:483
-#, fuzzy
-#| msgid "Enter password: "
 msgid "Enter ZFS password: "
-msgstr "输入口令："
+msgstr "输入 ZFS 口令："
 
 #: grub-core/fs/zfs/zfscrypt.c:476
 #, fuzzy
@@ -6857,11 +6825,11 @@ msgstr "载入初始化内存盘..."
 
 #: util/grub.d/10_linux.in:183 util/grub.d/20_linux_xen.in:211
 msgid "Found linux image: %s\\n"
-msgstr ""
+msgstr "找到 Linux 镜像：%s\\n"
 
 #: util/grub.d/10_linux.in:220 util/grub.d/20_linux_xen.in:234
 msgid "Found initrd image: %s\\n"
-msgstr ""
+msgstr "找到 initrd 镜像：%s\\n"
 
 #: util/grub.d/10_netbsd.in:105
 msgid "%s, with kernel %s (via %s, recovery mode)"

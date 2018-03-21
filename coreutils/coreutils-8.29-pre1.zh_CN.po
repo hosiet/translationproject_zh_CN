@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.29-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2017-12-21 12:18+0000\n"
-"PO-Revision-Date: 2018-03-21 10:23+0800\n"
+"PO-Revision-Date: 2018-03-21 17:43+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -153,7 +153,7 @@ msgstr "套接字"
 
 #: lib/file-type.c:108
 msgid "whiteout"
-msgstr ""
+msgstr "whiteout 文件"
 
 #: lib/file-type.c:110
 msgid "weird file"
@@ -2080,21 +2080,19 @@ msgid "cannot move directory onto non-directory: %s -> %s"
 msgstr "无法将目录移动至非目录：%s -> %s"
 
 #: src/copy.c:2116
-#, fuzzy, c-format
-#| msgid "backing up %s would destroy source;  %s not moved"
+#, c-format
 msgid "backing up %s might destroy source;  %s not moved"
-msgstr "备份%s 会破坏源文件；未移动%s"
+msgstr "备份 %s 可能破坏源文件；未移动 %s"
 
 #: src/copy.c:2117
-#, fuzzy, c-format
-#| msgid "backing up %s would destroy source;  %s not copied"
+#, c-format
 msgid "backing up %s might destroy source;  %s not copied"
-msgstr "备份%s 会破坏源文件；未复制%s"
+msgstr "备份 %s 可能破坏源文件；未复制 %s"
 
 #: src/copy.c:2138 src/ln.c:293
 #, c-format
 msgid "cannot backup %s"
-msgstr "无法备份%s"
+msgstr "无法备份 %s"
 
 #: src/copy.c:2193
 #, c-format
@@ -2107,10 +2105,9 @@ msgid "cannot copy a directory, %s, into itself, %s"
 msgstr "无法将目录%s 复制到自己%s"
 
 #: src/copy.c:2279
-#, fuzzy, c-format
-#| msgid "warning: source file %s specified more than once"
+#, c-format
 msgid "warning: source directory %s specified more than once"
-msgstr "警告：指定来源文件%s 多于一次"
+msgstr "警告：指定来源目录 %s 多于一次"
 
 #: src/copy.c:2305
 #, c-format
@@ -2149,10 +2146,9 @@ msgid "cannot copy cyclic symbolic link %s"
 msgstr "无法复制循环的符号链接%s"
 
 #: src/copy.c:2530
-#, fuzzy, c-format
-#| msgid "created directory %s"
+#, c-format
 msgid "created directory %s\n"
-msgstr "已创建目录 %s"
+msgstr "已创建目录 %s\n"
 
 #: src/copy.c:2593
 #, c-format
@@ -2223,10 +2219,9 @@ msgid ""
 msgstr ""
 
 #: src/coreutils.c:178 src/coreutils.c:203
-#, fuzzy, c-format
-#| msgid "unknown stream"
+#, c-format
 msgid "unknown program %s"
-msgstr "未知流"
+msgstr "未知程序 %s"
 
 #: src/cp.c:158 src/mv.c:289
 #, c-format
@@ -2654,16 +2649,12 @@ msgstr ""
 "\n"
 
 #: src/csplit.c:1490
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Read standard input if FILE is -.  Each PATTERN may be:\n"
 msgid ""
 "\n"
 "Read standard input if FILE is -\n"
 msgstr ""
 "\n"
-"如果文件为\"-\"，则读取标准输入。每个\"格式\"可以是：\n"
+"如果文件为“-”，则读取标准输入。\n"
 
 #: src/csplit.c:1497
 #, fuzzy, c-format
@@ -4325,7 +4316,7 @@ msgstr ""
 
 #: src/env.c:68
 msgid "  -C, --chdir=DIR      change working directory to DIR\n"
-msgstr ""
+msgstr "  -C, --chdir=目录     将工作目录变更为指定目录\n"
 
 #: src/env.c:73
 msgid ""
@@ -4851,8 +4842,7 @@ msgid "cannot get real GID"
 msgstr "无法设置用户ID"
 
 #: src/groups.c:130 src/id.c:249
-#, fuzzy, c-format
-#| msgid "%s: No such user"
+#, c-format
 msgid "%s: no such user"
 msgstr "%s：无此用户"
 

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.29-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2017-12-21 12:18+0000\n"
-"PO-Revision-Date: 2018-03-14 21:24+0800\n"
+"PO-Revision-Date: 2018-03-21 10:23+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -651,13 +651,6 @@ msgid "(C)"
 msgstr "(C)"
 
 #: lib/version-etc.c:86
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
-#| "This is free software: you are free to change and redistribute it.\n"
-#| "There is NO WARRANTY, to the extent permitted by law.\n"
-#| "\n"
 msgid ""
 "\n"
 "License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\n"
@@ -666,7 +659,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"许可证：GPLv3+：GNU 通用公共许可证第3 版或更新版本<http://gnu.org/licenses/gpl.html>。\n"
+"许可证 GPLv3+：GNU 通用公共许可证第 3 版或更新版本<https://gnu.org/licenses/gpl.html>。\n"
 "本软件是自由软件：您可以自由修改和重新发布它。\n"
 "在法律范围内没有其他保证。\n"
 "\n"
@@ -808,16 +801,13 @@ msgid "%s home page: <https://www.gnu.org/software/%s/>\n"
 msgstr "%s 项目主页：<https://www.gnu.org/software/%s/>\n"
 
 #: lib/version-etc.c:256
-#, fuzzy
-#| msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
 msgid "General help using GNU software: <https://www.gnu.org/gethelp/>\n"
-msgstr "GNU 软件一般性帮助：<http://www.gnu.org/gethelp/>\n"
+msgstr "GNU 软件一般性帮助：<https://www.gnu.org/gethelp/>\n"
 
 #: lib/xbinary-io.c:37
-#, fuzzy, c-format
-#| msgid "failed to set the security context of %s to %s"
+#, c-format
 msgid "failed to set file descriptor text/binary mode"
-msgstr "设置%s 的安全环境为%s 失败"
+msgstr "设置文件描述符为文本/二进制模式时失败"
 
 #: lib/xmemcoll.c:39 src/expr.c:1026
 #, c-format
@@ -860,18 +850,13 @@ msgid "Simon Josefsson"
 msgstr "Simon Josefsson"
 
 #: src/base64.c:65
-#, fuzzy, c-format
-#| msgid ""
-#| "Usage: %s [OPTION]... [FILE]\n"
-#| "Base64 encode or decode FILE, or standard input, to standard output.\n"
-#| "\n"
+#, c-format
 msgid ""
 "Usage: %s [OPTION]... [FILE]\n"
 "Base%d encode or decode FILE, or standard input, to standard output.\n"
 msgstr ""
 "用法：%s [选项]... [文件]\n"
-"使用 Base64 编码/解码文件或标准输入输出。\n"
-"\n"
+"使用 Base%d 编码/解码文件或标准输入输出。\n"
 
 #: src/base64.c:73
 msgid ""
@@ -887,13 +872,7 @@ msgstr ""
 "\n"
 
 #: src/base64.c:82
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "The data are encoded as described for the base64 alphabet in RFC 3548.\n"
-#| "When decoding, the input may contain newlines in addition to the bytes of\n"
-#| "the formal base64 alphabet.  Use --ignore-garbage to attempt to recover\n"
-#| "from any other non-alphabet bytes in the encoded stream.\n"
+#, c-format
 msgid ""
 "\n"
 "The data are encoded as described for the %s alphabet in RFC 4648.\n"
@@ -902,7 +881,9 @@ msgid ""
 "from any other non-alphabet bytes in the encoded stream.\n"
 msgstr ""
 "\n"
-"数据以 RFC 3548 规定的 Base64 字母格式进行编码。 解码时，输入数据(加密流)可能包含一些非有效 Base64 字符的新行字符。可以尝试用 --ignore-garbage 选项来恢复加密流中任何非 base64 字符。\n"
+"数据以 RFC 4648 规定的 %s 字母格式进行编码。\n"
+"解码时，输入数据（编码流）可能包含一些非有效 %s 字符的换行符。\n"
+"可以尝试用 --ignore-garbage 选项来绕过编码流中的无效字符。\n"
 
 #: src/base64.c:201 src/base64.c:239 src/csplit.c:277 src/csplit.c:1468
 #: src/join.c:465 src/shuf.c:233 src/shuf.c:279 src/shuf.c:554
@@ -916,10 +897,8 @@ msgid "invalid input"
 msgstr "输入无效"
 
 #: src/base64.c:295
-#, fuzzy
-#| msgid "invalid wrap size: %s"
 msgid "invalid wrap size"
-msgstr "无效的换行字符数：%s"
+msgstr "无效的换行字符数"
 
 #: src/base64.c:313 src/basename.c:176 src/comm.c:489 src/cp.c:622
 #: src/date.c:470 src/dircolors.c:449 src/du.c:1018 src/hostid.c:79
@@ -1496,16 +1475,14 @@ msgid "invalid mode: %s"
 msgstr "无效模式：%s"
 
 #: src/chown-core.c:157
-#, fuzzy, c-format
-#| msgid "changed ownership of %s to %s\n"
+#, c-format
 msgid "changed ownership of %s from %s to %s\n"
-msgstr "%s 的所有者已更改为%s\n"
+msgstr "%s 的所有者已从 %s 更改为 %s\n"
 
 #: src/chown-core.c:158
-#, fuzzy, c-format
-#| msgid "changed group of %s to %s\n"
+#, c-format
 msgid "changed group of %s from %s to %s\n"
-msgstr "%s 的所属组已更改为%s\n"
+msgstr "%s 的所属组已从 %s 更改为 %s\n"
 
 #: src/chown-core.c:159
 #, c-format
@@ -2063,15 +2040,14 @@ msgid "cannot stat %s"
 msgstr "无法获取%s 的文件状态(stat)"
 
 #: src/copy.c:1884
-#, fuzzy, c-format
-#| msgid "omitting directory %s"
+#, c-format
 msgid "-r not specified; omitting directory %s"
-msgstr "略过目录%s"
+msgstr "未指定 -r；略过目录%s"
 
 #: src/copy.c:1885
 #, c-format
 msgid "omitting directory %s"
-msgstr "略过目录%s"
+msgstr "略过目录 %s"
 
 #: src/copy.c:1900
 #, c-format
@@ -2462,10 +2438,9 @@ msgstr "%s 存在但并非目录"
 
 #: src/cp.c:587 src/cp.c:1086 src/install.c:407 src/install.c:942 src/ln.c:134
 #: src/ln.c:198 src/ln.c:219 src/ln.c:503 src/mv.c:157 src/mv.c:390
-#, fuzzy, c-format
-#| msgid "failed to clone %s"
+#, c-format
 msgid "failed to access %s"
-msgstr "克隆%s 失败"
+msgstr "访问%s 失败"
 
 #: src/cp.c:607 src/install.c:970 src/ln.c:534 src/mv.c:433 src/shred.c:1283
 #: src/touch.c:430 src/truncate.c:329
@@ -9255,10 +9230,9 @@ msgid "invalid floating point argument: %s"
 msgstr "无效的浮点参数：%s"
 
 #: src/seq.c:153
-#, fuzzy, c-format
-#| msgid "invalid --%s argument %s"
+#, c-format
 msgid "invalid %s argument: %s"
-msgstr "无效的 --%s 参数%s"
+msgstr "无效的 %s 参数：%s"
 
 #: src/seq.c:260
 #, c-format
@@ -10477,10 +10451,9 @@ msgid "failed to canonicalize %s"
 msgstr "标准化%s 失败"
 
 #: src/stat.c:1217
-#, fuzzy, c-format
-#| msgid "warning: unrecognized escape `\\%c'"
+#, c-format
 msgid "warning: unrecognized escape '\\%c'"
-msgstr "警告：无法识别的转义字符\"\\%c\""
+msgstr "警告：无法识别的转义字符“\\%c”"
 
 #: src/stat.c:1272
 #, c-format

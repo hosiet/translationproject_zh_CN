@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: grub 2.02-pre3\n"
 "Report-Msgid-Bugs-To: bug-grub@gnu.org\n"
 "POT-Creation-Date: 2017-02-03 12:45+0100\n"
-"PO-Revision-Date: 2018-03-18 15:33+0800\n"
+"PO-Revision-Date: 2018-03-20 16:28+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -404,7 +404,7 @@ msgstr "无法启用 ROM 区域。"
 
 #: grub-core/commands/efi/loadbios.c:209
 msgid "Create BIOS-like structures for backward compatibility with existing OS."
-msgstr ""
+msgstr "创建类似 BIOS 的结构以与已有操作系统保持后向兼容性。"
 
 #: grub-core/commands/efi/loadbios.c:214
 msgid "BIOS_DUMP [INT10_DUMP]"
@@ -420,7 +420,7 @@ msgstr "字符串 ..."
 
 #: grub-core/commands/eval.c:64
 msgid "Evaluate arguments as GRUB commands"
-msgstr ""
+msgstr "将参数作为 GRUB 命令进行处理"
 
 #: grub-core/commands/file.c:39
 msgid "Check if FILE can be booted as i386 PAE Xen unprivileged guest kernel"
@@ -484,55 +484,55 @@ msgstr "检查文件是否为 x86 kFreeBSD"
 
 #: grub-core/commands/file.c:70
 msgid "Check if FILE is i386 kFreeBSD"
-msgstr ""
+msgstr "检查文件是否为 i386 kFreeBSD"
 
 #: grub-core/commands/file.c:72
 msgid "Check if FILE is x86_64 kFreeBSD"
-msgstr ""
+msgstr "检查文件是否为 x86_64 kFreeBSD"
 
 #: grub-core/commands/file.c:75
 msgid "Check if FILE is x86 kNetBSD"
-msgstr ""
+msgstr "检查文件是否为 x86 kNetBSD"
 
 #: grub-core/commands/file.c:77
 msgid "Check if FILE is i386 kNetBSD"
-msgstr ""
+msgstr "检查文件是否为 i386 kNetBSD"
 
 #: grub-core/commands/file.c:79
 msgid "Check if FILE is x86_64 kNetBSD"
-msgstr ""
+msgstr "检查文件是否为 x86_64 kNetBSD"
 
 #: grub-core/commands/file.c:82
 msgid "Check if FILE is i386 EFI file"
-msgstr ""
+msgstr "检查文件是否为 i386 EFI 文件"
 
 #: grub-core/commands/file.c:84
 msgid "Check if FILE is x86_64 EFI file"
-msgstr ""
+msgstr "检查文件是否为 x86_64 EFI 文件"
 
 #: grub-core/commands/file.c:86
 msgid "Check if FILE is IA64 EFI file"
-msgstr ""
+msgstr "检查文件是否为 IA64 EFI 文件"
 
 #: grub-core/commands/file.c:88
 msgid "Check if FILE is ARM64 EFI file"
-msgstr ""
+msgstr "检查文件是否为 ARM64 EFI 文件"
 
 #: grub-core/commands/file.c:90
 msgid "Check if FILE is ARM EFI file"
-msgstr ""
+msgstr "检查文件是否为 ARM EFI 文件"
 
 #: grub-core/commands/file.c:92
 msgid "Check if FILE is hiberfil.sys in hibernated state"
-msgstr ""
+msgstr "检查文件是否为处于休眠状态的 hiberfil.sys 文件"
 
 #: grub-core/commands/file.c:94
 msgid "Check if FILE is x86_64 XNU (Mac OS X kernel)"
-msgstr ""
+msgstr "检查文件是否为 x86_64 XNU（Mac OS X 内核）"
 
 #: grub-core/commands/file.c:96
 msgid "Check if FILE is i386 XNU (Mac OS X kernel)"
-msgstr ""
+msgstr "检查文件是否为 i386 XNU（Mac OS X 内核）"
 
 #: grub-core/commands/file.c:98
 msgid "Check if FILE is XNU (Mac OS X kernel) hibernated image"
@@ -540,7 +540,7 @@ msgstr ""
 
 #: grub-core/commands/file.c:100
 msgid "Check if FILE is BIOS bootsector"
-msgstr ""
+msgstr "检查文件是否为 BIOS 启动分区"
 
 #. TRANSLATORS: it's a standalone boolean value,
 #. opposite of "true".
@@ -573,7 +573,7 @@ msgstr "未找到 DOS 类型分区"
 #: grub-core/commands/gptsync.c:240
 #, c-format
 msgid "New MBR is written to `%s'\n"
-msgstr ""
+msgstr "新 MBR 已写入“%s”\n"
 
 #: grub-core/commands/gptsync.c:252
 msgid "DEVICE [PARTITION[+/-[TYPE]]] ..."
@@ -1969,12 +1969,12 @@ msgstr ""
 
 #: grub-core/commands/testspeed.c:58
 msgid "invalid block size"
-msgstr ""
+msgstr "无效的块大小"
 
 #: grub-core/commands/testspeed.c:80
 #, c-format
 msgid "File size: %s\n"
-msgstr ""
+msgstr "文件大小：%s\n"
 
 #: grub-core/commands/testspeed.c:83
 #, c-format
@@ -2157,12 +2157,12 @@ msgstr ""
 
 #: grub-core/commands/videoinfo.c:111
 msgid "  EDID checksum invalid"
-msgstr ""
+msgstr "  EDID 校验和无效"
 
 #: grub-core/commands/videoinfo.c:116
 #, c-format
 msgid "  EDID version: %u.%u\n"
-msgstr ""
+msgstr "  EDID 版本：%u.%u\n"
 
 #: grub-core/commands/videoinfo.c:120
 #, c-format
@@ -2483,7 +2483,7 @@ msgstr "卸载 EFI 模拟器。"
 #: grub-core/efiemu/symbols.c:92 grub-core/kern/dl.c:376
 #, c-format
 msgid "symbol `%s' not found"
-msgstr ""
+msgstr "符号“%s”未找到"
 
 #: grub-core/font/font_cmd.c:52
 msgid "Loaded fonts:"
@@ -2510,7 +2510,7 @@ msgstr ""
 #: grub-core/fs/bfs.c:228 grub-core/fs/fshelp.c:368 grub-core/fs/minix.c:270
 #: grub-core/kern/file.c:158
 msgid "attempt to read past the end of file"
-msgstr ""
+msgstr "尝试越过文件结束位置进行读取"
 
 #: grub-core/fs/btrfs.c:584 grub-core/fs/zfs/zfs.c:1465
 msgid "couldn't find a necessary member device of multi-device filesystem"
@@ -2894,11 +2894,11 @@ msgstr "请尝试运行“%s --help”以获得更多信息。\n"
 #: grub-core/gnulib/argp-help.c:1717
 #, c-format
 msgid "Report bugs to %s.\n"
-msgstr ""
+msgstr "请将缺陷与错误报告至 %s。\n"
 
 #: grub-core/gnulib/argp-help.c:1936 grub-core/gnulib/error.c:188
 msgid "Unknown system error"
-msgstr ""
+msgstr "未知的系统错误"
 
 #: grub-core/gnulib/argp-parse.c:81
 #, fuzzy
@@ -2918,7 +2918,7 @@ msgstr "VARNAME"
 
 #: grub-core/gnulib/argp-parse.c:83
 msgid "set the program name"
-msgstr ""
+msgstr "设置程序名称"
 
 #: grub-core/gnulib/argp-parse.c:84 grub-core/kern/emu/main.c:109
 msgid "SECS"
@@ -3025,7 +3025,7 @@ msgstr ""
 
 #: grub-core/gnulib/regcomp.c:146
 msgid "Trailing backslash"
-msgstr ""
+msgstr "末尾的反斜杠"
 
 #: grub-core/gnulib/regcomp.c:149
 msgid "Invalid back reference"
@@ -3053,7 +3053,7 @@ msgstr ""
 
 #: grub-core/gnulib/regcomp.c:167
 msgid "Memory exhausted"
-msgstr ""
+msgstr "内存耗尽"
 
 #: grub-core/gnulib/regcomp.c:170
 msgid "Invalid preceding regular expression"
@@ -3065,7 +3065,7 @@ msgstr ""
 
 #: grub-core/gnulib/regcomp.c:176
 msgid "Regular expression too big"
-msgstr ""
+msgstr "正则表达式过长"
 
 #: grub-core/gnulib/regcomp.c:179
 msgid "Unmatched ) or \\)"
@@ -3077,7 +3077,7 @@ msgstr "未知正则表达式错误"
 
 #: grub-core/gnulib/regcomp.c:700
 msgid "No previous regular expression"
-msgstr ""
+msgstr "缺少之前的正则表达式"
 
 #: grub-core/hello/hello.c:36
 #, fuzzy
@@ -3099,11 +3099,11 @@ msgstr ""
 #. complete lack of gzip support.
 #: grub-core/io/gzio.c:1190 grub-core/io/gzio.c:1199 grub-core/io/gzio.c:1206
 msgid "unsupported gzip format"
-msgstr ""
+msgstr "不支持的 gzip 格式"
 
 #: grub-core/io/lzopio.c:509
 msgid "lzop file corrupted"
-msgstr ""
+msgstr "lzop 文件损坏"
 
 #: grub-core/io/xzio.c:276
 msgid "xz file corrupted or unsupported block options"
@@ -3226,7 +3226,7 @@ msgstr "使用指定文件作为设备表 [默认=%s]"
 #. TRANSLATORS: There are many devices in device map.
 #: grub-core/kern/emu/main.c:105
 msgid "use FILE as memdisk"
-msgstr ""
+msgstr "使用文件作为 memdisk"
 
 #: grub-core/kern/emu/main.c:107 util/grub-setup.c:83
 #, fuzzy, c-format
@@ -3376,7 +3376,7 @@ msgstr "无效的根设备“%s”"
 
 #: grub-core/lib/mips/arc/reboot.c:32 grub-core/lib/mips/loongson/reboot.c:61
 msgid "Reboot failed"
-msgstr ""
+msgstr "重启失败"
 
 #: grub-core/lib/random.c:113
 msgid "[LENGTH]"
@@ -3625,10 +3625,8 @@ msgstr "载入 FreeBSD 内核模块(ELF)。"
 #. TRANSLATORS: ramdisk isn't identifier,
 #. it can be translated.
 #: grub-core/loader/i386/bsd.c:2159
-#, fuzzy
-#| msgid "Load kernel of OpenBSD."
 msgid "Load kOpenBSD ramdisk."
-msgstr "载入 OpenBSD 内核。"
+msgstr "载入 kOpenBSD 内存盘。"
 
 #. TRANSLATORS: "payload" is a term used
 #. by coreboot and must be translated in
@@ -3703,10 +3701,8 @@ msgid "Load Plan9 kernel."
 msgstr "载入 multiboot 内核。"
 
 #: grub-core/loader/i386/pc/pxechainloader.c:161
-#, fuzzy
-#| msgid "Load XNU image."
 msgid "Load a PXE image."
-msgstr "载入 XNU 内核镜像。"
+msgstr "载入一个 PXE 镜像。"
 
 #: grub-core/loader/i386/pc/truecrypt.c:226
 msgid "Load Truecrypt ISO."
@@ -3753,14 +3749,12 @@ msgid "FPSWA revision: %x\n"
 msgstr ""
 
 #: grub-core/loader/ia64/efi/linux.c:627
-#, fuzzy
-#| msgid "FILE [ARG ...]"
 msgid "FILE [ARGS...]"
-msgstr "文件 [参数 ...]"
+msgstr "文件 [参数...]"
 
 #: grub-core/loader/ia64/efi/linux.c:633
 msgid "Display FPSWA version."
-msgstr ""
+msgstr "显示 FPSWA 版本。"
 
 #: grub-core/loader/multiboot.c:233
 msgid "WARNING: no console will be available to OS"
@@ -3784,7 +3778,7 @@ msgstr "载入 multiboot 模块。"
 
 #: grub-core/loader/xnu.c:1407 grub-core/term/gfxterm_background.c:45
 msgid "Background image mode."
-msgstr ""
+msgstr "背景图像模式。"
 
 #. TRANSLATORS: This refers to background image mode (stretched or
 #. in left-top corner). Note that GRUB will accept only original
@@ -3834,10 +3828,8 @@ msgstr "载入 XNU 扩展目录。"
 
 #. TRANSLATORS: ramdisk here isn't identifier. It can be translated.
 #: grub-core/loader/xnu.c:1492
-#, fuzzy
-#| msgid "Load XNU ramdisk. It will be seen as md0."
 msgid "Load XNU ramdisk. It will be available in OS as md0."
-msgstr "载入 XNU ramdisk (显示为 md0)。"
+msgstr "载入 XNU 内存盘。它将在操作系统上显示为 md0。"
 
 #: grub-core/loader/xnu.c:1496
 msgid "Load a splash image for XNU."
@@ -3876,7 +3868,7 @@ msgstr ""
 
 #: grub-core/net/bootp.c:335
 msgid "no DHCP info found"
-msgstr ""
+msgstr "未找到 DHCP 信息"
 
 #: grub-core/net/bootp.c:338 grub-core/net/bootp.c:350
 #, fuzzy
@@ -4884,10 +4876,9 @@ msgid "not in function body"
 msgstr ""
 
 #: grub-core/script/execute.c:370
-#, fuzzy, c-format
-#| msgid "invalid root device `%s'"
+#, c-format
 msgid "invalid variable name `%s'"
-msgstr "无效的根设备“%s”"
+msgstr "无效的变量名“%s”"
 
 #: grub-core/script/lexer.c:144 util/grub-fstest.c:330
 msgid "unexpected end of file"
@@ -5319,7 +5310,7 @@ msgstr "loopback 命令失败"
 
 #: util/grub-fstest.c:474 util/grub-fstest.c:478
 msgid "couldn't retrieve UUID"
-msgstr ""
+msgstr "无法获取 UUID"
 
 #: util/grub-fstest.c:507
 msgid "ls PATH"
@@ -5416,10 +5407,8 @@ msgid "Set debug environment variable."
 msgstr "设置调试环境变量。"
 
 #: util/grub-fstest.c:521 util/grub-mount.c:454
-#, fuzzy
-#| msgid "Set root device."
 msgid "Mount crypto devices."
-msgstr "设置根设备。"
+msgstr "挂载加密设备。"
 
 #. TRANSLATORS: "prompt" is a keyword.
 #: util/grub-fstest.c:524 util/grub-mount.c:457
@@ -5482,10 +5471,8 @@ msgstr "设置输出文件名"
 
 #: util/grub-glue-efi.c:94 util/grub-mklayout.c:476
 #: util/grub-mkpasswd-pbkdf2.c:86 util/grub-render-label.c:131
-#, fuzzy
-#| msgid "[OPTIONS...]"
 msgid "[OPTIONS]"
-msgstr "[选项...]"
+msgstr "[选项]"
 
 #: util/grub-glue-efi.c:95
 msgid "Glue 32-bit and 64-bit binary into Apple universal one."
@@ -5496,29 +5483,25 @@ msgid "Missing input file\n"
 msgstr "缺少输入文件\n"
 
 #: util/grub-install-common.c:121 util/grub-install-common.c:145
-#, fuzzy, c-format
-#| msgid "cannot open `%s'"
+#, c-format
 msgid "cannot copy `%s' to `%s': %s"
-msgstr "无法打开“%s”"
+msgstr "无法复制“%s”到“%s”：%s"
 
 #: util/grub-install-common.c:141
-#, fuzzy, c-format
-#| msgid "cannot open `%s'"
+#, c-format
 msgid "can't compress `%s' to `%s'"
-msgstr "无法打开“%s”"
+msgstr "无法压缩“%s”至“%s”"
 
 #: util/grub-install-common.c:190 util/grub-install-common.c:539
 #: util/grub-install-common.c:566 util/grub-install-common.c:607
-#, fuzzy, c-format
-#| msgid "cannot open `%s'"
+#, c-format
 msgid "cannot open directory `%s': %s"
-msgstr "无法打开“%s”"
+msgstr "无法打开目录“%s”：%s"
 
 #: util/grub-install-common.c:206
-#, fuzzy, c-format
-#| msgid "cannot open `%s'"
+#, c-format
 msgid "cannot delete `%s': %s"
-msgstr "无法打开“%s”"
+msgstr "无法删除“%s”：%s"
 
 #: util/grub-install-common.c:318 util/grub-mkimage.c:200
 msgid "grub-mkimage is compiled without XZ support"
@@ -5535,10 +5518,9 @@ msgid "Unrecognized compression `%s'"
 msgstr "无法识别的压缩“%s”"
 
 #: util/grub-install-common.c:497
-#, fuzzy, c-format
-#| msgid "Unknown extra argument `%s'.\n"
+#, c-format
 msgid "unknown target format %s"
-msgstr "未知的额外参数“%s”。\n"
+msgstr "未知目标格式 %s"
 
 #: util/grub-install-common.c:831
 #, c-format
@@ -6078,7 +6060,7 @@ msgstr ""
 #: util/grub-mknetdir.c:144
 #, c-format
 msgid "unsupported platform %s"
-msgstr ""
+msgstr "不支持的平台 %s"
 
 #. TRANSLATORS: First %s is replaced by platform name. Second one by filename.
 #: util/grub-mknetdir.c:163
@@ -6194,7 +6176,7 @@ msgstr "[选项...]"
 #: util/grub-mkrescue.c:257 util/grub-mkrescue.c:300 util/grub-mkrescue.c:578
 #, c-format
 msgid "enabling %s support ..."
-msgstr ""
+msgstr "正在启用 %s 支持 ..."
 
 #: util/grub-mkrescue.c:613
 msgid "Your xorriso doesn't support `--grub2-boot-info'. Some features are disabled. Please use xorriso 1.2.9 or later."
@@ -6483,7 +6465,7 @@ msgstr "核心镜像中没有终止符"
 
 #: util/setup.c:577
 msgid "core.img version mismatch"
-msgstr ""
+msgstr "core.img 版本不匹配"
 
 #: util/setup.c:610
 #, fuzzy
@@ -6848,7 +6830,7 @@ msgstr ""
 #. TRANSLATORS: %s is replaced by OS name.
 #: util/grub.d/30_os-prober.in:332
 msgid "%s is not yet supported by grub-mkconfig.\\n"
-msgstr "grub-mkconfig 尚未支持 %s。"
+msgstr "grub-mkconfig 尚未支持 %s。\\n"
 
 #~ msgid "Expose v1 tables."
 #~ msgstr "显示 v1 表。"

@@ -6,13 +6,14 @@
 # Eleanor Chen <chenyueg@gmail.com>, 2010.
 # Aron Xu <happyaron.xu@gmail.com>, 2009, 2010, 2011.
 # Boyuan Yang <073plan@gmail.com>, 2018.
+# wwj402 <wwj402@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: grub 2.02-pre3\n"
 "Report-Msgid-Bugs-To: bug-grub@gnu.org\n"
 "POT-Creation-Date: 2017-02-03 12:45+0100\n"
-"PO-Revision-Date: 2018-03-21 10:03+0800\n"
+"PO-Revision-Date: 2018-03-23 15:31+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -130,7 +131,7 @@ msgstr "不更新 EBDA。有些时候能解决某些 BIOS 上引导失败和挂�
 #: grub-core/loader/xnu_resume.c:165 util/grub-mkimagexx.c:1920
 #, c-format
 msgid "premature end of file %s"
-msgstr "过早的文件终止符 %s"
+msgstr "文件 %s 过早结束"
 
 #: grub-core/commands/acpi.c:779
 msgid "[-1|-2] [--exclude=TABLE1,TABLE2|--load-only=TABLE1,TABLE2] FILE1 [FILE2] [...]"
@@ -218,7 +219,7 @@ msgstr "列出设备。"
 #: grub-core/loader/xnu.c:1418 grub-core/loader/xnu.c:1444
 #: grub-core/video/readers/jpeg.c:811 grub-core/video/readers/png.c:1123
 msgid "filename expected"
-msgstr "期望为文件名"
+msgstr "需要文件名"
 
 #. TRANSLATORS: "embed" is a verb (command description).  "
 #: grub-core/commands/blocklist.c:154 grub-core/commands/cat.c:163
@@ -296,7 +297,7 @@ msgstr "没有可用的磁盘缓存统计信息\n"
 
 #: grub-core/commands/cacheinfo.c:56
 msgid "Get disk cache info."
-msgstr "获取设备缓存信息。"
+msgstr "获取磁盘缓存信息。"
 
 #: grub-core/commands/cat.c:33
 msgid "Accept DOS-style CR/NL line endings."
@@ -376,7 +377,7 @@ msgstr "末尾不输出额外空行。"
 
 #: grub-core/commands/echo.c:31
 msgid "Enable interpretation of backslash escapes."
-msgstr "启用反斜杠转义"
+msgstr "启用反斜杠转义。"
 
 #: grub-core/commands/echo.c:134
 msgid "[-e|-n] STRING"
@@ -384,11 +385,11 @@ msgstr "[-e|-n] 字符串"
 
 #: grub-core/commands/echo.c:134
 msgid "Display a line of text."
-msgstr "显示文本"
+msgstr "显示文本。"
 
 #: grub-core/commands/efi/efifwsetup.c:82
 msgid "Reboot into firmware setup menu."
-msgstr "重启进入固件设置菜单。"
+msgstr "重新启动到固件设置菜单。"
 
 #: grub-core/commands/efi/fixvideo.c:107
 msgid "Fix video problem."
@@ -424,15 +425,15 @@ msgstr "将参数作为 GRUB 命令进行处理"
 
 #: grub-core/commands/file.c:39
 msgid "Check if FILE can be booted as i386 PAE Xen unprivileged guest kernel"
-msgstr ""
+msgstr "检查文件是否可以作为 i386 PAE Xen 无特权访客内核启动"
 
 #: grub-core/commands/file.c:42
 msgid "Check if FILE can be booted as x86_64 Xen unprivileged guest kernel"
-msgstr ""
+msgstr "检查文件是否可以作为 x86_64 Xen 无特权访客内核启动"
 
 #: grub-core/commands/file.c:44
 msgid "Check if FILE can be used as Xen x86 privileged guest kernel"
-msgstr "检查文件是否可被用作 Xen x86 privileged guest 内核"
+msgstr "检查文件是否可被用作 Xen x86 特权访客内核"
 
 #: grub-core/commands/file.c:46
 msgid "Check if FILE can be used as x86 multiboot kernel"
@@ -536,7 +537,7 @@ msgstr "检查文件是否为 i386 XNU（Mac OS X 内核）"
 
 #: grub-core/commands/file.c:98
 msgid "Check if FILE is XNU (Mac OS X kernel) hibernated image"
-msgstr ""
+msgstr "检查文件是否为 XNU（Mac OS X 内核）休眠镜像"
 
 #: grub-core/commands/file.c:100
 msgid "Check if FILE is BIOS bootsector"
@@ -553,10 +554,8 @@ msgid "false"
 msgstr ""
 
 #: grub-core/commands/file.c:671
-#, fuzzy
-#| msgid "[OPTIONS] DISK"
 msgid "OPTIONS FILE"
-msgstr "[选项] 磁盘"
+msgstr "选项 文件"
 
 #: grub-core/commands/file.c:672
 msgid "Check if FILE is of specified type."
@@ -597,7 +596,7 @@ msgstr "哈希值"
 
 #: grub-core/commands/hashsum.c:33
 msgid "Check hashes of files with hash list FILE."
-msgstr "使用给定的哈希列表文件检查文件的哈希值"
+msgstr "使用给定的哈希列表文件检查文件的哈希值。"
 
 #: grub-core/commands/hashsum.c:35
 msgid "Base directory for hash list."
@@ -775,10 +774,8 @@ msgid "[OPTIONS] FILE_OR_DEVICE"
 msgstr "[选项] 文件或设备"
 
 #: grub-core/commands/hexdump.c:126
-#, fuzzy
-#| msgid "Dump the contents of a file or memory."
 msgid "Show raw contents of a file or memory."
-msgstr "显示文件或内存内容。"
+msgstr "显示文件或内存的原始内容。"
 
 #: grub-core/commands/i386/cmosdump.c:58
 msgid "Show raw dump of the CMOS contents."
@@ -845,7 +842,7 @@ msgstr "同时进行直接和保留映射。"
 
 #: grub-core/commands/i386/pc/drivemap.c:184
 msgid "No drives have been remapped"
-msgstr ""
+msgstr "没有驱动器被重新映射"
 
 #. TRANSLATORS:  This is the header of mapping list.
 #. On the left is how OS will see the disks and
@@ -872,7 +869,7 @@ msgstr "优先使用 APM 关闭计算机。"
 
 #: grub-core/commands/i386/pc/lsapm.c:75
 msgid "no APM found"
-msgstr ""
+msgstr "找不到 APM"
 
 #: grub-core/commands/i386/pc/lsapm.c:77
 #, c-format
@@ -1051,10 +1048,8 @@ msgid "Run `go' to resume GRUB."
 msgstr ""
 
 #: grub-core/commands/ieee1275/suspend.c:45
-#, fuzzy
-#| msgid "Return to Open Firmware prompt."
 msgid "Return to IEEE1275 prompt."
-msgstr "返回 Open Firmware 界面。"
+msgstr "返回 Open Firmware 提示符。"
 
 #: grub-core/commands/iorw.c:34 grub-core/commands/memrw.c:33
 #: grub-core/commands/setpci.c:73
@@ -1225,7 +1220,7 @@ msgstr "指定文件名。"
 
 #: grub-core/commands/loadenv.c:39
 msgid "Skip signature-checking of the environment file."
-msgstr ""
+msgstr "跳过对环境文件的签名检查。"
 
 #: grub-core/commands/loadenv.c:449
 #, fuzzy
@@ -1267,7 +1262,7 @@ msgstr "列出全部文件。"
 
 #: grub-core/commands/ls.c:73
 msgid "Network protocols:"
-msgstr ""
+msgstr "网络协议："
 
 #: grub-core/commands/ls.c:286
 msgid "[-l|-h|-a] [FILE ...]"
@@ -1481,10 +1476,8 @@ msgid "ADDR [SIZE]"
 msgstr ""
 
 #: grub-core/commands/minicmd.c:201
-#, fuzzy
-#| msgid "Show the contents of a file."
 msgid "Show memory contents."
-msgstr "显示文件内容。"
+msgstr "显示内存内容。"
 
 #: grub-core/commands/minicmd.c:204 grub-core/kern/corecmd.c:188
 #: util/grub-install.c:275
@@ -1626,7 +1619,7 @@ msgstr "设置用户命令(PBKDF2)。"
 
 #: grub-core/commands/pcidump.c:39 grub-core/commands/setpci.c:69
 msgid "Select device by vendor and device IDs."
-msgstr ""
+msgstr "按供应商和设备 ID 选择设备。"
 
 #: grub-core/commands/pcidump.c:40 grub-core/commands/setpci.c:70
 msgid "[vendor]:[device]"
@@ -1672,7 +1665,7 @@ msgstr "指定分区表类型。"
 
 #: grub-core/commands/probe.c:45
 msgid "Determine filesystem type."
-msgstr "指定文件系统类型"
+msgstr "指定文件系统类型。"
 
 #: grub-core/commands/probe.c:46
 msgid "Determine filesystem UUID."
@@ -1686,7 +1679,7 @@ msgstr "指定文件系统卷标。"
 #: util/grub-probe.c:406
 #, c-format
 msgid "filesystem `%s' does not support labels"
-msgstr ""
+msgstr "文件系统“%s”不支持标签"
 
 #: grub-core/commands/probe.c:165 grub-core/fs/zfs/zfsinfo.c:430
 #: grub-core/loader/i386/bsd.c:168 util/grub-setup.c:223
@@ -1965,7 +1958,7 @@ msgstr "文件大小：%s\n"
 #: grub-core/commands/testspeed.c:83
 #, c-format
 msgid "Elapsed time: %d.%03d s \n"
-msgstr ""
+msgstr "经过时间：%d.%03d s \n"
 
 #: grub-core/commands/testspeed.c:92
 #, c-format
@@ -1981,10 +1974,8 @@ msgid "Test file read speed."
 msgstr "测试文件读取速度。"
 
 #: grub-core/commands/time.c:38 grub-core/script/execute.c:952
-#, fuzzy
-#| msgid "No command is specified.\n"
 msgid "no command is specified"
-msgstr "没有指定命令。\n"
+msgstr "没有指定命令"
 
 #: grub-core/commands/time.c:50
 #, c-format
@@ -2870,10 +2861,8 @@ msgid " [OPTION...]"
 msgstr "[选项...]"
 
 #: grub-core/gnulib/argp-help.c:1689
-#, fuzzy, c-format
-#| msgid "Try `%s --help' for more information.\n"
 msgid "Try '%s --help' or '%s --usage' for more information.\n"
-msgstr "请尝试运行“%s --help”以获得更多信息。\n"
+msgstr "请尝试运行“%s --help”或“%s --usage”以获得更多信息。\n"
 
 #: grub-core/gnulib/argp-help.c:1717
 #, c-format
@@ -2885,10 +2874,8 @@ msgid "Unknown system error"
 msgstr "未知的系统错误"
 
 #: grub-core/gnulib/argp-parse.c:81
-#, fuzzy
-#| msgid "Display this help and exit."
 msgid "give this help list"
-msgstr "显示此帮助并退出。"
+msgstr "给出本帮助列表"
 
 #: grub-core/gnulib/argp-parse.c:82
 msgid "give a short usage message"
@@ -3370,10 +3357,8 @@ msgid "invalid zImage"
 msgstr ""
 
 #: grub-core/loader/arm/linux.c:449 grub-core/loader/arm64/fdt.c:132
-#, fuzzy
-#| msgid "Invalid device `%s'.\n"
 msgid "invalid device tree"
-msgstr "无效的设备“%s”。\n"
+msgstr "无效的设备树"
 
 #: grub-core/loader/arm/linux.c:513 grub-core/loader/arm64/linux.c:344
 #: grub-core/loader/i386/linux.c:1140 grub-core/loader/i386/pc/linux.c:477
@@ -3664,10 +3649,8 @@ msgid "KERNEL ARGS"
 msgstr ""
 
 #: grub-core/loader/i386/pc/plan9.c:588
-#, fuzzy
-#| msgid "Load a multiboot kernel."
 msgid "Load Plan9 kernel."
-msgstr "载入 multiboot 内核。"
+msgstr "载入 Plan9 内核。"
 
 #: grub-core/loader/i386/pc/pxechainloader.c:161
 msgid "Load a PXE image."
@@ -3938,10 +3921,8 @@ msgid "Remove a DNS server"
 msgstr ""
 
 #: grub-core/net/dns.c:768
-#, fuzzy
-#| msgid "List PCI devices."
 msgid "List DNS servers"
-msgstr "列出 PCI 设备。"
+msgstr "列出 DNS 服务器"
 
 #: grub-core/net/drivers/efi/efinet.c:49 grub-core/net/drivers/efi/efinet.c:65
 #: grub-core/net/drivers/efi/efinet.c:77 grub-core/net/drivers/emu/emunet.c:62
@@ -4026,7 +4007,7 @@ msgstr ""
 
 #: grub-core/net/net.c:1017 grub-core/net/net.c:1131
 msgid "three arguments expected"
-msgstr ""
+msgstr "需要三个参数"
 
 #: grub-core/net/net.c:1023
 msgid "card not found"
@@ -4255,10 +4236,9 @@ msgid "Booting `%s'"
 msgstr "正在引导 %s"
 
 #: grub-core/normal/menu.c:826
-#, fuzzy, c-format
-#| msgid "Falling back to '%s'"
+#, c-format
 msgid "Falling back to `%s'"
-msgstr "回滚至 %s"
+msgstr "回退至“%s”"
 
 #: grub-core/normal/menu.c:842
 msgid "Failed to boot both default and fallback entries.\n"
@@ -4300,10 +4280,8 @@ msgid "TiB"
 msgstr ""
 
 #: grub-core/normal/misc.c:38
-#, fuzzy
-#| msgid "PUB"
 msgid "PiB"
-msgstr "PUB"
+msgstr ""
 
 #. TRANSLATORS: that's the list of binary unit prefixes.
 #: grub-core/normal/misc.c:40
@@ -4713,11 +4691,11 @@ msgstr ""
 #. we're in trouble and throw this error.
 #: grub-core/osdep/unix/relpath.c:90
 msgid "no `/' in canonical filename"
-msgstr ""
+msgstr "规范文件名内未包含“/”"
 
 #: grub-core/osdep/windows/hostdisk.c:151
 msgid "cygwin_conv_path() failed"
-msgstr ""
+msgstr "cygwin_conv_path() 失败"
 
 #: grub-core/osdep/windows/hostdisk.c:489 util/grub-install.c:566
 msgid "couldn't retrieve random data"
@@ -4733,7 +4711,7 @@ msgstr ""
 
 #: grub-core/osdep/windows/platform.c:240
 msgid "unexpected EFI error"
-msgstr ""
+msgstr "意外的 EFI 错误"
 
 #: grub-core/osdep/windows/platform.c:315
 msgid "Couldn't find a free BootNNNN slot"
@@ -4746,10 +4724,8 @@ msgid "this GPT partition label contains no BIOS Boot Partition; embedding won't
 msgstr "此 GPT 分区标签没有 BIOS 引导分区，无法进行嵌入！"
 
 #: grub-core/partmap/gpt.c:196
-#, fuzzy
-#| msgid "This GPT partition label has no BIOS Boot Partition; embedding won't be possible!"
 msgid "your BIOS Boot Partition is too small; embedding won't be possible"
-msgstr "此 GPT 分区标签没有 BIOS 引导分区，无法进行嵌入！"
+msgstr "您的 BIOS 引导分区过小；无法进行嵌入"
 
 #. TRANSLATORS: MBR gap and boot track is the same thing and is the space
 #. between MBR and first partitition. If your language translates well only
@@ -4784,10 +4760,8 @@ msgid "your embedding area is unusually small.  core.img won't fit in it."
 msgstr "您的嵌入区域过小，无法装入 core.img。"
 
 #: grub-core/parttool/msdospart.c:39
-#, fuzzy
-#| msgid "Possible partitions are:"
 msgid "Make partition active"
-msgstr "可用分区："
+msgstr "标记分区为活动状态"
 
 #: grub-core/parttool/msdospart.c:51
 msgid "not a primary partition"
@@ -4804,10 +4778,8 @@ msgid "Cleared active flag on %d. \n"
 msgstr ""
 
 #: grub-core/parttool/msdospart.c:87
-#, fuzzy
-#| msgid "Determine partition map type."
 msgid "Change partition type"
-msgstr "指定分区表类型。"
+msgstr "更改分区类型"
 
 #: grub-core/parttool/msdospart.c:88
 #, fuzzy
@@ -4823,10 +4795,9 @@ msgstr ""
 #. TRANSLATORS: In this case we're actually writing to the disk and actively
 #. modifying partition type rather than just defining it.
 #: grub-core/parttool/msdospart.c:137
-#, fuzzy, c-format
-#| msgid "Determine partition map type."
+#, c-format
 msgid "Setting partition type to 0x%x\n"
-msgstr "指定分区表类型。"
+msgstr "设置分区类型设置为 0x%x\n"
 
 #. TRANSLATORS: 0 is a quantifier. "break" (similar to bash)
 #. can be used e.g. to break 3 loops at once.
@@ -5111,7 +5082,7 @@ msgstr ""
 
 #: include/grub/util/install.h:43
 msgid "compress GRUB files [optional]"
-msgstr ""
+msgstr "压缩 GRUB 文件 [可选]"
 
 #: include/grub/util/install.h:46 util/grub-mkimage.c:82
 #, fuzzy
@@ -5211,20 +5182,17 @@ msgid ""
 msgstr ""
 
 #: util/grub-editenv.c:162
-#, fuzzy
-#| msgid "Tool to edit environment block."
 msgid "invalid environment block"
-msgstr "编辑环境块的工具。"
+msgstr "无效的环境块"
 
 #: util/grub-editenv.c:216
-#, fuzzy, c-format
-#| msgid "Set positional parameters."
+#, c-format
 msgid "invalid parameter %s"
-msgstr "设定位置参数。"
+msgstr "无效参数 %s"
 
 #: util/grub-editenv.c:221
 msgid "environment block too small"
-msgstr ""
+msgstr "环境块过小"
 
 #: util/grub-fstest.c:107
 #, fuzzy, c-format
@@ -5249,10 +5217,9 @@ msgid "cannot open OS file `%s': %s"
 msgstr "无法打开文件 %s"
 
 #: util/grub-fstest.c:225 util/misc.c:126
-#, fuzzy, c-format
-#| msgid "cannot read %llu bytes from %s"
+#, c-format
 msgid "cannot write to the stdout: %s"
-msgstr "无法从 %2$s 读取 %1$llu 字节"
+msgstr "无法写入至标准输出：%s"
 
 #: util/grub-fstest.c:259
 #, c-format
@@ -5685,10 +5652,9 @@ msgid "attempt to install to encrypted disk without cryptodisk enabled. Set `%s'
 msgstr ""
 
 #: util/grub-install.c:1384 util/grub-install.c:1733 util/grub-install.c:1833
-#, fuzzy, c-format
-#| msgid "can't open logfile: %s\n"
+#, c-format
 msgid "Can't create file: %s"
-msgstr "无法打开日志文件：%s\n"
+msgstr "无法创建文件：%s"
 
 #: util/grub-install.c:1461
 msgid "no hints available for your platform. Expect reduced performance"
@@ -5738,10 +5704,8 @@ msgid "bless for ppc-based macs"
 msgstr ""
 
 #: util/grub-macbless.c:136 util/grub-probe.c:775
-#, fuzzy
-#| msgid "No device is specified.\n"
 msgid "No path or device is specified.\n"
-msgstr "没有指定设备。\n"
+msgstr "未指定路径或设备。\n"
 
 #: util/grub-macbless.c:157
 msgid "--ppc PATH|--x86 FILE"
@@ -5835,20 +5799,16 @@ msgstr ""
 #. TRANSLATORS: "family name" for font is just a generic name without suffix
 #. like "Bold".
 #: util/grub-mkfont.c:949
-#, fuzzy
-#| msgid "Set output file name"
 msgid "set font family name"
-msgstr "设置输出文件名"
+msgstr "设置字体族名称"
 
 #: util/grub-mkfont.c:950
 msgid "SIZE"
-msgstr ""
+msgstr "大小"
 
 #: util/grub-mkfont.c:950
-#, fuzzy
-#| msgid "Set Volume set size"
 msgid "set font size"
-msgstr "设置卷集合大小"
+msgstr "设置字体大小"
 
 #: util/grub-mkfont.c:951
 #, fuzzy
@@ -5862,7 +5822,7 @@ msgstr ""
 
 #: util/grub-mkfont.c:953
 msgid "convert to bold font"
-msgstr ""
+msgstr "转换为粗体"
 
 #: util/grub-mkfont.c:954
 msgid "force autohint"
@@ -5886,21 +5846,17 @@ msgid "invalid font range"
 msgstr ""
 
 #: util/grub-mkfont.c:1151
-#, fuzzy
-#| msgid "[OPTIONS] DISK"
 msgid "[OPTIONS] FONT_FILES"
-msgstr "[选项] 磁盘"
+msgstr "[选项] 字体文件"
 
 #: util/grub-mkfont.c:1152
 msgid "Convert common font file formats into PF2"
-msgstr ""
+msgstr "将通用字体文件格式转换为 PF2 格式"
 
 #: util/grub-mkfont.c:1182 util/grub-mkrescue.c:479
 #: util/grub-mkstandalone.c:306 util/grub-kbdcomp.in:70
-#, fuzzy
-#| msgid "No device is specified.\n"
 msgid "output file must be specified"
-msgstr "没有指定设备。\n"
+msgstr "必须指定输出文件"
 
 #: util/grub-mkfont.c:1185
 msgid "FT_Init_FreeType fails"
@@ -6000,7 +5956,7 @@ msgstr ""
 #: util/grub-mklayout.c:390 util/grub-mklayout.c:418
 #, c-format
 msgid "Unknown keyboard scan code 0x%02x\n"
-msgstr ""
+msgstr "未知的键盘扫描码 0x%02x\n"
 
 #. TRANSLATORS: this error is triggered when input doesn't contain any
 #. key descriptions.
@@ -6057,10 +6013,8 @@ msgid "failure to read password"
 msgstr ""
 
 #: util/grub-mkpasswd-pbkdf2.c:146
-#, fuzzy
-#| msgid "Enter password: "
 msgid "Reenter password: "
-msgstr "输入口令："
+msgstr "重新输入口令："
 
 #: util/grub-mkpasswd-pbkdf2.c:160
 msgid "passwords don't match"
@@ -6168,7 +6122,7 @@ msgstr ""
 
 #: util/grub-mount.c:574
 msgid "need an image and mountpoint"
-msgstr ""
+msgstr "需要一个镜像和挂载点"
 
 #: util/grub-probe.c:683
 msgid "given argument is a system device, not a path"
@@ -6235,10 +6189,8 @@ msgid "Render Apple .disk_label."
 msgstr ""
 
 #: util/grub-render-label.c:158 util/grub-syslinux2cfg.c:169
-#, fuzzy
-#| msgid "Possible arguments are:"
 msgid "Missing arguments\n"
-msgstr "可用参数："
+msgstr "缺少参数\n"
 
 #: util/grub-script-check.c:87
 #, fuzzy
@@ -6442,10 +6394,9 @@ msgid "embedding is not possible, but this is required for RAID and LVM install"
 msgstr "无法嵌入，但在跨盘安装时是必须的"
 
 #: util/setup.c:617
-#, fuzzy, c-format
-#| msgid "Determine filesystem type."
+#, c-format
 msgid "can't determine filesystem on %s"
-msgstr "指定文件系统类型"
+msgstr "无法确定 %s 上的文件系统"
 
 #: util/setup.c:620
 #, c-format
@@ -6506,16 +6457,16 @@ msgstr ""
 #: util/grub-kbdcomp.in:33 util/grub-mkconfig.in:64 util/grub-reboot.in:60
 #: util/grub-set-default.in:58
 msgid "Report bugs to <bug-grub@gnu.org>."
-msgstr ""
+msgstr "请将问题与缺陷报告至 <bug-grub@gnu.org>。"
 
 #: util/grub-kbdcomp.in:41 util/grub-mkconfig.in:72 util/grub-reboot.in:68
 #: util/grub-set-default.in:66
 msgid "%s: option requires an argument -- `%s'\\n"
-msgstr ""
+msgstr "%s：选项需要一个参数 --“%s”\\n"
 
 #: util/grub-mkconfig.in:57
 msgid "Usage: %s [OPTION]\\n"
-msgstr ""
+msgstr "用法：%s [选项]\\n"
 
 #: util/grub-mkconfig.in:58
 #, fuzzy
@@ -6537,7 +6488,7 @@ msgstr "%s：您必须以 root 身份运行该程序\\n"
 
 #: util/grub-mkconfig.in:130
 msgid "%s: Not found.\\n"
-msgstr "%s：未找到。"
+msgstr "%s：未找到。\\n"
 
 #: util/grub-mkconfig.in:238
 msgid "Generating grub configuration file ..."
@@ -6613,7 +6564,7 @@ msgstr "找到主题：%s\\n"
 
 #: util/grub.d/00_header.in:268
 msgid "Found background: %s\\n"
-msgstr ""
+msgstr "找到背景：%s\\n"
 
 #: util/grub.d/00_header.in:273
 msgid "Unsupported image format"
@@ -6629,11 +6580,11 @@ msgstr "找到 GNU Mach：%s"
 
 #: util/grub.d/10_hurd.in:63
 msgid "Found Hurd module: %s"
-msgstr ""
+msgstr "找到 Hurd 模块：%s"
 
 #: util/grub.d/10_hurd.in:77
 msgid "Some Hurd stuff found, but not enough to boot."
-msgstr ""
+msgstr "找到某些 Hurd 内容，但不足以进行启动。"
 
 #: util/grub.d/10_hurd.in:91
 #, fuzzy
@@ -6728,10 +6679,8 @@ msgid "%s, with kernel %s (via %s)"
 msgstr "%s，%s 内核(通过 %s)"
 
 #: util/grub.d/10_netbsd.in:158
-#, fuzzy
-#| msgid "Load NetBSD kernel module."
 msgid "Found NetBSD kernel: %s\\n"
-msgstr "载入 NetBSD 内核模块。"
+msgstr "找到 NetBSD 内核：%s\\n"
 
 #: util/grub.d/10_windows.in:70
 msgid "Windows Vista/7 (loader)"
@@ -6742,10 +6691,8 @@ msgid "Windows NT/2000/XP (loader)"
 msgstr ""
 
 #: util/grub.d/10_windows.in:85
-#, fuzzy
-#| msgid "Using %s for %s%s%s (%s)\n"
 msgid "Found %s on %s (%s)\\n"
-msgstr "为 %2$s%3$s%4$s 使用 %1$s (%5$s)\n"
+msgstr "发现 %s 在 %s（%s）\\n"
 
 #. TRANSLATORS: it refers to kernel architecture (32-bit)
 #: util/grub.d/10_xnu.in:32 util/grub.d/30_os-prober.in:47
@@ -6762,7 +6709,7 @@ msgstr "（64位）"
 #: util/grub.d/30_os-prober.in:149 util/grub.d/30_os-prober.in:181
 #: util/grub.d/30_os-prober.in:222 util/grub.d/30_os-prober.in:294
 msgid "(on %s)"
-msgstr ""
+msgstr "（在 %s）"
 
 #: util/grub.d/20_linux_xen.in:93
 msgid "%s, with Xen %s and Linux %s (recovery mode)"

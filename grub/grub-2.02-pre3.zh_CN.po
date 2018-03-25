@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: grub 2.02-pre3\n"
 "Report-Msgid-Bugs-To: bug-grub@gnu.org\n"
 "POT-Creation-Date: 2017-02-03 12:45+0100\n"
-"PO-Revision-Date: 2018-03-23 15:31+0800\n"
+"PO-Revision-Date: 2018-03-25 10:49+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -2253,7 +2253,7 @@ msgstr "挂载全部。"
 
 #: grub-core/disk/cryptodisk.c:43
 msgid "Mount all volumes with `boot' flag set."
-msgstr ""
+msgstr "挂载所有设置了“boot”（“引导”）标志的卷。"
 
 #. TRANSLATORS: The first %s is the file being looked at, the second %s is
 #. the error message.
@@ -2318,7 +2318,7 @@ msgstr ""
 #: grub-core/disk/diskfilter.c:480
 #, c-format
 msgid "physical volume %s not found"
-msgstr ""
+msgstr "物理卷 %s 未找到"
 
 #: grub-core/disk/efi/efidisk.c:585 grub-core/disk/efi/efidisk.c:608
 #, fuzzy, c-format
@@ -2344,7 +2344,7 @@ msgstr ""
 
 #: grub-core/disk/geli.c:435 grub-core/disk/luks.c:329
 msgid "Attempting to decrypt master key..."
-msgstr ""
+msgstr "尝试解密主密钥..."
 
 #: grub-core/disk/geli.c:441 grub-core/disk/luks.c:347
 #, fuzzy, c-format
@@ -2523,7 +2523,7 @@ msgstr "校验和验证失败"
 
 #: grub-core/fs/zfs/zfscrypt.c:292
 msgid "no decryption key available"
-msgstr ""
+msgstr "没有可用的解密密钥"
 
 #: grub-core/fs/zfs/zfscrypt.c:304
 msgid "MAC verification failed"
@@ -3315,10 +3315,8 @@ msgid "a value was assigned to the argument `%s' while it doesn't require an arg
 msgstr ""
 
 #: grub-core/lib/backtrace.c:64
-#, fuzzy
-#| msgid "Print a block list."
 msgid "Print backtrace."
-msgstr "显示块列表。"
+msgstr "打印 backtrace 回溯信息。"
 
 #: grub-core/lib/i386/halt.c:77
 msgid "GRUB doesn't know how to halt this machine yet!"
@@ -4230,10 +4228,9 @@ msgid "Press any key to continue..."
 msgstr "按任意键继续..."
 
 #: grub-core/normal/menu.c:814
-#, fuzzy, c-format
-#| msgid "Booting '%s'"
+#, c-format
 msgid "Booting `%s'"
-msgstr "正在引导 %s"
+msgstr "正在引导“%s”"
 
 #: grub-core/normal/menu.c:826
 #, c-format
@@ -4307,27 +4304,27 @@ msgstr ""
 #. TRANSLATORS: that's the list of binary unit prefixes.
 #: grub-core/normal/misc.c:42
 msgid "B/s"
-msgstr ""
+msgstr "B/s"
 
 #: grub-core/normal/misc.c:42
 msgid "KiB/s"
-msgstr ""
+msgstr "KiB/s"
 
 #: grub-core/normal/misc.c:42
 msgid "MiB/s"
-msgstr ""
+msgstr "MiB/s"
 
 #: grub-core/normal/misc.c:42
 msgid "GiB/s"
-msgstr ""
+msgstr "GiB/s"
 
 #: grub-core/normal/misc.c:42
 msgid "TiB/s"
-msgstr ""
+msgstr "TiB/s"
 
 #: grub-core/normal/misc.c:42
 msgid "PiB/s"
-msgstr ""
+msgstr "PiB/s"
 
 #: grub-core/normal/misc.c:96
 #, c-format
@@ -4375,7 +4372,7 @@ msgstr " - 分区始于 %u"
 #: grub-core/normal/misc.c:178
 #, c-format
 msgid " - Sector size %uB"
-msgstr ""
+msgstr " - 扇区大小 %uB"
 
 #: grub-core/normal/misc.c:180
 msgid " - Total size unknown"
@@ -4433,7 +4430,7 @@ msgstr ""
 
 #: grub-core/osdep/devmapper/getroot.c:81
 msgid "Failed to create `device-mapper' tree"
-msgstr ""
+msgstr "创建“device-mapper”树失败"
 
 #: grub-core/osdep/devmapper/getroot.c:197
 #: grub-core/osdep/freebsd/getroot.c:202
@@ -4623,17 +4620,14 @@ msgid "Unable to fork: %s"
 msgstr "无法打开 %s"
 
 #: grub-core/osdep/unix/exec.c:166 grub-core/osdep/unix/exec.c:211
-#, fuzzy, c-format
-#| msgid "Unable to open %s"
+#, c-format
 msgid "Unable to create pipe: %s"
-msgstr "无法打开 %s"
+msgstr "无法创建管道：%s"
 
 #: grub-core/osdep/unix/getroot.c:415 grub-core/osdep/unix/getroot.c:469
 #: grub-core/osdep/unix/getroot.c:478
-#, fuzzy
-#| msgid "cannot compress the kernel image"
 msgid "cannot restore the original directory"
-msgstr "无法压缩内核镜像"
+msgstr "无法恢复原始目录"
 
 #. TRANSLATORS: "stat" comes from the name of POSIX function.
 #: grub-core/osdep/unix/getroot.c:540 grub-core/osdep/unix/hostdisk.c:61
@@ -4646,18 +4640,16 @@ msgid "cannot stat `%s': %s"
 msgstr "无法打开“%s”"
 
 #: grub-core/osdep/unix/hostdisk.c:283
-#, fuzzy, c-format
-#| msgid "cannot open file %s"
+#, c-format
 msgid "cannot make temporary file: %s"
-msgstr "无法打开文件 %s"
+msgstr "无法创建临时文件：%s"
 
 # need to check source code:
 # is the %s referring to the "directory" or the error msg?
 #: grub-core/osdep/unix/hostdisk.c:301
-#, fuzzy, c-format
-#| msgid "Unable to sort directory %s\n"
+#, c-format
 msgid "cannot make temporary directory: %s"
-msgstr "无法为目录 %s 排序\n"
+msgstr "无法创建临时目录：%s"
 
 #: grub-core/osdep/unix/platform.c:77
 #, c-format
@@ -4699,7 +4691,7 @@ msgstr "cygwin_conv_path() 失败"
 
 #: grub-core/osdep/windows/hostdisk.c:489 util/grub-install.c:566
 msgid "couldn't retrieve random data"
-msgstr ""
+msgstr "无法获取随机数据"
 
 #: grub-core/osdep/windows/platform.c:97
 msgid "Insufficient privileges to access firmware, assuming BIOS"
@@ -4770,7 +4762,7 @@ msgstr ""
 #: grub-core/parttool/msdospart.c:69
 #, c-format
 msgid "Partition %d is active now. \n"
-msgstr ""
+msgstr "%d 分区现在处于活动状态。\n"
 
 #: grub-core/parttool/msdospart.c:74
 #, c-format
@@ -4959,10 +4951,8 @@ msgid "visually-ordered UTF-8"
 msgstr "终端使用按可视性排序的 UTF-8。"
 
 #: grub-core/term/terminfo.c:680
-#, fuzzy
-#| msgid "Unknown"
 msgid "Unknown encoding"
-msgstr "未知"
+msgstr "未知编码"
 
 #: grub-core/term/terminfo.c:684
 msgid "Current terminfo types:"
@@ -5908,22 +5898,18 @@ msgid "generate an image in FORMAT"
 msgstr ""
 
 #: util/grub-mkimage.c:100 util/grub-mkstandalone.c:63
-#, fuzzy
-#| msgid "Available output terminals:"
 msgid "available formats:"
-msgstr "可用输入终端："
+msgstr "可用格式："
 
 #: util/grub-mkimage.c:150 util/grub-mkstandalone.c:96
-#, fuzzy, c-format
-#| msgid "Unknown extra argument `%s'.\n"
 msgid "unknown target format %s\n"
-msgstr "未知的额外参数“%s”。\n"
+msgstr "未知的目标格式“%s”。\n"
 
 #: util/grub-mkimage.c:233
 #, fuzzy
 #| msgid "[OPTIONS...]"
 msgid "[OPTION]... [MODULES]"
-msgstr "[选项...]"
+msgstr "[选项]... [模块]"
 
 #: util/grub-mkimage.c:234
 msgid "Make a bootable image of GRUB."
@@ -5931,7 +5917,7 @@ msgstr ""
 
 #: util/grub-mkimage.c:264 util/grub-mkstandalone.c:309
 msgid "Target format not specified (use the -O option)."
-msgstr ""
+msgstr "目标格式未指定（使用 -O 选项）。"
 
 #: util/grub-mkimage.c:273
 msgid "Prefix not specified (use the -p option)."
@@ -5940,17 +5926,17 @@ msgstr ""
 #: util/grub-mkimagexx.c:1814
 #, c-format
 msgid "`%s' is miscompiled: its start address is 0x%llx instead of 0x%llx: ld.gold bug?"
-msgstr ""
+msgstr "“%s”编译时有误：其起始地址为 0x%llx 而非 0x%llx：可能是 ld.gold 的 bug？"
 
 #: util/grub-mklayout.c:53
 msgid "set input filename. Default is STDIN"
-msgstr ""
+msgstr "设置输入文件名，默认为标准输入"
 
 #. TRANSLATORS: scan identifier is keyboard key symbolic name.
 #: util/grub-mklayout.c:307
 #, c-format
 msgid "Unknown keyboard scan identifier %s\n"
-msgstr ""
+msgstr "未知的键盘扫描标识符 %s\n"
 
 #. TRANSLATORS: scan code is keyboard key numeric identifier.
 #: util/grub-mklayout.c:390 util/grub-mklayout.c:418
@@ -5962,7 +5948,7 @@ msgstr "未知的键盘扫描码 0x%02x\n"
 #. key descriptions.
 #: util/grub-mklayout.c:438
 msgid "ERROR: no valid keyboard layout found. Check the input.\n"
-msgstr ""
+msgstr "错误：未找到有效的键盘布局。请检查输入。\n"
 
 #. TRANSLATORS: "one" is a shortcut for "keyboard layout".
 #: util/grub-mklayout.c:478
@@ -6006,7 +5992,7 @@ msgstr ""
 
 #: util/grub-mkpasswd-pbkdf2.c:87
 msgid "Generate PBKDF2 password hash."
-msgstr ""
+msgstr "生成 PBKDF2 密码哈希。"
 
 #: util/grub-mkpasswd-pbkdf2.c:144 util/grub-mkpasswd-pbkdf2.c:151
 msgid "failure to read password"
@@ -6035,10 +6021,8 @@ msgid "PBKDF2 hash of your password is %s\n"
 msgstr ""
 
 #: util/grub-mkrelpath.c:67
-#, fuzzy
-#| msgid "No command is specified.\n"
 msgid "No path is specified.\n"
-msgstr "没有指定命令。\n"
+msgstr "没有指定路径。\n"
 
 #: util/grub-mkrelpath.c:78
 #, fuzzy
@@ -6102,15 +6086,15 @@ msgstr "正在启用 %s 支持 ..."
 
 #: util/grub-mkrescue.c:613
 msgid "Your xorriso doesn't support `--grub2-boot-info'. Some features are disabled. Please use xorriso 1.2.9 or later."
-msgstr ""
+msgstr "您的 xorriso 不支持“--grub2-boot-info”。某些功能已禁用。请使用 xorriso 1.2.9 或更新版本。"
 
 #: util/grub-mkrescue.c:640
 msgid "Your xorriso doesn't support `--grub2-boot-info'. Your core image is too big. Boot as disk is disabled. Please use xorriso 1.2.9 or later."
-msgstr ""
+msgstr "您的 xorriso 不支持“--grub2-boot-info”。您的核心镜像过大。以磁盘启动的功能已禁用。请使用 xorriso 1.2.9 或更新版本。"
 
 #: util/grub-mkstandalone.c:115
 msgid "Generate a standalone image (containing all modules) in the selected format"
-msgstr ""
+msgstr "以所选格式生成一个独立镜像（包含全部模块）"
 
 #: util/grub-mkstandalone.c:115
 msgid "Graft point syntax (E.g. /boot/grub/grub.cfg=./grub.cfg) is accepted"
@@ -6143,7 +6127,7 @@ msgstr ""
 
 #: util/grub-probe.c:709
 msgid "available targets:"
-msgstr ""
+msgstr "可用目标："
 
 #: util/grub-probe.c:791
 #, fuzzy
@@ -6257,7 +6241,7 @@ msgstr ""
 
 #: util/grub-syslinux2cfg.c:74
 msgid "write output to FILE [default=stdout]."
-msgstr ""
+msgstr "将输出写入指定文件 [默认=stdout]"
 
 #: util/grub-syslinux2cfg.c:148
 msgid "Transform syslinux config into GRUB one."
@@ -6438,15 +6422,11 @@ msgstr "载入一个键盘布局。"
 
 #: util/grub-kbdcomp.in:27 util/grub-mkconfig.in:61 util/grub-reboot.in:49
 #: util/grub-set-default.in:51
-#, fuzzy
-#| msgid "Display this help and exit."
 msgid "print this message and exit"
-msgstr "显示此帮助并退出。"
+msgstr "输出本信息并退出。"
 
 #: util/grub-kbdcomp.in:28 util/grub-mkconfig.in:62 util/grub-reboot.in:50
 #: util/grub-set-default.in:52
-#, fuzzy
-#| msgid "Print version information and exit"
 msgid "print the version information and exit"
 msgstr "输出版本信息并退出"
 
@@ -6469,10 +6449,8 @@ msgid "Usage: %s [OPTION]\\n"
 msgstr "用法：%s [选项]\\n"
 
 #: util/grub-mkconfig.in:58
-#, fuzzy
-#| msgid "Load another config file."
 msgid "Generate a grub config file"
-msgstr "载入另外的配置文件。"
+msgstr "生成一个 grub 配置文件"
 
 #: util/grub-mkconfig.in:60
 msgid "output generated config to FILE [default=stdout]"
@@ -6517,7 +6495,7 @@ msgstr ""
 
 #: util/grub-reboot.in:48
 msgid "Set the default boot menu entry for GRUB, for the next boot only."
-msgstr ""
+msgstr "设置 GRUB 默认引导菜单项（仅对下一次启动有效）"
 
 #: util/grub-reboot.in:51 util/grub-set-default.in:53
 msgid "expect GRUB images under the directory DIR/%s instead of the %s directory"
@@ -6534,17 +6512,17 @@ msgstr ""
 
 #: util/grub-reboot.in:106 util/grub-set-default.in:104
 msgid "More than one menu entry?"
-msgstr ""
+msgstr "多于一个菜单项？"
 
 #: util/grub-reboot.in:116 util/grub-set-default.in:114
 #, fuzzy
 #| msgid "Menu entry type."
 msgid "Menu entry not specified."
-msgstr "菜单项类型。"
+msgstr "未指定菜单项。"
 
 #: util/grub-set-default.in:48
 msgid "Set the default boot menu entry for GRUB."
-msgstr ""
+msgstr "设置 GRUB 默认引导菜单项。"
 
 #: util/grub-set-default.in:49
 msgid "This requires setting GRUB_DEFAULT=saved in %s/default/grub.\\n"

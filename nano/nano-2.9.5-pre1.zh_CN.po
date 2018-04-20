@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: nano 2.9.5-pre1\n"
 "Report-Msgid-Bugs-To: nano-devel@gnu.org\n"
 "POT-Creation-Date: 2018-03-23 11:42+0100\n"
-"PO-Revision-Date: 2018-03-23 19:29+0800\n"
+"PO-Revision-Date: 2018-04-20 20:28+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -521,7 +521,7 @@ msgstr "尝试运行拼写检查"
 
 #: src/global.c:547
 msgid "Replace a string or a regular expression"
-msgstr "替换字符串或正则表示式"
+msgstr "替换字符串或正则表达式"
 
 #: src/global.c:548
 msgid "Go to line and column number"
@@ -721,7 +721,7 @@ msgstr "反转搜索方向"
 
 #: src/global.c:633
 msgid "Toggle the use of regular expressions"
-msgstr "切换使用正则表示式"
+msgstr "切换使用正则表达式"
 
 #: src/global.c:636
 msgid "Recall the previous search/replace string"
@@ -833,10 +833,8 @@ msgid "To Spell"
 msgstr "拼写检查"
 
 #: src/global.c:772
-#, fuzzy
-#| msgid "Go To Line"
 msgid "To Linter"
-msgstr "跳行"
+msgstr "转至代码语法检查器"
 
 #: src/global.c:775
 msgid "Formatter"
@@ -974,18 +972,16 @@ msgstr "退格"
 
 #. TRANSLATORS: The next two strings refer to cutting words.
 #: src/global.c:928
-#, fuzzy
-#| msgid "Cut Text"
 msgid "Cut Left"
-msgstr "剪切文字"
+msgstr "向左剪切"
 
 #: src/global.c:930
 msgid "Cut Right"
-msgstr ""
+msgstr "向右剪切"
 
 #: src/global.c:932
 msgid "CutTillEnd"
-msgstr "删至末端"
+msgstr "剪切至文末"
 
 #: src/global.c:942
 msgid "Word Count"
@@ -1901,22 +1897,20 @@ msgstr "参数%s 有未封闭的 \""
 
 #: src/rcfile.c:224 src/rcfile.c:656 src/rcfile.c:708 src/rcfile.c:815
 msgid "Regex strings must begin and end with a \" character"
-msgstr "正则表示式字符串必须以 \" 字符开始及结束"
+msgstr "正则表达式字符串必须以 \" 字符开始及结束"
 
 #: src/rcfile.c:250 src/search.c:47
 #, c-format
 msgid "Bad regex \"%s\": %s"
-msgstr "非法的正则表示式 \"%s\": %s"
+msgstr "非法的正则表达式 \"%s\": %s"
 
 #: src/rcfile.c:269
 msgid "Missing syntax name"
 msgstr "缺少语法名称"
 
 #: src/rcfile.c:277
-#, fuzzy
-#| msgid "Missing syntax name"
 msgid "Unpaired quote in syntax name"
-msgstr "缺少语法名称"
+msgstr "语法名称中的未配对引用"
 
 #: src/rcfile.c:289
 msgid "The \"none\" syntax is reserved"
@@ -1950,7 +1944,7 @@ msgstr "必须指定键绑定到的功能"
 #. TRANSLATORS: Do not translate the word "all".
 #: src/rcfile.c:407
 msgid "Must specify a menu (or \"all\") in which to bind/unbind the key"
-msgstr ""
+msgstr "必须指定一个要绑定/接触绑定按键的菜单（或“全部（all）”）"
 
 #: src/rcfile.c:425
 #, c-format
@@ -1958,10 +1952,9 @@ msgid "Cannot map name \"%s\" to a function"
 msgstr "无法映射名字“%s”到一个功能"
 
 #: src/rcfile.c:432
-#, fuzzy, c-format
-#| msgid "Could not map name \"%s\" to a menu"
+#, c-format
 msgid "Cannot map name \"%s\" to a menu"
-msgstr "无法映射名字\"%s\" 到一个菜单"
+msgstr "无法映射名字“%s”到一个菜单"
 
 #: src/rcfile.c:459
 #, c-format
@@ -2035,10 +2028,9 @@ msgid "If needed, use nano with the -I option to adjust your nanorc settings.\n"
 msgstr "如有需要，请在启动 nano 时带上 -I 选项以调整您的 nanorc 设置。\n"
 
 #: src/rcfile.c:947
-#, fuzzy, c-format
-#| msgid "Could not map name \"%s\" to a menu"
+#, c-format
 msgid "Could not find syntax \"%s\" to extend"
-msgstr "无法映射名字\"%s\" 到一个菜单"
+msgstr "无法找到要扩展的语法“%s”"
 
 #: src/rcfile.c:969 src/rcfile.c:1184
 #, c-format
@@ -2102,7 +2094,7 @@ msgstr " [区分大小写]"
 
 #: src/search.c:126
 msgid " [Regexp]"
-msgstr " [正则表示式]"
+msgstr " [正则表达式]"
 
 #: src/search.c:127
 msgid " [Backwards]"
@@ -2262,7 +2254,7 @@ msgstr "现在可以还原对齐！"
 #: src/text.c:2572
 #, c-format
 msgid "Unfindable word: %s"
-msgstr ""
+msgstr "无法找到单词：%s"
 
 #: src/text.c:2591
 msgid "Edit a replacement"
@@ -2331,7 +2323,7 @@ msgstr ""
 #: src/text.c:3219
 #, c-format
 msgid "This message is for unopened file %s, open it in a new buffer?"
-msgstr ""
+msgstr "该信息对应于未打开的文件 %s，在新缓冲区打开它吗？"
 
 #: src/text.c:3254
 msgid "No more errors in unopened files, cancelling"
@@ -2469,7 +2461,7 @@ msgstr "TP 项目和众多翻译人员"
 
 #: src/winio.c:3562
 msgid "For ncurses:"
-msgstr "ncurses 部份:"
+msgstr "ncurses 部分:"
 
 #: src/winio.c:3563
 msgid "and anyone else we forgot..."

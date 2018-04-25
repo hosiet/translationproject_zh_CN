@@ -7,10 +7,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cryptsetup 2.0.2\n"
+"Project-Id-Version: cryptsetup 2.0.3\n"
 "Report-Msgid-Bugs-To: dm-crypt@saout.de\n"
 "POT-Creation-Date: 2018-04-24 20:23+0200\n"
-"PO-Revision-Date: 2018-03-02 17:44+0800\n"
+"PO-Revision-Date: 2018-04-25 11:45+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -162,8 +162,7 @@ msgstr "无效的密钥大小。\n"
 msgid "UUID is not supported for this crypt type.\n"
 msgstr "此加密类型不支持 UUID。\n"
 
-#: lib/setup.c:1353 lib/setup.c:1497 src/cryptsetup.c:944
-#: src/cryptsetup.c:2520
+#: lib/setup.c:1353 lib/setup.c:1497 src/cryptsetup.c:944 src/cryptsetup.c:2520
 msgid "Unsupported encryption sector size.\n"
 msgstr "不支持的加密扇区大小。\n"
 
@@ -406,10 +405,9 @@ msgid "Dump operation is not supported for this device type.\n"
 msgstr "不支持在此类设备上执行导出操作。\n"
 
 #: lib/setup.c:3997
-#, fuzzy, c-format
-#| msgid "Cannot format device %s which is still in use.\n"
+#, c-format
 msgid "Cannot convert device %s which is still in use.\n"
-msgstr "无法格式化正在使用的设备 %s。\n"
+msgstr "无法转换正在使用的设备 %s。\n"
 
 #: lib/setup.c:4280
 #, fuzzy, c-format
@@ -1079,10 +1077,9 @@ msgid "Binary header with keyslot areas size differ on device and backup, restor
 msgstr "源设备和备份上的数据偏移或密钥大小不符，恢复失败。\n"
 
 #: lib/luks2/luks2_json_metadata.c:1118
-#, fuzzy, c-format
-#| msgid "Device %s %s%s"
+#, c-format
 msgid "Device %s %s%s%s%s"
-msgstr "设备 %s %s%s"
+msgstr "设备 %s %s%s%s%s"
 
 #: lib/luks2/luks2_json_metadata.c:1119
 #, fuzzy
@@ -1113,11 +1110,11 @@ msgstr ""
 #: lib/luks2/luks2_json_metadata.c:1226
 #, c-format
 msgid "Ignored unknown flag %s.\n"
-msgstr ""
+msgstr "已忽略未知标签 %s。\n"
 
 #: lib/luks2/luks2_json_metadata.c:1923
 msgid "Failed to read LUKS2 requirements.\n"
-msgstr ""
+msgstr "读取 LUKS2 要求失败。\n"
 
 #: lib/luks2/luks2_json_metadata.c:1930
 msgid "Unmet LUKS2 requirements detected.\n"
@@ -1125,7 +1122,7 @@ msgstr ""
 
 #: lib/luks2/luks2_json_metadata.c:1938
 msgid "Offline reencryption in progress. Aborting.\n"
-msgstr ""
+msgstr "正在进行离线重加密。中止。\n"
 
 #: lib/luks2/luks2_luks1_convert.c:476
 #, fuzzy, c-format
@@ -1213,21 +1210,19 @@ msgstr "需要选项 --key-file。\n"
 
 #: src/cryptsetup.c:308
 msgid "Enter VeraCrypt PIM: "
-msgstr ""
+msgstr "输入 VeraCrypt PIM: "
 
 #: src/cryptsetup.c:317
 msgid "Invalid PIM value: parse error\n"
-msgstr ""
+msgstr "无效的 PIM 值：解析错误\n"
 
 #: src/cryptsetup.c:320
-#, fuzzy
-#| msgid "Invalid device %s.\n"
 msgid "Invalid PIM value: 0\n"
-msgstr "设备 %s 无效。\n"
+msgstr "无效的 PIM 值：0\n"
 
 #: src/cryptsetup.c:323
 msgid "Invalid PIM value: outside of range\n"
-msgstr ""
+msgstr "无效的 PIM 值：超出范围\n"
 
 #: src/cryptsetup.c:346
 msgid "No device header detected with this passphrase.\n"
@@ -1328,10 +1323,8 @@ msgstr "无法将 %s 作为磁盘上的标头使用。\n"
 # stat() 主要就是出来一个各种文件信息……
 #: src/cryptsetup.c:1036 src/cryptsetup.c:1313 src/cryptsetup.c:1372
 #: src/cryptsetup.c:1458 src/cryptsetup.c:1509
-#, fuzzy
-#| msgid "Failed to stat key file.\n"
 msgid "Failed to set pbkdf parameters.\n"
-msgstr "获取 (stat) 密钥文件统计数据失败。\n"
+msgstr "设置 pbkdf 参数失败。\n"
 
 #: src/cryptsetup.c:1092
 msgid "Reduced data offset is allowed only for detached LUKS header.\n"
@@ -2251,10 +2244,8 @@ msgid "<data_device> <name> <hash_device> <root_hash>"
 msgstr "<数据设备> <哈希设备> <根哈希值>"
 
 #: src/veritysetup.c:365 src/integritysetup.c:426
-#, fuzzy
-#| msgid "open device as mapping <name>"
 msgid "open device as <name>"
-msgstr "以映射 <名称> 打开设备"
+msgstr "以 <名称> 打开设备"
 
 #: src/veritysetup.c:366 src/integritysetup.c:427
 #, fuzzy
@@ -2322,7 +2313,7 @@ msgstr "哈希设备的块大小"
 
 #: src/veritysetup.c:436
 msgid "FEC parity bytes"
-msgstr ""
+msgstr "FEC 校验字节"
 
 #: src/veritysetup.c:437
 msgid "The number of blocks in the data file"
@@ -2372,7 +2363,7 @@ msgstr ""
 
 #: src/veritysetup.c:445
 msgid "Ignore corruption, log it only"
-msgstr ""
+msgstr "忽略数据损坏，仅对其进行日志记录"
 
 #: src/veritysetup.c:446
 #, fuzzy
@@ -2457,7 +2448,7 @@ msgstr ""
 
 #: src/integritysetup.c:491
 msgid "Journal size"
-msgstr ""
+msgstr "日志大小"
 
 #: src/integritysetup.c:492
 msgid "Interleave sectors"
@@ -2473,7 +2464,7 @@ msgstr ""
 
 #: src/integritysetup.c:494
 msgid "Journal commit time"
-msgstr ""
+msgstr "日志提交时间"
 
 #: src/integritysetup.c:494
 msgid "ms"
@@ -2489,7 +2480,7 @@ msgstr "扇区大小"
 
 #: src/integritysetup.c:497
 msgid "Buffers size"
-msgstr ""
+msgstr "缓冲大小"
 
 #: src/integritysetup.c:499
 msgid "Data integrity algorithm (default "
@@ -2525,7 +2516,7 @@ msgstr "从文件读取密钥。"
 
 #: src/integritysetup.c:507
 msgid "Journal encryption algorithm"
-msgstr ""
+msgstr "日志加密算法"
 
 #: src/integritysetup.c:508
 #, fuzzy
@@ -2548,10 +2539,8 @@ msgid "Options --journal-size, --interleave-sectors, --sector-size, --tag-size a
 msgstr ""
 
 #: src/integritysetup.c:607
-#, fuzzy
-#| msgid "Invalid device size specification."
 msgid "Invalid journal size specification."
-msgstr "无效的设备大小指标。"
+msgstr "无效的日志大小指标。"
 
 #: src/integritysetup.c:612
 msgid "Both key file and key size options must be specified."
@@ -2827,10 +2816,8 @@ msgid "volume key"
 msgstr ""
 
 #: src/cryptsetup_reencrypt.c:1677
-#, fuzzy
-#| msgid ", set hash to "
 msgid "set hash to "
-msgstr "，设置哈希值为 "
+msgstr "设置哈希值为 "
 
 #: src/cryptsetup_reencrypt.c:1678
 msgid ", set cipher to "
@@ -2984,12 +2971,9 @@ msgstr ""
 "\n"
 
 #: src/utils_password.c:346
-#, fuzzy, c-format
-#| msgid "Cannot read keyfile %s.\n"
+#, c-format
 msgid "Cannot write to keyfile %s.\n"
-msgstr ""
-"无法读取密钥文件 %s。\n"
-"\n"
+msgstr "无法写入密钥文件 %s。\n"
 
 #~ msgid "Cannot find a free loopback device.\n"
 #~ msgstr "找不到空闲的回环设备。\n"

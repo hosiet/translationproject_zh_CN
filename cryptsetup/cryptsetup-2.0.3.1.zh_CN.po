@@ -7,10 +7,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cryptsetup 2.0.3\n"
+"Project-Id-Version: cryptsetup 2.0.3.1\n"
 "Report-Msgid-Bugs-To: dm-crypt@saout.de\n"
 "POT-Creation-Date: 2018-04-26 22:11+0200\n"
-"PO-Revision-Date: 2018-04-25 11:45+0800\n"
+"PO-Revision-Date: 2018-04-27 22:08+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -22,58 +22,41 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: lib/libdevmapper.c:331
-#, fuzzy
-#| msgid "Cannot initialize device-mapper, running as non-root user.\n"
 msgid "Cannot initialize device-mapper, running as non-root user."
-msgstr "无法初始化设备映射器，正作为非 root 用户运行。\n"
+msgstr "无法初始化设备映射器，正作为非 root 用户运行。"
 
 #: lib/libdevmapper.c:334
-#, fuzzy
-#| msgid "Cannot initialize device-mapper. Is dm_mod kernel module loaded?\n"
 msgid "Cannot initialize device-mapper. Is dm_mod kernel module loaded?"
-msgstr "无法初始化设备映射器。dm_mod 内核模块装载了吗？\n"
+msgstr "无法初始化设备映射器。dm_mod 内核模块装载了吗？"
 
 #: lib/libdevmapper.c:938
-#, fuzzy
-#| msgid "Requested deferred flag is not supported.\n"
 msgid "Requested deferred flag is not supported."
-msgstr "不支持请求的推迟（deferred）标记。\n"
+msgstr "不支持请求的推迟（deferred）标记。"
 
 #: lib/libdevmapper.c:1003
-#, fuzzy, c-format
-#| msgid "DM-UUID for device %s was truncated.\n"
+#, c-format
 msgid "DM-UUID for device %s was truncated."
-msgstr "设备 %s 的 DM-UUID 被截断。\n"
+msgstr "设备 %s 的 DM-UUID 被截断。"
 
 #: lib/libdevmapper.c:1223
-#, fuzzy
-#| msgid "Requested dm-crypt performance options are not supported.\n"
 msgid "Requested dm-crypt performance options are not supported."
-msgstr "不支持请求的 dm-crypt 性能选项。\n"
+msgstr "不支持请求的 dm-crypt 性能选项。"
 
 #: lib/libdevmapper.c:1230
-#, fuzzy
-#| msgid "Requested dm-verity data corruption handling options are not supported.\n"
 msgid "Requested dm-verity data corruption handling options are not supported."
-msgstr "不支持请求的 dm-verity 数据损坏处理选项。\n"
+msgstr "不支持请求的 dm-verity 数据损坏处理选项。"
 
 #: lib/libdevmapper.c:1234
-#, fuzzy
-#| msgid "Requested dm-verity FEC options are not supported.\n"
 msgid "Requested dm-verity FEC options are not supported."
-msgstr "不支持请求的 dm-verity FEC 选项。\n"
+msgstr "不支持请求的 dm-verity FEC 选项。"
 
 #: lib/libdevmapper.c:1238
-#, fuzzy
-#| msgid "Requested data integrity options are not supported.\n"
 msgid "Requested data integrity options are not supported."
-msgstr "不支持请求的数据完整性选项。\n"
+msgstr "不支持请求的数据完整性选项。"
 
 #: lib/libdevmapper.c:1240
-#, fuzzy
-#| msgid "Requested sector_size option is not supported.\n"
 msgid "Requested sector_size option is not supported."
-msgstr "不支持请求的 sector_size 选项。\n"
+msgstr "不支持请求的 sector_size 选项。"
 
 #: lib/random.c:80
 msgid ""
@@ -89,178 +72,134 @@ msgid "Generating key (%d%% done).\n"
 msgstr "正生成密钥（%d%% 已完成）\n"
 
 #: lib/random.c:170
-#, fuzzy
-#| msgid "Running in FIPS mode.\n"
 msgid "Running in FIPS mode."
-msgstr "在 FIPS 模式下运行。\n"
+msgstr "在 FIPS 模式下运行。"
 
 #: lib/random.c:176
-#, fuzzy
-#| msgid "Fatal error during RNG initialisation.\n"
 msgid "Fatal error during RNG initialisation."
-msgstr "随机数生成器初始化时发生致命错误。\n"
+msgstr "随机数生成器初始化时发生致命错误。"
 
 #: lib/random.c:213
-#, fuzzy
-#| msgid "Unknown RNG quality requested.\n"
 msgid "Unknown RNG quality requested."
-msgstr "未知的随机数生成器质量请求。\n"
+msgstr "未知的随机数生成器质量请求。"
 
 #: lib/random.c:218
-#, fuzzy
-#| msgid "Error reading from RNG.\n"
 msgid "Error reading from RNG."
-msgstr "从 RNG 读取时出错。\n"
+msgstr "从随机数生成器（RNG）读取时出错。"
 
 #: lib/setup.c:203
-#, fuzzy
-#| msgid "Cannot initialize crypto RNG backend.\n"
 msgid "Cannot initialize crypto RNG backend."
-msgstr "无法初始化加密随机数生成器后端。\n"
+msgstr "无法初始化加密随机数生成器后端。"
 
 #: lib/setup.c:209
-#, fuzzy
-#| msgid "Cannot initialize crypto backend.\n"
 msgid "Cannot initialize crypto backend."
-msgstr "无法初始化加密后端。\n"
+msgstr "无法初始化加密后端。"
 
 #: lib/setup.c:240 lib/setup.c:1766 lib/verity/verity.c:123
-#, fuzzy, c-format
-#| msgid "Hash algorithm %s not supported.\n"
+#, c-format
 msgid "Hash algorithm %s not supported."
-msgstr "不支持哈希算法 %s。\n"
+msgstr "不支持哈希算法 %s。"
 
 #: lib/setup.c:243 lib/loopaes/loopaes.c:90
-#, fuzzy, c-format
-#| msgid "Key processing error (using hash %s).\n"
+#, c-format
 msgid "Key processing error (using hash %s)."
-msgstr "密钥处理错误（散列 %s）。\n"
+msgstr "密钥处理错误（使用散列 %s）。"
 
 #: lib/setup.c:304 lib/setup.c:331
-#, fuzzy
-#| msgid "Cannot determine device type. Incompatible activation of device?\n"
 msgid "Cannot determine device type. Incompatible activation of device?"
-msgstr "无法确定设备类型。不兼容的设备激活？\n"
+msgstr "无法确定设备类型。不兼容的设备激活？"
 
 #: lib/setup.c:310 lib/setup.c:2326
-#, fuzzy
-#| msgid "This operation is supported only for LUKS device.\n"
 msgid "This operation is supported only for LUKS device."
-msgstr "此操作只适用 LUKS 设备。\n"
+msgstr "此操作只适用 LUKS 设备。"
 
 #: lib/setup.c:337
-#, fuzzy
-#| msgid "This operation is supported only for LUKS2 device.\n"
 msgid "This operation is supported only for LUKS2 device."
-msgstr "此操作只适用 LUKS2 设备。\n"
+msgstr "此操作只适用 LUKS2 设备。"
 
 #: lib/setup.c:382
-#, fuzzy
-#| msgid "All key slots full.\n"
 msgid "All key slots full."
-msgstr "密钥槽全都满了。\n"
+msgstr "密钥槽全都满了。"
 
 #: lib/setup.c:393
-#, fuzzy, c-format
-#| msgid "Key slot %d is invalid, please select between 0 and %d.\n"
+#, c-format
 msgid "Key slot %d is invalid, please select between 0 and %d."
-msgstr "密钥槽 %d 无效，请选择 0 到 %d 间的数字。\n"
+msgstr "密钥槽 %d 无效，请选择 0 到 %d 间的数字。"
 
 #: lib/setup.c:399
-#, fuzzy, c-format
-#| msgid "Key slot %d is full, please select another one.\n"
+#, c-format
 msgid "Key slot %d is full, please select another one."
-msgstr "密钥槽 %d 满了，请选择另一个。\n"
+msgstr "密钥槽 %d 满了，请选择另一个。"
 
 #: lib/setup.c:597
-#, fuzzy, c-format
-#| msgid "Header detected but device %s is too small.\n"
+#, c-format
 msgid "Header detected but device %s is too small."
-msgstr "检测到标头但设备 %s 太小。\n"
+msgstr "检测到标头但设备 %s 太小。"
 
 #: lib/setup.c:616
-#, fuzzy
-#| msgid "This operation is not supported for this device type.\n"
 msgid "This operation is not supported for this device type."
-msgstr "不支持在这类设备上执行此操作。\n"
+msgstr "不支持在这类设备上执行此操作。"
 
 #: lib/setup.c:1239 lib/setup.c:2066 lib/setup.c:3300
-#, fuzzy, c-format
-#| msgid "Device %s is not active.\n"
+#, c-format
 msgid "Device %s is not active."
-msgstr "设备 %s 未激活。\n"
+msgstr "设备 %s 未激活。"
 
 #: lib/setup.c:1256
-#, fuzzy, c-format
-#| msgid "Underlying device for crypt device %s disappeared.\n"
+#, c-format
 msgid "Underlying device for crypt device %s disappeared."
-msgstr "加密设备 %s 背后的设备消失了。\n"
+msgstr "加密设备 %s 下层的设备消失了。"
 
 #: lib/setup.c:1336
-#, fuzzy
-#| msgid "Invalid plain crypt parameters.\n"
 msgid "Invalid plain crypt parameters."
-msgstr "无效的纯加密选项。\n"
+msgstr "无效的纯加密选项。"
 
 #: lib/setup.c:1341 lib/setup.c:1680 src/integritysetup.c:68
-#, fuzzy
-#| msgid "Invalid key size.\n"
 msgid "Invalid key size."
-msgstr "无效的密钥大小。\n"
+msgstr "无效的密钥大小。"
 
 #: lib/setup.c:1346 lib/setup.c:1685 lib/setup.c:1876
-#, fuzzy
-#| msgid "UUID is not supported for this crypt type.\n"
 msgid "UUID is not supported for this crypt type."
-msgstr "此加密类型不支持 UUID。\n"
+msgstr "此加密类型不支持 UUID。"
 
 #: lib/setup.c:1356 lib/setup.c:1500 src/cryptsetup.c:950
-#, fuzzy
-#| msgid "Unsupported encryption sector size.\n"
 msgid "Unsupported encryption sector size."
-msgstr "不支持的加密扇区大小。\n"
+msgstr "不支持的加密扇区大小。"
 
 #: lib/setup.c:1402 lib/setup.c:1494
-#, fuzzy
-#| msgid "Can't format LUKS without device.\n"
 msgid "Can't format LUKS without device."
-msgstr "无法在没有设备的情况下格式化 LUKS.\n"
+msgstr "无法在没有设备的情况下格式化 LUKS。"
 
 #: lib/setup.c:1464 lib/setup.c:1617 lib/setup.c:1888
-#, fuzzy, c-format
-#| msgid "Cannot wipe header on device %s.\n"
+#, c-format
 msgid "Cannot wipe header on device %s."
-msgstr "无法将设备 %s 上的标头擦除。\n"
+msgstr "无法将设备 %s 上的标头擦除。"
 
 #: lib/setup.c:1523
 msgid "Volume key is too small for encryption with integrity extensions."
-msgstr ""
+msgstr "卷密钥对于带完整性校验扩展的加密而言过小。"
 
 #: lib/setup.c:1530 lib/utils_device.c:599
-#, fuzzy, c-format
-#| msgid "Cannot use device %s which is in use (already mapped or mounted).\n"
+#, c-format
 msgid "Cannot use device %s which is in use (already mapped or mounted)."
-msgstr "无法使用正被使用的设备 %s（已被映射或挂载）。\n"
+msgstr "无法使用正被使用的设备 %s（已被映射或挂载）。"
 
 #: lib/setup.c:1610
-#, fuzzy, c-format
-#| msgid "Cannot format device %s which is still in use.\n"
+#, c-format
 msgid "Cannot format device %s which is still in use."
-msgstr "无法格式化正在使用的设备 %s。\n"
+msgstr "无法格式化正在使用的设备 %s。"
 
 #: lib/setup.c:1613 lib/setup.c:1648
-#, fuzzy, c-format
-#| msgid "Cannot format device %s, permission denied.\n"
+#, c-format
 msgid "Cannot format device %s, permission denied."
-msgstr "无法格式化设备 %s，权限被拒绝。\n"
+msgstr "无法格式化设备 %s，权限被拒绝。"
 
 #: lib/setup.c:1625 lib/luks2/luks2_json_metadata.c:863
 #: lib/luks2/luks2_json_metadata.c:1141 lib/luks2/luks2_keyslot.c:429
 #: lib/luks2/luks2_keyslot_luks2.c:40 lib/luks2/luks2_keyslot_luks2.c:69
-#, fuzzy, c-format
-#| msgid "Failed to access temporary keystore device.\n"
+#, c-format
 msgid "Failed to acquire write lock on device %s."
-msgstr "无法访问临时密钥存储设备。\n"
+msgstr "无法获取设备 %s 上的写入锁。"
 
 #: lib/setup.c:1633 lib/setup.c:1940
 #, fuzzy, c-format
@@ -269,270 +208,208 @@ msgid "Cannot format integrity for device %s."
 msgstr "无法写入设备 %s。\n"
 
 #: lib/setup.c:1645
-#, fuzzy, c-format
-#| msgid "Cannot format device %s in use.\n"
+#, c-format
 msgid "Cannot format device %s in use."
-msgstr "无法格式化正在使用的设备 %s。\n"
+msgstr "无法格式化正在使用的设备 %s。"
 
 #: lib/setup.c:1652
-#, fuzzy, c-format
-#| msgid "Cannot format device %s\n"
+#, c-format
 msgid "Cannot format device %s."
-msgstr "无法格式化设备 %s\n"
+msgstr "无法格式化设备 %s。"
 
 #: lib/setup.c:1675
-#, fuzzy
-#| msgid "Can't format LOOPAES without device.\n"
 msgid "Can't format LOOPAES without device."
-msgstr "无法在没有设备的情况下格式化 LOOPAES.\n"
+msgstr "无法在没有设备的情况下格式化 LOOPAES。"
 
 #: lib/setup.c:1715
-#, fuzzy
-#| msgid "Can't format VERITY without device.\n"
 msgid "Can't format VERITY without device."
-msgstr "无法在没有设备的情况下格式化 VERIFY.\n"
+msgstr "无法在没有设备的情况下格式化 VERIFY。"
 
 #: lib/setup.c:1723 lib/verity/verity.c:106
-#, fuzzy, c-format
-#| msgid "Unsupported VERITY hash type %d.\n"
+#, c-format
 msgid "Unsupported VERITY hash type %d."
-msgstr "不支持的真理哈希类型 %d。\n"
+msgstr "不支持的 VERITY 哈希类型 %d。"
 
 #: lib/setup.c:1729 lib/verity/verity.c:114
-#, fuzzy
-#| msgid "Unsupported VERITY block size.\n"
 msgid "Unsupported VERITY block size."
-msgstr "不支持的真理的块大小。\n"
+msgstr "不支持的 VERITY 块大小。"
 
 #: lib/setup.c:1734 lib/verity/verity.c:75
-#, fuzzy
-#| msgid "Unsupported VERITY hash offset.\n"
 msgid "Unsupported VERITY hash offset."
-msgstr "不支持的真理哈希偏移量。\n"
+msgstr "不支持的 VERITY 哈希偏移量。"
 
 #: lib/setup.c:1739
-#, fuzzy
-#| msgid "Unsupported VERITY hash offset.\n"
 msgid "Unsupported VERITY FEC offset."
-msgstr "不支持的真理哈希偏移量。\n"
+msgstr "不支持的 VERITY 哈希偏移量。"
 
 #: lib/setup.c:1760
 msgid "Data area overlaps with hash area."
-msgstr ""
+msgstr "数据区域重叠覆盖了哈希区域。"
 
 #: lib/setup.c:1785
-#, fuzzy
-#| msgid "Hash area overflow.\n"
 msgid "Hash area overlaps with FEC area."
-msgstr "哈希区域溢出。\n"
+msgstr "哈希区域重叠覆盖了 FEC 区域。"
 
 #: lib/setup.c:1792
 msgid "Data area overlaps with FEC area."
-msgstr ""
+msgstr "数据区域重叠覆盖了 FEC 区域。"
 
 #: lib/setup.c:1997
-#, fuzzy, c-format
-#| msgid "Unknown crypt device type %s requested.\n"
+#, c-format
 msgid "Unknown crypt device type %s requested."
-msgstr "请求了不支持的加密设备类型 %s。\n"
+msgstr "请求了未知的加密设备类型 %s。"
 
 #: lib/setup.c:2098
-#, fuzzy
-#| msgid "Cannot resize loop device.\n"
 msgid "Cannot resize loop device."
-msgstr "无法改变回环设备大小。\n"
+msgstr "无法改变回环设备大小。"
 
 #: lib/setup.c:2107
-#, fuzzy, c-format
-#| msgid "Device %s is too small. (LUKS requires at least %<PRIu64> bytes.)\n"
+#, c-format
 msgid "Device %s size is not aligned to requested sector size (%u bytes)."
-msgstr "设备 %s  过小。（LUKS 需要至少 %<PRIu64> 字节。）\n"
+msgstr "设备 %s 的大小没有和请求的扇区大小对齐（%u 字节）。"
 
 #: lib/setup.c:2161
 msgid "Do you really want to change UUID of device?"
 msgstr "你真的想改变设备的 UUID 吗？"
 
 #: lib/setup.c:2237
-#, fuzzy
-#| msgid "Backup file doesn't contain valid LUKS header.\n"
 msgid "Header backup file does not contain compatible LUKS header."
-msgstr "备份文件不包含有效 LUKS 标头。\n"
+msgstr "标头备份文件不包含兼容的 LUKS 标头。"
 
 #: lib/setup.c:2334
-#, fuzzy, c-format
-#| msgid "Volume %s is not active.\n"
+#, c-format
 msgid "Volume %s is not active."
-msgstr "卷 %s 未激活。\n"
+msgstr "卷 %s 未激活。"
 
 #: lib/setup.c:2345
-#, fuzzy, c-format
-#| msgid "Volume %s is already suspended.\n"
+#, c-format
 msgid "Volume %s is already suspended."
-msgstr "卷 %s 已暂停。\n"
+msgstr "卷 %s 已挂起。"
 
 #: lib/setup.c:2359
-#, fuzzy, c-format
-#| msgid "Suspend is not supported for device %s.\n"
+#, c-format
 msgid "Suspend is not supported for device %s."
-msgstr "设备 %s 不支持暂停。\n"
+msgstr "设备 %s 不支持挂起。"
 
 #: lib/setup.c:2361
-#, fuzzy, c-format
-#| msgid "Error during suspending device %s.\n"
+#, c-format
 msgid "Error during suspending device %s."
-msgstr "暂停设备 %s 时出错。\n"
+msgstr "挂起设备 %s 时出错。"
 
 #: lib/setup.c:2394 lib/setup.c:2461
-#, fuzzy, c-format
-#| msgid "Volume %s is not suspended.\n"
+#, c-format
 msgid "Volume %s is not suspended."
-msgstr "卷 %s 未暂停。\n"
+msgstr "卷 %s 未挂起。"
 
 #: lib/setup.c:2423
-#, fuzzy, c-format
-#| msgid "Resume is not supported for device %s.\n"
+#, c-format
 msgid "Resume is not supported for device %s."
-msgstr "设备 %s 不支持恢复。\n"
+msgstr "设备 %s 不支持恢复。"
 
 #: lib/setup.c:2425 lib/setup.c:2493
-#, fuzzy, c-format
-#| msgid "Error during resuming device %s.\n"
+#, c-format
 msgid "Error during resuming device %s."
-msgstr "恢复设备 %s 时出错。\n"
+msgstr "恢复设备 %s 时出错。"
 
 #: lib/setup.c:2561 lib/setup.c:2754
-#, fuzzy
-#| msgid "Cannot add key slot, all slots disabled and no volume key provided.\n"
 msgid "Cannot add key slot, all slots disabled and no volume key provided."
-msgstr "无法添加密钥槽，所有密钥槽已禁用且未提供卷密钥。\n"
+msgstr "无法添加密钥槽，所有密钥槽已禁用且未提供卷密钥。"
 
 #: lib/setup.c:2698
-#, fuzzy, c-format
-#| msgid "Key slot %d changed.\n"
+#, c-format
 msgid "Key slot %d changed."
-msgstr "密钥槽 %d 已改变。\n"
+msgstr "密钥槽 %d 已改变。"
 
 #: lib/setup.c:2701
-#, fuzzy, c-format
-#| msgid "Replaced with key slot %d.\n"
+#, c-format
 msgid "Replaced with key slot %d."
-msgstr "替换为密钥槽 %d。\n"
+msgstr "替换为密钥槽 %d。"
 
 #: lib/setup.c:2706
-#, fuzzy
-#| msgid "Failed to swap new key slot.\n"
 msgid "Failed to swap new key slot."
-msgstr "交换新密钥槽失败。\n"
+msgstr "交换新密钥槽失败。"
 
 #: lib/setup.c:2871 lib/setup.c:3145 lib/setup.c:3158 lib/setup.c:3166
 #: lib/setup.c:3179 lib/setup.c:3453 lib/setup.c:4370
-#, fuzzy
-#| msgid "Volume key does not match the volume.\n"
 msgid "Volume key does not match the volume."
-msgstr "卷密钥与卷不匹配。\n"
+msgstr "卷密钥与卷不匹配。"
 
 #: lib/setup.c:2892
-#, fuzzy, c-format
-#| msgid "Key slot %d is invalid.\n"
+#, c-format
 msgid "Key slot %d is invalid."
-msgstr "密钥槽 %d 无效。\n"
+msgstr "密钥槽 %d 无效。"
 
 #: lib/setup.c:2898
-#, fuzzy, c-format
-#| msgid "Key slot %d is not used.\n"
+#, c-format
 msgid "Key slot %d is not used."
-msgstr "密钥槽 %d 未使用。\n"
+msgstr "密钥槽 %d 未使用。"
 
 #: lib/setup.c:2968 lib/setup.c:3232
-#, fuzzy
-#| msgid "Device type is not properly initialised.\n"
 msgid "Device type is not properly initialised."
-msgstr "设备类型不正确初始化。\n"
+msgstr "设备类型未正确初始化。"
 
 #: lib/setup.c:3010
-#, fuzzy, c-format
-#| msgid "Cannot format device %s which is still in use.\n"
+#, c-format
 msgid "Cannot use device %s, name is invalid or still in use."
-msgstr "无法格式化正在使用的设备 %s。\n"
+msgstr "无法使用设备 %s，名称无效或它正被使用。"
 
 #: lib/setup.c:3013
-#, fuzzy, c-format
-#| msgid "Device %s already exists.\n"
+#, c-format
 msgid "Device %s already exists."
-msgstr "设备 %s 已存在。\n"
+msgstr "设备 %s 已存在。"
 
 #: lib/setup.c:3132
-#, fuzzy
-#| msgid "Incorrect volume key specified for plain device.\n"
 msgid "Incorrect volume key specified for plain device."
-msgstr "为普通设备指定的卷密钥有误。\n"
+msgstr "为普通设备指定的卷密钥有误。"
 
 #: lib/setup.c:3198
-#, fuzzy
-#| msgid "Incorrect root hash specified for verity device.\n"
 msgid "Incorrect root hash specified for verity device."
-msgstr "为真理设备指定的根 hash 不正确。\n"
+msgstr "为 verity 设备指定的根 hash 不正确。"
 
 #: lib/setup.c:3274 lib/setup.c:3289
-#, fuzzy, c-format
-#| msgid "Device %s is still in use.\n"
+#, c-format
 msgid "Device %s is still in use."
-msgstr "设备 %s 仍在使用。\n"
+msgstr "设备 %s 仍在使用。"
 
 #: lib/setup.c:3304
-#, fuzzy, c-format
-#| msgid "Invalid device %s.\n"
+#, c-format
 msgid "Invalid device %s."
-msgstr "设备 %s 无效。\n"
+msgstr "设备 %s 无效。"
 
 #: lib/setup.c:3389
-#, fuzzy
-#| msgid "Function not available in FIPS mode.\n"
 msgid "Function not available in FIPS mode."
-msgstr "功能在 FIPS 模式无效。\n"
+msgstr "功能在 FIPS 模式无效。"
 
 #: lib/setup.c:3403
-#, fuzzy
-#| msgid "Volume key buffer too small.\n"
 msgid "Volume key buffer too small."
-msgstr "卷密钥缓冲区太小。\n"
+msgstr "卷密钥缓冲区太小。"
 
 #: lib/setup.c:3411
-#, fuzzy
-#| msgid "Cannot retrieve volume key for plain device.\n"
 msgid "Cannot retrieve volume key for plain device."
-msgstr "无法获取普通设备的卷密钥。\n"
+msgstr "无法获取普通设备的卷密钥。"
 
 #: lib/setup.c:3422
-#, fuzzy, c-format
-#| msgid "This operation is not supported for %s crypt device.\n"
+#, c-format
 msgid "This operation is not supported for %s crypt device."
-msgstr "不支持在 %s 加密设备上执行此操作。\n"
+msgstr "不支持在 %s 加密设备上执行此操作。"
 
 #: lib/setup.c:3609
-#, fuzzy
-#| msgid "Dump operation is not supported for this device type.\n"
 msgid "Dump operation is not supported for this device type."
-msgstr "不支持在此类设备上执行导出操作。\n"
+msgstr "不支持在此类设备上执行导出操作。"
 
 #: lib/setup.c:4018
-#, fuzzy, c-format
-#| msgid "Cannot convert device %s which is still in use.\n"
+#, c-format
 msgid "Cannot convert device %s which is still in use."
-msgstr "无法转换正在使用的设备 %s。\n"
+msgstr "无法转换正在使用的设备 %s。"
 
 #: lib/setup.c:4301
-#, fuzzy, c-format
-#| msgid "Failed to swap new key slot.\n"
+#, c-format
 msgid "Failed to assign keyslot %u as the new volume key."
-msgstr "交换新密钥槽失败。\n"
+msgstr "将密钥槽 %u 指定为新卷密钥的操作失败。"
 
-# stat() 主要就是出来一个各种文件信息……
 #: lib/setup.c:4364
-#, fuzzy
-#| msgid "Failed to set pbkdf parameters.\n"
 msgid "Failed to initialise default LUKS2 keyslot parameters."
-msgstr "设置 pbkdf 参数失败。\n"
+msgstr "初始化默认 LUKS2 密钥槽参数失败。"
 
 #: lib/setup.c:4376
 #, fuzzy, c-format
@@ -541,144 +418,106 @@ msgid "Failed to assign keyslot %d to digest."
 msgstr "交换新密钥槽失败。\n"
 
 #: lib/setup.c:4460
-#, fuzzy
-#| msgid "Failed to open key file.\n"
 msgid "Failed to load key in kernel keyring."
-msgstr "打开 (open) 密钥文件失败。\n"
+msgstr "在内核密钥环中加载密钥失败。"
 
 #: lib/setup.c:4515
-#, fuzzy
-#| msgid "This operation is not supported for this device type.\n"
 msgid "Kernel keyring is not supported by the kernel."
-msgstr "不支持在这类设备上执行此操作。\n"
+msgstr "该内核不支持内核密钥环。"
 
 #: lib/setup.c:4525
-#, fuzzy, c-format
-#| msgid "Error reading passphrase from terminal.\n"
+#, c-format
 msgid "Failed to read passphrase from keyring (error %d)."
-msgstr "从终端读取密码时出错。\n"
+msgstr "从密钥环读取口令失败（错误 %d）。"
 
 #: lib/utils.c:81
-#, fuzzy
-#| msgid "Cannot get process priority.\n"
 msgid "Cannot get process priority."
-msgstr "无法获取进程优先级。\n"
+msgstr "无法获取进程优先级。"
 
 #: lib/utils.c:95
-#, fuzzy
-#| msgid "Cannot unlock memory.\n"
 msgid "Cannot unlock memory."
-msgstr "无法解锁内存。\n"
+msgstr "无法解锁内存。"
 
 #: lib/utils.c:169 lib/tcrypt/tcrypt.c:475
-#, fuzzy
-#| msgid "Failed to open key file.\n"
 msgid "Failed to open key file."
-msgstr "打开 (open) 密钥文件失败。\n"
+msgstr "打开 (open) 密钥文件失败。"
 
 #: lib/utils.c:174
-#, fuzzy
-#| msgid "Cannot read keyfile from a terminal.\n"
 msgid "Cannot read keyfile from a terminal."
-msgstr "无法从终端读取密钥文件 %s。\n"
+msgstr "无法从终端读取密钥文件。"
 
 # stat() 主要就是出来一个各种文件信息……
 #: lib/utils.c:191
-#, fuzzy
-#| msgid "Failed to stat key file.\n"
 msgid "Failed to stat key file."
-msgstr "获取 (stat) 密钥文件统计数据失败。\n"
+msgstr "获取 (stat) 密钥文件信息失败。"
 
 #: lib/utils.c:199 lib/utils.c:220
-#, fuzzy
-#| msgid "Cannot seek to requested keyfile offset.\n"
 msgid "Cannot seek to requested keyfile offset."
-msgstr "无法寻找 (seek) 到请求的密钥文件偏移量。\n"
+msgstr "无法寻找 (seek) 到请求的密钥文件偏移量。"
 
 #: lib/utils.c:214 lib/utils.c:229 src/utils_password.c:207
 #: src/utils_password.c:220
-#, fuzzy
-#| msgid "Out of memory while reading passphrase.\n"
 msgid "Out of memory while reading passphrase."
-msgstr "读取密码时内存耗尽。\n"
+msgstr "读取密码时内存耗尽。"
 
 #: lib/utils.c:249
-#, fuzzy
-#| msgid "Error reading passphrase.\n"
 msgid "Error reading passphrase."
-msgstr "读取密码出错。\n"
+msgstr "读取口令出错。"
 
 #: lib/utils.c:273
-#, fuzzy
-#| msgid "Maximum keyfile size exceeded.\n"
 msgid "Maximum keyfile size exceeded."
-msgstr "超出最大密钥文件大小。\n"
+msgstr "超出最大密钥文件大小。"
 
 #: lib/utils.c:278
-#, fuzzy
-#| msgid "Cannot read requested amount of data.\n"
 msgid "Cannot read requested amount of data."
-msgstr "无法读取请求量的数据。\n"
+msgstr "无法读取请求量的数据。"
 
 #: lib/utils_device.c:184 lib/luks1/keyencryption.c:101
-#, fuzzy, c-format
-#| msgid "Device %s doesn't exist or access denied.\n"
+#, c-format
 msgid "Device %s doesn't exist or access denied."
-msgstr "设备 %s 不存在或访问被拒绝。\n"
+msgstr "设备 %s 不存在或访问被拒绝。"
 
 #: lib/utils_device.c:603
-#, fuzzy, c-format
-#| msgid "Cannot write to device %s, permission denied.\n"
+#, c-format
 msgid "Cannot use device %s, permission denied."
-msgstr "无法写入到设备 %s，访问被拒绝。\n"
+msgstr "无法使用设备 %s，权限被拒绝。"
 
 #: lib/utils_device.c:606
-#, fuzzy, c-format
-#| msgid "Cannot get info about device %s.\n"
+#, c-format
 msgid "Cannot get info about device %s."
-msgstr "无法获取有关设备 %s 的信息。\n"
+msgstr "无法获取有关设备 %s 的信息。"
 
 #: lib/utils_device.c:628
-#, fuzzy
-#| msgid "Cannot use a loopback device, running as non-root user.\n"
 msgid "Cannot use a loopback device, running as non-root user."
-msgstr "无法使用回环设备，正作为非 root 用户运行。\n"
+msgstr "无法使用回环设备，正作为非 root 用户运行。"
 
 #: lib/utils_device.c:638
-#, fuzzy
-#| msgid "Attaching loopback device failed (loop device with autoclear flag is required).\n"
 msgid "Attaching loopback device failed (loop device with autoclear flag is required)."
-msgstr "连接回环设备失败（需要有 autoclear 旗标的回环设备）。\n"
+msgstr "连接回环设备失败（需要有 autoclear 旗标的回环设备）。"
 
 #: lib/utils_device.c:684
-#, fuzzy, c-format
-#| msgid "Requested offset is beyond real size of device %s.\n"
+#, c-format
 msgid "Requested offset is beyond real size of device %s."
-msgstr "请求的偏移量超出设备 %s 的真实大小。\n"
+msgstr "请求的偏移量超出设备 %s 的真实大小。"
 
 #: lib/utils_device.c:692
-#, fuzzy, c-format
-#| msgid "Device %s has zero size.\n"
+#, c-format
 msgid "Device %s has zero size."
-msgstr "设备 %s 大小为零。\n"
+msgstr "设备 %s 大小为零。"
 
 #: lib/utils_device.c:703
-#, fuzzy, c-format
-#| msgid "Device %s is too small.\n"
+#, c-format
 msgid "Device %s is too small."
-msgstr "设备 %s 太小。\n"
+msgstr "设备 %s 太小。"
 
 #: lib/utils_pbkdf.c:74
-#, fuzzy, c-format
-#| msgid "Unknown PBKDF type %s.\n"
+#, c-format
 msgid "Unknown PBKDF type %s."
-msgstr "未知的 PBKDF 类型 %s。\n"
+msgstr "未知的 PBKDF 类型 %s。"
 
 #: lib/utils_pbkdf.c:85
-#, fuzzy
-#| msgid "Requested LUKS hash %s is not supported.\n"
 msgid "Requested PBKDF type is not supported for LUKS1."
-msgstr "不支持请求的 LUKS 哈希 %s。\n"
+msgstr "请求的 PBKDF 类型不被 LUKS1 支持。"
 
 #: lib/utils_pbkdf.c:91
 msgid "PBKDF max memory or parallel threads must not be set with pbkdf2."
@@ -718,49 +557,41 @@ msgid "PBKDF benchmark disabled but iterations not set."
 msgstr ""
 
 #: lib/utils_benchmark.c:326
-#, fuzzy, c-format
-#| msgid "Not compatible PBKDF2 options (using hash algorithm %s).\n"
+#, c-format
 msgid "Not compatible PBKDF2 options (using hash algorithm %s)."
-msgstr "PBKDF2 选项不兼容（正在使用哈希算法 %s）。\n"
+msgstr "PBKDF2 选项不兼容（正在使用哈希算法 %s）。"
 
 #: lib/utils_benchmark.c:340
-#, fuzzy
-#| msgid "Not compatible PBKDF2 options (using hash algorithm %s).\n"
 msgid "Not compatible PBKDF options."
-msgstr "PBKDF2 选项不兼容（正在使用哈希算法 %s）。\n"
+msgstr "PBKDF2 选项不兼容。"
 
 #: lib/utils_device_locking.c:80
 #, c-format
 msgid "Locking aborted. The locking path %s/%s is unusable (not a directory or missing)."
-msgstr ""
+msgstr "锁定中止。锁定路径 %s/%s 不可用（不是一个目录或缺失）。"
 
 #: lib/utils_device_locking.c:87
 #, c-format
 msgid "WARNING: Locking directory %s/%s is missing!\n"
-msgstr ""
+msgstr "警告：锁定目录 %s/%s 缺失！\n"
 
 #: lib/utils_device_locking.c:97
 #, c-format
 msgid "Locking aborted. The locking path %s/%s is unusable (%s is not a directory)."
-msgstr ""
+msgstr "锁定中止。锁定路径 %s/%s 不可用（%s 不是目录）。"
 
 #: lib/luks1/keyencryption.c:39
-#, fuzzy, c-format
-#| msgid ""
-#| "Failed to setup dm-crypt key mapping for device %s.\n"
-#| "Check that kernel supports %s cipher (check syslog for more info).\n"
+#, c-format
 msgid ""
 "Failed to setup dm-crypt key mapping for device %s.\n"
 "Check that kernel supports %s cipher (check syslog for more info)."
 msgstr ""
 "为设备 %s 配置 dm-crypt 键映射失败。\n"
-"请确认内核支持 %s 加密（查看系统日志 (syslog) 以获取更多信息）。\n"
+"请确认内核支持 %s 加密（查看系统日志 (syslog) 以获取更多信息）。"
 
 #: lib/luks1/keyencryption.c:44
-#, fuzzy
-#| msgid "Key size in XTS mode must be 256 or 512 bits.\n"
 msgid "Key size in XTS mode must be 256 or 512 bits."
-msgstr "XTS 模式的密钥大小必须是 256 或 512 位。\n"
+msgstr "XTS 模式的密钥大小必须是 256 或 512 位。"
 
 #: lib/luks1/keyencryption.c:46
 msgid "Cipher specification should be in [cipher]-[mode]-[iv] format."
@@ -769,67 +600,53 @@ msgstr ""
 #: lib/luks1/keyencryption.c:107 lib/luks1/keymanage.c:362
 #: lib/luks1/keymanage.c:658 lib/luks1/keymanage.c:1094
 #: lib/luks2/luks2_json_metadata.c:1149 lib/luks2/luks2_keyslot.c:446
-#, fuzzy, c-format
-#| msgid "Cannot write to device %s, permission denied.\n"
+#, c-format
 msgid "Cannot write to device %s, permission denied."
-msgstr "无法写入到设备 %s，访问被拒绝。\n"
+msgstr "无法写入到设备 %s，访问被拒绝。"
 
 #: lib/luks1/keyencryption.c:122
-#, fuzzy
-#| msgid "Failed to open temporary keystore device.\n"
 msgid "Failed to open temporary keystore device."
-msgstr "打开临时密钥存储设备失败。\n"
+msgstr "打开临时密钥存储设备失败。"
 
 #: lib/luks1/keyencryption.c:129
-#, fuzzy
-#| msgid "Failed to access temporary keystore device.\n"
 msgid "Failed to access temporary keystore device."
-msgstr "无法访问临时密钥存储设备。\n"
+msgstr "访问临时密钥存储设备失败。"
 
 #: lib/luks1/keyencryption.c:199 lib/luks2/luks2_keyslot_luks2.c:89
-#, fuzzy
-#| msgid "IO error while encrypting keyslot.\n"
 msgid "IO error while encrypting keyslot."
-msgstr "加密密钥槽时发生输入输出错误。\n"
+msgstr "加密密钥槽时发生输入输出错误。"
 
 #: lib/luks1/keyencryption.c:261 lib/luks2/luks2_keyslot_luks2.c:150
-#, fuzzy
-#| msgid "IO error while decrypting keyslot.\n"
 msgid "IO error while decrypting keyslot."
-msgstr "解密密钥槽时发生输入输出错误。\n"
+msgstr "解密密钥槽时发生输入输出错误。"
 
 #: lib/luks1/keymanage.c:128
-#, fuzzy, c-format
-#| msgid "Device %s is too small. (LUKS1 requires at least %<PRIu64> bytes.)\n"
+#, c-format
 msgid "Device %s is too small. (LUKS1 requires at least %<PRIu64> bytes.)"
-msgstr "设备 %s 过小。（LUKS1 需要至少 %<PRIu64> 字节。）\n"
+msgstr "设备 %s 过小。（LUKS1 需要至少 %<PRIu64> 字节。）"
 
 #: lib/luks1/keymanage.c:149 lib/luks1/keymanage.c:157
 #: lib/luks1/keymanage.c:169 lib/luks1/keymanage.c:180
 #: lib/luks1/keymanage.c:192
-#, fuzzy, c-format
-#| msgid "LUKS keyslot %u is invalid.\n"
+#, c-format
 msgid "LUKS keyslot %u is invalid."
-msgstr "LUKS 密钥槽 %u 无效。\n"
+msgstr "LUKS 密钥槽 %u 无效。"
 
 #: lib/luks1/keymanage.c:245 lib/luks1/keymanage.c:494
 #: lib/luks2/luks2_json_metadata.c:983 src/cryptsetup_reencrypt.c:1396
-#, fuzzy, c-format
-#| msgid "Device %s is not a valid LUKS device.\n"
+#, c-format
 msgid "Device %s is not a valid LUKS device."
-msgstr "%s 不是有效的 LUKS 设备。\n"
+msgstr "%s 不是有效的 LUKS 设备。"
 
 #: lib/luks1/keymanage.c:264 lib/luks2/luks2_json_metadata.c:1002
-#, fuzzy, c-format
-#| msgid "Requested header backup file %s already exists.\n"
+#, c-format
 msgid "Requested header backup file %s already exists."
-msgstr "请求的标头备份文件 %s 已存在。\n"
+msgstr "请求的标头备份文件 %s 已存在。"
 
 #: lib/luks1/keymanage.c:266 lib/luks2/luks2_json_metadata.c:1004
-#, fuzzy, c-format
-#| msgid "Cannot create header backup file %s.\n"
+#, c-format
 msgid "Cannot create header backup file %s."
-msgstr "无法创建标头备份文件 %s。\n"
+msgstr "无法创建标头备份文件 %s。"
 
 #: lib/luks1/keymanage.c:271 lib/luks2/luks2_json_metadata.c:1009
 #, fuzzy, c-format

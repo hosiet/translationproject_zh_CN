@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.29-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2017-12-21 12:18+0000\n"
-"PO-Revision-Date: 2018-04-29 18:57+0800\n"
+"PO-Revision-Date: 2018-05-06 22:34+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.0.7\n"
 
 #: lib/argmatch.c:134
 #, c-format
@@ -330,8 +330,8 @@ msgstr "”"
 msgid "%s: end of file"
 msgstr "%s：文件结束"
 
-#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:795 src/od.c:952
-#: src/tac.c:251 src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:787
+#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:795 src/od.c:952 src/tac.c:251
+#: src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:787
 #, c-format
 msgid "%s: read error"
 msgstr "%s：读取出错"
@@ -905,8 +905,8 @@ msgstr "无效的换行字符数"
 #: src/hostname.c:118 src/id.c:190 src/install.c:985 src/join.c:970
 #: src/link.c:91 src/ln.c:551 src/logname.c:77 src/mknod.c:182 src/mv.c:448
 #: src/nproc.c:115 src/od.c:1865 src/ptx.c:2082 src/seq.c:619 src/shuf.c:491
-#: src/sort.c:4595 src/split.c:1553 src/tr.c:1762 src/tsort.c:566
-#: src/tty.c:113 src/uname.c:252 src/uniq.c:533 src/uniq.c:550 src/unlink.c:87
+#: src/sort.c:4595 src/split.c:1553 src/tr.c:1762 src/tsort.c:566 src/tty.c:113
+#: src/uname.c:252 src/uniq.c:533 src/uniq.c:550 src/unlink.c:87
 #: src/uptime.c:258 src/users.c:152 src/wc.c:721 src/who.c:830 src/whoami.c:85
 #, c-format
 msgid "extra operand %s"
@@ -917,17 +917,16 @@ msgid "closing standard input"
 msgstr "关闭标准输入"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37
-#: src/comm.c:39 src/cp.c:58 src/csplit.c:45 src/cut.c:46 src/date.c:40
-#: src/dd.c:46 src/df.c:45 src/dirname.c:32 src/du.c:54 src/env.c:34
-#: src/expand.c:49 src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42
-#: src/install.c:51 src/ln.c:43 src/ls.c:130 src/mkdir.c:39 src/mkfifo.c:36
-#: src/mknod.c:37 src/mv.c:42 src/nice.c:40 src/nl.c:42 src/paste.c:53
-#: src/pathchk.c:32 src/pinky.c:38 src/printenv.c:44 src/printf.c:68
-#: src/rm.c:41 src/rmdir.c:37 src/stty.c:68 src/sum.c:39 src/tac.c:58
-#: src/tail.c:73 src/tee.c:38 src/touch.c:45 src/tty.c:44 src/uname.c:61
-#: src/unexpand.c:50 src/uniq.c:43 src/uptime.c:47 src/users.c:37 src/wc.c:51
-#: src/who.c:51 src/yes.c:33
+#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37 src/comm.c:39
+#: src/cp.c:58 src/csplit.c:45 src/cut.c:46 src/date.c:40 src/dd.c:46
+#: src/df.c:45 src/dirname.c:32 src/du.c:54 src/env.c:34 src/expand.c:49
+#: src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42 src/install.c:51
+#: src/ln.c:43 src/ls.c:130 src/mkdir.c:39 src/mkfifo.c:36 src/mknod.c:37
+#: src/mv.c:42 src/nice.c:40 src/nl.c:42 src/paste.c:53 src/pathchk.c:32
+#: src/pinky.c:38 src/printenv.c:44 src/printf.c:68 src/rm.c:41 src/rmdir.c:37
+#: src/stty.c:68 src/sum.c:39 src/tac.c:58 src/tail.c:73 src/tee.c:38
+#: src/touch.c:45 src/tty.c:44 src/uname.c:61 src/unexpand.c:50 src/uniq.c:43
+#: src/uptime.c:47 src/users.c:37 src/wc.c:51 src/who.c:51 src/yes.c:33
 msgid "David MacKenzie"
 msgstr "David MacKenzie"
 
@@ -1423,41 +1422,30 @@ msgstr ""
 "　或：%s [选项]... --reference=参考文件 文件...\n"
 
 #: src/chmod.c:380
-#, fuzzy
-#| msgid ""
-#| "Change the security context of each FILE to CONTEXT.\n"
-#| "With --reference, change the security context of each FILE to that of RFILE.\n"
-#| "\n"
-#| "  -h, --no-dereference   affect symbolic links instead of any referenced file\n"
 msgid ""
 "Change the mode of each FILE to MODE.\n"
 "With --reference, change the mode of each FILE to that of RFILE.\n"
 "\n"
 msgstr ""
-"将每个文件的安全环境变更至指定环境。\n"
-"使用 --reference 选项时，把指定文件的安全环境设置为与参考文件相同。\n"
+"将每个文件的权限模式变更至指定模式。\n"
+"使用 --reference 选项时，把指定文件的模式设置为与参考文件相同。\n"
 "\n"
-"  -h, --no-dereference\t\t影响符号连接而非引用的文件。\n"
 
 #: src/chmod.c:394
 msgid "      --reference=RFILE  use RFILE's mode instead of MODE values\n"
-msgstr ""
+msgstr "      --reference=参考文件  使用参考文件的模式而非给定模式的值\n"
 
 #: src/chmod.c:397
 msgid "  -R, --recursive        change files and directories recursively\n"
-msgstr ""
+msgstr "  -R, --recursive        递归修改文件和目录\n"
 
 #: src/chmod.c:402
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Each MODE is of the form `[ugoa]*([-+=]([rwxXst]*|[ugo]))+'.\n"
 msgid ""
 "\n"
 "Each MODE is of the form '[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+'.\n"
 msgstr ""
 "\n"
-"每种 MODE 都应属于这类形式\"[ugoa]*([-+=]([rwxXst]*|[ugo]))+\"。\n"
+"每个模式字符串都应该匹配如下格式：\"[ugoa]*([-+=]([rwxXst]*|[ugo]))+|[-+=][0-7]+\"。\n"
 
 #: src/chmod.c:516
 #, c-format
@@ -1485,26 +1473,24 @@ msgid "no change to ownership of %s\n"
 msgstr "%s 的归属关系未更改\n"
 
 #: src/chown-core.c:164
-#, fuzzy, c-format
-#| msgid "failed to change ownership of %s to %s\n"
+#, c-format
 msgid "failed to change ownership of %s from %s to %s\n"
-msgstr "无法更改%s 的所有者为%s\n"
+msgstr "无法将 %s 的所有者从 %s 更改为 %s\n"
 
 #: src/chown-core.c:165
-#, fuzzy, c-format
-#| msgid "failed to change group of %s to %s\n"
+#, c-format
 msgid "failed to change group of %s from %s to %s\n"
-msgstr "无法更改%s 的所属组为%s\n"
+msgstr "无法将 %s 的所属组从 %s 更改为 %s\n"
 
 #: src/chown-core.c:166 src/chown-core.c:172
 #, c-format
 msgid "failed to change ownership of %s\n"
-msgstr "更改%s 的所有者失败\n"
+msgstr "更改 %s 的所有者失败\n"
 
 #: src/chown-core.c:170
 #, c-format
 msgid "failed to change ownership of %s to %s\n"
-msgstr "无法更改%s 的所有者为%s\n"
+msgstr "无法更改 %s 的所有者为 %s\n"
 
 #: src/chown-core.c:171
 #, c-format
@@ -1810,8 +1796,8 @@ msgstr "  --output-delimiter=STR\t依照STR 分列\n"
 msgid "  --total           output a summary\n"
 msgstr ""
 
-#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945
-#: src/paste.c:452 src/tail.c:308
+#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945 src/paste.c:452
+#: src/tail.c:308
 msgid "  -z, --zero-terminated    line delimiter is NUL, not newline\n"
 msgstr "  -z, --zero-terminated    以 NUL 字符而非换行符作为行尾分隔符\n"
 
@@ -2617,10 +2603,8 @@ msgid "missing %% conversion specification in suffix"
 msgstr "下标中丢失了%% 转换规格字符"
 
 #: src/csplit.c:1375 src/dd.c:1499 src/nproc.c:105 src/tail.c:2140
-#, fuzzy
-#| msgid "invalid number %s"
 msgid "invalid number"
-msgstr "无效的数字%s"
+msgstr "无效的数字"
 
 #: src/csplit.c:1482
 #, c-format
@@ -7990,7 +7974,7 @@ msgstr "登录名： "
 #: src/pinky.c:316
 #, c-format
 msgid "In real life: "
-msgstr "实名： "
+msgstr "真名： "
 
 #. TRANSLATORS: Real name is unknown; no hard limit.
 #: src/pinky.c:320
@@ -8019,7 +8003,7 @@ msgstr "计划：\n"
 
 #: src/pinky.c:404
 msgid "Login"
-msgstr "登录"
+msgstr "登录名"
 
 #: src/pinky.c:406
 msgid "Name"
@@ -8031,11 +8015,11 @@ msgstr " TTY"
 
 #: src/pinky.c:409
 msgid "Idle"
-msgstr "空闲"
+msgstr "空闲时间"
 
 #: src/pinky.c:410
 msgid "When"
-msgstr "从"
+msgstr "起始时间"
 
 #: src/pinky.c:413
 msgid "Where"
@@ -8076,11 +8060,7 @@ msgstr ""
 "  -q\t在短格式中省略用户全名、远程主机以及空闲时间\n"
 
 #: src/pinky.c:507
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "A lightweight `finger' program;  print user information.\n"
-#| "The utmp file will be %s.\n"
+#, c-format
 msgid ""
 "\n"
 "A lightweight 'finger' program;  print user information.\n"
@@ -8088,12 +8068,12 @@ msgid ""
 msgstr ""
 "\n"
 "一个轻量级的\"finger\"程序，用于显示用户信息。\n"
-"用到的utmp 文件为%s。\n"
+"用到的 utmp 文件为 %s。\n"
 
 #: src/pinky.c:591
 #, c-format
 msgid "no username specified; at least one must be specified when using -l"
-msgstr "没有指定用户名，当使用-l 选项时至少需要指定一个"
+msgstr "没有指定用户名，当使用 -l 选项时至少需要指定一个"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/pr.c:331
@@ -8106,10 +8086,8 @@ msgid "Roland Huebner"
 msgstr "Roland Huebner"
 
 #: src/pr.c:777
-#, fuzzy
-#| msgid "line number overflow"
 msgid "integer overflow"
-msgstr "行号溢出"
+msgstr "整数溢出"
 
 #: src/pr.c:916
 #, fuzzy
@@ -10742,14 +10720,8 @@ msgid "Usage: %s OPTION... COMMAND\n"
 msgstr "用法：%s [选项]... 命令\n"
 
 #: src/stdbuf.c:92
-#, fuzzy
-#| msgid ""
-#| "Run COMMAND, with modified buffering operations for its standard streams.\n"
-#| "\n"
 msgid "Run COMMAND, with modified buffering operations for its standard streams.\n"
-msgstr ""
-"运行标准流缓冲区操作已改变的 COMMAND。\n"
-"\n"
+msgstr "运行给定的命令，同时改变该命令对应标准输入输出流的缓冲操作配置。\n"
 
 #: src/stdbuf.c:98
 msgid ""
@@ -10762,31 +10734,22 @@ msgstr ""
 "  -e, --error=MODE   调整标准错误流缓冲区\n"
 
 #: src/stdbuf.c:105
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "If MODE is `L' the corresponding stream will be line buffered.\n"
-#| "This option is invalid with standard input.\n"
 msgid ""
 "\n"
 "If MODE is 'L' the corresponding stream will be line buffered.\n"
 "This option is invalid with standard input.\n"
 msgstr ""
 "\n"
-"若 MODE 是 L，则相应的流将是行缓冲模式。\n"
+"若 MODE 是 \"L\"，则相应的流将是行缓冲模式。\n"
 "标准输入流下此选项无效。\n"
 
 #: src/stdbuf.c:108
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "If MODE is `0' the corresponding stream will be unbuffered.\n"
 msgid ""
 "\n"
 "If MODE is '0' the corresponding stream will be unbuffered.\n"
 msgstr ""
 "\n"
-"若 MODE 是 0，则相应的流将不缓冲。\n"
+"若 MODE 是 \"0\"，则相应的流将不缓冲。\n"
 
 #: src/stdbuf.c:111
 msgid ""
@@ -10803,13 +10766,6 @@ msgstr ""
 "\n"
 
 #: src/stdbuf.c:117
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "NOTE: If COMMAND adjusts the buffering of its standard streams (`tee' does\n"
-#| "for e.g.) then that will override corresponding settings changed by `stdbuf'.\n"
-#| "Also some filters (like `dd' and `cat' etc.) don't use streams for I/O,\n"
-#| "and are thus unaffected by `stdbuf' settings.\n"
 msgid ""
 "\n"
 "NOTE: If COMMAND adjusts the buffering of its standard streams ('tee' does\n"
@@ -10818,20 +10774,20 @@ msgid ""
 "and are thus unaffected by 'stdbuf' settings.\n"
 msgstr ""
 "\n"
-"注意：若 COMMAND 调整其自身的标准流缓冲区(如 tee 就是)，\n"
-"则此操作会覆盖由stdbuf 所做出的相应设置。\n"
-"还有某些滤件程序(如dd 和cat 之类)，它们不使用输入输出流，\n"
-"因此不受stdbuf 设置的影响。\n"
+"注意：若指定的命令调整了其自身的标准流缓冲区（例如 tee 命令），\n"
+"则此操作会覆盖由 \"stdbuf\" 工具所做出的相应设置。\n"
+"还有某些过滤器程序（如 \"dd\" 和 \"cat\" 之类）不使用输入输出流，\n"
+"因此不受 \"stdbuf\" 设置的影响。\n"
 
 #: src/stdbuf.c:242
 #, c-format
 msgid "failed to find %s"
-msgstr "查找%s 失败"
+msgstr "查找 %s 失败"
 
 #: src/stdbuf.c:266 src/stdbuf.c:299
 #, c-format
 msgid "failed to update the environment with %s"
-msgstr "更新%s 的环境失败"
+msgstr "更新 %s 的环境失败"
 
 #: src/stdbuf.c:345
 #, c-format
@@ -10839,10 +10795,9 @@ msgid "line buffering stdin is meaningless"
 msgstr "对标准输入进行行缓冲无意义"
 
 #: src/stdbuf.c:376
-#, fuzzy, c-format
-#| msgid "you must specify a relative %s with %s"
+#, c-format
 msgid "you must specify a buffering mode option"
-msgstr "您必须为%2$s 中指定一个相关的%1$s"
+msgstr "您必须指定一个缓冲模式选项"
 
 #: src/stty.c:531
 #, c-format
@@ -11549,10 +11504,9 @@ msgid "invalid argument %s"
 msgstr "无效的参数 %s"
 
 #: src/stty.c:1192
-#, fuzzy, c-format
-#| msgid "%s: error truncating"
+#, c-format
 msgid "%s: error setting %s"
-msgstr "%s：截断文件时出错"
+msgstr "%s：设置 %s 时出错"
 
 #: src/stty.c:1234
 #, c-format
@@ -12190,7 +12144,7 @@ msgstr "警告：无限期跟随标准输入是无用的"
 #: src/tail.c:2488
 #, c-format
 msgid "inotify cannot be used, reverting to polling"
-msgstr "无法使用 inotify 机制，回归为 polling 机制"
+msgstr "无法使用 inotify 机制，回退为轮询（polling）机制"
 
 #: src/tee.c:88
 msgid ""
@@ -12209,6 +12163,8 @@ msgid ""
 "  -p                        diagnose errors writing to non pipes\n"
 "      --output-error[=MODE]   set behavior on write error.  See MODE below\n"
 msgstr ""
+"  -p                        对写入非管道的行为排查错误\n"
+"      --output-error[=模式]   设置写入出错时的行为。见下面“模式”部分\n"
 
 #: src/tee.c:100
 msgid ""
@@ -12223,6 +12179,15 @@ msgid ""
 "exit immediately on error writing to a pipe, and diagnose errors\n"
 "writing to non pipe outputs.\n"
 msgstr ""
+"\n"
+"模式确定向输出写入出错时的行为：\n"
+"  'warn'         对向任何文件输出出错的情况进行诊断\n"
+"  'warn-nopipe'  对向除了管道以外的任何文件输出出错的情况进行诊断\n"
+"  'exit'         一旦输出出错，则退出程序\n"
+"  'exit-nopipe'  一旦输出出错且非管道，则退出程序\n"
+"-p 选项的默认模式是“warn-nopipe”。\n"
+"当 --output-error 没有给出时，默认的操作是在向管道写入出错时立刻退出，\n"
+"且在向非管道写入出错时对问题进行诊断。\n"
 
 #: src/test.c:127
 #, c-format
@@ -13082,30 +13047,28 @@ msgid "multiple relative modifiers specified"
 msgstr "指定了多个相关修饰符"
 
 #: src/truncate.c:286
-#, fuzzy
-#| msgid "invalid number %s"
 msgid "Invalid number"
-msgstr "无效的数字%s"
+msgstr "无效的数字"
 
 #: src/truncate.c:308
 #, c-format
 msgid "you must specify either %s or %s"
-msgstr "您必须在%s 或%s 中指定一个"
+msgstr "您必须在 %s 或 %s 中指定一个"
 
 #: src/truncate.c:315
 #, c-format
 msgid "you must specify a relative %s with %s"
-msgstr "您必须为%2$s 中指定一个相关的%1$s"
+msgstr "您必须为 %2$s 中指定一个相关的 %1$s"
 
 #: src/truncate.c:322
 #, c-format
 msgid "%s was specified but %s was not"
-msgstr "已指定%s 但未指定%s"
+msgstr "已指定 %s 但未指定 %s"
 
 #: src/truncate.c:379
 #, c-format
 msgid "cannot open %s for writing"
-msgstr "无法打开%s 读取数据"
+msgstr "无法打开 %s 以写入数据"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/tsort.c:41
@@ -13167,22 +13130,15 @@ msgid ""
 "  -n, --nodename           print the network node hostname\n"
 "  -r, --kernel-release     print the kernel release\n"
 msgstr ""
-"输出一组系统信息。如果不跟随选项，则视为只附加-s 选项。\n"
+"输出一组系统信息。如果不跟随选项，则视为只附加 -s 选项。\n"
 "\n"
-"  -a, --all\t\t\t以如下次序输出所有信息。其中若-p 和\n"
-"\t\t\t\t-i 的探测结果不可知则被省略：\n"
-"  -s, --kernel-name\t\t输出内核名称\n"
-"  -n, --nodename\t\t输出网络节点上的主机名\n"
-"  -r, --kernel-release\t\t输出内核发行号\n"
+"  -a, --all                以如下次序输出所有信息。其中若 -p 和\n"
+"                             -i 的探测结果不可知则被省略：\n"
+"  -s, --kernel-name        输出内核名称\n"
+"  -n, --nodename           输出网络节点上的主机名\n"
+"  -r, --kernel-release     输出内核发行号\n"
 
 #: src/uname.c:134
-#, fuzzy
-#| msgid ""
-#| "  -v, --kernel-version     print the kernel version\n"
-#| "  -m, --machine            print the machine hardware name\n"
-#| "  -p, --processor          print the processor type or \"unknown\"\n"
-#| "  -i, --hardware-platform  print the hardware platform or \"unknown\"\n"
-#| "  -o, --operating-system   print the operating system\n"
 msgid ""
 "  -v, --kernel-version     print the kernel version\n"
 "  -m, --machine            print the machine hardware name\n"
@@ -13190,11 +13146,11 @@ msgid ""
 "  -i, --hardware-platform  print the hardware platform (non-portable)\n"
 "  -o, --operating-system   print the operating system\n"
 msgstr ""
-"  -v, --kernel-version\t\t输出内核版本\n"
-"  -m, --machine\t\t输出主机的硬件架构名称\n"
-"  -p, --processor\t\t输出处理器类型或\"unknown\"\n"
-"  -i, --hardware-platform\t输出硬件平台或\"unknown\"\n"
-"  -o, --operating-system\t输出操作系统名称\n"
+"  -v, --kernel-version     输出内核版本\n"
+"  -m, --machine            输出主机的硬件架构名称\n"
+"  -p, --processor          输出处理器类型（不可移植）\n"
+"  -i, --hardware-platform  输出硬件平台或（不可移植）\n"
+"  -o, --operating-system   输出操作系统名称\n"
 
 #: src/uname.c:144
 msgid ""

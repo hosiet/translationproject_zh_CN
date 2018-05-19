@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the binutils package.
 # Meng Jie <zuxyhere@eastday.com>, 2005.
 # Mingye Wang <arthur200126@gmail.com>, 2015.
-# Boyuan Yang <073plan@gmail.com>, 2017.
+# Boyuan Yang <073plan@gmail.com>, 2017, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: opcodes 2.28.90\n"
+"Project-Id-Version: opcodes 2.30.0\n"
 "Report-Msgid-Bugs-To: bug-binutils@gnu.org\n"
 "POT-Creation-Date: 2018-01-13 13:44+0000\n"
-"PO-Revision-Date: 2017-11-25 20:10+0800\n"
+"PO-Revision-Date: 2018-05-15 21:17+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.0.7\n"
 
 #. Invalid option.
 #: aarch64-dis.c:81 arc-dis.c:781 arm-dis.c:6155
@@ -116,11 +116,11 @@ msgstr "预期的堆栈指针寄存器"
 
 #: aarch64-opc.c:1496
 msgid "z0-z15 expected"
-msgstr ""
+msgstr "预期为 z0-z15"
 
 #: aarch64-opc.c:1497
 msgid "z0-z7 expected"
-msgstr ""
+msgstr "预期为 z0-z7"
 
 #: aarch64-opc.c:1523
 #, fuzzy
@@ -130,7 +130,7 @@ msgstr "%q+D的寄存器名无效"
 
 #: aarch64-opc.c:1537
 msgid "p0-p7 expected"
-msgstr ""
+msgstr "预期为 p0-p7"
 
 #: aarch64-opc.c:1563 aarch64-opc.c:1571
 msgid "unexpected address writeback"
@@ -170,7 +170,6 @@ msgid "immediate out of range"
 msgstr "立即数越界"
 
 #: aarch64-opc.c:1775 aarch64-opc.c:1817 aarch64-opc.c:1866 aarch64-opc.c:1900
-#, fuzzy
 msgid "invalid addressing mode"
 msgstr "无效寻址模式"
 
@@ -219,10 +218,8 @@ msgid "shift is not permitted"
 msgstr "指针不能用作 case 常量"
 
 #: aarch64-opc.c:2245
-#, fuzzy
-#| msgid "invalid mask field"
 msgid "invalid value for immediate"
-msgstr "不允许负立即数"
+msgstr "无效的立即数的值"
 
 #: aarch64-opc.c:2270
 msgid "shift amount must be 0 or 16"
@@ -245,22 +242,20 @@ msgid "immediate too big for element size"
 msgstr ""
 
 #: aarch64-opc.c:2355
-#, fuzzy
-#| msgid "invalid mask field"
 msgid "invalid arithmetic immediate"
-msgstr "不允许负立即数"
+msgstr "无效的算术立即数"
 
 #: aarch64-opc.c:2369
 msgid "floating-point value must be 0.5 or 1.0"
-msgstr ""
+msgstr "浮点值必须为 0.5 或 1.0"
 
 #: aarch64-opc.c:2379
 msgid "floating-point value must be 0.5 or 2.0"
-msgstr ""
+msgstr "浮点值必须为 0.5 或 2.0"
 
 #: aarch64-opc.c:2389
 msgid "floating-point value must be 0.0 or 1.0"
-msgstr ""
+msgstr "浮点值必须为 0.0 或 1.0"
 
 #: aarch64-opc.c:2420
 #, fuzzy
@@ -407,75 +402,53 @@ msgid "register out of range"
 msgstr "立即数越界"
 
 #: arc-opc.c:194
-#, fuzzy
-#| msgid "register number must be even"
 msgid "register must be R0"
-msgstr "寄存器数必须是偶数"
+msgstr "寄存器必须是 R0"
 
 #: arc-opc.c:212
-#, fuzzy
-#| msgid "register number must be even"
 msgid "register must be R1"
-msgstr "寄存器数必须是偶数"
+msgstr "寄存器必须是 R1"
 
 #: arc-opc.c:229
-#, fuzzy
-#| msgid "register number must be even"
 msgid "register must be R2"
-msgstr "寄存器数必须是偶数"
+msgstr "寄存器必须是 R2"
 
 #: arc-opc.c:246
-#, fuzzy
-#| msgid "register number must be even"
 msgid "register must be R3"
-msgstr "寄存器数必须是偶数"
+msgstr "寄存器必须是 R3"
 
 #: arc-opc.c:263
-#, fuzzy
-#| msgid "register number must be even"
 msgid "register must be SP"
-msgstr "寄存器数必须是偶数"
+msgstr "寄存器必须是 SP"
 
 #: arc-opc.c:280
-#, fuzzy
-#| msgid "register number must be even"
 msgid "register must be GP"
-msgstr "寄存器数必须是偶数"
+msgstr "寄存器必须是 GP"
 
 #: arc-opc.c:297
-#, fuzzy
-#| msgid "register number must be even"
 msgid "register must be PCL"
-msgstr "寄存器数必须是偶数"
+msgstr "寄存器必须是 PCL"
 
 #: arc-opc.c:314
-#, fuzzy
-#| msgid "register number must be even"
 msgid "register must be BLINK"
-msgstr "寄存器数必须是偶数"
+msgstr "寄存器必须是 BLINK"
 
 #: arc-opc.c:331
-#, fuzzy
-#| msgid "register number must be even"
 msgid "register must be ILINK1"
-msgstr "寄存器数必须是偶数"
+msgstr "寄存器必须是 ILINK1"
 
 #: arc-opc.c:348
-#, fuzzy
-#| msgid "register number must be even"
 msgid "register must be ILINK2"
-msgstr "寄存器数必须是偶数"
+msgstr "寄存器必须是 ILINK2"
 
 #. ARC NPS400 Support: See comment near head of file.
 #: arc-opc.c:379 arc-opc.c:417 arc-opc.c:455 arc-opc.c:720
-#, fuzzy
-#| msgid "register number must be even"
 msgid "register must be either r0-r3 or r12-r15"
-msgstr "登记册必须 r8 和 r15 之间"
+msgstr "寄存器必须是 r0-r3 或 r12-r15"
 
 #: arc-opc.c:506
 msgid "accepted values are from -1 to 6"
-msgstr ""
+msgstr "可接受的值在 -1 到 6 之间"
 
 #: arc-opc.c:535
 #, fuzzy
@@ -488,32 +461,24 @@ msgid "last register of the range doesn't fit"
 msgstr ""
 
 #: arc-opc.c:557 arc-opc.c:572
-#, fuzzy
-#| msgid "Bad register name"
 msgid "invalid register number, should be fp"
-msgstr "%q+D的寄存器名无效"
+msgstr "无效的寄存器数，应当为 fp"
 
 #: arc-opc.c:594
-#, fuzzy
-#| msgid "Bad register name"
 msgid "invalid register number, should be blink"
-msgstr "%q+D的寄存器名无效"
+msgstr "无效的寄存器数，应当为 blink"
 
 #: arc-opc.c:616
-#, fuzzy
-#| msgid "Bad register name"
 msgid "invalid register number, should be pcl"
-msgstr "%q+D的寄存器名无效"
+msgstr "无效的寄存器数，应当为 pcl"
 
 #: arc-opc.c:768
-#, fuzzy
-#| msgid "Invalid position, should be 16, 32, 64 or 128."
 msgid "invalid size, should be 1, 2, 4, or 8"
-msgstr "无效的位置，应当为 16、32、64 或 128。"
+msgstr "无效的大小，应当为 1、2、4 或 8"
 
 #: arc-opc.c:813
 msgid "invalid immediate, must be 1, 2, or 4"
-msgstr ""
+msgstr "无效的立即数，应当为 1、2 或 4"
 
 #: arc-opc.c:852
 #, fuzzy
@@ -522,14 +487,10 @@ msgid "invalid value for CMEM ld/st immediate"
 msgstr "不允许负立即数"
 
 #: arc-opc.c:879
-#, fuzzy
-#| msgid "Invalid position, should be 0, 16, 32, 48 or 64."
 msgid "invalid position, should be 0, 16, 32, 48 or 64."
 msgstr "无效的位置，应当为 0、16、32、48 或 64。"
 
 #: arc-opc.c:913
-#, fuzzy
-#| msgid "Invalid position, should be 16, 32, 64 or 128."
 msgid "invalid position, should be 16, 32, 64 or 128."
 msgstr "无效的位置，应当为 16、32、64 或 128。"
 
@@ -546,44 +507,30 @@ msgid "invalid position, should be 0, 8, 16, or 24"
 msgstr "无效的位置，应当为 0、8、16 或 24"
 
 #: arc-opc.c:991
-#, fuzzy
-#| msgid "immediate value must be even"
 msgid "invalid size, value must be "
-msgstr "DO 步进值为零"
+msgstr "无效的大小，值必须为 "
 
 #: arc-opc.c:1065
-#, fuzzy
-#| msgid "branch value out of range"
 msgid "value out of range 1 - 256"
-msgstr "跳转越界"
+msgstr "值越界 1 - 256"
 
 #: arc-opc.c:1074
-#, fuzzy
-#| msgid "immediate value must be even"
 msgid "value must be power of 2"
-msgstr "DO 步进值为零"
+msgstr "值必须是 2 的倍数"
 
 #: arc-opc.c:1127
-#, fuzzy
-#| msgid "Value must be in the range 0 to 28"
 msgid "value must be in the range 0 to 28"
 msgstr "值必须在 0 到 28 的范围中"
 
 #: arc-opc.c:1149
-#, fuzzy
-#| msgid "Value must be in the range 1 to "
 msgid "value must be in the range 1 to "
 msgstr "值的范围必须在 1 到 "
 
 #: arc-opc.c:1179
-#, fuzzy
-#| msgid "Value must be in the range 0 to 240"
 msgid "value must be in the range 0 to 240"
 msgstr "值必须在 0 到 240 的范围中"
 
 #: arc-opc.c:1181
-#, fuzzy
-#| msgid "Value must be a multiple of 16"
 msgid "value must be a multiple of 16"
 msgstr "值必须是 16 的倍数"
 
@@ -593,30 +540,24 @@ msgid "invalid address type for operand"
 msgstr "无效寻址模式"
 
 #: arc-opc.c:1235
-#, fuzzy
-#| msgid "Value must be in the range 0 to 31"
 msgid "value must be in the range 0 to 31"
 msgstr "值必须在 0 到 31 的范围中"
 
 #: arc-opc.c:1260
-#, fuzzy
-#| msgid "Invalid position, should be 0,4, 8,...124."
 msgid "invalid position, should be one of: 0,4,8,...124."
 msgstr "无效的位置，应当为 0、4、8、...、124。"
 
 #: arm-dis.c:3229
-#, fuzzy
-#| msgid "Bad register name"
 msgid "Select raw register names"
-msgstr "错误的寄存器名"
+msgstr "选择原始寄存器名称"
 
 #: arm-dis.c:3231
 msgid "Select register names used by GCC"
-msgstr ""
+msgstr "选择 GCC 使用的寄存器名称"
 
 #: arm-dis.c:3233
 msgid "Select register names used in ARM's ISA documentation"
-msgstr ""
+msgstr "选择 ARM 的 ISA 文档中使用的寄存器名称"
 
 #: arm-dis.c:3235
 msgid "Assume all insns are Thumb insns"
@@ -640,7 +581,7 @@ msgstr "立即数不能是寄存器"
 
 #: arm-dis.c:3241
 msgid "Select special register names used in the ATPCS"
-msgstr ""
+msgstr "选择 ATPCS 中使用的特殊寄存器名称"
 
 #: arm-dis.c:3639
 msgid "<illegal precision>"
@@ -724,9 +665,8 @@ msgid "register source in immediate move"
 msgstr "立即数不能是寄存器"
 
 #: epiphany-asm.c:187
-#, fuzzy
 msgid "byte relocation unsupported"
-msgstr "不支持的 .stab 重定位"
+msgstr "不支持字节重定位"
 
 #. -- assembler routines inserted here.
 #. -- asm.c
@@ -769,12 +709,12 @@ msgstr "语法字符串中没有助记符"
 #: ip2k-asm.c:790 ip2k-asm.c:897 iq2000-asm.c:645 iq2000-asm.c:649
 #: iq2000-asm.c:738 iq2000-asm.c:845 lm32-asm.c:535 lm32-asm.c:539
 #: lm32-asm.c:628 lm32-asm.c:735 m32c-asm.c:1770 m32c-asm.c:1774
-#: m32c-asm.c:1863 m32c-asm.c:1970 m32r-asm.c:514 m32r-asm.c:518
-#: m32r-asm.c:607 m32r-asm.c:714 mep-asm.c:1473 mep-asm.c:1477 mep-asm.c:1566
-#: mep-asm.c:1673 mt-asm.c:781 mt-asm.c:785 mt-asm.c:874 mt-asm.c:981
-#: or1k-asm.c:689 or1k-asm.c:693 or1k-asm.c:782 or1k-asm.c:889 xc16x-asm.c:562
-#: xc16x-asm.c:566 xc16x-asm.c:655 xc16x-asm.c:762 xstormy16-asm.c:462
-#: xstormy16-asm.c:466 xstormy16-asm.c:555 xstormy16-asm.c:662
+#: m32c-asm.c:1863 m32c-asm.c:1970 m32r-asm.c:514 m32r-asm.c:518 m32r-asm.c:607
+#: m32r-asm.c:714 mep-asm.c:1473 mep-asm.c:1477 mep-asm.c:1566 mep-asm.c:1673
+#: mt-asm.c:781 mt-asm.c:785 mt-asm.c:874 mt-asm.c:981 or1k-asm.c:689
+#: or1k-asm.c:693 or1k-asm.c:782 or1k-asm.c:889 xc16x-asm.c:562 xc16x-asm.c:566
+#: xc16x-asm.c:655 xc16x-asm.c:762 xstormy16-asm.c:462 xstormy16-asm.c:466
+#: xstormy16-asm.c:555 xstormy16-asm.c:662
 msgid "unrecognized instruction"
 msgstr "无法识别的指令"
 
@@ -832,9 +772,8 @@ msgid "*unknown*"
 msgstr "*未知*"
 
 #: epiphany-dis.c:278 fr30-dis.c:299 frv-dis.c:396 ip2k-dis.c:288
-#: iq2000-dis.c:189 lm32-dis.c:147 m32c-dis.c:891 m32r-dis.c:279
-#: mep-dis.c:1187 mt-dis.c:290 or1k-dis.c:141 xc16x-dis.c:420
-#: xstormy16-dis.c:168
+#: iq2000-dis.c:189 lm32-dis.c:147 m32c-dis.c:891 m32r-dis.c:279 mep-dis.c:1187
+#: mt-dis.c:290 or1k-dis.c:141 xc16x-dis.c:420 xstormy16-dis.c:168
 #, c-format
 msgid "Unrecognized field %d while printing insn.\n"
 msgstr "打印 insn 时遇到无法识别的字段 %d。\n"
@@ -905,27 +844,20 @@ msgid "Unrecognized field %d while setting vma operand.\n"
 msgstr "设置 vma 操作数时遇到无法识别的字段 %d。\n"
 
 #: fr30-asm.c:93 m32c-asm.c:872 m32c-asm.c:879
-#, fuzzy
-#| msgid "register number must be even"
 msgid "Register number is not valid"
-msgstr "寄存器数必须是偶数"
+msgstr "寄存器数字无效"
 
 #: fr30-asm.c:95
-#, fuzzy
-#| msgid "register number must be even"
 msgid "Register must be between r0 and r7"
-msgstr "登记册必须 r0 和 r7 之间"
+msgstr "寄存器必须 r0 和 r7 之间"
 
 #: fr30-asm.c:97
-#, fuzzy
-#| msgid "register number must be even"
 msgid "Register must be between r8 and r15"
-msgstr "登记册必须 r8 和 r15 之间"
+msgstr "寄存器必须 r8 和 r15 之间"
 
 #: fr30-asm.c:116 m32c-asm.c:910
-#, fuzzy
 msgid "Register list is not valid"
-msgstr "注册"
+msgstr "寄存器列表无效"
 
 #: frv-asm.c:608
 msgid "missing `]'"
@@ -952,9 +884,9 @@ msgid "Hmmmm 0x%x"
 msgstr "咦... 0x%x"
 
 #: h8300-dis.c:690
-#, fuzzy, c-format
+#, c-format
 msgid "Don't understand 0x%x \n"
-msgstr "无法识别的重定位类型 0x%x"
+msgstr "无法识别 0x%x \n"
 
 #: h8500-dis.c:123
 #, fuzzy, c-format
@@ -1123,9 +1055,9 @@ msgid "%d unused bits in i386_operand_type.\n"
 msgstr "%d 未使用的钻头在 i386_operand_type。"
 
 #: i386-gen.c:1595
-#, fuzzy, c-format
+#, c-format
 msgid "can't create i386-tbl.h, errno = %s\n"
-msgstr "无法创建 i386-tbl.h，errno = %s"
+msgstr "无法创建 i386-tbl.h，errno = %s\n"
 
 #: ia64-gen.c:319
 #, c-format

@@ -5,14 +5,15 @@
 # Funda Wang <fundawang@linux.net.cn>, 2003.
 # YunQiang Su <wzssyqa@gmail.com>, 2011.
 # Aron Xu <happyaron.xu@gmail.com>, 2011.
+# Boyuan Yang <073plan@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: xkeyboard-config 2.3.99\n"
+"Project-Id-Version: xkeyboard-config 2.23.99\n"
 "Report-Msgid-Bugs-To: svu@users.sourceforge.net\n"
 "POT-Creation-Date: 2018-05-18 22:30+0100\n"
-"PO-Revision-Date: 2011-09-19 11:20+0800\n"
-"Last-Translator: Aron Xu <happyaron.xu@gmail.com>\n"
+"PO-Revision-Date: 2018-05-19 19:25+0800\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -20,42 +21,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.7\n"
 
 #: ../rules/base.xml.in.h:1
 msgid "Generic 101-key PC"
 msgstr "通用 101 键电脑"
 
 #: ../rules/base.xml.in.h:2
-#, fuzzy
-#| msgid "Generic 102-key (Intl) PC"
 msgid "Generic 102-key PC (intl.)"
-msgstr "通用 102 键(国际)电脑"
+msgstr "通用 102 键（国际）电脑"
 
 #: ../rules/base.xml.in.h:3
 msgid "Generic 104-key PC"
 msgstr "通用 104 键电脑"
 
 #: ../rules/base.xml.in.h:4
-#, fuzzy
-#| msgid "Generic 105-key (Intl) PC"
 msgid "Generic 105-key PC (intl.)"
-msgstr "通用 105 键(国际)电脑"
+msgstr "通用 105 键（国际）电脑"
 
 #: ../rules/base.xml.in.h:5
 msgid "Dell 101-key PC"
 msgstr "Dell 101 键电脑"
 
 #: ../rules/base.xml.in.h:6
-#, fuzzy
-#| msgid "Dell Latitude series laptop"
 msgid "Dell Latitude laptop"
-msgstr "戴尔 Latitude 系列笔记本电脑"
+msgstr "戴尔 Latitude 笔记本电脑"
 
 #: ../rules/base.xml.in.h:7
-#, fuzzy
-#| msgid "Dell Precision M65"
 msgid "Dell Precision M65 laptop"
-msgstr "戴尔 Precision M65"
+msgstr "戴尔 Precision M65 笔记本电脑"
 
 #: ../rules/base.xml.in.h:8
 msgid "Everex STEPnote"
@@ -327,10 +321,8 @@ msgid "Kinesis"
 msgstr ""
 
 #: ../rules/base.xml.in.h:67
-#, fuzzy
-#| msgid "Logitech iTouch"
 msgid "Logitech"
-msgstr "罗技 iTouch"
+msgstr "罗技"
 
 #: ../rules/base.xml.in.h:68
 msgid "Logitech G15 extra keys via G15daemon"
@@ -755,14 +747,10 @@ msgid "Acer Ferrari 4000"
 msgstr "宏碁法拉利 4000"
 
 #: ../rules/base.xml.in.h:155
-#, fuzzy
-#| msgid "Acer Laptop"
 msgid "Acer laptop"
 msgstr "宏碁笔记本电脑"
 
 #: ../rules/base.xml.in.h:156
-#, fuzzy
-#| msgid "Asus Laptop"
 msgid "Asus laptop"
 msgstr "华硕笔记本电脑"
 
@@ -771,8 +759,6 @@ msgid "Apple"
 msgstr "苹果"
 
 #: ../rules/base.xml.in.h:158
-#, fuzzy
-#| msgid "Apple Laptop"
 msgid "Apple laptop"
 msgstr "苹果笔记本电脑"
 
@@ -1863,29 +1849,24 @@ msgid "Danish"
 msgstr "丹麦语"
 
 #: ../rules/base.xml.in.h:427
-#, fuzzy
-#| msgid "Spanish (Sun dead keys)"
 msgid "Danish (no dead keys)"
-msgstr "西班牙语(Sun 死键)"
+msgstr "丹麦语（无死键）"
 
 #: ../rules/base.xml.in.h:428
-#, fuzzy
-#| msgid "Danish (eliminate dead keys)"
 msgid "Danish (Win keys)"
-msgstr "丹麦语(除去死键)"
+msgstr "丹麦语（Win 键）"
 
 #: ../rules/base.xml.in.h:429
 msgid "Danish (Macintosh)"
-msgstr "丹麦语(Mac)"
+msgstr "丹麦语（Mac）"
 
 #: ../rules/base.xml.in.h:430
-#, fuzzy
 msgid "Danish (Macintosh, no dead keys)"
-msgstr "丹麦语(Mac，除去死键)"
+msgstr "丹麦语（Mac，无死键）"
 
 #: ../rules/base.xml.in.h:431
 msgid "Danish (Dvorak)"
-msgstr "丹麦语(Dvorak)"
+msgstr "丹麦语（Dvorak 布局）"
 
 #. Keyboard indicator for Dutch layouts
 #: ../rules/base.xml.in.h:433 ../rules/base.extras.xml.in.h:123
@@ -1897,18 +1878,16 @@ msgid "Dutch"
 msgstr "荷兰语"
 
 #: ../rules/base.xml.in.h:435
-#, fuzzy
-#| msgid "Dutch (Sun dead keys)"
 msgid "Dutch (with Sun dead keys)"
-msgstr "荷兰(Sun 死键)"
+msgstr "荷兰语（Sun 死键）"
 
 #: ../rules/base.xml.in.h:436
 msgid "Dutch (Macintosh)"
-msgstr "荷兰语(Mac)"
+msgstr "荷兰语（Mac）"
 
 #: ../rules/base.xml.in.h:437
 msgid "Dutch (standard)"
-msgstr "荷兰(标准)"
+msgstr "荷兰（标准）"
 
 #. Keyboard indicator for Dzongkha layouts
 #: ../rules/base.xml.in.h:439
@@ -1949,9 +1928,8 @@ msgid "Persian"
 msgstr "波斯语"
 
 #: ../rules/base.xml.in.h:448
-#, fuzzy
 msgid "Persian (with Persian keypad)"
-msgstr "德语(瑞士，Mac)"
+msgstr "波斯语（带波斯键盘）"
 
 #. Keyboard indicator for Kurdish layouts
 #: ../rules/base.xml.in.h:450
@@ -1967,9 +1945,8 @@ msgid "Kurdish (Iran, F)"
 msgstr "库尔德语(伊朗，F)"
 
 #: ../rules/base.xml.in.h:453
-#, fuzzy
 msgid "Kurdish (Iran, Latin Alt-Q)"
-msgstr "库尔德语(伊拉克，拉丁 Alt-Q)"
+msgstr "库尔德语（伊朗，拉丁 Alt-Q）"
 
 #: ../rules/base.xml.in.h:454
 msgid "Kurdish (Iran, Arabic-Latin)"
@@ -2519,7 +2496,7 @@ msgstr "he"
 
 #: ../rules/base.xml.in.h:576 ../rules/base.extras.xml.in.h:103
 msgid "Hebrew"
-msgstr ""
+msgstr "希伯来语"
 
 #: ../rules/base.xml.in.h:577
 msgid "Hebrew (lyx)"
@@ -2544,20 +2521,16 @@ msgid "Italian"
 msgstr "意大利语"
 
 #: ../rules/base.xml.in.h:583
-#, fuzzy
-#| msgid "Italian (eliminate dead keys)"
 msgid "Italian (no dead keys)"
-msgstr "意大利语(除去死键)"
+msgstr "意大利语（无死键）"
 
 #: ../rules/base.xml.in.h:584
-#, fuzzy
 msgid "Italian (Winkeys)"
-msgstr "罗马尼亚"
+msgstr "意大利语（Win 键）"
 
 #: ../rules/base.xml.in.h:585
-#, fuzzy
 msgid "Italian (Macintosh)"
-msgstr "意大利语(Mac)"
+msgstr "意大利语（Mac）"
 
 #: ../rules/base.xml.in.h:586
 #, fuzzy
@@ -3045,10 +3018,8 @@ msgid "Romanian (standard cedilla)"
 msgstr ""
 
 #: ../rules/base.xml.in.h:702
-#, fuzzy
-#| msgid "Romanian (WinKeys)"
 msgid "Romanian (Win keys)"
-msgstr "罗马尼亚语(Win 键)"
+msgstr "罗马尼亚语（Win 键）"
 
 #: ../rules/base.xml.in.h:703 ../rules/base.extras.xml.in.h:93
 msgid "Russian"
@@ -3308,18 +3279,16 @@ msgid "Swedish"
 msgstr "瑞典语"
 
 #: ../rules/base.xml.in.h:760
-#, fuzzy
-#| msgid "Swedish (eliminate dead keys)"
 msgid "Swedish (no dead keys)"
-msgstr "瑞典语(除去死键)"
+msgstr "瑞典语（无死键）"
 
 #: ../rules/base.xml.in.h:761
 msgid "Swedish (Dvorak)"
-msgstr "瑞典语(Dvorak)"
+msgstr "瑞典语（Dvorak）"
 
 #: ../rules/base.xml.in.h:762
 msgid "Russian (Sweden, phonetic)"
-msgstr ""
+msgstr "俄语（瑞典，音标）"
 
 #: ../rules/base.xml.in.h:763
 #, fuzzy
@@ -3355,56 +3324,44 @@ msgid "Swedish Sign Language"
 msgstr ""
 
 #: ../rules/base.xml.in.h:770 ../rules/base.extras.xml.in.h:167
-#, fuzzy
 msgid "German (Switzerland)"
-msgstr "德语(瑞士，Mac)"
+msgstr "德语（瑞士）"
 
 #: ../rules/base.xml.in.h:771
-#, fuzzy
 msgid "German (Switzerland, legacy)"
-msgstr "德语(瑞士，Mac)"
+msgstr "德语（瑞士，传统）"
 
 #: ../rules/base.xml.in.h:772
-#, fuzzy
-#| msgid "German (Switzerland, Sun dead keys)"
 msgid "German (Switzerland, no dead keys)"
-msgstr "德语(瑞士，Sun 死键)"
+msgstr "德语（瑞士，无死键）"
 
 #: ../rules/base.xml.in.h:773
-#, fuzzy
-#| msgid "German (Switzerland, Sun dead keys)"
 msgid "German (Switzerland, with Sun dead keys)"
-msgstr "德语(瑞士，Sun 死键)"
+msgstr "德语（瑞士，Sun 死键）"
 
 #: ../rules/base.xml.in.h:774
 msgid "French (Switzerland)"
-msgstr "法语(瑞士)"
+msgstr "法语（瑞士）"
 
 #: ../rules/base.xml.in.h:775
-#, fuzzy
-#| msgid "French (Switzerland, Sun dead keys)"
 msgid "French (Switzerland, no dead keys)"
-msgstr "法语(瑞士，Sun 死键)"
+msgstr "法语（瑞士，无死键）"
 
 #: ../rules/base.xml.in.h:776
-#, fuzzy
-#| msgid "French (Switzerland, Sun dead keys)"
 msgid "French (Switzerland, with Sun dead keys)"
-msgstr "法语(瑞士，Sun 死键)"
+msgstr "法语（瑞士，Sun 死键）"
 
 #: ../rules/base.xml.in.h:777
-#, fuzzy
 msgid "French (Switzerland, Macintosh)"
-msgstr "法语(瑞士，Mac)"
+msgstr "法语（瑞士，Mac）"
 
 #: ../rules/base.xml.in.h:778
-#, fuzzy
 msgid "German (Switzerland, Macintosh)"
-msgstr "德语(瑞士，Mac)"
+msgstr "德语（瑞士，Mac）"
 
 #: ../rules/base.xml.in.h:779
 msgid "Arabic (Syria)"
-msgstr "阿拉伯语(叙利亚)"
+msgstr "阿拉伯语（叙利亚）"
 
 #. Keyboard indicator for Syriac layouts
 #: ../rules/base.xml.in.h:781
@@ -3512,10 +3469,8 @@ msgid "Turkish (Alt-Q)"
 msgstr "土耳其(Alt-Q)"
 
 #: ../rules/base.xml.in.h:808
-#, fuzzy
-#| msgid "Turkish (Sun dead keys)"
 msgid "Turkish (with Sun dead keys)"
-msgstr "土耳其语(Sun 死键)"
+msgstr "土耳其语（Sun 死键）"
 
 #: ../rules/base.xml.in.h:809
 msgid "Kurdish (Turkey, Latin Q)"
@@ -3530,10 +3485,8 @@ msgid "Kurdish (Turkey, Latin Alt-Q)"
 msgstr "库尔德语(土耳其，拉丁 Alt-Q)"
 
 #: ../rules/base.xml.in.h:812
-#, fuzzy
-#| msgid "Turkish (international with dead keys)"
 msgid "Turkish (intl., with dead keys)"
-msgstr "土耳其语(国际，带死键)"
+msgstr "土耳其语（国际，带死键）"
 
 #. Keyboard indicator for Crimean Tatar layouts
 #: ../rules/base.xml.in.h:814 ../rules/base.extras.xml.in.h:86
@@ -3557,7 +3510,7 @@ msgstr "乌兹别克语(克里米亚鞑靼土耳其 Alt-Q)"
 
 #: ../rules/base.xml.in.h:818
 msgid "Taiwanese"
-msgstr ""
+msgstr "台湾"
 
 #: ../rules/base.xml.in.h:819
 msgid "Taiwanese (indigenous)"
@@ -3583,21 +3536,19 @@ msgstr "乌克兰语"
 
 #: ../rules/base.xml.in.h:826
 msgid "Ukrainian (phonetic)"
-msgstr "乌克兰语(音标)"
+msgstr "乌克兰语（音标）"
 
 #: ../rules/base.xml.in.h:827
 msgid "Ukrainian (typewriter)"
 msgstr ""
 
 #: ../rules/base.xml.in.h:828
-#, fuzzy
-#| msgid "Ukrainian (WinKeys)"
 msgid "Ukrainian (Win keys)"
-msgstr "乌克兰语(Win 键)"
+msgstr "乌克兰语（Win 键）"
 
 #: ../rules/base.xml.in.h:829
 msgid "Ukrainian (legacy)"
-msgstr "乌克兰语(传统)"
+msgstr "乌克兰语（传统）"
 
 #: ../rules/base.xml.in.h:830
 msgid "Ukrainian (standard RSTU)"
@@ -3616,35 +3567,28 @@ msgid "English (UK)"
 msgstr "英语(英国)"
 
 #: ../rules/base.xml.in.h:834
-#, fuzzy
-#| msgid "English (UK, extended WinKeys)"
 msgid "English (UK, extended, with Win keys)"
-msgstr "英语(英国，扩展 Win 键)"
+msgstr "英语（英国，扩展，带 Win 键）"
 
 #: ../rules/base.xml.in.h:835
-#, fuzzy
-#| msgid "English (UK, international with dead keys)"
 msgid "English (UK, intl., with dead keys)"
-msgstr "英语(英国，带死键的国际布局)"
+msgstr "英语（英国，带死键的国际布局）"
 
 #: ../rules/base.xml.in.h:836
 msgid "English (UK, Dvorak)"
-msgstr "英语(英国，Dvorak 布局)"
+msgstr "英语（英国，Dvorak 布局）"
 
 #: ../rules/base.xml.in.h:837
-#, fuzzy
 msgid "English (UK, Dvorak, with UK punctuation)"
-msgstr "英语(英国，Mac 国际布局)"
+msgstr "英语（英国，Mac 带英国标点的 Dvorak 布局）"
 
 #: ../rules/base.xml.in.h:838
 msgid "English (UK, Macintosh)"
-msgstr "英语(英国，Mac)"
+msgstr "英语（英国，Mac）"
 
 #: ../rules/base.xml.in.h:839
-#, fuzzy
-#| msgid "English (UK, Macintosh)"
 msgid "English (UK, intl., Macintosh)"
-msgstr "英语(英国，Mac)"
+msgstr "英语（英国，国际布局，Mac）"
 
 #: ../rules/base.xml.in.h:840
 msgid "English (UK, Colemak)"
@@ -3714,7 +3658,7 @@ msgstr ""
 
 #: ../rules/base.xml.in.h:858
 msgid "Urdu (Pakistan)"
-msgstr "乌尔都语(巴基斯坦)"
+msgstr "乌尔都语（巴基斯坦）"
 
 #: ../rules/base.xml.in.h:859
 msgid "Urdu (Pakistan, CRULP)"
@@ -3726,7 +3670,7 @@ msgstr ""
 
 #: ../rules/base.xml.in.h:861
 msgid "Arabic (Pakistan)"
-msgstr "阿拉伯语(巴基斯坦)"
+msgstr "阿拉伯语（巴基斯坦）"
 
 #. Keyboard indicator for Sindhi layouts
 #: ../rules/base.xml.in.h:863
@@ -3972,10 +3916,8 @@ msgid "md"
 msgstr ""
 
 #: ../rules/base.xml.in.h:928
-#, fuzzy
-#| msgid "Latvian"
 msgid "Moldavian"
-msgstr "拉脱维亚"
+msgstr "摩尔多瓦语"
 
 #: ../rules/base.xml.in.h:929
 #, fuzzy
@@ -4014,23 +3956,19 @@ msgstr ""
 
 #: ../rules/base.xml.in.h:937
 msgid "Right Alt (while pressed)"
-msgstr "右 Alt (按下时)"
+msgstr "右 Alt（按下时）"
 
 #: ../rules/base.xml.in.h:938
-#, fuzzy
 msgid "Left Alt (while pressed)"
-msgstr "按下左 Windows 键切换组"
+msgstr "左 Alt（按下时）"
 
 #: ../rules/base.xml.in.h:939
-#, fuzzy
 msgid "Left Win (while pressed)"
-msgstr "按下左 Windows 键切换组"
+msgstr "左 Win（按下时）"
 
 #: ../rules/base.xml.in.h:940
-#, fuzzy
-#| msgid "Any Win key (while pressed)"
 msgid "Any Win (while pressed)"
-msgstr "任意Win 键(按下时)"
+msgstr "任意 Win（按下时）"
 
 #: ../rules/base.xml.in.h:941
 msgid "Menu (while pressed), Shift+Menu for Menu"
@@ -4078,22 +4016,16 @@ msgid "Alt+Caps Lock"
 msgstr "Alt+Caps Lock"
 
 #: ../rules/base.xml.in.h:952
-#, fuzzy
-#| msgid "Both Shift keys together"
 msgid "Both Shift together"
-msgstr "同时按两个 Shift 键"
+msgstr "同时按两个 Shift"
 
 #: ../rules/base.xml.in.h:953
-#, fuzzy
-#| msgid "Both Alt keys together"
 msgid "Both Alt together"
-msgstr "同时按两个 Alt 键"
+msgstr "同时按两个 Alt"
 
 #: ../rules/base.xml.in.h:954
-#, fuzzy
-#| msgid "Both Ctrl keys together"
 msgid "Both Ctrl together"
-msgstr "同时按两个 Ctrl 键"
+msgstr "同时按两个 Ctrl"
 
 #: ../rules/base.xml.in.h:955
 msgid "Ctrl+Shift"
@@ -4116,10 +4048,8 @@ msgid "Alt+Shift"
 msgstr "Alt+Shift"
 
 #: ../rules/base.xml.in.h:960
-#, fuzzy
-#| msgid "Left Ctrl+Left Shift"
 msgid "Left Alt+Left Shift"
-msgstr "左 Ctrl+左 Shift"
+msgstr "左 Alt+左 Shift"
 
 #: ../rules/base.xml.in.h:961
 msgid "Alt+Space"
@@ -4134,10 +4064,8 @@ msgid "Left Win"
 msgstr "左 Win"
 
 #: ../rules/base.xml.in.h:964
-#, fuzzy
-#| msgid "Alt+Space"
 msgid "Win+Space"
-msgstr "Alt+Space"
+msgstr "Win+Space"
 
 #: ../rules/base.xml.in.h:965
 msgid "Right Win"
@@ -4224,20 +4152,16 @@ msgid "&lt;Less/Greater&gt;; acts as onetime lock when pressed together with ano
 msgstr ""
 
 #: ../rules/base.xml.in.h:984
-#, fuzzy
-#| msgid "Ctrl key position"
 msgid "Ctrl position"
 msgstr "Ctrl 键位置"
 
 #: ../rules/base.xml.in.h:985
-#, fuzzy
 msgid "Caps Lock as Ctrl"
-msgstr "大写锁定"
+msgstr "大写锁定键作为 Ctrl"
 
 #: ../rules/base.xml.in.h:986
-#, fuzzy
 msgid "Left Ctrl as Meta"
-msgstr "左 Ctrl"
+msgstr "左 Ctrl 作为 Meta"
 
 #: ../rules/base.xml.in.h:987
 msgid "Swap Ctrl and Caps Lock"
@@ -4261,10 +4185,8 @@ msgid "Menu as Right Ctrl"
 msgstr "右 Ctrl"
 
 #: ../rules/base.xml.in.h:992
-#, fuzzy
-#| msgid "Left Alt is swapped with Left Win"
 msgid "Swap Left Alt with Left Ctrl"
-msgstr "左 Alt 和左 Win 对换"
+msgstr "左 Alt 和左 Ctrl 对换"
 
 #: ../rules/base.xml.in.h:993
 #, fuzzy
@@ -4290,10 +4212,8 @@ msgid "Num Lock"
 msgstr "数字锁定"
 
 #: ../rules/base.xml.in.h:998
-#, fuzzy
-#| msgid "Default numeric keypad keys"
 msgid "Layout of numeric keypad"
-msgstr "默认数字小键盘键"
+msgstr "数字小键盘布局"
 
 #: ../rules/base.xml.in.h:999
 msgid "Legacy"
@@ -4331,8 +4251,6 @@ msgid "ATM/phone-style"
 msgstr ""
 
 #: ../rules/base.xml.in.h:1007
-#, fuzzy
-#| msgid "Numeric keypad delete key behaviour"
 msgid "Numeric keypad Delete behavior"
 msgstr "数字小键盘上删除键的行为"
 
@@ -4412,10 +4330,8 @@ msgid "Swap ESC and Caps Lock"
 msgstr "交换 ESC 和大写锁定"
 
 #: ../rules/base.xml.in.h:1027
-#, fuzzy
-#| msgid "Make Caps Lock an additional ESC"
 msgid "Make Caps Lock an additional Esc"
-msgstr "将 CapsLock 作为额外的 ESC"
+msgstr "将 CapsLock 作为额外的 Esc 键"
 
 #: ../rules/base.xml.in.h:1028
 msgid "Make Caps Lock an additional Backspace"
@@ -4441,9 +4357,8 @@ msgid "Make Caps Lock an additional Num Lock"
 msgstr "将 CapsLock 作为额外的 Num Lock"
 
 #: ../rules/base.xml.in.h:1033
-#, fuzzy
 msgid "Caps Lock is also a Ctrl"
-msgstr "大写锁定"
+msgstr "大写锁定也是 Ctrl 键"
 
 #: ../rules/base.xml.in.h:1034
 msgid "Caps Lock is disabled"
@@ -4458,8 +4373,6 @@ msgid "Add the standard behavior to Menu key"
 msgstr "将标准行为添加到菜单键"
 
 #: ../rules/base.xml.in.h:1037
-#, fuzzy
-#| msgid "Alt and Meta are on Alt keys"
 msgid "Alt and Meta are on Alt"
 msgstr "Alt 和 Meta 都是 Alt 键"
 
@@ -4823,10 +4736,8 @@ msgid "Key sequence to kill the X server"
 msgstr "杀死 X 服务器的按键序列"
 
 #: ../rules/base.xml.in.h:1116
-#, fuzzy
-#| msgid "Control + Alt + Backspace"
 msgid "Ctrl+Alt+Backspace"
-msgstr "Control + Alt + Backspace"
+msgstr "Ctrl+Alt+Backspace"
 
 #: ../rules/base.extras.xml.in.h:1
 msgid "apl"
@@ -5164,7 +5075,7 @@ msgstr "除去死键"
 
 #: ../rules/base.extras.xml.in.h:94
 msgid "Church Slavonic"
-msgstr ""
+msgstr "教会斯拉夫语"
 
 #: ../rules/base.extras.xml.in.h:95
 msgid "Russian (with Ukrainian-Belorussian layout)"
@@ -5387,10 +5298,8 @@ msgstr "Sun Type 5/6"
 
 #. Keyboard indicator for European layouts
 #: ../rules/base.extras.xml.in.h:182
-#, fuzzy
-#| msgid "Menu"
 msgid "eu"
-msgstr "菜单"
+msgstr "eu"
 
 #: ../rules/base.extras.xml.in.h:183
 #, fuzzy
@@ -5405,7 +5314,7 @@ msgstr ""
 
 #: ../rules/base.extras.xml.in.h:189
 msgid "Parentheses position"
-msgstr ""
+msgstr "圆括号位置"
 
 #: ../rules/base.extras.xml.in.h:190
 msgid "Swap with square brackets"

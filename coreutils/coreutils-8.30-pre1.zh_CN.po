@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2018-06-24 21:56-0700\n"
-"PO-Revision-Date: 2018-07-23 09:16+0800\n"
+"PO-Revision-Date: 2018-07-23 18:10+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -446,7 +446,7 @@ msgstr "^[nN]"
 #: lib/set-acl.c:46 src/copy.c:2539 src/cp.c:514
 #, c-format
 msgid "setting permissions for %s"
-msgstr "设置%s 的权限"
+msgstr "设置 %s 的权限"
 
 #: lib/siglist.h:31
 msgid "Hangup"
@@ -502,11 +502,11 @@ msgstr "已终止"
 
 #: lib/siglist.h:70
 msgid "Urgent I/O condition"
-msgstr "急需I/O 条件"
+msgstr "紧急 I/O 事件"
 
 #: lib/siglist.h:73
 msgid "Stopped (signal)"
-msgstr "已停止(信号)"
+msgstr "已停止（信号）"
 
 #: lib/siglist.h:76
 msgid "Stopped"
@@ -522,11 +522,11 @@ msgstr "子进程已退出"
 
 #: lib/siglist.h:85
 msgid "Stopped (tty input)"
-msgstr "已停止(tty 输入)"
+msgstr "已停止（tty 输入）"
 
 #: lib/siglist.h:88
 msgid "Stopped (tty output)"
-msgstr "已停止(tty 输出)"
+msgstr "已停止（tty 输出）"
 
 #: lib/siglist.h:91
 msgid "I/O possible"
@@ -542,7 +542,7 @@ msgstr "文件大小超过限制"
 
 #: lib/siglist.h:100
 msgid "Virtual timer expired"
-msgstr "虚拟记时器过期"
+msgstr "虚拟定时器过期"
 
 #: lib/siglist.h:103
 msgid "Profiling timer expired"
@@ -562,7 +562,7 @@ msgstr "用户自定义信号 2"
 
 #: lib/siglist.h:117
 msgid "EMT trap"
-msgstr "捕获EMT 信号"
+msgstr "捕获 EMT 信号"
 
 #: lib/siglist.h:120
 msgid "Bad system call"
@@ -587,12 +587,12 @@ msgstr "资源丢失"
 #: lib/strsignal.c:114
 #, c-format
 msgid "Real-time signal %d"
-msgstr "实时信号%d"
+msgstr "实时信号 %d"
 
 #: lib/strsignal.c:118
 #, c-format
 msgid "Unknown signal %d"
-msgstr "未知信号%d"
+msgstr "未知信号 %d"
 
 #: lib/unicodeio.c:102
 msgid "iconv function not usable"
@@ -1100,7 +1100,7 @@ msgstr "无法取得%s 的安全环境"
 #: src/chcon.c:166
 #, c-format
 msgid "can't apply partial context to unlabeled file %s"
-msgstr "部分关联无法应用于文件%s"
+msgstr ""
 
 #: src/chcon.c:190
 #, c-format
@@ -1111,7 +1111,7 @@ msgstr "改变%s 的环境到%s 失败"
 #: src/du.c:532 src/ls.c:3241
 #, c-format
 msgid "cannot access %s"
-msgstr "无法访问%s"
+msgstr "无法访问 %s"
 
 #: src/chcon.c:266 src/chmod.c:231 src/chown-core.c:337 src/du.c:512
 #, c-format
@@ -1121,7 +1121,7 @@ msgstr "无法读取目录%s"
 #: src/chcon.c:293
 #, c-format
 msgid "changing security context of %s\n"
-msgstr "正在更改%s 的安全环境\n"
+msgstr "正在更改 %s 的安全环境\n"
 
 #: src/chcon.c:327 src/chmod.c:349 src/chown-core.c:538 src/remove.c:601
 #: src/selinux.c:323
@@ -1147,20 +1147,12 @@ msgstr ""
 "　或:  %s [选项]... --reference=参考文件 文件...\n"
 
 #: src/chcon.c:358
-#, fuzzy
-#| msgid ""
-#| "Change the security context of each FILE to CONTEXT.\n"
-#| "With --reference, change the security context of each FILE to that of RFILE.\n"
-#| "\n"
-#| "  -h, --no-dereference   affect symbolic links instead of any referenced file\n"
 msgid ""
 "Change the SELinux security context of each FILE to CONTEXT.\n"
 "With --reference, change the security context of each FILE to that of RFILE.\n"
 msgstr ""
-"将每个文件的安全环境变更至指定环境。\n"
-"使用 --reference 选项时，把指定文件的安全环境设置为与参考文件相同。\n"
-"\n"
-"  -h, --no-dereference\t\t影响符号连接而非引用的文件。\n"
+"将每个指定<文件>的安全环境变更至指定<环境>。\n"
+"使用 --reference 选项时，把指定<文件>的安全环境设置为与<参考文件>相同。\n"
 
 #: src/chcon.c:365 src/chgrp.c:125 src/chown.c:95
 msgid ""
@@ -1168,6 +1160,9 @@ msgid ""
 "                         the default), rather than the symbolic link itself\n"
 "  -h, --no-dereference   affect symbolic links instead of any referenced file\n"
 msgstr ""
+"      --dereference      影响每个符号链接的原始引用文件（这是默认行为），而非\n"
+"                         符号链接本身\n"
+"  -h, --no-dereference   只影响符号链接，而非被引用的任何文件\n"
 
 #: src/chcon.c:370
 #, fuzzy
@@ -1301,21 +1296,14 @@ msgstr ""
 "　或：%s [选项]... --reference=参考文件 文件...\n"
 
 #: src/chgrp.c:115
-#, fuzzy
-#| msgid ""
-#| "Change the security context of each FILE to CONTEXT.\n"
-#| "With --reference, change the security context of each FILE to that of RFILE.\n"
-#| "\n"
-#| "  -h, --no-dereference   affect symbolic links instead of any referenced file\n"
 msgid ""
 "Change the group of each FILE to GROUP.\n"
 "With --reference, change the group of each FILE to that of RFILE.\n"
 "\n"
 msgstr ""
-"将每个文件的安全环境变更至指定环境。\n"
-"使用 --reference 选项时，把指定文件的安全环境设置为与参考文件相同。\n"
+"将每个指定<文件>的属组变更至指定<用户组>。\n"
+"使用 --reference 选项时，把指定<文件>的属组设置为与<参考文件>相同。\n"
 "\n"
-"  -h, --no-dereference\t\t影响符号连接而非引用的文件。\n"
 
 #: src/chgrp.c:120 src/chmod.c:385 src/chown.c:90
 msgid ""
@@ -4932,17 +4920,17 @@ msgstr "%s：字节数过大"
 
 #: src/head.c:912 src/split.c:1367 src/split.c:1534 src/tail.c:2181
 msgid "invalid number of lines"
-msgstr "无效的号码%s"
+msgstr "无效的行数"
 
 #: src/head.c:913 src/head.c:1077 src/split.c:1359 src/split.c:1375
 #: src/tail.c:2182
 msgid "invalid number of bytes"
-msgstr "无效的号码%s"
+msgstr "无效的字节数"
 
 #: src/head.c:1003 src/head.c:1065
 #, c-format
 msgid "invalid trailing option -- %c"
-msgstr "无效的加附选项 -- %c"
+msgstr "无效的附加选项 -- %c"
 
 #: src/hostid.c:47
 #, c-format
@@ -4987,10 +4975,9 @@ msgid "Arnold Robbins"
 msgstr "Arnold Robbins"
 
 #: src/id.c:85
-#, fuzzy, c-format
-#| msgid "Usage: %s [OPTION]... [USER]...\n"
+#, c-format
 msgid "Usage: %s [OPTION]... [USER]\n"
-msgstr "用法: %s [选项]... [用户]...\n"
+msgstr "用法: %s [选项]... [用户]\n"
 
 #: src/id.c:86
 msgid ""
@@ -5042,10 +5029,8 @@ msgstr ""
 "如果不附带任何选项，程序会显示一些可供识别用户身份的有用信息。\n"
 
 #: src/id.c:152
-#, fuzzy
-#| msgid "--context (-Z) works only on an SELinux-enabled kernel"
 msgid "--context (-Z) works only on an SELinux/SMACK-enabled kernel"
-msgstr "--context (-Z) 选项只能在开启SELinux 支持的内核上使用"
+msgstr "--context (-Z) 选项只能在开启 SELinux/SMACK 支持的内核上使用"
 
 #: src/id.c:157
 msgid "--context (-Z) works only on an SELinux-enabled kernel"
@@ -5074,40 +5059,33 @@ msgid "can't get process context"
 msgstr "不能得到进程环境"
 
 #: src/id.c:268
-#, fuzzy
-#| msgid "cannot dereference %s"
 msgid "cannot get effective UID"
-msgstr "无法取消%s 的引用"
+msgstr "无法获取有效 UID"
 
 #: src/id.c:357
-#, fuzzy, c-format
-#| msgid "cannot find name for user ID %lu"
+#, c-format
 msgid "cannot find name for user ID %s"
-msgstr "无法找到ID 为%lu 的用户的名称"
+msgstr "无法找到 ID 为 %s 的用户的名称"
 
 #: src/id.c:375
-#, fuzzy, c-format
-#| msgid "uid=%lu"
+#, c-format
 msgid "uid=%s"
-msgstr "uid=%lu"
+msgstr "用户id=%s"
 
 #: src/id.c:380
-#, fuzzy, c-format
-#| msgid " gid=%lu"
+#, c-format
 msgid " gid=%s"
-msgstr " gid=%lu"
+msgstr " 组id=%s"
 
 #: src/id.c:387
-#, fuzzy, c-format
-#| msgid " euid=%lu"
+#, c-format
 msgid " euid=%s"
-msgstr " euid=%lu"
+msgstr " 有效用户id=%s"
 
 #: src/id.c:395
-#, fuzzy, c-format
-#| msgid " egid=%lu"
+#, c-format
 msgid " egid=%s"
-msgstr " egid=%lu"
+msgstr " 有效组id=%s"
 
 #: src/id.c:423
 msgid " groups="
@@ -5121,12 +5099,12 @@ msgstr " 环境=%s"
 #: src/install.c:378
 #, c-format
 msgid "warning: %s: failed to change context to %s"
-msgstr "警告：%s：切换到%s 用户环境失败"
+msgstr "警告：%s：切换到 %s 用户环境失败"
 
 #: src/install.c:420
 #, c-format
 msgid "creating directory %s"
-msgstr "正在创建目录%s"
+msgstr "正在创建目录 %s"
 
 #: src/install.c:432 src/mkdir.c:128 src/mkdir.c:161
 #, fuzzy, c-format
@@ -5164,7 +5142,7 @@ msgstr "无法运行%s"
 #: src/install.c:563
 #, c-format
 msgid "waiting for strip"
-msgstr "等待拆解"
+msgstr "正在等待 strip"
 
 #: src/install.c:565
 #, c-format
@@ -5174,7 +5152,7 @@ msgstr "拆解过程非正常中止"
 #: src/install.c:589
 #, c-format
 msgid "invalid user %s"
-msgstr "无效的用户%s"
+msgstr "无效的用户 %s"
 
 #: src/install.c:627
 #, c-format
@@ -5507,14 +5485,8 @@ msgstr ""
 "　或：%s -t [信号]...\n"
 
 #: src/kill.c:83
-#, fuzzy
-#| msgid ""
-#| "Send signals to processes, or list signals.\n"
-#| "\n"
 msgid "Send signals to processes, or list signals.\n"
-msgstr ""
-"向进程发送信号，或是列出可用信号。\n"
-"\n"
+msgstr "向进程发送信号，或是列出可用信号。\n"
 
 #: src/kill.c:89
 msgid ""
@@ -6440,10 +6412,8 @@ msgid "%s: %<PRIuMAX>: improperly formatted %s checksum line"
 msgstr "%s：%<PRIuMAX>：%s 的校验和行目格式不适当"
 
 #: src/md5sum.c:752
-#, fuzzy
-#| msgid "%s: FAILED open or read\n"
 msgid "FAILED open or read"
-msgstr "%s：打开或读取失败\n"
+msgstr "打开或读取失败"
 
 #: src/md5sum.c:790
 msgid "FAILED"
@@ -6724,26 +6694,21 @@ msgstr "Eric Blake"
 #: src/mktemp.c:67
 #, c-format
 msgid "Usage: %s [OPTION]... [TEMPLATE]\n"
-msgstr "用法：%s [选项]... [TEMPLATE]\n"
+msgstr "用法：%s [选项]... [模板]\n"
 
 #: src/mktemp.c:68
-#, fuzzy
-#| msgid ""
-#| "Create a temporary file or directory, safely, and print its name.\n"
-#| "TEMPLATE must contain at least 3 consecutive `X's in last component.\n"
-#| "If TEMPLATE is not specified, use tmp.XXXXXXXXXX, and --tmpdir is implied.\n"
 msgid ""
 "Create a temporary file or directory, safely, and print its name.\n"
 "TEMPLATE must contain at least 3 consecutive 'X's in last component.\n"
 "If TEMPLATE is not specified, use tmp.XXXXXXXXXX, and --tmpdir is implied.\n"
 msgstr ""
-"安全地创建一个临时文件或目录，并且打输出它的名字。\n"
-"TEMPLATE 最后部分必须含有至少 3 个连续的 X。\n"
-"如果 TEMPLATE 没有指定，将会使用 tmp.XXXXXXXXXX。\n"
+"安全地创建一个临时文件或目录，并且输出它的名字。\n"
+"<模板>的最后部分必须含有至少 3 个连续的 'X'。\n"
+"如果没有指定<模板>，将会使用 tmp.XXXXXXXXXX，同时隐含启用 --tmpdir 选项。\n"
 
 #: src/mktemp.c:73
 msgid "Files are created u+rw, and directories u+rwx, minus umask restrictions.\n"
-msgstr ""
+msgstr "文件创建时采用 u+rw 权限，对目录则使用 u+rwx；同时会减去 umask 限制所给定的值。\n"
 
 #: src/mktemp.c:77
 msgid ""
@@ -6752,20 +6717,16 @@ msgid ""
 "  -q, --quiet         suppress diagnostics about file/dir-creation failure\n"
 msgstr ""
 "  -d, --directory     创建一个目录而非文件\n"
-"  -u, --dry-run       不创建任何东西，仅打印出名字。(仅供测试)\n"
+"  -u, --dry-run       不创建任何东西，仅打印出名字。（不安全）\n"
 "  -q, --quiet         不显示任何有关文件或目录创建错误信息\n"
 
 #: src/mktemp.c:82
-#, fuzzy
-#| msgid ""
-#| "      --suffix=SUFF   append SUFF to TEMPLATE.  SUFF must not contain slash.\n"
-#| "                        This option is implied if TEMPLATE does not end in X.\n"
 msgid ""
 "      --suffix=SUFF   append SUFF to TEMPLATE; SUFF must not contain a slash.\n"
 "                        This option is implied if TEMPLATE does not end in X\n"
 msgstr ""
-"      --suffix=SUFF   将 SUFF 添加至 TEMPLATE。SUFF 不能带斜杠。\n"
-"                        若 TEMPLATE 不以 X 结尾，则此选项隐式实现。\n"
+"      --suffix=后缀   将给定的<后缀>添加至<模板>字符串之后。后缀字符串中不能带斜杠。\n"
+"                        所先前所给<模板>字符串不以 X 结尾，则隐含启用该选项。\n"
 
 #: src/mktemp.c:86
 #, fuzzy
@@ -6838,12 +6799,12 @@ msgstr "无效模板，%s；如果与--tmpdir 同时使用则不可以是绝对�
 #: src/mktemp.c:312
 #, c-format
 msgid "failed to create directory via template %s"
-msgstr "无法通过模板%s 创建目录"
+msgstr "无法通过模板 %s 创建目录"
 
 #: src/mktemp.c:323
 #, c-format
 msgid "failed to create file via template %s"
-msgstr "无法通过模板%s 创建文件"
+msgstr "无法通过模板 %s 创建文件"
 
 #: src/mv.c:298
 #, fuzzy
@@ -7156,14 +7117,7 @@ msgstr ""
 "\n"
 
 #: src/nohup.c:68
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "If standard input is a terminal, redirect it from /dev/null.\n"
-#| "If standard output is a terminal, append output to `nohup.out' if possible,\n"
-#| "`$HOME/nohup.out' otherwise.\n"
-#| "If standard error is a terminal, redirect it to standard output.\n"
-#| "To save output to FILE, use `%s COMMAND > FILE'.\n"
+#, c-format
 msgid ""
 "\n"
 "If standard input is a terminal, redirect it from an unreadable file.\n"
@@ -7173,9 +7127,9 @@ msgid ""
 "To save output to FILE, use '%s COMMAND > FILE'.\n"
 msgstr ""
 "\n"
-"如果标准输入是一个终端，重定向自/dev/null。\n"
-"如果标准输出是一个终端，尽可能将输出添加到\"nohup.out\"，\n"
-"否则添加到\"$HOME/nohup.out\"。\n"
+"如果标准输入是一个终端，则将其重定向为使用一个无法读取的文件。\n"
+"如果标准输出是一个终端，在可能的情况下将输出附加到“nohup.out”，\n"
+"否则使用“$HOME/nohup.out”文件。\n"
 "如果标准错误输出是一个终端，重定向它到标准输出。\n"
 "要保存输出内容到一个文件，使用 \"%s COMMAND > FILE\" 形式的命令。\n"
 
@@ -7197,7 +7151,7 @@ msgstr "忽略输入并把输出追加到%s"
 #: src/nohup.c:177
 #, c-format
 msgid "appending output to %s"
-msgstr "把输出追加到%s"
+msgstr "把输出追加到 %s"
 
 #: src/nohup.c:195
 #, c-format
@@ -7235,22 +7189,17 @@ msgstr ""
 "\n"
 
 #: src/nproc.c:63
-#, fuzzy
-#| msgid ""
-#| "     --all       print the number of installed processors\n"
-#| "     --ignore=N  if possible, exclude N processing units\n"
 msgid ""
 "      --all      print the number of installed processors\n"
 "      --ignore=N  if possible, exclude N processing units\n"
 msgstr ""
-"     --all       打印所拥有的处理器数目\n"
-"     --ignore=N  如果有可能，忽略 N 个处理器\n"
+"      --all      打印所拥有的处理器数目\n"
+"      --ignore=N  可能的话，排除 N 个处理单元\n"
 
 #: src/numfmt.c:694
-#, fuzzy, c-format
-#| msgid "%s: value not completely converted"
+#, c-format
 msgid "value too large to be converted: %s"
-msgstr "%s：给定值不能完全转换"
+msgstr "值过大而无法转换：%s"
 
 #: src/numfmt.c:698
 #, c-format
@@ -7263,10 +7212,9 @@ msgid "rejecting suffix in input: %s (consider using --from)"
 msgstr ""
 
 #: src/numfmt.c:706
-#, fuzzy, c-format
-#| msgid "invalid suffix in %s%s argument `%s'"
+#, c-format
 msgid "invalid suffix in input: %s"
-msgstr "非法的后缀在%s%s 参数\"%s\""
+msgstr "输入中存在无效后缀：%s"
 
 #: src/numfmt.c:710
 #, c-format
@@ -7500,10 +7448,9 @@ msgid "format %s has no %% directive"
 msgstr "格式%s 没有%% 指令"
 
 #: src/numfmt.c:1086
-#, fuzzy, c-format
-#| msgid "invalid format width"
+#, c-format
 msgid "invalid format %s (width overflow)"
-msgstr "无效的格式宽度"
+msgstr "无效的格式 %s（宽度溢出）"
 
 #: src/numfmt.c:1091
 #, c-format
@@ -7513,13 +7460,12 @@ msgstr ""
 #: src/numfmt.c:1110 src/seq.c:257
 #, c-format
 msgid "format %s ends in %%"
-msgstr "格式%s 以%% 结束"
+msgstr "格式 %s 以 %% 结束"
 
 #: src/numfmt.c:1126
-#, fuzzy, c-format
-#| msgid "invalid precision: %s"
+#, c-format
 msgid "invalid precision in format %s"
-msgstr "无效的精度：%s"
+msgstr "格式 %s 中存在无效的精度"
 
 #: src/numfmt.c:1132
 #, c-format
@@ -8777,6 +8723,9 @@ msgid ""
 "all but the last component must exist\n"
 "\n"
 msgstr ""
+"打印经过解析的绝对路径文件名；\n"
+"路径各部分中除最后一部分以外其它各部分必须存在\n"
+"\n"
 
 #: src/realpath.c:77
 msgid ""
@@ -8845,7 +8794,7 @@ msgstr "跳过 %s，因为它位于不同的设备上"
 #: src/remove.c:491
 #, c-format
 msgid "and --preserve-root=all is in effect"
-msgstr ""
+msgstr "且 --preserve-root=all 正在生效"
 
 #: src/remove.c:559
 #, c-format
@@ -11868,32 +11817,21 @@ msgid "Ian Lance Taylor"
 msgstr "Ian Lance Taylor"
 
 #: src/tail.c:265
-#, fuzzy, c-format
-#| msgid ""
-#| "Print the last %d lines of each FILE to standard output.\n"
-#| "With more than one FILE, precede each with a header giving the file name.\n"
-#| "With no FILE, or when FILE is -, read standard input.\n"
-#| "\n"
+#, c-format
 msgid ""
 "Print the last %d lines of each FILE to standard output.\n"
 "With more than one FILE, precede each with a header giving the file name.\n"
 msgstr ""
-"显示每个指定文件的最后%d 行到标准输出。\n"
+"显示每个指定文件的最后 %d 行并输出至标准输出。\n"
 "若指定了多于一个文件，程序会在每段输出的开始添加相应文件名作为头。\n"
-"如果不指定文件或文件为\"-\" ，则从标准输入读取数据。\n"
-"\n"
 
 #: src/tail.c:273
-#, fuzzy
-#| msgid ""
-#| "  -c, --bytes=K            output the last K bytes; alternatively, use -c +K\n"
-#| "                           to output bytes starting with the Kth of each file\n"
 msgid ""
 "  -c, --bytes=[+]NUM       output the last NUM bytes; or use -c +NUM to\n"
 "                             output starting with byte NUM of each file\n"
 msgstr ""
-"  -c, --bytes=K\t\t输出最后K 字节；另外，使用-c +K 从每个文件的\n"
-"\t\t\t第K 字节输出\n"
+"  -c, --bytes=[+]NUM       输出最后 NUM 字节；或者使用 -c +NUM 以输出\n"
+"                             每个文件第 NUM 个字节之后的全部内容\n"
 
 #: src/tail.c:277
 #, fuzzy
@@ -12113,10 +12051,9 @@ msgid "directory containing watched file was removed"
 msgstr "包含所监视文件的目录已被删除"
 
 #: src/tail.c:2022
-#, fuzzy, c-format
-#| msgid "%s: cannot follow end of this type of file; giving up on this name"
+#, c-format
 msgid "%s: cannot follow end of this type of file%s"
-msgstr "%s：无法跟随此类型文件的末尾，已放弃"
+msgstr "%s：无法跟随此类型文件的末尾 %s"
 
 #: src/tail.c:2203
 #, fuzzy
@@ -12701,10 +12638,9 @@ msgid "cannot specify times from more than one source"
 msgstr "无法由多于一种的来源来指定时间"
 
 #: src/touch.c:410
-#, fuzzy, c-format
-#| msgid "warning: `touch %s' is obsolete; use `touch -t %04ld%02d%02d%02d%02d.%02d'"
+#, c-format
 msgid "warning: 'touch %s' is obsolete; use 'touch -t %04ld%02d%02d%02d%02d.%02d'"
-msgstr "警告：\"touch %s\"已过时，请使用\"touch -t %04ld%02d%02d%02d%02d.%02d\"代替"
+msgstr "警告：\"touch %s\" 已过时；请使用 \"touch -t %04ld%02d%02d%02d%02d.%02d\" 代替"
 
 #: src/tr.c:287
 #, c-format

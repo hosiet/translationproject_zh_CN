@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2018-06-24 21:56-0700\n"
-"PO-Revision-Date: 2018-07-06 10:55+0800\n"
+"PO-Revision-Date: 2018-07-23 09:16+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Poedit 2.0.9\n"
 
 #: lib/argmatch.c:134
 #, c-format
@@ -1009,16 +1009,6 @@ msgid "Concatenate FILE(s) to standard output.\n"
 msgstr "连接所有指定文件并将结果写到标准输出。\n"
 
 #: src/cat.c:98
-#, fuzzy
-#| msgid ""
-#| "Concatenate FILE(s), or standard input, to standard output.\n"
-#| "\n"
-#| "  -A, --show-all           equivalent to -vET\n"
-#| "  -b, --number-nonblank    number nonempty output lines, overrides -n\n"
-#| "  -e                       equivalent to -vE\n"
-#| "  -E, --show-ends          display $ at end of each line\n"
-#| "  -n, --number             number all output lines\n"
-#| "  -s, --squeeze-blank      suppress repeated empty output lines\n"
 msgid ""
 "\n"
 "  -A, --show-all           equivalent to -vET\n"
@@ -1028,11 +1018,10 @@ msgid ""
 "  -n, --number             number all output lines\n"
 "  -s, --squeeze-blank      suppress repeated empty output lines\n"
 msgstr ""
-"将[文件]或标准输入组合输出到标准输出。\n"
 "\n"
-"  -A, --show-all           等于-vET\n"
-"  -b, --number-nonblank    对非空输出行编号\n"
-"  -e                       等于-vE\n"
+"  -A, --show-all           等效于 -vET\n"
+"  -b, --number-nonblank    对非空输出行编号，同时取消 -n 选项效果\n"
+"  -e                       等效于 -vE\n"
 "  -E, --show-ends          在每行结束处显示\"$\"\n"
 "  -n, --number             对输出的所有行编号\n"
 "  -s, --squeeze-blank      不输出多行空行\n"
@@ -1044,7 +1033,7 @@ msgid ""
 "  -u                       (ignored)\n"
 "  -v, --show-nonprinting   use ^ and M- notation, except for LFD and TAB\n"
 msgstr ""
-"  -t                       与-vT 等价\n"
+"  -t                       与 -vT 等效\n"
 "  -T, --show-tabs          将跳格字符显示为^I\n"
 "  -u                       (被忽略)\n"
 "  -v, --show-nonprinting   使用^ 和M- 引用，除了LFD和 TAB 之外\n"
@@ -5829,7 +5818,7 @@ msgstr "无登录名"
 #. will count bytes rather than characters in multibyte locales.
 #: src/ls.c:770
 msgid "%b %e  %Y"
-msgstr "%b %e %Y"
+msgstr "%b %e  %Y"
 
 #. TRANSLATORS: ls output needs to be aligned for ease of reading,
 #. so be wary of using variable width fields from the locale.
@@ -5851,16 +5840,12 @@ msgid "ignoring invalid tab size in environment variable TABSIZE: %s"
 msgstr "忽略无效的环境变量 TABSIZE 所示的制表符尺寸值：%s"
 
 #: src/ls.c:1898
-#, fuzzy
-#| msgid "invalid line width: %s"
 msgid "invalid line width"
-msgstr "无效的行宽：%s"
+msgstr "无效的行宽"
 
 #: src/ls.c:1966
-#, fuzzy
-#| msgid "invalid tab size: %s"
 msgid "invalid tab size"
-msgstr "无效的制表符尺寸：%s"
+msgstr "无效的制表符"
 
 #: src/ls.c:2199
 #, c-format
@@ -5906,39 +5891,32 @@ msgid "%s: not listing already-listed directory"
 msgstr "%s：不会再列出已经列出的目录"
 
 #: src/ls.c:2776 src/ls.c:3195 src/selinux.c:127 src/selinux.c:300
-#, fuzzy, c-format
-#| msgid "failed to canonicalize %s"
+#, c-format
 msgid "error canonicalizing %s"
-msgstr "标准化%s 失败"
+msgstr "标准化 %s 出错"
 
 #: src/ls.c:2838 src/pwd.c:232
 #, c-format
 msgid "reading directory %s"
-msgstr "正在读取目录%s"
+msgstr "正在读取目录 %s"
 
 #: src/ls.c:2853
 #, c-format
 msgid "closing directory %s"
-msgstr "关闭目录%s"
+msgstr "正在关闭目录 %s"
 
 #: src/ls.c:3572
 #, c-format
 msgid "cannot compare file names %s and %s"
-msgstr "无法比较文件名%s 和 %s"
+msgstr "无法比较文件名 %s 和 %s"
 
 #: src/ls.c:5132
-#, fuzzy
-#| msgid ""
-#| "List information about the FILEs (the current directory by default).\n"
-#| "Sort entries alphabetically if none of -cftuvSUX nor --sort.\n"
-#| "\n"
 msgid ""
 "List information about the FILEs (the current directory by default).\n"
 "Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.\n"
 msgstr ""
-"列出 FILE 的信息(默认为当前目录)。\n"
-"如果不指定-cftuvSUX 或--sort 选项，则根据字母大小排序。\n"
-"\n"
+"列出给定文件（默认为当前目录）的信息。\n"
+"如果不指定 -cftuvSUX 中任意一个或--sort 选项，则根据字母大小排序。\n"
 
 #: src/ls.c:5139
 msgid ""
@@ -6332,7 +6310,7 @@ msgstr ""
 #. This is a proper name. See the gettext manual, section Names.
 #: src/md5sum.c:108
 msgid "Samuel Neves"
-msgstr ""
+msgstr "Samuel Neves"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/md5sum.c:111 src/seq.c:43
@@ -6398,12 +6376,12 @@ msgid "  -t, --text           read in text mode (default)\n"
 msgstr "  -t, --text\t\t以纯文本模式读取(默认)\n"
 
 #: src/md5sum.c:269
-#, fuzzy
-#| msgid "  -0, --null     end each output line with 0 byte rather than newline\n"
 msgid ""
 "  -z, --zero           end each output line with NUL, not newline,\n"
 "                       and disable file name escaping\n"
-msgstr "  -0, --null     以空字符而非新行符结束每一输出行\n"
+msgstr ""
+"  -z, --zero           以 NUL 空字符而非换行符结束每一输出行，\n"
+"                       同时禁用文件名转义\n"
 
 #: src/md5sum.c:273
 #, fuzzy
@@ -6499,26 +6477,22 @@ msgid_plural "WARNING: %<PRIuMAX> computed checksums did NOT match"
 msgstr[0] "警告：%<PRIuMAX> 个校验和不匹配"
 
 #: src/md5sum.c:848
-#, fuzzy, c-format
-#| msgid "%s: file has negative size"
+#, c-format
 msgid "%s: no file was verified"
-msgstr "%s：文件的大小为负数"
+msgstr "%s：未验证任何文件"
 
 #: src/md5sum.c:898
-#, fuzzy
-#| msgid "invalid input"
 msgid "invalid length"
-msgstr "输入无效"
+msgstr "无效的长度"
 
 #: src/md5sum.c:902 src/md5sum.c:954
-#, fuzzy, c-format
-#| msgid "invalid line width: %s"
+#, c-format
 msgid "invalid length: %s"
-msgstr "无效的行宽：%s"
+msgstr "无效的长度：%s"
 
 #: src/md5sum.c:903
 msgid "length is not a multiple of 8"
-msgstr ""
+msgstr "长度不是 8 的倍数"
 
 #: src/md5sum.c:956
 #, c-format
@@ -7279,10 +7253,9 @@ msgid "value too large to be converted: %s"
 msgstr "%s：给定值不能完全转换"
 
 #: src/numfmt.c:698
-#, fuzzy, c-format
-#| msgid "invalid number %s"
+#, c-format
 msgid "invalid number: %s"
-msgstr "无效的数字%s"
+msgstr "无效的数字：%s"
 
 #: src/numfmt.c:702
 #, c-format
@@ -7609,10 +7582,9 @@ msgid "--grouping cannot be combined with --format"
 msgstr "文件操作数不能于--files0-from 参数一起使用"
 
 #: src/numfmt.c:1577 src/sort.c:4685
-#, fuzzy, c-format
-#| msgid "failed to set new role %s"
+#, c-format
 msgid "failed to set locale"
-msgstr "设置新角色%s 失败"
+msgstr "设置区域语言 locale 失败"
 
 #: src/numfmt.c:1582
 #, fuzzy, c-format
@@ -7637,10 +7609,9 @@ msgid "--header ignored with command-line input"
 msgstr ""
 
 #: src/numfmt.c:1632
-#, fuzzy, c-format
-#| msgid "error reading %s"
+#, c-format
 msgid "error reading input"
-msgstr "读取%s 时出错"
+msgstr "读取输入时出错"
 
 #: src/numfmt.c:1643
 #, fuzzy, c-format
@@ -8851,10 +8822,9 @@ msgid "%s: remove %s %s? "
 msgstr "%s：是否删除%s %s？"
 
 #: src/remove.c:375
-#, fuzzy, c-format
-#| msgid "removed directory: %s\n"
+#, c-format
 msgid "removed directory %s\n"
-msgstr "已删除目录：%s\n"
+msgstr "已删除目录 %s\n"
 
 #: src/remove.c:447
 #, fuzzy, c-format
@@ -8863,15 +8833,14 @@ msgid "refusing to remove %s or %s directory: skipping %s"
 msgstr "无法删除%s 目录%s"
 
 #: src/remove.c:476
-#, fuzzy, c-format
-#| msgid "failed to stat %s"
+#, c-format
 msgid "failed to stat %s: skipping %s"
-msgstr "获取%s 的文件状态失败(stat)"
+msgstr "获取 %s 的文件状态失败(stat)：跳过 %s"
 
 #: src/remove.c:489 src/remove.c:539
 #, c-format
 msgid "skipping %s, since it's on a different device"
-msgstr "跳过%s，因为它位于不同的设备上"
+msgstr "跳过 %s，因为它位于不同的设备上"
 
 #: src/remove.c:491
 #, c-format
@@ -8893,10 +8862,9 @@ msgstr ""
 "请报告给 %s"
 
 #: src/rm.c:117
-#, fuzzy, c-format
-#| msgid "Try `%s ./%s' to remove the file %s.\n"
+#, c-format
 msgid "Try '%s ./%s' to remove the file %s.\n"
-msgstr "尝试使用\"%s ./%s\"删除文件%s。\n"
+msgstr "尝试使用\"%s ./%s\"删除文件 %s。\n"
 
 #: src/rm.c:134
 #, fuzzy
@@ -9178,16 +9146,14 @@ msgid "failed to compute a new context"
 msgstr "计算新的环境失败"
 
 #: src/runcon.c:236
-#, fuzzy, c-format
-#| msgid "failed to set new user %s"
+#, c-format
 msgid "failed to set new user: %s"
-msgstr "设置新用户%s 失败"
+msgstr "设置新用户失败：%s"
 
 #: src/runcon.c:239
-#, fuzzy, c-format
-#| msgid "failed to set new type %s"
+#, c-format
 msgid "failed to set new type: %s"
-msgstr "设置新类型%s 失败"
+msgstr "设置新类型失败：%s"
 
 #: src/runcon.c:242
 #, fuzzy, c-format
@@ -9657,10 +9623,8 @@ msgid "multiple random sources specified"
 msgstr "指定了多个随机源"
 
 #: src/shred.c:1254
-#, fuzzy
-#| msgid "%s: invalid file size"
 msgid "invalid file size"
-msgstr "%s：文件大小无效"
+msgstr "无效的文件大小"
 
 #: src/shuf.c:62
 #, c-format
@@ -9718,10 +9682,8 @@ msgid "multiple -i options specified"
 msgstr "指定了多个-i 选项"
 
 #: src/shuf.c:425 src/shuf.c:431 src/shuf.c:436
-#, fuzzy
-#| msgid "invalid input range %s"
 msgid "invalid input range"
-msgstr "无效的输入范围：%s"
+msgstr "无效的输入范围"
 
 #: src/shuf.c:449
 #, fuzzy, c-format
@@ -10099,9 +10061,7 @@ msgid "key %lu is numeric and spans multiple fields"
 msgstr "值%lu 为数字且跨多个域"
 
 #: src/sort.c:2511
-#, fuzzy, c-format
-#| msgid "option `-%s' is ignored"
-#| msgid_plural "options `-%s' are ignored"
+#, c-format
 msgid "option '-%s' is ignored"
 msgid_plural "options '-%s' are ignored"
 msgstr[0] "选项\"-%s\"被忽略"
@@ -10217,16 +10177,14 @@ msgid "extra operand %s not allowed with -%c"
 msgstr "不允许额外的操作数%s 与-%c 一起使用"
 
 #: src/split.c:209
-#, fuzzy, c-format
-#| msgid "the suffix length needs to be at least %zu"
+#, c-format
 msgid "the suffix length needs to be at least %<PRIuMAX>"
-msgstr "后缀长度至少应为%zu"
+msgstr "后缀长度至少应为 %<PRIuMAX>"
 
 #: src/split.c:226
-#, fuzzy, c-format
-#| msgid "Usage: %s [OPTION]... [INPUT [PREFIX]]\n"
+#, c-format
 msgid "Usage: %s [OPTION]... [FILE [PREFIX]]\n"
-msgstr "用法：%s [选项]... [输入 [前缀]]\n"
+msgstr "用法：%s [选项]... [文件 [前缀]]\n"
 
 #: src/split.c:230
 #, fuzzy
@@ -10332,10 +10290,8 @@ msgid "%s would overwrite input; aborting"
 msgstr ""
 
 #: src/split.c:487
-#, fuzzy
-#| msgid "failed to update the environment with %s"
 msgid "failed to set FILE environment variable"
-msgstr "更新%s 的环境失败"
+msgstr "设置 FILE 环境变量失败"
 
 #: src/split.c:489
 #, c-format
@@ -10343,10 +10299,8 @@ msgid "executing with FILE=%s\n"
 msgstr ""
 
 #: src/split.c:491
-#, fuzzy
-#| msgid "failed to create hard link %s"
 msgid "failed to create pipe"
-msgstr "无法创建硬链接%s"
+msgstr "创建管道失败"
 
 #: src/split.c:505
 #, fuzzy
@@ -10410,22 +10364,16 @@ msgid "cannot split in more than one way"
 msgstr "无法以多于一种的方式切分输入"
 
 #: src/split.c:1285 src/split.c:1400 src/split.c:1601
-#, fuzzy
-#| msgid "%s: invalid number of chunks"
 msgid "invalid number of chunks"
-msgstr "%s：无效的块数"
+msgstr "无效的块数"
 
 #: src/split.c:1290
-#, fuzzy
-#| msgid "%s: invalid chunk number"
 msgid "invalid chunk number"
-msgstr "%s：无效块数"
+msgstr "无效块数"
 
 #: src/split.c:1337
-#, fuzzy
-#| msgid "%s: invalid suffix length"
 msgid "invalid suffix length"
-msgstr "%s：文件类型无效"
+msgstr "无效的后缀长度"
 
 #: src/split.c:1411
 msgid "empty record separator"
@@ -10461,10 +10409,8 @@ msgid "%s: invalid start value for hexadecimal suffix"
 msgstr "无效的起始行号：%s"
 
 #: src/split.c:1503
-#, fuzzy
-#| msgid "%s: invalid IO block size"
 msgid "invalid IO block size"
-msgstr "%s：无效的IO 块大小"
+msgstr "无效的 IO 块大小"
 
 #: src/split.c:1521
 #, c-format
@@ -11517,12 +11463,13 @@ msgid ""
 msgstr ""
 
 #: src/stty.c:938
-#, fuzzy, c-format
-#| msgid "  -g                         like -l, but do not list owner\n"
+#, c-format
 msgid ""
 "   nl            same as %s\n"
 "   -nl           same as %s\n"
-msgstr "  -g\t\t\t\t类似-l，但不列出所有者\n"
+msgstr ""
+"   nl            与 %s 相同\n"
+"   -nl           与 %s 相同\n"
 
 #: src/stty.c:956
 msgid ""

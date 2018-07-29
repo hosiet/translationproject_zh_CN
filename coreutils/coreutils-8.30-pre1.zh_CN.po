@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2018-06-24 21:56-0700\n"
-"PO-Revision-Date: 2018-07-23 18:10+0800\n"
+"PO-Revision-Date: 2018-07-29 10:54+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -1100,12 +1100,12 @@ msgstr "无法取得%s 的安全环境"
 #: src/chcon.c:166
 #, c-format
 msgid "can't apply partial context to unlabeled file %s"
-msgstr ""
+msgstr "无法对未标记的文件 %s 应用部分（不完整的）环境"
 
 #: src/chcon.c:190
 #, c-format
 msgid "failed to change context of %s to %s"
-msgstr "改变%s 的环境到%s 失败"
+msgstr "改变 %s 的环境到 %s 失败"
 
 #: src/chcon.c:255 src/chmod.c:218 src/chown-core.c:324 src/copy.c:725
 #: src/du.c:532 src/ls.c:3241
@@ -1116,7 +1116,7 @@ msgstr "无法访问 %s"
 #: src/chcon.c:266 src/chmod.c:231 src/chown-core.c:337 src/du.c:512
 #, c-format
 msgid "cannot read directory %s"
-msgstr "无法读取目录%s"
+msgstr "无法读取目录 %s"
 
 #: src/chcon.c:293
 #, c-format
@@ -1165,23 +1165,16 @@ msgstr ""
 "  -h, --no-dereference   只影响符号链接，而非被引用的任何文件\n"
 
 #: src/chcon.c:370
-#, fuzzy
-#| msgid ""
-#| "  -u, --user=USER        set user USER in the target security context\n"
-#| "  -r, --role=ROLE        set role ROLE in the target security context\n"
-#| "  -t, --type=TYPE        set type TYPE in the target security context\n"
-#| "  -l, --range=RANGE      set range RANGE in the target security context\n"
-#| "\n"
 msgid ""
 "  -u, --user=USER        set user USER in the target security context\n"
 "  -r, --role=ROLE        set role ROLE in the target security context\n"
 "  -t, --type=TYPE        set type TYPE in the target security context\n"
 "  -l, --range=RANGE      set range RANGE in the target security context\n"
 msgstr ""
-"  -u, --user=用户 \t\t设置指定用户的目标安全环境\n"
-"  -r, --role=角色 \t\t设置指定角色的目标安全环境\n"
-"  -t, --type=类型 \t\t设置指定类型的目标安全环境\n"
-"  -l, --range=范围 \t\t设置指定范围的目标安全环境\n"
+"  -u, --user=用户        设置指定<用户>的目标安全环境\n"
+"  -r, --role=角色        设置指定<角色>的目标安全环境\n"
+"  -t, --type=类型        设置指定<类型>的目标安全环境\n"
+"  -l, --range=范围      设置指定<范围>的目标安全环境\n"
 "\n"
 
 #: src/chcon.c:376 src/chgrp.c:134 src/chmod.c:390 src/chown.c:111
@@ -1193,19 +1186,10 @@ msgstr ""
 "      --preserve-root    不允许在“/”上递归操作\n"
 
 #: src/chcon.c:380
-#, fuzzy
-#| msgid ""
-#| "      --reference=RFILE  use RFILE's security context rather than specifying\n"
-#| "                         a CONTEXT value\n"
-#| "  -R, --recursive        operate on files and directories recursively\n"
-#| "  -v, --verbose          output a diagnostic for every file processed\n"
 msgid ""
 "      --reference=RFILE  use RFILE's security context rather than specifying\n"
 "                         a CONTEXT value\n"
-msgstr ""
-"      --reference=参考文件\t使用指定参考文件的安全环境，而非指定值\n"
-"  -R, --recursive        \t递归处理所有的文件及子目录\n"
-"  -v, --verbose          \t为处理的所有文件显示诊断信息\n"
+msgstr "      --reference=参考文件  使用指定<参考文件>的安全环境，而非指定<环境>值\n"
 
 #: src/chcon.c:384 src/chgrp.c:142 src/chown.c:119
 msgid "  -R, --recursive        operate on files and directories recursively\n"
@@ -1216,18 +1200,6 @@ msgid "  -v, --verbose          output a diagnostic for every file processed\n"
 msgstr "  -v, --verbose          为每个处理的文件输出诊断信息\n"
 
 #: src/chcon.c:390 src/chgrp.c:145 src/chown.c:122
-#, fuzzy
-#| msgid ""
-#| "The following options modify how a hierarchy is traversed when the -R\n"
-#| "option is also specified.  If more than one is specified, only the final\n"
-#| "one takes effect.\n"
-#| "\n"
-#| "  -H                     if a command line argument is a symbolic link\n"
-#| "                         to a directory, traverse it\n"
-#| "  -L                     traverse every symbolic link to a directory\n"
-#| "                         encountered\n"
-#| "  -P                     do not traverse any symbolic links (default)\n"
-#| "\n"
 msgid ""
 "\n"
 "The following options modify how a hierarchy is traversed when the -R\n"
@@ -1241,12 +1213,14 @@ msgid ""
 "  -P                     do not traverse any symbolic links (default)\n"
 "\n"
 msgstr ""
-"以下选项是在指定了 -R 选项时被用于设置如何穿越目录结构体系。\n"
+"\n"
+"以下选项是在指定了 -R 选项时被用于设置如何遍历目录结构体系。\n"
 "如果您指定了多于一个选项，那么只有最后一个会生效。\n"
 "\n"
-"  -H         如果命令行参数是一个通到目录的符号链接，则遍历符号链接\n"
-"  -L         遍历每一个遇到的通到目录的符号链接\n"
-"  -P         不遍历任何符号链接(默认)\n"
+"  -H                     如果命令行参数是一个指向目录的符号链接，则对其\n"
+"                         进行遍历\n"
+"  -L                     遍历每一个遇到的指向目录的符号链接\n"
+"  -P                     不遍历任何符号链接（默认）\n"
 "\n"
 
 #: src/chcon.c:517 src/chgrp.c:266 src/chown.c:267
@@ -1279,7 +1253,7 @@ msgstr "给出的安全环境说明冲突"
 #: src/mv.c:99 src/pwd.c:276 src/rm.c:348 src/touch.c:348
 #, c-format
 msgid "failed to get attributes of %s"
-msgstr "无法取得%s 的属性"
+msgstr "无法取得 %s 的属性"
 
 #: src/chgrp.c:93
 #, c-format
@@ -1311,6 +1285,9 @@ msgid ""
 "  -f, --silent, --quiet  suppress most error messages\n"
 "  -v, --verbose          output a diagnostic for every file processed\n"
 msgstr ""
+"  -c, --changes          类似 verbose 选项，但仅在做出修改时进行报告\n"
+"  -f, --silent, --quiet  不显示大多数错误消息\n"
+"  -v, --verbose          输出各个处理的文件的诊断信息\n"
 
 #: src/chgrp.c:130 src/chown.c:100
 msgid ""
@@ -1325,6 +1302,8 @@ msgid ""
 "      --reference=RFILE  use RFILE's group rather than specifying a\n"
 "                         GROUP value\n"
 msgstr ""
+"      --reference=参考文件  使用<参考文件>的属组信息而非指定一个\n"
+"                            <用户组>的值\n"
 
 #: src/chgrp.c:160
 #, c-format
@@ -1347,39 +1326,37 @@ msgstr "检查 %s 的新属性"
 #: src/chmod.c:151 src/chown-core.c:146
 #, c-format
 msgid "neither symbolic link %s nor referent has been changed\n"
-msgstr "符号链接%s 和该链接所指示的对象都未被更改\n"
+msgstr "符号链接 %s 和该链接所指示的对象都未被更改\n"
 
 #: src/chmod.c:165
-#, fuzzy, c-format
-#| msgid "mode of %s changed to %04lo (%s)\n"
+#, c-format
 msgid "mode of %s changed from %04lo (%s) to %04lo (%s)\n"
-msgstr "%s 的权限模式已更改为%04lo (%s)\n"
+msgstr "%s 的权限模式已由 %04lo (%s) 更改为 %04lo (%s)\n"
 
 #: src/chmod.c:168
-#, fuzzy, c-format
-#| msgid "failed to change mode of %s to %04lo (%s)\n"
+#, c-format
 msgid "failed to change mode of %s from %04lo (%s) to %04lo (%s)\n"
-msgstr "无法将%s 的权限模式更改为%04lo (%s)\n"
+msgstr "将 %s 的权限模式从 %04lo (%s) 更改为 %04lo (%s) 时失败\n"
 
 #: src/chmod.c:171
 #, c-format
 msgid "mode of %s retained as %04lo (%s)\n"
-msgstr "%s 的权限模式保留为%04lo (%s)\n"
+msgstr "%s 的权限模式保留为 %04lo (%s)\n"
 
 #: src/chmod.c:238
 #, c-format
 msgid "cannot operate on dangling symlink %s"
-msgstr "无法创建符号链接%s"
+msgstr "无法对已断开的符号链接 %s 进行操作"
 
 #: src/chmod.c:278
 #, c-format
 msgid "changing permissions of %s"
-msgstr "更改%s 的权限"
+msgstr "正在更改 %s 的权限"
 
 #: src/chmod.c:314
 #, c-format
 msgid "%s: new permissions are %s, not %s"
-msgstr "%s：新的权限为%s，而非%s"
+msgstr "%s：新的权限为 %s，而非 %s"
 
 #: src/chmod.c:374
 #, c-format
@@ -10044,8 +10021,7 @@ msgid "%s: invalid field specification %s"
 msgstr "%s：无效的区块规格%s"
 
 #: src/sort.c:4052
-#, fuzzy, c-format
-#| msgid "options `-%s' are incompatible"
+#, c-format
 msgid "options '-%s' are incompatible"
 msgstr "选项\"-%s\"不兼容"
 
@@ -10055,14 +10031,10 @@ msgid "%s: invalid count at start of %s"
 msgstr "%s：在%s 处的计数无效"
 
 #: src/sort.c:4361
-#, fuzzy
-#| msgid "invalid number after `-'"
 msgid "invalid number after '-'"
 msgstr "在\"-\"后的编号无效"
 
 #: src/sort.c:4368 src/sort.c:4454 src/sort.c:4482
-#, fuzzy
-#| msgid "invalid number after `.'"
 msgid "invalid number after '.'"
 msgstr "在\".\"后的编号无效"
 
@@ -10087,8 +10059,6 @@ msgid "character offset is zero"
 msgstr "字符偏移量为零"
 
 #: src/sort.c:4473
-#, fuzzy
-#| msgid "invalid number after `,'"
 msgid "invalid number after ','"
 msgstr "在\",\"后的编号无效"
 
@@ -13040,20 +13010,13 @@ msgid "Mark Kettenis"
 msgstr "Mark Kettenis"
 
 #: src/tsort.c:88
-#, fuzzy, c-format
-#| msgid ""
-#| "Usage: %s [OPTION] [FILE]\n"
-#| "Write totally ordered list consistent with the partial ordering in FILE.\n"
-#| "With no FILE, or when FILE is -, read standard input.\n"
-#| "\n"
+#, c-format
 msgid ""
 "Usage: %s [OPTION] [FILE]\n"
 "Write totally ordered list consistent with the partial ordering in FILE.\n"
 msgstr ""
 "用法：%s [选项] [文件]\n"
-"对不完全排序的文件实行完整的列表排序。\n"
-"如果不指定文件，或者文件为\"-\"，则从标准输入读取数据。\n"
-"\n"
+"对不完全排序的给定<文件>实行完整的列表排序。\n"
 
 #: src/tsort.c:95 src/uptime.c:218
 #, c-format

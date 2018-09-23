@@ -3,12 +3,13 @@
 # This file is distributed under the same license as the findutils package.
 # Wang Li <charles@linux.net.cn>, 2002.
 # Ji ZhengYu <zhengyuji@gmail.com>, 2008, 2009, 2010, 2011, 2012, 2013
+# Boyuan Yang <073plan@gmail.com>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: findutils-4.5.11\n"
+"Project-Id-Version: findutils-4.5.15\n"
 "Report-Msgid-Bugs-To: bug-findutils@gnu.org\n"
 "POT-Creation-Date: 2015-12-18 14:45+0000\n"
-"PO-Revision-Date: 2013-03-08 12:27+0800\n"
+"PO-Revision-Date: 2018-09-23 19:14-0400\n"
 "Last-Translator: Ji ZhengYu <zhengyuji@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -17,6 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: find/exec.c:136
 #, c-format
@@ -29,10 +31,9 @@ msgid "Cannot close standard input"
 msgstr "无法关闭标准输入"
 
 #: find/exec.c:285
-#, fuzzy, c-format
-#| msgid "Failed to change directory"
+#, c-format
 msgid "Failed to change directory: %s"
-msgstr "无法更改目录"
+msgstr "更改目录失败：%s"
 
 #: find/exec.c:312 xargs/xargs.c:1241
 #, c-format
@@ -50,17 +51,15 @@ msgid "%s terminated by signal %d"
 msgstr "%s 由于信号 %d 而终止"
 
 #: find/find.c:203 find/ftsfind.c:677
-#, fuzzy, c-format
-#| msgid "Failed initialise shared-file hash table"
+#, c-format
 msgid "Failed to initialize shared-file hash table"
-msgstr "无法初始化共享文件哈希表"
+msgstr "初始化共享文件哈希表失败"
 
 #: find/find.c:219 find/ftsfind.c:693 locate/bigram.c:105 locate/code.c:174
 #: locate/frcode.c:233 locate/locate.c:1581 xargs/xargs.c:401
-#, fuzzy, c-format
-#| msgid "sanity check of the fnmatch() library function failed."
+#, c-format
 msgid "The atexit library function failed"
-msgstr "fnmatch() 库函数的健全性检测失败了。"
+msgstr "atexit() 库函数失败"
 
 #: find/find.c:263
 #, c-format
@@ -229,19 +228,13 @@ msgstr ""
 "      -links N -lname 匹配模式 -mmin N -mtime N -name 匹配模式 -newer 文件"
 
 #: find/parser.c:1239
-#, fuzzy
-#| msgid ""
-#| "      -nouser -nogroup -path PATTERN -perm [+-]MODE -regex PATTERN\n"
-#| "      -readable -writable -executable\n"
-#| "      -wholename PATTERN -size N[bcwkMG] -true -type [bcdpflsD] -uid N\n"
-#| "      -used N -user NAME -xtype [bcdpfls]"
 msgid ""
 "      -nouser -nogroup -path PATTERN -perm [-/]MODE -regex PATTERN\n"
 "      -readable -writable -executable\n"
 "      -wholename PATTERN -size N[bcwkMG] -true -type [bcdpflsD] -uid N\n"
 "      -used N -user NAME -xtype [bcdpfls]"
 msgstr ""
-"      -nouser -nogroup -path 匹配模式 -perm [+-]访问模式 -regex 匹配模式\n"
+"      -nouser -nogroup -path 匹配模式 -perm [-/]访问模式 -regex 匹配模式\n"
 "      -readable -writable -executable\n"
 "      -wholename 匹配模式 -size N[bcwkMG] -true -type [bcdpflsD] -uid N\n"
 "      -used N -user 用户名 -xtype [bcdpfls]"
@@ -373,27 +366,27 @@ msgstr "-type 的参数应当仅包含一个字母"
 #: find/parser.c:2746
 #, c-format
 msgid "-type %c is not supported because symbolic links are not supported on the platform find was compiled on."
-msgstr ""
+msgstr "-type %c 不受支持，因 find 编译时所用平台不支持符号链接。"
 
 #: find/parser.c:2757
 #, c-format
 msgid "-type %c is not supported because FIFOs are not supported on the platform find was compiled on."
-msgstr ""
+msgstr "-type %c 不受支持，因 find 编译时所用平台不支持 FIFO。"
 
 #: find/parser.c:2768
 #, c-format
 msgid "-type %c is not supported because named sockets are not supported on the platform find was compiled on."
-msgstr ""
+msgstr "-type %c 不受支持，因 find 编译时所用平台不支持命名套接字。"
 
 #: find/parser.c:2779
 #, c-format
 msgid "-type %c is not supported because Solaris doors are not supported on the platform find was compiled on."
-msgstr ""
+msgstr "-type %c 不受支持，因 find 编译时所用平台不支持 Solaris 门（door）。"
 
 #: find/parser.c:2786
 #, c-format
 msgid "Unknown argument to -type: %c"
-msgstr "-type 的参数未知: %c"
+msgstr "-type 的参数未知：%c"
 
 #: find/parser.c:2860
 #, c-format
@@ -459,25 +452,24 @@ msgid "< %s ... %s > ? "
 msgstr "< %s ... %s > ? "
 
 #: find/pred.c:768
-#, fuzzy, c-format
-#| msgid "Failed to write to standard output"
+#, c-format
 msgid "Failed to write prompt for -ok"
-msgstr "无法写入标准输出"
+msgstr "无法为 -ok 写入提示符"
 
 #: find/pred.c:1192 find/print.c:1239
 #, c-format
 msgid "getfilecon failed: %s"
-msgstr "getfilecon 失败: %s"
+msgstr "getfilecon 失败：%s"
 
 #: find/print.c:346
 #, c-format
 msgid "warning: escape `\\' followed by nothing at all"
-msgstr ""
+msgstr "警告：转义“\\”字符后未跟随任何其它字符"
 
 #: find/print.c:365
 #, c-format
 msgid "warning: unrecognized escape `\\%c'"
-msgstr "敬告：无法识别的转义字符“\\%c”"
+msgstr "警告：无法识别的转义字符“\\%c”"
 
 #: find/print.c:385
 #, c-format
@@ -610,16 +602,14 @@ msgid "] [path...] [expression]\n"
 msgstr "] [path...] [expression]\n"
 
 #: find/util.c:459
-#, fuzzy, c-format
-#| msgid "failed to save initial working directory"
+#, c-format
 msgid "failed to save initial working directory: %s"
-msgstr "无法保存起始工作目录"
+msgstr "无法保存初始工作目录：%s"
 
 #: find/util.c:476
-#, fuzzy, c-format
-#| msgid "failed to restore initial working directory"
+#, c-format
 msgid "failed to restore initial working directory: %s"
-msgstr "无法还原起始工作目录"
+msgstr "无法回复初始工作目录：%s"
 
 #: find/util.c:824
 #, c-format
@@ -644,7 +634,7 @@ msgstr "请在 -O 选项后面立即指定一个十进制数"
 #: find/util.c:873 find/util.c:878
 #, c-format
 msgid "Invalid optimisation level %s"
-msgstr "无效的优化级 %s"
+msgstr "无效的优化等级 %s"
 
 #: find/util.c:886
 #, c-format
@@ -684,83 +674,70 @@ msgid "Unknown system error"
 msgstr "未知的系统错误"
 
 #: gl/lib/getopt.c:547 gl/lib/getopt.c:576
-#, fuzzy, c-format
-#| msgid "%s: option `%s' is ambiguous\n"
+#, c-format
 msgid "%s: option '%s' is ambiguous; possibilities:"
-msgstr "%s：选项“%s”有歧义\n"
+msgstr "%s：选项“%s”有歧义；可能是："
 
 #: gl/lib/getopt.c:624 gl/lib/getopt.c:628
-#, fuzzy, c-format
-#| msgid "%s: option `--%s' doesn't allow an argument\n"
+#, c-format
 msgid "%s: option '--%s' doesn't allow an argument\n"
 msgstr "%s：选项“--%s”不接受参数\n"
 
 #: gl/lib/getopt.c:637 gl/lib/getopt.c:642
-#, fuzzy, c-format
-#| msgid "%s: option `%c%s' doesn't allow an argument\n"
+#, c-format
 msgid "%s: option '%c%s' doesn't allow an argument\n"
 msgstr "%s：选项“%c%s”不接受参数\n"
 
 #: gl/lib/getopt.c:685 gl/lib/getopt.c:704
-#, fuzzy, c-format
-#| msgid "%s: option `%s' requires an argument\n"
+#, c-format
 msgid "%s: option '--%s' requires an argument\n"
-msgstr "%s：选项“%s”需要一个参数\n"
+msgstr "%s：选项“--%s”需要一个参数\n"
 
 #: gl/lib/getopt.c:742 gl/lib/getopt.c:745
-#, fuzzy, c-format
-#| msgid "%s: unrecognized option `--%s'\n"
+#, c-format
 msgid "%s: unrecognized option '--%s'\n"
 msgstr "%s：无法识别的选项“--%s”\n"
 
 #: gl/lib/getopt.c:753 gl/lib/getopt.c:756
-#, fuzzy, c-format
-#| msgid "%s: unrecognized option `%c%s'\n"
+#, c-format
 msgid "%s: unrecognized option '%c%s'\n"
 msgstr "%s：无法识别的选项“%c%s”\n"
 
 #: gl/lib/getopt.c:805 gl/lib/getopt.c:808
-#, fuzzy, c-format
-#| msgid "%s: invalid option -- %c\n"
+#, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr "%s：非法选项 -- %c\n"
+msgstr "%s：无效选项 -- '%c'\n"
 
 #: gl/lib/getopt.c:861 gl/lib/getopt.c:878 gl/lib/getopt.c:1088
 #: gl/lib/getopt.c:1106
-#, fuzzy, c-format
-#| msgid "%s: option requires an argument -- %c\n"
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "%s：选项需要一个参数 -- %c\n"
+msgstr "%s：选项需要一个参数 -- '%c'\n"
 
 #: gl/lib/getopt.c:934 gl/lib/getopt.c:950
-#, fuzzy, c-format
-#| msgid "%s: option `-W %s' is ambiguous\n"
+#, c-format
 msgid "%s: option '-W %s' is ambiguous\n"
-msgstr "%s：选项“-W %s”有二义性\n"
+msgstr "%s：选项“-W %s”有歧义\n"
 
 #: gl/lib/getopt.c:974 gl/lib/getopt.c:992
-#, fuzzy, c-format
-#| msgid "%s: option `-W %s' doesn't allow an argument\n"
+#, c-format
 msgid "%s: option '-W %s' doesn't allow an argument\n"
 msgstr "%s：选项“-W %s”不接受参数\n"
 
 #: gl/lib/getopt.c:1013 gl/lib/getopt.c:1031
-#, fuzzy, c-format
-#| msgid "%s: option `%s' requires an argument\n"
+#, c-format
 msgid "%s: option '-W %s' requires an argument\n"
-msgstr "%s：选项“%s”需要一个参数\n"
+msgstr "%s：选项“-W %s”需要一个参数\n"
 
 #: gl/lib/openat-die.c:38
-#, fuzzy, c-format
-#| msgid "failed to restore initial working directory"
+#, c-format
 msgid "unable to record current working directory"
-msgstr "无法还原起始工作目录"
+msgstr "无法记录当前工作目录"
 
 #: gl/lib/openat-die.c:57
-#, fuzzy, c-format
-#| msgid "failed to restore initial working directory"
+#, c-format
 msgid "failed to return to initial working directory"
-msgstr "无法还原起始工作目录"
+msgstr "返回到初始工作目录失败"
 
 #. TRANSLATORS:
 #. Get translations for open and closing quotation marks.
@@ -814,19 +791,19 @@ msgstr "^[nN]"
 #: gl/lib/version-etc.c:74
 #, c-format
 msgid "Packaged by %s (%s)\n"
-msgstr ""
+msgstr "由 %s（%s）打包\n"
 
 #: gl/lib/version-etc.c:77
 #, c-format
 msgid "Packaged by %s\n"
-msgstr ""
+msgstr "由 %s 打包\n"
 
 #. TRANSLATORS: Translate "(C)" to the copyright symbol
 #. (C-in-a-circle), if this symbol is available in the user's
 #. locale.  Otherwise, do not translate "(C)"; leave it as-is.
 #: gl/lib/version-etc.c:84
 msgid "(C)"
-msgstr ""
+msgstr "©"
 
 #: gl/lib/version-etc.c:86
 msgid ""
@@ -836,24 +813,29 @@ msgid ""
 "There is NO WARRANTY, to the extent permitted by law.\n"
 "\n"
 msgstr ""
+"\n"
+"许可证 GPLv3+：GNU 通用公共许可证第 3 版或更新版本<https://gnu.org/licenses/gpl.html>。\n"
+"本软件是自由软件：您可以自由修改和重新发布它。\n"
+"在法律范围内没有其他保证。\n"
+"\n"
 
 #. TRANSLATORS: %s denotes an author name.
 #: gl/lib/version-etc.c:102
 #, c-format
 msgid "Written by %s.\n"
-msgstr ""
+msgstr "由 %s 编写。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #: gl/lib/version-etc.c:106
 #, c-format
 msgid "Written by %s and %s.\n"
-msgstr ""
+msgstr "由 %s 和 %s 编写。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #: gl/lib/version-etc.c:110
 #, c-format
 msgid "Written by %s, %s, and %s.\n"
-msgstr ""
+msgstr "由 %s、%s 和 %s 编写。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
@@ -864,6 +846,8 @@ msgid ""
 "Written by %s, %s, %s,\n"
 "and %s.\n"
 msgstr ""
+"由 %s、%s、%s 和\n"
+"%s 编写。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
@@ -874,6 +858,8 @@ msgid ""
 "Written by %s, %s, %s,\n"
 "%s, and %s.\n"
 msgstr ""
+"由 %s、%s、%s、\n"
+"%s 和 %s 编写。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
@@ -884,6 +870,8 @@ msgid ""
 "Written by %s, %s, %s,\n"
 "%s, %s, and %s.\n"
 msgstr ""
+"由 %s、%s、%s、\n"
+"%s、%s 和 %s 编写。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
@@ -894,6 +882,8 @@ msgid ""
 "Written by %s, %s, %s,\n"
 "%s, %s, %s, and %s.\n"
 msgstr ""
+"由 %s、%s、%s、\n"
+"%s、%s、%s 和 %s 编写。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
@@ -905,6 +895,9 @@ msgid ""
 "%s, %s, %s, %s,\n"
 "and %s.\n"
 msgstr ""
+"由 %s、%s、%s、\n"
+"%s、%s、%s、%s 和\n"
+"%s 编写。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
@@ -916,6 +909,9 @@ msgid ""
 "%s, %s, %s, %s,\n"
 "%s, and %s.\n"
 msgstr ""
+"由%s、%s、%s、\n"
+"%s、%s、%s、%s、\n"
+"%s 和 %s 编写。\n"
 
 #. TRANSLATORS: Each %s denotes an author name.
 #. You can use line breaks, estimating that each author name occupies
@@ -927,6 +923,9 @@ msgid ""
 "%s, %s, %s, %s,\n"
 "%s, %s, and others.\n"
 msgstr ""
+"由%s、%s、%s、\n"
+"%s、%s、%s、%s、\n"
+"%s、%s 和其他人编写。\n"
 
 #. TRANSLATORS: The placeholder indicates the bug-reporting address
 #. for this package.  Please add _another line_ saying
@@ -938,45 +937,44 @@ msgid ""
 "\n"
 "Report bugs to: %s\n"
 msgstr ""
+"\n"
+"请向 <%s> 报告软件错误。请向 <i18n-zh@googlegroups.com> 报告翻译错误。\n"
 
 #: gl/lib/version-etc.c:247
 #, c-format
 msgid "Report %s bugs to: %s\n"
-msgstr ""
+msgstr "请向 %2$s 报告 %1$s 的错误\n"
 
 #: gl/lib/version-etc.c:251
 #, c-format
 msgid "%s home page: <%s>\n"
-msgstr ""
+msgstr "%s 的主页：<%s>\n"
 
 #: gl/lib/version-etc.c:253
 #, c-format
 msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
-msgstr ""
+msgstr "%s 项目主页：<https://www.gnu.org/software/%s/>\n"
 
 #: gl/lib/version-etc.c:256
 msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
-msgstr ""
+msgstr "GNU 软件一般性帮助：<https://www.gnu.org/gethelp/>\n"
 
 #: gl/lib/xalloc-die.c:34
 msgid "memory exhausted"
 msgstr "内存耗尽"
 
 #: gl/lib/xstrtol-error.c:63
-#, fuzzy, c-format
-#| msgid "invalid %s%s argument `%s'"
+#, c-format
 msgid "invalid %s%s argument '%s'"
 msgstr "无效的 %s%s 的参数“%s”"
 
 #: gl/lib/xstrtol-error.c:68
-#, fuzzy, c-format
-#| msgid "invalid suffix in %s%s argument `%s'"
+#, c-format
 msgid "invalid suffix in %s%s argument '%s'"
 msgstr "%s%s 的参数“%s”有无效后缀"
 
 #: gl/lib/xstrtol-error.c:72
-#, fuzzy, c-format
-#| msgid "%s%s argument `%s' too large"
+#, c-format
 msgid "%s%s argument '%s' too large"
 msgstr "%s%s 的参数“%s”过长"
 
@@ -1023,10 +1021,9 @@ msgid "Kevin Dalley"
 msgstr "Kevin Dalley"
 
 #: lib/listfile.c:452
-#, fuzzy, c-format
-#| msgid "Failed to write to standard output"
+#, c-format
 msgid "Failed to write output (at stage %d)"
-msgstr "无法写入标准输出"
+msgstr "无法写入输出（在第 %d 步中）"
 
 #: lib/regextype.c:110
 #, c-format
@@ -1118,7 +1115,7 @@ msgstr "locate 数据库 %s 损坏或无效"
 #: locate/locate.c:865
 #, c-format
 msgid "Database was last modified at %s.%09ld"
-msgstr ""
+msgstr "数据库最近一次修改时间为 %s.%09ld"
 
 #: locate/locate.c:873
 #, c-format
@@ -1161,7 +1158,7 @@ msgstr "某些文件名可能被过滤掉了，因此我们无法计算压缩率
 #: locate/locate.c:913
 #, c-format
 msgid "Compression ratio %4.2f%% (higher is better)\n"
-msgstr "压缩率 %4.2f%% (越高越好)\n"
+msgstr "压缩率 %4.2f%%（越高越好）\n"
 
 #: locate/locate.c:920
 #, c-format
@@ -1254,7 +1251,7 @@ msgstr "无法放弃 setgid 特权"
 #: locate/locate.c:1778
 #, c-format
 msgid "warning: the locate database can only be read from stdin once."
-msgstr "警告: locate 数据库仅能从标准输入读取一次。"
+msgstr "警告：locate 数据库仅能从标准输入读取一次。"
 
 #: locate/locate.c:1851
 #, c-format
@@ -1329,7 +1326,7 @@ msgstr "无法撤消环境变量 %s"
 #: xargs/xargs.c:641
 #, c-format
 msgid "warning: the -E option has no effect if -0 or -d is used.\n"
-msgstr ""
+msgstr "警告：-E 选项在使用了 -0 或 -d 选项时不生效。\n"
 
 #: xargs/xargs.c:663
 #, c-format
@@ -1374,7 +1371,7 @@ msgstr "我们实际能用的命令缓冲区的大小: %<PRIuMAX>\n"
 #: xargs/xargs.c:719
 #, c-format
 msgid "Maximum parallelism (--max-procs must be no greater): %<PRIuMAX>\n"
-msgstr ""
+msgstr "最大并行数（--max-procs 不得大于该值）：%<PRIuMAX>\n"
 
 #: xargs/xargs.c:725
 #, c-format
@@ -1414,8 +1411,7 @@ msgid "argument line too long"
 msgstr "参数行过长"
 
 #: xargs/xargs.c:1068 xargs/xargs.c:1085
-#, fuzzy, c-format
-#| msgid "Failed to write to standard output"
+#, c-format
 msgid "Failed to write to stderr"
 msgstr "无法写入标准输出"
 
@@ -1425,10 +1421,9 @@ msgid "failed to open /dev/tty for reading"
 msgstr "无法打开 /dev/tty 用于读取"
 
 #: xargs/xargs.c:1091
-#, fuzzy, c-format
-#| msgid "Failed to write to standard output"
+#, c-format
 msgid "Failed to read from stdin"
-msgstr "无法写入标准输出"
+msgstr "无法从标准输入读取"
 
 #: xargs/xargs.c:1128
 #, c-format
@@ -1446,16 +1441,14 @@ msgid "could not create pipe before fork"
 msgstr "无法在派生子进程之前创建管道"
 
 #: xargs/xargs.c:1301
-#, fuzzy, c-format
-#| msgid "errno-buffer read failed in xargs_do_exec (this is probably a bug, please report it)"
+#, c-format
 msgid "errno-buffer safe_read failed in xargs_do_exec (this is probably a bug, please report it)"
-msgstr "xargs_do_exec 中的 errno-buffer 读取失败(这可能是个 bug，请报告给我们)"
+msgstr "xargs_do_exec 中的 errno-buffer safe_read 失败（这可能是个 bug，请报告给我们）"
 
 #: xargs/xargs.c:1354
-#, fuzzy, c-format
-#| msgid "read returned unexpected value %d; this is probably a bug, please report it"
+#, c-format
 msgid "read returned unexpected value %zu; this is probably a bug, please report it"
-msgstr "读取操作返回的是非预期值 %d；这可能是个 bug，请报告给我们"
+msgstr "读取操作返回的是非预期值 %zu；这可能是个 bug，请报告给我们"
 
 #: xargs/xargs.c:1447
 #, c-format
@@ -1490,36 +1483,29 @@ msgstr "%s：选项 -%c 的数值无效\n"
 #: xargs/xargs.c:1597
 #, c-format
 msgid "%s: value for -%c option should be >= %ld\n"
-msgstr "%s: 选项 -%c 的值必须 >= %ld\n"
+msgstr "%s: 选项 -%c 的值应当 >= %ld\n"
 
 #: xargs/xargs.c:1611
-#, fuzzy, c-format
-#| msgid "%s: value for -%c option should be < %ld\n"
+#, c-format
 msgid "%s: value for -%c option should be <= %ld\n"
-msgstr "%s: 选项 -%c 的值必须 < %ld\n"
+msgstr "%s：选项 -%c 的值应当 <= %ld\n"
 
 #: xargs/xargs.c:1630
 #, c-format
 msgid "Usage: %s [OPTION]... COMMAND [INITIAL-ARGS]...\n"
-msgstr ""
+msgstr "用法：%s [选项]... 命令 [初始参数]...\n"
 
 #: xargs/xargs.c:1635
-#, fuzzy
-#| msgid ""
-#| "Usage: %s [OPTION]... COMMAND INITIAL-ARGS...\n"
-#| "Run COMMAND with arguments INITIAL-ARGS and more arguments read from input.\n"
 msgid ""
 "Run COMMAND with arguments INITIAL-ARGS and more arguments read from input.\n"
 "\n"
-msgstr ""
-"用法: %s [选项]... COMMAND INITIAL-ARGS...\n"
-"以 INITIAL-ARGS及更多来自控制台的参数来运行 COMMAND。\n"
+msgstr "以所给<初始选项>和其它更多来自标准输入的参数运行指定<命令>。\n"
 
 #: xargs/xargs.c:1637
 msgid ""
 "Mandatory and optional arguments to long options are also\n"
 "mandatory or optional for the corresponding short option.\n"
-msgstr ""
+msgstr "长选项的必需和可选参数对相应的短选项同样为必需或可选。\n"
 
 #: xargs/xargs.c:1639
 msgid ""
@@ -1527,10 +1513,13 @@ msgid ""
 "                                 disables quote and backslash processing and\n"
 "                                 logical EOF processing\n"
 msgstr ""
+"  -0, --null                   各个项目由 null（空字符，不是空白字符）分隔；\n"
+"                                 同时停止对引用和反斜杠转义的处理及对逻辑 EOF\n"
+"                                 的处理\n"
 
 #: xargs/xargs.c:1642
 msgid "  -a, --arg-file=FILE          read arguments from FILE, not standard input\n"
-msgstr ""
+msgstr "  -a, --arg-file=文件          从指定<文件>读取参数，不使用标准输入\n"
 
 #: xargs/xargs.c:1643
 msgid ""
@@ -1538,6 +1527,9 @@ msgid ""
 "                                 not by whitespace; disables quote and backslash\n"
 "                                 processing and logical EOF processing\n"
 msgstr ""
+"  -d, --delimiter=分隔用字符   输入流的各个项目使用指定<分隔用字符>进行分隔，\n"
+"                                 不使用空白字符；同时停止对引用和反斜杠转义的\n"
+"                                 处理及对逻辑 EOF 的处理\n"
 
 #: xargs/xargs.c:1646
 msgid ""
@@ -1545,16 +1537,21 @@ msgid ""
 "                                 of input, the rest of the input is ignored\n"
 "                                 (ignored if -0 or -d was specified)\n"
 msgstr ""
+"  -E 终止符                    设置逻辑 EOF（逻辑文件末尾）字符串；如果<终止符>\n"
+"                                 作为单独一行输入，所有剩余的输入内容将被忽略\n"
+"                                 （若同时使用了 -0 或 -d 选项，则该选项失效）\n"
 
 #: xargs/xargs.c:1649
 msgid ""
 "  -e, --eof[=END]              equivalent to -E END if END is specified;\n"
 "                                 otherwise, there is no end-of-file string\n"
 msgstr ""
+"  -e, --eof[=终止符]           在指定<终止符>的情况下与 -E <终止符> 等效；\n"
+"                                 否则，视为文件末尾终止字符串不存在\n"
 
 #: xargs/xargs.c:1651
 msgid "  -I R                         same as --replace=R\n"
-msgstr ""
+msgstr "  -I R                         和 --replace=R 相同\n"
 
 #: xargs/xargs.c:1652
 msgid ""
@@ -1562,34 +1559,38 @@ msgid ""
 "                                 from standard input; if R is unspecified,\n"
 "                                 assume {}\n"
 msgstr ""
+"  -i, --replace[=R]            将<初始参数>中的 R 替换为从标准输入读取的\n"
+"                                 名称；如果未指定 R，则假定其为{}\n"
 
 #: xargs/xargs.c:1655
 msgid ""
 "  -L, --max-lines=MAX-LINES    use at most MAX-LINES non-blank input lines per\n"
 "                                 command line\n"
-msgstr ""
+msgstr "  -L, --max-lines=最大行数     每个命令行使用最多<最大行数>行的非空输入行\n"
 
 #: xargs/xargs.c:1657
 msgid ""
 "  -l[MAX-LINES]                similar to -L but defaults to at most one non-\n"
 "                                 blank input line if MAX-LINES is not specified\n"
 msgstr ""
+"  -l[最大行数]                 类似 -L，但在没有给出<最大行数>信息时默认为接受\n"
+"                                 最多一行非空输入行\n"
 
 #: xargs/xargs.c:1659
 msgid "  -n, --max-args=MAX-ARGS      use at most MAX-ARGS arguments per command line\n"
-msgstr ""
+msgstr "  -n, --max-args=最大参数数量  设置每个命令行可使用的<最大参数数量>\n"
 
 #: xargs/xargs.c:1660
 msgid "  -P, --max-procs=MAX-PROCS    run at most MAX-PROCS processes at a time\n"
-msgstr ""
+msgstr "  -P, --max-procs=MAX-PROCS    同时运行至多<MAX-PROCS>个进程\n"
 
 #: xargs/xargs.c:1661
 msgid "  -p, --interactive            prompt before running commands\n"
-msgstr ""
+msgstr "  -p, --interactive            运行命令前提示\n"
 
 #: xargs/xargs.c:1662
 msgid "      --process-slot-var=VAR   set environment variable VAR in child processes\n"
-msgstr ""
+msgstr "      --process-slot-var=VAR   在子进程中设置环境变量<VAR>\n"
 
 #: xargs/xargs.c:1663
 msgid ""
@@ -1597,30 +1598,32 @@ msgid ""
 "                                 if this option is not given, COMMAND will be\n"
 "                                 run at least once\n"
 msgstr ""
+"  -r, --no-run-if-empty        如果没有指定任何参数，则不运行指定的<命令>；\n"
+"                                 如果未给出该选项，指定的<命令>将至少运行一次\n"
 
 #: xargs/xargs.c:1666
 msgid "  -s, --max-chars=MAX-CHARS    limit length of command line to MAX-CHARS\n"
-msgstr ""
+msgstr "  -s, --max-chars=最大字符数   限制命令行长度的<最大字符数>\n"
 
 #: xargs/xargs.c:1667
 msgid "      --show-limits            show limits on command-line length\n"
-msgstr ""
+msgstr "      --show-limits            显示命令行长度的限制\n"
 
 #: xargs/xargs.c:1668
 msgid "  -t, --verbose                print commands before executing them\n"
-msgstr ""
+msgstr "  -t, --verbose                执行命令前输出命令内容\n"
 
 #: xargs/xargs.c:1669
 msgid "  -x, --exit                   exit if the size (see -s) is exceeded\n"
-msgstr ""
+msgstr "  -x, --exit                   如果大小（见 -s）超出限制则退出\n"
 
 #: xargs/xargs.c:1671
 msgid "      --help                   display this help and exit\n"
-msgstr ""
+msgstr "      --help                   显示此帮助信息并退出\n"
 
 #: xargs/xargs.c:1672
 msgid "      --version                output version information and exit\n"
-msgstr ""
+msgstr "      --version                输出版本信息并退出\n"
 
 #~ msgid "Mode %s is not valid when POSIXLY_CORRECT is on."
 #~ msgstr "当开启 POSIXLY_CORRECT 时模式 %s 无效。"

@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the libiconv package.
 # Wang Jian <lark@linux.net.cn>, 2003
 # Ji ZhengYu <zhengyuji@gmail.com>, 2008
+# Boyuan Yang <073plan@gmail.com>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: libiconv 1.12\n"
+"Project-Id-Version: libiconv 1.15-pre1\n"
 "Report-Msgid-Bugs-To: bug-gnu-libiconv@gnu.org\n"
 "POT-Creation-Date: 2016-12-12 09:35+0100\n"
-"PO-Revision-Date: 2008-11-12 09:51+0800\n"
-"Last-Translator: Ji ZhengYu <zhengyuji@gmail.com>\n"
+"PO-Revision-Date: 2018-09-24 17:23-0400\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -17,6 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #. TRANSLATORS: The first line of the short usage message.
 #: src/iconv.c:104
@@ -30,8 +32,7 @@ msgid "or:    iconv -l"
 msgstr "或：  iconv -l"
 
 #: src/iconv.c:110
-#, fuzzy, c-format
-#| msgid "Try `%s --help' for more information.\n"
+#, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "尝试‘%s --help’以获得更多信息。\n"
 
@@ -149,29 +150,25 @@ msgstr "  --version                   显示版本信息并退出\n"
 #: src/iconv.c:185
 msgid "Report bugs to <bug-gnu-libiconv@gnu.org>.\n"
 msgstr ""
-"请发送错误报告至 <bug-gnu-libiconv@gnu.org>。\n"
-"请将翻译错误发送至 <translation-team-zh-cn@lists.sourceforge.net>。\n"
+"请向 <%s> 报告软件错误。\n"
+"请向 <i18n-zh@googlegroups.com> 报告翻译错误。\n"
 
 #: src/iconv.c:196
-#, fuzzy, no-wrap
-#| msgid ""
-#| "License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl.html>\n"
-#| "This is free software: you are free to change and redistribute it.\n"
-#| "There is NO WARRANTY, to the extent permitted by law.\n"
+#, no-wrap
 msgid ""
 "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\n"
 "This is free software: you are free to change and redistribute it.\n"
 "There is NO WARRANTY, to the extent permitted by law.\n"
 msgstr ""
-"GPLv2+ 版权协议: GNU GPL 版本 2 或更高版本 <http://gnu.org/licenses/gpl.html>\n"
-"此软件为自由软件: 您可自由得更改并重新分布它。\n"
+"GPLv3+ 许可证：GNU GPL 版本 3 或更高版本 <https://gnu.org/licenses/gpl.html>\n"
+"此软件为自由软件: 您可对其自由修改并重新发布。\n"
 "在法律所允许的范围内，没有任何担保。\n"
 
 #. TRANSLATORS: The %s placeholder expands to an author's name.
 #: src/iconv.c:202
 #, c-format
 msgid "Written by %s.\n"
-msgstr "作者 %s。\n"
+msgstr "由 %s 编写。\n"
 
 #. TRANSLATORS: An error message.
 #. The %s placeholder expands to a command-line option.

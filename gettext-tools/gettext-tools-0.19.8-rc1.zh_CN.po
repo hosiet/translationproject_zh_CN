@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the gettext package.
 # Funda Wang <fundawang@linux.net.cn>, 2004.
 # Ji ZhengYu <zhengyuji@gmail.com>, 2015.
+# Boyuan Yang <073plan@gmail.com>, 2018.
 msgid ""
 msgstr ""
-"Project-Id-Version: gettext-tools 0.19.4.73\n"
+"Project-Id-Version: gettext-tools 0.19.8-rc1\n"
 "Report-Msgid-Bugs-To: bug-gnu-gettext@gnu.org\n"
 "POT-Creation-Date: 2016-06-01 17:28+0900\n"
-"PO-Revision-Date: 2015-09-01 16:16中国标准时间\n"
-"Last-Translator: Ji ZhengYu <zhengyuji@gmail.com>\n"
+"PO-Revision-Date: 2018-09-24 20:24-0400\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
@@ -17,6 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: gnulib-lib/argmatch.c:133
 #, c-format
@@ -97,12 +99,12 @@ msgstr "fdopen() 失败"
 #: gnulib-lib/csharpcomp.c:571
 #, c-format
 msgid "C# compiler not found, try installing pnet"
-msgstr "未找到 C# 编译器，试着安装 pnet"
+msgstr "未找到 C# 编译器，尝试安装 pnet"
 
 #: gnulib-lib/csharpexec.c:343
 #, c-format
 msgid "C# virtual machine not found, try installing pnet"
-msgstr "未找到 C# 虚拟机，试着安装 pnet"
+msgstr "未找到 C# 虚拟机，尝试安装 pnet"
 
 #: gnulib-lib/error.c:191
 msgid "Unknown system error"
@@ -319,18 +321,17 @@ msgstr "%s 子进程收到致命信号 %d"
 #: src/cldr-plurals.c:69
 #, c-format
 msgid "The root element must be <%s>"
-msgstr ""
+msgstr "根元素必须为 <%s>"
 
 #: src/cldr-plurals.c:83
-#, fuzzy, c-format
-#| msgid "The root element <%s> is not allowed in a valid Glade file"
+#, c-format
 msgid "The element <%s> does not contain a <%s> element"
-msgstr "在有效的Glade 文件中根元素<%s> 不允许"
+msgstr "元素 <%s> 不含有 <%s> 元素"
 
 #: src/cldr-plurals.c:105 src/cldr-plurals.c:146
 #, c-format
 msgid "The element <%s> does not have attribute <%s>"
-msgstr ""
+msgstr "元素 <%s> 不含有 <%s> 属性"
 
 #: src/cldr-plurals.c:191 src/hostname.c:210 src/msgattrib.c:418
 #: src/msgcat.c:363 src/msgcmp.c:210 src/msgcomm.c:355 src/msgconv.c:304
@@ -343,10 +344,9 @@ msgid "Try '%s --help' for more information.\n"
 msgstr "试试“%s --help”查看帮助信息。\n"
 
 #: src/cldr-plurals.c:195
-#, fuzzy, c-format
-#| msgid "Usage: %s [OPTION] [FILE]...\n"
+#, c-format
 msgid "Usage: %s [OPTION...] [LOCALE RULES]...\n"
-msgstr "用法：%s [选项] [文件]...\n"
+msgstr "用法：%s [选项...] [LOCALE 规则]...\n"
 
 #: src/cldr-plurals.c:200
 #, c-format, no-wrap
@@ -357,6 +357,11 @@ msgid ""
 "LOCALE from RULES and print them in a form suitable for gettext use.\n"
 "If no argument is given, it reads CLDR plural rules from the standard input.\n"
 msgstr ""
+"提取或转换 Unicode CLDR 复数规则。\n"
+"\n"
+"如果同时指定了<LOCALE>和<规则>，程序将从给定<规则>中读取指定<LOCALE>的\n"
+"CLDR 复数规则，并将其输出为适合 gettext 使用的表格。\n"
+"如果没有给定参数，程序将从标准输入读取 CLDR 复数规则。\n"
 
 #: src/cldr-plurals.c:209 src/msgfmt.c:917 src/xgettext.c:1045
 #, c-format, no-wrap
@@ -368,10 +373,9 @@ msgstr ""
 "可选参数也是如此。\n"
 
 #: src/cldr-plurals.c:214
-#, fuzzy, c-format
-#| msgid "  -h, --help                  display this help and exit\n"
+#, c-format
 msgid "  -c, --cldr                  print plural rules in the CLDR format\n"
-msgstr "  -h, --help                  显示此帮助并退出\n"
+msgstr "  -c, --cldr                  以 CLDR 格式输出复数规则\n"
 
 #: src/cldr-plurals.c:216 src/hostname.c:233 src/msgattrib.c:537
 #: src/msgcat.c:471 src/msgcmp.c:261 src/msgcomm.c:457 src/msgconv.c:388
@@ -436,29 +440,27 @@ msgstr "由 %s 编写。\n"
 #. This is a proper name. See the gettext manual, section Names.
 #: src/cldr-plurals.c:295
 msgid "Daiki Ueno"
-msgstr ""
+msgstr "Daiki Ueno"
 
 #: src/cldr-plurals.c:315
-#, fuzzy, c-format
-#| msgid "%s exists but cannot read"
+#, c-format
 msgid "%s cannot be read"
-msgstr "%s 存在但不可读"
+msgstr "无法读取 %s"
 
 #: src/cldr-plurals.c:321
-#, fuzzy, c-format
-#| msgid "cannot remove temporary directory %s"
+#, c-format
 msgid "cannot extract rules for %s"
-msgstr "无法删除临时目录 %s"
+msgstr "无法为 %s 提取规则"
 
 #: src/cldr-plurals.c:331
 #, c-format
 msgid "cannot parse CLDR rule"
-msgstr ""
+msgstr "无法解析 CLDR 规则"
 
 #: src/cldr-plurals.c:366
 #, c-format
 msgid "extra operand %s"
-msgstr ""
+msgstr "额外的操作数 %s"
 
 #: src/file-list.c:54 src/msggrep.c:248 src/open-catalog.c:123
 #: src/read-mo.c:261 src/read-tcl.c:126 src/urlget.c:217
@@ -927,66 +929,60 @@ msgid "could not get host name"
 msgstr "无法获得主机名"
 
 #: src/its.c:319
-#, fuzzy, c-format
-#| msgid "at least two files must be specified"
+#, c-format
 msgid "selector is not specified"
-msgstr "需要至少指定两个文件"
+msgstr "未指定选择器"
 
 #: src/its.c:326 src/its.c:1550
-#, fuzzy, c-format
-#| msgid "cannot create pipe"
+#, c-format
 msgid "cannot create XPath context"
-msgstr "无法创建管道"
+msgstr "无法创建 XPath 上下文"
 
 #: src/its.c:344
 #, c-format
 msgid "cannot evaluate XPath expression: %s"
-msgstr ""
+msgstr "无法计算 XPath 表达式：%s"
 
 #: src/its.c:614
 #, c-format
 msgid "\"%s\" node does not contain \"%s\""
-msgstr ""
+msgstr "“%s”节点不含有“%s”"
 
 #: src/its.c:1001
-#, fuzzy, c-format
-#| msgid "invalid argument %s for %s"
+#, c-format
 msgid "invalid attribute value \"%s\" for \"%s\""
-msgstr "%2$s 的参数 %1$s 无效"
+msgstr "无效的属性值“%s”（用于“%s”）"
 
 #: src/its.c:1333
 #, c-format
 msgid "the root element is not \"rules\" under namespace %s"
-msgstr ""
+msgstr "根元素不是 %s 命名空间下的“规则”（“rules”）"
 
 #: src/its.c:1376 src/its.c:1402 src/its.c:1795 src/its.c:1914
 #: src/locating-rule.c:170
-#, fuzzy, c-format
-#| msgid "cannot create pipe"
+#, c-format
 msgid "cannot read %s: %s"
-msgstr "无法创建管道"
+msgstr "无法读取 %s：%s"
 
 #: src/its.c:1573
 #, c-format
 msgid "cannot evaluate XPath location path: %s"
-msgstr ""
+msgstr "无法计算 XPath 地址路径：%s"
 
 #: src/locating-rule.c:236
-#, fuzzy, c-format
-#| msgid "%s does not exist"
+#, c-format
 msgid "\"%s\" node does not have \"%s\""
-msgstr "%s 不存在"
+msgstr "“%s”节点不含有“%s”"
 
 #: src/locating-rule.c:307
-#, fuzzy, c-format
-#| msgid "cannot create output file \"%s\""
+#, c-format
 msgid "cannot read XML file %s"
-msgstr "无法创建输出文件“%s”"
+msgstr "无法读取 XML 文件 %s"
 
 #: src/locating-rule.c:319
 #, c-format
 msgid "the root element is not \"locatingRules\""
-msgstr ""
+msgstr "根元素不是“locatingRules”"
 
 #: src/msgattrib.c:377 src/msgconv.c:266 src/msgexec.c:155 src/msgfilter.c:197
 #: src/msggrep.c:441 src/msginit.c:198 src/msguniq.c:286
@@ -1002,7 +998,7 @@ msgstr "允许最多一个输入文件"
 #: src/xgettext.c:710 src/xgettext.c:734
 #, c-format
 msgid "%s and %s are mutually exclusive"
-msgstr "%s 和 %s 互相排斥"
+msgstr "%s 和 %s 互斥"
 
 #: src/msgattrib.c:422 src/msgconv.c:308 src/msggrep.c:517 src/msguniq.c:327
 #, c-format
@@ -1834,10 +1830,9 @@ msgid "%s is only valid with %s, %s or %s"
 msgstr "%s 只能配合 %s、%s 或 %s 一起使用才有效"
 
 #: src/msgfmt.c:713
-#, fuzzy, c-format
-#| msgid "cannot create output file \"%s\""
+#, c-format
 msgid "cannot locate ITS rules for %s"
-msgstr "无法创建输出文件“%s”"
+msgstr "无法定位 %s 的 ITS 规则"
 
 #. TRANSLATORS: The prefix before a statistics message.  The argument
 #. is a file name or a comma separated list of file names.
@@ -1922,10 +1917,9 @@ msgid "      --desktop               Desktop Entry mode: generate a .desktop fil
 msgstr "      --desktop               桌面访问模式: 生成 .desktop 文件\n"
 
 #: src/msgfmt.c:947
-#, fuzzy, c-format
-#| msgid "      --qt                    Qt mode: generate a Qt .qm file\n"
+#, c-format
 msgid "      --xml                   XML mode: generate XML file\n"
-msgstr "      --qt                    Qt 模式：生成 Qt .qm 文件\n"
+msgstr "      --xml                   XML 模式：生成 XML 文件\n"
 
 #: src/msgfmt.c:954
 #, c-format
@@ -2041,26 +2035,24 @@ msgstr ""
 "则输入文件从目录读取，而非命令行参数。\n"
 
 #: src/msgfmt.c:1014
-#, fuzzy, c-format
-#| msgid "Desktop Entry mode options:\n"
+#, c-format
 msgid "XML mode options:\n"
-msgstr "桌面访问模式选项:\n"
+msgstr "XML 模式选项：\n"
 
 #: src/msgfmt.c:1018
 #, c-format
 msgid "  -L, --language=NAME         recognise the specified XML language\n"
-msgstr ""
+msgstr "  -L, --language=NAME         识别指定的 XML 语言\n"
 
 #: src/msgfmt.c:1022
-#, fuzzy, c-format
-#| msgid "  --template=TEMPLATE         a .desktop file used as a template\n"
+#, c-format
 msgid "  --template=TEMPLATE         an XML file used as a template\n"
-msgstr "  --template=TEMPLATE         .desktop 文件用作模版\n"
+msgstr "  --template=TEMPLATE         将指定的 XML 文件用作模板\n"
 
 #: src/msgfmt.c:1038 src/xgettext.c:1086
 #, c-format
 msgid "Input file interpretation:\n"
-msgstr "输入文件的处理:\n"
+msgstr "输入文件的处理：\n"
 
 #: src/msgfmt.c:1040
 #, c-format
@@ -2658,7 +2650,7 @@ msgstr "头部缺少文件头“%s”\n"
 
 #: src/msgl-check.c:940
 msgid "ASCII ellipsis ('...') instead of Unicode"
-msgstr "ASCII 省略号('...')代替了Unicode "
+msgstr "ASCII 省略号（'...'）而非其 Unicode 版本"
 
 #: src/msgl-check.c:1013
 msgid "space before ellipsis found in user visible strings"
@@ -2673,10 +2665,9 @@ msgid "ASCII single quote used instead of Unicode"
 msgstr "ASCII 单引号代替了Unicode"
 
 #: src/msgl-check.c:1163
-#, fuzzy, c-format
-#| msgid "ASCII ellipsis ('...') instead of Unicode"
+#, c-format
 msgid "ASCII bullet ('%c') instead of Unicode"
-msgstr "ASCII 省略号('...')代替了Unicode "
+msgstr "ASCII 圆点（'%c'）而非其 Unicode 版本"
 
 #: src/msgl-iconv.c:65
 #, c-format
@@ -2988,7 +2979,7 @@ msgstr "安装 GNU libiconv，然后重新安装 GNU gettext 将修复此问题�
 
 #: src/po-charset.c:578 src/po-charset.c:616
 msgid "Continuing anyway, expect parse errors."
-msgstr "仍然继续，遇到处理错误。"
+msgstr "仍然继续，预期会出现解析错误。"
 
 #: src/po-charset.c:580
 msgid "Continuing anyway."
@@ -3105,25 +3096,20 @@ msgstr "这是第一次定义的位置"
 
 #: src/read-desktop.c:267
 msgid "unterminated group name"
-msgstr ""
+msgstr "未终止的组名称"
 
 #: src/read-desktop.c:286
-#, fuzzy
-#| msgid "warning: invalid Unicode character"
 msgid "invalid non-blank character"
-msgstr "警告：无效的 Unicode 字符"
+msgstr "无效的非空白字符"
 
 #: src/read-desktop.c:405
-#, fuzzy, c-format
-#| msgid "missing filter name"
+#, c-format
 msgid "missing '=' after \"%s\""
-msgstr "缺少过滤器名称"
+msgstr "“%s”后缺少“=”"
 
 #: src/read-desktop.c:468
-#, fuzzy
-#| msgid "invalid nplurals value"
 msgid "invalid non-blank line"
-msgstr "nplurals 值无效"
+msgstr "无效的非空白行"
 
 #: src/read-mo.c:107 src/read-mo.c:129 src/read-mo.c:167 src/read-mo.c:183
 #, c-format
@@ -3164,11 +3150,11 @@ msgstr "警告：未结束的关键字/值对"
 
 #: src/read-stringtable.c:940
 msgid "warning: syntax error, expected ';' after string"
-msgstr "警告：语法错误，字符串后期待“;”"
+msgstr "警告：语法错误，字符串后预期有“;”"
 
 #: src/read-stringtable.c:949
 msgid "warning: syntax error, expected '=' or ';' after string"
-msgstr "警告：语法错误，字符串后期待“=”或“;”"
+msgstr "警告：语法错误，字符串后预期有“=”或“;”"
 
 #: src/recode-sr-latin.c:117
 #, c-format
@@ -3507,12 +3493,12 @@ msgstr "%s:%d：警告：未结束的字符串常量"
 #: src/x-csharp.c:2019 src/x-java.c:1369
 #, c-format
 msgid "%s:%d: warning: ')' found where '}' was expected"
-msgstr "%s:%d：警告：期待“}”却发现了“)”"
+msgstr "%s:%d：警告：预期为“}”却得到了“)”"
 
 #: src/x-csharp.c:2053 src/x-java.c:1403
 #, c-format
 msgid "%s:%d: warning: '}' found where ')' was expected"
-msgstr "%s:%d：警告：期待“)”却发现了“}”"
+msgstr "%s:%d：警告：预期为“)”却得到了“}”"
 
 #: src/xgettext.c:580
 #, c-format
@@ -3542,17 +3528,17 @@ msgstr "没有指定关键字 xgettext 将无法工作"
 #: src/xgettext.c:855
 #, c-format
 msgid "warning: ITS rule file '%s' does not exist"
-msgstr ""
+msgstr "警告：ITS 规则文件“%s”不存在"
 
 #: src/xgettext.c:936
 #, c-format
 msgid "warning: ITS rule file '%s' does not exist; check your gettext installation"
-msgstr ""
+msgstr "警告：ITS 规则文件“%s”不存在；请检查您的 gettext 安装情况"
 
 #: src/xgettext.c:954
 #, c-format
 msgid "warning: file '%s' extension '%s' is unknown; will try C"
-msgstr "警告：文件“%s”扩展名“%s”未知; 将试试 C"
+msgstr "警告：文件“%s”扩展名“%s”未知; 将尝试 C"
 
 #: src/xgettext.c:1040
 #, c-format
@@ -3644,19 +3630,15 @@ msgstr ""
 "                              并放置所有注释块\n"
 
 #: src/xgettext.c:1105
-#, fuzzy, c-format
-#| msgid ""
-#| "      --check=NAME            perform syntax check on messages\n"
-#| "                                (ellipsis-unicode, space-ellipsis,\n"
-#| "                                 quote-unicode)\n"
+#, c-format
 msgid ""
 "      --check=NAME            perform syntax check on messages\n"
 "                                (ellipsis-unicode, space-ellipsis,\n"
 "                                 quote-unicode, bullet-unicode)\n"
 msgstr ""
 "      --check=NAME            对信息文本做语法检查\n"
-"                                (Unicode省略号ellipsis-unicode, 空格加省略号space-ellipsis,\n"
-"                                 Unicode引号quote-unicode)\n"
+"                                （Unicode省略号ellipsis-unicode、空格加省略号space-ellipsis、\n"
+"                                 Unicode引号quote-unicode、Unicode圆点bullet-unicode）\n"
 
 #: src/xgettext.c:1109
 #, c-format
@@ -3738,16 +3720,14 @@ msgid "                                (only languages C, C++, ObjectiveC)\n"
 msgstr "                                (仅支持 C, C++, ObjectiveC 语言)\n"
 
 #: src/xgettext.c:1143
-#, fuzzy, c-format
-#| msgid "  -f, --files-from=FILE       get list of input files from FILE\n"
+#, c-format
 msgid "      --its=FILE              apply ITS rules from FILE\n"
-msgstr "  -f, --files-from=文件       由<文件>读入输入文件的列表\n"
+msgstr "      --its=文件              读取指定<文件>并应用其中的 ITS 规则\n"
 
 #: src/xgettext.c:1145
-#, fuzzy, c-format
-#| msgid "                                (only language C++)\n"
+#, c-format
 msgid "                                (only XML based languages)\n"
-msgstr "                                (仅 C++ 语言)\n"
+msgstr "                                （仅支持基于 XML 的语言）\n"
 
 #: src/xgettext.c:1147
 #, c-format
@@ -3780,10 +3760,9 @@ msgid "      --properties-output     write out a Java .properties file\n"
 msgstr "      --properties-output     写出 Java .properties 文件\n"
 
 #: src/xgettext.c:1188
-#, fuzzy, c-format
-#| msgid "      --indent                indented output style\n"
+#, c-format
 msgid "      --itstool               write out itstool comments\n"
-msgstr "      --indent                缩进的输出风格\n"
+msgstr "      --itstool               输出 itstool 注释\n"
 
 #: src/xgettext.c:1201
 #, c-format
@@ -3986,12 +3965,12 @@ msgstr "%s:%d：警告：RegExp 正则表达式过早结束"
 #: src/x-javascript.c:1056
 #, c-format
 msgid "%s:%d: warning: %s is not allowed"
-msgstr "%s:%d：警告：不准用%s"
+msgstr "%s:%d：警告：不允许使用 %s"
 
 #: src/x-javascript.c:1070
 #, c-format
 msgid "%s:%d: warning: unterminated XML markup"
-msgstr "%s:%d：警告：未结束的XML 标记"
+msgstr "%s:%d：警告：未终止的 XML 标记"
 
 #: src/x-perl.c:308
 #, c-format
@@ -4104,7 +4083,7 @@ msgstr "%s:%d：无效的字符串定义"
 #: src/x-rst.c:172
 #, c-format
 msgid "%s:%d: missing number after #"
-msgstr "%s:%d：# 后面丢失数字"
+msgstr "%s:%d：# 后面缺失数字"
 
 #: src/x-rst.c:207
 #, c-format
@@ -4126,135 +4105,126 @@ msgid "<unnamed>"
 msgstr "<未命名>"
 
 #: libgettextpo/markup.c:366 libgettextpo/markup.c:449
-#, fuzzy
-#| msgid "invalid control sequence"
 msgid "invalid UTF-8 sequence"
-msgstr "无效的控制序列"
+msgstr "无效的 UTF-8 序列"
 
 #: libgettextpo/markup.c:377
-#, fuzzy, c-format
-#| msgid "not a valid Java class name: %s"
+#, c-format
 msgid "'%s' is not a valid name: %c"
-msgstr "不是有效的 Java 类名：%s"
+msgstr "“%s”不是有效的名称：%c"
 
 #: libgettextpo/markup.c:397
-#, fuzzy, c-format
-#| msgid "not a valid Java class name: %s"
+#, c-format
 msgid "'%s' is not a valid name: '%c'"
-msgstr "不是有效的 Java 类名：%s"
+msgstr "“%s”不是有效的名称：“%c”"
 
 #: libgettextpo/markup.c:523 libgettextpo/markup.c:534
 #: libgettextpo/markup.c:559
-#, fuzzy, c-format
-#| msgid "invalid control sequence"
+#, c-format
 msgid "invalid character reference: %s"
-msgstr "无效的控制序列"
+msgstr "无效的字符引用：%s"
 
 #: libgettextpo/markup.c:526
 msgid "not a valid number specification"
-msgstr ""
+msgstr "并非有效的数字规格"
 
 #: libgettextpo/markup.c:535 libgettextpo/markup.c:606
 msgid "no ending ';'"
-msgstr ""
+msgstr "没有结尾的“;”"
 
 #: libgettextpo/markup.c:560
 msgid "non-permitted character"
-msgstr ""
+msgstr "不允许的字符"
 
 #: libgettextpo/markup.c:599
 msgid "empty"
-msgstr ""
+msgstr "（空）"
 
 #: libgettextpo/markup.c:604
 msgid "unknown"
-msgstr ""
+msgstr "未知"
 
 #: libgettextpo/markup.c:608
-#, fuzzy, c-format
-#| msgid "invalid endianness: %s"
+#, c-format
 msgid "invalid entity reference: %s"
-msgstr "无效的 endianness：%s"
+msgstr "无效的实体引用：%s"
 
 #: libgettextpo/markup.c:959
 msgid "document must begin with an element"
-msgstr ""
+msgstr "文档必须以一个元素起始"
 
 #: libgettextpo/markup.c:994 libgettextpo/markup.c:1301
 #: libgettextpo/markup.c:1332
-#, fuzzy, c-format
-#| msgid "invalid argument %s for %s"
+#, c-format
 msgid "invalid character after '%s'"
-msgstr "%2$s 的参数 %1$s 无效"
+msgstr "“%s”后的无效字符"
 
 #: libgettextpo/markup.c:1031 libgettextpo/markup.c:1107
 #, c-format
 msgid "missing '%c'"
-msgstr ""
+msgstr "缺少“%c”"
 
 #: libgettextpo/markup.c:1140 libgettextpo/markup.c:1176
 #, c-format
 msgid "missing '%c' or '%c'"
-msgstr ""
+msgstr "缺少“%c”或“%c”"
 
 #: libgettextpo/markup.c:1333
 msgid "a close element name"
-msgstr ""
+msgstr "闭合元素名称"
 
 #: libgettextpo/markup.c:1339 libgettextpo/markup.c:1344
 msgid "element is closed"
-msgstr ""
+msgstr "元素已闭合"
 
 #: libgettextpo/markup.c:1475
 msgid "empty document"
-msgstr ""
+msgstr "空文档"
 
 #: libgettextpo/markup.c:1488
 msgid "after '<'"
-msgstr ""
+msgstr "在“<”之后"
 
 #: libgettextpo/markup.c:1495 libgettextpo/markup.c:1527
 msgid "elements still open"
-msgstr ""
+msgstr "元素未闭合"
 
 #: libgettextpo/markup.c:1500
 msgid "missing '>'"
-msgstr ""
+msgstr "缺少“>”"
 
 #: libgettextpo/markup.c:1504
 msgid "inside an element name"
-msgstr ""
+msgstr "在元素名中"
 
 #: libgettextpo/markup.c:1509
-#, fuzzy
-#| msgid "missing filter name"
 msgid "inside an attribute name"
-msgstr "缺少过滤器名称"
+msgstr "在属性名中"
 
 #: libgettextpo/markup.c:1513
 msgid "inside an open tag"
-msgstr ""
+msgstr "在未闭合标签中"
 
 #: libgettextpo/markup.c:1517
 msgid "after '='"
-msgstr ""
+msgstr "“=”后"
 
 #: libgettextpo/markup.c:1522
 msgid "inside an attribute value"
-msgstr ""
+msgstr "在属性值中"
 
 #: libgettextpo/markup.c:1533
 msgid "inside the close tag"
-msgstr ""
+msgstr "在闭合标签中"
 
 #: libgettextpo/markup.c:1537
 msgid "inside a comment or processing instruction"
-msgstr ""
+msgstr "在注释或处理指令中"
 
 #: libgettextpo/markup.c:1548
 #, c-format
 msgid "document ended unexpectedly: %s"
-msgstr ""
+msgstr "文档意外结束：%s"
 
 #~ msgid "Missing context for the string extracted from '%s' element"
 #~ msgstr "从元素“%s”中解开的字符串缺少上下文"

@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the gnubik package.
 # LI Daobing <lidaobing@gmail.com>, 2007.
 # Mingye Wang <arthur200126@gmail.com>, 2015.
+# Boyuan Yang <073plan@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnubik 2.4.2-pre1\n"
+"Project-Id-Version: gnubik 2.4.3\n"
 "Report-Msgid-Bugs-To: bug-gnubik@gnu.org\n"
 "POT-Creation-Date: 2015-04-10 18:32+0200\n"
-"PO-Revision-Date: 2015-08-28 15:22+0800\n"
-"Last-Translator: Mingye Wang <arthur200126@gmail.com>\n"
+"PO-Revision-Date: 2018-09-25 15:18-0400\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: src/colour-dialog.c:184
 msgid "Image Selector"
@@ -51,7 +52,7 @@ msgstr "选择图片文件"
 
 #: src/colour-dialog.c:325
 msgid "_Tiled"
-msgstr "排列 (_t)"
+msgstr "平铺 (_T)"
 
 #: src/colour-dialog.c:327
 msgid "Place a copy of the image on each block"
@@ -59,7 +60,7 @@ msgstr "在每个小块上放一份图片"
 
 #: src/colour-dialog.c:332
 msgid "_Mosaic"
-msgstr "马赛克 (_m)"
+msgstr "马赛克 (_M)"
 
 #: src/colour-dialog.c:336
 msgid "Place a copy of the image across the entire face of the cube"
@@ -67,7 +68,7 @@ msgstr "将图片放在魔方的整个面上"
 
 #: src/colour-dialog.c:342
 msgid "_Plain"
-msgstr ""
+msgstr "纯色 (_P)"
 
 #: src/colour-dialog.c:345
 msgid "Remove image from the cube face"
@@ -98,8 +99,10 @@ msgstr "一个三维魔方游戏"
 #: src/dialogs.c:169
 msgid "translator-credits"
 msgstr ""
-"zh_CN\tMingye Wang <arthur200126@gmail.com>, 2015.\n"
-"\tLI Daobing <lidaobing@gmail.com>, 2007."
+"zh_CN:\n"
+"\tMingye Wang <arthur200126@gmail.com>, 2015.\n"
+"\tLI Daobing <lidaobing@gmail.com>, 2007.\n"
+"\tBoyuan Yang <073plan@gmail.com>, 2018."
 
 #: src/dialogs.c:189
 msgid "New Game"
@@ -119,7 +122,7 @@ msgstr "随机 (_R)"
 
 #: src/dialogs.c:220
 msgid "_Solved"
-msgstr "解决 (_S)"
+msgstr "已解决 (_S)"
 
 #: src/menus.c:94
 msgid "Rear View"
@@ -144,22 +147,22 @@ msgstr "右视图"
 #: src/menus.c:138
 #, c-format
 msgid "A mark is now set at position %d."
-msgstr "标记已在位置 %d 放置。"
+msgstr "标记已在位置 %d 处放置。"
 
 #: src/menus.c:152
 #, c-format
 msgid "Moves: %d / %d"
-msgstr "移动: %d / %d"
+msgstr "移动：%d / %d"
 
 #: src/menus.c:173
 #, c-format
 msgid "Cube solved in %d move"
 msgid_plural "Cube solved in %d moves"
-msgstr[0] "魔方在 %d 次移动后被解决。"
+msgstr[0] "魔方在 %d 次移动后被解决"
 
 #: src/menus.c:183
 msgid "Cube is NOT solved! The colours are correct,  but have incorrect orientation"
-msgstr "魔方未完成! 颜色正确，但方向错误。"
+msgstr "魔方未完成！颜色正确，但方向错误"
 
 #: src/menus.c:201
 #, c-format
@@ -245,10 +248,8 @@ msgid "Rewind"
 msgstr "回退"
 
 #: src/menus.c:456
-#, fuzzy
-#| msgid "Go to the previous mark (or the beginning) of the sequence of moves"
 msgid "Go to the previous mark (or the beginning of the sequence of moves)"
-msgstr "回到上个标记点 (或者开始位置)"
+msgstr "回到上个标记点（或者移动序列的起始位置）"
 
 #: src/menus.c:462
 msgid "Back"
@@ -300,7 +301,7 @@ msgstr "颜色范例。点击此处选择新的颜色，或者拖拽一个到此
 
 #: src/textures.c:81
 msgid "Pixbuf has wrong number of channels"
-msgstr "Pixbuf的通道数错误"
+msgstr "Pixbuf 的通道数错误"
 
 #: src/textures.c:90
 #, c-format
@@ -347,17 +348,14 @@ msgid "_Full cube"
 msgstr "完全魔方 (_F)"
 
 #: scripts/mellor-solve.scm:407
-#, fuzzy
 msgid "Bottom _edge place"
 msgstr "底边放置 (_E)"
 
 #: scripts/mellor-solve.scm:410
-#, fuzzy
 msgid "Bottom _corner orient"
 msgstr "底角方向 (_C)"
 
 #: scripts/mellor-solve.scm:413
-#, fuzzy
 msgid "_Bottom corner place"
 msgstr "底角放置 (_B)"
 

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2018-06-24 21:56-0700\n"
-"PO-Revision-Date: 2018-07-29 10:54+0800\n"
+"PO-Revision-Date: 2018-09-25 17:14-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.9\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #: lib/argmatch.c:134
 #, c-format
@@ -1084,28 +1084,28 @@ msgstr "Jim Meyering"
 #: src/chcon.c:100 src/runcon.c:202 src/runcon.c:233
 #, c-format
 msgid "failed to create security context: %s"
-msgstr "创建安全环境失败：%s"
+msgstr "创建安全上下文失败：%s"
 
 #: src/chcon.c:112
 #, c-format
 msgid "failed to set %s security context component to %s"
-msgstr "设置%s 安全环境组件到%s 失败"
+msgstr "设置 %s 安全上下文组件到 %s 失败"
 
 #: src/chcon.c:156 src/chcon.c:547 src/copy.c:924 src/runcon.c:216
 #: src/stat.c:793
 #, c-format
 msgid "failed to get security context of %s"
-msgstr "无法取得%s 的安全环境"
+msgstr "无法取得%s 的安全上下文"
 
 #: src/chcon.c:166
 #, c-format
 msgid "can't apply partial context to unlabeled file %s"
-msgstr "无法对未标记的文件 %s 应用部分（不完整的）环境"
+msgstr "无法对未标记的文件 %s 应用部分（不完整的）上下文"
 
 #: src/chcon.c:190
 #, c-format
 msgid "failed to change context of %s to %s"
-msgstr "改变 %s 的环境到 %s 失败"
+msgstr "改变 %s 的上下文到 %s 失败"
 
 #: src/chcon.c:255 src/chmod.c:218 src/chown-core.c:324 src/copy.c:725
 #: src/du.c:532 src/ls.c:3241
@@ -1121,7 +1121,7 @@ msgstr "无法读取目录 %s"
 #: src/chcon.c:293
 #, c-format
 msgid "changing security context of %s\n"
-msgstr "正在更改 %s 的安全环境\n"
+msgstr "正在更改 %s 的安全上下文\n"
 
 #: src/chcon.c:327 src/chmod.c:349 src/chown-core.c:538 src/remove.c:601
 #: src/selinux.c:323
@@ -1142,7 +1142,7 @@ msgid ""
 "  or:  %s [OPTION]... [-u USER] [-r ROLE] [-l RANGE] [-t TYPE] FILE...\n"
 "  or:  %s [OPTION]... --reference=RFILE FILE...\n"
 msgstr ""
-"用法:  %s [选项]... 环境 文件...\n"
+"用法:  %s [选项]... 上下文 文件...\n"
 "　或:  %s [选项]... [-u 用户] [-r 角色] [-l 范围] [-t 类型] 文件...\n"
 "　或:  %s [选项]... --reference=参考文件 文件...\n"
 
@@ -1151,8 +1151,8 @@ msgid ""
 "Change the SELinux security context of each FILE to CONTEXT.\n"
 "With --reference, change the security context of each FILE to that of RFILE.\n"
 msgstr ""
-"将每个指定<文件>的安全环境变更至指定<环境>。\n"
-"使用 --reference 选项时，把指定<文件>的安全环境设置为与<参考文件>相同。\n"
+"将每个指定<文件>的安全上下文变更至指定<上下文>。\n"
+"使用 --reference 选项时，把指定<文件>的安全上下文设置为与<参考文件>相同。\n"
 
 #: src/chcon.c:365 src/chgrp.c:125 src/chown.c:95
 msgid ""
@@ -1171,10 +1171,10 @@ msgid ""
 "  -t, --type=TYPE        set type TYPE in the target security context\n"
 "  -l, --range=RANGE      set range RANGE in the target security context\n"
 msgstr ""
-"  -u, --user=用户        设置指定<用户>的目标安全环境\n"
-"  -r, --role=角色        设置指定<角色>的目标安全环境\n"
-"  -t, --type=类型        设置指定<类型>的目标安全环境\n"
-"  -l, --range=范围      设置指定<范围>的目标安全环境\n"
+"  -u, --user=用户        设置指定<用户>的目标安全上下文\n"
+"  -r, --role=角色        设置指定<角色>的目标安全上下文\n"
+"  -t, --type=类型        设置指定<类型>的目标安全上下文\n"
+"  -l, --range=范围      设置指定<范围>的目标安全上下文\n"
 "\n"
 
 #: src/chcon.c:376 src/chgrp.c:134 src/chmod.c:390 src/chown.c:111
@@ -1189,7 +1189,7 @@ msgstr ""
 msgid ""
 "      --reference=RFILE  use RFILE's security context rather than specifying\n"
 "                         a CONTEXT value\n"
-msgstr "      --reference=参考文件  使用指定<参考文件>的安全环境，而非指定<环境>值\n"
+msgstr "      --reference=参考文件  使用指定<参考文件>的安全上下文，而非指定<环境>值\n"
 
 #: src/chcon.c:384 src/chgrp.c:142 src/chown.c:119
 msgid "  -R, --recursive        operate on files and directories recursively\n"
@@ -1241,12 +1241,12 @@ msgstr "%s 后缺少操作数"
 #: src/chcon.c:561 src/runcon.c:250
 #, c-format
 msgid "invalid context: %s"
-msgstr "无效模式：%s"
+msgstr "无效上下文：%s"
 
 #: src/chcon.c:567
 #, c-format
 msgid "conflicting security context specifiers given"
-msgstr "给出的安全环境说明冲突"
+msgstr "给出的安全上下文说明冲突"
 
 #: src/chcon.c:576 src/chgrp.c:289 src/chgrp.c:307 src/chmod.c:539
 #: src/chmod.c:558 src/chown.c:290 src/chown.c:319 src/cp.c:422 src/cp.c:489
@@ -1842,19 +1842,17 @@ msgstr "保留%s 的作者失败"
 #: src/mkfifo.c:144 src/mknod.c:200
 #, c-format
 msgid "failed to set default file creation context to %s"
-msgstr "无法取得%s 的创建环境"
+msgstr "无法设置默认文件创建上下文至 %s"
 
 #: src/copy.c:939
-#, fuzzy, c-format
-#| msgid "failed to set default file creation context to %s"
+#, c-format
 msgid "failed to set default file creation context for %s"
-msgstr "无法取得%s 的创建环境"
+msgstr "无法设置 %s 的默认文件创建上下文"
 
 #: src/copy.c:965
-#, fuzzy, c-format
-#| msgid "failed to set the security context of %s to %s"
+#, c-format
 msgid "failed to set the security context of %s"
-msgstr "设置%s 的安全环境为%s 失败"
+msgstr "设置 %s 的安全上下文失败"
 
 #: src/copy.c:1038 src/csplit.c:655 src/du.c:1025 src/fmt.c:439 src/head.c:888
 #: src/split.c:1569 src/tail.c:1987 src/wc.c:749
@@ -1933,7 +1931,7 @@ msgstr " (备份：%s)"
 
 #: src/copy.c:1773
 msgid "failed to restore the default file creation context"
-msgstr "恢复默认文件创建环境失败"
+msgstr "恢复默认文件创建山下文失败"
 
 #: src/copy.c:1791
 #, c-format
@@ -2023,10 +2021,9 @@ msgid "will not create hard link %s to directory %s"
 msgstr "不会创建指向目录%2$s 的硬链接%1$s"
 
 #: src/copy.c:2354
-#, fuzzy, c-format
-#| msgid "weird file"
+#, c-format
 msgid "renamed "
-msgstr "古怪文件"
+msgstr ""
 
 #: src/copy.c:2392
 #, c-format
@@ -2220,7 +2217,7 @@ msgid ""
 msgstr ""
 "  -p\t\t\t\t等于--preserve=模式,所有权,时间戳\n"
 "      --preserve[=属性列表\t保持指定的属性(默认：模式,所有权,时间戳)，如果\n"
-"\t\t\t\t\t可能保持附加属性：环境、链接、xattr 等\n"
+"\t\t\t\t\t可能保持附加属性：上下文、链接、xattr 等\n"
 
 #: src/cp.c:195
 msgid ""
@@ -2394,10 +2391,9 @@ msgid "multiple target directories specified"
 msgstr "指定了多个目标目录"
 
 #: src/cp.c:1124 src/install.c:918
-#, fuzzy, c-format
-#| msgid "WARNING: ignoring --context (-Z); this kernel is not SELinux-enabled"
+#, c-format
 msgid "warning: ignoring --context; it requires an SELinux-enabled kernel"
-msgstr "警告：忽略--context (-Z) 参数，当前运行的内核没有启用SELinux 支持"
+msgstr "警告：忽略 --context 参数；它需要启用 SELinux 的内核"
 
 #: src/cp.c:1145
 #, c-format
@@ -2419,14 +2415,12 @@ msgid "backup type"
 msgstr "备份方式"
 
 #: src/cp.c:1190 src/install.c:957
-#, fuzzy
-#| msgid "cannot force target context to %s and preserve it"
 msgid "cannot set target context and preserve it"
-msgstr "无法对%s 强制为目标环境，保持原样"
+msgstr ""
 
 #: src/cp.c:1194
 msgid "cannot preserve security context without an SELinux-enabled kernel"
-msgstr "无法在未启用SELinux 支持的内核上使用安全环境"
+msgstr "无法在未启用 SELinux 支持的内核上保存安全上下文"
 
 #: src/cp.c:1210
 msgid "cannot preserve extended attributes, cp is built without xattr support"
@@ -4087,10 +4081,8 @@ msgid "invalid maximum depth %s"
 msgstr "目录最大深度%s 无效"
 
 #: src/du.c:848
-#, fuzzy
-#| msgid "invalid --%s argument %s"
 msgid "invalid --threshold argument '-0'"
-msgstr "无效的 --%s 参数%s"
+msgstr ""
 
 #: src/du.c:931
 #, c-format
@@ -4220,7 +4212,7 @@ msgstr "Richard Mlynarik"
 #. This is a proper name. See the gettext manual, section Names.
 #: src/env.c:37 src/numfmt.c:43
 msgid "Assaf Gordon"
-msgstr ""
+msgstr "Assaf Gordon"
 
 #: src/env.c:73
 #, c-format
@@ -4229,7 +4221,7 @@ msgstr "用法：%s [选项]... [-] [名称=值]... [命令 [参数]...]\n"
 
 #: src/env.c:76
 msgid "Set each NAME to VALUE in the environment and run COMMAND.\n"
-msgstr ""
+msgstr "在环境中设置每个给定变量<名称>的值为给定<值>，并运行给定<命令>。\n"
 
 #: src/env.c:82
 #, fuzzy
@@ -4276,18 +4268,16 @@ msgstr "无法取消设置 %s"
 
 #: src/env.c:256
 msgid "'\\c' must not appear in double-quoted -S string"
-msgstr ""
+msgstr "'\\c' 不能出现在双引号括起的 -S 字符串中"
 
 #: src/env.c:260
-#, fuzzy
-#| msgid "warning: an unescaped backslash at end of string is not portable"
 msgid "invalid backslash at end of string in -S"
-msgstr "警告：在字符串结尾使用为转义的反斜杠是一种不可移植的做法"
+msgstr "-S 中字符串末尾无效的反斜杠"
 
 #: src/env.c:263
 #, c-format
 msgid "invalid sequence '\\%c' in -S"
-msgstr ""
+msgstr "-S 中的无效序列 '\\%c'"
 
 #: src/env.c:277
 #, c-format
@@ -4668,18 +4658,12 @@ msgid "Usage: %s [-WIDTH] [OPTION]... [FILE]...\n"
 msgstr "用法：%s [-宽度] [选项]... [文件]...\n"
 
 #: src/fmt.c:270
-#, fuzzy
-#| msgid ""
-#| "Reformat each paragraph in the FILE(s), writing to standard output.\n"
-#| "The option -WIDTH is an abbreviated form of --width=DIGITS.\n"
-#| "\n"
 msgid ""
 "Reformat each paragraph in the FILE(s), writing to standard output.\n"
 "The option -WIDTH is an abbreviated form of --width=DIGITS.\n"
 msgstr ""
-"重新格式化文件中每个段落并输出到标准输出\n"
-"选项 \"-宽度\" 是\"--width=数字\" 的缩写。\n"
-"\n"
+"对给定<文件>的每一段进行重新格式化，写入到标准输出。\n"
+"选项“-宽度”是“--width=宽度数字”的缩写。\n"
 
 #: src/fmt.c:278
 msgid ""
@@ -4962,20 +4946,11 @@ msgid ""
 "or (when USER omitted) for the current user.\n"
 "\n"
 msgstr ""
+"输出指定<用户>的用户和用户组信息，\n"
+"（当没有指定用户信息时）默认使用当前用户信息 。\n"
+"\n"
 
 #: src/id.c:91
-#, fuzzy
-#| msgid ""
-#| "Print user and group information for the specified USERNAME,\n"
-#| "or (when USERNAME omitted) for the current user.\n"
-#| "\n"
-#| "  -a              ignore, for compatibility with other versions\n"
-#| "  -Z, --context   print only the security context of the current user\n"
-#| "  -g, --group     print only the effective group ID\n"
-#| "  -G, --groups    print all group IDs\n"
-#| "  -n, --name      print a name instead of a number, for -ugG\n"
-#| "  -r, --real      print the real ID instead of the effective ID, with -ugG\n"
-#| "  -u, --user      print only the effective user ID\n"
 msgid ""
 "  -a             ignore, for compatibility with other versions\n"
 "  -Z, --context  print only the security context of the process\n"
@@ -4987,15 +4962,15 @@ msgid ""
 "  -z, --zero     delimit entries with NUL characters, not whitespace;\n"
 "                   not permitted in default format\n"
 msgstr ""
-"显示指定用户或当前用户(当未指定用户时)的用户与组信息。\n"
+"  -a             忽略，仅为与其他版本相兼容而设计\n"
+"  -Z, --context  仅显示当前用户的安全上下文\n"
+"  -g, --group    仅显示有效用户组ID\n"
+"  -G, --groups   显示所有组ID\n"
+"  -n, --name     显示组名称而非数字，与 -ugG 一起使用\n"
+"  -r, --real     显示真实ID 而非有效ID，与 -ugG 一起使用\n"
+"  -u, --user     仅显示有效用户ID\n"
+"   -z, --zero     使用 NUL 字符而非空格来分隔各个条目，在默认格式下不可使用\n"
 "\n"
-"  -a\t\t\t忽略，仅为与其他版本相兼容而设计\n"
-"  -Z, --context\t\t仅显示当前用户的安全环境\n"
-"  -g, --group\t\t仅显示有效的用户组ID\n"
-"  -G, --groups\t\t显示所有组的ID\n"
-"  -n, --name\t\t显示组名称而非数字，不与-ugG 一起使用\n"
-"  -r, --real\t\t显示真实ID 而非有效ID，与-ugG 一起使用\n"
-"  -u, --user\t\t仅显示有效用户ID\n"
 
 #: src/id.c:104
 msgid ""
@@ -5011,11 +4986,11 @@ msgstr "--context (-Z) 选项只能在开启 SELinux/SMACK 支持的内核上使
 
 #: src/id.c:157
 msgid "--context (-Z) works only on an SELinux-enabled kernel"
-msgstr "--context (-Z) 选项只能在开启SELinux 支持的内核上使用"
+msgstr "--context (-Z) 选项只能在开启 SELinux 支持的内核上使用"
 
 #: src/id.c:196
 msgid "cannot print security context when user specified"
-msgstr "不能显示特定用户的安全环境"
+msgstr "不能显示特定用户的安全上下文"
 
 #: src/id.c:199
 msgid "cannot print \"only\" of more than one choice"
@@ -5026,14 +5001,12 @@ msgid "cannot print only names or real IDs in default format"
 msgstr "以默认格式无法只显示名称或只显示真实ID。"
 
 #: src/id.c:212
-#, fuzzy
-#| msgid "cannot print only names or real IDs in default format"
 msgid "option --zero not permitted in default format"
-msgstr "以默认格式无法只显示名称或只显示真实ID。"
+msgstr "默认格式不允许使用选项 --zero"
 
 #: src/id.c:228
 msgid "can't get process context"
-msgstr "不能得到进程环境"
+msgstr "不能得到进程上下文"
 
 #: src/id.c:268
 msgid "cannot get effective UID"
@@ -5071,12 +5044,12 @@ msgstr " 组="
 #: src/id.c:439
 #, c-format
 msgid " context=%s"
-msgstr " 环境=%s"
+msgstr " 上下文=%s"
 
 #: src/install.c:378
 #, c-format
 msgid "warning: %s: failed to change context to %s"
-msgstr "警告：%s：切换到 %s 用户环境失败"
+msgstr "警告：%s：切换上下文至 %s 失败"
 
 #: src/install.c:420
 #, c-format
@@ -5084,37 +5057,34 @@ msgid "creating directory %s"
 msgstr "正在创建目录 %s"
 
 #: src/install.c:432 src/mkdir.c:128 src/mkdir.c:161
-#, fuzzy, c-format
-#| msgid "failed to set default file creation context to %s"
+#, c-format
 msgid "failed to set default creation context for %s"
-msgstr "无法取得%s 的创建环境"
+msgstr "设置 %s 的默认创建上下文失败"
 
 #: src/install.c:462 src/mkdir.c:181
-#, fuzzy, c-format
-#| msgid "failed to preserve times for %s"
+#, c-format
 msgid "failed to restore context for %s"
-msgstr "无法保留%s 的时间"
+msgstr "恢复 %s 的上下文失败"
 
 #: src/install.c:510
 #, c-format
 msgid "cannot change ownership of %s"
-msgstr "无法更改%s 的所有权"
+msgstr "无法更改 %s 的所有权"
 
 #: src/install.c:534
-#, fuzzy, c-format
-#| msgid "cannot set time stamps for %s"
+#, c-format
 msgid "cannot set timestamps for %s"
-msgstr "无法设置%s 的时间戳"
+msgstr "无法设置 %s 的时间戳"
 
 #: src/install.c:556 src/split.c:522 src/timeout.c:506
 #, c-format
 msgid "fork system call failed"
-msgstr "创建系统进程(fork)出错"
+msgstr "fork 系统调用失败"
 
 #: src/install.c:560
 #, c-format
 msgid "cannot run %s"
-msgstr "无法运行%s"
+msgstr "无法运行 %s"
 
 #: src/install.c:563
 #, c-format
@@ -5124,7 +5094,7 @@ msgstr "正在等待 strip"
 #: src/install.c:565
 #, c-format
 msgid "strip process terminated abnormally"
-msgstr "拆解过程非正常中止"
+msgstr "strip 进程非正常中止"
 
 #: src/install.c:589
 #, c-format
@@ -5245,7 +5215,7 @@ msgstr ""
 #: src/install.c:711 src/unlink.c:92
 #, c-format
 msgid "cannot unlink %s"
-msgstr "无法清除%s 的链接"
+msgstr "无法清除 %s 的链接（unlink）"
 
 #: src/install.c:892
 #, c-format
@@ -6449,13 +6419,12 @@ msgstr ""
 #: src/md5sum.c:974
 #, c-format
 msgid "--tag does not support --text mode"
-msgstr "--tag 不支持--text 模式"
+msgstr "--tag 不支持 --text 模式"
 
 #: src/md5sum.c:980
-#, fuzzy, c-format
-#| msgid "the --warn option is meaningful only when verifying checksums"
+#, c-format
 msgid "the --zero option is not supported when verifying checksums"
-msgstr "仅在校验时--warn 选项才有意义"
+msgstr "在校验时不支持 --zero 选项"
 
 #: src/md5sum.c:987
 #, c-format
@@ -6468,31 +6437,29 @@ msgid "the --binary and --text options are meaningless when verifying checksums"
 msgstr "在校验时--binary 和--text 选项无意义"
 
 #: src/md5sum.c:1002
-#, fuzzy, c-format
-#| msgid "the --warn option is meaningful only when verifying checksums"
+#, c-format
 msgid "the --ignore-missing option is meaningful only when verifying checksums"
-msgstr "仅在校验时--warn 选项才有意义"
+msgstr "仅在校验时 --ignore-missing 选项有意义"
 
 #: src/md5sum.c:1010
 #, c-format
 msgid "the --status option is meaningful only when verifying checksums"
-msgstr "仅在校验时--status 选项有意义"
+msgstr "仅在校验时 --status 选项有意义"
 
 #: src/md5sum.c:1017
 #, c-format
 msgid "the --warn option is meaningful only when verifying checksums"
-msgstr "仅在校验时--warn 选项才有意义"
+msgstr "仅在校验时 --warn 选项才有意义"
 
 #: src/md5sum.c:1024
 #, c-format
 msgid "the --quiet option is meaningful only when verifying checksums"
-msgstr "只有在校验时--quiet 选项才有意义"
+msgstr "只有在校验时 --quiet 选项才有意义"
 
 #: src/md5sum.c:1031
-#, fuzzy, c-format
-#| msgid "the --status option is meaningful only when verifying checksums"
+#, c-format
 msgid "the --strict option is meaningful only when verifying checksums"
-msgstr "只有在校验时--status 选项才有意义"
+msgstr "只有在校验时 --strict 选项才有意义"
 
 #: src/mkdir.c:59 src/rmdir.c:163
 #, c-format
@@ -6500,23 +6467,11 @@ msgid "Usage: %s [OPTION]... DIRECTORY...\n"
 msgstr "用法：%s [选项]... 目录...\n"
 
 #: src/mkdir.c:60
-#, fuzzy
-#| msgid ""
-#| "Create the DIRECTORY(ies), if they do not already exist.\n"
-#| "\n"
 msgid "Create the DIRECTORY(ies), if they do not already exist.\n"
-msgstr ""
-"若指定目录不存在则创建目录。\n"
-"\n"
+msgstr "若指定<目录>不存在则创建目录。\n"
 
 #: src/mkdir.c:66
 #, fuzzy
-#| msgid ""
-#| "  -m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask\n"
-#| "  -p, --parents     no error if existing, make parent directories as needed\n"
-#| "  -v, --verbose     print a message for each created directory\n"
-#| "  -Z, --context=CTX  set the SELinux security context of each created\n"
-#| "                      directory to CTX\n"
 msgid ""
 "  -m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask\n"
 "  -p, --parents     no error if existing, make parent directories as needed\n"
@@ -6525,7 +6480,7 @@ msgstr ""
 "  -m, --mode=模式   \t设置权限模式(类似chmod)，而不是rwxrwxrwx 减umask\n"
 "  -p, --parents     \t需要时创建目标目录的上层目录，但即使这些目录已存在也不当作错误处理\n"
 "  -v, --verbose     \t每次创建新目录都显示信息\n"
-"  -Z, --context=CTX  \t将每个创建的目录的SELinux 安全环境设置为CTX\n"
+"  -Z, --context=CTX  \t将每个创建的目录的SELinux 安全上下文设置为CTX\n"
 
 #: src/mkdir.c:71
 msgid ""
@@ -6541,10 +6496,9 @@ msgid "created directory %s"
 msgstr "已创建目录 %s"
 
 #: src/mkdir.c:239 src/mkfifo.c:117 src/mknod.c:134
-#, fuzzy, c-format
-#| msgid "WARNING: ignoring --context (-Z); this kernel is not SELinux-enabled"
+#, c-format
 msgid "warning: ignoring --context; it requires an SELinux/SMACK-enabled kernel"
-msgstr "警告：忽略--context (-Z) 参数，当前运行的内核没有启用SELinux 支持"
+msgstr "警告：忽略 --context 参数；它需要启用 SELinux/SMARK 的内核"
 
 #: src/mkfifo.c:54 src/pathchk.c:88
 #, c-format
@@ -6581,10 +6535,9 @@ msgid "mode must specify only file permission bits"
 msgstr "模式必须只指定文件许可位"
 
 #: src/mkfifo.c:175 src/mknod.c:271
-#, fuzzy, c-format
-#| msgid "cannot change permissions of %s"
+#, c-format
 msgid "cannot set permissions of %s"
-msgstr "无法更改%s 的权限"
+msgstr "无法设置 %s 的权限"
 
 #: src/mknod.c:55
 #, c-format
@@ -7048,10 +7001,8 @@ msgid "invalid footer numbering style: %s"
 msgstr "无效的页脚号样式：%s"
 
 #: src/nl.c:511
-#, fuzzy
-#| msgid "invalid starting line number: %s"
 msgid "invalid starting line number"
-msgstr "无效的起始行号：%s"
+msgstr "无效的起始行号"
 
 #: src/nl.c:516
 #, fuzzy
@@ -7455,10 +7406,9 @@ msgid "format %s has too many %% directives"
 msgstr "格式%s 中%% 指令过多"
 
 #: src/numfmt.c:1183
-#, fuzzy, c-format
-#| msgid "invalid suffix in %s%s argument `%s'"
+#, c-format
 msgid "invalid suffix in input %s: %s"
-msgstr "非法的后缀在%s%s 参数\"%s\""
+msgstr "在输入 %s:%s 中有无效后缀"
 
 #: src/numfmt.c:1212
 #, c-format
@@ -7478,7 +7428,7 @@ msgstr ""
 #: src/numfmt.c:1311
 #, c-format
 msgid "large input value %s: possible precision loss"
-msgstr ""
+msgstr "较大的输入值 %s：可能出现精度丢失"
 
 #: src/numfmt.c:1500
 #, fuzzy, c-format
@@ -7510,10 +7460,9 @@ msgid "failed to set locale"
 msgstr "设置区域语言 locale 失败"
 
 #: src/numfmt.c:1582
-#, fuzzy, c-format
-#| msgid "multiple -i options specified"
+#, c-format
 msgid "no conversion option specified"
-msgstr "指定了多个-i 选项"
+msgstr "未指定转换选项"
 
 #: src/numfmt.c:1590
 #, fuzzy
@@ -7794,10 +7743,9 @@ msgstr ""
 "系统无法提供对%lu-字节浮点类型数值的支持"
 
 #: src/od.c:872
-#, fuzzy, c-format
-#| msgid "invalid character `%c' in type string %s"
+#, c-format
 msgid "invalid character '%c' in type string %s"
-msgstr "无效字符\"%c\"出现在类型字符串%s 中"
+msgstr "无效字符“%c”出现在类型字符串 %s 中"
 
 #: src/od.c:1104
 msgid "cannot skip past end of combined input"
@@ -7878,10 +7826,9 @@ msgstr ""
 "      --portability   \t为完整POSIX 兼容系统检查(等于-p -P)\n"
 
 #: src/pathchk.c:169
-#, fuzzy, c-format
-#| msgid "leading `-' in a component of file name %s"
+#, c-format
 msgid "leading '-' in a component of file name %s"
-msgstr "文件名%s 以\"-\"符号开头"
+msgstr "文件名 %s 以\"-\"符号开头"
 
 #: src/pathchk.c:195
 #, c-format
@@ -8125,14 +8072,8 @@ msgid "Page %<PRIuMAX>"
 msgstr "第 %<PRIuMAX> 页"
 
 #: src/pr.c:2741
-#, fuzzy
-#| msgid ""
-#| "Paginate or columnate FILE(s) for printing.\n"
-#| "\n"
 msgid "Paginate or columnate FILE(s) for printing.\n"
-msgstr ""
-"对指定文件附注打印所需的页码或聚焦。\n"
-"\n"
+msgstr "对给定文件进行分页或分栏以便后续打印使用。\n"
 
 #: src/pr.c:2748
 msgid ""
@@ -8485,10 +8426,9 @@ msgid "%s (for regexp %s)"
 msgstr "%s (正则表达式 %s)"
 
 #: src/ptx.c:823
-#, fuzzy, c-format
-#| msgid "error in regular expression matcher"
+#, c-format
 msgid "error: regular expression has a match of length zero: %s"
-msgstr "正则表达式匹配器出错"
+msgstr "错误：正则表达式匹配的长度为零：%s"
 
 #: src/ptx.c:1814
 #, c-format
@@ -8607,11 +8547,13 @@ msgid ""
 "\n"
 "If no option is specified, -P is assumed.\n"
 msgstr ""
+"\n"
+"如果没有指定任何选项，则假定启用 -P。\n"
 
 #: src/pwd.c:169
 #, c-format
 msgid "failed to chdir to %s"
-msgstr "无法切换到目录%s"
+msgstr "无法切换到目录 %s"
 
 #: src/pwd.c:173 src/pwd.c:280 src/split.c:469
 #, c-format
@@ -8720,7 +8662,7 @@ msgstr ""
 
 #: src/relpath.c:130
 msgid "generating relative path"
-msgstr ""
+msgstr "正在生成相对路径"
 
 #: src/remove.c:273
 #, c-format
@@ -8753,10 +8695,9 @@ msgid "removed directory %s\n"
 msgstr "已删除目录 %s\n"
 
 #: src/remove.c:447
-#, fuzzy, c-format
-#| msgid "cannot remove %s directory %s"
+#, c-format
 msgid "refusing to remove %s or %s directory: skipping %s"
-msgstr "无法删除%s 目录%s"
+msgstr "拒绝删除 %s 或 %s 目录：跳过 %s"
 
 #: src/remove.c:476
 #, c-format
@@ -8793,22 +8734,16 @@ msgid "Try '%s ./%s' to remove the file %s.\n"
 msgstr "尝试使用\"%s ./%s\"删除文件 %s。\n"
 
 #: src/rm.c:134
-#, fuzzy
-#| msgid ""
-#| "Remove (unlink) the FILE(s).\n"
-#| "\n"
-#| "  -f, --force           ignore nonexistent files, never prompt\n"
-#| "  -i                    prompt before every removal\n"
 msgid ""
 "Remove (unlink) the FILE(s).\n"
 "\n"
 "  -f, --force           ignore nonexistent files and arguments, never prompt\n"
 "  -i                    prompt before every removal\n"
 msgstr ""
-"删除 (unlink) 文件。\n"
+"删除（unlink）指定<文件>。\n"
 "\n"
-"  -f, --force\t\t强制删除。忽略不存在的文件，不提示确认\n"
-"  -i\t\t\t在删除前需要确认\n"
+"  -f, --force          强制删除。忽略不存在的文件，不提示确认\n"
+"  -i                    每次删除前提示确认\n"
 
 #: src/rm.c:140
 #, fuzzy
@@ -8922,29 +8857,26 @@ msgid "you may not abbreviate the --no-preserve-root option"
 msgstr ""
 
 #: src/rm.c:309
-#, fuzzy, c-format
-#| msgid "unrecognized operand %s"
+#, c-format
 msgid "unrecognized --preserve-root argument: %s"
-msgstr "无法识别的操作数%s"
+msgstr "无法识别的 --preserve-root 参数：%s"
 
 #: src/rm.c:359
-#, fuzzy, c-format
-#| msgid "%s: remove all arguments recursively? "
+#, c-format
 msgid "%s: remove %<PRIuMAX> argument recursively? "
 msgid_plural "%s: remove %<PRIuMAX> arguments recursively? "
-msgstr[0] "%s：递归删除所有参数？"
+msgstr[0] "%s：递归删除 %<PRIuMAX> 个参数？"
 
 #: src/rm.c:362
-#, fuzzy, c-format
-#| msgid "%s: remove all arguments? "
+#, c-format
 msgid "%s: remove %<PRIuMAX> argument? "
 msgid_plural "%s: remove %<PRIuMAX> arguments? "
-msgstr[0] "%s：删除所有参数？"
+msgstr[0] "%s：删除 %<PRIuMAX> 个参数？"
 
 #: src/rmdir.c:133 src/rmdir.c:232
 #, c-format
 msgid "removing directory, %s"
-msgstr "正在删除目录 %s"
+msgstr "正在删除目录，%s"
 
 #: src/rmdir.c:147
 #, c-format
@@ -8990,7 +8922,7 @@ msgid ""
 "Usage: %s CONTEXT COMMAND [args]\n"
 "  or:  %s [ -c ] [-u USER] [-r ROLE] [-t TYPE] [-l RANGE] COMMAND [args]\n"
 msgstr ""
-"用法: %s 环境 命令 [参数]\n"
+"用法: %s 上下文 命令 [参数]\n"
 "　或: %s [ -c ] [-u 用户] [-r 角色] [-t 类型] [-l 范围] 命令 [参数]\n"
 
 #: src/runcon.c:82
@@ -9001,17 +8933,6 @@ msgstr ""
 
 #: src/runcon.c:89
 #, fuzzy
-#| msgid ""
-#| "Run a program in a different security context.\n"
-#| "With neither CONTEXT nor COMMAND, print the current security context.\n"
-#| "\n"
-#| "  CONTEXT            Complete security context\n"
-#| "  -c, --compute      compute process transition context before modifying\n"
-#| "  -t, --type=TYPE    type (for same role as parent)\n"
-#| "  -u, --user=USER    user identity\n"
-#| "  -r, --role=ROLE    role\n"
-#| "  -l, --range=RANGE  levelrange\n"
-#| "\n"
 msgid ""
 "  CONTEXT            Complete security context\n"
 "  -c, --compute      compute process transition context before modifying\n"
@@ -9021,10 +8942,7 @@ msgid ""
 "  -l, --range=RANGE  levelrange\n"
 "\n"
 msgstr ""
-"以不同的安全环境运行程序。\n"
-"如果没有指定环境或命令之一，输出当前安全环境。\n"
-"\n"
-"  环境\t\t\t完整的安全环境描述\n"
+"  上下文\t\t\t完整的安全上下文描述\n"
 "  -c, --compute\t\t在更改前计算环境变化\n"
 "  -t, --type=类型\t类型(与父进程角色相同)\n"
 "  -u, --user=用户\t用户身份\n"
@@ -9050,12 +8968,12 @@ msgstr "复合级别范围"
 
 #: src/runcon.c:172 src/runcon.c:208
 msgid "failed to get current context"
-msgstr "无法获得当前安全环境"
+msgstr "无法获得当前上下文"
 
 #: src/runcon.c:182
 #, c-format
 msgid "you must specify -c, -t, -u, -l, -r, or context"
-msgstr "您必须指定-c，-t，-u，-l，-r 或环境"
+msgstr "您必须指定-c，-t，-u，-l，-r 或上下文"
 
 #: src/runcon.c:190
 #, c-format
@@ -9069,7 +8987,7 @@ msgstr "%s 只能用于启用了SELinux 支持的内核"
 
 #: src/runcon.c:222
 msgid "failed to compute a new context"
-msgstr "计算新的环境失败"
+msgstr "计算新的上下文失败"
 
 #: src/runcon.c:236
 #, c-format
@@ -9096,7 +9014,7 @@ msgstr "设置新角色%s 失败"
 #: src/runcon.c:254
 #, c-format
 msgid "unable to set security context %s"
-msgstr "无法设置安全环境%s"
+msgstr "无法设置安全上下文 %s"
 
 #: src/seq.c:72
 #, c-format
@@ -9281,16 +9199,12 @@ msgstr ""
 "\n"
 
 #: src/shred.c:175
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "If a FILE is -, copy again to standard output.\n"
 msgid ""
 "\n"
 "If FILE is -, shred standard output.\n"
 msgstr ""
 "\n"
-"如果文件指定为\"-\"，则将输入内容复制到标准输出。\n"
+"如果指定<文件>是 -，则对标准输出进行 shred 操作。\n"
 
 #: src/shred.c:182
 #, c-format
@@ -10257,10 +10171,8 @@ msgid "failed to close input pipe"
 msgstr "关闭目录 %s 失败"
 
 #: src/split.c:560
-#, fuzzy
-#| msgid "waiting for strip"
 msgid "waiting for child process"
-msgstr "等待拆解"
+msgstr "正在等待子进程"
 
 #: src/split.c:570
 #, c-format
@@ -10486,15 +10398,6 @@ msgstr ""
 
 #: src/stat.c:1519
 #, fuzzy
-#| msgid ""
-#| "\n"
-#| "The valid format sequences for files (without --file-system):\n"
-#| "\n"
-#| "  %a   Access rights in octal\n"
-#| "  %A   Access rights in human readable form\n"
-#| "  %b   Number of blocks allocated (see %B)\n"
-#| "  %B   The size in bytes of each block reported by %b\n"
-#| "  %C   SELinux security context string\n"
 msgid ""
 "\n"
 "The valid format sequences for files (without --file-system):\n"
@@ -10512,7 +10415,7 @@ msgstr ""
 "  %A   用可读性较好的方式输出权限\n"
 "  %b   计算已分配块数(参见%B)\n"
 "  %B   以字节为单位输出%b 所报告的每个块的大小\n"
-"  %C   SELinux 安全环境字符串\n"
+"  %C   SELinux 安全上下文字符串\n"
 
 #: src/stat.c:1528
 #, fuzzy
@@ -11405,22 +11308,17 @@ msgstr ""
 "   -pass8\t等于parenb istrip cs7\n"
 
 #: src/stty.c:963
-#, fuzzy, c-format
-#| msgid ""
-#| "   raw           same as -ignbrk -brkint -ignpar -parmrk -inpck -istrip\n"
-#| "                 -inlcr -igncr -icrnl  -ixon  -ixoff  -iuclc  -ixany\n"
-#| "                 -imaxbel -opost -isig -icanon -xcase min 1 time 0\n"
-#| "   -raw          same as cooked\n"
+#, c-format
 msgid ""
 "   raw           same as -ignbrk -brkint -ignpar -parmrk -inpck -istrip\n"
 "                 -inlcr -igncr -icrnl -ixon -ixoff -icanon -opost\n"
 "                 -isig%s min 1 time 0\n"
 "   -raw          same as cooked\n"
 msgstr ""
-"   raw\t\t等于-ignbrk -brkint -ignpar -parmrk -inpck -istrip\n"
-"                 -inlcr -igncr -icrnl -ixon -ixoff -iuclc -ixany\n"
-"                 -imaxbel -opost -isig -icanon -xcase min 1 time 0\n"
-"   -raw\t等于cooked\n"
+"   raw           等效于 -ignbrk -brkint -ignpar -parmrk -inpck -istrip\n"
+"                 -inlcr -igncr -icrnl -ixon -ixoff -icanon -opost\n"
+"                 -isig%s min 1 time 0\n"
+"   -raw          等效于 cooked\n"
 
 #: src/stty.c:982
 #, fuzzy, c-format
@@ -11522,21 +11420,14 @@ msgid "Print checksum and block counts for each FILE.\n"
 msgstr "输出每个指定文件的校验值和块计数。\n"
 
 #: src/sum.c:69
-#, fuzzy
-#| msgid ""
-#| "Print checksum and block counts for each FILE.\n"
-#| "\n"
-#| "  -r              use BSD sum algorithm, use 1K blocks\n"
-#| "  -s, --sysv      use System V sum algorithm, use 512 bytes blocks\n"
 msgid ""
 "\n"
 "  -r              use BSD sum algorithm, use 1K blocks\n"
 "  -s, --sysv      use System V sum algorithm, use 512 bytes blocks\n"
 msgstr ""
-"为每个指定的文件输出校验和以及块计数。\n"
 "\n"
-"  -r\t\t使用BSD 加和算法，以1 KB 为一个块\n"
-"  -s, --sysv\t使用System V 加和算法，以51双字节为一个块\n"
+"  -r              使用 BSD 加和算法，以1 KB 为一个块\n"
+"  -s, --sysv      使用System V 加和算法，以512字节为一个块\n"
 
 #: src/sync.c:64
 #, c-format
@@ -11644,13 +11535,6 @@ msgstr ""
 "否则，默认单位是 1024 字节(或是 512，若设定 POSIXLY_CORRECT 的话)。\n"
 
 #: src/system.h:614
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "The backup suffix is `~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.\n"
-#| "The version control method may be selected via the --backup option or through\n"
-#| "the VERSION_CONTROL environment variable.  Here are the values:\n"
-#| "\n"
 msgid ""
 "\n"
 "The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.\n"
@@ -11659,8 +11543,8 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"备份文件的后缀为\"~\"，除非以--suffix 选项或是SIMPLE_BACKUP_SUFFIX\n"
-"环境变量指定。版本控制的方式可通过--backup 选项或VERSION_CONTROL 环境\n"
+"备份文件的后缀为\"~\"，除非以--suffix 选项或是 SIMPLE_BACKUP_SUFFIX\n"
+"环境变量指定。版本控制的方式可通过--backup 选项或 VERSION_CONTROL 环境\n"
 "变量来选择。以下是可用的变量值：\n"
 "\n"
 
@@ -12043,7 +11927,7 @@ msgstr "无效的秒数：%s"
 #: src/tail.c:2246
 #, c-format
 msgid "option used in invalid context -- %c"
-msgstr "在未定义环境中的无效选项 -- %c"
+msgstr "在无效上下文中使用选项 -- %c"
 
 #: src/tail.c:2258
 #, c-format

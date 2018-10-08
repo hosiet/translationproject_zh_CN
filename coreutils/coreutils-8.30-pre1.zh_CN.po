@@ -330,8 +330,8 @@ msgstr "”"
 msgid "%s: end of file"
 msgstr "%s：文件结束"
 
-#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:803 src/od.c:952 src/tac.c:251
-#: src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:803
+#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:803 src/od.c:952
+#: src/tac.c:251 src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:803
 #, c-format
 msgid "%s: read error"
 msgstr "%s：读取出错"
@@ -905,8 +905,8 @@ msgstr "无效的换行字符数"
 #: src/hostname.c:118 src/id.c:190 src/install.c:985 src/join.c:970
 #: src/link.c:91 src/ln.c:551 src/logname.c:77 src/mknod.c:182 src/mv.c:451
 #: src/nproc.c:115 src/od.c:1865 src/ptx.c:2082 src/seq.c:619 src/shuf.c:491
-#: src/sort.c:4595 src/split.c:1553 src/tr.c:1768 src/tsort.c:566 src/tty.c:113
-#: src/uname.c:252 src/uniq.c:533 src/uniq.c:550 src/unlink.c:87
+#: src/sort.c:4595 src/split.c:1553 src/tr.c:1768 src/tsort.c:566
+#: src/tty.c:113 src/uname.c:252 src/uniq.c:533 src/uniq.c:550 src/unlink.c:87
 #: src/uptime.c:258 src/users.c:152 src/wc.c:737 src/who.c:831 src/whoami.c:85
 #, c-format
 msgid "extra operand %s"
@@ -917,16 +917,17 @@ msgid "closing standard input"
 msgstr "关闭标准输入"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37 src/comm.c:39
-#: src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40 src/dd.c:46
-#: src/df.c:45 src/dirname.c:32 src/du.c:54 src/env.c:36 src/expand.c:49
-#: src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42 src/install.c:51
-#: src/ln.c:43 src/ls.c:131 src/mkdir.c:39 src/mkfifo.c:36 src/mknod.c:37
-#: src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53 src/pathchk.c:32
-#: src/pinky.c:38 src/printenv.c:44 src/printf.c:68 src/rm.c:41 src/rmdir.c:37
-#: src/stty.c:68 src/sum.c:39 src/tac.c:58 src/tail.c:73 src/tee.c:38
-#: src/touch.c:45 src/tty.c:44 src/uname.c:61 src/unexpand.c:50 src/uniq.c:43
-#: src/uptime.c:47 src/users.c:37 src/wc.c:51 src/who.c:51 src/yes.c:33
+#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37
+#: src/comm.c:39 src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40
+#: src/dd.c:46 src/df.c:45 src/dirname.c:32 src/du.c:54 src/env.c:36
+#: src/expand.c:49 src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42
+#: src/install.c:51 src/ln.c:43 src/ls.c:131 src/mkdir.c:39 src/mkfifo.c:36
+#: src/mknod.c:37 src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53
+#: src/pathchk.c:32 src/pinky.c:38 src/printenv.c:44 src/printf.c:68
+#: src/rm.c:41 src/rmdir.c:37 src/stty.c:68 src/sum.c:39 src/tac.c:58
+#: src/tail.c:73 src/tee.c:38 src/touch.c:45 src/tty.c:44 src/uname.c:61
+#: src/unexpand.c:50 src/uniq.c:43 src/uptime.c:47 src/users.c:37 src/wc.c:51
+#: src/who.c:51 src/yes.c:33
 msgid "David MacKenzie"
 msgstr "David MacKenzie"
 
@@ -1732,8 +1733,8 @@ msgstr "  --output-delimiter=STR\t依照STR 分列\n"
 msgid "  --total           output a summary\n"
 msgstr "  --total           输出一份摘要信息\n"
 
-#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945 src/paste.c:452
-#: src/tail.c:308
+#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945
+#: src/paste.c:452 src/tail.c:308
 msgid "  -z, --zero-terminated    line delimiter is NUL, not newline\n"
 msgstr "  -z, --zero-terminated    以 NUL 字符而非换行符作为行尾分隔符\n"
 

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2018-06-24 21:56-0700\n"
-"PO-Revision-Date: 2018-09-25 17:14-0400\n"
+"PO-Revision-Date: 2018-10-09 18:11-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2\n"
 
 #: lib/argmatch.c:134
 #, c-format
@@ -330,8 +330,8 @@ msgstr "”"
 msgid "%s: end of file"
 msgstr "%s：文件结束"
 
-#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:803 src/od.c:952
-#: src/tac.c:251 src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:803
+#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:803 src/od.c:952 src/tac.c:251
+#: src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:803
 #, c-format
 msgid "%s: read error"
 msgstr "%s：读取出错"
@@ -905,8 +905,8 @@ msgstr "无效的换行字符数"
 #: src/hostname.c:118 src/id.c:190 src/install.c:985 src/join.c:970
 #: src/link.c:91 src/ln.c:551 src/logname.c:77 src/mknod.c:182 src/mv.c:451
 #: src/nproc.c:115 src/od.c:1865 src/ptx.c:2082 src/seq.c:619 src/shuf.c:491
-#: src/sort.c:4595 src/split.c:1553 src/tr.c:1768 src/tsort.c:566
-#: src/tty.c:113 src/uname.c:252 src/uniq.c:533 src/uniq.c:550 src/unlink.c:87
+#: src/sort.c:4595 src/split.c:1553 src/tr.c:1768 src/tsort.c:566 src/tty.c:113
+#: src/uname.c:252 src/uniq.c:533 src/uniq.c:550 src/unlink.c:87
 #: src/uptime.c:258 src/users.c:152 src/wc.c:737 src/who.c:831 src/whoami.c:85
 #, c-format
 msgid "extra operand %s"
@@ -917,17 +917,16 @@ msgid "closing standard input"
 msgstr "关闭标准输入"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37
-#: src/comm.c:39 src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40
-#: src/dd.c:46 src/df.c:45 src/dirname.c:32 src/du.c:54 src/env.c:36
-#: src/expand.c:49 src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42
-#: src/install.c:51 src/ln.c:43 src/ls.c:131 src/mkdir.c:39 src/mkfifo.c:36
-#: src/mknod.c:37 src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53
-#: src/pathchk.c:32 src/pinky.c:38 src/printenv.c:44 src/printf.c:68
-#: src/rm.c:41 src/rmdir.c:37 src/stty.c:68 src/sum.c:39 src/tac.c:58
-#: src/tail.c:73 src/tee.c:38 src/touch.c:45 src/tty.c:44 src/uname.c:61
-#: src/unexpand.c:50 src/uniq.c:43 src/uptime.c:47 src/users.c:37 src/wc.c:51
-#: src/who.c:51 src/yes.c:33
+#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37 src/comm.c:39
+#: src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40 src/dd.c:46
+#: src/df.c:45 src/dirname.c:32 src/du.c:54 src/env.c:36 src/expand.c:49
+#: src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42 src/install.c:51
+#: src/ln.c:43 src/ls.c:131 src/mkdir.c:39 src/mkfifo.c:36 src/mknod.c:37
+#: src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53 src/pathchk.c:32
+#: src/pinky.c:38 src/printenv.c:44 src/printf.c:68 src/rm.c:41 src/rmdir.c:37
+#: src/stty.c:68 src/sum.c:39 src/tac.c:58 src/tail.c:73 src/tee.c:38
+#: src/touch.c:45 src/tty.c:44 src/uname.c:61 src/unexpand.c:50 src/uniq.c:43
+#: src/uptime.c:47 src/users.c:37 src/wc.c:51 src/who.c:51 src/yes.c:33
 msgid "David MacKenzie"
 msgstr "David MacKenzie"
 
@@ -1733,8 +1732,8 @@ msgstr "  --output-delimiter=STR\t依照STR 分列\n"
 msgid "  --total           output a summary\n"
 msgstr "  --total           输出一份摘要信息\n"
 
-#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945
-#: src/paste.c:452 src/tail.c:308
+#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945 src/paste.c:452
+#: src/tail.c:308
 msgid "  -z, --zero-terminated    line delimiter is NUL, not newline\n"
 msgstr "  -z, --zero-terminated    以 NUL 字符而非换行符作为行尾分隔符\n"
 
@@ -5556,12 +5555,12 @@ msgstr "%s：是否替换%s？ "
 #: src/ln.c:349
 #, c-format
 msgid "failed to create symbolic link %s"
-msgstr "无法创建符号链接%s"
+msgstr "无法创建符号链接 %s"
 
 #: src/ln.c:350
 #, c-format
 msgid "failed to create symbolic link %s -> %s"
-msgstr "无法创建符号链接%s -> %s"
+msgstr "无法创建符号链接 %s -> %s"
 
 #: src/ln.c:352
 #, c-format
@@ -5571,42 +5570,27 @@ msgstr "无法创建硬链接%.0s%s"
 #: src/ln.c:355
 #, c-format
 msgid "failed to create hard link %s"
-msgstr "无法创建硬链接%s"
+msgstr "无法创建硬链接 %s"
 
 #: src/ln.c:356
 #, c-format
 msgid "failed to create hard link %s => %s"
-msgstr "无法创建硬链接%s => %s"
+msgstr "无法创建硬链接 %s => %s"
 
 #: src/ln.c:378
-#, fuzzy, c-format
-#| msgid ""
-#| "Usage: %s [OPTION]... [-T] TARGET LINK_NAME   (1st form)\n"
-#| "  or:  %s [OPTION]... TARGET                  (2nd form)\n"
-#| "  or:  %s [OPTION]... TARGET... DIRECTORY     (3rd form)\n"
-#| "  or:  %s [OPTION]... -t DIRECTORY TARGET...  (4th form)\n"
+#, c-format
 msgid ""
 "Usage: %s [OPTION]... [-T] TARGET LINK_NAME\n"
 "  or:  %s [OPTION]... TARGET\n"
 "  or:  %s [OPTION]... TARGET... DIRECTORY\n"
 "  or:  %s [OPTION]... -t DIRECTORY TARGET...\n"
 msgstr ""
-"用法：%s [选项]... [-T] 目标 链接名\t(第一种格式)\n"
-"　或：%s [选项]... 目标\t\t(第二种格式)\n"
-"　或：%s [选项]... 目标... 目录\t(第三种格式)\n"
-"　或：%s [选项]... -t 目录 目标...\t(第四种格式)\n"
+"用法：%s [选项]... [-T] 目标 链接名\n"
+"　或：%s [选项]... 目标\n"
+"　或：%s [选项]... 目标... 目录\n"
+"　或：%s [选项]... -t 目录 目标...\n"
 
 #: src/ln.c:385
-#, fuzzy
-#| msgid ""
-#| "In the 1st form, create a link to TARGET with the name LINK_NAME.\n"
-#| "In the 2nd form, create a link to TARGET in the current directory.\n"
-#| "In the 3rd and 4th forms, create links to each TARGET in DIRECTORY.\n"
-#| "Create hard links by default, symbolic links with --symbolic.\n"
-#| "When creating hard links, each TARGET must exist.  Symbolic links\n"
-#| "can hold arbitrary text; if later resolved, a relative link is\n"
-#| "interpreted in relation to its parent directory.\n"
-#| "\n"
 msgid ""
 "In the 1st form, create a link to TARGET with the name LINK_NAME.\n"
 "In the 2nd form, create a link to TARGET in the current directory.\n"
@@ -5617,13 +5601,13 @@ msgid ""
 "can hold arbitrary text; if later resolved, a relative link is\n"
 "interpreted in relation to its parent directory.\n"
 msgstr ""
-"在第一种格式中，创建指定名称且指向指定目标链接。\n"
-"在第二种格式中，在当前目录创建指向目标位置的链接。\n"
-"在第三、四种格式中，在指定目录中创建指向指定目标的链接。\n"
+"在第一种格式中，创建具有指定<链接名>且指向指定<目标>的链接。\n"
+"在第二种格式中，在当前目录创建指向<目标>位置的链接。\n"
+"在第三、四种格式中，在指定<目录>中创建指向指定<目标>的链接。\n"
 "默认创建硬链接，当使用--symbolic 时创建符号链接。\n"
-"当创建硬链接时每个指定的目标都必须存在。符号链接可以指向任意的位置，\n"
-"当链接解析正常时，将其解析为一个与其父目录关联的链接。\n"
-"\n"
+"默认情况下，创建每个目标时不应存在与新链接的名称相同的文件。\n"
+"创建硬链接时，每个指定的<目标>都必须存在。符号链接可以指向任意的位置；\n"
+"当链接解析正常时，将其解析为一个相对于其父目录的相对链接。\n"
 
 #: src/ln.c:398
 msgid ""
@@ -5634,10 +5618,11 @@ msgid ""
 "                                system restrictions, even for the superuser)\n"
 "  -f, --force                 remove existing destination files\n"
 msgstr ""
-"      --backup[=CONTROL]\t为每个已存在的目标文件创建备份文件\n"
-"  -b\t\t\t\t类似--backup，但不接受任何参数\n"
-"  -d, -F, --directory\t\t创建指向目录的硬链接(只适用于超级用户)\n"
-"  -f, --force\t\t\t强行删除任何已存在的目标文件\n"
+"      --backup[=CONTROL]      为每个已存在的目标文件创建备份文件\n"
+"  -b                          类似--backup，但不接受任何参数\n"
+"  -d, -F, --directory         允许超级用户尝试创建指向目录的硬链接\n"
+"                              （注意：此操作可能因系统限制而失败)\n"
+"  -f, --force                 强行删除任何已存在的目标文件\n"
 
 #: src/ln.c:406
 #, fuzzy
@@ -5685,29 +5670,23 @@ msgstr ""
 "  -v, --verbose\t\t链接前先列出每个文件的名称\n"
 
 #: src/ln.c:425
-#, fuzzy, c-format
-#| msgid ""
-#| "Using -s ignores -L and -P.  Otherwise, the last option specified controls\n"
-#| "behavior when the source is a symbolic link, defaulting to %s.\n"
-#| "\n"
+#, c-format
 msgid ""
 "\n"
 "Using -s ignores -L and -P.  Otherwise, the last option specified controls\n"
 "behavior when a TARGET is a symbolic link, defaulting to %s.\n"
 msgstr ""
-"使用 -s 选项会忽略 -L 和 -P。\n"
-"否则当源为一个符号链接(默认%s)时，会由最后指定的一个选项来控制行为。\n"
 "\n"
+"使用 -s 选项会忽略 -L 和 -P。\n"
+"否则当<目标>为一个符号链接（默认为 %s）时，会由最后一个指定的选项来控制行为。\n"
 
 #: src/ln.c:542
 msgid "cannot combine --target-directory and --no-target-directory"
 msgstr "无法同时使用 --target-directory 和 --no-target-directory"
 
 #: src/ln.c:574
-#, fuzzy
-#| msgid "cannot create symbolic link %s"
 msgid "cannot do --relative without --symbolic"
-msgstr "无法创建符号链接%s"
+msgstr "无 --symbolic 选项时无法启用 --relative"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/logname.c:31
@@ -6415,7 +6394,7 @@ msgstr "长度不是 8 的倍数"
 #: src/md5sum.c:956
 #, c-format
 msgid "maximum digest length for %s is %<PRIuMAX> bits"
-msgstr ""
+msgstr "%s 最大摘要长度为 %<PRIuMAX> 比特"
 
 #: src/md5sum.c:974
 #, c-format
@@ -6507,14 +6486,8 @@ msgid "Usage: %s [OPTION]... NAME...\n"
 msgstr "用法：%s [选项]... 名称...\n"
 
 #: src/mkfifo.c:55
-#, fuzzy
-#| msgid ""
-#| "Create named pipes (FIFOs) with the given NAMEs.\n"
-#| "\n"
 msgid "Create named pipes (FIFOs) with the given NAMEs.\n"
-msgstr ""
-"以指定的名称创建先进先出文件(FIFO)。\n"
-"\n"
+msgstr "以指定的<名称>创建命名管道（FIFO）。\n"
 
 #: src/mkfifo.c:61 src/mknod.c:63
 msgid "  -m, --mode=MODE    set file permission bits to MODE, not a=rw - umask\n"
@@ -6715,7 +6688,7 @@ msgstr "无效后缀 %s，含有目录分隔符"
 #: src/mktemp.c:261
 #, c-format
 msgid "too few X's in template %s"
-msgstr "模板%s 中X 太少"
+msgstr "模板 %s 中的 X 太少"
 
 #: src/mktemp.c:277
 #, c-format
@@ -7174,11 +7147,11 @@ msgstr ""
 
 #: src/numfmt.c:891
 msgid "      --debug          print warnings about invalid input\n"
-msgstr ""
+msgstr "      --debug          对无效输入内容打印警告信息\n"
 
 #: src/numfmt.c:894
 msgid "  -d, --delimiter=X    use X instead of whitespace for field delimiter\n"
-msgstr ""
+msgstr "  -d, --delimiter=X    使用 X 替代空白作为域定界符\n"
 
 #: src/numfmt.c:897
 msgid ""
@@ -8855,7 +8828,7 @@ msgstr ""
 
 #: src/rm.c:297
 msgid "you may not abbreviate the --no-preserve-root option"
-msgstr ""
+msgstr "您不能使用缩写的 --no-preserve-root 选项"
 
 #: src/rm.c:309
 #, c-format
@@ -8984,7 +8957,7 @@ msgstr "没有指定命令"
 #: src/runcon.c:195
 #, c-format
 msgid "%s may be used only on a SELinux kernel"
-msgstr "%s 只能用于启用了SELinux 支持的内核"
+msgstr "%s 只能用于启用了 SELinux 支持的内核"
 
 #: src/runcon.c:222
 msgid "failed to compute a new context"
@@ -9001,16 +8974,14 @@ msgid "failed to set new type: %s"
 msgstr "设置新类型失败：%s"
 
 #: src/runcon.c:242
-#, fuzzy, c-format
-#| msgid "failed to set new range %s"
+#, c-format
 msgid "failed to set new range: %s"
-msgstr "设置新范围%s 失败"
+msgstr "设置新范围失败：%s"
 
 #: src/runcon.c:245
-#, fuzzy, c-format
-#| msgid "failed to set new role %s"
+#, c-format
 msgid "failed to set new role: %s"
-msgstr "设置新角色%s 失败"
+msgstr "设置新角色失败：%s"
 
 #: src/runcon.c:254
 #, c-format
@@ -9188,16 +9159,10 @@ msgstr "Colin Plumb"
 
 #: src/shred.c:171
 #, fuzzy
-#| msgid ""
-#| "Overwrite the specified FILE(s) repeatedly, in order to make it harder\n"
-#| "for even very expensive hardware probing to recover the data.\n"
-#| "\n"
 msgid ""
 "Overwrite the specified FILE(s) repeatedly, in order to make it harder\n"
 "for even very expensive hardware probing to recover the data.\n"
-msgstr ""
-"多次覆盖文件，使得即使是昂贵的硬件探测仪器也难以将数据复原。\n"
-"\n"
+msgstr "多次覆盖文件，使得即使是昂贵的硬件探测仪器也难以将数据复原。\n"
 
 #: src/shred.c:175
 msgid ""

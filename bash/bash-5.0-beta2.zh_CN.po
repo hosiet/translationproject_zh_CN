@@ -40,7 +40,7 @@ msgstr ""
 "Project-Id-Version: bash 5.0-beta2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 15:54-0500\n"
-"PO-Revision-Date: 2018-11-28 11:18-0500\n"
+"PO-Revision-Date: 2018-11-28 17:46-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -1659,7 +1659,7 @@ msgstr "/tmp 必须为有效的目录名"
 
 #: shell.c:798
 msgid "pretty-printing mode ignored in interactive shells"
-msgstr ""
+msgstr "在交互式 shell 中将忽略漂亮打印模式"
 
 #: shell.c:940
 #, c-format
@@ -2472,10 +2472,8 @@ msgid "printf [-v var] format [arguments]"
 msgstr "printf [-v var] 格式 [参数]"
 
 #: builtins.c:231
-#, fuzzy
-#| msgid "complete [-abcdefgjksuv] [-pr] [-DE] [-o option] [-A action] [-G globpat] [-W wordlist]  [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [name ...]"
 msgid "complete [-abcdefgjksuv] [-pr] [-DEI] [-o option] [-A action] [-G globpat] [-W wordlist]  [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [name ...]"
-msgstr "complete [-abcdefgjksuv] [-pr] [-DE] [-o 选项] [-A 动作] [-G 全局模式] [-W 词语列表]  [-F 函数] [-C 命令] [-X 过滤模式] [-P 前缀] [-S 后缀] [名称 ...]"
+msgstr "complete [-abcdefgjksuv] [-pr] [-DEI] [-o 选项] [-A 动作] [-G 全局模式] [-W 词语列表]  [-F 函数] [-C 命令] [-X 过滤模式] [-P 前缀] [-S 后缀] [名称 ...]"
 
 #: builtins.c:235
 msgid "compgen [-abcdefgjksuv] [-o option] [-A action] [-G globpat] [-W wordlist]  [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [word]"
@@ -2490,10 +2488,8 @@ msgid "mapfile [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C cal
 msgstr "mapfile [-d 分隔符] [-n 计数] [-O 起始序号] [-s 计数] [-t] [-u fd] [-C 回调] [-c 量子] [数组]"
 
 #: builtins.c:244
-#, fuzzy
-#| msgid "readarray [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [-c quantum] [array]"
 msgid "readarray [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [-c quantum] [array]"
-msgstr "readarray [-n 计数] [-O 起始序号] [-s 计数] [-t] [-u fd] [-C 回调] [-c 量子] [数组]"
+msgstr "readarray [-d 定界符] [-n 计数] [-O 起始序号] [-s 计数] [-t] [-u fd] [-C 回调] [-c 量子] [数组]"
 
 #: builtins.c:256
 msgid ""
@@ -2645,17 +2641,6 @@ msgstr ""
 "    退出状态为 0 除非 N 不大于或等于1。"
 
 #: builtins.c:354
-#, fuzzy
-#| msgid ""
-#| "Execute shell builtins.\n"
-#| "    \n"
-#| "    Execute SHELL-BUILTIN with arguments ARGs without performing command\n"
-#| "    lookup.  This is useful when you wish to reimplement a shell builtin\n"
-#| "    as a shell function, but need to execute the builtin within the function.\n"
-#| "    \n"
-#| "    Exit Status:\n"
-#| "    Returns the exit status of SHELL-BUILTIN, or false if SHELL-BUILTIN is\n"
-#| "    not a shell builtin.."
 msgid ""
 "Execute shell builtins.\n"
 "    \n"
@@ -2674,8 +2659,8 @@ msgstr ""
 "    并且希望在函数之内执行该 shell 内建的情况下有用处。\n"
 "    \n"
 "    退出状态：\n"
-"    以 SHELL-BUILTIN 内建的退出状态为准，或者如果 SHELL-BUILTIN不是一个 shell 内建时\n"
-"    为假。."
+"    以 SHELL-BUILTIN 内建的退出状态为准，或者如果 SHELL-BUILTIN 不是一个\n"
+"    shell 内建时为假。"
 
 #: builtins.c:369
 msgid ""

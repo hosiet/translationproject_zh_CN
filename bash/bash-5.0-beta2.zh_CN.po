@@ -40,7 +40,7 @@ msgstr ""
 "Project-Id-Version: bash 5.0-beta2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-16 15:54-0500\n"
-"PO-Revision-Date: 2018-11-28 17:46-0500\n"
+"PO-Revision-Date: 2018-11-28 18:07-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -1659,7 +1659,7 @@ msgstr "/tmp 必须为有效的目录名"
 
 #: shell.c:798
 msgid "pretty-printing mode ignored in interactive shells"
-msgstr "在交互式 shell 中将忽略漂亮打印模式"
+msgstr "在交互式 shell 中将忽略美观显示模式"
 
 #: shell.c:940
 #, c-format

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2018-06-24 21:56-0700\n"
-"PO-Revision-Date: 2018-10-09 21:57-0400\n"
+"PO-Revision-Date: 2018-12-28 09:26+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.1.1\n"
+"X-Generator: Poedit 2.2\n"
 
 #: lib/argmatch.c:134
 #, c-format
@@ -1490,6 +1490,9 @@ msgid ""
 "With --reference, change the owner and group of each FILE to those of RFILE.\n"
 "\n"
 msgstr ""
+"修改每个<文件>的所有者和/或所属组为给定的<所有者>和/或<组>。\n"
+"如同时使用 --reference，将每个给定<文件>的所有者和属组修改为<参考文件>\n"
+"所具有的对应值。\n"
 
 #: src/chown.c:104
 msgid ""
@@ -1509,14 +1512,10 @@ msgid ""
 "      --reference=RFILE  use RFILE's owner and group rather than\n"
 "                         specifying OWNER:GROUP values\n"
 msgstr ""
+"      --reference=<参考文件>  使用指定<参考文件>的所有者和所属组信息，而非\n"
+"                         手工指定 所有者:组 的值\n"
 
 #: src/chown.c:137
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Owner is unchanged if missing.  Group is unchanged if missing, but changed\n"
-#| "to login group if implied by a `:' following a symbolic OWNER.\n"
-#| "OWNER and GROUP may be numeric as well as symbolic.\n"
 msgid ""
 "\n"
 "Owner is unchanged if missing.  Group is unchanged if missing, but changed\n"
@@ -1524,8 +1523,9 @@ msgid ""
 "OWNER and GROUP may be numeric as well as symbolic.\n"
 msgstr ""
 "\n"
-"如果没有指定所有者，则不会更改。 所属组若没有指定也不会更改，但当加上\n"
-"\":\"时 GROUP 会更改为指定所有者的主要组。所有者和所属组可以是数字或名称。\n"
+"如果没有指定所有者，则不会更改所有者信息。若所属组若没有指定也不会对其更改，\n"
+"但当加上 ':' 时 GROUP 会更改为指定所有者的主要组。所有者和所属组可以是\n"
+"数字或名称。\n"
 
 #: src/chown.c:143
 #, c-format

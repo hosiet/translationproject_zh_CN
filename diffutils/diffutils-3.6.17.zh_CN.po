@@ -8,10 +8,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: diffutils 3.5.25\n"
+"Project-Id-Version: diffutils 3.6.17\n"
 "Report-Msgid-Bugs-To: bug-diffutils@gnu.org\n"
-"POT-Creation-Date: 2017-05-06 15:41-0700\n"
-"PO-Revision-Date: 2018-05-29 18:24+0800\n"
+"POT-Creation-Date: 2018-12-26 14:31-0800\n"
+"PO-Revision-Date: 2018-12-28 13:39+0800\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Poedit 2.2\n"
 
 #: lib/argmatch.c:134
 #, c-format
@@ -35,15 +35,15 @@ msgstr "有歧义的参数 %s 对于 %s"
 msgid "Valid arguments are:"
 msgstr "有效的参数为："
 
-#: lib/c-stack.c:203 lib/c-stack.c:296
+#: lib/c-stack.c:208 lib/c-stack.c:301
 msgid "program error"
 msgstr "程序错误"
 
-#: lib/c-stack.c:204 lib/c-stack.c:297
+#: lib/c-stack.c:209 lib/c-stack.c:302
 msgid "stack overflow"
 msgstr "栈溢出"
 
-#: lib/error.c:191
+#: lib/error.c:195
 msgid "Unknown system error"
 msgstr "未知的系统错误"
 
@@ -143,37 +143,37 @@ msgstr "whiteout 文件"
 msgid "weird file"
 msgstr "奇怪的文件"
 
-#: lib/getopt.c:277
+#: lib/getopt.c:278
 #, c-format
 msgid "%s: option '%s%s' is ambiguous\n"
 msgstr "%s：选项“%s%s”是不明确的\n"
 
-#: lib/getopt.c:283
+#: lib/getopt.c:284
 #, c-format
 msgid "%s: option '%s%s' is ambiguous; possibilities:"
 msgstr "%s：选项“%s%s”是不明确的；可能是："
 
-#: lib/getopt.c:318
+#: lib/getopt.c:319
 #, c-format
 msgid "%s: unrecognized option '%s%s'\n"
 msgstr "%s：无法识别的选项“%s%s”\n"
 
-#: lib/getopt.c:344
+#: lib/getopt.c:345
 #, c-format
 msgid "%s: option '%s%s' doesn't allow an argument\n"
 msgstr "%s：选项“%s%s”不允许带参数\n"
 
-#: lib/getopt.c:359
+#: lib/getopt.c:360
 #, c-format
 msgid "%s: option '%s%s' requires an argument\n"
 msgstr "%s：选项“%s%s”需要一个参数\n"
 
-#: lib/getopt.c:620
+#: lib/getopt.c:621
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
 msgstr "%s：无效选项 -- “%c”\n"
 
-#: lib/getopt.c:635 lib/getopt.c:681
+#: lib/getopt.c:636 lib/getopt.c:682
 #, c-format
 msgid "%s: option requires an argument -- '%c'\n"
 msgstr "%s：选项需要一个参数 -- “%c”\n"
@@ -197,13 +197,13 @@ msgstr "%s：选项需要一个参数 -- “%c”\n"
 #. for your locale.
 #.
 #. If you don't know what to put here, please see
-#. <http://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
+#. <https://en.wikipedia.org/wiki/Quotation_marks_in_other_languages>
 #. and use glyphs suitable for your language.
-#: lib/quotearg.c:354
+#: lib/quotearg.c:362
 msgid "`"
 msgstr "“"
 
-#: lib/quotearg.c:355
+#: lib/quotearg.c:363
 msgid "'"
 msgstr "”"
 
@@ -275,7 +275,7 @@ msgstr "正则表达式过大"
 msgid "Unmatched ) or \\)"
 msgstr "没有匹配的 ) 或 \\)"
 
-#: lib/regcomp.c:687
+#: lib/regcomp.c:688
 msgid "No previous regular expression"
 msgstr "之前没有任何正则表达式"
 
@@ -319,12 +319,12 @@ msgstr "在 %s%s 的参数 “%s” 中有无效的后缀"
 msgid "%s%s argument '%s' too large"
 msgstr "%s %s 参数 “%s” 太大"
 
-#: lib/version-etc.c:74
+#: lib/version-etc.c:73
 #, c-format
 msgid "Packaged by %s (%s)\n"
 msgstr "由 %s 打包 (%s)\n"
 
-#: lib/version-etc.c:77
+#: lib/version-etc.c:76
 #, c-format
 msgid "Packaged by %s\n"
 msgstr "由 %s 打包\n"
@@ -332,20 +332,20 @@ msgstr "由 %s 打包\n"
 #. TRANSLATORS: Translate "(C)" to the copyright symbol
 #. (C-in-a-circle), if this symbol is available in the user's
 #. locale.  Otherwise, do not translate "(C)"; leave it as-is.
-#: lib/version-etc.c:84
+#: lib/version-etc.c:83
 msgid "(C)"
 msgstr "©"
 
-#: lib/version-etc.c:86
+#: lib/version-etc.c:85
 msgid ""
 "\n"
-"License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.\n"
+"License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\n"
 "This is free software: you are free to change and redistribute it.\n"
 "There is NO WARRANTY, to the extent permitted by law.\n"
 "\n"
 msgstr ""
 "\n"
-"许可证：GPLv3+：GNU 通用公共许可证第 3 版或更新版本<http://gnu.org/licenses/gpl.html>。\n"
+"许可证：GPLv3+：GNU 通用公共许可证第 3 版或更新版本<https://gnu.org/licenses/gpl.html>。\n"
 "本软件是自由软件：您可以自由修改和重新发布它。\n"
 "在法律允许的范围内没有其他保证。\n"
 "\n"
@@ -486,14 +486,14 @@ msgstr "%s 主页: <%s>\n"
 
 #: lib/version-etc.c:253
 #, c-format
-msgid "%s home page: <http://www.gnu.org/software/%s/>\n"
-msgstr "%s 主页: <http://www.gnu.org/software/%s/>\n"
+msgid "%s home page: <https://www.gnu.org/software/%s/>\n"
+msgstr "%s 主页: <https://www.gnu.org/software/%s/>\n"
 
 #: lib/version-etc.c:256
-msgid "General help using GNU software: <http://www.gnu.org/gethelp/>\n"
-msgstr "使用 GNU 软件的通用帮助：<http://www.gnu.org/gethelp/>\n"
+msgid "General help using GNU software: <https://www.gnu.org/gethelp/>\n"
+msgstr "使用 GNU 软件的通用帮助：<https://www.gnu.org/gethelp/>\n"
 
-#: src/analyze.c:454 src/diff.c:1401
+#: src/analyze.c:454 src/diff.c:1404
 #, c-format
 msgid "Files %s and %s differ\n"
 msgstr "文件 %s 和 %s 不同\n"
@@ -537,7 +537,7 @@ msgstr "选项 -l 和 -s 不兼容"
 msgid "write failed"
 msgstr "写入失败"
 
-#: src/cmp.c:157 src/diff.c:887 src/diff.c:1466 src/diff3.c:471 src/sdiff.c:169
+#: src/cmp.c:157 src/diff.c:887 src/diff.c:1469 src/diff3.c:471 src/sdiff.c:169
 msgid "standard output"
 msgstr "标准输出"
 
@@ -1039,50 +1039,50 @@ msgstr "用法：%s [选项]... 文件列表\n"
 msgid "Compare FILES line by line."
 msgstr "逐行比较<各文件>。"
 
-#: src/diff.c:1029
+#: src/diff.c:1032
 #, c-format
 msgid "conflicting %s option value '%s'"
 msgstr "互相冲突的 %s 选项，参数值为 “%s”"
 
-#: src/diff.c:1042
+#: src/diff.c:1045
 #, c-format
 msgid "conflicting output style options"
 msgstr "互相冲突的输出风格选项"
 
-#: src/diff.c:1058
+#: src/diff.c:1061
 #, c-format
 msgid "invalid color '%s'"
 msgstr "无效的颜色“%s”"
 
-#: src/diff.c:1114 src/diff.c:1324
+#: src/diff.c:1117 src/diff.c:1327
 #, c-format
 msgid "Only in %s: %s\n"
 msgstr "只在 %s 存在：%s\n"
 
-#: src/diff.c:1248
+#: src/diff.c:1251
 msgid "cannot compare '-' to a directory"
 msgstr "“-” 无法与目录作比较"
 
-#: src/diff.c:1283
+#: src/diff.c:1286
 msgid "-D option not supported with directories"
 msgstr "-D 选项不支持目录使用"
 
-#: src/diff.c:1292
+#: src/diff.c:1295
 #, c-format
 msgid "Common subdirectories: %s and %s\n"
 msgstr "%s 和 %s 有共同的子目录\n"
 
-#: src/diff.c:1334 src/diff.c:1384
+#: src/diff.c:1337 src/diff.c:1387
 #, c-format
 msgid "File %s is a %s while file %s is a %s\n"
 msgstr "文件 %s 是%s而文件 %s 是%s\n"
 
-#: src/diff.c:1370
+#: src/diff.c:1373
 #, c-format
 msgid "Symbolic links %s and %s differ\n"
 msgstr "软链接 %s 和 %s 不同\n"
 
-#: src/diff.c:1457
+#: src/diff.c:1460
 #, c-format
 msgid "Files %s and %s are identical\n"
 msgstr "檔案 %s 和 %s 相同\n"

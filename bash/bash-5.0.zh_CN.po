@@ -8,7 +8,7 @@
 # Mingcong Bai <jeffbai@aosc.xyz>, 2015.
 # liushuyu <liushuyu011@gmail.com>, 2016.
 # Mingye Wang <arthur200126@gmail.com>, 2015, 2016.
-# Boyuan Yang <073plan@gmail.com>, 2018.
+# Boyuan Yang <073plan@gmail.com>, 2018, 2019.
 #
 # KNOWN DEFECTS (easy fixes, tedious work; sorted by priority):
 #  0. Translation coverage when upstream sends new strings.
@@ -37,10 +37,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: bash 5.0-beta2\n"
+"Project-Id-Version: bash 5.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-16 15:54-0500\n"
-"PO-Revision-Date: 2018-12-08 14:10-0500\n"
+"POT-Creation-Date: 2018-12-19 15:52-0500\n"
+"PO-Revision-Date: 2019-01-08 15:20-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -55,8 +55,8 @@ msgstr ""
 msgid "bad array subscript"
 msgstr "数组下标不正确"
 
-#: arrayfunc.c:377 builtins/declare.def:638 variables.c:2233 variables.c:2259
-#: variables.c:3075
+#: arrayfunc.c:377 builtins/declare.def:638 variables.c:2254 variables.c:2280
+#: variables.c:3108
 #, c-format
 msgid "%s: removing nameref attribute"
 msgstr "%s：正在移除名称引用属性"
@@ -86,21 +86,21 @@ msgstr "%s：%s：为关联数组赋值时必须使用下标"
 msgid "%s: cannot create: %s"
 msgstr "%s：无法创建: %s"
 
-#: bashline.c:4143
+#: bashline.c:4144
 msgid "bash_execute_unix_command: cannot find keymap for command"
 msgstr "bash_execute_unix_command: 无法为命令找到键映射"
 
-#: bashline.c:4253
+#: bashline.c:4254
 #, c-format
 msgid "%s: first non-whitespace character is not `\"'"
 msgstr "%s：第一个非空字符不是“\"”"
 
-#: bashline.c:4282
+#: bashline.c:4283
 #, c-format
 msgid "no closing `%c' in %s"
 msgstr "%2$s 中没有闭合的“%1$c”"
 
-#: bashline.c:4316
+#: bashline.c:4317
 #, c-format
 msgid "%s: missing colon separator"
 msgstr "%s：缺少冒号分隔符"
@@ -120,7 +120,7 @@ msgstr "大括号展开：为 %u 个元素分配内存失败"
 msgid "brace expansion: failed to allocate memory for `%s'"
 msgstr "大括号展开：为“%s”分配内存失败"
 
-#: builtins/alias.def:131 variables.c:1821
+#: builtins/alias.def:131 variables.c:1842
 #, c-format
 msgid "`%s': invalid alias name"
 msgstr "“%s”: 无效的别名"
@@ -234,7 +234,7 @@ msgstr "%s：无效选项"
 msgid "%s: invalid option name"
 msgstr "%s：无效的选项名"
 
-#: builtins/common.c:230 execute_cmd.c:2363 general.c:296 general.c:301
+#: builtins/common.c:230 execute_cmd.c:2372 general.c:352 general.c:357
 #, c-format
 msgid "`%s': not a valid identifier"
 msgstr "“%s”: 不是有效的标识符"
@@ -369,13 +369,13 @@ msgstr "只能在函数中使用"
 msgid "%s: reference variable cannot be an array"
 msgstr "%s：引用变量不能为数组"
 
-#: builtins/declare.def:380 variables.c:3325
+#: builtins/declare.def:380 variables.c:3363
 #, c-format
 msgid "%s: nameref variable self references not allowed"
 msgstr "%s：不允许名称引用变量引用自身"
 
-#: builtins/declare.def:385 variables.c:2063 variables.c:3236 variables.c:3248
-#: variables.c:3322
+#: builtins/declare.def:385 variables.c:2084 variables.c:3272 variables.c:3285
+#: variables.c:3360
 #, c-format
 msgid "%s: circular name reference"
 msgstr "%s：循环变量名引用"
@@ -389,7 +389,7 @@ msgstr "“%s”: 无效的名称引用变量名"
 msgid "cannot use `-f' to make functions"
 msgstr "无法用 `-f' 生成函数"
 
-#: builtins/declare.def:532 execute_cmd.c:5843
+#: builtins/declare.def:532 execute_cmd.c:5852
 #, c-format
 msgid "%s: readonly function"
 msgstr "%s：只读函数"
@@ -438,7 +438,7 @@ msgstr "%s：未以动态方式加载"
 msgid "%s: cannot delete: %s"
 msgstr "%s：无法删除: %s"
 
-#: builtins/evalfile.c:138 builtins/hash.def:184 execute_cmd.c:5675
+#: builtins/evalfile.c:138 builtins/hash.def:184 execute_cmd.c:5684
 #, c-format
 msgid "%s: is a directory"
 msgstr "%s：是一个目录"
@@ -834,21 +834,21 @@ msgstr "读错误: %d: %s"
 msgid "can only `return' from a function or sourced script"
 msgstr "只能从函数或者源脚本返回(`return')"
 
-#: builtins/set.def:834
+#: builtins/set.def:852
 msgid "cannot simultaneously unset a function and a variable"
 msgstr "无法同时取消设定一个函数和一个变量"
 
-#: builtins/set.def:886
+#: builtins/set.def:904
 #, c-format
 msgid "%s: cannot unset"
 msgstr "%s：无法取消设定"
 
-#: builtins/set.def:907 variables.c:3772
+#: builtins/set.def:925 variables.c:3813
 #, c-format
 msgid "%s: cannot unset: readonly %s"
 msgstr "%s：无法取消设定: 只读 %s"
 
-#: builtins/set.def:920
+#: builtins/set.def:938
 #, c-format
 msgid "%s: not an array variable"
 msgstr "%s：不是数组变量"
@@ -1022,61 +1022,61 @@ msgstr "无法从 /dev/null 重定向标准输入: %s"
 msgid "TIMEFORMAT: `%c': invalid format character"
 msgstr "时间格式: `%c': 无效的格式字符"
 
-#: execute_cmd.c:2352
+#: execute_cmd.c:2361
 #, c-format
 msgid "execute_coproc: coproc [%d:%s] still exists"
 msgstr "execute_coproc: 副进程 [%d:%s] 仍然存在"
 
-#: execute_cmd.c:2476
+#: execute_cmd.c:2485
 msgid "pipe error"
 msgstr "管道错误"
 
-#: execute_cmd.c:4662
+#: execute_cmd.c:4671
 #, c-format
 msgid "eval: maximum eval nesting level exceeded (%d)"
 msgstr "eval: 超出最大 eval 嵌套层数 (%d)"
 
-#: execute_cmd.c:4674
+#: execute_cmd.c:4683
 #, c-format
 msgid "%s: maximum source nesting level exceeded (%d)"
 msgstr "%s：超出最大 source 嵌套层数 (%d)"
 
-#: execute_cmd.c:4782
+#: execute_cmd.c:4791
 #, c-format
 msgid "%s: maximum function nesting level exceeded (%d)"
 msgstr "%s：超出最大函数嵌套层数 (%d)"
 
-#: execute_cmd.c:5331
+#: execute_cmd.c:5340
 #, c-format
 msgid "%s: restricted: cannot specify `/' in command names"
 msgstr "%s：受限的: 无法在命令名中使用 `/'"
 
-#: execute_cmd.c:5429
+#: execute_cmd.c:5438
 #, c-format
 msgid "%s: command not found"
 msgstr "%s：未找到命令"
 
-#: execute_cmd.c:5673
+#: execute_cmd.c:5682
 #, c-format
 msgid "%s: %s"
 msgstr "%s：%s"
 
-#: execute_cmd.c:5711
+#: execute_cmd.c:5720
 #, c-format
 msgid "%s: %s: bad interpreter"
 msgstr "%s：%s：解释器错误"
 
-#: execute_cmd.c:5748
+#: execute_cmd.c:5757
 #, c-format
 msgid "%s: cannot execute binary file: %s"
 msgstr "%s：无法执行二进制文件: %s"
 
-#: execute_cmd.c:5834
+#: execute_cmd.c:5843
 #, c-format
 msgid "`%s': is a special builtin"
 msgstr "“%s”: 特殊内建"
 
-#: execute_cmd.c:5886
+#: execute_cmd.c:5895
 #, c-format
 msgid "cannot duplicate fd %d to fd %d"
 msgstr "无法复制文件描述符 %d 到文件描述符 %d"
@@ -1155,7 +1155,7 @@ msgstr "%s：表达式错误\n"
 msgid "getcwd: cannot access parent directories"
 msgstr "getcwd: 无法访问父目录"
 
-#: input.c:99 subst.c:5906
+#: input.c:99 subst.c:5930
 #, c-format
 msgid "cannot reset nodelay mode for fd %d"
 msgstr "无法为文件描述符 %d 重置nodelay模式"
@@ -1170,152 +1170,152 @@ msgstr "无法从文件描述符 %d 为 bash 的输入获取一个新的文件�
 msgid "save_bash_input: buffer already exists for new fd %d"
 msgstr "save_bash_input: 已经存在新的文件描述符 %d 的缓冲区"
 
-#: jobs.c:527
+#: jobs.c:529
 msgid "start_pipeline: pgrp pipe"
 msgstr "start_pipeline: 进程组管道"
 
-#: jobs.c:1082
+#: jobs.c:1084
 #, c-format
 msgid "forked pid %d appears in running job %d"
 msgstr "叉分 (fork) 出的的进程号 %d 出现在运行中的任务 %d 中"
 
-#: jobs.c:1201
+#: jobs.c:1203
 #, c-format
 msgid "deleting stopped job %d with process group %ld"
 msgstr "删除进程组 %2$ld 中已停止的任务 %1$d"
 
-#: jobs.c:1305
+#: jobs.c:1307
 #, c-format
 msgid "add_process: process %5ld (%s) in the_pipeline"
 msgstr "add_process: 进程 %5ld(%s) 进入 the_pipeline"
 
-#: jobs.c:1308
+#: jobs.c:1310
 #, c-format
 msgid "add_process: pid %5ld (%s) marked as still alive"
 msgstr "add_process: 进程号 %5ld(%s) 标注为仍活着"
 
-#: jobs.c:1637
+#: jobs.c:1639
 #, c-format
 msgid "describe_pid: %ld: no such pid"
 msgstr "describe_pid: %ld: 无此进程号"
 
-#: jobs.c:1652
+#: jobs.c:1654
 #, c-format
 msgid "Signal %d"
 msgstr "信号 %d"
 
-#: jobs.c:1666 jobs.c:1692
+#: jobs.c:1668 jobs.c:1694
 msgid "Done"
 msgstr "已完成"
 
-#: jobs.c:1671 siglist.c:123
+#: jobs.c:1673 siglist.c:123
 msgid "Stopped"
 msgstr "已停止"
 
-#: jobs.c:1675
+#: jobs.c:1677
 #, c-format
 msgid "Stopped(%s)"
 msgstr "已停止(%s)"
 
-#: jobs.c:1679
+#: jobs.c:1681
 msgid "Running"
 msgstr "运行中"
 
-#: jobs.c:1696
+#: jobs.c:1698
 #, c-format
 msgid "Done(%d)"
 msgstr "已完成(%d)"
 
-#: jobs.c:1698
+#: jobs.c:1700
 #, c-format
 msgid "Exit %d"
 msgstr "退出 %d"
 
-#: jobs.c:1701
+#: jobs.c:1703
 msgid "Unknown status"
 msgstr "未知状态"
 
-#: jobs.c:1788
+#: jobs.c:1790
 #, c-format
 msgid "(core dumped) "
 msgstr "（核心已转储）"
 
-#: jobs.c:1807
+#: jobs.c:1809
 #, c-format
 msgid "  (wd: %s)"
 msgstr "  (工作目录: %s)"
 
-#: jobs.c:2035
+#: jobs.c:2037
 #, c-format
 msgid "child setpgid (%ld to %ld)"
 msgstr "子进程 setpgid (%ld 到 %ld)"
 
-#: jobs.c:2397 nojobs.c:657
+#: jobs.c:2399 nojobs.c:657
 #, c-format
 msgid "wait: pid %ld is not a child of this shell"
 msgstr "wait: 进程号 %ld 不是当前 shell 的子进程"
 
-#: jobs.c:2693
+#: jobs.c:2695
 #, c-format
 msgid "wait_for: No record of process %ld"
 msgstr "wiat_for: 没有进程 %ld 的记录"
 
-#: jobs.c:3053
+#: jobs.c:3055
 #, c-format
 msgid "wait_for_job: job %d is stopped"
 msgstr "wait_for_job: 任务 %d 已停止"
 
-#: jobs.c:3360
+#: jobs.c:3362
 #, c-format
 msgid "%s: job has terminated"
 msgstr "%s：任务已经终止"
 
-#: jobs.c:3369
+#: jobs.c:3371
 #, c-format
 msgid "%s: job %d already in background"
 msgstr "%s：任务 %d 已在后台"
 
-#: jobs.c:3595
+#: jobs.c:3597
 msgid "waitchld: turning on WNOHANG to avoid indefinite block"
 msgstr "waitchld: 打开 WNOHANG 以避免无限阻塞"
 
-#: jobs.c:4118
+#: jobs.c:4120
 #, c-format
 msgid "%s: line %d: "
 msgstr "%s：行 %d: "
 
-#: jobs.c:4132 nojobs.c:900
+#: jobs.c:4134 nojobs.c:900
 #, c-format
 msgid " (core dumped)"
 msgstr " (核心已转储)"
 
-#: jobs.c:4144 jobs.c:4157
+#: jobs.c:4146 jobs.c:4159
 #, c-format
 msgid "(wd now: %s)\n"
 msgstr "(当前工作目录：%s)\n"
 
-#: jobs.c:4189
+#: jobs.c:4191
 msgid "initialize_job_control: getpgrp failed"
 msgstr "initialize_job_control: getpgrp 失败"
 
-#: jobs.c:4245
+#: jobs.c:4247
 msgid "initialize_job_control: no job control in background"
 msgstr "initialize_job_control: 后台无任务控制"
 
-#: jobs.c:4261
+#: jobs.c:4263
 msgid "initialize_job_control: line discipline"
 msgstr "initialize_job_control: 行规则"
 
-#: jobs.c:4271
+#: jobs.c:4273
 msgid "initialize_job_control: setpgid"
 msgstr "initialize_job_control: setpgid"
 
-#: jobs.c:4292 jobs.c:4301
+#: jobs.c:4294 jobs.c:4303
 #, c-format
 msgid "cannot set terminal process group (%d)"
 msgstr "无法设定终端进程组(%d)"
 
-#: jobs.c:4306
+#: jobs.c:4308
 msgid "no job control in this shell"
 msgstr "此 shell 中无任务控制"
 
@@ -1468,108 +1468,108 @@ msgstr "立即文档在第 %d 行被文件结束符分隔 (需要“%s”)"
 msgid "make_redirection: redirection instruction `%d' out of range"
 msgstr "make_redirection：重定向指令“%d”越界"
 
-#: parse.y:2369
+#: parse.y:2380
 #, c-format
 msgid "shell_getc: shell_input_line_size (%zu) exceeds SIZE_MAX (%lu): line truncated"
 msgstr "shell_getc：shell_input_line_size (%zu) 超过 SIZE_MAX (%lu)：行被截断"
 
-#: parse.y:2775
+#: parse.y:2786
 msgid "maximum here-document count exceeded"
 msgstr "超出最大立即文档数量"
 
-#: parse.y:3521 parse.y:3891
+#: parse.y:3536 parse.y:3906
 #, c-format
 msgid "unexpected EOF while looking for matching `%c'"
 msgstr "寻找匹配的“%c”时遇到了未预期的文件结束符"
 
-#: parse.y:4591
+#: parse.y:4606
 msgid "unexpected EOF while looking for `]]'"
 msgstr "寻找“]]”时遇到了未预期的文件结束符"
 
-#: parse.y:4596
+#: parse.y:4611
 #, c-format
 msgid "syntax error in conditional expression: unexpected token `%s'"
 msgstr "条件表达式中有语法错误：未预期的符号“%s”"
 
-#: parse.y:4600
+#: parse.y:4615
 msgid "syntax error in conditional expression"
 msgstr "条件表达式中有语法错误"
 
-#: parse.y:4678
+#: parse.y:4693
 #, c-format
 msgid "unexpected token `%s', expected `)'"
 msgstr "未预期的符号“%s” ，需要“)”"
 
-#: parse.y:4682
+#: parse.y:4697
 msgid "expected `)'"
 msgstr "需要“)”"
 
-#: parse.y:4710
+#: parse.y:4725
 #, c-format
 msgid "unexpected argument `%s' to conditional unary operator"
 msgstr "一元条件运算符使用了未预期的参数“%s”"
 
-#: parse.y:4714
+#: parse.y:4729
 msgid "unexpected argument to conditional unary operator"
 msgstr "一元条件运算符使用了未预期的参数"
 
-#: parse.y:4760
+#: parse.y:4775
 #, c-format
 msgid "unexpected token `%s', conditional binary operator expected"
 msgstr "未预期的符号“%s”，需要二元条件运算符"
 
-#: parse.y:4764
+#: parse.y:4779
 msgid "conditional binary operator expected"
 msgstr "需要二元条件运算符"
 
-#: parse.y:4786
+#: parse.y:4801
 #, c-format
 msgid "unexpected argument `%s' to conditional binary operator"
 msgstr "二元条件运算符使用了未预期的参数“%s”"
 
-#: parse.y:4790
+#: parse.y:4805
 msgid "unexpected argument to conditional binary operator"
 msgstr "二元条件运算符使用了未预期的参数"
 
-#: parse.y:4801
+#: parse.y:4816
 #, c-format
 msgid "unexpected token `%c' in conditional command"
 msgstr "条件命令中有未预期的符号“%c”"
 
-#: parse.y:4804
+#: parse.y:4819
 #, c-format
 msgid "unexpected token `%s' in conditional command"
 msgstr "条件命令中有未预期的符号“%s”"
 
-#: parse.y:4808
+#: parse.y:4823
 #, c-format
 msgid "unexpected token %d in conditional command"
 msgstr "条件命令中有未预期的符号 %d"
 
-#: parse.y:6230
+#: parse.y:6245
 #, c-format
 msgid "syntax error near unexpected token `%s'"
 msgstr "未预期的符号“%s”附近有语法错误"
 
-#: parse.y:6248
+#: parse.y:6263
 #, c-format
 msgid "syntax error near `%s'"
 msgstr "“%s”附近有语法错误"
 
-#: parse.y:6258
+#: parse.y:6273
 msgid "syntax error: unexpected end of file"
 msgstr "语法错误: 未预期的文件结尾"
 
-#: parse.y:6258
+#: parse.y:6273
 msgid "syntax error"
 msgstr "语法错误"
 
-#: parse.y:6320
+#: parse.y:6335
 #, c-format
 msgid "Use \"%s\" to leave the shell.\n"
 msgstr "使用 \"%s\" 退出 shell 。\n"
 
-#: parse.y:6482
+#: parse.y:6497
 msgid "unexpected EOF while looking for matching `)'"
 msgstr "寻找匹配的“)”时遇到了未预期的文件结束符"
 
@@ -1588,26 +1588,26 @@ msgstr "programmable_completion: %s：疑似重试循环"
 msgid "progcomp_insert: %s: NULL COMPSPEC"
 msgstr "progcomp_insert: %s：空的补全声明"
 
-#: print_cmd.c:300
+#: print_cmd.c:302
 #, c-format
 msgid "print_command: bad connector `%d'"
 msgstr "print_command: 错误的条件连接符 `%d'"
 
-#: print_cmd.c:373
+#: print_cmd.c:375
 #, c-format
 msgid "xtrace_set: %d: invalid file descriptor"
 msgstr "xtrace_set: %d: 无效的文件描述符"
 
-#: print_cmd.c:378
+#: print_cmd.c:380
 msgid "xtrace_set: NULL file pointer"
 msgstr "xtrace_set: 空的文件指针"
 
-#: print_cmd.c:382
+#: print_cmd.c:384
 #, c-format
 msgid "xtrace fd (%d) != fileno xtrace fp (%d)"
 msgstr "xtrace fd (%d) != fileno xtrace fp (%d)"
 
-#: print_cmd.c:1538
+#: print_cmd.c:1540
 #, c-format
 msgid "cprintf: `%c': invalid format character"
 msgstr "cprintf: `%c': 无效的格式字符"
@@ -1645,7 +1645,7 @@ msgstr "%s：无法将文件描述符赋值给变量"
 msgid "/dev/(tcp|udp)/host/port not supported without networking"
 msgstr "没有网络时不支持 /dev/(tcp|udp)/host/port"
 
-#: redir.c:873 redir.c:988 redir.c:1049 redir.c:1217
+#: redir.c:875 redir.c:990 redir.c:1051 redir.c:1221
 msgid "redirection error: cannot duplicate fd"
 msgstr "重定向错误: 无法复制文件描述符"
 
@@ -1924,105 +1924,105 @@ msgstr "未知信号 #"
 msgid "Unknown Signal #%d"
 msgstr "未知信号 #%d"
 
-#: subst.c:1452 subst.c:1642
+#: subst.c:1454 subst.c:1644
 #, c-format
 msgid "bad substitution: no closing `%s' in %s"
 msgstr "错误的替换: 在 %2$s 中没有闭合的 `%1$s'"
 
-#: subst.c:3229
+#: subst.c:3231
 #, c-format
 msgid "%s: cannot assign list to array member"
 msgstr "%s：无法将链表赋值给数组成员"
 
-#: subst.c:5765 subst.c:5781
+#: subst.c:5789 subst.c:5805
 msgid "cannot make pipe for process substitution"
 msgstr "无法为进程替换创建管道"
 
-#: subst.c:5827
+#: subst.c:5851
 msgid "cannot make child for process substitution"
 msgstr "无法为进程替换创建子进程"
 
-#: subst.c:5896
+#: subst.c:5920
 #, c-format
 msgid "cannot open named pipe %s for reading"
 msgstr "无法打开命名管道 %s 以读取"
 
-#: subst.c:5898
+#: subst.c:5922
 #, c-format
 msgid "cannot open named pipe %s for writing"
 msgstr "无法打开命名管道 %s 进行写入"
 
-#: subst.c:5921
+#: subst.c:5945
 #, c-format
 msgid "cannot duplicate named pipe %s as fd %d"
 msgstr "无法将命名管道 %s 作为文件描述符 %d 复制"
 
-#: subst.c:6038
+#: subst.c:6062
 msgid "command substitution: ignored null byte in input"
 msgstr "命令替换：忽略输入中的 null 字节"
 
-#: subst.c:6166
+#: subst.c:6190
 msgid "cannot make pipe for command substitution"
 msgstr "无法为命令替换创建管道"
 
-#: subst.c:6209
+#: subst.c:6233
 msgid "cannot make child for command substitution"
 msgstr "无法为命令替换创建子进程"
 
-#: subst.c:6235
+#: subst.c:6259
 msgid "command_substitute: cannot duplicate pipe as fd 1"
 msgstr "command_substitute: 无法将管道复制为文件描述符 1"
 
-#: subst.c:6685 subst.c:9597
+#: subst.c:6710 subst.c:9623
 #, c-format
 msgid "%s: invalid variable name for name reference"
 msgstr "%s：无效的引用变量名"
 
-#: subst.c:6781 subst.c:6799 subst.c:6954
+#: subst.c:6806 subst.c:6824 subst.c:6979
 #, c-format
 msgid "%s: invalid indirect expansion"
 msgstr "%s：无效的间接展开"
 
-#: subst.c:6815 subst.c:6962
+#: subst.c:6840 subst.c:6987
 #, c-format
 msgid "%s: invalid variable name"
 msgstr "%s：无效的变量名"
 
-#: subst.c:7031
+#: subst.c:7056
 #, c-format
 msgid "%s: parameter not set"
 msgstr "%s：参数未设置"
 
-#: subst.c:7033
+#: subst.c:7058
 #, c-format
 msgid "%s: parameter null or not set"
 msgstr "%s：参数为空或未设置"
 
-#: subst.c:7270 subst.c:7285
+#: subst.c:7295 subst.c:7310
 #, c-format
 msgid "%s: substring expression < 0"
 msgstr "%s：子串表达式 < 0"
 
-#: subst.c:8948 subst.c:8969
+#: subst.c:8973 subst.c:8994
 #, c-format
 msgid "%s: bad substitution"
 msgstr "%s：错误的替换"
 
-#: subst.c:9057
+#: subst.c:9082
 #, c-format
 msgid "$%s: cannot assign in this way"
 msgstr "$%s：无法这样赋值"
 
-#: subst.c:9460
+#: subst.c:9485
 msgid "future versions of the shell will force evaluation as an arithmetic substitution"
 msgstr "未来版本的 shell 会强制估值为算术替换"
 
-#: subst.c:10017
+#: subst.c:10043
 #, c-format
 msgid "bad substitution: no closing \"`\" in %s"
 msgstr "错误的替换: 在 %s 中没有闭合的 \"`\""
 
-#: subst.c:11044
+#: subst.c:11070
 #, c-format
 msgid "no match: %s"
 msgstr "无匹配: %s"
@@ -2083,72 +2083,72 @@ msgstr "run_pending_traps: 信号处理器是 SIG_DFL，重新发送 %d (%s) 给
 msgid "trap_handler: bad signal %d"
 msgstr "trap_handler: 错误的信号 %d"
 
-#: variables.c:411
+#: variables.c:412
 #, c-format
 msgid "error importing function definition for `%s'"
 msgstr "“%s”函数定义导入错误"
 
-#: variables.c:820
+#: variables.c:821
 #, c-format
 msgid "shell level (%d) too high, resetting to 1"
 msgstr "shell 层次 (%d) 太高，重置为 1"
 
-#: variables.c:2623
+#: variables.c:2655
 msgid "make_local_variable: no function context at current scope"
 msgstr "make_local_variable: 当前作用域中没有函数上下文"
 
-#: variables.c:2642
+#: variables.c:2674
 #, c-format
 msgid "%s: variable may not be assigned value"
 msgstr "%s：变量不可赋值"
 
-#: variables.c:3415
+#: variables.c:3453
 #, c-format
 msgid "%s: assigning integer to name reference"
 msgstr "%s：将整数赋值给名称引用"
 
-#: variables.c:4324
+#: variables.c:4365
 msgid "all_local_variables: no function context at current scope"
 msgstr "all_local_variables: 当前作用域中没有函数上下文"
 
-#: variables.c:4657
+#: variables.c:4698
 #, c-format
 msgid "%s has null exportstr"
 msgstr "%s 的 exportstr 为空"
 
-#: variables.c:4662 variables.c:4671
+#: variables.c:4703 variables.c:4712
 #, c-format
 msgid "invalid character %d in exportstr for %s"
 msgstr "%2$s 的 exportstr 中有无效的字符 %1$d"
 
-#: variables.c:4677
+#: variables.c:4718
 #, c-format
 msgid "no `=' in exportstr for %s"
 msgstr "%s 的 exportstr 中没有“=”"
 
-#: variables.c:5202
+#: variables.c:5243
 msgid "pop_var_context: head of shell_variables not a function context"
 msgstr "pop_var_context: shell_variables 的头部不是函数上下文"
 
-#: variables.c:5215
+#: variables.c:5256
 msgid "pop_var_context: no global_variables context"
 msgstr "pop_var_context: 没有 global_variables 上下文"
 
-#: variables.c:5295
+#: variables.c:5336
 msgid "pop_scope: head of shell_variables not a temporary environment scope"
 msgstr "pop_scope: shell_variables 的头部不是临时环境作用域"
 
-#: variables.c:6231
+#: variables.c:6272
 #, c-format
 msgid "%s: %s: cannot open as FILE"
 msgstr "%s：%s：无法作为文件打开"
 
-#: variables.c:6236
+#: variables.c:6277
 #, c-format
 msgid "%s: %s: invalid value for trace file descriptor"
 msgstr "%s：%s：追踪文件描述符的值无效"
 
-#: variables.c:6281
+#: variables.c:6322
 #, c-format
 msgid "%s: %s: compatibility value out of range"
 msgstr "%s：%s：兼容版本数值越界"
@@ -2536,9 +2536,9 @@ msgstr ""
 "从别名定义列表中删除每一个“名字”。\n"
 "    \n"
 "    选项：\n"
-"      -a\t删除所有的别名定义。\n"
+"      -a\t删除所有的别名定义\n"
 "    \n"
-"    返回成功，除非“名字“不是一个已存在的别名。"
+"    返回成功，除非“名字”不是一个已存在的别名。"
 
 #: builtins.c:291
 msgid ""
@@ -2981,6 +2981,10 @@ msgid ""
 "    \t\t0 to 3 octal digits\n"
 "      \\xHH\tthe eight-bit character whose value is HH (hexadecimal).  HH\n"
 "    \t\tcan be one or two hex digits\n"
+"      \\uHHHH\tthe Unicode character whose value is the hexadecimal value HHHH.\n"
+"    \t\tHHHH can be one to four hex digits.\n"
+"      \\UHHHHHHHH the Unicode character whose value is the hexadecimal value\n"
+"    \t\tHHHHHHHH. HHHHHHHH can be one to eight hex digits.\n"
 "    \n"
 "    Exit Status:\n"
 "    Returns success unless a write error occurs."
@@ -2995,7 +2999,7 @@ msgstr ""
 "      -E\t显式地抑制对于反斜杠转义的解释\n"
 "    \n"
 "    `echo' 对下列反斜杠字符进行转义：\n"
-"      \\a\t警告(响铃)\n"
+"      \a\t警告(响铃)\n"
 "      \\b\t退格\n"
 "      \\c\t抑制更多的输出\n"
 "      \\e\t转义字符\n"
@@ -3005,13 +3009,17 @@ msgstr ""
 "      \\t\t横向制表符\n"
 "      \\v\t纵向制表符\n"
 "      \\\\\t反斜杠\n"
-"      \\0nnn\t以 NNN (八进制)为 ASCII 码的字符。 NNN 可以是 0 到 3 个八进制位\n"
-"      \\xHH\t以 HH (十六进制)为值的八按位字符。HH可以是一个或两个十六进制位\n"
+"      \\0nnn\t以 NNN（八进制）为 ASCII 码的字符。NNN 可以是 0 到 3 个八进制位\n"
+"      \\xHH\t以 HH（十六进制）为值的八比特字符。HH 可以是一个或两个十六进制位\n"
+"      \\uHHHH\t以 HHHH（十六进制）为值的 Unicode 字符。HHHH 可以是一个到\n"
+"    \t\t四个十六进制位。\n"
+"      \\UHHHHHHHH 以 HHHHHHHH（十六进制）为值的 Unicode 字符。\n"
+"    \t\tHHHHHHHH 可以是一到八个十六进制位。\n"
 "    \n"
 "    退出状态：\n"
 "    返回成功除非有写错误发生。"
 
-#: builtins.c:591
+#: builtins.c:595
 msgid ""
 "Write arguments to the standard output.\n"
 "    \n"
@@ -3033,7 +3041,7 @@ msgstr ""
 "    退出状态：\n"
 "    除非写错误发生，否则返回成功。"
 
-#: builtins.c:606
+#: builtins.c:610
 msgid ""
 "Enable and disable shell builtins.\n"
 "    \n"
@@ -3083,7 +3091,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非 NAME 不是一个 shell 内建或者有错误发生。"
 
-#: builtins.c:634
+#: builtins.c:638
 msgid ""
 "Execute arguments as a shell command.\n"
 "    \n"
@@ -3101,7 +3109,7 @@ msgstr ""
 "    退出状态：\n"
 "    以命令的状态退出，或者在命令为空的情况下返回成功。"
 
-#: builtins.c:646
+#: builtins.c:650
 msgid ""
 "Parse option arguments.\n"
 "    \n"
@@ -3179,7 +3187,7 @@ msgstr ""
 "    如果一个选项被找到则返回成功；如果遇到了选项的结尾或者\n"
 "    有错误发生则返回失败。"
 
-#: builtins.c:688
+#: builtins.c:692
 msgid ""
 "Replace the shell with the given command.\n"
 "    \n"
@@ -3215,7 +3223,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功除非 COMMAND 命令没有找到或者出现一个重定向错误。"
 
-#: builtins.c:709
+#: builtins.c:713
 msgid ""
 "Exit the shell.\n"
 "    \n"
@@ -3227,7 +3235,7 @@ msgstr ""
 "    以状态 N 退出 shell。  如果 N 被省略，则退出状态\n"
 "    为最后一个执行的命令的退出状态。"
 
-#: builtins.c:718
+#: builtins.c:722
 msgid ""
 "Exit a login shell.\n"
 "    \n"
@@ -3239,7 +3247,7 @@ msgstr ""
 "    以状态 N 退出一个登录 shell。如果不在登录 shell 中执行，则\n"
 "    返回一个错误。"
 
-#: builtins.c:728
+#: builtins.c:732
 msgid ""
 "Display or execute commands from the history list.\n"
 "    \n"
@@ -3289,7 +3297,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，或者执行的命令的状态；如果错误发生则返回非零。"
 
-#: builtins.c:758
+#: builtins.c:762
 msgid ""
 "Move job to the foreground.\n"
 "    \n"
@@ -3309,7 +3317,7 @@ msgstr ""
 "    退出状态：\n"
 "    放至前台的命令状态，或者当错误发生时为失败。"
 
-#: builtins.c:773
+#: builtins.c:777
 msgid ""
 "Move jobs to the background.\n"
 "    \n"
@@ -3329,7 +3337,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功除非任务管理没有启用或者错误发生。"
 
-#: builtins.c:787
+#: builtins.c:791
 msgid ""
 "Remember or display program locations.\n"
 "    \n"
@@ -3371,7 +3379,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非 NAME 命令没有找到或者使用了无效的选项。"
 
-#: builtins.c:812
+#: builtins.c:816
 msgid ""
 "Display information about builtin commands.\n"
 "    \n"
@@ -3409,7 +3417,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非未找到 PATTERN 模式没有找到或者使用了无效选项。"
 
-#: builtins.c:836
+#: builtins.c:840
 msgid ""
 "Display or manipulate the history list.\n"
 "    \n"
@@ -3471,7 +3479,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项或者发生错误。"
 
-#: builtins.c:873
+#: builtins.c:877
 msgid ""
 "Display status of jobs.\n"
 "    \n"
@@ -3513,7 +3521,7 @@ msgstr ""
 "    返回成功，除非使用了无效的选项或者有错误发生。\n"
 "    如果使用 -x 选项，则返回 COMMAND 命令的退出状态。"
 
-#: builtins.c:900
+#: builtins.c:904
 msgid ""
 "Remove jobs from current shell.\n"
 "    \n"
@@ -3543,7 +3551,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功除非使用了无效的选项或者 JOBSPEC 声明。"
 
-#: builtins.c:919
+#: builtins.c:923
 msgid ""
 "Send a signal to a job.\n"
 "    \n"
@@ -3583,7 +3591,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项或者有错误发生。"
 
-#: builtins.c:943
+#: builtins.c:947
 msgid ""
 "Evaluate arithmetic expressions.\n"
 "    \n"
@@ -3663,7 +3671,7 @@ msgstr ""
 "    退出状态：\n"
 "    如果最后一个 ARG 参数估值为 0，则 let 返回 1； 否则 let 返回 0。"
 
-#: builtins.c:988
+#: builtins.c:992
 msgid ""
 "Read a line from the standard input and split it into fields.\n"
 "    \n"
@@ -3741,7 +3749,7 @@ msgstr ""
 "    返回码为零，除非遇到了文件结束符、读超时（且返回码不大于128）、\n"
 "    出现了变量赋值错误或者无效的文件描述符作为参数传递给了 -u 选项。"
 
-#: builtins.c:1035
+#: builtins.c:1039
 msgid ""
 "Return from a shell function.\n"
 "    \n"
@@ -3761,7 +3769,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回 N，或者如果 shell 不在执行一个函数或引用脚本时，失败。"
 
-#: builtins.c:1048
+#: builtins.c:1052
 msgid ""
 "Set or unset values of shell options and positional parameters.\n"
 "    \n"
@@ -3922,7 +3930,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功除非使用了无效的参数。"
 
-#: builtins.c:1133
+#: builtins.c:1137
 msgid ""
 "Unset values and attributes of shell variables and functions.\n"
 "    \n"
@@ -3958,7 +3966,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项或者 NAME 名称为只读。"
 
-#: builtins.c:1155
+#: builtins.c:1159
 msgid ""
 "Set export attribute for shell variables.\n"
 "    \n"
@@ -3990,7 +3998,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项或者 NAME 名称。"
 
-#: builtins.c:1174
+#: builtins.c:1178
 msgid ""
 "Mark shell variables as unchangeable.\n"
 "    \n"
@@ -4026,7 +4034,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项或者 NAME 名称。"
 
-#: builtins.c:1196
+#: builtins.c:1200
 msgid ""
 "Shift positional parameters.\n"
 "    \n"
@@ -4044,7 +4052,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非 N 为负或者大于 $#。"
 
-#: builtins.c:1208 builtins.c:1223
+#: builtins.c:1212 builtins.c:1227
 msgid ""
 "Execute commands from a file in the current shell.\n"
 "    \n"
@@ -4066,7 +4074,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回 FILENAME 文件中最后一个命令的状态；如果 FILENAME 文件不可读则失败。"
 
-#: builtins.c:1239
+#: builtins.c:1243
 msgid ""
 "Suspend shell execution.\n"
 "    \n"
@@ -4090,7 +4098,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非没有启用任务控制或者有错误发生。"
 
-#: builtins.c:1255
+#: builtins.c:1259
 msgid ""
 "Evaluate conditional expression.\n"
 "    \n"
@@ -4242,7 +4250,7 @@ msgstr ""
 "    如果 EXPR 表达式估值为真则返回成功；如果 EXPR 表达式估值\n"
 "    为假或者使用了无效的参数则返回失败。"
 
-#: builtins.c:1337
+#: builtins.c:1341
 msgid ""
 "Evaluate conditional expression.\n"
 "    \n"
@@ -4254,7 +4262,7 @@ msgstr ""
 "    是内建命令 \"test\" 的同义词，但是最后一个参数必须是\n"
 "    字符 `]'，以匹配起始的 `['。"
 
-#: builtins.c:1346
+#: builtins.c:1350
 msgid ""
 "Display process times.\n"
 "    \n"
@@ -4274,7 +4282,7 @@ msgstr ""
 
 # EXIT and DEBUG should be as-is. Use before you translate, please.
 # The -signal is only an example; Read carefully.
-#: builtins.c:1358
+#: builtins.c:1362
 msgid ""
 "Trap signals and other events.\n"
 "    \n"
@@ -4335,7 +4343,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项或者 SIGSPEC。"
 
-#: builtins.c:1394
+#: builtins.c:1398
 msgid ""
 "Display information about command type.\n"
 "    \n"
@@ -4386,7 +4394,7 @@ msgstr ""
 "    退出状态：\n"
 "    如果所有的 NAME 命令都找到则返回成功；任何一个找不到则失败。"
 
-#: builtins.c:1425
+#: builtins.c:1429
 msgid ""
 "Modify shell resource limits.\n"
 "    \n"
@@ -4475,7 +4483,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项或者错误发生。"
 
-#: builtins.c:1475
+#: builtins.c:1479
 msgid ""
 "Display or set file mode mask.\n"
 "    \n"
@@ -4507,7 +4515,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的 MODE 模式或者选项。"
 
-#: builtins.c:1495
+#: builtins.c:1499
 msgid ""
 "Wait for job completion and return exit status.\n"
 "    \n"
@@ -4541,7 +4549,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回最后一个 ID 进程的状态；如果使用了无效的 ID 或者选项则失败。"
 
-#: builtins.c:1519
+#: builtins.c:1523
 msgid ""
 "Wait for process completion and return exit status.\n"
 "    \n"
@@ -4561,7 +4569,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回进程 ID 的状态；如果 PID 是无效的进程号或者指定了无效的选项则失败。"
 
-#: builtins.c:1534
+#: builtins.c:1538
 msgid ""
 "Execute commands for each member in a list.\n"
 "    \n"
@@ -4582,7 +4590,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回最后执行的命令的状态。"
 
-#: builtins.c:1548
+#: builtins.c:1552
 msgid ""
 "Arithmetic for loop.\n"
 "    \n"
@@ -4612,7 +4620,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回最后执行的命令的状态。"
 
-#: builtins.c:1566
+#: builtins.c:1570
 msgid ""
 "Select words from a list and execute commands.\n"
 "    \n"
@@ -4645,7 +4653,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回最后一个执行的命令的状态。"
 
-#: builtins.c:1587
+#: builtins.c:1591
 msgid ""
 "Report time consumed by pipeline's execution.\n"
 "    \n"
@@ -4673,7 +4681,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回状态即PIPELINE 的返回状态。"
 
-#: builtins.c:1604
+#: builtins.c:1608
 msgid ""
 "Execute commands based on pattern matching.\n"
 "    \n"
@@ -4691,7 +4699,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回最后一个执行的命令的状态。"
 
-#: builtins.c:1616
+#: builtins.c:1620
 msgid ""
 "Execute commands based on conditional.\n"
 "    \n"
@@ -4717,7 +4725,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回最后一个执行的命令的状态。"
 
-#: builtins.c:1633
+#: builtins.c:1637
 msgid ""
 "Execute commands as long as a test succeeds.\n"
 "    \n"
@@ -4735,7 +4743,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回最后一个执行的命令的状态。"
 
-#: builtins.c:1645
+#: builtins.c:1649
 msgid ""
 "Execute commands as long as a test does not succeed.\n"
 "    \n"
@@ -4753,7 +4761,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回最后一个执行的命令的状态。"
 
-#: builtins.c:1657
+#: builtins.c:1661
 msgid ""
 "Create a coprocess named NAME.\n"
 "    \n"
@@ -4775,7 +4783,7 @@ msgstr ""
 "    退出状态：\n"
 "    副进程会返回退出状态 0。"
 
-#: builtins.c:1671
+#: builtins.c:1675
 msgid ""
 "Define shell function.\n"
 "    \n"
@@ -4797,7 +4805,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功除非 NAME 为只读。"
 
-#: builtins.c:1685
+#: builtins.c:1689
 msgid ""
 "Group commands as a unit.\n"
 "    \n"
@@ -4815,7 +4823,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回最后一个执行的命令的状态。"
 
-#: builtins.c:1697
+#: builtins.c:1701
 msgid ""
 "Resume job in foreground.\n"
 "    \n"
@@ -4839,7 +4847,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回被继续的任务的状态。"
 
-#: builtins.c:1712
+#: builtins.c:1716
 msgid ""
 "Evaluate arithmetic expression.\n"
 "    \n"
@@ -4857,7 +4865,7 @@ msgstr ""
 "    退出状态\n"
 "    如果表达式估值为0则返回 1；否则返回0。"
 
-#: builtins.c:1724
+#: builtins.c:1728
 msgid ""
 "Execute conditional command.\n"
 "    \n"
@@ -4901,7 +4909,7 @@ msgstr ""
 "    退出状态：\n"
 "    根据 EXPRESSION 的值为0或1。"
 
-#: builtins.c:1750
+#: builtins.c:1754
 msgid ""
 "Common shell variable names and usage.\n"
 "    \n"
@@ -4996,7 +5004,7 @@ msgstr ""
 "    HISTIGNORE\t用于决定哪些命令被存入历史文件的模式\n"
 "    \t\t列表，以冒号分隔。\n"
 
-#: builtins.c:1807
+#: builtins.c:1811
 msgid ""
 "Add directories to stack.\n"
 "    \n"
@@ -5049,7 +5057,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的参数或者目录转换失败。"
 
-#: builtins.c:1841
+#: builtins.c:1845
 msgid ""
 "Remove directories from stack.\n"
 "    \n"
@@ -5096,7 +5104,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的参数或者目录变换失败。"
 
-#: builtins.c:1871
+#: builtins.c:1875
 msgid ""
 "Display directory stack.\n"
 "    \n"
@@ -5145,7 +5153,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项或者发生错误。"
 
-#: builtins.c:1902
+#: builtins.c:1906
 msgid ""
 "Set and unset shell options.\n"
 "    \n"
@@ -5181,7 +5189,7 @@ msgstr ""
 "    如果 OPTNAME 选项被启用则返回成功；如果是\n"
 "    无效的选项或 OPTNAME 被禁用则失败。"
 
-#: builtins.c:1923
+#: builtins.c:1927
 msgid ""
 "Formats and prints ARGUMENTS under control of the FORMAT.\n"
 "    \n"
@@ -5229,7 +5237,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项或者写或赋值错误发生。"
 
-#: builtins.c:1957
+#: builtins.c:1961
 msgid ""
 "Specify how arguments are to be completed by Readline.\n"
 "    \n"
@@ -5245,7 +5253,7 @@ msgid ""
 "    \t\twithout any specific completion defined\n"
 "      -E\tapply the completions and actions to \"empty\" commands --\n"
 "    \t\tcompletion attempted on a blank line\n"
-"      -I\tapply the completions and actions to the intial (usually the\n"
+"      -I\tapply the completions and actions to the initial (usually the\n"
 "    \t\tcommand) word\n"
 "    \n"
 "    When completion is attempted, the actions are applied in the order the\n"
@@ -5275,7 +5283,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项或者错误发生。"
 
-#: builtins.c:1987
+#: builtins.c:1991
 msgid ""
 "Display possible completions depending on the options.\n"
 "    \n"
@@ -5295,7 +5303,7 @@ msgstr ""
 "    退出状态：\n"
 "    除非使用了无效选项或者错误发生，否则返回成功。"
 
-#: builtins.c:2002
+#: builtins.c:2006
 msgid ""
 "Modify or display completion options.\n"
 "    \n"
@@ -5345,7 +5353,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项或者 NAME 名称没有定义补全声明。"
 
-#: builtins.c:2033
+#: builtins.c:2037
 msgid ""
 "Read lines from the standard input into an indexed array variable.\n"
 "    \n"
@@ -5405,7 +5413,7 @@ msgstr ""
 "    退出状态：\n"
 "    返回成功，除非使用了无效的选项，或者 ARRAY 变量只读或不是下标数组。"
 
-#: builtins.c:2069
+#: builtins.c:2073
 msgid ""
 "Read lines from a file into an array variable.\n"
 "    \n"

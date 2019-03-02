@@ -7,14 +7,14 @@
 # Funda Wang <fundawang@linux.net.cn>, 2004, 2005.
 # Ji ZhengYu <zhengyuji@gmail.com>, 2009.
 # Aron Xu <happyaron.xu@gmail.com>, 2009, 2010, 2011, 2015.
-# Boyuan Yang <073plan@gmail.com>, 2018.
+# Boyuan Yang <073plan@gmail.com>, 2018, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: coreutils 8.30-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2018-06-24 21:56-0700\n"
-"PO-Revision-Date: 2018-12-28 13:31+0800\n"
+"PO-Revision-Date: 2019-03-02 16:14-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: lib/argmatch.c:134
 #, c-format
@@ -3521,7 +3521,6 @@ msgstr "无法丢弃缓存：%s"
 msgid "Paul Eggert"
 msgstr "Paul Eggert"
 
-# ## Proof reading to here.
 #: src/df.c:178
 msgid "Filesystem"
 msgstr "文件系统"
@@ -3548,7 +3547,7 @@ msgstr "已用%"
 
 #: src/df.c:196
 msgid "Inodes"
-msgstr "Inode"
+msgstr "Inodes"
 
 #: src/df.c:199
 msgid "IUsed"
@@ -3571,16 +3570,14 @@ msgid "File"
 msgstr "文件"
 
 #: src/df.c:391
-#, fuzzy, c-format
-#| msgid "closing output file %s"
+#, c-format
 msgid "option --output: field %s unknown"
-msgstr "正在关闭输出文件%s"
+msgstr "选项 --output：字段 %s 未知"
 
 #: src/df.c:398
-#, fuzzy, c-format
-#| msgid "warning: source file %s specified more than once"
+#, c-format
 msgid "option --output: field %s used more than once"
-msgstr "警告：指定来源文件%s 多于一次"
+msgstr "选项 --output：字段 %s 使用了超过一次"
 
 #: src/df.c:419 src/df.c:458
 msgid "Size"
@@ -3720,15 +3717,14 @@ msgid ""
 msgstr ""
 
 #: src/df.c:1540
-#, fuzzy, c-format
-#| msgid "options --compare (-C) and --strip are mutually exclusive"
+#, c-format
 msgid "options %s and %s are mutually exclusive"
-msgstr "选项--compare (-C) 和--strip 是互斥的"
+msgstr "选项 %s 和 %s 是互斥的"
 
 #: src/df.c:1690
 #, c-format
 msgid "file system type %s both selected and excluded"
-msgstr "不能同时选择和排除文件系统类型%s"
+msgstr "不能同时选择和排除文件系统类型 %s"
 
 #: src/df.c:1749
 msgid "Warning: "
@@ -3838,18 +3834,11 @@ msgstr ""
 "\n"
 
 #: src/dirname.c:59
-#, fuzzy
-#| msgid "  -0, --null     end each output line with 0 byte rather than newline\n"
 msgid "  -z, --zero     end each output line with NUL, not newline\n"
-msgstr "  -0, --null     以空字符而非新行符结束每一输出行\n"
+msgstr "  -z, --zero     以 NUL 空字符而非换行符结束每一输出行\n"
 
 #: src/dirname.c:64
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Examples:\n"
-#| "  %s /usr/bin/      Output \"/usr\".\n"
-#| "  %s stdio.h        Output \".\".\n"
+#, c-format
 msgid ""
 "\n"
 "Examples:\n"
@@ -3859,8 +3848,9 @@ msgid ""
 msgstr ""
 "\n"
 "示例：\n"
-"  %s /usr/bin/\t输出\"/usr\"。\n"
-"  %s stdio.h\t\t输出\".\"。\n"
+"  %s /usr/bin/          -> \"/usr\"\n"
+"  %s dir1/str dir2/str  -> \"dir1\" 后接 \"dir2\"\n"
+"  %s stdio.h            -> \".\"\n"
 
 #: src/du.c:284 src/sort.c:427 src/wc.c:115
 #, c-format
@@ -3872,23 +3862,10 @@ msgstr ""
 "　或：%s [选项]... --files0-from=F\n"
 
 #: src/du.c:288
-#, fuzzy
-#| msgid ""
-#| "Summarize disk usage of each FILE, recursively for directories.\n"
-#| "\n"
 msgid "Summarize disk usage of the set of FILEs, recursively for directories.\n"
-msgstr ""
-"计算每个文件的磁盘用量，目录则取总用量。\n"
-"\n"
+msgstr "计算每个文件的磁盘用量，目录则取总用量。\n"
 
 #: src/du.c:294
-#, fuzzy
-#| msgid ""
-#| "  -a, --all             write counts for all files, not just directories\n"
-#| "      --apparent-size   print apparent sizes, rather than disk usage; although\n"
-#| "                          the apparent size is usually smaller, it may be\n"
-#| "                          larger due to holes in (`sparse') files, internal\n"
-#| "                          fragmentation, indirect blocks, and the like\n"
 msgid ""
 "  -0, --null            end each output line with NUL, not newline\n"
 "  -a, --all             write counts for all files, not just directories\n"
@@ -3897,10 +3874,11 @@ msgid ""
 "                          larger due to holes in ('sparse') files, internal\n"
 "                          fragmentation, indirect blocks, and the like\n"
 msgstr ""
-"  -a, --all\t\t输出所有文件的磁盘用量，不仅仅是目录\n"
-"      --apparent-size\t显示表面用量，而并非是磁盘用量；虽然表面用量通常会\n"
-"\t\t\t小一些，但有时它会因为稀疏文件间的\"洞\"、内部碎\n"
-"\t\t\t片、非直接引用的块等原因而变大。\n"
+"  -0, --null            每行输出使用 NUL 空字符结尾而非使用换行符\n"
+"  -a, --all             输出所有文件的磁盘用量，不仅仅是目录\n"
+"      --apparent-size   显示表面用量，而并非是磁盘用量；虽然表面用量通常会\n"
+"                          小一些，但有时它会因为稀疏文件间的“洞”、内部碎\n"
+"                          片、非直接引用的块等原因显得更大一些。\n"
 
 #: src/du.c:303
 #, fuzzy
@@ -3954,40 +3932,28 @@ msgstr ""
 "      --si\t\t类似-h，但在计算时使用1000 为基底而非1024\n"
 
 #: src/du.c:325
-#, fuzzy
-#| msgid ""
-#| "  -k                    like --block-size=1K\n"
-#| "  -l, --count-links     count sizes many times if hard linked\n"
-#| "  -m                    like --block-size=1M\n"
 msgid ""
 "  -k                    like --block-size=1K\n"
 "  -L, --dereference     dereference all symbolic links\n"
 "  -l, --count-links     count sizes many times if hard linked\n"
 "  -m                    like --block-size=1M\n"
 msgstr ""
-"  -k\t\t\t等于--block-size=1K\n"
-"  -l, --count-links\t如果是硬连接，就多次计算其尺寸\n"
-"  -m\t\t\t等于--block-size=1M\n"
+"  -k                    等效于 --block-size=1K\n"
+"  -L, --dereference     解引用所有符号链接\n"
+"  -l, --count-links     如果是硬连接，则重复计算其尺寸\n"
+"  -m                    等效于 --block-size=1M\n"
 
 #: src/du.c:331
-#, fuzzy
-#| msgid ""
-#| "  -L, --dereference     dereference all symbolic links\n"
-#| "  -P, --no-dereference  don't follow any symbolic links (this is the default)\n"
-#| "  -0, --null            end each output line with 0 byte rather than newline\n"
-#| "  -S, --separate-dirs   do not include size of subdirectories\n"
-#| "  -s, --summarize       display only a total for each argument\n"
 msgid ""
 "  -P, --no-dereference  don't follow any symbolic links (this is the default)\n"
 "  -S, --separate-dirs   for directories do not include size of subdirectories\n"
 "      --si              like -h, but use powers of 1000 not 1024\n"
 "  -s, --summarize       display only a total for each argument\n"
 msgstr ""
-"  -L, --dereference\t找出任何符号链接指示的真正目的地\n"
-"  -P, --no-dereference\t不跟随任何符号链接(默认)\n"
-"  -0, --null\t\t将每个空行视作0 字节而非换行符\n"
-"  -S, --separate-dirs\t不包括子目录的占用量\n"
-"  -s, --summarize\t只分别计算命令列中每个参数所占的总用量\n"
+"  -P, --no-dereference  不跟随任何符号链接（默认行为）\n"
+"  -S, --separate-dirs   不包括子目录的占用量\n"
+"      --si              类似 -h，但使用 1000 的倍数，而非 1024\n"
+"  -s, --summarize       只分别计算命令列中每个参数所占的总用量\n"
 
 #: src/du.c:337
 #, fuzzy
@@ -4022,6 +3988,9 @@ msgid ""
 "      --exclude=PATTERN    exclude files that match PATTERN\n"
 "  -x, --one-file-system    skip directories on different file systems\n"
 msgstr ""
+"  -X, --exclude-from=文件  排除所有与指定<文件>所提供模式匹配的文件\n"
+"      --exclude=模式       排除所有与所给<模式>匹配的文件\n"
+"  -x, --one-file-system    跳过位于不同文件系统上的目录\n"
 
 #: src/du.c:695
 #, c-format
@@ -4035,7 +4004,7 @@ msgstr "目录最大深度%s 无效"
 
 #: src/du.c:848
 msgid "invalid --threshold argument '-0'"
-msgstr ""
+msgstr "无效的 --threshold 参数 '-0'"
 
 #: src/du.c:931
 #, c-format
@@ -4055,7 +4024,7 @@ msgstr "警告：显示总用量的选项和--max-depth=%lu 互斥"
 #: src/du.c:955
 #, c-format
 msgid "warning: options --apparent-size and -b are ineffective with --inodes"
-msgstr ""
+msgstr "警告：选项 --apparent-size 和 -b 对 --inodes 无效"
 
 #: src/du.c:1020 src/sort.c:4597 src/wc.c:739
 msgid "file operands cannot be combined with --files0-from"
@@ -4177,23 +4146,14 @@ msgid "Set each NAME to VALUE in the environment and run COMMAND.\n"
 msgstr "在环境中设置每个给定变量<名称>的值为给定<值>，并运行给定<命令>。\n"
 
 #: src/env.c:82
-#, fuzzy
-#| msgid ""
-#| "Set each NAME to VALUE in the environment and run COMMAND.\n"
-#| "\n"
-#| "  -i, --ignore-environment  start with an empty environment\n"
-#| "  -0, --null           end each output line with 0 byte rather than newline\n"
-#| "  -u, --unset=NAME     remove variable from the environment\n"
 msgid ""
 "  -i, --ignore-environment  start with an empty environment\n"
 "  -0, --null           end each output line with NUL, not newline\n"
 "  -u, --unset=NAME     remove variable from the environment\n"
 msgstr ""
-"设置一个环境变量的\"名称=键值\"并运行命令。\n"
-"\n"
-"  -i, --ignore-environment      以无定义的环境启动\n"
-"  -0, --null                    以空字符而非新行符结束每一输出行\n"
-"  -u,  --unset=名称              从当前环境中撤消一个变量\n"
+"  -i, --ignore-environment  以空环境启动\n"
+"  -0, --null           以 NUL 空字符而非换行符结束每一输出行\n"
+"  -u,  --unset=名称     从当前环境中移除一个变量\n"
 
 #: src/env.c:87
 msgid "  -C, --chdir=DIR      change working directory to DIR\n"
@@ -4318,10 +4278,8 @@ msgid "'/' specifier is mutually exclusive with '+'"
 msgstr ""
 
 #: src/expand-common.c:390
-#, fuzzy
-#| msgid "  -t, --tabs=LIST     use comma separated list of explicit tab positions\n"
 msgid "  -t, --tabs=LIST  use comma separated list of tab positions\n"
-msgstr "  -t, --tabs=列表\t指定制表符位置列表，用逗号分隔\n"
+msgstr "  -t, --tabs=列表  指定制表符位置列表，用逗号分隔\n"
 
 #: src/expand-common.c:393
 msgid ""
@@ -4333,28 +4291,16 @@ msgid ""
 msgstr ""
 
 #: src/expand.c:73
-#, fuzzy
-#| msgid ""
-#| "Convert tabs in each FILE to spaces, writing to standard output.\n"
-#| "With no FILE, or when FILE is -, read standard input.\n"
-#| "\n"
 msgid "Convert tabs in each FILE to spaces, writing to standard output.\n"
-msgstr ""
-"将每个文件中的制表符转换为空格，写到标准输出。\n"
-"如果不指定文件，或者文件为\"-\"，程序将从标准输入读取数据。\n"
-"\n"
+msgstr "将每个指定文件中的制表符转换为空格，写到标准输出。\n"
 
 #: src/expand.c:80
-#, fuzzy
-#| msgid ""
-#| "  -i, --initial       do not convert tabs after non blanks\n"
-#| "  -t, --tabs=NUMBER   have tabs NUMBER characters apart, not 8\n"
 msgid ""
 "  -i, --initial    do not convert tabs after non blanks\n"
 "  -t, --tabs=N     have tabs N characters apart, not 8\n"
 msgstr ""
-"  -i, --initial\t\t不转换非空白符后的制表符\n"
-"  -t, --tabs=数字\t设置每个制表符为指定数字的宽度，而不是默认的8\n"
+"  -i, --initial    不转换非空白字符后的制表符\n"
+"  -t, --tabs=数字  设置每个制表符为指定数字的宽度，而不是默认的 8\n"
 
 #: src/expand.c:146 src/expand.c:165 src/unexpand.c:181 src/unexpand.c:226
 msgid "input line is too long"
@@ -4537,7 +4483,7 @@ msgstr "除以零"
 #: src/expr.c:1027 src/sort.c:2113
 #, c-format
 msgid "set LC_ALL='C' to work around the problem"
-msgstr "请设置LC_ALL='C' 以避免出现问题。"
+msgstr "请设置 LC_ALL='C' 以避免出现问题"
 
 #: src/expr.c:1029
 #, c-format
@@ -4658,15 +4604,8 @@ msgid "invalid width"
 msgstr "无效的宽度"
 
 #: src/fold.c:70
-#, fuzzy
-#| msgid ""
-#| "Wrap input lines in each FILE (standard input by default), writing to\n"
-#| "standard output.\n"
-#| "\n"
 msgid "Wrap input lines in each FILE, writing to standard output.\n"
-msgstr ""
-"对每个指定的文件(默认由标准输入读取)设置自动换行，并将重新排版后的结果输出到标准输出。\n"
-"\n"
+msgstr "对每个指定的文件设置自动换行（折行），并将重新排版后的结果输出到标准输出。\n"
 
 #: src/fold.c:77
 msgid ""
@@ -5280,10 +5219,8 @@ msgstr ""
 "  --header          \t将首行视作域的头部，直接输出而不对其进行匹配\n"
 
 #: src/join.c:227 src/shuf.c:83 src/sort.c:512 src/uniq.c:206
-#, fuzzy
-#| msgid "  -z, --zero-terminated     end lines with 0 byte, not newline\n"
 msgid "  -z, --zero-terminated     line delimiter is NUL, not newline\n"
-msgstr "  -z, --zero-terminated\t以0 字节而非新行作为行尾标志\n"
+msgstr "  -z, --zero-terminated     以 NUL 空字符而非换行符作为行尾分隔符\n"
 
 #: src/join.c:232
 #, fuzzy
@@ -6777,16 +6714,8 @@ msgid "Scott Bartram"
 msgstr "Scott Bartram"
 
 #: src/nl.c:180
-#, fuzzy
-#| msgid ""
-#| "Write each FILE to standard output, with line numbers added.\n"
-#| "With no FILE, or when FILE is -, read standard input.\n"
-#| "\n"
 msgid "Write each FILE to standard output, with line numbers added.\n"
-msgstr ""
-"将指定的各个文件添加行号标注后写到标准输出。\n"
-"如果不指定文件或指定文件为\"-\" ，程序将从标准输入读取数据。\n"
-"\n"
+msgstr "将指定的各个<文件>添加行号标注后写到标准输出。\n"
 
 #: src/nl.c:187
 #, fuzzy
@@ -6932,22 +6861,16 @@ msgid "invalid starting line number"
 msgstr "无效的起始行号"
 
 #: src/nl.c:516
-#, fuzzy
-#| msgid "invalid line number increment: %s"
 msgid "invalid line number increment"
-msgstr "无效的行号递增值：%s"
+msgstr "无效的行号递增值"
 
 #: src/nl.c:523
-#, fuzzy
-#| msgid "invalid number of blank lines: %s"
 msgid "invalid line number of blank lines"
-msgstr "无效的空行数：%s"
+msgstr "无效的空行数"
 
 #: src/nl.c:530
-#, fuzzy
-#| msgid "invalid line number field width: %s"
 msgid "invalid line number field width"
-msgstr "无效的行宽数值：%s"
+msgstr "无效的行宽数值"
 
 #: src/nl.c:541
 #, c-format
@@ -8222,10 +8145,8 @@ msgstr ""
 "\n"
 
 #: src/printenv.c:69
-#, fuzzy
-#| msgid "  -0, --null     end each output line with 0 byte rather than newline\n"
 msgid "  -0, --null     end each output line with NUL, not newline\n"
-msgstr "  -0, --null     以空字符而非新行符结束每一输出行\n"
+msgstr "  -0, --null     以空字符而非换行符结束每一输出行\n"
 
 #: src/printf.c:84
 #, c-format
@@ -8820,7 +8741,7 @@ msgstr ""
 "删除指定的空目录。\n"
 "\n"
 "      --ignore-fail-on-non-empty\n"
-"\t\t\t忽略仅由目录非空产生的所有错误\n"
+"                  忽略仅由目录非空产生的所有错误\n"
 
 #: src/rmdir.c:171
 #, fuzzy
@@ -8856,9 +8777,10 @@ msgid ""
 "Run a program in a different SELinux security context.\n"
 "With neither CONTEXT nor COMMAND, print the current security context.\n"
 msgstr ""
+"在不同的 SELinux 安全上下文中运行程序。\n"
+"若未指定上下文和命令，输出当前安全上下文。\n"
 
 #: src/runcon.c:89
-#, fuzzy
 msgid ""
 "  CONTEXT            Complete security context\n"
 "  -c, --compute      compute process transition context before modifying\n"
@@ -8868,12 +8790,12 @@ msgid ""
 "  -l, --range=RANGE  levelrange\n"
 "\n"
 msgstr ""
-"  上下文\t\t\t完整的安全上下文描述\n"
-"  -c, --compute\t\t在更改前计算环境变化\n"
-"  -t, --type=类型\t类型(与父进程角色相同)\n"
-"  -u, --user=用户\t用户身份\n"
-"  -r, --role=角色\t角色\n"
-"  -l, --range=范围\t级别范围\n"
+"  上下文            完整的安全上下文描述\n"
+"  -c, --compute      在更改前计算环境变化\n"
+"  -t, --type=类型    类型（与父进程角色相同）\n"
+"  -u, --user=用户    用户身份\n"
+"  -r, --role=角色    角色\n"
+"  -l, --range=范围  级别范围\n"
 "\n"
 
 #: src/runcon.c:139
@@ -8953,26 +8875,17 @@ msgstr ""
 
 #: src/seq.c:77
 msgid "Print numbers from FIRST to LAST, in steps of INCREMENT.\n"
-msgstr ""
+msgstr "从给定首数到尾数依次进行打印，每两个数字之间的增量等于给定增量。\n"
 
 #: src/seq.c:83
-#, fuzzy
-#| msgid ""
-#| "Print numbers from FIRST to LAST, in steps of INCREMENT.\n"
-#| "\n"
-#| "  -f, --format=FORMAT      use printf style floating-point FORMAT\n"
-#| "  -s, --separator=STRING   use STRING to separate numbers (default: \\n)\n"
-#| "  -w, --equal-width        equalize width by padding with leading zeroes\n"
 msgid ""
 "  -f, --format=FORMAT      use printf style floating-point FORMAT\n"
 "  -s, --separator=STRING   use STRING to separate numbers (default: \\n)\n"
 "  -w, --equal-width        equalize width by padding with leading zeroes\n"
 msgstr ""
-"以指定增量从首数开始打印数字到尾数。\n"
-"\n"
-"  -f, --format=格式\t使用printf 样式的浮点格式\n"
-"  -s, --separator=字符串\t使用指定字符串分隔数字(默认使用：\\n)\n"
-"  -w, --equal-width\t在列前添加0 使得宽度相同\n"
+"  -f, --format=格式        使用 printf 样式的浮点格式\n"
+"  -s, --separator=字符串   使用指定<字符串>分隔数字（默认使用：\\n）\n"
+"  -w, --equal-width        在列前添加 0 使得宽度相同\n"
 
 #: src/seq.c:90
 #, fuzzy
@@ -9040,16 +8953,12 @@ msgid "invalid Zero increment value: %s"
 msgstr "无效的行号递增值：%s"
 
 #: src/set-fields.c:167
-#, fuzzy
-#| msgid "invalid byte or field list"
 msgid "invalid byte or character range"
-msgstr "无效的字节或域列表"
+msgstr "无效的字节或自负范围"
 
 #: src/set-fields.c:168
-#, fuzzy
-#| msgid "invalid field number: %s"
 msgid "invalid field range"
-msgstr "无效的区块编号%s"
+msgstr "无效的字段范围"
 
 #: src/set-fields.c:175 src/set-fields.c:221
 #, fuzzy
@@ -9089,10 +8998,9 @@ msgid "invalid byte/character position %s"
 msgstr "无效的字符类型%s"
 
 #: src/set-fields.c:272
-#, fuzzy, c-format
-#| msgid "invalid field number: %s"
+#, c-format
 msgid "invalid field value %s"
-msgstr "无效的区块编号%s"
+msgstr "无效的字段值 %s"
 
 #: src/set-fields.c:280
 #, fuzzy
@@ -9110,11 +9018,10 @@ msgid "Colin Plumb"
 msgstr "Colin Plumb"
 
 #: src/shred.c:171
-#, fuzzy
 msgid ""
 "Overwrite the specified FILE(s) repeatedly, in order to make it harder\n"
 "for even very expensive hardware probing to recover the data.\n"
-msgstr "多次覆盖文件，使得即使是昂贵的硬件探测仪器也难以将数据复原。\n"
+msgstr "多次覆盖指定文件，使得即使是昂贵的硬件探测仪器也难以将数据复原。\n"
 
 #: src/shred.c:175
 msgid ""
@@ -9396,24 +9303,10 @@ msgstr ""
 "　或者:  %s -i LO-HI [选项]...\n"
 
 #: src/shuf.c:68
-#, fuzzy
-#| msgid ""
-#| "Write a random permutation of the input lines to standard output.\n"
-#| "\n"
 msgid "Write a random permutation of the input lines to standard output.\n"
-msgstr ""
-"把输入行按随机顺序输出到标准输出。\n"
-"\n"
+msgstr "把输入行按随机顺序输出到标准输出。\n"
 
 #: src/shuf.c:75
-#, fuzzy
-#| msgid ""
-#| "  -e, --echo                treat each ARG as an input line\n"
-#| "  -i, --input-range=LO-HI   treat each number LO through HI as an input line\n"
-#| "  -n, --head-count=COUNT    output at most COUNT lines\n"
-#| "  -o, --output=FILE         write result to FILE instead of standard output\n"
-#| "      --random-source=FILE  get random bytes from FILE\n"
-#| "  -z, --zero-terminated     end lines with 0 byte, not newline\n"
 msgid ""
 "  -e, --echo                treat each ARG as an input line\n"
 "  -i, --input-range=LO-HI   treat each number LO through HI as an input line\n"
@@ -9422,22 +9315,21 @@ msgid ""
 "      --random-source=FILE  get random bytes from FILE\n"
 "  -r, --repeat              output lines can be repeated\n"
 msgstr ""
-"  -e, --echo\t\t\t将每个参数视为输入行\n"
-"  -i, --input-range=LO-HI\t将LO 到HI 的每个数字视为输入行\n"
-"  -n, --head-count=行数\t\t最多输出指定的行数\n"
-"  -o, --output=文件\t\t将结果输出到指定文件而非标准输出\n"
-"      --random-source=文件\t从指定文件获得随机比特\n"
-"  -z, --zero-terminated\t以0 结束行而非新行\n"
+"  -e, --echo                将每个参数视为输入行\n"
+"  -i, --input-range=LO-HI   将 LO 到 HI 的每个数字视为输入行\n"
+"  -n, --head-count=行数     最多输出指定的行数\n"
+"  -o, --output=文件         将结果输出到指定文件而非标准输出\n"
+"      --random-source=文件  从指定文件获得随机字节\n"
+"  -r, --repeat              输出行可以重复\n"
+"\n"
 
 #: src/shuf.c:226
-#, fuzzy
-#| msgid "too many repeated lines"
 msgid "too many input lines"
-msgstr "重复行过多"
+msgstr "输入行过多"
 
 #: src/shuf.c:418
 msgid "multiple -i options specified"
-msgstr "指定了多个-i 选项"
+msgstr "指定了多个 -i 选项"
 
 #: src/shuf.c:425 src/shuf.c:431 src/shuf.c:436
 msgid "invalid input range"
@@ -9459,7 +9351,7 @@ msgstr "不能同时指定-e 和-i 选项"
 
 #: src/shuf.c:570
 msgid "no lines to repeat"
-msgstr ""
+msgstr "没有可重复的行"
 
 #: src/sleep.c:50
 #, fuzzy, c-format
@@ -9824,10 +9716,9 @@ msgid_plural "options '-%s' are ignored"
 msgstr[0] "选项\"-%s\"被忽略"
 
 #: src/sort.c:2517
-#, fuzzy, c-format
-#| msgid "option `-r' only applies to last-resort comparison"
+#, c-format
 msgid "option '-r' only applies to last-resort comparison"
-msgstr "选项\"-r\" 仅用于last-resort 比较"
+msgstr "选项 '-r' 仅用于 last-resort 比较"
 
 #: src/sort.c:2791 src/sort.c:2800
 msgid "write failed"
@@ -9910,7 +9801,7 @@ msgstr "%s：%lu：无效的 0 长度文件名"
 #: src/sort.c:4634
 #, c-format
 msgid "no input from %s"
-msgstr "没有来自%s 的输入"
+msgstr "没有来自 %s 的输入"
 
 #: src/sort.c:4687
 #, c-format
@@ -10489,6 +10380,9 @@ msgid ""
 "--terse is equivalent to the following FORMAT:\n"
 "    %s"
 msgstr ""
+"\n"
+"--terse 和下列<格式>等效：:\n"
+"    %s"
 
 #: src/stat.c:1591
 #, c-format
@@ -10598,23 +10492,14 @@ msgid "Print or change terminal characteristics.\n"
 msgstr "输出或变更终端特性。\n"
 
 #: src/stty.c:543
-#, fuzzy
-#| msgid ""
-#| "Print or change terminal characteristics.\n"
-#| "\n"
-#| "  -a, --all          print all current settings in human-readable form\n"
-#| "  -g, --save         print all current settings in a stty-readable form\n"
-#| "  -F, --file=DEVICE  open and use the specified DEVICE instead of stdin\n"
 msgid ""
 "  -a, --all          print all current settings in human-readable form\n"
 "  -g, --save         print all current settings in a stty-readable form\n"
 "  -F, --file=DEVICE  open and use the specified DEVICE instead of stdin\n"
 msgstr ""
-"输出或修改终端参数。\n"
-"\n"
-"  -a, --all\t\t以可读性较好的方式输出全部当前设置\n"
-"  -g, --save\t\t以stty 可读取的格式输出当前全部设置\n"
-"  -F, --file=设备\t打开并使用指定设备代替标准输入\n"
+"  -a, --all          以可读性较好的格式输出全部当前设置\n"
+"  -g, --save         以 stty 可读取的格式输出当前全部设置\n"
+"  -F, --file=设备    打开并使用指定<设备>代替标准输入\n"
 
 #: src/stty.c:550
 msgid ""
@@ -10774,7 +10659,7 @@ msgstr ""
 
 #: src/stty.c:629
 msgid "   ispeed N      set the input speed to N\n"
-msgstr ""
+msgstr "   ispeed N      设置输入速度为 N\n"
 
 #: src/stty.c:633
 msgid " * line N        use line discipline N\n"
@@ -10962,6 +10847,8 @@ msgid ""
 "\n"
 "Output settings:\n"
 msgstr ""
+"\n"
+"输出设置：\n"
 
 #: src/stty.c:727
 msgid " * bsN           backspace delay style, N in [0..1]\n"
@@ -11112,7 +10999,7 @@ msgstr ""
 
 #: src/stty.c:863
 msgid " * [-]prterase   same as [-]echoprt\n"
-msgstr ""
+msgstr " * [-]prterase   与 [-]echoprt 相同\n"
 
 #: src/stty.c:868
 msgid " * [-]tostop     stop background jobs that try to write to the terminal\n"
@@ -11603,13 +11490,6 @@ msgstr ""
 "                             每个文件第 NUM 个字节之后的全部内容\n"
 
 #: src/tail.c:277
-#, fuzzy
-#| msgid ""
-#| "  -f, --follow[={name|descriptor}]\n"
-#| "                           output appended data as the file grows;\n"
-#| "                           -f, --follow, and --follow=descriptor are\n"
-#| "                           equivalent\n"
-#| "  -F                       same as --follow=name --retry\n"
 msgid ""
 "  -f, --follow[={name|descriptor}]\n"
 "                           output appended data as the file grows;\n"
@@ -11617,9 +11497,9 @@ msgid ""
 "  -F                       same as --follow=name --retry\n"
 msgstr ""
 "  -f, --follow[={name|descriptor}]\n"
-"\t\t即时输出文件变化后追加的数据。\n"
-"\t\t\t-f, --follow 等于--follow=descriptor \n"
-"  -F\t\t即--follow=name --retry\n"
+"                           随文件增长即时输出新增数据；\n"
+"                             若未给定选项参数，则默认使用 'descriptor'\n"
+"  -F                       和 --follow=name --retry 相同\n"
 
 #: src/tail.c:283
 #, fuzzy, c-format
@@ -11650,22 +11530,14 @@ msgstr ""
 "\t\t\t\t由于有inotify，这个选项很少使用。\n"
 
 #: src/tail.c:296
-#, fuzzy
-#| msgid ""
-#| "      --pid=PID            with -f, terminate after process ID, PID dies\n"
-#| "  -q, --quiet, --silent    never output headers giving file names\n"
-#| "      --retry              keep trying to open a file even when it is or\n"
-#| "                             becomes inaccessible; useful when following by\n"
-#| "                             name, i.e., with --follow=name\n"
 msgid ""
 "      --pid=PID            with -f, terminate after process ID, PID dies\n"
 "  -q, --quiet, --silent    never output headers giving file names\n"
 "      --retry              keep trying to open a file if it is inaccessible\n"
 msgstr ""
-"      --pid=PID\t\t同 -f 一起使用，当 PID 所对应的进程死去后终止\n"
-"  -q, --quiet, --silent\t不输出给出文件名的头\n"
-"      --retry\t\t即使目标文件不可访问依然试图打开；在与参数\n"
-"\t\t\t--follow=name 同时使用时常常有用。\n"
+"      --pid=PID            同 -f 一起使用，当所指定<PID>对应的进程死去后终止\n"
+"  -q, --quiet, --silent    不输出给出文件名的头\n"
+"      --retry              即使目标文件不可访问依然重复试图打开\n"
 
 #: src/tail.c:301
 #, fuzzy
@@ -12197,15 +12069,6 @@ msgid "Start COMMAND, and kill it if still running after DURATION.\n"
 msgstr "运行指定命令，在指定的停留时间后若该命令仍在运行则将其中止。\n"
 
 #: src/timeout.c:245
-#, fuzzy
-#| msgid ""
-#| "  -k, --kill-after=DURATION\n"
-#| "                   also send a KILL signal if COMMAND is still running\n"
-#| "                   this long after the initial signal was sent.\n"
-#| "  -s, --signal=SIGNAL\n"
-#| "                   specify the signal to be sent on timeout.\n"
-#| "                   SIGNAL may be a name like `HUP' or a number.\n"
-#| "                   See `kill -l` for a list of signals\n"
 msgid ""
 "      --preserve-status\n"
 "                 exit with the same status as COMMAND, even when the\n"
@@ -12222,21 +12085,26 @@ msgid ""
 "                   SIGNAL may be a name like 'HUP' or a number;\n"
 "                   see 'kill -l' for a list of signals\n"
 msgstr ""
-"  -k, --kill-after=停留时间\n"
-"\t\t初始信号发出后指定时间内如果进程仍在运行则向其发送KILL 信号。  -s, --signal=信号\n"
-"\t\t指定在超时时发送的信号。信号可以是类似\"HUP\"的信号名或是信号数。\n"
-"\t\t查看\"kill -l\"以获得信号列表\n"
+"      --preserve-status\n"
+"                 退出时返回值与所运行命令的返回值保持相同，即使命令超时也\n"
+"                   这样设置\n"
+"      --foreground\n"
+"                 当 timeout 不是直接从 shell 命令行开始运行时，允许所运行的\n"
+"                   命令从 TTY 读取输入并获取 TTY 信号；在此模式下，所运行的\n"
+"                   命令的子进程不会受超时的影响\n"
+"  -k, --kill-after=持续时间\n"
+"                 如果所运行命令在初始信号发出后再经过所指定持续时间以后仍然\n"
+"                   在运行，则对其发送 KILL 信号\n"
+"  -s, --signal=信号\n"
+"                 指定超时发生时要发送的信号；\n"
+"                   所指定的信号可以是如“HUP”这样的名称，或是一个数字；\n"
+"                   请参见“kill -l”以获取可用信号列表\n"
 
 #: src/timeout.c:260
 msgid "  -v, --verbose  diagnose to stderr any signal sent upon timeout\n"
-msgstr ""
+msgstr "  -v, --verbose  对任何超时后发送的信号，向标准错误输出诊断信息\n"
 
 #: src/timeout.c:266
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "DURATION is an integer with an optional suffix:\n"
-#| "`s' for seconds(the default), `m' for minutes, `h' for hours or `d' for days.\n"
 msgid ""
 "\n"
 "DURATION is a floating point number with an optional suffix:\n"
@@ -12244,19 +12112,12 @@ msgid ""
 "A duration of 0 disables the associated timeout.\n"
 msgstr ""
 "\n"
-"指定的时间应是一个附加有下列后缀的整数：\n"
-"\"s\"代表秒(默认值)，\"m\"代表分，\"h\"代表小时，\"d\"代表天。\n"
+"指定的持续时间应是一个附加有下列后缀的浮点数：\n"
+"“s”代表秒（默认值），“m”代表分，“h”代表小时，“d”代表天数。\n"
+"若持续时间设置为0,将禁用所关联的超时配置。\n"
 "\n"
 
 #: src/timeout.c:271
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "If the command times out, then exit with status 124.  Otherwise, exit\n"
-#| "with the status of COMMAND.  If no signal is specified, send the TERM\n"
-#| "signal upon timeout.  The TERM signal kills any process that does not\n"
-#| "block or catch that signal.  For other processes, it may be necessary to\n"
-#| "use the KILL (9) signal, since this signal cannot be caught.\n"
 msgid ""
 "\n"
 "If the command times out, and --preserve-status is not set, then exit with\n"
@@ -12267,9 +12128,11 @@ msgid ""
 "case the exit status is 128+9 rather than 124.\n"
 msgstr ""
 "\n"
-"如果程序超时则退出状态数为124，否则返回程序退出状态。\n"
-"如果没有指定信号则默认为TERM 信号。TERM 信号在进程没有捕获此信号时杀死进程。\n"
-"对于另一些进程可能需要使用KILL (9)信号，当然此信号不能被捕获。\n"
+"如果命令超时且未设置 --preserve-status，程序退出的状态值将为 124。\n"
+"否则将使用所运行程序的退出状态值作为退出状态值。\n"
+"如果没有指定信号则默认使用 TERM 信号。TERM 信号在进程没有捕获此信号时将\n"
+"杀死进程。对于另一些进程可能需要使用 KILL (9)信号。因此信号无法被捕获，\n"
+"退出返回值将为 128+9 而非 124。\n"
 
 #: src/timeout.c:346 src/timeout.c:403
 #, c-format
@@ -12322,16 +12185,6 @@ msgid "setting times of %s"
 msgstr "正在设置 %s 的时间"
 
 #: src/touch.c:214
-#, fuzzy
-#| msgid ""
-#| "Update the access and modification times of each FILE to the current time.\n"
-#| "\n"
-#| "A FILE argument that does not exist is created empty, unless -c or -h\n"
-#| "is supplied.\n"
-#| "\n"
-#| "A FILE argument string of - is handled specially and causes touch to\n"
-#| "change the times of the file associated with standard output.\n"
-#| "\n"
 msgid ""
 "Update the access and modification times of each FILE to the current time.\n"
 "\n"
@@ -12341,12 +12194,12 @@ msgid ""
 "A FILE argument string of - is handled specially and causes touch to\n"
 "change the times of the file associated with standard output.\n"
 msgstr ""
-"将每个文件的访问时间和修改时间改为当前时间。\n"
+"将所指定的每个文件的访问时间和修改时间更改为当前时间。\n"
 "\n"
-"不存在的文件将会被创建为空文件，除非使用-c 或-h 选项。\n"
+"除非提供 -c 或 -h 选项，否则指定不存在的文件将会被创建为空文件。\n"
 "\n"
-"如果文件名为\"-\"则特殊处理，更改与标准输出相关的文件的访问时间。\n"
-"\n"
+"如果所指定文件名为 - 则特殊处理，程序将更改与标准输出相关联的文件的\n"
+"访问时间。\n"
 
 #: src/touch.c:226
 msgid ""
@@ -12372,13 +12225,6 @@ msgstr ""
 "  -m\t\t\t只更改修改时间\n"
 
 #: src/touch.c:238
-#, fuzzy
-#| msgid ""
-#| "  -r, --reference=FILE   use this file's times instead of current time\n"
-#| "  -t STAMP               use [[CC]YY]MMDDhhmm[.ss] instead of current time\n"
-#| "  --time=WORD            change the specified time:\n"
-#| "                           WORD is access, atime, or use: equivalent to -a\n"
-#| "                           WORD is modify or mtime: equivalent to -m\n"
 msgid ""
 "  -r, --reference=FILE   use this file's times instead of current time\n"
 "  -t STAMP               use [[CC]YY]MMDDhhmm[.ss] instead of current time\n"
@@ -12386,10 +12232,11 @@ msgid ""
 "                           WORD is access, atime, or use: equivalent to -a\n"
 "                           WORD is modify or mtime: equivalent to -m\n"
 msgstr ""
-"  -r, --reference=文件\t使用指定文件的时间属性而非当前时间\n"
-"  -t STAMP\t\t使用[[CC]YY]MMDDhhmm[.ss] 格式的时间而非当前时间\n"
-"  --time=WORD\t\t使用WORD 指定的时间：access、atime、use 都等于-a\n"
-"\t\t\t选项的效果，而modify、mtime 等于-m 选项的效果\n"
+"  -r, --reference=文件   使用指定文件的时间属性而非当前时间\n"
+"  -t 时间戳              使用给定 [[CC]YY]MMDDhhmm[.ss] 的时间戳而非当前时间\n"
+"      --time=类型        修改指定类型的时间：\n"
+"                           若所指定类型是 access、atime 或 use：与 -a 等效\n"
+"                           若所指定类型是 modify 或 mtime：与 -m 等效\n"
 
 #: src/touch.c:247
 msgid ""
@@ -13133,15 +12980,6 @@ msgstr ""
 "长度大于零的字符序列。\n"
 
 #: src/wc.c:128
-#, fuzzy
-#| msgid ""
-#| "Print newline, word, and byte counts for each FILE, and a total line if\n"
-#| "more than one FILE is specified.  With no FILE, or when FILE is -,\n"
-#| "read standard input.  A word is a non-zero-length sequence of characters\n"
-#| "delimited by white space.\n"
-#| "  -c, --bytes            print the byte counts\n"
-#| "  -m, --chars            print the character counts\n"
-#| "  -l, --lines            print the newline counts\n"
 msgid ""
 "\n"
 "The options below may be used to select which counts are printed, always in\n"
@@ -13150,6 +12988,7 @@ msgid ""
 "  -m, --chars            print the character counts\n"
 "  -l, --lines            print the newline counts\n"
 msgstr ""
+"\n"
 "输出每个指定文件的行数、单词计数和字节数，如果指定了\n"
 "多于一个文件，继续给出所有相关数据的总计。如果没有指定\n"
 "文件，或者文件为\"-\"，则从标准输入读取数据。\n"

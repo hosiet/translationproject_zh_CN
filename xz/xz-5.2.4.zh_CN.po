@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xz 5.2.4\n"
 "Report-Msgid-Bugs-To: lasse.collin@tukaani.org\n"
 "POT-Creation-Date: 2018-04-29 18:19+0300\n"
-"PO-Revision-Date: 2019-03-04 14:03-0500\n"
+"PO-Revision-Date: 2019-03-04 14:10-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -17,16 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: src/xz/args.c:63
 #, c-format
 msgid "%s: Invalid argument to --block-list"
-msgstr ""
+msgstr "%s：--block-list 的无效参数"
 
 #: src/xz/args.c:73
 #, c-format
 msgid "%s: Too many arguments to --block-list"
-msgstr ""
+msgstr "%s：--block-list 得到过多参数"
 
 #: src/xz/args.c:102
 msgid "0 can only be used as the last element in --block-list"
@@ -35,7 +36,7 @@ msgstr ""
 #: src/xz/args.c:406
 #, c-format
 msgid "%s: Unknown file format type"
-msgstr ""
+msgstr "%s：位置文件格式类型"
 
 #: src/xz/args.c:429 src/xz/args.c:437
 #, c-format
@@ -139,7 +140,7 @@ msgstr ""
 #: src/xz/file_io.c:262
 #, c-format
 msgid "%s: poll() failed: %s"
-msgstr ""
+msgstr "%s：poll() 失败：%s"
 
 #. TRANSLATORS: When compression or decompression finishes,
 #. and xz is going to remove the source file, xz first checks
@@ -189,12 +190,12 @@ msgstr ""
 #: src/xz/file_io.c:663
 #, c-format
 msgid "%s: Is a directory, skipping"
-msgstr ""
+msgstr "%s：是目录，跳过"
 
 #: src/xz/file_io.c:669
 #, c-format
 msgid "%s: Not a regular file, skipping"
-msgstr ""
+msgstr "%s：不是标准文件，跳过"
 
 #: src/xz/file_io.c:686
 #, c-format
@@ -239,7 +240,7 @@ msgstr ""
 #: src/xz/file_io.c:1157
 #, c-format
 msgid "%s: Read error: %s"
-msgstr ""
+msgstr "%s：读取错误：%s"
 
 #: src/xz/file_io.c:1177
 #, c-format
@@ -254,7 +255,7 @@ msgstr ""
 #: src/xz/file_io.c:1246
 #, c-format
 msgid "%s: Write error: %s"
-msgstr ""
+msgstr "%s：写入错误：%s"
 
 #: src/xz/hardware.c:107
 msgid "Disabled"
@@ -337,7 +338,7 @@ msgstr ""
 #: src/xz/list.c:153
 #, c-format
 msgid "%s: File is empty"
-msgstr ""
+msgstr "%s：文件为空"
 
 #: src/xz/list.c:158
 #, c-format
@@ -448,12 +449,11 @@ msgstr ""
 #, c-format
 msgid "%s file\n"
 msgid_plural "%s files\n"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%s 文件\n"
 
 #: src/xz/list.c:1070
 msgid "Totals:"
-msgstr ""
+msgstr "总计："
 
 #: src/xz/list.c:1071
 #, c-format
@@ -502,11 +502,11 @@ msgstr ""
 #: src/xz/message.c:714
 #, c-format
 msgid "%s: "
-msgstr ""
+msgstr "%s："
 
 #: src/xz/message.c:777 src/xz/message.c:827
 msgid "Internal error (bug)"
-msgstr ""
+msgstr "内部错误（bug）"
 
 #: src/xz/message.c:784
 msgid "Cannot establish signal handlers"
@@ -530,7 +530,7 @@ msgstr ""
 
 #: src/xz/message.c:809
 msgid "Unsupported options"
-msgstr ""
+msgstr "不支持的选项"
 
 #: src/xz/message.c:812
 msgid "Compressed data is corrupt"
@@ -809,11 +809,11 @@ msgstr ""
 #: src/xz/message.c:1250
 #, c-format
 msgid "%s home page: <%s>\n"
-msgstr ""
+msgstr "%s 主页：<%s>\n"
 
 #: src/xz/message.c:1254
 msgid "THIS IS A DEVELOPMENT VERSION NOT INTENDED FOR PRODUCTION USE."
-msgstr ""
+msgstr "这是开发版本，不适用于生产环境使用。"
 
 #: src/xz/options.c:86
 #, c-format
@@ -886,20 +886,20 @@ msgstr ""
 
 #: src/xz/util.c:257
 msgid "Empty filename, skipping"
-msgstr ""
+msgstr "空文件名，跳过"
 
 #: src/xz/util.c:271
 msgid "Compressed data cannot be read from a terminal"
-msgstr ""
+msgstr "压缩数据不能从终端读取"
 
 #: src/xz/util.c:284
 msgid "Compressed data cannot be written to a terminal"
-msgstr ""
+msgstr "压缩数据不能向终端写入"
 
 #: src/common/tuklib_exit.c:39
 msgid "Writing to standard output failed"
-msgstr ""
+msgstr "写入标准输出失败"
 
 #: src/common/tuklib_exit.c:42
 msgid "Unknown error"
-msgstr ""
+msgstr "未知错误"

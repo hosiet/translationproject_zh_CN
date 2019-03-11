@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: nano 3.2-pre1\n"
 "Report-Msgid-Bugs-To: nano-devel@gnu.org\n"
 "POT-Creation-Date: 2019-03-11 11:40+0100\n"
-"PO-Revision-Date: 2018-11-07 15:12-0500\n"
+"PO-Revision-Date: 2019-03-11 15:59-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: src/browser.c:67
 #, c-format
@@ -298,20 +298,18 @@ msgid "File to insert [from %s]"
 msgstr "要插入的文件 [来自 %s]"
 
 #: src/files.c:1467
-#, fuzzy, c-format
-#| msgid "Invalid operating directory\n"
+#, c-format
 msgid "Invalid operating directory: %s\n"
-msgstr "无效的操作目录\n"
+msgstr "无效的操作目录：%s\n"
 
 #: src/files.c:1517
 msgid "Failed to write backup file; continue saving? (Say N if unsure.) "
 msgstr "写入备份文件失败；继续保存吗？（如果不确定请输入N。）"
 
 #: src/files.c:1534
-#, fuzzy, c-format
-#| msgid "Invalid backup directory\n"
+#, c-format
 msgid "Invalid backup directory: %s\n"
-msgstr "无效的备份目录\n"
+msgstr "无效的备份目录：%s\n"
 
 #: src/files.c:1628
 #, c-format
@@ -1822,10 +1820,8 @@ msgid "View mode (read-only)"
 msgstr "查看（只读）模式"
 
 #: src/nano.c:896
-#, fuzzy
-#| msgid "Don't hard-wrap long lines"
 msgid "Don't hard-wrap long lines [default]"
-msgstr "不要为过长行强制折行"
+msgstr "不要为过长行强制折行 [默认]"
 
 #: src/nano.c:898
 msgid "Don't show the two help lines"
@@ -1929,10 +1925,8 @@ msgid "Unbound key: M-%c"
 msgstr "按键未绑定：M-%c"
 
 #: src/nano.c:1575
-#, fuzzy
-#| msgid "Unbindable key: M-["
 msgid "Unbindable key: ^["
-msgstr "不可绑定的按键：M-["
+msgstr "不可绑定的按键：^["
 
 #: src/nano.c:1577
 #, c-format
@@ -1953,7 +1947,7 @@ msgstr "键名称 %s 无效"
 #: src/nano.c:2165 src/nano.c:2184
 #, c-format
 msgid "Option %s is ignored; it is the default\n"
-msgstr ""
+msgstr "选项 %s 已忽略；这是默认值\n"
 
 #: src/nano.c:2190 src/rcfile.c:1182
 #, c-format

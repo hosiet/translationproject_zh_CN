@@ -4,13 +4,13 @@
 #
 # LI Daobing <lidaobing@gmail.com>, 2007, 2008, 2009.
 # Aron Xu <happyaron.xu@gmail.com>, 2009, 2010, 2011, 2015.
-# Boyuan Yang <073plan@gmail.com>, 2018.
+# Boyuan Yang <073plan@gmail.com>, 2018, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: nano 3.2-pre1\n"
+"Project-Id-Version: nano 4.0-pre1\n"
 "Report-Msgid-Bugs-To: nano-devel@gnu.org\n"
 "POT-Creation-Date: 2019-03-11 11:40+0100\n"
-"PO-Revision-Date: 2019-03-11 15:59-0400\n"
+"PO-Revision-Date: 2019-03-13 13:00-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -492,10 +492,8 @@ msgid "Cut current line (or marked region) and store it in cutbuffer"
 msgstr "剪切当前行（或者标记的区域）并存至剪贴缓冲区"
 
 #: src/global.c:558
-#, fuzzy
-#| msgid "Insert a tab at the cursor position"
 msgid "Paste the contents of cutbuffer at current cursor position"
-msgstr "插入制表符于游标位置"
+msgstr "在当前游标位置粘贴剪贴缓冲区内容"
 
 #: src/global.c:559
 msgid "Display the position of the cursor"
@@ -638,16 +636,12 @@ msgid "Delete the character to the left of the cursor"
 msgstr "删除游标左侧的字符"
 
 #: src/global.c:614
-#, fuzzy
-#| msgid "Cut backward from cursor to word start"
 msgid "Delete backward from cursor to word start"
-msgstr "从游标剪切至单词开始位置"
+msgstr "从游标向单词起始位置向后删除"
 
 #: src/global.c:616
-#, fuzzy
-#| msgid "Cut forward from cursor to next word start"
 msgid "Delete forward from cursor to next word start"
-msgstr "从游标剪切至下一个单词开始位置"
+msgstr "从游标向下一个单词起始位置向前删除"
 
 #: src/global.c:618
 msgid "Cut from the cursor position to the end of the file"
@@ -844,10 +838,8 @@ msgid "Cut Text"
 msgstr "剪切文字"
 
 #: src/global.c:762
-#, fuzzy
-#| msgid "Pipe Text"
 msgid "Paste Text"
-msgstr "管道传递文字"
+msgstr "粘贴文字"
 
 #: src/global.c:771
 msgid "To Spell"
@@ -1022,16 +1014,12 @@ msgstr "删除"
 
 #. TRANSLATORS: The next two strings refer to deleting words.
 #: src/global.c:946
-#, fuzzy
-#| msgid "Cut Left"
 msgid "Chop Left"
-msgstr "向左剪切"
+msgstr "向左切除"
 
 #: src/global.c:948
-#, fuzzy
-#| msgid "Cut Right"
 msgid "Chop Right"
-msgstr "向右剪切"
+msgstr "向右切除"
 
 #: src/global.c:950
 msgid "CutTillEnd"
@@ -1173,10 +1161,8 @@ msgid "Constant cursor position display"
 msgstr "持续显示游标位置"
 
 #: src/global.c:1410
-#, fuzzy
-#| msgid "Scroll by line instead of half-screen"
 msgid "Jumpy scrolling (per half-screen)"
-msgstr "按行滚动而不是半屏"
+msgstr "跳转翻页（按半屏幕）"
 
 #: src/global.c:1412
 msgid "Soft wrapping of overlong lines"
@@ -1616,10 +1602,8 @@ msgid "Don't look at nanorc files"
 msgstr "不要参考nanorc 文件"
 
 #: src/nano.c:803
-#, fuzzy
-#| msgid "Go to first row in this column"
 msgid "Show a guiding bar at this column"
-msgstr "跳至本栏第一列"
+msgstr "在此栏显示一个导引条"
 
 #: src/nano.c:806
 msgid "Fix numeric keypad key confusion problem"
@@ -1627,7 +1611,7 @@ msgstr "修正数字键区按键混淆问题"
 
 #: src/nano.c:809
 msgid "Don't add an automatic newline [default]"
-msgstr ""
+msgstr "不要自动添加换行符 [默认]"
 
 #: src/nano.c:813
 msgid "Trim tail spaces when hard-wrapping"
@@ -1714,10 +1698,8 @@ msgid "When soft-wrapping, do it at whitespace"
 msgstr "软折行时在空白处进行"
 
 #: src/nano.c:850
-#, fuzzy
-#| msgid "Don't hard-wrap long lines"
 msgid "Automatically hard-wrap overlong lines"
-msgstr "不要为过长行强制折行"
+msgstr "对过长的行自动强制换行"
 
 #: src/nano.c:852
 msgid "Constantly show cursor position"
@@ -1729,11 +1711,11 @@ msgstr "修正退格键/删除键混淆问题"
 
 #: src/nano.c:855
 msgid "Keep the line below the title bar empty"
-msgstr ""
+msgstr "保持标题栏下面的行一直为空"
 
 #: src/nano.c:856
 msgid "Ensure that text ends with a newline"
-msgstr ""
+msgstr "确保文本以换行符结尾"
 
 #: src/nano.c:859
 msgid "Show cursor in file browser & help text"
@@ -1749,7 +1731,7 @@ msgstr "自动缩进新行"
 
 #: src/nano.c:865
 msgid "Scroll per half-screen, not per line"
-msgstr ""
+msgstr "按半屏幕滚动文本，不按行"
 
 #: src/nano.c:867
 msgid "Cut from cursor to end of line"
@@ -1793,7 +1775,7 @@ msgstr "--fill=<#列数>"
 
 #: src/nano.c:883
 msgid "Set width for hard-wrap and justify"
-msgstr ""
+msgstr "设置强制换行宽度并进行重排"
 
 #: src/nano.c:887
 msgid "-s <prog>"
@@ -1939,10 +1921,9 @@ msgid "Unbound key: %c"
 msgstr "按键未绑定：%c"
 
 #: src/nano.c:2142 src/rcfile.c:1125
-#, fuzzy, c-format
-#| msgid "Key name %s is invalid"
+#, c-format
 msgid "Guide column \"%s\" is invalid"
-msgstr "键名称 %s 无效"
+msgstr "指导栏“%s”无效"
 
 #: src/nano.c:2165 src/nano.c:2184
 #, c-format
@@ -1965,10 +1946,9 @@ msgid "Type '%s -h' for a list of available options.\n"
 msgstr "输入“%s -h”以获取所有可用选项的列表。\n"
 
 #: src/nano.c:2506
-#, fuzzy, c-format
-#| msgid "Bad regex \"%s\": %s"
+#, c-format
 msgid "Bad quoting regex \"%s\": %s\n"
-msgstr "非法的正则表达式 \"%s\": %s"
+msgstr "非法的正则表达式 \"%s\": %s\n"
 
 #: src/nano.c:2646 src/search.c:789
 msgid "Invalid line or column number"
@@ -2087,10 +2067,9 @@ msgid "Function '%s' does not exist in menu '%s'"
 msgstr "功能“%s”在菜单“%s”中不存在"
 
 #: src/rcfile.c:477
-#, fuzzy, c-format
-#| msgid "Sorry, keystroke \"%s\" may not be rebound"
+#, c-format
 msgid "Keystroke %s may not be rebound"
-msgstr "对不起，按键“%s”无法重新绑定"
+msgstr "按键 %s 无法重新绑定"
 
 #: src/rcfile.c:567
 #, c-format
@@ -2294,27 +2273,23 @@ msgstr "没有可撤销的操作！"
 #. * that are undone or redone.  They are all nouns, not verbs.
 #: src/text.c:540 src/text.c:610 src/text.c:723 src/text.c:791
 msgid "addition"
-msgstr ""
+msgstr "添加"
 
 #: src/text.c:555 src/text.c:735
 msgid "line break"
-msgstr "换行符"
+msgstr "换行"
 
 #: src/text.c:567 src/text.c:748
-#, fuzzy
-#| msgid "In Selection:  "
 msgid "deletion"
-msgstr "于选择部分："
+msgstr "删除"
 
 #: src/text.c:577 src/text.c:761
 msgid "line join"
 msgstr "行合并"
 
 #: src/text.c:596 src/text.c:776
-#, fuzzy
-#| msgid "Edit a replacement"
 msgid "replacement"
-msgstr "编辑替代文字"
+msgstr "替换"
 
 #: src/text.c:614 src/text.c:795
 msgid "erasure"
@@ -2323,17 +2298,15 @@ msgstr "清除"
 #. TRANSLATORS: Remember: these are nouns, NOT verbs.
 #: src/text.c:620 src/text.c:800
 msgid "cut"
-msgstr ""
+msgstr "剪切"
 
 #: src/text.c:624 src/text.c:804
 msgid "paste"
-msgstr ""
+msgstr "粘贴"
 
 #: src/text.c:628 src/text.c:808
-#, fuzzy
-#| msgid "text insert"
 msgid "insertion"
-msgstr "文本插入"
+msgstr "插入"
 
 #: src/text.c:655 src/text.c:826
 msgid "indent"
@@ -2352,20 +2325,18 @@ msgid "uncomment"
 msgstr "取消注释"
 
 #: src/text.c:677
-#, fuzzy, c-format
-#| msgid "Undid action (%s)"
+#, c-format
 msgid "Undid %s"
-msgstr "已撤销操作(%s)"
+msgstr "已撤销 %s"
 
 #: src/text.c:702
 msgid "Nothing to re-do!"
 msgstr "没有可重做的操作！"
 
 #: src/text.c:848
-#, fuzzy, c-format
-#| msgid "Redid action (%s)"
+#, c-format
 msgid "Redid %s"
-msgstr "已重做操作（%s）"
+msgstr "已重做 %s"
 
 #: src/text.c:981 src/text.c:2463 src/text.c:2837
 msgid "Could not create pipe"
@@ -2386,23 +2357,19 @@ msgstr "打开管道失败：%s"
 
 #: src/text.c:2139 src/text.c:2263
 msgid "justification"
-msgstr ""
+msgstr "对齐"
 
 #: src/text.c:2285
 msgid "Justified selection"
-msgstr ""
+msgstr "已对齐选中内容"
 
 #: src/text.c:2289
-#, fuzzy
-#| msgid "Justify the entire file"
 msgid "Justified file"
-msgstr "对齐整个文件"
+msgstr "已对齐文件"
 
 #: src/text.c:2291
-#, fuzzy
-#| msgid "Justify the current paragraph"
 msgid "Justified paragraph"
-msgstr "对齐当前段落"
+msgstr "已对齐段落"
 
 #: src/text.c:2385
 #, c-format
@@ -2516,7 +2483,7 @@ msgstr "没有匹配"
 
 #: src/utils.c:315 src/utils.c:327
 msgid "Nano is out of memory!\n"
-msgstr "nano 已耗尽内存！\n"
+msgstr "Nano 已耗尽内存！\n"
 
 #: src/winio.c:86
 msgid "Recording a macro..."
@@ -2569,10 +2536,8 @@ msgid "View"
 msgstr "查看"
 
 #: src/winio.c:2100
-#, fuzzy
-#| msgid "Restricted mode"
 msgid "Restricted"
-msgstr "限制模式"
+msgstr "受限"
 
 #: src/winio.c:2229
 msgid "Further warnings were suppressed"

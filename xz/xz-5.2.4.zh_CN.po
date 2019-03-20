@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: xz 5.2.4\n"
 "Report-Msgid-Bugs-To: lasse.collin@tukaani.org\n"
 "POT-Creation-Date: 2018-04-29 18:19+0300\n"
-"PO-Revision-Date: 2019-03-05 14:49-0500\n"
+"PO-Revision-Date: 2019-03-20 15:25-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -108,19 +108,13 @@ msgstr "解压缩需要 %s MiB 的内存。"
 
 #: src/xz/coder.c:300
 #, c-format
-msgid ""
-"Adjusted the number of threads from %s to %s to not exceed the memory usage "
-"limit of %s MiB"
+msgid "Adjusted the number of threads from %s to %s to not exceed the memory usage limit of %s MiB"
 msgstr "已将所使用的线程数从 %s 调整为 %s，以不超出 %s MiB 的内存用量限制"
 
 #: src/xz/coder.c:354
 #, c-format
-msgid ""
-"Adjusted LZMA%c dictionary size from %s MiB to %s MiB to not exceed the "
-"memory usage limit of %s MiB"
-msgstr ""
-"已调整 LZMA%c 字典大小（从 %s MiB 调整为 %s MiB），以不超出 %s MiB 的内存用量"
-"限制"
+msgid "Adjusted LZMA%c dictionary size from %s MiB to %s MiB to not exceed the memory usage limit of %s MiB"
+msgstr "已调整 LZMA%c 字典大小（从 %s MiB 调整为 %s MiB），以不超出 %s MiB 的内存用量限制"
 
 #: src/xz/file_io.c:110 src/xz/file_io.c:118
 #, c-format
@@ -275,7 +269,7 @@ msgstr "用于压缩的内存用量限制：  "
 
 #: src/xz/hardware.c:130
 msgid "Memory usage limit for decompression:  "
-msgstr "用于解压缩的内存用量限制："
+msgstr "用于解压缩的内存用量限制：             "
 
 #. TRANSLATORS: Indicates that there is no integrity check.
 #. This string is used in tables, so the width must not
@@ -353,42 +347,42 @@ msgstr "%s：过小而不是有效的 .xz 文件"
 #. use two lines here. Test with "xz -l foo.xz".
 #: src/xz/list.c:677
 msgid "Strms  Blocks   Compressed Uncompressed  Ratio  Check   Filename"
-msgstr ""
+msgstr "   流      块     压缩大小     解压大小   比例   校验     文件名"
 
 #: src/xz/list.c:717
 #, c-format
 msgid "  Streams:            %s\n"
-msgstr ""
+msgstr "  流：                %s\n"
 
 #: src/xz/list.c:719
 #, c-format
 msgid "  Blocks:             %s\n"
-msgstr ""
+msgstr "  块：                %s\n"
 
 #: src/xz/list.c:721
 #, c-format
 msgid "  Compressed size:    %s\n"
-msgstr ""
+msgstr "  压缩后大小：        %s\n"
 
 #: src/xz/list.c:724
 #, c-format
 msgid "  Uncompressed size:  %s\n"
-msgstr ""
+msgstr "  解压缩大小：        %s\n"
 
 #: src/xz/list.c:727
 #, c-format
 msgid "  Ratio:              %s\n"
-msgstr ""
+msgstr "  压缩比：            %s\n"
 
 #: src/xz/list.c:729
 #, c-format
 msgid "  Check:              %s\n"
-msgstr ""
+msgstr "  校验方式：          %s\n"
 
 #: src/xz/list.c:730
 #, c-format
 msgid "  Stream padding:     %s\n"
-msgstr ""
+msgstr "  流填充大小：        %s\n"
 
 #. TRANSLATORS: The second line is column headings. All except
 #. Check are right aligned; Check is left aligned. Test with
@@ -396,9 +390,10 @@ msgstr ""
 #: src/xz/list.c:758
 msgid ""
 "  Streams:\n"
-"    Stream    Blocks      CompOffset    UncompOffset        CompSize      "
-"UncompSize  Ratio  Check      Padding"
+"    Stream    Blocks      CompOffset    UncompOffset        CompSize      UncompSize  Ratio  Check      Padding"
 msgstr ""
+"  流：\n"
+"       流         块      压缩偏移量      解压偏移量        压缩大小        解压大小   比例   校验         填充"
 
 #. TRANSLATORS: The second line is column headings. All
 #. except Check are right aligned; Check is left aligned.
@@ -406,9 +401,10 @@ msgstr ""
 #, c-format
 msgid ""
 "  Blocks:\n"
-"    Stream     Block      CompOffset    UncompOffset       TotalSize      "
-"UncompSize  Ratio  Check"
+"    Stream     Block      CompOffset    UncompOffset       TotalSize      UncompSize  Ratio  Check"
 msgstr ""
+"  块：\n"
+"        流        块      压缩偏移量      解压偏移量        总计大小        解压大小   比例   校验"
 
 #. TRANSLATORS: These are additional column headings
 #. for the most verbose listing mode. CheckVal
@@ -420,7 +416,7 @@ msgstr ""
 #: src/xz/list.c:825
 #, c-format
 msgid "      CheckVal %*s Header  Flags        CompSize    MemUsage  Filters"
-msgstr ""
+msgstr "      CheckVal %*s   头部   标记        压缩大小    内存使用   过滤器"
 
 #: src/xz/list.c:903 src/xz/list.c:1078
 #, c-format
@@ -430,7 +426,7 @@ msgstr "  所需内存：          %s MiB\n"
 #: src/xz/list.c:905 src/xz/list.c:1080
 #, c-format
 msgid "  Sizes in headers:   %s\n"
-msgstr ""
+msgstr "  头部存放大小：      %s\n"
 
 #: src/xz/list.c:906 src/xz/list.c:1081
 msgid "Yes"
@@ -460,7 +456,7 @@ msgstr "总计："
 #: src/xz/list.c:1071
 #, c-format
 msgid "  Number of files:    %s\n"
-msgstr "  Number of files:    %s\n"
+msgstr "  文件数量：          %s\n"
 
 #: src/xz/list.c:1146
 msgid "--list works only on .xz files (--format=xz or --format=auto)"
@@ -482,20 +478,15 @@ msgstr "%s：读取文件名列表时遇到未预期的输入结束"
 
 #: src/xz/main.c:120
 #, c-format
-msgid ""
-"%s: Null character found when reading filenames; maybe you meant to use `--"
-"files0' instead of `--files'?"
-msgstr ""
-"%s：读取文件名列表时获得了空字符；您可能想要使用“--files0”而非“--files”？"
+msgid "%s: Null character found when reading filenames; maybe you meant to use `--files0' instead of `--files'?"
+msgstr "%s：读取文件名列表时获得了空字符；您可能想要使用“--files0”而非“--files”？"
 
 #: src/xz/main.c:174
 msgid "Compression and decompression with --robot are not supported yet."
 msgstr "尚不支持带 --robot 的压缩和解压缩。"
 
 #: src/xz/main.c:252
-msgid ""
-"Cannot read data from standard input when reading filenames from standard "
-"input"
+msgid "Cannot read data from standard input when reading filenames from standard input"
 msgstr "无法同时从标准输入读取数据和文件名列表"
 
 #. TRANSLATORS: This is the program name in the beginning
@@ -575,8 +566,7 @@ msgstr ""
 "\n"
 
 #: src/xz/message.c:1086
-msgid ""
-"Mandatory arguments to long options are mandatory for short options too.\n"
+msgid "Mandatory arguments to long options are mandatory for short options too.\n"
 msgstr "必选参数对长短选项同时适用。\n"
 
 #: src/xz/message.c:1090
@@ -625,14 +615,12 @@ msgid ""
 "  -S, --suffix=.SUF   use the suffix `.SUF' on compressed files\n"
 "      --files[=FILE]  read filenames to process from FILE; if FILE is\n"
 "                      omitted, filenames are read from the standard input;\n"
-"                      filenames must be terminated with the newline "
-"character\n"
+"                      filenames must be terminated with the newline character\n"
 "      --files0[=FILE] like --files but use the null character as terminator"
 msgstr ""
 "      --no-sparse     解压缩时不要创建稀疏文件\n"
 "  -S, --suffix=.SUF   压缩文件使用指定的“.SUF”后缀名\n"
-"      --files[=文件]  从指定文件读取要处理的文件名列表；如果省略了指定文件"
-"名，\n"
+"      --files[=文件]  从指定文件读取要处理的文件名列表；如果省略了指定文件名，\n"
 "                      将从标准输入读取文件名列表；文件名必须使用换行符分隔\n"
 "      --files0[=文件] 类似 --files，但使用空字符进行分隔"
 
@@ -657,24 +645,20 @@ msgstr ""
 "                      “crc32”、“crc64”（默认）或“sha256”"
 
 #: src/xz/message.c:1127
-msgid ""
-"      --ignore-check  don't verify the integrity check when decompressing"
+msgid "      --ignore-check  don't verify the integrity check when decompressing"
 msgstr "      --ignore-check  解压缩时不要进行完整性检查验证"
 
 #: src/xz/message.c:1131
 msgid ""
-"  -0 ... -9           compression preset; default is 6; take compressor "
-"*and*\n"
-"                      decompressor memory usage into account before using "
-"7-9!"
+"  -0 ... -9           compression preset; default is 6; take compressor *and*\n"
+"                      decompressor memory usage into account before using 7-9!"
 msgstr ""
 "  -0 ... -9           压缩预设等级；默认为 6；使用 7-9 的等级之前，请先考虑\n"
 "                      压缩和解压缩所需的内存用量！（会占用大量内存空间）"
 
 #: src/xz/message.c:1135
 msgid ""
-"  -e, --extreme       try to improve compression ratio by using more CPU "
-"time;\n"
+"  -e, --extreme       try to improve compression ratio by using more CPU time;\n"
 "                      does not affect decompressor memory requirements"
 msgstr ""
 "  -e, --extreme       尝试使用更多 CPU 时间来改进压缩比率；\n"
@@ -691,10 +675,12 @@ msgstr ""
 #: src/xz/message.c:1144
 msgid ""
 "      --block-size=SIZE\n"
-"                      start a new .xz block after every SIZE bytes of "
-"input;\n"
+"                      start a new .xz block after every SIZE bytes of input;\n"
 "                      use this to set the block size for threaded compression"
 msgstr ""
+"      --block-size=块大小\n"
+"                      输入每读取指定块大小的数据后即开始一个新的 .xz 块；\n"
+"                      使用该选项可以设置多线程压缩中的块大小"
 
 #: src/xz/message.c:1148
 msgid ""
@@ -702,16 +688,20 @@ msgid ""
 "                      start a new .xz block after the given comma-separated\n"
 "                      intervals of uncompressed data"
 msgstr ""
+"      --block-list=块大小列表\n"
+"                      在所给出的未压缩数据间隔大小的数据之后开始一个新的\n"
+"                      .xz 块（使用逗号分隔）"
 
 #: src/xz/message.c:1152
 msgid ""
 "      --flush-timeout=TIMEOUT\n"
-"                      when compressing, if more than TIMEOUT milliseconds "
-"has\n"
-"                      passed since the previous flush and reading more "
-"input\n"
+"                      when compressing, if more than TIMEOUT milliseconds has\n"
+"                      passed since the previous flush and reading more input\n"
 "                      would block, all pending data is flushed out"
 msgstr ""
+"      --flush-timeout=超时时间\n"
+"                      进行压缩时，如果从上次刷洗输出之后经过了指定的超时时间\n"
+"                      且读取更多数据会被阻塞，则刷洗输出所有缓冲数据"
 
 #: src/xz/message.c:1158
 #, no-c-format
@@ -719,26 +709,21 @@ msgid ""
 "      --memlimit-compress=LIMIT\n"
 "      --memlimit-decompress=LIMIT\n"
 "  -M, --memlimit=LIMIT\n"
-"                      set memory usage limit for compression, "
-"decompression,\n"
+"                      set memory usage limit for compression, decompression,\n"
 "                      or both; LIMIT is in bytes, % of RAM, or 0 for defaults"
 msgstr ""
 "      --memlimit-compress=限制用量\n"
 "      --memlimit-decompress=限制用量\n"
 "  -M, --memlimit=限制用量\n"
 "                      设置压缩、解压缩或者两者共同的内存用量限制；\n"
-"                      所指定限制量单位为字节，或以百分号 % 结尾表示内存比"
-"例，\n"
+"                      所指定限制量单位为字节，或以百分号 % 结尾表示内存比例，\n"
 "                      或者指定 0 取软件默认值"
 
 #: src/xz/message.c:1165
 msgid ""
-"      --no-adjust     if compression settings exceed the memory usage "
-"limit,\n"
-"                      give an error instead of adjusting the settings "
-"downwards"
-msgstr ""
-"      --no-adjust     如果压缩设置超出内存用量限制，不调整设置而直接报错"
+"      --no-adjust     if compression settings exceed the memory usage limit,\n"
+"                      give an error instead of adjusting the settings downwards"
+msgstr "      --no-adjust     如果压缩设置超出内存用量限制，不调整设置而直接报错"
 
 #: src/xz/message.c:1171
 msgid ""
@@ -751,10 +736,8 @@ msgstr ""
 #: src/xz/message.c:1180
 msgid ""
 "\n"
-"  --lzma1[=OPTS]      LZMA1 or LZMA2; OPTS is a comma-separated list of zero "
-"or\n"
-"  --lzma2[=OPTS]      more of the following options (valid values; "
-"default):\n"
+"  --lzma1[=OPTS]      LZMA1 or LZMA2; OPTS is a comma-separated list of zero or\n"
+"  --lzma2[=OPTS]      more of the following options (valid values; default):\n"
 "                        preset=PRE reset options to a preset (0-9[e])\n"
 "                        dict=NUM   dictionary size (4KiB - 1536MiB; 8MiB)\n"
 "                        lc=NUM     number of literal context bits (0-4; 3)\n"
@@ -762,11 +745,22 @@ msgid ""
 "                        pb=NUM     number of position bits (0-4; 2)\n"
 "                        mode=MODE  compression mode (fast, normal; normal)\n"
 "                        nice=NUM   nice length of a match (2-273; 64)\n"
-"                        mf=NAME    match finder (hc3, hc4, bt2, bt3, bt4; "
-"bt4)\n"
-"                        depth=NUM  maximum search depth; 0=automatic "
-"(default)"
+"                        mf=NAME    match finder (hc3, hc4, bt2, bt3, bt4; bt4)\n"
+"                        depth=NUM  maximum search depth; 0=automatic (default)"
 msgstr ""
+"\n"
+"  --lzma1[=选项]      LZMA1 或 LZMA2；指定选项是用逗号分隔的下列选项的组合，\n"
+"  --lzma2[=选项]      值应当为零或大于零（有效值；默认值）：\n"
+"                        preset=PRE 将选项重置为预设配置 (0-9[e])\n"
+"                        dict=数字  字典大小 (4KiB - 1536MiB; 8MiB)\n"
+"                        lc=数字    literal context 位的数量 (0-4; 3)\n"
+"                        lp=数字    literal position 位的数量 (0-4; 0)\n"
+"                        pb=数字    position 位的数量 (0-4; 2)\n"
+"                        mode=模式  压缩模式 (fast, normal; normal)\n"
+"                        nice=数字  匹配的 nice 值 (2-273; 64)\n"
+"                        mf=名称    匹配搜索器 match finder\n"
+"                                   (hc3, hc4, bt2, bt3, bt4; bt4)\n"
+"                        depth=数字 最大搜索深度； 0=自动（默认）"
 
 #: src/xz/message.c:1195
 msgid ""
@@ -797,6 +791,9 @@ msgid ""
 "                        dist=NUM   distance between bytes being subtracted\n"
 "                                   from each other (1-256; 1)"
 msgstr ""
+"\n"
+"  --delta[=选项]      增量过滤器；有效选项（有效值；默认值）：\n"
+"                        dist=NUM   相减的字节之间的距离 (1-256; 1)"
 
 #: src/xz/message.c:1215
 msgid ""
@@ -808,8 +805,7 @@ msgstr ""
 
 #: src/xz/message.c:1218
 msgid ""
-"  -q, --quiet         suppress warnings; specify twice to suppress errors "
-"too\n"
+"  -q, --quiet         suppress warnings; specify twice to suppress errors too\n"
 "  -v, --verbose       be verbose; specify twice for even more verbose"
 msgstr ""
 "  -q, --quiet         不显示警告信息；指定两次可不显示错误信息\n"
@@ -820,14 +816,12 @@ msgid "  -Q, --no-warn       make warnings not affect the exit status"
 msgstr "  -Q, --no-warn       使得警告信息不影响程序退出返回值"
 
 #: src/xz/message.c:1225
-msgid ""
-"      --robot         use machine-parsable messages (useful for scripts)"
+msgid "      --robot         use machine-parsable messages (useful for scripts)"
 msgstr "      --robot         使用机器可解析的信息（对于脚本有用）"
 
 #: src/xz/message.c:1228
 msgid ""
-"      --info-memory   display the total amount of RAM and the currently "
-"active\n"
+"      --info-memory   display the total amount of RAM and the currently active\n"
 "                      memory usage limits, and exit"
 msgstr "      --info-memory   显示 RAM 总量和当前配置的内存用量限制，然后退出"
 
@@ -907,14 +901,12 @@ msgstr "lc 和 lp 的和必须不大于 4"
 #: src/xz/options.c:359
 #, c-format
 msgid "The selected match finder requires at least nice=%<PRIu32>"
-msgstr ""
+msgstr "所选中的匹配搜索器（match finder）至少需要 nice=%<PRIu32>"
 
 #: src/xz/suffix.c:133 src/xz/suffix.c:258
 #, c-format
-msgid ""
-"%s: With --format=raw, --suffix=.SUF is required unless writing to stdout"
-msgstr ""
-"%s：在启用 --format-raw 选项时，必须指定 --suffix=.SUF 获知写入至标准输出"
+msgid "%s: With --format=raw, --suffix=.SUF is required unless writing to stdout"
+msgstr "%s：在启用 --format-raw 选项时，必须指定 --suffix=.SUF 获知写入至标准输出"
 
 #: src/xz/suffix.c:164
 #, c-format

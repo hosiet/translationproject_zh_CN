@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-03-21 17:04-0400\n"
+"PO-Revision-Date: 2019-03-21 17:14-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -979,11 +979,11 @@ msgstr "      --base16          十六进制（hex）编码（RFC4648 section 8�
 
 #: src/basenc.c:133
 msgid "      --base2msbf       bit string with most significant bit (msb) first\n"
-msgstr ""
+msgstr "      --base2msbf       位字符串，最高位（msb）最先\n"
 
 #: src/basenc.c:136
 msgid "      --base2lsbf       bit string with least significant bit (lsb) first\n"
-msgstr ""
+msgstr "      --base2lsbf       位字符串，最低位（lsb）最先\n"
 
 #: src/basenc.c:140
 msgid ""
@@ -1833,10 +1833,8 @@ msgid "multiple output delimiters specified"
 msgstr "指定了多个输出分隔符"
 
 #: src/comm.c:496 src/join.c:1196
-#, fuzzy
-#| msgid "file %d is not in sorted order"
 msgid "input is not in sorted order"
-msgstr "文件%d 没有被正确排序"
+msgstr "输入没有被正确排序"
 
 #: src/copy.c:194 src/copy.c:465
 #, c-format
@@ -2239,16 +2237,12 @@ msgstr ""
 "  -H\t\t\t\t跟随源文件中的命令行符号链接\n"
 
 #: src/cp.c:178
-#, fuzzy
-#| msgid ""
-#| "  -l, --link                   link files instead of copying\n"
-#| "  -L, --dereference            always follow symbolic links in SOURCE\n"
 msgid ""
 "  -l, --link                   hard link files instead of copying\n"
 "  -L, --dereference            always follow symbolic links in SOURCE\n"
 msgstr ""
-"  -l, --link\t\t\t链接文件而不复制\n"
-"  -L, --dereference\t\t总是跟随符号链接\n"
+"  -l, --link                   硬链接文件以代替复制\n"
+"  -L, --dereference            总是跟随源文件中的符号链接\n"
 
 #: src/cp.c:182
 msgid ""

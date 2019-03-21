@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-03-05 18:41-0500\n"
+"PO-Revision-Date: 2019-03-21 17:04-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -949,24 +949,13 @@ msgid "Usage: %s [OPTION]... [FILE]\n"
 msgstr "用法：%s [选项]... [文件]\n"
 
 #: src/basenc.c:106
-#, fuzzy
-#| msgid ""
-#| "Usage: %s [OPTION]... [FILE]\n"
-#| "Base%d encode or decode FILE, or standard input, to standard output.\n"
 msgid "basenc encode or decode FILE, or standard input, to standard output.\n"
-msgstr ""
-"用法：%s [选项]... [文件]\n"
-"使用 Base%d 编码/解码文件或标准输入输出。\n"
+msgstr "baseenc 可以编码/解码文件或标准输入输出。\n"
 
 #: src/basenc.c:110
-#, fuzzy, c-format
-#| msgid ""
-#| "Usage: %s [OPTION]... [FILE]\n"
-#| "Base%d encode or decode FILE, or standard input, to standard output.\n"
+#, c-format
 msgid "Base%d encode or decode FILE, or standard input, to standard output.\n"
-msgstr ""
-"用法：%s [选项]... [文件]\n"
-"使用 Base%d 编码/解码文件或标准输入输出。\n"
+msgstr "使用 Base%d 编码/解码文件或标准输入输出。\n"
 
 #: src/basenc.c:118
 msgid "      --base64          same as 'base64' program (RFC4648 section 4)\n"
@@ -974,19 +963,19 @@ msgstr "      --base64          与 'base64' 程序相同（RFC4648 section 4）
 
 #: src/basenc.c:121
 msgid "      --base64url       file- and url-safe base64 (RFC4648 section 5)\n"
-msgstr ""
+msgstr "      --base64url       文件安全或者 URL 安全的 base64（RFC4648 section 5）\n"
 
 #: src/basenc.c:124
 msgid "      --base32          same as 'base32' program (RFC4648 section 6)\n"
-msgstr ""
+msgstr "      --base32          与 'base32' 程序相同（RFC4648 section 4）\n"
 
 #: src/basenc.c:127
 msgid "      --base32hex       extended hex alphabet base32 (RFC4648 section 7)\n"
-msgstr ""
+msgstr "      --base32hex       扩展的十六进制（hex）字母表 base32（RFC4648 section 7）\n"
 
 #: src/basenc.c:130
 msgid "      --base16          hex encoding (RFC4648 section 8)\n"
-msgstr ""
+msgstr "      --base16          十六进制（hex）编码（RFC4648 section 8）\n"
 
 #: src/basenc.c:133
 msgid "      --base2msbf       bit string with most significant bit (msb) first\n"
@@ -1017,13 +1006,6 @@ msgid ""
 msgstr ""
 
 #: src/basenc.c:157
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "The data are encoded as described for the %s alphabet in RFC 4648.\n"
-#| "When decoding, the input may contain newlines in addition to the bytes of\n"
-#| "the formal %s alphabet.  Use --ignore-garbage to attempt to recover\n"
-#| "from any other non-alphabet bytes in the encoded stream.\n"
 msgid ""
 "\n"
 "When decoding, the input may contain newlines in addition to the bytes of\n"
@@ -1031,9 +1013,8 @@ msgid ""
 "from any other non-alphabet bytes in the encoded stream.\n"
 msgstr ""
 "\n"
-"数据以 RFC 4648 规定的 %s 字母格式进行编码。\n"
-"解码时，输入数据（编码流）可能包含一些非有效 %s 字符的换行符。\n"
-"可以尝试用 --ignore-garbage 选项来绕过编码流中的无效字符。\n"
+"解码时，输入数据（编码流）可能包含一些换行符，以及不在有效字符范围之内的\n"
+"字符。  可以尝试用 --ignore-garbage 选项来绕过编码流中的无效字符。\n"
 
 #: src/basenc.c:164
 #, c-format
@@ -1046,12 +1027,12 @@ msgid ""
 msgstr ""
 "\n"
 "数据以 RFC 4648 规定的 %s 字母格式进行编码。\n"
-"解码时，输入数据（编码流）可能包含一些非有效 %s 字符的换行符。\n"
+"解码时，输入数据（编码流）可能包含一些非有效 %s 字符以及换行符。\n"
 "可以尝试用 --ignore-garbage 选项来绕过编码流中的无效字符。\n"
 
 #: src/basenc.c:624
 msgid "invalid input (length must be multiple of 4 characters)"
-msgstr ""
+msgstr "无效输入（长度必须为 4 字符的整数倍）"
 
 #: src/basenc.c:1014 src/basenc.c:1060 src/csplit.c:277 src/csplit.c:1468
 #: src/join.c:465 src/shuf.c:233 src/shuf.c:279 src/shuf.c:554

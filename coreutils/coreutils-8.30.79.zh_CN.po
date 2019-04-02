@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-03-21 17:14-0400\n"
+"PO-Revision-Date: 2019-04-02 11:22-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -1004,6 +1004,9 @@ msgid ""
 "                        when encoding, input length must be a multiple of 4;\n"
 "                        when decoding, input length must be a multiple of 5\n"
 msgstr ""
+"      --z85             类似 ascii85 的编码（ZeroMQ 标准：32/Z85）；\n"
+"                        编码时，输入长度必须是 4 的倍数；\n"
+"                        解码时，输入长度必须是 5 的倍数；\n"
 
 #: src/basenc.c:157
 msgid ""
@@ -3335,11 +3338,11 @@ msgstr "  nonblock\t使用无阻塞I/O 存取模式\n"
 
 #: src/dd.c:638
 msgid "  noatime   do not update access time\n"
-msgstr "  noatime\t不更新存取时间\n"
+msgstr "  noatime   不更新访问时间\n"
 
 #: src/dd.c:641
 msgid "  nocache   Request to drop cache.  See also oflag=sync\n"
-msgstr ""
+msgstr "  nocache   请求不使用缓存。参见 oflag=sync\n"
 
 #: src/dd.c:645
 msgid "  noctty    do not assign controlling terminal from file\n"
@@ -3355,11 +3358,11 @@ msgstr "  nolinks\t如果有多重链接，则nolinks 失败\n"
 
 #: src/dd.c:652
 msgid "  binary    use binary I/O for data\n"
-msgstr "  binary\t使用二进制I/O 存取模式\n"
+msgstr "  binary    使用二进制 I/O 存取模式\n"
 
 #: src/dd.c:654
 msgid "  text      use text I/O for data\n"
-msgstr "  text\t使用文本I/O 存取模式\n"
+msgstr "  text      使用文本 I/O 存取模式\n"
 
 #: src/dd.c:656
 msgid "  count_bytes  treat 'count=N' as a byte count (iflag only)\n"
@@ -3403,26 +3406,20 @@ msgid "Infinity"
 msgstr "无穷量 B"
 
 #: src/dd.c:817
-#, fuzzy, c-format
-#| msgid "%<PRIuMAX> byte (%s) copied"
-#| msgid_plural "%<PRIuMAX> bytes (%s) copied"
+#, c-format
 msgid "%<PRIuMAX> byte copied, %s, %s"
 msgid_plural "%<PRIuMAX> bytes copied, %s, %s"
-msgstr[0] "%<PRIuMAX>字节(%s)已复制"
+msgstr[0] "%<PRIuMAX>字节已复制，%s，%s"
 
 #: src/dd.c:823
-#, fuzzy, c-format
-#| msgid "%<PRIuMAX> byte (%s) copied"
-#| msgid_plural "%<PRIuMAX> bytes (%s) copied"
+#, c-format
 msgid "%<PRIuMAX> bytes (%s) copied, %s, %s"
-msgstr "%<PRIuMAX>字节(%s)已复制"
+msgstr "%<PRIuMAX>字节（%s）已复制，%s，%s"
 
 #: src/dd.c:826
-#, fuzzy, c-format
-#| msgid "%<PRIuMAX> byte (%s) copied"
-#| msgid_plural "%<PRIuMAX> bytes (%s) copied"
+#, c-format
 msgid "%<PRIuMAX> bytes (%s, %s) copied, %s, %s"
-msgstr "%<PRIuMAX>字节(%s)已复制"
+msgstr "%<PRIuMAX>字节（%s，%s）已复制，%s，%s"
 
 #: src/dd.c:858
 #, c-format
@@ -6829,7 +6826,7 @@ msgstr ""
 
 #: src/nice.c:83
 msgid "  -n, --adjustment=N   add integer N to the niceness (default 10)\n"
-msgstr ""
+msgstr "  -n, --adjustment=N   在优先级数值上加上数字 N（默认为 10）\n"
 
 #: src/nice.c:173
 #, c-format
@@ -7148,10 +7145,9 @@ msgid "failed to prepare value '%Lf' for printing"
 msgstr "%s：无法以写模式打开"
 
 #: src/numfmt.c:858
-#, fuzzy, c-format
-#| msgid "invalid tab size: %s"
+#, c-format
 msgid "invalid unit size: %s"
-msgstr "无效的制表符尺寸：%s"
+msgstr "无效的单位大小：%s"
 
 #: src/numfmt.c:884
 #, fuzzy, c-format
@@ -7272,6 +7268,10 @@ msgid ""
 "               1M = 1000000,\n"
 "               ...\n"
 msgstr ""
+"  si         接受可选的单字符后缀：\n"
+"               1K = 1000,\n"
+"               1M = 1000000,\n"
+"               ...\n"
 
 #: src/numfmt.c:968
 msgid ""
@@ -7280,6 +7280,10 @@ msgid ""
 "               1M = 1048576,\n"
 "               ...\n"
 msgstr ""
+"  iec        接受可选的单字符后缀：\n"
+"               1K = 1024,\n"
+"               1M = 1048576,\n"
+"               ...\n"
 
 #: src/numfmt.c:973
 msgid ""
@@ -7288,6 +7292,10 @@ msgid ""
 "               1Mi = 1048576,\n"
 "               ...\n"
 msgstr ""
+"  iec-i      接受可选的双字符后缀：\n"
+"               1Ki = 1024,\n"
+"               1Mi = 1048576,\n"
+"               ...\n"
 
 #: src/numfmt.c:979
 #, fuzzy
@@ -9094,10 +9102,8 @@ msgid "invalid field range"
 msgstr "无效的字段范围"
 
 #: src/set-fields.c:175 src/set-fields.c:221
-#, fuzzy
-#| msgid "fields and positions are numbered from 1"
 msgid "byte/character positions are numbered from 1"
-msgstr "序号从1 开始计数"
+msgstr "字节/字符位置从 1 开始计数"
 
 #: src/set-fields.c:176 src/set-fields.c:222
 #, fuzzy
@@ -9114,10 +9120,9 @@ msgid "invalid decreasing range"
 msgstr "无效的缩小的范围"
 
 #: src/set-fields.c:259
-#, fuzzy, c-format
-#| msgid "byte offset %s is too large"
+#, c-format
 msgid "byte/character offset %s is too large"
-msgstr "字节偏移量%s 过大"
+msgstr "字节/字符偏移量 %s 过大"
 
 #: src/set-fields.c:260
 #, c-format
@@ -9125,10 +9130,9 @@ msgid "field number %s is too large"
 msgstr "域编号%s 过大"
 
 #: src/set-fields.c:271
-#, fuzzy, c-format
-#| msgid "invalid character class %s"
+#, c-format
 msgid "invalid byte/character position %s"
-msgstr "无效的字符类型%s"
+msgstr "无效的字节/字符位置 %s"
 
 #: src/set-fields.c:272
 #, c-format

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30-pre1\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-04-02 11:22-0400\n"
+"PO-Revision-Date: 2019-04-02 11:29-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -4336,7 +4336,7 @@ msgstr "无效的选项 -- \"%c\""
 #: src/env.c:845 src/env.c:936
 #, c-format
 msgid "use -[v]S to pass options in shebang lines"
-msgstr ""
+msgstr "使用 -[v]S 以在 shebang 行中传递选项"
 
 #: src/env.c:878
 #, c-format
@@ -4961,18 +4961,13 @@ msgid "Usage: %s [OPTION]... [USER]...\n"
 msgstr "用法: %s [选项]... [用户]...\n"
 
 #: src/id.c:97
-#, fuzzy
-#| msgid ""
-#| "Print user and group information for the specified USER,\n"
-#| "or (when USER omitted) for the current user.\n"
-#| "\n"
 msgid ""
 "Print user and group information for each specified USER,\n"
 "or (when USER omitted) for the current user.\n"
 "\n"
 msgstr ""
 "输出指定<用户>的用户和用户组信息，\n"
-"（当没有指定用户信息时）默认使用当前用户信息 。\n"
+"或（当没有指定用户信息时）默认使用当前用户信息 。\n"
 "\n"
 
 #: src/id.c:102
@@ -5471,12 +5466,6 @@ msgstr ""
 "  -t, --table    \t显示一个有关信号具体信息的表格。\n"
 
 #: src/kill.c:97
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "SIGNAL may be a signal name like `HUP', or a signal number like `1',\n"
-#| "or the exit status of a process terminated by a signal.\n"
-#| "PID is an integer; if negative it identifies a process group.\n"
 msgid ""
 "\n"
 "SIGNAL may be a signal name like 'HUP', or a signal number like '1',\n"
@@ -5484,9 +5473,9 @@ msgid ""
 "PID is an integer; if negative it identifies a process group.\n"
 msgstr ""
 "\n"
-"参数中的信号可以是类似\"HUP\"的信号名称，也可以是如\"1\"这样的信号编码，或者进程被\n"
-"信号终止后的退出状态号。\n"
-"进程号(PID) 是一个整数，如果为负数则表示一个进程组。\n"
+"参数中的信号可以是类似\"HUP\"的信号名称，也可以是如\"1\"这样的信号编码，\n"
+"或者进程被信号终止后的退出状态号。\n"
+"进程号（PID）是一个整数，如果为负数则表示一个进程组。\n"
 
 #: src/kill.c:206
 #, c-format
@@ -7136,7 +7125,7 @@ msgstr "输入中存在无效后缀：%s"
 #: src/numfmt.c:710
 #, c-format
 msgid "missing 'i' suffix in input: %s (e.g Ki/Mi/Gi)"
-msgstr ""
+msgstr "输入中缺少 'i' 后缀：%s（例如，Ki/Mi/Gi）"
 
 #: src/numfmt.c:757 src/numfmt.c:809
 #, fuzzy, c-format
@@ -7150,10 +7139,9 @@ msgid "invalid unit size: %s"
 msgstr "无效的单位大小：%s"
 
 #: src/numfmt.c:884
-#, fuzzy, c-format
-#| msgid "Usage: %s [OPTION]... [USER]...\n"
+#, c-format
 msgid "Usage: %s [OPTION]... [NUMBER]...\n"
-msgstr "用法: %s [选项]... [用户]...\n"
+msgstr "用法: %s [选项]... [数字]...\n"
 
 #: src/numfmt.c:887
 msgid "Reformat NUMBER(s), or the numbers from standard input if none are specified.\n"

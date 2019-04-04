@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-04-02 11:29-0400\n"
+"PO-Revision-Date: 2019-04-04 16:26-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -338,8 +338,8 @@ msgstr "”"
 msgid "%s: end of file"
 msgstr "%s：文件结束"
 
-#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:803 src/od.c:953
-#: src/tac.c:251 src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:824
+#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:803 src/od.c:953 src/tac.c:251
+#: src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:824
 #, c-format
 msgid "%s: read error"
 msgstr "%s：读取出错"
@@ -853,17 +853,16 @@ msgid "%s%s argument '%s' too large"
 msgstr "%s%s 参数\"%s\"太大"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37
-#: src/comm.c:39 src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40
-#: src/dd.c:45 src/df.c:48 src/dirname.c:32 src/du.c:54 src/env.c:39
-#: src/expand.c:49 src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42
-#: src/install.c:51 src/ln.c:52 src/ls.c:131 src/mkdir.c:39 src/mkfifo.c:36
-#: src/mknod.c:37 src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53
-#: src/pathchk.c:32 src/pinky.c:38 src/printenv.c:44 src/printf.c:68
-#: src/rm.c:41 src/rmdir.c:37 src/stty.c:68 src/sum.c:39 src/tac.c:58
-#: src/tail.c:77 src/tee.c:38 src/touch.c:45 src/tty.c:44 src/uname.c:61
-#: src/unexpand.c:50 src/uniq.c:43 src/uptime.c:46 src/users.c:36 src/wc.c:51
-#: src/who.c:51 src/yes.c:32
+#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37 src/comm.c:39
+#: src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40 src/dd.c:45
+#: src/df.c:48 src/dirname.c:32 src/du.c:54 src/env.c:39 src/expand.c:49
+#: src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42 src/install.c:51
+#: src/ln.c:52 src/ls.c:131 src/mkdir.c:39 src/mkfifo.c:36 src/mknod.c:37
+#: src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53 src/pathchk.c:32
+#: src/pinky.c:38 src/printenv.c:44 src/printf.c:68 src/rm.c:41 src/rmdir.c:37
+#: src/stty.c:68 src/sum.c:39 src/tac.c:58 src/tail.c:77 src/tee.c:38
+#: src/touch.c:45 src/tty.c:44 src/uname.c:61 src/unexpand.c:50 src/uniq.c:43
+#: src/uptime.c:46 src/users.c:36 src/wc.c:51 src/who.c:51 src/yes.c:32
 msgid "David MacKenzie"
 msgstr "David MacKenzie"
 
@@ -927,9 +926,9 @@ msgstr "缺少操作数"
 #: src/hostname.c:111 src/install.c:985 src/join.c:970 src/link.c:84
 #: src/ln.c:593 src/logname.c:70 src/mknod.c:182 src/mv.c:451 src/nproc.c:115
 #: src/od.c:1866 src/ptx.c:2082 src/seq.c:624 src/shuf.c:491 src/sort.c:4600
-#: src/split.c:1554 src/tr.c:1768 src/tsort.c:559 src/tty.c:113
-#: src/uname.c:252 src/uniq.c:533 src/uniq.c:550 src/unlink.c:80
-#: src/uptime.c:251 src/users.c:145 src/wc.c:758 src/who.c:831 src/whoami.c:78
+#: src/split.c:1554 src/tr.c:1768 src/tsort.c:559 src/tty.c:113 src/uname.c:252
+#: src/uniq.c:533 src/uniq.c:550 src/unlink.c:80 src/uptime.c:251
+#: src/users.c:145 src/wc.c:758 src/who.c:831 src/whoami.c:78
 #, c-format
 msgid "extra operand %s"
 msgstr "额外的操作数 %s"
@@ -1797,8 +1796,8 @@ msgstr "  --output-delimiter=STR\t依照STR 分列\n"
 msgid "  --total           output a summary\n"
 msgstr "  --total           输出一份摘要信息\n"
 
-#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945
-#: src/paste.c:452 src/tail.c:312
+#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945 src/paste.c:452
+#: src/tail.c:312
 msgid "  -z, --zero-terminated    line delimiter is NUL, not newline\n"
 msgstr "  -z, --zero-terminated    以 NUL 字符而非换行符作为行尾分隔符\n"
 
@@ -2219,14 +2218,6 @@ msgstr ""
 "  -d\t\t\t\t等于--no-dereference --preserve=links\n"
 
 #: src/cp.c:169
-#, fuzzy
-#| msgid ""
-#| "  -f, --force                  if an existing destination file cannot be\n"
-#| "                                 opened, remove it and try again (redundant if\n"
-#| "                                 the -n option is used)\n"
-#| "  -i, --interactive            prompt before overwrite (overrides a previous -n\n"
-#| "                                  option)\n"
-#| "  -H                           follow command-line symbolic links in SOURCE\n"
 msgid ""
 "  -f, --force                  if an existing destination file cannot be\n"
 "                                 opened, remove it and try again (this option\n"
@@ -2235,10 +2226,10 @@ msgid ""
 "                                  option)\n"
 "  -H                           follow command-line symbolic links in SOURCE\n"
 msgstr ""
-"  -f, --force\t\t\t如果目标文件无法打开则将其移除并重试(当 -n 选项\n"
-"\t\t\t\t\t存在时则不需再选此项)\n"
-"  -i, --interactive\t\t覆盖前询问(使前面的 -n 选项失效)\n"
-"  -H\t\t\t\t跟随源文件中的命令行符号链接\n"
+"  -f, --force                  如果有已存在的目标文件且无法打开，则将其删除并重试\n"
+"                                 （该选项在与 -n 选项同时使用时将被忽略）\n"
+"  -i, --interactive            覆盖前询问（使前面的 -n 选项失效）\n"
+"  -H                           跟随源文件中的命令行符号链接\n"
 
 #: src/cp.c:178
 msgid ""
@@ -2331,20 +2322,11 @@ msgid ""
 "      --context[=CTX]          like -Z, or if CTX is specified then set the\n"
 "                                 SELinux or SMACK security context to CTX\n"
 msgstr ""
+"  -Z                           设置目标文件的 SELinux 安全上下文为默认类型\n"
+"      --context[=上下文]       类似 -Z；如果指定了上下文，则将 SELinux 或\n"
+"                                 SMACK 安全上下文设置为指定值\n"
 
 #: src/cp.c:231
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "By default, sparse SOURCE files are detected by a crude heuristic and the\n"
-#| "corresponding DEST file is made sparse as well.  That is the behavior\n"
-#| "selected by --sparse=auto.  Specify --sparse=always to create a sparse DEST\n"
-#| "file whenever the SOURCE file contains a long enough sequence of zero bytes.\n"
-#| "Use --sparse=never to inhibit creation of sparse files.\n"
-#| "\n"
-#| "When --reflink[=always] is specified, perform a lightweight copy, where the\n"
-#| "data blocks are copied only when modified.  If this is not possible the copy\n"
-#| "fails, or if --reflink=auto is specified, fall back to a standard copy.\n"
 msgid ""
 "\n"
 "By default, sparse SOURCE files are detected by a crude heuristic and the\n"
@@ -2354,14 +2336,10 @@ msgid ""
 "Use --sparse=never to inhibit creation of sparse files.\n"
 msgstr ""
 "\n"
-"默认情况下，源文件的稀疏性仅仅通过简单的方法判断，对应的目标文件目标文件也\n"
-"被为稀疏。这是因为默认情况下使用了--sparse=auto 参数。如果明确使用\n"
-"--sparse=always 参数则不论源文件是否包含足够长的0 序列也将目标文件创文\n"
-"建为稀疏件。\n"
-"使用--sparse=never 参数禁止创建稀疏文件。\n"
-"\n"
-"当指定了--reflink[=always] 参数时执行轻量化的复制，即只在数据块被修改的\n"
-"情况下才复制。如果复制失败或者同时指定了--reflink=auto，则返回标准复制模式。\n"
+"默认情况下，源文件的稀疏性仅仅通过简单的方法判断，对应的目标文件目标文件\n"
+"也将设为稀疏。这是因为默认情况下使用了--sparse=auto 参数。如果明确使用\n"
+"--sparse=always 参数，则不论源文件是否包含足够长的 0 序列，都会将目标文件\n"
+"创建为稀疏文件。使用 --sparse=never 参数可以禁止创建稀疏文件。\n"
 
 #: src/cp.c:239
 msgid ""
@@ -2371,6 +2349,10 @@ msgid ""
 "fails, or if --reflink=auto is specified, fall back to a standard copy.\n"
 "Use --reflink=never to ensure a standard copy is performed.\n"
 msgstr ""
+"\n"
+"当指定了 --reflink[=always] 参数时，将进行轻量级复制，此时数据块只在被修改时\n"
+"进行复制，如果无法如此操作则复制将会失败。或者如果指定了 --reflink=auto，程序\n"
+"将会回退到标准复制操作。使用 --reflink=never 可以确保永远进行标准复制。\n"
 
 #: src/cp.c:247
 msgid ""
@@ -2386,17 +2368,17 @@ msgstr ""
 #: src/cp.c:306
 #, c-format
 msgid "failed to preserve times for %s"
-msgstr "无法保留%s 的时间"
+msgstr "无法保留 %s 的时间"
 
 #: src/cp.c:337
 #, c-format
 msgid "failed to preserve permissions for %s"
-msgstr "保留%s 的权限失败"
+msgstr "保留 %s 的权限失败"
 
 #: src/cp.c:473
 #, c-format
 msgid "cannot make directory %s"
-msgstr "无法创建目录%s"
+msgstr "无法创建目录 %s"
 
 #: src/cp.c:522 src/cp.c:553
 #, c-format
@@ -2407,7 +2389,7 @@ msgstr "%s 存在但并非目录"
 #: src/ln.c:231 src/ln.c:536 src/mv.c:160 src/mv.c:393
 #, c-format
 msgid "failed to access %s"
-msgstr "访问%s 失败"
+msgstr "访问 %s 失败"
 
 #: src/cp.c:606 src/install.c:970 src/ln.c:567 src/mv.c:436 src/shred.c:1285
 #: src/touch.c:430 src/truncate.c:329
@@ -2465,7 +2447,7 @@ msgstr "备份方式"
 
 #: src/cp.c:1190 src/install.c:957
 msgid "cannot set target context and preserve it"
-msgstr ""
+msgstr "无法设置目标上下文并将其保存"
 
 #: src/cp.c:1194
 msgid "cannot preserve security context without an SELinux-enabled kernel"

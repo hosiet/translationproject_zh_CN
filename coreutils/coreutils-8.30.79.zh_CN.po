@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-04-08 15:36-0400\n"
+"PO-Revision-Date: 2019-04-08 15:58-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -3326,15 +3326,15 @@ msgstr "  text      使用文本 I/O 存取模式\n"
 
 #: src/dd.c:656
 msgid "  count_bytes  treat 'count=N' as a byte count (iflag only)\n"
-msgstr ""
+msgstr "  count_bytes  把 'count=N' 看作字节计数（仅 iflag）\n"
 
 #: src/dd.c:659
 msgid "  skip_bytes  treat 'skip=N' as a byte count (iflag only)\n"
-msgstr ""
+msgstr "  skip_bytes  把 'skip=N' 看作字节计数（仅 iflag）\n"
 
 #: src/dd.c:662
 msgid "  seek_bytes  treat 'seek=N' as a byte count (oflag only)\n"
-msgstr ""
+msgstr "  seek_bytes  把 'seek=N' 看作字节计数（仅 oflag）\n"
 
 #: src/dd.c:666
 #, c-format
@@ -3346,18 +3346,22 @@ msgid ""
 "Options are:\n"
 "\n"
 msgstr ""
+"\n"
+"向正在运行的 'dd' 进程发送 %s 信号可以令其向标准错误输出 I/O\n"
+"统计数据并继续进行复制。\n"
+"\n"
+"选项有：\n"
+"\n"
 
 #: src/dd.c:702
-#, fuzzy, c-format
-#| msgid "memory exhausted by input buffer of size %zu bytes (%s)"
+#, c-format
 msgid "memory exhausted by input buffer of size %<PRIuMAX> bytes (%s)"
-msgstr "%zu 字节的输入缓冲导致内存耗尽(%s)"
+msgstr "%<PRIuMAX> 字节的输入缓冲导致内存耗尽（%s）"
 
 #: src/dd.c:730
-#, fuzzy, c-format
-#| msgid "memory exhausted by output buffer of size %zu bytes (%s)"
+#, c-format
 msgid "memory exhausted by output buffer of size %<PRIuMAX> bytes (%s)"
-msgstr "%zu 字节的输出缓冲导致内存耗尽(%s)"
+msgstr "%<PRIuMAX> 字节的输出缓冲导致内存耗尽（%s）"
 
 #: src/dd.c:798 src/du.c:400
 #, fuzzy
@@ -3507,10 +3511,9 @@ msgid "%s: cannot skip to specified offset"
 msgstr "%s：无法跳至指定偏移量"
 
 #: src/dd.c:2343
-#, fuzzy, c-format
-#| msgid "failed to truncate to %<PRIuMAX> bytes in output file %s"
+#, c-format
 msgid "failed to truncate to %<PRIdMAX> bytes in output file %s"
-msgstr "无法针对输出文件%2$s 的%1$<PRIuMAX> 字节处实施截断"
+msgstr "无法针对输出文件 %2$s 的 %1$<PRIdMAX> 字节处实施截断"
 
 #: src/dd.c:2356
 #, c-format
@@ -3628,7 +3631,7 @@ msgstr "%s-%s"
 #: src/df.c:1342
 #, c-format
 msgid "cannot access %s: over-mounted by another device"
-msgstr ""
+msgstr "无法访问 %s：已由另一个设备挂载"
 
 #: src/df.c:1511
 msgid ""
@@ -8513,10 +8516,9 @@ msgstr ""
 "  -v, --verbose\t\t报告所有错误消息\n"
 
 #: src/readlink.c:152
-#, fuzzy, c-format
-#| msgid "ignoring non-option arguments"
+#, c-format
 msgid "ignoring --no-newline with multiple arguments"
-msgstr "忽略不是选项的参数"
+msgstr ""
 
 #: src/realpath.c:72
 msgid ""
@@ -9000,10 +9002,8 @@ msgid "byte/character positions are numbered from 1"
 msgstr "字节/字符位置从 1 开始计数"
 
 #: src/set-fields.c:176 src/set-fields.c:222
-#, fuzzy
-#| msgid "fields and positions are numbered from 1"
 msgid "fields are numbered from 1"
-msgstr "序号从1 开始计数"
+msgstr "序号从 1 开始计数"
 
 #: src/set-fields.c:196
 msgid "invalid range with no endpoint: -"
@@ -9309,10 +9309,8 @@ msgid "%s: failed to open for writing"
 msgstr "%s：无法以写模式打开"
 
 #: src/shred.c:1237
-#, fuzzy
-#| msgid "%s: invalid number of passes"
 msgid "invalid number of passes"
-msgstr "%s：覆盖次数无效"
+msgstr "覆盖次数无效"
 
 #: src/shred.c:1242 src/shuf.c:462 src/sort.c:4512
 msgid "multiple random sources specified"
@@ -9970,35 +9968,27 @@ msgstr "设置 FILE 环境变量失败"
 #: src/split.c:490
 #, c-format
 msgid "executing with FILE=%s\n"
-msgstr ""
+msgstr "正在带 FILE=%s 执行\n"
 
 #: src/split.c:492
 msgid "failed to create pipe"
 msgstr "创建管道失败"
 
 #: src/split.c:506
-#, fuzzy
-#| msgid "closing directory %s"
 msgid "closing prior pipe"
-msgstr "关闭目录%s"
+msgstr "正在关闭先前的管道"
 
 #: src/split.c:508
-#, fuzzy
-#| msgid "closing output file %s"
 msgid "closing output pipe"
-msgstr "正在关闭输出文件%s"
+msgstr "正在关闭输出管道"
 
 #: src/split.c:512
-#, fuzzy
-#| msgid "closing input file %s"
 msgid "moving input pipe"
-msgstr "正在关闭输入文件%s"
+msgstr "正在移动输入管道"
 
 #: src/split.c:514
-#, fuzzy
-#| msgid "closing input file %s"
 msgid "closing input pipe"
-msgstr "正在关闭输入文件%s"
+msgstr "正在关闭输入管道"
 
 #: src/split.c:519
 #, c-format
@@ -11418,16 +11408,13 @@ msgstr ""
 #. the URLs at https://translationproject.org/team/.  Otherwise, replace
 #. the entire URL with your translation team's email address.
 #: src/system.h:663
-#, fuzzy
-#| msgid "Report %s translation bugs to <https://translationproject.org/team/>\n"
 msgid "Report any translation bugs to <https://translationproject.org/team/>\n"
-msgstr "请向 <http://translationproject.org/team/zh_CN.html> 报告 %s 的翻译错误\n"
+msgstr "请向 <http://translationproject.org/team/zh_CN.html> 报告任何翻译错误\n"
 
 #: src/system.h:666
-#, fuzzy, c-format
-#| msgid "Full documentation at: <%s%s>\n"
+#, c-format
 msgid "Full documentation <%s%s>\n"
-msgstr "完整文档请见：<%s%s>\n"
+msgstr "完整文档 <%s%s>\n"
 
 #: src/system.h:668
 #, c-format

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-04-05 13:23-0400\n"
+"PO-Revision-Date: 2019-04-08 15:36-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -2672,14 +2672,8 @@ msgid "Usage: %s OPTION... [FILE]...\n"
 msgstr "用法：%s [选项]... [文件]...\n"
 
 #: src/cut.c:151
-#, fuzzy
-#| msgid ""
-#| "Print selected parts of lines from each FILE to standard output.\n"
-#| "\n"
 msgid "Print selected parts of lines from each FILE to standard output.\n"
-msgstr ""
-"从每个文件中输出指定部分到标准输出。\n"
-"\n"
+msgstr "从每个输入<文件>中输出指定部分到标准输出。\n"
 
 #: src/cut.c:158
 msgid ""
@@ -2730,16 +2724,6 @@ msgstr ""
 "开要同时显示的不同类别。您的输入顺序将作为读取顺序，每个仅能输入一次。\n"
 
 #: src/cut.c:189
-#, fuzzy
-#| msgid ""
-#| "Each range is one of:\n"
-#| "\n"
-#| "  N     N'th byte, character or field, counted from 1\n"
-#| "  N-    from N'th byte, character or field, to end of line\n"
-#| "  N-M   from N'th to M'th (included) byte, character or field\n"
-#| "  -M    from first to M'th (included) byte, character or field\n"
-#| "\n"
-#| "With no FILE, or when FILE is -, read standard input.\n"
 msgid ""
 "Each range is one of:\n"
 "\n"
@@ -2749,12 +2733,10 @@ msgid ""
 "  -M    from first to M'th (included) byte, character or field\n"
 msgstr ""
 "每种参数格式表示范围如下：\n"
-"    N\t从第1 个开始数的第N 个字节、字符或域\n"
-"    N-\t从第N 个开始到所在行结束的所有字符、字节或域\n"
-"    N-M\t从第N 个开始到第M 个之间(包括第M 个)的所有字符、字节或域\n"
-"    -M\t从第1 个开始到第M 个之间(包括第M 个)的所有字符、字节或域\n"
-"\n"
-"当没有文件参数，或者文件不存在时，从标准输入读取\n"
+"    N     从第1个开始数的第N个字节、字符或域\n"
+"    N-    从第N个开始到所在行结束的所有字符、字节或域\n"
+"    N-M   从第N个开始到第M个之间(包括第M个)的所有字符、字节或域\n"
+"    -M    从第1个开始到第M个之间(包括第M个)的所有字符、字节或域\n"
 
 #: src/cut.c:511 src/cut.c:519
 msgid "only one type of list may be specified"
@@ -2895,19 +2877,14 @@ msgstr ""
 "  %e\t按月计的日期，添加空格，等于%_d\n"
 
 #: src/date.c:196
-#, fuzzy
-#| msgid ""
-#| "  %F   full date; same as %Y-%m-%d\n"
-#| "  %g   last two digits of year of ISO week number (see %G)\n"
-#| "  %G   year of ISO week number (see %V); normally useful only with %V\n"
 msgid ""
 "  %F   full date; like %+4Y-%m-%d\n"
 "  %g   last two digits of year of ISO week number (see %G)\n"
 "  %G   year of ISO week number (see %V); normally useful only with %V\n"
 msgstr ""
-"  %F\t完整日期格式，等价于 %Y-%m-%d\n"
-"  %g\tISO-8601 格式年份的最后两位 (参见%G)\n"
-"  %G\tISO-8601 格式年份 (参见%V)，一般只和 %V 结合使用\n"
+"  %F   完整日期格式，等价于 %+4Y-%m-%d\n"
+"  %g   ISO-8601 格式年份的最后两位（参见 %G）\n"
+"  %G   ISO-8601 格式年份（参见 %V），一般只和 %V 结合使用\n"
 
 #: src/date.c:201
 msgid ""
@@ -3462,10 +3439,8 @@ msgid "invalid output flag"
 msgstr "输出标志无效"
 
 #: src/dd.c:1442
-#, fuzzy
-#| msgid "invalid status flag"
 msgid "invalid status level"
-msgstr "状态标志无效"
+msgstr "状态等级无效"
 
 #: src/dd.c:1577
 msgid "cannot combine any two of {ascii,ebcdic,ibm}"
@@ -3656,30 +3631,14 @@ msgid "cannot access %s: over-mounted by another device"
 msgstr ""
 
 #: src/df.c:1511
-#, fuzzy
-#| msgid ""
-#| "Show information about the file system on which each FILE resides,\n"
-#| "or all file systems by default.\n"
-#| "\n"
 msgid ""
 "Show information about the file system on which each FILE resides,\n"
 "or all file systems by default.\n"
-msgstr ""
-"显示每个文件所在的文件系统的信息，默认是显示所有文件系统。\n"
-"\n"
+msgstr "显示每个指定文件所在的文件系统的信息，默认是显示所有文件系统。\n"
 
 #. TRANSLATORS: The thousands and decimal separators are best
 #. adjusted to an appropriate default for your locale.
 #: src/df.c:1520
-#, fuzzy
-#| msgid ""
-#| "  -a, --all             include dummy file systems\n"
-#| "  -B, --block-size=SIZE  scale sizes by SIZE before printing them.  E.g.,\n"
-#| "                           `-BM' prints sizes in units of 1,048,576 bytes.\n"
-#| "                           See SIZE format below.\n"
-#| "      --total           produce a grand total\n"
-#| "  -h, --human-readable  print sizes in human readable format (e.g., 1K 234M 2G)\n"
-#| "  -H, --si              likewise, but use powers of 1000 not 1024\n"
 msgid ""
 "  -a, --all             include pseudo, duplicate, inaccessible file systems\n"
 "  -B, --block-size=SIZE  scale sizes by SIZE before printing them; e.g.,\n"
@@ -3688,11 +3647,12 @@ msgid ""
 "  -h, --human-readable  print sizes in powers of 1024 (e.g., 1023M)\n"
 "  -H, --si              print sizes in powers of 1000 (e.g., 1.1G)\n"
 msgstr ""
-"  -a, --all\t\t包含虚拟文件系统\n"
-"  -B, --block-size=大小\t使用指定字节数的块。例如-BM 以 1,248,576\n"
-"\t\t\t字节为单位显示大小。参看SIZE 格式。      --total\t\t显示总计信息\n"
-"  -h, --human-readable\t以可读性较好的格式显示尺寸(例如：1K 234M 2G)\n"
-"  -H, --si\t\t计算时使用1000 为基底而非1024\n"
+"  -a, --all             包含虚拟、重复和无法访问的文件系统\n"
+"  -B, --block-size=大小  使用指定字节数的块。例如，'-BM' 将以\n"
+"                           1,048,576 字节为单位显示大小。\n"
+"                           参见 SIZE 格式。\n"
+"  -h, --human-readable  以 1024 为基底显示大小（例如：1023M）\n"
+"  -H, --si              以 1000 为基底显示大小（例如，1.1G）\n"
 
 #: src/df.c:1528
 msgid ""
@@ -4209,25 +4169,23 @@ msgstr ""
 
 #: src/env.c:133
 msgid "      --block-signal[=SIG]    block delivery of SIG signal(s) to COMMAND\n"
-msgstr ""
+msgstr "      --block-signal[=信号]   阻挡向指定<命令>传递指定的信号\n"
 
 #: src/env.c:136
 msgid "      --default-signal[=SIG]  reset handling of SIG signal(s) to the default\n"
-msgstr ""
+msgstr "      --default-signal[=信号]  将对指定信号的处理方式重置为默认方式\n"
 
 #: src/env.c:139
 msgid "      --ignore-signal[=SIG]   set handling of SIG signals(s) to do nothing\n"
-msgstr ""
+msgstr "      --ignore-signal[=信号]  将对指定信号的处理方式设置为什么都不做\n"
 
 #: src/env.c:142
 msgid "      --list-signal-handling  list non default signal handling to stderr\n"
-msgstr ""
+msgstr "      --list-signal-handling  向标准错误输出非默认的信号处理方式\n"
 
 #: src/env.c:145
-#, fuzzy
-#| msgid "  -v, --verbose          output a diagnostic for every file processed\n"
 msgid "  -v, --debug          print verbose information for each processing step\n"
-msgstr "  -v, --verbose          为每个处理的文件输出诊断信息\n"
+msgstr "  -v, --debug          为每个处理流程输出详细信息\n"
 
 #: src/env.c:150
 msgid ""
@@ -4238,12 +4196,6 @@ msgstr ""
 "单纯的 - 意味着 -i。如果没有命令，则打印结果环境。\n"
 
 #: src/env.c:154
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "SIGNAL may be a signal name like `HUP', or a signal number like `1',\n"
-#| "or the exit status of a process terminated by a signal.\n"
-#| "PID is an integer; if negative it identifies a process group.\n"
 msgid ""
 "\n"
 "SIG may be a signal name like 'PIPE', or a signal number like '13'.\n"
@@ -4251,9 +4203,9 @@ msgid ""
 "comma-separated.\n"
 msgstr ""
 "\n"
-"参数中的信号可以是类似\"HUP\"的信号名称，也可以是如\"1\"这样的信号编码，或者进程被\n"
-"信号终止后的退出状态号。\n"
-"进程号(PID) 是一个整数，如果为负数则表示一个进程组。\n"
+"参数中的信号可以是类似 'PIPE' 这样的信号名称，也可以是如 '1'\n"
+"这样的信号编码。所有已知信号均包括其中。如需指定多个信号，可以使用\n"
+"半角逗号隔开。\n"
 
 #: src/env.c:181
 #, c-format
@@ -4280,7 +4232,7 @@ msgstr "只支持 ${VARNAME} 扩展，错误位于：%s"
 
 #: src/env.c:347
 msgid "no terminating quote in -S string"
-msgstr ""
+msgstr "-S 字符串中没有结束的引号"
 
 #: src/env.c:613 src/env.c:702 src/operand2sig.c:88
 #, c-format
@@ -4288,16 +4240,14 @@ msgid "%s: invalid signal"
 msgstr "%s：无效的信号"
 
 #: src/env.c:645
-#, fuzzy, c-format
-#| msgid "failed to get groups for user %s"
+#, c-format
 msgid "failed to get signal action for signal %d"
-msgstr "获取用户%s 的属组失败"
+msgstr "获取信号 %d 的处理操作失败"
 
 #: src/env.c:653
-#, fuzzy, c-format
-#| msgid "failed to set default creation context for %s"
+#, c-format
 msgid "failed to set signal action for signal %d"
-msgstr "设置 %s 的默认创建上下文失败"
+msgstr "设置信号 %d 的处理操作失败"
 
 #: src/env.c:725 src/env.c:765
 #, fuzzy
@@ -4334,7 +4284,7 @@ msgstr "无法以命令指定--null (-0)"
 #: src/env.c:894
 #, c-format
 msgid "must specify command with --chdir (-C)"
-msgstr ""
+msgstr "必须带 --chdir (-C) 指定命令"
 
 #: src/env.c:919
 #, c-format

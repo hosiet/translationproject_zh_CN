@@ -7,10 +7,10 @@
 # Boyuan Yang <073plan@gmail.com>, 2018, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: nano 4.0-pre1\n"
+"Project-Id-Version: nano 4.1-pre1\n"
 "Report-Msgid-Bugs-To: nano-devel@gnu.org\n"
 "POT-Creation-Date: 2019-04-09 19:59+0200\n"
-"PO-Revision-Date: 2019-03-13 13:00-0400\n"
+"PO-Revision-Date: 2019-04-09 14:55-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -112,16 +112,12 @@ msgid "magic_file(%s) failed: %s"
 msgstr "magic_file(%s) 失败：%s"
 
 #: src/cut.c:368 src/cut.c:433
-#, fuzzy
-#| msgid "No matching bracket"
 msgid "Nothing was cut"
-msgstr "无对应括号"
+msgstr "无剪切部分"
 
 #: src/cut.c:481
-#, fuzzy
-#| msgid "Macro is empty"
 msgid "Cutbuffer is empty"
-msgstr "宏为空"
+msgstr "剪贴缓冲区为空"
 
 #: src/files.c:45
 #, c-format
@@ -1618,10 +1614,8 @@ msgid "Fix numeric keypad key confusion problem"
 msgstr "修正数字键区按键混淆问题"
 
 #: src/nano.c:800
-#, fuzzy
-#| msgid "Don't add an automatic newline [default]"
 msgid "Don't add an automatic newline"
-msgstr "不要自动添加换行符 [默认]"
+msgstr "不要自动添加换行符"
 
 #: src/nano.c:804
 msgid "Trim tail spaces when hard-wrapping"
@@ -1856,10 +1850,8 @@ msgid "No file name"
 msgstr "无文件名"
 
 #: src/nano.c:1057
-#, fuzzy
-#| msgid "Save modified buffer before linting?"
 msgid "Save modified buffer? "
-msgstr "运行代码语法检查之前保存已修改的缓冲区吗？"
+msgstr "保存已修改的缓冲区？"
 
 #: src/nano.c:1103
 #, c-format
@@ -2188,10 +2180,8 @@ msgid "Non-blank characters required"
 msgstr "需要非空格字符"
 
 #: src/rcfile.c:1133
-#, fuzzy
-#| msgid "Non-blank characters required"
 msgid "Even number of characters required"
-msgstr "需要非空格字符"
+msgstr "需要偶数个字符"
 
 #: src/rcfile.c:1139
 msgid "Two single-column characters required"
@@ -2280,10 +2270,8 @@ msgid "Cannot comment past end of file"
 msgstr "无法注释越过文件末尾"
 
 #: src/text.c:525
-#, fuzzy
-#| msgid "Nothing to re-do!"
 msgid "Nothing to undo"
-msgstr "没有可重做的操作！"
+msgstr "没有可重做的操作"
 
 #. TRANSLATORS: The next thirteen strings describe actions
 #. * that are undone or redone.  They are all nouns, not verbs.
@@ -2346,10 +2334,8 @@ msgid "Undid %s"
 msgstr "已撤销 %s"
 
 #: src/text.c:702
-#, fuzzy
-#| msgid "Nothing to re-do!"
 msgid "Nothing to redo"
-msgstr "没有可重做的操作！"
+msgstr "没有可重做的操作"
 
 #: src/text.c:843
 #, c-format
@@ -2365,10 +2351,8 @@ msgid "Could not fork"
 msgstr "无法 fork"
 
 #: src/text.c:1018
-#, fuzzy
-#| msgid "Searching..."
 msgid "Executing..."
-msgstr "正在搜索..."
+msgstr "正在执行..."
 
 #: src/text.c:1034 src/text.c:1086
 msgid "filtering"
@@ -2611,128 +2595,109 @@ msgstr "感谢您使用 nano！"
 #: lib/getopt.c:278
 #, c-format
 msgid "%s: option '%s%s' is ambiguous\n"
-msgstr ""
+msgstr "%s：选项“%s%s”有歧义\n"
 
 #: lib/getopt.c:284
 #, c-format
 msgid "%s: option '%s%s' is ambiguous; possibilities:"
-msgstr ""
+msgstr "%s：选项“%s%s”有歧义；可能是："
 
 #: lib/getopt.c:319
 #, c-format
 msgid "%s: unrecognized option '%s%s'\n"
-msgstr ""
+msgstr "%s：无法识别的选项“%s%s”\n"
 
 #: lib/getopt.c:345
-#, fuzzy, c-format
-#| msgid "Option \"%s\" requires an argument"
+#, c-format
 msgid "%s: option '%s%s' doesn't allow an argument\n"
-msgstr "选项%s 需要参数"
+msgstr "%s：选项“%s%s”不允许带参数\n"
 
 #: lib/getopt.c:360
-#, fuzzy, c-format
-#| msgid "Option \"%s\" requires an argument"
+#, c-format
 msgid "%s: option '%s%s' requires an argument\n"
-msgstr "选项%s 需要参数"
+msgstr "%s：选项“%s%s”需要参数\n"
 
 #: lib/getopt.c:621
 #, c-format
 msgid "%s: invalid option -- '%c'\n"
-msgstr ""
+msgstr "%s：无效的选项 -- '%c'\n"
 
 #: lib/getopt.c:636 lib/getopt.c:682
-#, fuzzy, c-format
-#| msgid "Option \"%s\" requires an argument"
+#, c-format
 msgid "%s: option requires an argument -- '%c'\n"
-msgstr "选项%s 需要参数"
+msgstr "%s：选项需要一个参数 -- '%c'\n"
 
 #: lib/regcomp.c:135
 msgid "Success"
-msgstr ""
+msgstr "成功"
 
 #: lib/regcomp.c:138
-#, fuzzy
-#| msgid "No matches"
 msgid "No match"
 msgstr "没有匹配"
 
 #: lib/regcomp.c:141
-#, fuzzy
-#| msgid "Replace a string or a regular expression"
 msgid "Invalid regular expression"
-msgstr "替换字符串或正则表达式"
+msgstr "无效的正则表达式"
 
 #: lib/regcomp.c:144
-#, fuzzy
-#| msgid "Invalid operating directory: %s\n"
 msgid "Invalid collation character"
-msgstr "无效的操作目录：%s\n"
+msgstr "无效的字符序字符"
 
 #: lib/regcomp.c:147
 msgid "Invalid character class name"
-msgstr ""
+msgstr "无效的字符类型名称"
 
 #: lib/regcomp.c:150
 msgid "Trailing backslash"
-msgstr ""
+msgstr "末尾的反斜杠"
 
 #: lib/regcomp.c:153
-#, fuzzy
-#| msgid "Invalid backup directory: %s\n"
 msgid "Invalid back reference"
-msgstr "无效的备份目录：%s\n"
+msgstr "无效的后向引用"
 
 #: lib/regcomp.c:156
 msgid "Unmatched [, [^, [:, [., or [="
-msgstr ""
+msgstr "不匹配的 [、[^、[:、[. 或 [="
 
 #: lib/regcomp.c:159
 msgid "Unmatched ( or \\("
-msgstr ""
+msgstr "未匹配的 ( 或 \\("
 
 #: lib/regcomp.c:162
 msgid "Unmatched \\{"
-msgstr ""
+msgstr "未匹配的 \\{"
 
 #: lib/regcomp.c:165
 msgid "Invalid content of \\{\\}"
-msgstr ""
+msgstr "\\{\\} 的无效内容"
 
 #: lib/regcomp.c:168
 msgid "Invalid range end"
-msgstr ""
+msgstr "无效的范围结束符"
 
 #: lib/regcomp.c:171
 msgid "Memory exhausted"
-msgstr ""
+msgstr "内存耗尽"
 
 #: lib/regcomp.c:174
-#, fuzzy
-#| msgid "Replace a string or a regular expression"
 msgid "Invalid preceding regular expression"
-msgstr "替换字符串或正则表达式"
+msgstr "无效的前置正则表达式"
 
 #: lib/regcomp.c:177
-#, fuzzy
-#| msgid "Toggle the use of regular expressions"
 msgid "Premature end of regular expression"
-msgstr "切换使用正则表达式"
+msgstr "正则表达式过早结束"
 
 #: lib/regcomp.c:180
-#, fuzzy
-#| msgid "Regular expression to match quoting"
 msgid "Regular expression too big"
-msgstr "匹配引用的正则表达式"
+msgstr "正则表达式过长"
 
 #: lib/regcomp.c:183
 msgid "Unmatched ) or \\)"
-msgstr ""
+msgstr "未匹配的 ) 或 \\)"
 
 #: lib/regcomp.c:676
-#, fuzzy
-#| msgid "Toggle the use of regular expressions"
 msgid "No previous regular expression"
-msgstr "切换使用正则表达式"
+msgstr "缺少之前的正则表达式"
 
 #~ msgid "Jumpy scrolling (per half-screen)"
 #~ msgstr "跳转翻页（按半屏幕）"

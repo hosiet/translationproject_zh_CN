@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-04-08 15:58-0400\n"
+"PO-Revision-Date: 2019-04-11 19:06-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -2580,18 +2580,12 @@ msgid "Usage: %s [OPTION]... FILE PATTERN...\n"
 msgstr "用法：%s [选项]... 文件 格式...\n"
 
 #: src/csplit.c:1486
-#, fuzzy
-#| msgid ""
-#| "Output pieces of FILE separated by PATTERN(s) to files `xx00', `xx01', ...,\n"
-#| "and output byte counts of each piece to standard output.\n"
-#| "\n"
 msgid ""
 "Output pieces of FILE separated by PATTERN(s) to files 'xx00', 'xx01', ...,\n"
 "and output byte counts of each piece to standard output.\n"
 msgstr ""
 "按照指定的格式将文件分块为\"xx00\"、\"xx01\"...并输出。\n"
 "同时每个分块文件的字节数也将被输出到标准输出。\n"
-"\n"
 
 #: src/csplit.c:1490
 msgid ""
@@ -2602,23 +2596,19 @@ msgstr ""
 "如果文件为“-”，则读取标准输入。\n"
 
 #: src/csplit.c:1497
-#, fuzzy, c-format
-#| msgid ""
-#| "  -b, --suffix-format=FORMAT  use sprintf FORMAT instead of %02d\n"
-#| "  -f, --prefix=PREFIX        use PREFIX instead of `xx'\n"
-#| "  -k, --keep-files           do not remove output files on errors\n"
+#, c-format
 msgid ""
 "  -b, --suffix-format=FORMAT  use sprintf FORMAT instead of %02d\n"
 "  -f, --prefix=PREFIX        use PREFIX instead of 'xx'\n"
 "  -k, --keep-files           do not remove output files on errors\n"
 msgstr ""
-"  -b, --suffix-format=格式\t使用sprintf 格式代替%02d\n"
-"  -f, --prefix=前缀\t\t使用指定前缀代替\"xx\"\n"
-"  -k, --keep-files\t\t不移除错误的输出文件\n"
+"  -b, --suffix-format=格式  使用 sprintf 格式字符串代替 %02d\n"
+"  -f, --prefix=前缀        使用指定前缀代替\"xx\"\n"
+"  -k, --keep-files           不移除错误的输出文件\n"
 
 #: src/csplit.c:1502
 msgid "      --suppress-matched     suppress the lines matching PATTERN\n"
-msgstr ""
+msgstr "      --suppress-matched     不显示匹配格式字符串的行\n"
 
 #: src/csplit.c:1505
 msgid ""
@@ -6405,16 +6395,15 @@ msgid "Create the DIRECTORY(ies), if they do not already exist.\n"
 msgstr "若指定<目录>不存在则创建目录。\n"
 
 #: src/mkdir.c:66
-#, fuzzy
 msgid ""
 "  -m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask\n"
 "  -p, --parents     no error if existing, make parent directories as needed\n"
 "  -v, --verbose     print a message for each created directory\n"
 msgstr ""
-"  -m, --mode=模式   \t设置权限模式(类似chmod)，而不是rwxrwxrwx 减umask\n"
-"  -p, --parents     \t需要时创建目标目录的上层目录，但即使这些目录已存在也不当作错误处理\n"
-"  -v, --verbose     \t每次创建新目录都显示信息\n"
-"  -Z, --context=CTX  \t将每个创建的目录的SELinux 安全上下文设置为CTX\n"
+"  -m, --mode=模式   设置权限模式（类似chmod），而不是 a=rwx 减 umask\n"
+"  -p, --parents     需要时创建目标目录的上层目录，但即使这些目录已存在\n"
+"                      也不当作错误处理\n"
+"  -v, --verbose     每次创建新目录都显示信息\n"
 
 #: src/mkdir.c:71
 msgid ""
@@ -7346,10 +7335,8 @@ msgid "invalid header value %s"
 msgstr "无效的日期%s"
 
 #: src/numfmt.c:1574
-#, fuzzy
-#| msgid "file operands cannot be combined with --files0-from"
 msgid "--grouping cannot be combined with --format"
-msgstr "文件操作数不能于--files0-from 参数一起使用"
+msgstr "--grouping 不能与 --format 结合使用"
 
 #: src/numfmt.c:1577 src/sort.c:4690
 #, c-format
@@ -12045,6 +12032,9 @@ msgid ""
 "NOTE: Binary -a and -o are inherently ambiguous.  Use 'test EXPR1 && test\n"
 "EXPR2' or 'test EXPR1 || test EXPR2' instead.\n"
 msgstr ""
+"\n"
+"注意：二元运算符 -a 和 -o 从本质上是具有歧义的。请使用“test 表达式1 &&\n"
+"test 表达式2”或者“test 表达式1 || test 表达式2”进行替代。\n"
 
 #: src/test.c:778
 msgid ""

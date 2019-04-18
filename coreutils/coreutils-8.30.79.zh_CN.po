@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-04-18 14:10-0400\n"
+"PO-Revision-Date: 2019-04-18 16:29-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -2967,15 +2967,6 @@ msgstr ""
 "默认情况下，日期的数字区域以0 填充。\n"
 
 #: src/date.c:250
-#, fuzzy
-#| msgid ""
-#| "The following optional flags may follow `%':\n"
-#| "\n"
-#| "  -  (hyphen) do not pad the field\n"
-#| "  _  (underscore) pad with spaces\n"
-#| "  0  (zero) pad with zeros\n"
-#| "  ^  use upper case if possible\n"
-#| "  #  use opposite case if possible\n"
 msgid ""
 "The following optional flags may follow '%':\n"
 "\n"
@@ -2986,13 +2977,14 @@ msgid ""
 "  ^  use upper case if possible\n"
 "  #  use opposite case if possible\n"
 msgstr ""
-"以下可选标记可以跟在\"%\"后:\n"
+"以下可选标记可以跟在\"%\"后：\n"
 "\n"
-"  - (连字符)不填充该域\n"
-"  _ (下划线)以空格填充\n"
-"  0 (数字0)以0 填充\n"
-"  ^ 如果可能，使用大写字母\n"
-"  # 如果可能，使用相反的大小写\n"
+"  -  （连字符）不填充该域\n"
+"  _  （下划线）以空格填充\n"
+"  0  （数字0）以 0 填充\n"
+"  +  以零填充，并且在大于四个数位的未来年份之前放置 '+' 符号\n"
+"  ^  如果可能，使用大写字母\n"
+"  #  如果可能，使用相反的大小写\n"
 
 #: src/date.c:260
 msgid ""
@@ -3387,12 +3379,12 @@ msgstr "正在写入%s"
 #: src/dd.c:1383
 #, c-format
 msgid "warning: %s is a zero multiplier; use %s if that is intended"
-msgstr ""
+msgstr "警告：%s 是一个零乘数；如这与意图相同，请使用 %s"
 
 #: src/dd.c:1421 src/dd.c:1482
 #, c-format
 msgid "unrecognized operand %s"
-msgstr "无法识别的操作数%s"
+msgstr "无法识别的操作数 %s"
 
 #: src/dd.c:1433
 msgid "invalid conversion"
@@ -3666,26 +3658,16 @@ msgid ""
 msgstr "      --verbose\t\t在每个输出文件打开前输出文件特征\n"
 
 #: src/df.c:1545
-#, fuzzy
-#| msgid ""
-#| "  -P, --portability     use the POSIX output format\n"
-#| "      --sync            invoke sync before getting usage info\n"
-#| "  -t, --type=TYPE       limit listing to file systems of type TYPE\n"
-#| "  -T, --print-type      print file system type\n"
-#| "  -x, --exclude-type=TYPE   limit listing to file systems not of type TYPE\n"
-#| "  -v                    (ignored)\n"
 msgid ""
 "  -t, --type=TYPE       limit listing to file systems of type TYPE\n"
 "  -T, --print-type      print file system type\n"
 "  -x, --exclude-type=TYPE   limit listing to file systems not of type TYPE\n"
 "  -v                    (ignored)\n"
 msgstr ""
-"  -P, --portability\t使用POSIX 兼容的输出格式\n"
-"      --sync\t\t取得使用量数据前先进行同步动作\n"
-"  -t, --type=类型\t只显示指定文件系统为指定类型的信息\n"
-"  -T, --print-type\t显示文件系统类型\n"
-"  -x, --exclude-type=类型\t只显示文件系统不是指定类型信息\n"
-"  -v\t\t\t(忽略)\n"
+"  -t, --type=类型       只显示指定文件系统为指定类型的信息\n"
+"  -T, --print-type      显示文件系统类型\n"
+"  -x, --exclude-type=类型   只显示文件系统不是指定类型的信息\n"
+"  -v                    （忽略）\n"
 
 #: src/df.c:1555
 msgid ""
@@ -4713,20 +4695,13 @@ msgid "%s: no such user"
 msgstr "%s：无此用户"
 
 #: src/head.c:114
-#, fuzzy, c-format
-#| msgid ""
-#| "Print the first 10 lines of each FILE to standard output.\n"
-#| "With more than one FILE, precede each with a header giving the file name.\n"
-#| "With no FILE, or when FILE is -, read standard input.\n"
-#| "\n"
+#, c-format
 msgid ""
 "Print the first %d lines of each FILE to standard output.\n"
 "With more than one FILE, precede each with a header giving the file name.\n"
 msgstr ""
-"将每个指定文件的头10 行显示到标准输出。\n"
-"如果指定了多于一个文件，在每一段输出前会给出文件名作为文件头。\n"
-"如果不指定文件，或者文件为\"-\"，则从标准输入读取数据。\n"
-"\n"
+"将每个指定文件的前 %d 行输出到标准输出。\n"
+"如果指定了多于一个文件，在每块输出之前附加文件名称作为头部。\n"
 
 #: src/head.c:122
 #, fuzzy, c-format
@@ -6436,14 +6411,8 @@ msgid "Usage: %s [OPTION]... NAME TYPE [MAJOR MINOR]\n"
 msgstr "用法：%s [选项]... 名称 类型 [主设备号 次设备号]\n"
 
 #: src/mknod.c:57
-#, fuzzy
-#| msgid ""
-#| "Create the special file NAME of the given TYPE.\n"
-#| "\n"
 msgid "Create the special file NAME of the given TYPE.\n"
-msgstr ""
-"创建指定类型和名称的特殊文件。\n"
-"\n"
+msgstr "以指定的名称和指定的类型创建特殊文件。\n"
 
 #: src/mknod.c:73
 msgid ""
@@ -6987,7 +6956,7 @@ msgstr "无效的数字：%s"
 #: src/numfmt.c:702
 #, c-format
 msgid "rejecting suffix in input: %s (consider using --from)"
-msgstr ""
+msgstr "拒绝输入中的后缀：%s（请考虑使用 --from）"
 
 #: src/numfmt.c:706
 #, c-format
@@ -7278,12 +7247,12 @@ msgstr ""
 #: src/numfmt.c:1216
 #, c-format
 msgid "value too large to be printed: '%Lg' (consider using --to)"
-msgstr ""
+msgstr "值过大无法输出：'%Lg'（请考虑使用 --to）"
 
 #: src/numfmt.c:1225
 #, c-format
 msgid "value too large to be printed: '%Lg' (cannot handle values > 999Y)"
-msgstr ""
+msgstr "值过大无法输出：'%Lg'（无法处理 > 999Y 的值）"
 
 #: src/numfmt.c:1311
 #, c-format
@@ -7336,7 +7305,7 @@ msgstr ""
 #: src/numfmt.c:1605
 #, c-format
 msgid "--header ignored with command-line input"
-msgstr ""
+msgstr "在命令行输入下 --header 已被忽略"
 
 #: src/numfmt.c:1632
 #, c-format
@@ -7610,10 +7579,9 @@ msgid "cannot skip past end of combined input"
 msgstr "无法略过输入内容的报尾"
 
 #: src/od.c:1655
-#, fuzzy, c-format
-#| msgid "invalid output address radix `%c'; it must be one character from [doxn]"
+#, c-format
 msgid "invalid output address radix '%c'; it must be one character from [doxn]"
-msgstr "无效的输出地址基数\"%c\"，它必须是 [doxn] 四个字符中的一个"
+msgstr "无效的输出地址基数\"%c\"；它必须是 [doxn] 四个字符中的一个"
 
 #: src/od.c:1793
 msgid "no type may be specified when dumping strings"
@@ -8995,10 +8963,8 @@ msgid "invalid field value %s"
 msgstr "无效的字段值 %s"
 
 #: src/set-fields.c:280
-#, fuzzy
-#| msgid "missing list of positions"
 msgid "missing list of byte/character positions"
-msgstr "缺少位置列表"
+msgstr "缺少字节/字符位置列表"
 
 #: src/set-fields.c:281
 msgid "missing list of fields"

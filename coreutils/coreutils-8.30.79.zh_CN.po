@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-04-18 16:29-0400\n"
+"PO-Revision-Date: 2019-04-30 15:04-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -2621,7 +2621,6 @@ msgstr ""
 "  -z, --elide-empty-files\t删除空的输出文件\n"
 
 #: src/csplit.c:1512
-#, fuzzy
 msgid ""
 "\n"
 "Each PATTERN may be:\n"
@@ -2635,13 +2634,13 @@ msgid ""
 msgstr ""
 "\n"
 "每个指定的格式可以为：\n"
-"  整数              不包括指定的行，并以其为文件分块边界\n"
-"  /表达式/[偏移量]\t不包括匹配到的行，并以其为文件分块边界\n"
-"  %表达式%[偏移量]\t预先跳过匹配的行数，以其为文件分块边界\n"
-"  {整数}\t\t将之前指定的模式重复指定的次数\n"
-"  {*}\t\t\t将之前指定的模式重复尽可能多的次数。\n"
+"  整数               复制至指定行号（不包括该行）\n"
+"  /正则/[偏移量]     复制至匹配行（不包括该行）\n"
+"  %正则%[偏移量]     跳过直至匹配行（不包括该行）\n"
+"  {整数}             将之前指定的模式重复指定的次数\n"
+"  {*}                将之前指定的模式重复尽可能多的次数\n"
 "\n"
-"一个行的偏移量需要在正整数值之后声明\"+\" 或 \"-\"。\n"
+"一个行的偏移量需要在正整数值之前声明 '+' 或 '-'。\n"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/cut.c:45 src/paste.c:52
@@ -3132,15 +3131,6 @@ msgstr ""
 "                  'progress' 将显示周期性的传输统计信息\n"
 
 #: src/dd.c:586
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "BLOCKS and BYTES may be followed by the following multiplicative suffixes:\n"
-#| "c =1, w =2, b =512, kB =1000, K =1024, MB =1000*1000, M =1024*1024, xM =M\n"
-#| "GB =1000*1000*1000, G =1024*1024*1024, and so on for T, P, E, Z, Y.\n"
-#| "\n"
-#| "Each CONV symbol may be:\n"
-#| "\n"
 msgid ""
 "\n"
 "N and BYTES may be followed by the following multiplicative suffixes:\n"
@@ -3152,26 +3142,15 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"块和字节数后可能带有以下的一个或多个后缀：\n"
-"c =1, w =2, b =512, kB =1000, K =1024, MB =1000*1000, M =1024*1024, xM =M\n"
-"GB =1000*1000*1000, G =1024*1024*1024, and so on for T, P, E, Z, Y.\n"
+"块数和字节数后可以带有以下的一个或多个后缀：\n"
+"c=1, w=2, b=512, kB=1000, K=1024, MB=1000*1000, M=1024*1024, xM=M,\n"
+"GB=1000*1000*1000, G=1024*1024*1024 以及相应可使用 T, P, E, Z, Y。\n"
+"也可使用二进制进位前缀：如 KiB=K、MiB=M 等等。\n"
 "\n"
 "每个 CONV 符号可能为：\n"
 "\n"
 
 #: src/dd.c:596
-#, fuzzy
-#| msgid ""
-#| "  ascii     from EBCDIC to ASCII\n"
-#| "  ebcdic    from ASCII to EBCDIC\n"
-#| "  ibm       from ASCII to alternate EBCDIC\n"
-#| "  block     pad newline-terminated records with spaces to cbs-size\n"
-#| "  unblock   replace trailing spaces in cbs-size records with newline\n"
-#| "  lcase     change upper case to lower case\n"
-#| "  ucase     change lower case to upper case\n"
-#| "  swab      swap every pair of input bytes\n"
-#| "  sync      pad every input block with NULs to ibs-size; when used\n"
-#| "            with block or unblock, pad with spaces rather than NULs\n"
 msgid ""
 "  ascii     from EBCDIC to ASCII\n"
 "  ebcdic    from ASCII to EBCDIC\n"
@@ -3185,16 +3164,17 @@ msgid ""
 "  sync      pad every input block with NULs to ibs-size; when used\n"
 "            with block or unblock, pad with spaces rather than NULs\n"
 msgstr ""
-"  ascii\t\t由EBCDIC 码转换至ASCII 码\n"
-"  ebcdic\t由ASCII 码转换至EBCDIC 码\n"
-"  ibm\t\t由ASCII 码转换至替换的EBCDIC 码\n"
-"  block\t\t将结束字符块里的换行替换成等长的空格\n"
-"  unblock\t将cbs 大小的块中尾部的空格替换为一个换行符\n"
-"  lcase\t\t将大写字符转换为小写\n"
-"  ucase\t\t将小写字符转换为大写\n"
-"  swab\t\t交换每一对输入数据字节\n"
-"  sync\t\t将每个输入数据块以NUL 字符填满至ibs 的大小；当配合block\n"
-"\t\t或unblock 时，会以空格代替NUL 字符填充\n"
+"  ascii     由 EBCDIC 码转换至 ASCII 码\n"
+"  ebcdic    由 ASCII 码转换至 EBCDIC 码\n"
+"  ibm       由 ASCII 码转换至代用的 EBCDIC 码\n"
+"  block     在换行符结尾的记录末尾填充空格至 cbs 对应的长度\n"
+"  unblock   将 cbs 大小的块中尾部的空格替换为一个换行符\n"
+"  lcase     将大写字符转换为小写\n"
+"  ucase     将小写字符转换为大写\n"
+"  sparse    为 NUL 输入数据块尝试寻址（seek）而非写至输出\n"
+"  swab      交换每一对输入数据字节\n"
+"  sync      将每个输入数据块以 NUL 空字符填充至 ibs 的大小；当配合\n"
+"            block 或 unblock 使用时，会以空格代替 NUL 字符来填充\n"
 
 #: src/dd.c:609
 msgid ""
@@ -3205,12 +3185,12 @@ msgid ""
 "  fdatasync  physically write output file data before finishing\n"
 "  fsync     likewise, but also write metadata\n"
 msgstr ""
-"  excl\t\tfail if the output file already exists\n"
-"  nocreat\tdo not create the output file\n"
-"  notrunc\t不截断输出文件\n"
-"  noerror\t读取数据发生错误后仍然继续\n"
-"  fdatasync\t结束前将输出文件数据写入磁盘\n"
-"  fsync\t类似上面，但是元数据也一同写入\n"
+"  excl      如果输出文件已存在则认为操作失败\n"
+"  nocreat   不要创建输出文件\n"
+"  notrunc   不要截断输出文件\n"
+"  noerror   读取数据发生错误后仍然继续\n"
+"  fdatasync  结束前将输出文件数据物理上写入磁盘\n"
+"  fsync     与上者类似，但也将元数据一同写入\n"
 
 #: src/dd.c:617
 msgid ""
@@ -3226,23 +3206,23 @@ msgstr ""
 
 #: src/dd.c:624
 msgid "  cio       use concurrent I/O for data\n"
-msgstr "  cio\t使用并行I/O 存取模式\n"
+msgstr "  cio       使用并行 I/O 存取数据\n"
 
 #: src/dd.c:626
 msgid "  direct    use direct I/O for data\n"
-msgstr "  direct\t使用直接I/O 存取模式\n"
+msgstr " direct    使用直接I/O 存取模式\n"
 
 #: src/dd.c:628
 msgid "  directory  fail unless a directory\n"
-msgstr "  directory\t除非是目录，否则 directory 失败\n"
+msgstr "  directory  除非是目录，否则操作失败\n"
 
 #: src/dd.c:630
 msgid "  dsync     use synchronized I/O for data\n"
-msgstr "  dsync\t\t使用同步I/O 存取模式\n"
+msgstr "  dsync     使用同步 I/O 存取模式\n"
 
 #: src/dd.c:632
 msgid "  sync      likewise, but also for metadata\n"
-msgstr "  sync\t\t与上者类似，但同时也对元数据生效\n"
+msgstr "  sync      与上者类似，但同时也对元数据生效\n"
 
 #: src/dd.c:633
 msgid "  fullblock  accumulate full blocks of input (iflag only)\n"
@@ -3266,7 +3246,7 @@ msgstr "  noctty\t不根据文件指派控制终端\n"
 
 #: src/dd.c:648
 msgid "  nofollow  do not follow symlinks\n"
-msgstr "  nofollow\t不跟随链接文件\n"
+msgstr "  nofollow  不跟随链接文件\n"
 
 #: src/dd.c:650
 msgid "  nolinks   fail if multiply-linked\n"
@@ -3320,10 +3300,8 @@ msgid "memory exhausted by output buffer of size %<PRIuMAX> bytes (%s)"
 msgstr "%<PRIuMAX> 字节的输出缓冲导致内存耗尽（%s）"
 
 #: src/dd.c:798 src/du.c:400
-#, fuzzy
-#| msgid "Infinity B"
 msgid "Infinity"
-msgstr "无穷量 B"
+msgstr "无穷量"
 
 #: src/dd.c:817
 #, c-format
@@ -3626,36 +3604,22 @@ msgstr ""
 "      --no-sync\t\t取得使用量数据前不进行同步动作(默认)\n"
 
 #: src/df.c:1535
-#, fuzzy
-#| msgid ""
-#| "  -P, --portability     use the POSIX output format\n"
-#| "      --sync            invoke sync before getting usage info\n"
-#| "  -t, --type=TYPE       limit listing to file systems of type TYPE\n"
-#| "  -T, --print-type      print file system type\n"
-#| "  -x, --exclude-type=TYPE   limit listing to file systems not of type TYPE\n"
-#| "  -v                    (ignored)\n"
 msgid ""
 "      --output[=FIELD_LIST]  use the output format defined by FIELD_LIST,\n"
 "                               or print all fields if FIELD_LIST is omitted.\n"
 "  -P, --portability     use the POSIX output format\n"
 "      --sync            invoke sync before getting usage info\n"
 msgstr ""
-"  -P, --portability\t使用POSIX 兼容的输出格式\n"
-"      --sync\t\t取得使用量数据前先进行同步动作\n"
-"  -t, --type=类型\t只显示指定文件系统为指定类型的信息\n"
-"  -T, --print-type\t显示文件系统类型\n"
-"  -x, --exclude-type=类型\t只显示文件系统不是指定类型信息\n"
-"  -v\t\t\t(忽略)\n"
+"      --output[=域列表]      使用给定域列表定义的输出格式，\n"
+"                               或者在缺省情况下输出所有域。\n"
+"  -P, --portability     使用 POSIX 兼容的输出格式\n"
+"      --sync            取得使用量数据前先调用同步（sync）动作\n"
 
 #: src/df.c:1541
-#, fuzzy
-#| msgid ""
-#| "      --verbose           print a diagnostic just before each\n"
-#| "                            output file is opened\n"
 msgid ""
 "      --total           elide all entries insignificant to available space,\n"
 "                          and produce a grand total\n"
-msgstr "      --verbose\t\t在每个输出文件打开前输出文件特征\n"
+msgstr "      --total           省略所有对可用空间无显著影响的项并生成总计值\n"
 
 #: src/df.c:1545
 msgid ""
@@ -3676,6 +3640,10 @@ msgid ""
 "field names are: 'source', 'fstype', 'itotal', 'iused', 'iavail', 'ipcent',\n"
 "'size', 'used', 'avail', 'pcent', 'file' and 'target' (see info page).\n"
 msgstr ""
+"\n"
+"“域列表”是由逗号分隔的列表，指示需要包含在内的列。有效的域名称包括：\n"
+"'source', 'fstype', 'itotal', 'iused', 'iavail', 'ipcent', 'size',\n"
+"'used', 'avail', 'pcent', 'file' 和 'target'（请参考 info 信息页）。\n"
 
 #: src/df.c:1592
 #, c-format
@@ -4199,16 +4167,12 @@ msgid "failed to set signal action for signal %d"
 msgstr "设置信号 %d 的处理操作失败"
 
 #: src/env.c:725 src/env.c:765
-#, fuzzy
-#| msgid "failed to set new role: %s"
 msgid "failed to get signal process mask"
-msgstr "设置新角色失败：%s"
+msgstr "获取进程信号掩码失败"
 
 #: src/env.c:754
-#, fuzzy
-#| msgid "failed to set new role: %s"
 msgid "failed to set signal process mask"
-msgstr "设置新角色失败：%s"
+msgstr "设置进程信号掩码失败"
 
 #: src/env.c:844
 #, c-format
@@ -5274,7 +5238,7 @@ msgstr ""
 #: src/join.c:417
 #, c-format
 msgid "%s:%<PRIuMAX>: is not sorted: %.*s"
-msgstr ""
+msgstr "%s:%<PRIuMAX>：未排序：%.*s"
 
 #: src/join.c:849 src/join.c:1047
 #, c-format
@@ -5576,10 +5540,9 @@ msgid "cannot combine --target-directory and --no-target-directory"
 msgstr "无法同时使用 --target-directory 和 --no-target-directory"
 
 #: src/ln.c:619
-#, fuzzy, c-format
-#| msgid "extra argument %s"
+#, c-format
 msgid "target %s"
-msgstr "多余的参数 %s"
+msgstr "目标 %s"
 
 #. This is a proper name. See the gettext manual, section Names.
 #: src/logname.c:30
@@ -6009,16 +5972,12 @@ msgid "      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE b
 msgstr ""
 
 #: src/ls.c:5263
-#, fuzzy
-#| msgid ""
-#| "  -t                         sort by modification time\n"
-#| "  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8\n"
 msgid ""
 "  -t                         sort by modification time, newest first\n"
 "  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8\n"
 msgstr ""
-"  -t\t\t\t按修改时间排序\n"
-"  -T, --tabsize=COLS\t指定制表符(Tab)的宽度，而非8个字符\n"
+"  -t                         按修改时间排序，最新的最前\n"
+"  -T, --tabsize=COLS         指定制表符（Tab）的宽度，而非默认8字符\n"
 
 #: src/ls.c:5267
 #, fuzzy
@@ -6969,10 +6928,9 @@ msgid "missing 'i' suffix in input: %s (e.g Ki/Mi/Gi)"
 msgstr "输入中缺少 'i' 后缀：%s（例如，Ki/Mi/Gi）"
 
 #: src/numfmt.c:757 src/numfmt.c:809
-#, fuzzy, c-format
-#| msgid "%s: failed to open for writing"
+#, c-format
 msgid "failed to prepare value '%Lf' for printing"
-msgstr "%s：无法以写模式打开"
+msgstr "为输出准备值“%Lf”失败"
 
 #: src/numfmt.c:858
 #, c-format
@@ -8264,18 +8222,12 @@ msgstr ""
 "\n"
 
 #: src/ptx.c:1825
-#, fuzzy
-#| msgid ""
-#| "  -A, --auto-reference           output automatically generated references\n"
-#| "  -G, --traditional              behave more like System V `ptx'\n"
-#| "  -F, --flag-truncation=STRING   use STRING for flagging line truncations\n"
 msgid ""
 "  -A, --auto-reference           output automatically generated references\n"
 "  -G, --traditional              behave more like System V 'ptx'\n"
 msgstr ""
-"  -A,--auto-reference\t\t输出自动生成的引用\n"
-"  -G,--traditional\t\t行为类似System V 的\"ptx\"\n"
-"  -F,--flag-trunctaion=字符串\t使用指定字符串来标识行的截断\n"
+"  -A, --auto-reference           输出自动生成的引用\n"
+"  -G, --traditional              行为类似 System V 的“ptx”\n"
 
 #: src/ptx.c:1829
 msgid ""
@@ -10972,6 +10924,8 @@ msgid ""
 "\n"
 "Combination settings:\n"
 msgstr ""
+"\n"
+"组合设置：\n"
 
 #: src/stty.c:882
 msgid " * [-]LCASE      same as [-]lcase\n"
@@ -11081,14 +11035,7 @@ msgstr ""
 "   -raw          等效于 cooked\n"
 
 #: src/stty.c:982
-#, fuzzy, c-format
-#| msgid ""
-#| "   sane          same as cread -ignbrk brkint -inlcr -igncr icrnl -iutf8\n"
-#| "                 -ixoff -iuclc -ixany imaxbel opost -olcuc -ocrnl onlcr\n"
-#| "                 -onocr -onlret -ofill -ofdel nl0 cr0 tab0 bs0 vt0 ff0\n"
-#| "                 isig icanon iexten echo echoe echok -echonl -noflsh\n"
-#| "                 -xcase -tostop -echoprt echoctl echoke, all special\n"
-#| "                 characters to their default values\n"
+#, c-format
 msgid ""
 "   sane          same as cread -ignbrk brkint -inlcr -igncr icrnl\n"
 "                 icanon iexten echo echoe echok -echonl -noflsh\n"
@@ -11097,12 +11044,12 @@ msgid ""
 "                 %s,\n"
 "                 all special characters to their default values\n"
 msgstr ""
-"   sane\t等于cread -ignbrk brkint -inlcr -igncr icrnl -iutf8\n"
-"\t\t-ixoff -iuclc -ixany imaxbel opost -olcuc -ocrnl onlcr\n"
-"\t\t-onocr -onlret -ofill -ofdel nl0 cr0 tab0 bs0 vt0 ff0\n"
-"\t\tisig icanon iexten echo echoe echok -echonl -noflsh\n"
-"\t\t-xcase -tostop -echoprt echoctl echoke，所有特殊字符均\n"
-"\t\t使用默认值\n"
+"   sane          等效于 cread -ignbrk brkint -inlcr -igncr icrnl\n"
+"                 icanon iexten echo echoe echok -echonl -noflsh\n"
+"                 %s\n"
+"                 %s\n"
+"                 %s，\n"
+"                 所有特殊字符均为其默认值\n"
 
 #: src/stty.c:1068
 msgid ""

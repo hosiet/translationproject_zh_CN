@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-05-02 13:28-0400\n"
+"PO-Revision-Date: 2019-05-03 11:07-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -4185,22 +4185,22 @@ msgstr "制表符过于分散"
 #: src/expand-common.c:103
 #, c-format
 msgid "'/' specifier only allowed with the last value"
-msgstr ""
+msgstr "‘/’符号只允许与最后一个值合用"
 
 #: src/expand-common.c:120
 #, c-format
 msgid "'+' specifier only allowed with the last value"
-msgstr ""
+msgstr "‘+’符号只允许与最后一个值合用"
 
 #: src/expand-common.c:172
 #, c-format
 msgid "'/' specifier not at start of number: %s"
-msgstr ""
+msgstr "‘/’符号没有位于数字之前：%s"
 
 #: src/expand-common.c:183
 #, c-format
 msgid "'+' specifier not at start of number: %s"
-msgstr ""
+msgstr "‘+’符号没有位于数字之前：%s"
 
 #: src/expand-common.c:204
 #, c-format
@@ -4222,7 +4222,7 @@ msgstr "制表符尺寸必须是升序的"
 
 #: src/expand-common.c:251
 msgid "'/' specifier is mutually exclusive with '+'"
-msgstr ""
+msgstr "‘/’符号和‘+’符号不能同时使用"
 
 #: src/expand-common.c:390
 msgid "  -t, --tabs=LIST  use comma separated list of tab positions\n"
@@ -4236,6 +4236,10 @@ msgid ""
 "                     can be used to align remaining tab stops relative to\n"
 "                     the last specified tab stop instead of the first column\n"
 msgstr ""
+"                     最后的指定位置可以前缀加上‘/’符号以声明在最后一个\n"
+"                     明确指定制表符位置的声明之后对应位置的倍数均为制表符。\n"
+"                     另外，还可以使用‘+’的前缀以声明在最后一个明确指定\n"
+"                     位置的制表符之后每隔多少的位置间距是一个制表符\n"
 
 #: src/expand.c:73
 msgid "Convert tabs in each FILE to spaces, writing to standard output.\n"
@@ -4350,22 +4354,16 @@ msgstr ""
 "  length 字符串\t\t\t字符串的长度\n"
 
 #: src/expr.c:393
-#, fuzzy
-#| msgid ""
-#| "  + TOKEN                    interpret TOKEN as a string, even if it is a\n"
-#| "                               keyword like `match' or an operator like `/'\n"
-#| "\n"
-#| "  ( EXPRESSION )             value of EXPRESSION\n"
 msgid ""
 "  + TOKEN                    interpret TOKEN as a string, even if it is a\n"
 "                               keyword like 'match' or an operator like '/'\n"
 "\n"
 "  ( EXPRESSION )             value of EXPRESSION\n"
 msgstr ""
-"  + 记号\t\t\t将记号解析为字符串，即使它是一个类似\"match\"或\n"
-"\t\t\t\t运算符\"/\"那样的关键字\n"
+"  + 记号                     将给定记号解析为字符串，即使它是一个类似\n"
+"                               “match”或运算符\"/\"那样的关键字\n"
 "\n"
-"  ( 表达式 )\t\t\t表达式的值\n"
+"  ( 表达式 )                 给定<表达式>的值\n"
 
 #: src/expr.c:399
 msgid ""
@@ -4486,7 +4484,7 @@ msgstr "无法获得当前目录"
 #: src/find-mount-point.c:92
 #, c-format
 msgid "cannot change to directory %s"
-msgstr "无法进入目录%s"
+msgstr "无法变更目录为 %s"
 
 #: src/find-mount-point.c:70
 #, c-format
@@ -5720,7 +5718,7 @@ msgstr ""
 
 #: src/ls.c:5175
 msgid "  -g                         like -l, but do not list owner\n"
-msgstr "  -g\t\t\t\t类似-l，但不列出所有者\n"
+msgstr "  -g                         类似 -l，但不列出所有者\n"
 
 #: src/ls.c:5178
 #, fuzzy
@@ -5741,23 +5739,16 @@ msgstr ""
 
 #: src/ls.c:5184
 msgid "  -G, --no-group             in a long listing, don't print group names\n"
-msgstr ""
+msgstr "  -G, --no-group             以一个长列表的形式，不输出组名\n"
 
 #: src/ls.c:5187
-#, fuzzy
-#| msgid ""
-#| "  -G, --no-group             in a long listing, don't print group names\n"
-#| "  -h, --human-readable       with -l, print sizes in human readable format\n"
-#| "                               (e.g., 1K 234M 2G)\n"
-#| "      --si                   likewise, but use powers of 1000 not 1024\n"
 msgid ""
 "  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.\n"
 "      --si                   likewise, but use powers of 1000 not 1024\n"
 msgstr ""
-"  -G, --no-group\t\t以一个长列表的形式，不输出组名\n"
-"  -h, --human-readable\t\t与-l 一起，以易于阅读的格式输出文件大小\n"
-"\t\t\t\t(例如 1K 234M 2G)\n"
-"      --si\t\t\t同上面类似，但是使用1000 为基底而非1024\n"
+"  -h, --human-readable       与 -l 和 -s 一起，以易于阅读的格式输出文件\n"
+"                             大小（例如 1K 234M 2G等）\n"
+"      --si                   同上面类似，但是使用 1000 为基底而非 1024\n"
 
 #: src/ls.c:5191
 #, fuzzy
@@ -6119,13 +6110,7 @@ msgstr ""
 "\n"
 
 #: src/md5sum.c:285
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "The sums are computed as described in %s.  When checking, the input\n"
-#| "should be a former output of this program.  The default mode is to print\n"
-#| "a line with checksum, a character indicating type (`*' for binary, ` ' for\n"
-#| "text), and name for each FILE.\n"
+#, c-format
 msgid ""
 "\n"
 "The sums are computed as described in %s.  When checking, the input\n"
@@ -6134,9 +6119,10 @@ msgid ""
 "' ' for text or where binary is insignificant), and name for each FILE.\n"
 msgstr ""
 "\n"
-"校验和会按照%s 规范生成。当进行检查时，给出的输入格式应该和程序的输出\n"
-"样板格式相同。默认的输出模式时输出一行校验和的校验结果，并有一个字符来\n"
-"表示文件类型(\"*\"代表二进制，\" \"代表纯文本)，并同时显示每个文件的名称。\n"
+"校验和会按照 %s 所描述的规范生成。在进行检查时，给出的输入格式应该和\n"
+"程序先前输出的格式相同。默认的输出模式时输出一行校验和的校验结果、一个空格\n"
+"以及一个指示输入模式的字符（“*”代表二进制，“ ”代表纯文本或者二进制特性\n"
+"不明显的数据），并同时显示每个文件的名称。\n"
 
 #: src/md5sum.c:697
 #, c-format

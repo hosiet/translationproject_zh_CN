@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-05-03 11:07-0400\n"
+"PO-Revision-Date: 2019-05-06 14:00-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -4516,26 +4516,24 @@ msgid ""
 "                              reattaching the prefix to reformatted lines\n"
 "  -s, --split-only          split long lines, but do not refill\n"
 msgstr ""
-"  -c --crown-margin\t\t保持前两行的缩进\n"
-"  -p, --prefix=字符串\t\t只对以指定字符串开头的行重新格式化，\n"
-"\t\t\t\t将前缀重新附着到被重新格式化的行上\n"
-"  -s, --split-only\t\t分割过长的行，但不自动补足\n"
+"  -c, --crown-margin        保持前两行的缩进\n"
+"  -p, --prefix=字符串       只对以指定字符串开头的行重新格式化，\n"
+"                              将前缀重新附着到被重新格式化的行上\n"
+"  -s, --split-only          分割过长的行，但不自动补足\n"
 
 #: src/fmt.c:287
-#, fuzzy, no-c-format
-#| msgid ""
-#| "  -t, --tagged-paragraph    indentation of first line different from second\n"
-#| "  -u, --uniform-spacing     one space between words, two after sentences\n"
-#| "  -w, --width=WIDTH         maximum line width (default of 75 columns)\n"
+#, no-c-format
 msgid ""
 "  -t, --tagged-paragraph    indentation of first line different from second\n"
 "  -u, --uniform-spacing     one space between words, two after sentences\n"
 "  -w, --width=WIDTH         maximum line width (default of 75 columns)\n"
 "  -g, --goal=WIDTH          goal width (default of 93% of width)\n"
 msgstr ""
-"  -t, --tagged-paragraph\t缩进首行以使其不同于第二行\n"
-"  -u, --uniform-spacing\t\t每两个单词间保留一个空格，每句之后保留两个空格\n"
-"  -w, --width=宽度\t\t最大行宽(默认为75 列宽度)\n"
+"  -t, --tagged-paragraph    对第一行进行缩进以和第二行区分\n"
+"  -u, --uniform-spacing     单词间保留一个空格，每句之后保留两个空格\n"
+"  -w, --width=宽度          最大行宽（默认为 75 列）\n"
+"  -g, --goal=目标宽度       目标宽度（默认为上述最大行宽的 93%）\n"
+"\n"
 
 #: src/fmt.c:355
 #, c-format
@@ -4588,7 +4586,7 @@ msgstr ""
 #: src/group-list.c:68 src/id.c:401
 #, c-format
 msgid "failed to get groups for user %s"
-msgstr "获取用户%s 的属组失败"
+msgstr "获取用户 %s 的属组失败"
 
 #: src/group-list.c:73 src/id.c:404
 #, c-format
@@ -4598,7 +4596,7 @@ msgstr "获取当前进程用户组失败"
 #: src/group-list.c:113
 #, c-format
 msgid "cannot find name for group ID %lu"
-msgstr "无法找到ID 为%lu 的用户的属组"
+msgstr "无法找到 ID 为 %lu 的用户的属组"
 
 #: src/groups.c:54
 #, c-format
@@ -5457,13 +5455,6 @@ msgstr ""
 "  -s, --symbolic\t\t创建符号链接而非硬链接\n"
 
 #: src/ln.c:446
-#, fuzzy
-#| msgid ""
-#| "  -S, --suffix=SUFFIX         override the usual backup suffix\n"
-#| "  -t, --target-directory=DIRECTORY  specify the DIRECTORY in which to create\n"
-#| "                                the links\n"
-#| "  -T, --no-target-directory   treat LINK_NAME as a normal file\n"
-#| "  -v, --verbose               print name of each linked file\n"
 msgid ""
 "  -S, --suffix=SUFFIX         override the usual backup suffix\n"
 "  -t, --target-directory=DIRECTORY  specify the DIRECTORY in which to create\n"
@@ -5471,10 +5462,10 @@ msgid ""
 "  -T, --no-target-directory   treat LINK_NAME as a normal file always\n"
 "  -v, --verbose               print name of each linked file\n"
 msgstr ""
-"  -S, --suffix=后缀\t\t自行指定备份文件的后缀\n"
-"  -t, --target-directory=目录\t在指定目录中创建链接\n"
-"  -T, --no-target-directory\t将链接名称当作普通文件\n"
-"  -v, --verbose\t\t链接前先列出每个文件的名称\n"
+"  -S, --suffix=后缀           自行指定备份文件的后缀\n"
+"  -t, --target-directory=目录  在指定<目录>中创建链接\n"
+"  -T, --no-target-directory   总是将给定的<链接名>当作普通文件\n"
+"  -v, --verbose               列出每个链接的文件名称\n"
 
 #: src/ln.c:456
 #, c-format

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-05-06 14:00-0400\n"
+"PO-Revision-Date: 2019-05-07 12:30-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -4638,14 +4638,7 @@ msgstr ""
 "如果指定了多于一个文件，在每块输出之前附加文件名称作为头部。\n"
 
 #: src/head.c:122
-#, fuzzy, c-format
-#| msgid ""
-#| "  -c, --bytes=[-]K         print the first K bytes of each file;\n"
-#| "                             with the leading `-', print all but the last\n"
-#| "                             K bytes of each file\n"
-#| "  -n, --lines=[-]K         print the first K lines instead of the first 10;\n"
-#| "                             with the leading `-', print all but the last\n"
-#| "                             K lines of each file\n"
+#, c-format
 msgid ""
 "  -c, --bytes=[-]NUM       print the first NUM bytes of each file;\n"
 "                             with the leading '-', print all but the last\n"
@@ -4654,12 +4647,12 @@ msgid ""
 "                             with the leading '-', print all but the last\n"
 "                             NUM lines of each file\n"
 msgstr ""
-"  -c,  --bytes=[-]K\t显示每个文件的前K 字节内容；\n"
-"\t\t\t如果附加\"-\"参数，则除了每个文件的最后K字节数据外\n"
-"\t\t\t显示剩余全部内容\n"
-"  -n, --lines=[-]K\t显示每个文件的前K 行内容；\n"
-"\t\t\t如果附加\"-\"参数，则除了每个文件的最后K 行外显示\n"
-"\t\t\t剩余全部内容\n"
+"  -c, --bytes=[-]K         显示每个文件的前 K 字节内容；\n"
+"                             如果数字前附加“-”字符，则除了每个文件的\n"
+"                             最后 K 字节数据外显示其余全部内容\n"
+"  -n, --lines=[-]K         显示每个文件的前 K 行内容而非前 %d 行内容；\n"
+"                             如果数字前附加“-”字符，则除了每个文件的\n"
+"                             最后 K 行数据外显示其余全部内容\n"
 
 #: src/head.c:130
 msgid ""
@@ -4670,12 +4663,6 @@ msgstr ""
 "  -v, --verbose\t\t总是显示包含给定文件名的文件头\n"
 
 #: src/head.c:139
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "K may have a multiplier suffix:\n"
-#| "b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
-#| "GB 1000*1000*1000, G 1024*1024*1024, and so on for T, P, E, Z, Y.\n"
 msgid ""
 "\n"
 "NUM may have a multiplier suffix:\n"
@@ -4684,9 +4671,10 @@ msgid ""
 "Binary prefixes can be used, too: KiB=K, MiB=M, and so on.\n"
 msgstr ""
 "\n"
-"K 后面可以跟乘号:\n"
+"所给定的数字 K 后面可以附加乘数后缀：\n"
 "b 512, kB 1000, K 1024, MB 1000*1000, M 1024*1024,\n"
-"GB 1000*1000*1000, G 1024*1024*1024, 对于T, P, E, Z, Y 同样适用。\n"
+"GB 1000*1000*1000, G 1024*1024*1024, 对于 T, P, E, Z, Y 同样适用。\n"
+"也可以使用二进制前缀，如：KiB=K，MiB=M 等等。\n"
 
 #: src/head.c:160
 #, c-format
@@ -4827,7 +4815,7 @@ msgstr "有多种选择，无法输出唯一的"
 
 #: src/id.c:204
 msgid "cannot print only names or real IDs in default format"
-msgstr "以默认格式无法只显示名称或只显示真实ID。"
+msgstr "以默认格式无法只显示名称或只显示真实ID"
 
 #: src/id.c:208
 msgid "option --zero not permitted in default format"
@@ -5430,14 +5418,6 @@ msgstr ""
 "  -f, --force                 强行删除任何已存在的目标文件\n"
 
 #: src/ln.c:437
-#, fuzzy
-#| msgid ""
-#| "  -i, --interactive           prompt whether to remove destinations\n"
-#| "  -L, --logical               make hard links to symbolic link references\n"
-#| "  -n, --no-dereference        treat destination that is a symlink to a\n"
-#| "                                directory as if it were a normal file\n"
-#| "  -P, --physical              make hard links directly to symbolic links\n"
-#| "  -s, --symbolic              make symbolic links instead of hard links\n"
 msgid ""
 "  -i, --interactive           prompt whether to remove destinations\n"
 "  -L, --logical               dereference TARGETs that are symbolic links\n"
@@ -5447,12 +5427,13 @@ msgid ""
 "  -r, --relative              create symbolic links relative to link location\n"
 "  -s, --symbolic              make symbolic links instead of hard links\n"
 msgstr ""
-"  -i, --interactive\t\t删除文件前进行确认\n"
-"  -L, --logical\t\t将硬链接创建为符号链接引用\n"
-"  -n, --no-dereference\t\t如果目的地是一个链接至某目录的符号链接，会将\n"
-"\t\t\t\t该符号链接当作普通文件处理，先将该已存在的链\n"
-"\t\t\t\t接备份或删除\n"
-"  -s, --symbolic\t\t创建符号链接而非硬链接\n"
+"  -i, --interactive           删除目标文件前进行确认\n"
+"  -L, --logical               如目标为符号链接，本次创建链接时将其解引用\n"
+"  -n, --no-dereference        如果给定<链接名>是一个链接至某目录的符号链接，\n"
+"                                将其作为普通文件处理\n"
+"  -P, --physical              创建直接指向符号链接文件的硬链接\n"
+"  -r, --relative              创建相对于链接位置的符号链接\n"
+"  -s, --symbolic              创建符号链接而非硬链接\n"
 
 #: src/ln.c:446
 msgid ""
@@ -8087,7 +8068,7 @@ msgstr "%s：给定值不能完全转换"
 
 #: src/printf.c:254 src/printf.c:281
 msgid "missing hexadecimal number in escape"
-msgstr "Escape 中缺失十六进制数"
+msgstr "在 escape 中缺失十六进制数"
 
 #: src/printf.c:293
 #, c-format

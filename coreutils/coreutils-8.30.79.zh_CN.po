@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-05-24 11:48-0400\n"
+"PO-Revision-Date: 2019-05-24 14:50-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -5644,12 +5644,6 @@ msgid "  -g                         like -l, but do not list owner\n"
 msgstr "  -g                         类似 -l，但不列出所有者\n"
 
 #: src/ls.c:5178
-#, fuzzy
-#| msgid ""
-#| "      --group-directories-first\n"
-#| "                             group directories before files.\n"
-#| "                               augment with a --sort option, but any\n"
-#| "                               use of --sort=none (-U) disables grouping\n"
 msgid ""
 "      --group-directories-first\n"
 "                             group directories before files;\n"
@@ -5657,8 +5651,9 @@ msgid ""
 "                               use of --sort=none (-U) disables grouping\n"
 msgstr ""
 "      --group-directories-first\n"
-"\t\t\t在文件前分组目录。此选项可与--sort 一起使用，\n"
-"\t\t\t但是一旦使用--sort=none (-U)将禁用分组\n"
+"                             在文件前分组目录；\n"
+"                               此选项可与--sort 一起使用，但是一旦使用\n"
+"                               --sort=none (-U) 将禁用分组\n"
 
 #: src/ls.c:5184
 msgid "  -G, --no-group             in a long listing, don't print group names\n"
@@ -5674,15 +5669,6 @@ msgstr ""
 "      --si                   同上面类似，但是使用 1000 为基底而非 1024\n"
 
 #: src/ls.c:5191
-#, fuzzy
-#| msgid ""
-#| "  -H, --dereference-command-line\n"
-#| "                             follow symbolic links listed on the command line\n"
-#| "      --dereference-command-line-symlink-to-dir\n"
-#| "                             follow each command line symbolic link\n"
-#| "                             that points to a directory\n"
-#| "      --hide=PATTERN         do not list implied entries matching shell PATTERN\n"
-#| "                               (overridden by -a or -A)\n"
 msgid ""
 "  -H, --dereference-command-line\n"
 "                             follow symbolic links listed on the command line\n"
@@ -5693,17 +5679,20 @@ msgid ""
 "                               (overridden by -a or -A)\n"
 msgstr ""
 "  -H, --dereference-command-line\n"
-"\t\t\t\t跟随命令行列出的符号链接\n"
+"                             跟随命令行列出的符号链接\n"
 "      --dereference-command-line-symlink-to-dir\n"
-"\t\t\t\t跟随命令行列出的目录的符号链接\n"
-"      --hide=PATTERN         \t隐藏符合PATTERN 模式的项目\n"
-"\t\t\t\t(-a 或 -A 将覆盖此选项)\n"
+"                             跟随命令行列出的指向目录的符号链接\n"
+"      --hide=PATTERN         隐藏符合 shell PATTERN 模式的项目\n"
+"                               （-a 或 -A 将覆盖此选项）\n"
 
 #: src/ls.c:5201
 msgid ""
 "      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'\n"
 "                               (default if omitted), 'auto', or 'never'\n"
 msgstr ""
+"      --hyperlink[=WHEN]     文件名使用超链接；WHEN 可以是“always”\n"
+"                               （缺省时的默认选项）、“auto”或\n"
+"                               “never”\n"
 
 #: src/ls.c:5205
 #, fuzzy
@@ -6807,7 +6796,7 @@ msgstr "用法: %s [选项]... [数字]...\n"
 
 #: src/numfmt.c:887
 msgid "Reformat NUMBER(s), or the numbers from standard input if none are specified.\n"
-msgstr ""
+msgstr "对参数给出的数字进行格式化，或者在参数未给出数字的情况下从标准输入获取数字。\n"
 
 #: src/numfmt.c:891
 msgid "      --debug          print warnings about invalid input\n"
@@ -6828,6 +6817,8 @@ msgid ""
 "      --format=FORMAT  use printf style floating-point FORMAT;\n"
 "                         see FORMAT below for details\n"
 msgstr ""
+"      --format=格式    使用 printf 风格的浮点格式；参见下文的“格式”\n"
+"                         部分以了解细节\n"
 
 #: src/numfmt.c:905
 msgid ""
@@ -6856,6 +6847,8 @@ msgid ""
 "      --invalid=MODE   failure mode for invalid numbers: MODE can be:\n"
 "                         abort (default), fail, warn, ignore\n"
 msgstr ""
+"      --invalid=模式   遇到无效数字时的处理模式：给定的模式可以是：\n"
+"                         abort（默认）, fail, warn, ignore\n"
 
 #: src/numfmt.c:924
 msgid ""
@@ -6884,23 +6877,19 @@ msgstr ""
 
 #: src/numfmt.c:942
 msgid "      --to-unit=N      the output unit size (instead of the default 1)\n"
-msgstr ""
+msgstr "      --to-unit=N      输出单位大小（默认值为 1)\n"
 
 #: src/numfmt.c:951
-#, fuzzy
-#| msgid ""
-#| "Other options:\n"
-#| "\n"
 msgid ""
 "\n"
 "UNIT options:\n"
 msgstr ""
-"其他选项：\n"
 "\n"
+"单位选项：\n"
 
 #: src/numfmt.c:954
 msgid "  none       no auto-scaling is done; suffixes will trigger an error\n"
-msgstr ""
+msgstr "  none       不进行自动缩放；带后缀会触发错误\n"
 
 #: src/numfmt.c:957
 msgid ""
@@ -6910,6 +6899,11 @@ msgid ""
 "               1M = 1000000,\n"
 "               1Mi = 1048576,\n"
 msgstr ""
+"  auto       接受可选的单字符或双字符后缀：\n"
+"               1K = 1000,\n"
+"               1Ki = 1024,\n"
+"               1M = 1000000,\n"
+"               1Mi = 1048576,\n"
 
 #: src/numfmt.c:963
 msgid ""

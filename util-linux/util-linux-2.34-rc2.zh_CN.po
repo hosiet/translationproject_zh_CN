@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the util-linux package.
 # Ray Wang <wanglei1123@gmail.com>, 2008.
 # Wylmer Wang <wantinghard@gmail.com>, 2012, 2013, 2014, 2015, 2016.
+# Boyuan Yang <073plan@gmail.com>, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: util-linux-2.29-rc2\n"
+"Project-Id-Version: util-linux-2.34-rc2\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2019-05-30 12:09+0200\n"
-"PO-Revision-Date: 2016-11-07 05:25-0500\n"
-"Last-Translator: Wylmer Wang <wantinghard@gmail.com>\n"
+"PO-Revision-Date: 2019-05-30 14:38-0400\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -17,10 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: crowdin.com\n"
-"X-Crowdin-Project: util-linux\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-File: util-linux-2.29-rc2.zh_CN.po\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #: disk-utils/addpart.c:15
 #, c-format
@@ -57,21 +55,21 @@ msgstr "参数不够"
 #: disk-utils/sfdisk.c:1570 disk-utils/swaplabel.c:65 libfdisk/src/bsd.c:641
 #: login-utils/islocal.c:87 login-utils/last.c:668 login-utils/sulogin.c:444
 #: login-utils/sulogin.c:481 login-utils/utmpdump.c:134
-#: login-utils/utmpdump.c:355 login-utils/utmpdump.c:375
-#: login-utils/vipw.c:261 login-utils/vipw.c:279 misc-utils/findmnt.c:1106
-#: misc-utils/logger.c:1241 misc-utils/mcookie.c:115 misc-utils/uuidd.c:198
-#: sys-utils/blkdiscard.c:181 sys-utils/blkzone.c:96 sys-utils/dmesg.c:524
-#: sys-utils/eject.c:497 sys-utils/eject.c:693 sys-utils/fallocate.c:399
-#: sys-utils/fsfreeze.c:116 sys-utils/fstrim.c:86 sys-utils/hwclock.c:229
-#: sys-utils/hwclock.c:869 sys-utils/hwclock-rtc.c:398
-#: sys-utils/hwclock-rtc.c:433 sys-utils/ldattach.c:392 sys-utils/lscpu.c:517
-#: sys-utils/nsenter.c:129 sys-utils/rfkill.c:192 sys-utils/rfkill.c:553
-#: sys-utils/rtcwake.c:137 sys-utils/rtcwake.c:290 sys-utils/setpriv.c:290
-#: sys-utils/setpriv.c:659 sys-utils/setpriv.c:682 sys-utils/swapon.c:375
-#: sys-utils/swapon.c:518 sys-utils/switch_root.c:167 sys-utils/unshare.c:110
-#: sys-utils/unshare.c:125 sys-utils/wdctl.c:322 sys-utils/wdctl.c:378
-#: sys-utils/zramctl.c:515 term-utils/agetty.c:2869 term-utils/mesg.c:143
-#: term-utils/script.c:540 term-utils/script.c:548 term-utils/script.c:633
+#: login-utils/utmpdump.c:355 login-utils/utmpdump.c:375 login-utils/vipw.c:261
+#: login-utils/vipw.c:279 misc-utils/findmnt.c:1106 misc-utils/logger.c:1241
+#: misc-utils/mcookie.c:115 misc-utils/uuidd.c:198 sys-utils/blkdiscard.c:181
+#: sys-utils/blkzone.c:96 sys-utils/dmesg.c:524 sys-utils/eject.c:497
+#: sys-utils/eject.c:693 sys-utils/fallocate.c:399 sys-utils/fsfreeze.c:116
+#: sys-utils/fstrim.c:86 sys-utils/hwclock.c:229 sys-utils/hwclock.c:869
+#: sys-utils/hwclock-rtc.c:398 sys-utils/hwclock-rtc.c:433
+#: sys-utils/ldattach.c:392 sys-utils/lscpu.c:517 sys-utils/nsenter.c:129
+#: sys-utils/rfkill.c:192 sys-utils/rfkill.c:553 sys-utils/rtcwake.c:137
+#: sys-utils/rtcwake.c:290 sys-utils/setpriv.c:290 sys-utils/setpriv.c:659
+#: sys-utils/setpriv.c:682 sys-utils/swapon.c:375 sys-utils/swapon.c:518
+#: sys-utils/switch_root.c:167 sys-utils/unshare.c:110 sys-utils/unshare.c:125
+#: sys-utils/wdctl.c:322 sys-utils/wdctl.c:378 sys-utils/zramctl.c:515
+#: term-utils/agetty.c:2869 term-utils/mesg.c:143 term-utils/script.c:540
+#: term-utils/script.c:548 term-utils/script.c:633
 #: term-utils/scriptreplay.c:198 term-utils/scriptreplay.c:201
 #: term-utils/wall.c:418 text-utils/colcrt.c:282 text-utils/more.c:361
 #: text-utils/rev.c:139 text-utils/ul.c:230
@@ -188,26 +186,20 @@ msgid "Call block device ioctls from the command line."
 msgstr ""
 
 #: disk-utils/blockdev.c:196
-#, fuzzy
-#| msgid " -q, --quiet             turn on quiet mode\n"
 msgid " -q             quiet mode"
-msgstr " -q, --quiet             开启安静模式\n"
+msgstr " -q             安静模式"
 
 #: disk-utils/blockdev.c:197
-#, fuzzy
-#| msgid " -v, --verbose            verbose mode\n"
 msgid " -v             verbose mode"
-msgstr " -v, --verbose                 详尽模式\n"
+msgstr " -v             详尽模式"
 
 #: disk-utils/blockdev.c:198
 msgid "     --report   print report for specified (or all) devices"
-msgstr ""
+msgstr "     --report   输出指定（或全部）设备的报告"
 
 #: disk-utils/blockdev.c:203
-#, fuzzy
-#| msgid "Available columns:\n"
 msgid "Available commands:"
-msgstr "可用的列：\n"
+msgstr "可用命令："
 
 #: disk-utils/blockdev.c:204
 #, c-format
@@ -279,16 +271,12 @@ msgid "Delete the current partition"
 msgstr "删除当前分区"
 
 #: disk-utils/cfdisk.c:192
-#, fuzzy
-#| msgid "size"
 msgid "Resize"
-msgstr "大小"
+msgstr "更改尺寸"
 
 #: disk-utils/cfdisk.c:192
-#, fuzzy
-#| msgid "Delete the current partition"
 msgid "Reduce or enlarge the current partition"
-msgstr "删除当前分区"
+msgstr "减小或扩大当前分区"
 
 #: disk-utils/cfdisk.c:193
 msgid "New"
@@ -420,16 +408,14 @@ msgid "Please, specify size."
 msgstr "请指定文件大小。"
 
 #: disk-utils/cfdisk.c:1899
-#, fuzzy, c-format
-#| msgid "Minimum size is %ju bytes."
+#, c-format
 msgid "Minimum size is %<PRIu64> bytes."
-msgstr "最小尺寸为 %ju 字节。"
+msgstr "最小尺寸为 %<PRIu64> 字节。"
 
 #: disk-utils/cfdisk.c:1908
-#, fuzzy, c-format
-#| msgid "Maximum size is %ju bytes."
+#, c-format
 msgid "Maximum size is %<PRIu64> bytes."
-msgstr "最大尺寸为 %ju 字节。"
+msgstr "最大尺寸为 %<PRIu64> 字节。"
 
 #: disk-utils/cfdisk.c:1915
 msgid "Failed to parse size."
@@ -488,8 +474,7 @@ msgstr "写脚本文件 %s 失败"
 msgid "Select label type"
 msgstr "选择标签类型"
 
-#: disk-utils/cfdisk.c:2124 disk-utils/fdisk.c:1087
-#: disk-utils/fdisk-menu.c:488
+#: disk-utils/cfdisk.c:2124 disk-utils/fdisk.c:1087 disk-utils/fdisk-menu.c:488
 msgid "Device does not contain a recognized partition table."
 msgstr "设备不包含可识别的分区表。"
 
@@ -755,8 +740,8 @@ msgstr ""
 "将继续 ... "
 
 #: disk-utils/fdformat.c:145 disk-utils/fsck.minix.c:183
-#: disk-utils/swaplabel.c:123 misc-utils/wipefs.c:641
-#: sys-utils/blkdiscard.c:85 sys-utils/tunelp.c:95
+#: disk-utils/swaplabel.c:123 misc-utils/wipefs.c:641 sys-utils/blkdiscard.c:85
+#: sys-utils/tunelp.c:95
 #, c-format
 msgid " %s [options] <device>\n"
 msgstr " %s [选项] <设备>\n"
@@ -1080,10 +1065,8 @@ msgid "unsupported disklabel: %s"
 msgstr "不支持的磁盘标签：%s"
 
 #: disk-utils/fdisk.c:989
-#, fuzzy
-#| msgid "unsupported unit '%c'"
 msgid "unsupported unit"
-msgstr "不支持的单位“%c”"
+msgstr "不支持的单位"
 
 #: disk-utils/fdisk.c:997 disk-utils/fdisk.c:1002 disk-utils/sfdisk.c:2087
 #: disk-utils/sfdisk.c:2092
@@ -1094,25 +1077,23 @@ msgstr "不支持的擦除模式"
 msgid "The device properties (sector size and geometry) should be used with one specified device only."
 msgstr "设备属性(扇区大小和几何属性)只能用于某个指定的设备。"
 
-#: disk-utils/fdisk.c:1046 disk-utils/fdisk.c:1061
-#: disk-utils/fsck.cramfs.c:694 disk-utils/mkfs.bfs.c:192
-#: disk-utils/mkfs.cramfs.c:786 disk-utils/partx.c:974 disk-utils/raw.c:136
-#: disk-utils/raw.c:149 disk-utils/raw.c:161 disk-utils/raw.c:202
-#: misc-utils/cal.c:519 misc-utils/findfs.c:58 misc-utils/look.c:149
-#: misc-utils/whereis.c:586 misc-utils/whereis.c:597 misc-utils/whereis.c:608
-#: misc-utils/whereis.c:650 schedutils/chrt.c:504 schedutils/ionice.c:262
-#: schedutils/taskset.c:188 sys-utils/chcpu.c:355 sys-utils/chmem.c:422
-#: sys-utils/dmesg.c:1470 sys-utils/ipcmk.c:134 sys-utils/ldattach.c:321
-#: sys-utils/losetup.c:913 sys-utils/lscpu.c:2349 sys-utils/lsmem.c:631
-#: sys-utils/mount.c:809 sys-utils/mount.c:817 sys-utils/mount.c:864
-#: sys-utils/mount.c:877 sys-utils/mount.c:949 sys-utils/mountpoint.c:179
-#: sys-utils/pivot_root.c:71 sys-utils/swapoff.c:229 sys-utils/swapon.c:993
-#: sys-utils/switch_root.c:249 sys-utils/umount.c:583
-#: term-utils/setterm.c:1179 text-utils/col.c:233 text-utils/more.c:1986
-#, fuzzy
-#| msgid "bad value"
+#: disk-utils/fdisk.c:1046 disk-utils/fdisk.c:1061 disk-utils/fsck.cramfs.c:694
+#: disk-utils/mkfs.bfs.c:192 disk-utils/mkfs.cramfs.c:786
+#: disk-utils/partx.c:974 disk-utils/raw.c:136 disk-utils/raw.c:149
+#: disk-utils/raw.c:161 disk-utils/raw.c:202 misc-utils/cal.c:519
+#: misc-utils/findfs.c:58 misc-utils/look.c:149 misc-utils/whereis.c:586
+#: misc-utils/whereis.c:597 misc-utils/whereis.c:608 misc-utils/whereis.c:650
+#: schedutils/chrt.c:504 schedutils/ionice.c:262 schedutils/taskset.c:188
+#: sys-utils/chcpu.c:355 sys-utils/chmem.c:422 sys-utils/dmesg.c:1470
+#: sys-utils/ipcmk.c:134 sys-utils/ldattach.c:321 sys-utils/losetup.c:913
+#: sys-utils/lscpu.c:2349 sys-utils/lsmem.c:631 sys-utils/mount.c:809
+#: sys-utils/mount.c:817 sys-utils/mount.c:864 sys-utils/mount.c:877
+#: sys-utils/mount.c:949 sys-utils/mountpoint.c:179 sys-utils/pivot_root.c:71
+#: sys-utils/swapoff.c:229 sys-utils/swapon.c:993 sys-utils/switch_root.c:249
+#: sys-utils/umount.c:583 term-utils/setterm.c:1179 text-utils/col.c:233
+#: text-utils/more.c:1986
 msgid "bad usage"
-msgstr "错误值"
+msgstr "错误用法"
 
 #: disk-utils/fdisk.c:1067
 #, c-format
@@ -1594,7 +1575,7 @@ msgstr "输入脚本文件名"
 
 #: disk-utils/fdisk-menu.c:485
 msgid "Resetting fdisk!"
-msgstr ""
+msgstr "正在重置 fdisk！"
 
 #: disk-utils/fdisk-menu.c:492
 msgid "Script successfully applied."
@@ -1768,7 +1749,7 @@ msgstr "%s：执行失败"
 
 #: disk-utils/fsck.c:782
 msgid "wait: no more child process?!?"
-msgstr "等待：没有剩余子进程了？！？"
+msgstr "wait：没有剩余子进程了？！？"
 
 #: disk-utils/fsck.c:785 sys-utils/flock.c:366 sys-utils/swapon.c:352
 #: sys-utils/unshare.c:450 sys-utils/unshare.c:471
@@ -1933,10 +1914,9 @@ msgid "invalid argument of -r"
 msgstr "-r 的参数无效"
 
 #: disk-utils/fsck.c:1560
-#, fuzzy, c-format
-#| msgid "option --pid may be specified only once"
+#, c-format
 msgid "option '%s' may be specified only once"
-msgstr "--pid 选项只能指定一次"
+msgstr "选项“%s”只能指定一次"
 
 #: disk-utils/fsck.c:1567 misc-utils/kill.c:280
 #, c-format
@@ -2119,10 +2099,9 @@ msgid "chown failed: %s"
 msgstr "chown 失败：%s"
 
 #: disk-utils/fsck.cramfs.c:435
-#, fuzzy, c-format
-#| msgid "utime failed: %s"
+#, c-format
 msgid "utimes failed: %s"
-msgstr "utime 失败：%s"
+msgstr "utimes 失败：%s"
 
 #: disk-utils/fsck.cramfs.c:447
 #, c-format
@@ -2331,10 +2310,9 @@ msgid "Write error: bad block in file '%s'\n"
 msgstr "写入错误: 文件 '%s' 中有坏块\n"
 
 #: disk-utils/fsck.minix.c:424
-#, fuzzy, c-format
-#| msgid "Warning: inode count too big.\n"
+#, c-format
 msgid "Warning: block out of range\n"
-msgstr "警告: inode 计数太大.\n"
+msgstr "警告: 块超出范围\n"
 
 #: disk-utils/fsck.minix.c:511
 msgid "seek failed in write_super_block"
@@ -2696,10 +2674,9 @@ msgid "sector count: %d, sector size: %d\n"
 msgstr "扇区计数：%d，扇区大小：%d\n"
 
 #: disk-utils/isosize.c:148
-#, fuzzy, c-format
-#| msgid " %s [options] <iso9660_image_file>\n"
+#, c-format
 msgid " %s [options] <iso9660_image_file> ...\n"
-msgstr " %s [选项] <iso9660镜像文件>\n"
+msgstr " %s [选项] <iso9660镜像文件> ...\n"
 
 #: disk-utils/isosize.c:152
 msgid "Show the length of an ISO-9660 filesystem.\n"
@@ -3769,10 +3746,8 @@ msgid " -o, --output <list>  define which output columns to use\n"
 msgstr " -o, --output <列表>  定义使用哪个输出列\n"
 
 #: disk-utils/partx.c:769 sys-utils/lsmem.c:506
-#, fuzzy
-#| msgid " -O, --output-all     output all columns\n"
 msgid "     --output-all     output all columns\n"
-msgstr " -O, --output-all     输出所有列\n"
+msgstr "     --output-all     输出所有列\n"
 
 #: disk-utils/partx.c:770 misc-utils/lsblk.c:1727 sys-utils/lsmem.c:501
 msgid " -P, --pairs          use key=\"value\" output format\n"
@@ -4071,10 +4046,8 @@ msgid "toggle boot flags is unsupported for Hybrid GPT/MBR"
 msgstr "开/关启动标志 只支持 MBR"
 
 #: disk-utils/sfdisk.c:833
-#, fuzzy
-#| msgid "cannot stat %s"
 msgid "cannot switch to PMBR"
-msgstr "无法 stat %s"
+msgstr "无法切换至 PMBR"
 
 #: disk-utils/sfdisk.c:834
 msgid "Activation is unsupported for GPT -- entering nested PMBR."
@@ -4248,16 +4221,12 @@ msgid "   <type>   The partition type.  Default is a Linux data partition.\n"
 msgstr "   <类型>   分区类型。默认为 Linux 数据分区。\n"
 
 #: disk-utils/sfdisk.c:1320
-#, fuzzy
-#| msgid "            MBR: hex or L,S,E,X shortcuts.\n"
 msgid "            MBR: hex or L,S,E,X,U,R,V shortcuts.\n"
-msgstr "            MBR：hex 或 L,S,E,X 快捷方式。\n"
+msgstr "            MBR：hex 或 L,S,E,X,U,R,V 快捷方式。\n"
 
 #: disk-utils/sfdisk.c:1321
-#, fuzzy
-#| msgid "            GPT: UUID or L,S,H shortcuts.\n"
 msgid "            GPT: UUID or L,S,H,U,R,V shortcuts.\n"
-msgstr "            GPT：UUID 或 L,S,H 快捷方式。\n"
+msgstr "            GPT：UUID 或 L,S,H,U,R,V 快捷方式。\n"
 
 #: disk-utils/sfdisk.c:1324
 msgid "   <bootable>  Use '*' to mark an MBR partition as bootable.\n"
@@ -4654,8 +4623,7 @@ msgid "ignore -U (UUIDs are unsupported)"
 msgstr "忽略 -U (不支持 UUID)"
 
 #: include/c.h:243
-#, fuzzy, c-format
-#| msgid "Try `%s --help' for more information.\n"
+#, c-format
 msgid "Try '%s --help' for more information.\n"
 msgstr "请尝试执行“%s --help”了解更多信息。\n"
 
@@ -4692,16 +4660,12 @@ msgstr ""
 "命令：\n"
 
 #: include/c.h:351
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Available columns:\n"
 msgid ""
 "\n"
 "Available output columns:\n"
 msgstr ""
 "\n"
-"可用的列：\n"
+"可用的输出列：\n"
 
 #: include/c.h:354
 #, fuzzy
@@ -6829,10 +6793,9 @@ msgstr ""
 "您确信要把该分区标记为 Linux 交换分区吗？"
 
 #: libmount/src/context.c:2554
-#, fuzzy, c-format
-#| msgid "readlink failed: %s"
+#, c-format
 msgid "operation failed: %m"
-msgstr "readlink 失败：%s"
+msgstr "操作失败：%m"
 
 #: libmount/src/context_mount.c:1554
 #, c-format
@@ -6840,15 +6803,14 @@ msgid "WARNING: failed to apply propagation flags"
 msgstr "警告：应用传播标志失败"
 
 #: libmount/src/context_mount.c:1564
-#, fuzzy, c-format
-#| msgid "%s is write-protected, mounting read-only"
+#, c-format
 msgid "WARNING: device write-protected, mounted read-only"
-msgstr "%s 写保护，将以只读方式挂载"
+msgstr "警告：设备写保护，使用只读方式挂载"
 
 #: libmount/src/context_mount.c:1578
 #, c-format
 msgid "operation permitted for root only"
-msgstr ""
+msgstr "操作只允许由 root 进行"
 
 #: libmount/src/context_mount.c:1582
 #, c-format
@@ -6884,10 +6846,9 @@ msgid "failed to determine filesystem type"
 msgstr "%s：确定源失败"
 
 #: libmount/src/context_mount.c:1605
-#, fuzzy, c-format
-#| msgid "no filename specified"
+#, c-format
 msgid "no filesystem type specified"
-msgstr "未指定文件名"
+msgstr "未指定文件系统类型"
 
 #: libmount/src/context_mount.c:1612
 #, c-format
@@ -6901,10 +6862,9 @@ msgid "no mount source specified"
 msgstr "未指定挂载点"
 
 #: libmount/src/context_mount.c:1620
-#, fuzzy, c-format
-#| msgid "failed to parse mount options"
+#, c-format
 msgid "failed to parse mount options: %m"
-msgstr "解析挂臷选项失败"
+msgstr "解析挂臷选项失败：%m"
 
 #: libmount/src/context_mount.c:1621
 #, c-format
@@ -6931,16 +6891,14 @@ msgstr "关闭 %s 失败"
 
 #: libmount/src/context_mount.c:1637 libmount/src/context_umount.c:1211
 #: sys-utils/umount.c:238 sys-utils/umount.c:254
-#, fuzzy, c-format
-#| msgid "path to the namespace"
+#, c-format
 msgid "failed to switch namespace"
-msgstr "名字空间路径"
+msgstr "切换名字空间失败"
 
 #: libmount/src/context_mount.c:1640
-#, fuzzy, c-format
-#| msgid "mount failed"
+#, c-format
 msgid "mount failed: %m"
-msgstr "挂载失败"
+msgstr "挂载失败：%m"
 
 #: libmount/src/context_mount.c:1650
 #, fuzzy, c-format
@@ -6961,10 +6919,9 @@ msgid "filesystem was mounted, but any subsequent operation failed: %m"
 msgstr "%s：文件系统已卸载，但 mount(8) 失败"
 
 #: libmount/src/context_mount.c:1677 libmount/src/context_mount.c:1734
-#, fuzzy, c-format
-#| msgid "mount point %s is not a directory"
+#, c-format
 msgid "mount point is not a directory"
-msgstr "挂载点 %s 不是目录"
+msgstr "挂载点不是目录"
 
 #: libmount/src/context_mount.c:1679 login-utils/newgrp.c:226
 #, c-format
@@ -6977,10 +6934,9 @@ msgid "must be superuser to use mount"
 msgstr "必须以超级用户身份使用 mount"
 
 #: libmount/src/context_mount.c:1691
-#, fuzzy, c-format
-#| msgid "mount: %s is busy"
+#, c-format
 msgid "mount point is busy"
-msgstr "mount：%s 忙"
+msgstr "挂载点忙"
 
 #: libmount/src/context_mount.c:1704
 #, fuzzy, c-format
@@ -6989,22 +6945,19 @@ msgid "%s already mounted on %s"
 msgstr "mount：%s 已挂载于 %s\n"
 
 #: libmount/src/context_mount.c:1710
-#, fuzzy, c-format
-#| msgid "%s is already mounted or %s busy"
+#, c-format
 msgid "%s already mounted or mount point busy"
-msgstr "%s 已经挂载或 %s 忙"
+msgstr "%s 已经挂载或挂载点忙"
 
 #: libmount/src/context_mount.c:1716
-#, fuzzy, c-format
-#| msgid "mount point %s does not exist"
+#, c-format
 msgid "mount point does not exist"
-msgstr "挂载点 %s 不存在"
+msgstr "挂载点不存在"
 
 #: libmount/src/context_mount.c:1719
-#, fuzzy, c-format
-#| msgid "mount point %s is a symbolic link to nowhere"
+#, c-format
 msgid "mount point is a symbolic link to nowhere"
-msgstr "挂载点 %s 是一个没有目标的符号链接"
+msgstr "挂载点是一个没有目标的符号链接"
 
 #: libmount/src/context_mount.c:1724
 #, c-format
@@ -7013,10 +6966,9 @@ msgstr "特殊设备 %s 不存在"
 
 #: libmount/src/context_mount.c:1727 libmount/src/context_mount.c:1743
 #: libmount/src/context_mount.c:1827 libmount/src/context_mount.c:1850
-#, fuzzy, c-format
-#| msgid "mount(2) failed"
+#, c-format
 msgid "mount(2) system call failed: %m"
-msgstr "mount(2) 失败"
+msgstr "mount(2) 系统调用失败：%m"
 
 #: libmount/src/context_mount.c:1739
 #, c-format
@@ -7024,16 +6976,14 @@ msgid "special device %s does not exist (a path prefix is not a directory)"
 msgstr "特殊设备 %s 不存在(路径前缀不是目录)"
 
 #: libmount/src/context_mount.c:1751
-#, fuzzy, c-format
-#| msgid "mount: %s not mounted or bad option"
+#, c-format
 msgid "mount point not mounted or bad option"
-msgstr "mount：%s 未挂载或选项错误"
+msgstr "挂载点未挂载或选项有误"
 
 #: libmount/src/context_mount.c:1753
-#, fuzzy, c-format
-#| msgid "%s is not mountpoint or bad option"
+#, c-format
 msgid "not mount point or bad option"
-msgstr "%s 不是一个挂载点或选项有误"
+msgstr "不是一个挂载点或选项有误"
 
 #: libmount/src/context_mount.c:1756
 #, fuzzy, c-format
@@ -7106,8 +7056,7 @@ msgid "%s is not a block device; try \"-o loop\""
 msgstr "%s 不是块设备(用 `-o loop' 试试？)"
 
 #: libmount/src/context_mount.c:1803
-#, fuzzy, c-format
-#| msgid " %s is not a block device"
+#, c-format
 msgid "%s is not a block device"
 msgstr "%s 不是一个块设备"
 
@@ -7150,16 +7099,14 @@ msgid "cannot mount; probably corrupted filesystem on %s"
 msgstr "将不会尝试在“%s”上创建文件系统"
 
 #: libmount/src/context_umount.c:1203 libmount/src/context_umount.c:1249
-#, fuzzy, c-format
-#| msgid "%s: not mounted"
+#, c-format
 msgid "not mounted"
-msgstr "%s：未挂载"
+msgstr "未挂载"
 
 #: libmount/src/context_umount.c:1215
-#, fuzzy, c-format
-#| msgid "mount failed"
+#, c-format
 msgid "umount failed: %m"
-msgstr "挂载失败"
+msgstr "挂载失败：%m"
 
 #: libmount/src/context_umount.c:1224
 #, fuzzy, c-format
@@ -7180,46 +7127,39 @@ msgid "filesystem was unmounted, but any subsequent operation failed: %m"
 msgstr "%s：文件系统已卸载，但 mount(8) 失败"
 
 #: libmount/src/context_umount.c:1246
-#, fuzzy, c-format
-#| msgid "%s: invalid block device"
+#, c-format
 msgid "invalid block device"
-msgstr "%s：无效的块设备"
+msgstr "无效的块设备"
 
 #: libmount/src/context_umount.c:1252
-#, fuzzy, c-format
-#| msgid "%s: can't write superblock"
+#, c-format
 msgid "can't write superblock"
-msgstr "%s：无法写超级块"
+msgstr "无法写超级块"
 
 #: libmount/src/context_umount.c:1255
-#, fuzzy, c-format
-#| msgid "target exists"
+#, c-format
 msgid "target is busy"
-msgstr "目标存在"
+msgstr "目标忙"
 
 #: libmount/src/context_umount.c:1258
-#, fuzzy, c-format
-#| msgid "no mountpoint specified"
+#, c-format
 msgid "no mount point specified"
 msgstr "未指定挂载点"
 
 #: libmount/src/context_umount.c:1261
-#, fuzzy, c-format
-#| msgid "%s: must be superuser to unmount"
+#, c-format
 msgid "must be superuser to unmount"
-msgstr "%s：必须以超级用户身份卸载"
+msgstr "必须以超级用户身份卸载"
 
 #: libmount/src/context_umount.c:1264
-#, fuzzy, c-format
-#| msgid "%s: block devices are not permitted on filesystem"
+#, c-format
 msgid "block devices are not permitted on filesystem"
-msgstr "%s：文件系统不允许块设备"
+msgstr "文件系统不允许块设备"
 
 #: libmount/src/context_umount.c:1267
-#, fuzzy, c-format
-#| msgid "mount(2) failed"
+#, c-format
 msgid "umount(2) system call failed: %m"
-msgstr "mount(2) 失败"
+msgstr "umount(2) 系统调用失败：%m"
 
 #: lib/pager.c:112
 #, c-format
@@ -7227,20 +7167,14 @@ msgid "waitpid failed (%s)"
 msgstr "waitpid 失败(%s)"
 
 #: lib/plymouth-ctrl.c:73
-#, fuzzy
-#| msgid "can not open UNIX socket"
 msgid "cannot open UNIX socket"
-msgstr "打不开 UNIX 套接字"
+msgstr "无法打开 UNIX 套接字"
 
 #: lib/plymouth-ctrl.c:79
-#, fuzzy
-#| msgid "can not set option for UNIX socket"
 msgid "cannot set option for UNIX socket"
 msgstr "无法设置 UNIX 套接字选项"
 
 #: lib/plymouth-ctrl.c:90
-#, fuzzy
-#| msgid "can not connect on UNIX socket"
 msgid "cannot connect on UNIX socket"
 msgstr "无法连接 UNIX 套接字"
 
@@ -7250,10 +7184,8 @@ msgid "the plymouth request %c is not implemented"
 msgstr "plymouth 请求 %c 没有实现"
 
 #: lib/randutils.c:186
-#, fuzzy
-#| msgid "libc pseudo-random functions"
 msgid "getrandom() function"
-msgstr "libc 伪随机函数"
+msgstr "getrandom() 函数"
 
 #: lib/randutils.c:199
 msgid "libc pseudo-random functions"
@@ -7281,13 +7213,12 @@ msgstr "%s：不支持的 swap 版本“%s”"
 
 #: lib/timeutils.c:459
 msgid "format_iso_time: buffer overflow."
-msgstr ""
+msgstr "format_iso_time：缓冲溢出。"
 
 #: lib/timeutils.c:477 lib/timeutils.c:501
-#, fuzzy, c-format
-#| msgid "Value out of range."
+#, c-format
 msgid "time %ld is out of range."
-msgstr "值超出范围。"
+msgstr "时间 %ld 超出范围。"
 
 #: login-utils/chfn.c:96 login-utils/chsh.c:74 login-utils/lslogins.c:1326
 #, c-format
@@ -7296,7 +7227,7 @@ msgstr " %s [选项] [<用户名>]\n"
 
 #: login-utils/chfn.c:99
 msgid "Change your finger information.\n"
-msgstr "更改您的手指信息。\n"
+msgstr "更改您的 finger 信息。\n"
 
 #: login-utils/chfn.c:102
 msgid " -f, --full-name <full-name>  real name\n"
@@ -7344,7 +7275,7 @@ msgstr "住宅电话"
 
 #: login-utils/chfn.c:193 login-utils/chsh.c:186
 msgid "cannot handle multiple usernames"
-msgstr ""
+msgstr "无法处理多个用户名"
 
 #: login-utils/chfn.c:247
 msgid "Aborted."
@@ -7756,10 +7687,8 @@ msgstr ""
 "会话设置问题，中止。"
 
 #: login-utils/login.c:859
-#, fuzzy
-#| msgid "NULL user name in %s:%d. Abort."
 msgid "NULL user name. Abort."
-msgstr "%s:%d 中是空(NULL)用户名。中止。"
+msgstr "空（NULL）用户名。中止。"
 
 #: login-utils/login.c:997
 #, c-format
@@ -7808,10 +7737,9 @@ msgid "login: -h is for superuser only\n"
 msgstr "login：-h 是超级用户专用选项\n"
 
 #: login-utils/login.c:1248
-#, fuzzy, c-format
-#| msgid "Invalid user name \"%s\" in %s:%d. Abort."
+#, c-format
 msgid "Invalid user name \"%s\". Abort."
-msgstr "%2$s:%3$d 中是无效用户名“%1$s”。中止。"
+msgstr "无效的用户名“%s”。中止。"
 
 #: login-utils/login.c:1269
 #, c-format
@@ -7905,16 +7833,12 @@ msgid "Password is locked"
 msgstr "密码已锁定"
 
 #: login-utils/lslogins.c:224
-#, fuzzy
-#| msgid "password expiration date"
 msgid "password encryption method"
-msgstr "密码过期日"
+msgstr "密码加密方式"
 
 #: login-utils/lslogins.c:224
-#, fuzzy
-#| msgid "Password expiration"
 msgid "Password encryption method"
-msgstr "密码过期"
+msgstr "密码加密方式"
 
 #: login-utils/lslogins.c:225
 msgid "log in disabled by nologin(8) or pam_nologin(8)"
@@ -8099,10 +8023,9 @@ msgid "failed to get supplementary groups"
 msgstr "获得附属组失败"
 
 #: login-utils/lslogins.c:992
-#, fuzzy, c-format
-#| msgid "cannot open %s"
+#, c-format
 msgid "cannot found '%s'"
-msgstr "打不开 %s"
+msgstr "无法找到“%s”"
 
 #: login-utils/lslogins.c:1168
 msgid "internal error: unknown column"
@@ -12015,8 +11938,8 @@ msgstr "解析偏移失败"
 msgid "failed to parse step"
 msgstr "解析步长失败"
 
-#: sys-utils/blkdiscard.c:175 sys-utils/blkzone.c:406
-#: sys-utils/fallocate.c:376 sys-utils/fsfreeze.c:110 sys-utils/fstrim.c:447
+#: sys-utils/blkdiscard.c:175 sys-utils/blkzone.c:406 sys-utils/fallocate.c:376
+#: sys-utils/fsfreeze.c:110 sys-utils/fstrim.c:447
 msgid "unexpected number of arguments"
 msgstr "参数数量异常"
 
@@ -19151,10 +19074,8 @@ msgid "Set up and control zram devices.\n"
 msgstr "设置和控制 zram 设备。\n"
 
 #: sys-utils/zramctl.c:548
-#, fuzzy
-#| msgid " -a, --algorithm lzo|lz4   compression algorithm to use\n"
 msgid " -a, --algorithm lzo|lz4|lz4hc|deflate|842   compression algorithm to use\n"
-msgstr " -a, --algorithm lzo|lz4   要使用的压缩算法\n"
+msgstr " -a, --algorithm lzo|lz4|lz4hc|deflate|842   要使用的压缩算法\n"
 
 #: sys-utils/zramctl.c:549
 msgid " -b, --bytes               print sizes in bytes rather than in human readable format\n"
@@ -19173,10 +19094,8 @@ msgid " -o, --output <list>       columns to use for status output\n"
 msgstr " -o, --output <list>       用于状态输出的列\n"
 
 #: sys-utils/zramctl.c:553
-#, fuzzy
-#| msgid " -O, --output-all     output all columns\n"
 msgid "     --output-all          output all columns\n"
-msgstr " -O, --output-all     输出所有列\n"
+msgstr "     --output-all          输出所有列\n"
 
 #: sys-utils/zramctl.c:554
 msgid "     --raw                 use raw status output format\n"
@@ -19548,10 +19467,8 @@ msgid "     --reload               reload prompts on running agetty instances\n"
 msgstr "     --reload               在运行 agetty 实例时重新载入提示\n"
 
 #: term-utils/agetty.c:2375
-#, fuzzy
-#| msgid "     --list-modes         list available modes\n"
 msgid "     --list-speeds          display supported baud rates\n"
-msgstr "     --list-modes         列出可用模式\n"
+msgstr "     --list-speeds          显示支持的波特率\n"
 
 #: term-utils/agetty.c:2729
 #, c-format
@@ -19588,12 +19505,12 @@ msgstr " -v, --verbose  解释正在进行的操作\n"
 
 #: term-utils/mesg.c:130
 msgid "no tty"
-msgstr ""
+msgstr "无 tty"
 
 #: term-utils/mesg.c:139
 #, c-format
 msgid "ttyname() failed, attempting to go around using: %s"
-msgstr ""
+msgstr "ttyname() 失败，尝试使用其它命令绕过：%s"
 
 #: term-utils/mesg.c:150
 msgid "is y"
@@ -19715,10 +19632,8 @@ msgid "Script terminated, max output file size %<PRIu64> exceeded.\n"
 msgstr ""
 
 #: term-utils/script.c:459
-#, fuzzy
-#| msgid "preallocation size exceeded"
 msgid "max output size exceeded"
-msgstr "超过了预分配大小"
+msgstr "超过了最大输出大小"
 
 #: term-utils/script.c:509
 #, c-format
@@ -20008,10 +19923,9 @@ msgid "stdin does not refer to a terminal"
 msgstr ""
 
 #: term-utils/setterm.c:914
-#, fuzzy, c-format
-#| msgid "invalid option"
+#, c-format
 msgid "invalid cursor position: %s"
-msgstr "无效选项"
+msgstr ""
 
 #: term-utils/setterm.c:936
 #, fuzzy
@@ -20363,20 +20277,16 @@ msgid "line %zu: for JSON the name of the column %zu is required"
 msgstr ""
 
 #: text-utils/column.c:457
-#, fuzzy
-#| msgid "failed to allocate output table"
 msgid "failed to allocate output data"
-msgstr "分配输出表失败"
+msgstr "分配输出数据失败"
 
 #: text-utils/column.c:628
 msgid "Columnate lists.\n"
 msgstr "成列输出内容。\n"
 
 #: text-utils/column.c:631
-#, fuzzy
-#| msgid " -t, --table              create a table\n"
 msgid " -t, --table                      create a table\n"
-msgstr " -t, --table              创建表格\n"
+msgstr " -t, --table                      创建表格\n"
 
 #: text-utils/column.c:632
 #, fuzzy

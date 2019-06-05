@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: util-linux-2.34-rc2\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2019-05-30 12:09+0200\n"
-"PO-Revision-Date: 2019-06-05 12:36-0400\n"
+"PO-Revision-Date: 2019-06-05 13:20-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -3977,7 +3977,7 @@ msgstr "未指定磁盘设备"
 
 #: disk-utils/sfdisk.c:828
 msgid "toggle boot flags is unsupported for Hybrid GPT/MBR"
-msgstr "混合 GPT/MBR 不支持切换引导（boot）标志"
+msgstr "混合 GPT/MBR 不支持切换启动（boot）标志"
 
 #: disk-utils/sfdisk.c:833
 msgid "cannot switch to PMBR"
@@ -3985,13 +3985,11 @@ msgstr "无法切换至 PMBR"
 
 #: disk-utils/sfdisk.c:834
 msgid "Activation is unsupported for GPT -- entering nested PMBR."
-msgstr ""
+msgstr "GPT 不支持激活（Activation）-- 将进入嵌套 PMBR。"
 
 #: disk-utils/sfdisk.c:837
-#, fuzzy
-#| msgid "toggle boot flags is supported for MBR only"
 msgid "toggle boot flags is supported for MBR or PMBR only"
-msgstr "开/关启动标志 只支持 MBR"
+msgstr "只支持为 MBR 或 PMBR 切换启动（boot）标志"
 
 #: disk-utils/sfdisk.c:872 disk-utils/sfdisk.c:919 disk-utils/sfdisk.c:1042
 #: disk-utils/sfdisk.c:1106 disk-utils/sfdisk.c:1161 disk-utils/sfdisk.c:1217
@@ -4010,10 +4008,9 @@ msgid "%s: partition %zu: failed to delete"
 msgstr "%s：分区 %zu：删除失败"
 
 #: disk-utils/sfdisk.c:977
-#, fuzzy, c-format
-#| msgid "Device does not contain a recognized partition table."
+#, c-format
 msgid "%s: does not contain a recognized partition table"
-msgstr "设备不包含可识别的分区表。"
+msgstr "%s：不包含可识别的分区表"
 
 #: disk-utils/sfdisk.c:981
 msgid "failed to allocate dump struct"
@@ -4183,10 +4180,9 @@ msgid "line %d: unsupported command"
 msgstr "第 %d 行：不支持的命令"
 
 #: disk-utils/sfdisk.c:1485
-#, fuzzy, c-format
-#| msgid "It is strongly recommended to wipe the device with wipefs(8), in order to avoid possible collisions."
+#, c-format
 msgid "The old %s signature may remain on the device. It is recommended to wipe the device with wipefs(8) or sfdisk --wipe, in order to avoid possible collisions."
-msgstr "强烈建议您使用 wipefs(8)来擦除该设备，以避免潜在的冲突。"
+msgstr "旧签名 %s 可能仍然在设备上存留。建议您使用 wipefs(8) 或者 fdisk --wipe 来擦除该设备，以避免潜在的冲突。"
 
 #: disk-utils/sfdisk.c:1533
 msgid "failed to allocate partition name"
@@ -4299,10 +4295,9 @@ msgid "Failed to apply script headers, disk label not created."
 msgstr "无法应用脚本标头(header)，未创建磁盘标签。"
 
 #: disk-utils/sfdisk.c:1759
-#, fuzzy, c-format
-#| msgid "Failed to add partition"
+#, c-format
 msgid "Failed to add #%d partition"
-msgstr "添加分区失败"
+msgstr "添加 #%d 分区失败"
 
 #: disk-utils/sfdisk.c:1782
 msgid "Script header accepted."
@@ -4334,10 +4329,8 @@ msgstr ""
 " %1$s [选项] <命令>\n"
 
 #: disk-utils/sfdisk.c:1851
-#, fuzzy
-#| msgid " -A, --activate <dev> [<part> ...] list or set bootable MBR partitions\n"
 msgid " -A, --activate <dev> [<part> ...] list or set bootable (P)MBR partitions\n"
-msgstr " -A, --activate <设备> [<分区> ...] 列出或设置可启动的 MBR 分区\n"
+msgstr " -A, --activate <设备> [<分区> ...] 列出或设置可启动的 (P)MBR 分区\n"
 
 #: disk-utils/sfdisk.c:1852
 msgid " -d, --dump <dev>                  dump partition table (usable for later input)\n"
@@ -4601,16 +4594,12 @@ msgstr ""
 "可用的输出列：\n"
 
 #: include/c.h:354
-#, fuzzy
-#| msgid " -?         display this help and exit\n"
 msgid "display this help"
-msgstr " -?         显示此帮助并退出\n"
+msgstr "显示此帮助"
 
 #: include/c.h:355
-#, fuzzy
-#| msgid " -version\n"
 msgid "display version"
-msgstr " -version\n"
+msgstr "显示版本"
 
 #: include/c.h:363
 #, c-format
@@ -4647,10 +4636,9 @@ msgid "failed to set the %s environment variable"
 msgstr "设置环境变量 %s 失败"
 
 #: include/optutils.h:85
-#, fuzzy, c-format
-#| msgid "are mutually exclusive."
+#, c-format
 msgid "%s: mutually exclusive arguments:"
-msgstr "相互排斥。"
+msgstr "%s：互斥参数："
 
 #: include/pt-mbr-partnames.h:1
 msgid "Empty"
@@ -5076,21 +5064,17 @@ msgid "First cylinder"
 msgstr "第一个柱面"
 
 #: libfdisk/src/bsd.c:291 libfdisk/src/dos.c:1269
-#, fuzzy
-#| msgid "Last cylinder, +cylinders or +size{K,M,G,T,P}"
 msgid "Last cylinder, +/-cylinders or +/-size{K,M,G,T,P}"
-msgstr "最后一个柱面, +cylinders 或 +size{K,M,G,T,P}"
+msgstr "最后一个柱面, +/-cylinders 或 +size{K,M,G,T,P}"
 
 #: libfdisk/src/bsd.c:296 libfdisk/src/dos.c:1274 libfdisk/src/gpt.c:2451
-#, fuzzy
-#| msgid "Last sector, +sectors or +size{K,M,G,T,P}"
 msgid "Last sector, +/-sectors or +/-size{K,M,G,T,P}"
-msgstr "上个扇区，+sectors 或 +size{K,M,G,T,P}"
+msgstr "最后一个扇区，+/-sectors 或 +size{K,M,G,T,P}"
 
 #: libfdisk/src/bsd.c:381
 #, c-format
 msgid "The device %s does not contain BSD disklabel."
-msgstr "设备 %s 不包含BSD 磁盘标签。"
+msgstr "设备 %s 不包含 BSD 磁盘标签。"
 
 #: libfdisk/src/bsd.c:383
 msgid "Do you want to create a BSD disklabel?"
@@ -5281,22 +5265,19 @@ msgid "The kernel still uses the old table. The new table will be used at the ne
 msgstr "内核仍在使用旧分区表。新分区表将在下次重启或运行 partprobe(8) 或 kpartx(8) 后生效。"
 
 #: libfdisk/src/context.c:861
-#, fuzzy, c-format
-#| msgid "failed to remove partition"
+#, c-format
 msgid "Failed to remove partition %zu from system"
-msgstr "移除分区失败"
+msgstr "从系统上移除分区 %zu 时失败"
 
 #: libfdisk/src/context.c:869
-#, fuzzy, c-format
-#| msgid "print information about a partition"
+#, c-format
 msgid "Failed to update system information about partition %zu"
-msgstr "打印某个分区的相关信息"
+msgstr "更新系统中有关分区 %zu 的信息时失败"
 
 #: libfdisk/src/context.c:877
-#, fuzzy, c-format
-#| msgid "Failed to add partition"
+#, c-format
 msgid "Failed to add partition %zu to system"
-msgstr "添加分区失败"
+msgstr "添加分区 %zu 至系统时失败"
 
 #: libfdisk/src/context.c:883
 #, fuzzy
@@ -5350,10 +5331,9 @@ msgid "Cylinders as display units are deprecated."
 msgstr "以柱面为显示单位的方式已废弃。"
 
 #: libfdisk/src/dos.c:360
-#, fuzzy, c-format
-#| msgid "The size of this disk is %s (%ju bytes). DOS partition table format can not be used on drives for volumes larger than %lu bytes for %lu-byte sectors. Use GUID partition table format (GPT)."
+#, c-format
 msgid "The size of this disk is %s (%ju bytes). DOS partition table format cannot be used on drives for volumes larger than %lu bytes for %lu-byte sectors. Use GUID partition table format (GPT)."
-msgstr "该磁盘的大小为 %s (%ju 个字节)。DOS 分区表不能用于卷容量大于 %lu 字节，%lu 字节扇区的驱动器。请使用 GUID 分区表格式(GPT)。"
+msgstr "该磁盘的大小为 %s （%ju 字节）。DOS 分区表不能用于卷容量大于 %lu 字节、%lu 字节扇区的驱动器。请使用 GUID 分区表格式（GPT）。"
 
 #: libfdisk/src/dos.c:534
 msgid "Bad offset in primary extended partition."
@@ -5509,7 +5489,7 @@ msgstr "扩展分区已存在。"
 
 #: libfdisk/src/dos.c:1708
 msgid "Extended partition does not exists. Failed to add logical partition."
-msgstr ""
+msgstr "扩展分区不存在。添加逻辑分区失败。"
 
 #: libfdisk/src/dos.c:1744
 msgid "The maximum number of partitions has been created."
@@ -5945,10 +5925,8 @@ msgid "Ceph crypt disk in creation"
 msgstr "创建中的加密 Ceph 磁盘"
 
 #: libfdisk/src/gpt.c:275
-#, fuzzy
-#| msgid "Compaq diagnostics"
 msgid "VMware Diagnostic"
-msgstr "Compaq 诊断"
+msgstr "VMware 诊断"
 
 #: libfdisk/src/gpt.c:276
 #, fuzzy
@@ -5963,10 +5941,8 @@ msgid "VMware Virsto"
 msgstr "VMware VMFS"
 
 #: libfdisk/src/gpt.c:278
-#, fuzzy
-#| msgid "ChromeOS reserved"
 msgid "VMware Reserved"
-msgstr "ChromeOS 保留"
+msgstr "VMware 保留"
 
 #: libfdisk/src/gpt.c:281
 msgid "OpenBSD data"
@@ -6001,10 +5977,9 @@ msgid "Last LBA specified by script is out of range."
 msgstr "脚本指定的最后一个 LBA 超出范围。"
 
 #: libfdisk/src/gpt.c:899
-#, fuzzy, c-format
-#| msgid "GPT PMBR size mismatch (%<PRIu64> != %<PRIu64>) will be corrected by w(rite)."
+#, c-format
 msgid "GPT PMBR size mismatch (%<PRIu64> != %<PRIu64>) will be corrected by write."
-msgstr "GPT PMBR 大小不符(%<PRIu64> != %<PRIu64>)，将用 w(写) 予以更正。"
+msgstr "GPT PMBR 大小不符（%<PRIu64> != %<PRIu64>），将用写入予以更正。"
 
 #: libfdisk/src/gpt.c:921
 msgid "gpt: stat() failed"
@@ -6237,10 +6212,8 @@ msgid "Partition #%zu out of range (maximal end is %<PRIu64> sectors)"
 msgstr "分区 #%u 超出范围(最小终点是 %<PRIu64> 扇区)"
 
 #: libfdisk/src/gpt.c:2754
-#, fuzzy
-#| msgid "The boot partition does not exist."
 msgid "The partition entry size is zero."
-msgstr "启动分区不存在。"
+msgstr "分区条目大小为零。"
 
 #: libfdisk/src/gpt.c:2756
 #, fuzzy, c-format
@@ -17086,10 +17059,9 @@ msgid "%d (%s) old priority %d, new priority %d\n"
 msgstr "%d (%s) 旧优先级为 %d，新优先级为 %d\n"
 
 #: sys-utils/renice.c:150
-#, fuzzy, c-format
-#| msgid "invalid priority argument"
+#, c-format
 msgid "invalid priority '%s'"
-msgstr "无效的 优先级 参数"
+msgstr "无效的优先级“%s”"
 
 #: sys-utils/renice.c:177
 #, c-format
@@ -17104,10 +17076,8 @@ msgid "bad %s value: %s"
 msgstr "错误的 %s 值：%s"
 
 #: sys-utils/rfkill.c:128
-#, fuzzy
-#| msgid "internal kernel device name"
 msgid "kernel device name"
-msgstr "内部内核设备名称"
+msgstr "内核设备名称"
 
 #: sys-utils/rfkill.c:129
 #, fuzzy
@@ -18755,22 +18725,19 @@ msgid "options --setgroups=allow and --map-root-user are mutually exclusive"
 msgstr "--setgroups=allow 和 --map-root-user 选项是互斥的"
 
 #: sys-utils/unshare.c:505
-#, fuzzy, c-format
-#| msgid "cannot change directory to %s"
+#, c-format
 msgid "cannot change root directory to '%s'"
-msgstr "无法更改到 %s 目录"
+msgstr "无法更改根目录至“%s”"
 
 #: sys-utils/unshare.c:509
-#, fuzzy, c-format
-#| msgid "cannot change directory to %s"
+#, c-format
 msgid "cannot chdir to '%s'"
-msgstr "无法更改到 %s 目录"
+msgstr "无法更改目录（chdir）到“%s”"
 
 #: sys-utils/unshare.c:513
-#, fuzzy, c-format
-#| msgid "mount %s failed"
+#, c-format
 msgid "umount %s failed"
-msgstr "挂载 %s 失败"
+msgstr "卸载 %s 失败"
 
 #: sys-utils/unshare.c:515
 #, c-format
@@ -19518,7 +19485,7 @@ msgstr "脚本已于 %s 启动"
 #: term-utils/script.c:210
 #, c-format
 msgid "<not executed on terminal>"
-msgstr ""
+msgstr "<未在终端上执行>"
 
 #: term-utils/script.c:228
 #, fuzzy, c-format
@@ -19679,10 +19646,8 @@ msgid " --reset                           reset terminal to power-on state\n"
 msgstr " --reset                           重置端口到上电时的状态\n"
 
 #: term-utils/setterm.c:390
-#, fuzzy
-#| msgid " --reset                           reset terminal to power-on state\n"
 msgid " --resize                          reset terminal rows and columns\n"
-msgstr " --reset                           重置端口到上电时的状态\n"
+msgstr " --resize                          重置终端行和列大小\n"
 
 #: term-utils/setterm.c:391
 msgid " --initialize                      display init string, and use default settings\n"

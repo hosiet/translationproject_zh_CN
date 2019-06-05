@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: util-linux-2.34-rc2\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2019-05-30 12:09+0200\n"
-"PO-Revision-Date: 2019-05-31 11:23-0400\n"
+"PO-Revision-Date: 2019-06-05 12:36-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -611,16 +611,13 @@ msgid "The type of partition %zu is unchanged."
 msgstr "分区 %zu 的类型未更改。"
 
 #: disk-utils/cfdisk.c:2399
-#, fuzzy
-#| msgid "New shell"
 msgid "New size: "
-msgstr "新 shell"
+msgstr "新大小："
 
 #: disk-utils/cfdisk.c:2414
-#, fuzzy, c-format
-#| msgid "%s: partition #%d resized\n"
+#, c-format
 msgid "Partition %zu resized."
-msgstr "%s：已调整分区 #%d 的大小\n"
+msgstr "已调整分区 %zu 的大小。"
 
 #: disk-utils/cfdisk.c:2432 disk-utils/cfdisk.c:2548 disk-utils/fdisk.c:1076
 #: disk-utils/fdisk-menu.c:591
@@ -896,10 +893,9 @@ msgid "Partition type (type L to list all types): "
 msgstr "分区类型(输入 L 列出所有类型)："
 
 #: disk-utils/fdisk.c:500
-#, fuzzy, c-format
-#| msgid "failed to parse %s partition type '%s'"
+#, c-format
 msgid "Failed to parse '%s' partition type."
-msgstr "解析 %s 的分区类型“%s”失败"
+msgstr "解析“%s”分区类型失败。"
 
 #: disk-utils/fdisk.c:593
 msgid "DOS Compatibility flag is set (DEPRECATED!)"
@@ -2870,22 +2866,7 @@ msgid "failed to execute %s"
 msgstr "执行 %s 失败"
 
 #: disk-utils/mkfs.cramfs.c:128
-#, fuzzy, c-format
-#| msgid ""
-#| "usage: %s [-h] [-v] [-b blksize] [-e edition] [-N endian] [-i file] [-n name] dirname outfile\n"
-#| " -h         print this help\n"
-#| " -v         be verbose\n"
-#| " -E         make all warnings errors (non-zero exit status)\n"
-#| " -b blksize use this blocksize, must equal page size\n"
-#| " -e edition set edition number (part of fsid)\n"
-#| " -N endian  set cramfs endianness (big|little|host), default host\n"
-#| " -i file    insert a file image into the filesystem (requires >= 2.4.0)\n"
-#| " -n name    set name of cramfs filesystem\n"
-#| " -p         pad by %d bytes for boot code\n"
-#| " -s         sort directory entries (old option, ignored)\n"
-#| " -z         make explicit holes (requires >= 2.3.39)\n"
-#| " dirname    root of the filesystem to be compressed\n"
-#| " outfile    output file\n"
+#, c-format
 msgid ""
 "usage: %s [-h] [-v] [-b blksize] [-e edition] [-N endian] [-i file] [-n name] dirname outfile\n"
 " -v         be verbose\n"
@@ -2902,17 +2883,16 @@ msgid ""
 " outfile    output file\n"
 msgstr ""
 "用法：%s [-h] [-v] [-b 块大小] [-e 版本] [-N 大小端] [-i 文件] [-n 名称] 目录名 输出文件\n"
-" -h         打印此帮助\n"
 " -v         详尽模式\n"
 " -E         将所有警告视为错误(退出状态码非 0)\n"
-" -b 块大小  使用此 块大小，必须与页大小相同\n"
-" -e 版本    设置修订版本号(fsid 的一部分)\n"
-" -N 大小端  设置 cramfs 大小端(big|little|host)，默认为 host\n"
-" -i 文件    将文件镜像插入文件系统(要求 >= 2.4.0)\n"
-" -n 名称    设置cramfs 文件系统名称\n"
-" -p         用于启动代码的 %d 字节的 pad 区\n"
-" -s         对目录记录进行排序(旧选项，会被忽略)\n"
-" -z         产生显式空洞 (要求 >= 2.3.39)\n"
+" -b 块大小  使用指定的块大小，必须与页大小相同\n"
+" -e 版本    设置修订版本号（fsid 的一部分）\n"
+" -N 大小端  设置 cramfs 大小端（big|little|host），默认为 host\n"
+" -i 文件    将文件镜像插入文件系统\n"
+" -n 名称    设置 cramfs 文件系统名称\n"
+" -p         为引导代码填充 %d 字节\n"
+" -s         对目录记录进行排序（旧选项，会被忽略）\n"
+" -z         产生显式空洞\n"
 " 目录名     要压缩的文件系统的根目录\n"
 " 输出文件   输出文件\n"
 
@@ -3288,19 +3268,7 @@ msgid "Set up a Linux swap area.\n"
 msgstr "设置 Linux 交换区。\n"
 
 #: disk-utils/mkswap.c:156
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Options:\n"
-#| " -c, --check               check bad blocks before creating the swap area\n"
-#| " -f, --force               allow swap size area be larger than device\n"
-#| " -p, --pagesize SIZE       specify page size in bytes\n"
-#| " -L, --label LABEL         specify label\n"
-#| " -v, --swapversion NUM     specify swap-space version number\n"
-#| " -U, --uuid UUID           specify the uuid to use\n"
-#| " -V, --version             output version information and exit\n"
-#| " -h, --help                display this help and exit\n"
-#| "\n"
+#, c-format
 msgid ""
 "\n"
 "Options:\n"
@@ -3319,9 +3287,6 @@ msgstr ""
 " -L, --label LABEL         指定标签为 LABEL\n"
 " -v, --swapversion NUM     指定交换空间版本号为 NUM\n"
 " -U, --uuid UUID           指定要使用的 UUID\n"
-" -V, --version             输出版本信息并退出\n"
-" -h, --help                显示此帮助并退出\n"
-"\n"
 
 #: disk-utils/mkswap.c:176
 #, c-format
@@ -3654,10 +3619,8 @@ msgstr[0] "#%2d：%9ju-%9ju (%9ju 扇区%6ju MB)\n"
 #: misc-utils/lsblk.c:2070 misc-utils/lslocks.c:471 sys-utils/losetup.c:339
 #: sys-utils/lscpu.c:1643 sys-utils/lscpu.c:1834 sys-utils/prlimit.c:306
 #: sys-utils/rfkill.c:471 sys-utils/swapon.c:293 sys-utils/wdctl.c:271
-#, fuzzy
-#| msgid "failed to allocate output line"
 msgid "failed to allocate output column"
-msgstr "分配输出行失败"
+msgstr "分配输出列失败"
 
 #: disk-utils/partx.c:723
 #, c-format
@@ -3737,22 +3700,16 @@ msgid " -r, --raw            use raw output format\n"
 msgstr " -r, --raw            使用原生输出格式\n"
 
 #: disk-utils/partx.c:772
-#, fuzzy
-#| msgid " -b, --sector-size <size>      physical and logical sector size\n"
 msgid " -S, --sector-size <num>  overwrite sector size\n"
-msgstr " -b, --sectors-size <大小>     显示扇区计数和大小\n"
+msgstr " -S, --sector-size <num>  覆盖并指定扇区大小\n"
 
 #: disk-utils/partx.c:773
-#, fuzzy
-#| msgid " -t, --type <type>    specify the partition type (dos, bsd, solaris, etc.)\n"
 msgid " -t, --type <type>    specify the partition type\n"
-msgstr " -t, --type <类型>    指定分区类型(dos、bsd、solaris 等)\n"
+msgstr " -t, --type <类型>    指定分区类型\n"
 
 #: disk-utils/partx.c:774
-#, fuzzy
-#| msgid "     --list               list settable architectures, and exit\n"
 msgid "     --list-types     list supported partition types and exit\n"
-msgstr "     --list               列出可设置的架构并退出\n"
+msgstr "     --list-types     列出支持的分区类型并退出\n"
 
 #: disk-utils/partx.c:775 sys-utils/fallocate.c:101
 msgid " -v, --verbose        verbose mode\n"
@@ -4019,10 +3976,8 @@ msgid "no disk device specified"
 msgstr "未指定磁盘设备"
 
 #: disk-utils/sfdisk.c:828
-#, fuzzy
-#| msgid "toggle boot flags is supported for MBR only"
 msgid "toggle boot flags is unsupported for Hybrid GPT/MBR"
-msgstr "开/关启动标志 只支持 MBR"
+msgstr "混合 GPT/MBR 不支持切换引导（boot）标志"
 
 #: disk-utils/sfdisk.c:833
 msgid "cannot switch to PMBR"
@@ -4065,10 +4020,9 @@ msgid "failed to allocate dump struct"
 msgstr "分配转储结构失败"
 
 #: disk-utils/sfdisk.c:985
-#, fuzzy, c-format
-#| msgid "failed to dump partition table"
+#, c-format
 msgid "%s: failed to dump partition table"
-msgstr "转储分区表失败"
+msgstr "%s：转储分区表失败"
 
 #: disk-utils/sfdisk.c:1015
 #, c-format

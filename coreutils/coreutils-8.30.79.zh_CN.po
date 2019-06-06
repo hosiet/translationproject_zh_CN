@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-06-05 15:51-0400\n"
+"PO-Revision-Date: 2019-06-06 13:29-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -5809,13 +5809,6 @@ msgstr ""
 "  -T, --tabsize=COLS         指定制表符（Tab）的宽度，而非默认8字符\n"
 
 #: src/ls.c:5267
-#, fuzzy
-#| msgid ""
-#| "  -u                         with -lt: sort by, and show, access time\n"
-#| "                               with -l: show access time and sort by name\n"
-#| "                               otherwise: sort by access time\n"
-#| "  -U                         do not sort; list entries in directory order\n"
-#| "  -v                         natural sort of (version) numbers within text\n"
 msgid ""
 "  -u                         with -lt: sort by, and show, access time;\n"
 "                               with -l: show access time and sort by name;\n"
@@ -5823,11 +5816,11 @@ msgid ""
 "  -U                         do not sort; list entries in directory order\n"
 "  -v                         natural sort of (version) numbers within text\n"
 msgstr ""
-"  -u\t\t\t同-lt 一起使用：按照访问时间排序并显示\n"
-"\t\t\t同-l一起使用：显示访问时间并按文件名排序\n"
-"\t\t\t其他：按照访问时间排序\n"
-"  -U\t\t\t不进行排序；按照目录顺序列出项目\n"
-"  -v\t\t\t在文本中进行数字(版本)的自然排序\n"
+"  -u                         同 -lt 一起使用：按照访问时间排序并显示；\n"
+"                               同 -l 一起使用：显示访问时间并按文件名排序\n"
+"                               其它：按照访问时间排序，最新的最靠前\n"
+"  -U                         不进行排序；按照目录顺序列出项目\n"
+"  -v                         在文本中进行数字（版本）的自然排序\n"
 
 #: src/ls.c:5274
 #, fuzzy
@@ -7059,10 +7052,9 @@ msgid "large input value %s: possible precision loss"
 msgstr "较大的输入值 %s：可能出现精度丢失"
 
 #: src/numfmt.c:1500
-#, fuzzy, c-format
-#| msgid "invalid page range %s"
+#, c-format
 msgid "invalid padding value %s"
-msgstr "页码范围%s 无效"
+msgstr "无效的填充值 %s"
 
 #: src/numfmt.c:1513
 #, fuzzy

@@ -7,10 +7,10 @@
 # Boyuan Yang <073plan@gmail.com>, 2018, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: nano 4.1-pre1\n"
+"Project-Id-Version: nano 4.3-pre1\n"
 "Report-Msgid-Bugs-To: nano-devel@gnu.org\n"
 "POT-Creation-Date: 2019-06-06 12:22+0200\n"
-"PO-Revision-Date: 2019-04-09 14:55-0400\n"
+"PO-Revision-Date: 2019-06-06 11:08-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -196,10 +196,9 @@ msgid "\"%s\" is a device file"
 msgstr "\"%s\" 是一个设备文件"
 
 #: src/files.c:447
-#, fuzzy, c-format
-#| msgid "\"%s\" is a directory"
+#, c-format
 msgid "\"%s\" is a FIFO"
-msgstr "“%s”是一个目录"
+msgstr "“%s”是一个命名管道（FIFO）"
 
 #: src/files.c:530 src/files.c:556
 msgid "spelling correction"
@@ -236,7 +235,7 @@ msgstr "无多余文件缓冲区可启用"
 
 #: src/files.c:747 src/files.c:968 src/files.c:1843
 msgid "Interrupted"
-msgstr ""
+msgstr "被中断"
 
 #: src/files.c:886
 #, c-format
@@ -278,16 +277,12 @@ msgid "File \"%s\" not found"
 msgstr "文件“%s”未找到"
 
 #: src/files.c:952
-#, fuzzy
-#| msgid "Recording a macro..."
 msgid "Reading from FIFO..."
-msgstr "正在录制宏..."
+msgstr "正在从命名管道（FIFO）录制..."
 
 #: src/files.c:980
-#, fuzzy
-#| msgid "Searching..."
 msgid "Reading..."
-msgstr "正在搜索..."
+msgstr "正在读取..."
 
 #. TRANSLATORS: The next six messages are prompts.
 #: src/files.c:1046
@@ -354,7 +349,7 @@ msgstr "写入临时文件%s 出错"
 
 #: src/files.c:1819
 msgid "Writing to FIFO..."
-msgstr ""
+msgstr "正在写入命名管道（FIFO）..."
 
 #: src/files.c:1845 src/files.c:1855 src/files.c:1876 src/files.c:1893
 #: src/files.c:1903 src/files.c:1936 src/files.c:1945
@@ -363,10 +358,8 @@ msgid "Error writing %s: %s"
 msgstr "写入%s 出错：%s"
 
 #: src/files.c:1862
-#, fuzzy
-#| msgid "Executing..."
 msgid "Writing..."
-msgstr "正在执行..."
+msgstr "正在写入..."
 
 #: src/files.c:1995
 #, c-format
@@ -1579,19 +1572,15 @@ msgstr ""
 #. TRANSLATORS: The next three are column headers of the --help output.
 #: src/nano.c:700
 msgid "Option"
-msgstr ""
+msgstr "选项"
 
 #: src/nano.c:700
-#, fuzzy
-#| msgid "Missing option"
 msgid "Long option"
-msgstr "缺少选项"
+msgstr "长选项"
 
 #: src/nano.c:700
-#, fuzzy
-#| msgid "Option\t\tMeaning\n"
 msgid "Meaning"
-msgstr "选项\t\t意义\n"
+msgstr "意义"
 
 #. TRANSLATORS: The next forty or so strings are option descriptions
 #. * for the --help output.  Try to keep them at most 40 characters.
@@ -1888,16 +1877,13 @@ msgid "Save modified buffer? "
 msgstr "保存已修改的缓冲区？"
 
 #: src/nano.c:1065
-#, fuzzy
-#| msgid "Couldn't reopen stdin from keyboard, sorry\n"
 msgid "Could not reconnect stdin to keyboard\n"
-msgstr "对不起，无法从键盘设备重新打开标准输入\n"
+msgstr "无法从键盘设备重新连接标准输入\n"
 
 #: src/nano.c:1086
-#, fuzzy, c-format
-#| msgid "Reading from standard input; type ^D or ^D^D to finish.\n"
+#, c-format
 msgid "Reading data from keyboard; type ^D or ^D^D to finish.\n"
-msgstr "正在从标准输入读取；输入 ^D 或 ^D^D 以结束。\n"
+msgstr "正在从键盘读取数据；输入 ^D 或 ^D^D 以结束。\n"
 
 #: src/nano.c:1096
 #, c-format
@@ -2180,10 +2166,8 @@ msgid "Could not find syntax \"%s\" to extend"
 msgstr "无法找到要扩展的语法“%s”"
 
 #: src/rcfile.c:1042
-#, fuzzy
-#| msgid "Could not find syntax \"%s\" to extend"
 msgid "Only an 'include' syntax can be extended"
-msgstr "无法找到要扩展的语法“%s”"
+msgstr "只能扩展一个“include”语法"
 
 #: src/rcfile.c:1070 src/rcfile.c:1276
 #, c-format
@@ -2457,10 +2441,9 @@ msgid "Error invoking \"spell\""
 msgstr "调用 \"spell\" 错误"
 
 #: src/text.c:2672
-#, fuzzy, c-format
-#| msgid "Path '%s': %s"
+#, c-format
 msgid "%s: %s"
-msgstr "路径“%s”：%s"
+msgstr "%s: %s"
 
 #: src/text.c:2674
 msgid "Finished checking spelling"

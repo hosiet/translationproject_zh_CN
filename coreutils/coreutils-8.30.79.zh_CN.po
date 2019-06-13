@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-06-06 13:29-0400\n"
+"PO-Revision-Date: 2019-06-13 12:12-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -5823,13 +5823,6 @@ msgstr ""
 "  -v                         在文本中进行数字（版本）的自然排序\n"
 
 #: src/ls.c:5274
-#, fuzzy
-#| msgid ""
-#| "  -w, --width=COLS           assume screen width instead of current value\n"
-#| "  -x                         list entries by lines instead of by columns\n"
-#| "  -X                         sort alphabetically by entry extension\n"
-#| "  -Z, --context              print any SELinux security context of each file\n"
-#| "  -1                         list one file per line\n"
 msgid ""
 "  -w, --width=COLS           set output width to COLS.  0 means no limit\n"
 "  -x                         list entries by lines instead of by columns\n"
@@ -5837,10 +5830,11 @@ msgid ""
 "  -Z, --context              print any security context of each file\n"
 "  -1                         list one file per line.  Avoid '\\n' with -q or -b\n"
 msgstr ""
-"  -w, --width=COLS\t自行指定萤幕宽度而不使用目前的数值\n"
-"  -x\t\t\t逐行列出项目而不是逐栏列出\n"
-"  -X\t\t\t根据扩展名排序\n"
-"  -1\t\t\t每行只列出一个文件\n"
+"  -w, --width=COLS           设置输出宽度为 COLS 对应的值。0 代表无限制\n"
+"  -x                         逐行列出项目而不是逐栏列出\n"
+"  -X                         根据扩展名按字母顺序排序\n"
+"  -Z, --context              输出每个文件的所有安全上下文信息\n"
+"  -1                         每行只列出一个文件。与 -q 或 -b 共用时避免 '\\n'\n"
 
 #: src/ls.c:5285
 msgid ""
@@ -5851,6 +5845,13 @@ msgid ""
 "TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.\n"
 "Also the TIME_STYLE environment variable sets the default style to use.\n"
 msgstr ""
+"\n"
+"TIME_STYLE 参数可以是 full-iso、long-iso、iso、locale 或 +格式。\n"
+"这里的格式字符串按照类似 date(1) 的方式进行解读。如果格式字符串是\n"
+"格式1<换行符>格式2 的形式的话，格式1对应的字符串将应用于不是最近使用的文件\n"
+"而格式2对应的字符串将应用于最近使用的文件。TIME_STYLE 如果带有“posix-”\n"
+"前缀，它只会在 POSIX locale 之外发挥作用。另外，TIME_STYLE 环境变量如果存在\n"
+"则会作为默认使用的格式。\n"
 
 #: src/ls.c:5293
 msgid ""
@@ -5935,6 +5936,8 @@ msgid ""
 "  -l, --length         digest length in bits; must not exceed the maximum for\n"
 "                       the blake2 algorithm and must be a multiple of 8\n"
 msgstr ""
+"  -l, --length         摘要长度，以比特位计算；不能超过 blake2 算法的最大值\n"
+"                       且必须是 8 的倍数\n"
 
 #: src/md5sum.c:258
 msgid "      --tag            create a BSD-style checksum\n"
@@ -6131,6 +6134,9 @@ msgid ""
 "      --context[=CTX]  like -Z, or if CTX is specified then set the SELinux\n"
 "                         or SMACK security context to CTX\n"
 msgstr ""
+"  -Z                   设置每个创建的目录的 SELinux 安全上下文为默认类型\n"
+"      --context[=CTX]  类似 -Z，或如果指定了 CTX，则将 SELinux 或 SMACK 安全\n"
+"                         上下文设置为 CTX 对应的值\n"
 
 #: src/mkdir.c:221
 #, c-format
@@ -7629,10 +7635,8 @@ msgid "'-N NUMBER' invalid starting line number"
 msgstr "\"-N 编号\"中含有无效的起始行号：%s"
 
 #: src/pr.c:997
-#, fuzzy
-#| msgid "`-o MARGIN' invalid line offset: %s"
 msgid "'-o MARGIN' invalid line offset"
-msgstr "\"-o 页边距\"中含有无效的行偏移量：%s"
+msgstr "“-o 页边距”中含有无效的行偏移量"
 
 #: src/pr.c:1034
 #, fuzzy
@@ -8373,39 +8377,22 @@ msgstr ""
 "\t\t\t\t数的文件系统上的文件\n"
 
 #: src/rm.c:152
-#, fuzzy
-#| msgid ""
-#| "      --no-preserve-root  do not treat `/' specially\n"
-#| "      --preserve-root   do not remove `/' (default)\n"
-#| "  -r, -R, --recursive   remove directories and their contents recursively\n"
-#| "  -v, --verbose         explain what is being done\n"
 msgid ""
 "      --no-preserve-root  do not treat '/' specially\n"
 "      --preserve-root[=all]  do not remove '/' (default);\n"
 "                              with 'all', reject any command line argument\n"
 "                              on a separate device from its parent\n"
 msgstr ""
-"      --no-preserve-roo\t不特殊对待\"/\"\n"
-"      --preserve-root\t不允许删除\"/\"(默认)\n"
-"  -r, -R, --recursive\t递归删除目录及其内容\n"
-"  -v, --verbose\t\t详细显示进行的步骤\n"
 
 #: src/rm.c:158
-#, fuzzy
-#| msgid ""
-#| "      --no-preserve-root  do not treat `/' specially\n"
-#| "      --preserve-root   do not remove `/' (default)\n"
-#| "  -r, -R, --recursive   remove directories and their contents recursively\n"
-#| "  -v, --verbose         explain what is being done\n"
 msgid ""
 "  -r, -R, --recursive   remove directories and their contents recursively\n"
 "  -d, --dir             remove empty directories\n"
 "  -v, --verbose         explain what is being done\n"
 msgstr ""
-"      --no-preserve-roo\t不特殊对待\"/\"\n"
-"      --preserve-root\t不允许删除\"/\"(默认)\n"
-"  -r, -R, --recursive\t递归删除目录及其内容\n"
-"  -v, --verbose\t\t详细显示进行的步骤\n"
+"  -r, -R, --recursive   递归删除目录及其内容\n"
+"  -d, --dir             删除空目录\n"
+"  -v, --verbose         详细显示进行的步骤\n"
 
 #: src/rm.c:165
 msgid ""

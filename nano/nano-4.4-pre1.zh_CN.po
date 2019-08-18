@@ -7,10 +7,10 @@
 # Boyuan Yang <073plan@gmail.com>, 2018, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: nano 4.3-pre1\n"
+"Project-Id-Version: nano 4.4-pre1\n"
 "Report-Msgid-Bugs-To: nano-devel@gnu.org\n"
 "POT-Creation-Date: 2019-08-18 16:22+0200\n"
-"PO-Revision-Date: 2019-06-06 11:08-0400\n"
+"PO-Revision-Date: 2019-08-18 14:54-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #: src/browser.c:67
 #, c-format
@@ -146,16 +146,13 @@ msgstr "目录“%s”不可写入"
 
 #. TRANSLATORS: Keep the next eight messages at most 76 characters.
 #: src/files.c:181
-#, fuzzy
-#| msgid "Couldn't determine my identity for lock file (getpwuid() failed)"
 msgid "Couldn't determine my identity for lock file"
-msgstr "无法为锁文件确定我的身份（getpwuid() 失败）"
+msgstr "无法为锁文件确定我的身份"
 
 #: src/files.c:189
-#, fuzzy, c-format
-#| msgid "Couldn't determine hostname for lock file: %s"
+#, c-format
 msgid "Couldn't determine hostname: %s"
-msgstr "无法为锁文件确定主机名称：%s"
+msgstr "无法确定主机名称：%s"
 
 #: src/files.c:208 src/files.c:217 src/files.c:255 src/files.c:262
 #, c-format
@@ -1978,16 +1975,13 @@ msgid "Bad quoting regex \"%s\": %s\n"
 msgstr "非法的正则表达式 \"%s\": %s\n"
 
 #: src/nano.c:2599
-#, fuzzy, c-format
-#| msgid "Invalid back reference"
+#, c-format
 msgid "Invalid search modifier '%c'"
-msgstr "无效的后向引用"
+msgstr "无效的搜索修饰符“%c”"
 
 #: src/nano.c:2610
-#, fuzzy
-#| msgid "Empty regex string"
 msgid "Empty search string"
-msgstr "空正则表达式字符串"
+msgstr "空搜索字符串"
 
 #: src/nano.c:2615 src/search.c:784
 msgid "Invalid line or column number"

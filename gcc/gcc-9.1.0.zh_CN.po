@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: gcc 9.1.0\n"
 "Report-Msgid-Bugs-To: https://gcc.gnu.org/bugs/\n"
 "POT-Creation-Date: 2019-05-02 20:28+0000\n"
-"PO-Revision-Date: 2019-08-19 15:13-0400\n"
+"PO-Revision-Date: 2019-08-23 15:45-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -721,9 +721,9 @@ msgid "    -o, --object                        Print object level info\n"
 msgstr "    -o, --object                        打印对象级信息\n"
 
 #: gcov-tool.c:424
-#, fuzzy, c-format
+#, c-format
 msgid "    -t <float>, --hot_threshold <float> Set the threshold for hotness\n"
-msgstr "-t <浮点数>, --hot_threshold <浮点数> 设置热阈值"
+msgstr "    -t <浮点数>, --hot_threshold <浮点数> 设置热阈值\n"
 
 #: gcov-tool.c:444
 #, c-format
@@ -927,7 +927,7 @@ msgstr "gcov %s%s\n"
 #: gcov.c:1250
 #, c-format
 msgid "'%s' file is already processed\n"
-msgstr ""
+msgstr "“%s”文件已被处理\n"
 
 #: gcov.c:1364
 #, c-format
@@ -1293,12 +1293,13 @@ msgid " All options with the desired characteristics have already been displayed
 msgstr " 所有具有指定特性的选项已被显示\n"
 
 #: opts.c:1581
-#, fuzzy, c-format
-#| msgid "Valid arguments for the -msdata= option"
+#, c-format
 msgid ""
 "  Known valid arguments for %s option:\n"
 "   "
-msgstr "-msdata= 选项的有效参数为："
+msgstr ""
+"  用于 %s 选项的已知参数：\n"
+"   "
 
 #: opts.c:1631
 msgid "The following options are target specific"
@@ -1497,7 +1498,6 @@ msgid "function not inlinable"
 msgstr "函数不能内联"
 
 #: cif-code.def:60
-#, fuzzy
 msgid "function body can be overwritten at link time"
 msgstr "函数体可能在链接时被改写"
 
@@ -3165,9 +3165,9 @@ msgid "missing operand"
 msgstr "缺少操作数"
 
 #: config/aarch64/aarch64.c:7888
-#, fuzzy, c-format
+#, c-format
 msgid "invalid constant"
-msgstr "%<#pragma pack%>中有无效常量 - 已忽略"
+msgstr "无效的常量"
 
 #: config/aarch64/aarch64.c:7891
 #, fuzzy, c-format
@@ -3943,8 +3943,7 @@ msgstr "前自减地址不是一个寄存器"
 msgid "post-increment address is not a register"
 msgstr "后自增地址不是一个寄存器"
 
-#: config/m32r/m32r.c:2353 config/m32r/m32r.c:2368
-#: config/rs6000/rs6000.c:33204
+#: config/m32r/m32r.c:2353 config/m32r/m32r.c:2368 config/rs6000/rs6000.c:33204
 msgid "bad address"
 msgstr "错误地址"
 
@@ -5935,8 +5934,7 @@ msgid "-private_bundle not allowed with -dynamiclib"
 msgstr "-private_bundle 不能和 -dynamiclib 一起使用"
 
 #: config/dragonfly.h:76 config/i386/freebsd.h:82 config/i386/freebsd64.h:35
-#: config/ia64/freebsd.h:26 config/rs6000/sysv4.h:760
-#: config/sparc/freebsd.h:45
+#: config/ia64/freebsd.h:26 config/rs6000/sysv4.h:760 config/sparc/freebsd.h:45
 #, fuzzy
 msgid "consider using '-pg' instead of '-p' with gprof(1)"
 msgstr "与 gprof(1) 一起使用时请考虑使用‘-pg’以代替‘-p’"
@@ -6022,18 +6020,16 @@ msgstr ""
 
 #: config/pa/pa-hpux10.h:102 config/pa/pa-hpux10.h:105
 #: config/pa/pa-hpux10.h:113 config/pa/pa-hpux10.h:116
-#: config/pa/pa-hpux11.h:134 config/pa/pa-hpux11.h:137
-#: config/pa/pa64-hpux.h:29 config/pa/pa64-hpux.h:32 config/pa/pa64-hpux.h:41
-#: config/pa/pa64-hpux.h:44
+#: config/pa/pa-hpux11.h:134 config/pa/pa-hpux11.h:137 config/pa/pa64-hpux.h:29
+#: config/pa/pa64-hpux.h:32 config/pa/pa64-hpux.h:41 config/pa/pa64-hpux.h:44
 #, fuzzy
 msgid "warning: consider linking with '-static' as system libraries with"
 msgstr "警告：考虑链接时使用‘-static’因为系统库"
 
 #: config/pa/pa-hpux10.h:103 config/pa/pa-hpux10.h:106
 #: config/pa/pa-hpux10.h:114 config/pa/pa-hpux10.h:117
-#: config/pa/pa-hpux11.h:135 config/pa/pa-hpux11.h:138
-#: config/pa/pa64-hpux.h:30 config/pa/pa64-hpux.h:33 config/pa/pa64-hpux.h:42
-#: config/pa/pa64-hpux.h:45
+#: config/pa/pa-hpux11.h:135 config/pa/pa-hpux11.h:138 config/pa/pa64-hpux.h:30
+#: config/pa/pa64-hpux.h:33 config/pa/pa64-hpux.h:42 config/pa/pa64-hpux.h:45
 msgid "  profiling support are only provided in archive format"
 msgstr "取样支持只支持存档格式"
 
@@ -6430,10 +6426,10 @@ msgstr "将默认实型种别设为 8 字节宽"
 msgid "Allow dollar signs in entity names."
 msgstr "允许在实体名中使用美元符号"
 
-#: fortran/lang.opt:489 config/alpha/alpha.opt:31 common.opt:654
-#: common.opt:788 common.opt:998 common.opt:1002 common.opt:1006
-#: common.opt:1010 common.opt:1574 common.opt:1630 common.opt:1762
-#: common.opt:1766 common.opt:2000 common.opt:2178 common.opt:2879
+#: fortran/lang.opt:489 config/alpha/alpha.opt:31 common.opt:654 common.opt:788
+#: common.opt:998 common.opt:1002 common.opt:1006 common.opt:1010
+#: common.opt:1574 common.opt:1630 common.opt:1762 common.opt:1766
+#: common.opt:2000 common.opt:2178 common.opt:2879
 msgid "Does nothing. Preserved for backward compatibility."
 msgstr "不起作用。为向前兼容保留的选项。"
 
@@ -20144,13 +20140,12 @@ msgstr "类型属性在定义后被忽略"
 #: c-family/c-attribs.c:3695 c-family/c-attribs.c:3713
 #: c-family/c-attribs.c:3736 c-family/c-attribs.c:3775
 #: c-family/c-attribs.c:3857 c-family/c-attribs.c:3913
-#: c-family/c-attribs.c:3929 c-family/c-attribs.c:4023
-#: c-family/c-common.c:5680 config/darwin.c:2066 config/arm/arm.c:6898
-#: config/arm/arm.c:6926 config/arm/arm.c:6943 config/avr/avr.c:9698
-#: config/csky/csky.c:6060 config/csky/csky.c:6082 config/h8300/h8300.c:5483
-#: config/h8300/h8300.c:5507 config/i386/i386.c:6378 config/i386/i386.c:41272
-#: config/i386/i386.c:45856 config/ia64/ia64.c:788
-#: config/rs6000/rs6000.c:32968 config/spu/spu.c:3748
+#: c-family/c-attribs.c:3929 c-family/c-attribs.c:4023 c-family/c-common.c:5680
+#: config/darwin.c:2066 config/arm/arm.c:6898 config/arm/arm.c:6926
+#: config/arm/arm.c:6943 config/avr/avr.c:9698 config/csky/csky.c:6060
+#: config/csky/csky.c:6082 config/h8300/h8300.c:5483 config/h8300/h8300.c:5507
+#: config/i386/i386.c:6378 config/i386/i386.c:41272 config/i386/i386.c:45856
+#: config/ia64/ia64.c:788 config/rs6000/rs6000.c:32968 config/spu/spu.c:3748
 #: ada/gcc-interface/utils.c:6351 ada/gcc-interface/utils.c:6368
 #: ada/gcc-interface/utils.c:6384 ada/gcc-interface/utils.c:6410
 #: brig/brig-lang.c:484 lto/lto-lang.c:286
@@ -28255,8 +28250,7 @@ msgstr "需要类型%qT，但实参的类型为%qT"
 msgid "%qE attribute argument %i has type %qT"
 msgstr "需要类型%qT，但实参的类型为%qT"
 
-#: c-family/c-attribs.c:552 c-family/c-attribs.c:3508
-#: c-family/c-attribs.c:3512
+#: c-family/c-attribs.c:552 c-family/c-attribs.c:3508 c-family/c-attribs.c:3512
 #, fuzzy, gcc-internal-format
 #| msgid "%qE attribute argument not an integer constant"
 msgid "%qE attribute argument value %qE is not an integer constant"
@@ -32659,8 +32653,7 @@ msgid "argument of %qE attribute ignored"
 msgstr "%qE属性的实参不是“ilink1”或“ilink2”"
 
 #: config/arc/arc.c:11192 config/avr/avr.c:9777 config/bfin/bfin.c:4830
-#: config/i386/winnt.c:63 config/msp430/msp430.c:2055
-#: config/nvptx/nvptx.c:5082
+#: config/i386/winnt.c:63 config/msp430/msp430.c:2055 config/nvptx/nvptx.c:5082
 #, gcc-internal-format
 msgid "%qE attribute only applies to variables"
 msgstr "属性%qE只能用于变量"
@@ -40098,8 +40091,8 @@ msgstr "%<__builtin_eh_return_regno%>的实参必须是常量"
 msgid "argument %u of %<__builtin_tgmath%> has no arguments"
 msgstr "%<__builtin_eh_return_regno%>的实参必须是常量"
 
-#: c/c-parser.c:8155 c/c-parser.c:9242 c/c-parser.c:9264
-#: c/gimple-parser.c:1398 c/gimple-parser.c:1404 c/gimple-parser.c:1918
+#: c/c-parser.c:8155 c/c-parser.c:9242 c/c-parser.c:9264 c/gimple-parser.c:1398
+#: c/gimple-parser.c:1404 c/gimple-parser.c:1918
 #, gcc-internal-format
 msgid "expected expression"
 msgstr "需要表达式"
@@ -42471,8 +42464,8 @@ msgstr "%<#pragma omp taskwait%>只能用在复合语句中"
 msgid "%<_Atomic%> %qE in %qs clause"
 msgstr "字段%qE的类型不完全"
 
-#: c/c-typeck.c:12860 c/c-typeck.c:14255 c/c-typeck.c:14373
-#: cp/semantics.c:4665 cp/semantics.c:7021 cp/semantics.c:7148
+#: c/c-typeck.c:12860 c/c-typeck.c:14255 c/c-typeck.c:14373 cp/semantics.c:4665
+#: cp/semantics.c:7021 cp/semantics.c:7148
 #, fuzzy, gcc-internal-format
 msgid "bit-field %qE in %qs clause"
 msgstr "字段%qE的类型不完全"
@@ -42500,8 +42493,8 @@ msgstr "%qE在子句%qs中不是一个变量"
 msgid "%<_Atomic%> %qD in %qs clause"
 msgstr "字段%qE的类型不完全"
 
-#: c/c-typeck.c:12899 c/c-typeck.c:14421 c/c-typeck.c:14531
-#: cp/semantics.c:4711 cp/semantics.c:7203 cp/semantics.c:7374
+#: c/c-typeck.c:12899 c/c-typeck.c:14421 c/c-typeck.c:14531 cp/semantics.c:4711
+#: cp/semantics.c:7203 cp/semantics.c:7374
 #, fuzzy, gcc-internal-format
 msgid "%qD is threadprivate variable in %qs clause"
 msgstr "%qD在子句%qs中不是一个变量"
@@ -42516,8 +42509,8 @@ msgstr "数组 new 的大小必须有整数类型"
 msgid "length %qE of array section does not have integral type"
 msgstr "数组 new 的大小必须有整数类型"
 
-#: c/c-typeck.c:12971 c/c-typeck.c:13037 c/c-typeck.c:13309
-#: cp/semantics.c:4790 cp/semantics.c:4856
+#: c/c-typeck.c:12971 c/c-typeck.c:13037 c/c-typeck.c:13309 cp/semantics.c:4790
+#: cp/semantics.c:4856
 #, fuzzy, gcc-internal-format
 msgid "zero length array section in %qs clause"
 msgstr "使用了变长数组"
@@ -42702,11 +42695,10 @@ msgid "%qE appears more than once in data clauses"
 msgstr "%qE在数据子句中多次出现"
 
 #: c/c-typeck.c:14064 c/c-typeck.c:14095 c/c-typeck.c:14344 c/c-typeck.c:14460
-#: c/c-typeck.c:14467 c/c-typeck.c:14483 c/c-typeck.c:14494
-#: cp/semantics.c:6419 cp/semantics.c:6427 cp/semantics.c:6485
-#: cp/semantics.c:6492 cp/semantics.c:6536 cp/semantics.c:7110
-#: cp/semantics.c:7253 cp/semantics.c:7260 cp/semantics.c:7276
-#: cp/semantics.c:7287
+#: c/c-typeck.c:14467 c/c-typeck.c:14483 c/c-typeck.c:14494 cp/semantics.c:6419
+#: cp/semantics.c:6427 cp/semantics.c:6485 cp/semantics.c:6492
+#: cp/semantics.c:6536 cp/semantics.c:7110 cp/semantics.c:7253
+#: cp/semantics.c:7260 cp/semantics.c:7276 cp/semantics.c:7287
 #, gcc-internal-format
 msgid "%qD appears more than once in data clauses"
 msgstr "%qD在数据子句中多次出现"

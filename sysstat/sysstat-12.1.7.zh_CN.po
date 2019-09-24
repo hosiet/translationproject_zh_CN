@@ -6,10 +6,10 @@
 # Boyuan Yang <073plan@gmail.com>, 2018, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: sysstat 12.1.4\n"
+"Project-Id-Version: sysstat 12.1.7\n"
 "Report-Msgid-Bugs-To: sysstat <at> orange.fr\n"
 "POT-Creation-Date: 2019-09-22 15:15+0200\n"
-"PO-Revision-Date: 2019-04-18 16:36-0400\n"
+"PO-Revision-Date: 2019-09-22 13:51-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #: cifsiostat.c:77 mpstat.c:131 iostat.c:84 tapestat.c:105 sar.c:106
 #, c-format
@@ -245,7 +245,7 @@ msgstr "文件中的运行记录数量：%u\n"
 #: sadf_misc.c:1254
 #, c-format
 msgid "Extra structures available: %c\n"
-msgstr ""
+msgstr "额外可用的结构：%c\n"
 
 #: sadf_misc.c:1257
 #, c-format
@@ -319,19 +319,7 @@ msgid "sysstat version %s\n"
 msgstr "sysstat 版本 %s\n"
 
 #: sar.c:121
-#, fuzzy, c-format
-#| msgid ""
-#| "Options are:\n"
-#| "[ -A ] [ -B ] [ -b ] [ -C ] [ -D ] [ -d ] [ -F [ MOUNT ] ] [ -H ] [ -h ]\n"
-#| "[ -p ] [ -q ] [ -r [ ALL ] ] [ -S ] [ -t ] [ -u [ ALL ] ] [ -V ]\n"
-#| "[ -v ] [ -W ] [ -w ] [ -y ] [ -z ]\n"
-#| "[ -I { <int_list> | SUM | ALL } ] [ -P { <cpu_list> | ALL } ]\n"
-#| "[ -m { <keyword> [,...] | ALL } ] [ -n { <keyword> [,...] | ALL } ]\n"
-#| "[ --dev=<dev_list> ] [ --fs=<fs_list> ] [ --iface=<iface_list> ]\n"
-#| "[ --dec={ 0 | 1 | 2 } ] [ --help ] [ --human ] [ --sadc ]\n"
-#| "[ -j { ID | LABEL | PATH | UUID | ... } ]\n"
-#| "[ -f [ <filename> ] | -o [ <filename> ] | -[0-9]+ ]\n"
-#| "[ -i <interval> ] [ -s [ <hh:mm[:ss]> ] ] [ -e [ <hh:mm[:ss]> ] ]\n"
+#, c-format
 msgid ""
 "Options are:\n"
 "[ -A ] [ -B ] [ -b ] [ -C ] [ -D ] [ -d ] [ -F [ MOUNT ] ] [ -H ] [ -h ]\n"
@@ -353,7 +341,7 @@ msgstr ""
 "[ -m { <关键字> [,...] | ALL } ] [ -n { <关键字> [,...] | ALL } ]\n"
 "[ --dev=<设备列表> ] [ --fs=<文件系统列表> ] [ --iface=<iface_列表> ]\n"
 "[ --dec={ 0 | 1 | 2 } ] [ --help ] [ --human ] [ --sadc ]\n"
-"[ -j { ID | LABEL | PATH | UUID | ... } ]\n"
+"[ -j { SID | ID | LABEL | PATH | UUID | ... } ]\n"
 "[ -f [ <文件名> ] | -o [ <文件名> ] | -[0-9]+ ]\n"
 "[ -i <时间间隔> ] [ -s [ <时:分[:秒]> ] ] [ -e [ <时:分[:秒]> ] ]\n"
 

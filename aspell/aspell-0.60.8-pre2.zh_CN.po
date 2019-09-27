@@ -1,16 +1,16 @@
 # Chinese simplified translation for aspell.
 # Copyright (C) 2011 Kevin Atkinson
 # This file is distributed under the same license as the aspell package.
-# Boyuan Yang <073plan@gmail.com>, 2017.
+# Boyuan Yang <073plan@gmail.com>, 2017, 2019.
 # Wylmer Wang <wantinghard@gmail.com>, 2011, 2013.
 # lite <litekok@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: aspell-0.60.7\n"
+"Project-Id-Version: aspell-0.60.8-pre2\n"
 "Report-Msgid-Bugs-To: kevina@gnu.org\n"
 "POT-Creation-Date: 2019-09-24 03:02-0400\n"
-"PO-Revision-Date: 2017-11-15 10:44+0800\n"
+"PO-Revision-Date: 2019-09-24 10:51-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.2.3\n"
 
 #: common/info.cpp:232
 msgid "a number between 0 and 1"
@@ -231,10 +231,8 @@ msgid "minimal length of interior words"
 msgstr "内部单词的最小长度"
 
 #: common/config.cpp:1461
-#, fuzzy
-#| msgid "consider run-together words legal"
 msgid "consider camel case words legal"
-msgstr "考虑同时出现单词的语法正确性"
+msgstr "将驼峰式大小写单词视为正确"
 
 #: common/config.cpp:1463
 msgid "save replacement pairs on save all"
@@ -676,10 +674,8 @@ msgid "enter Nroff mode."
 msgstr "进入 Nroff 模式。"
 
 #: prog/aspell.cpp:209
-#, fuzzy
-#| msgid "enter Nroff mode."
 msgid "enter Markdown mode."
-msgstr "进入 Nroff 模式。"
+msgstr "进入 Markdown 模式。"
 
 #: prog/aspell.cpp:315
 #, c-format
@@ -746,10 +742,9 @@ msgid "Invalid keymapping: %s"
 msgstr "无效的键盘映射: %s"
 
 #: prog/aspell.cpp:1018
-#, fuzzy, c-format
-#| msgid "\"%expression:1\" is not a valid regular expression."
+#, c-format
 msgid "\"%s\" is not a regular file"
-msgstr "“%expression:1”不是一个合法的正则表达式。"
+msgstr "“%s”不是一个普通文件"
 
 #: prog/aspell.cpp:1029
 #, c-format
@@ -847,10 +842,8 @@ msgid "  help             display a detailed help message"
 msgstr "  help             显示详尽帮助消息"
 
 #: prog/aspell.cpp:2833
-#, fuzzy
-#| msgid "  -c|check <file>  to check a file"
 msgid "  -c|check <file>  spellchecks a file"
-msgstr "  -c|check <文件>  检查一个文件"
+msgstr "  -c|check <文件>  对一个文件进行拼写检查"
 
 #: prog/aspell.cpp:2834
 msgid "  -a|pipe          \"ispell -a\" compatibility mode"
@@ -943,18 +936,14 @@ msgid "  <norm-form>      normalization form to use, either none, internal, or s
 msgstr "  <norm-form>      要使用的规范化形式，可以为none，internal，或 strict"
 
 #: prog/aspell.cpp:2884
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Aspell %s.  Copyright 2000-2011 by Kevin Atkinson.\n"
-#| "\n"
+#, c-format
 msgid ""
 "\n"
 "Aspell %s.  Copyright 2000-2019 by Kevin Atkinson.\n"
 "\n"
 msgstr ""
 "\n"
-"Aspell %s. 版权所有 2000-2011 Kevin Atkinson。\n"
+"Aspell %s. 版权所有 2000-2019 Kevin Atkinson。\n"
 "\n"
 
 #: prog/aspell.cpp:2918
@@ -1236,7 +1225,7 @@ msgid "a string of 'o','O','p',or 'P'"
 msgstr "'o','O','p',或 'P' 组成的一个字符串"
 
 #. TRANSLATORS: Like the strings in config.cpp, all strings in *-filter.opt
-#. should be under 50 characters, begin with a lower case character and 
+#. should be under 50 characters, begin with a lower case character and
 #. not include any trailing punctuation marks.
 #: modules/filter/context-filter.info:7
 msgid "experimental filter for hiding delimited contexts"
@@ -1275,10 +1264,8 @@ msgid "HTML tags to always skip the contents of"
 msgstr "总是忽略其内容的 HTML 标签"
 
 #: modules/filter/markdown-filter.info:8
-#, fuzzy
-#| msgid "filter for dealing with Texinfo documents"
 msgid "filter for Markdown/CommonMark documents"
-msgstr "用于处理 Texinfo 文档的过滤器"
+msgstr "用于处理 Markdown/CommonMark 文档的过滤器"
 
 #: modules/filter/markdown-filter.info:14
 msgid "skip link labels in link reference definitions"
@@ -1357,10 +1344,8 @@ msgid "mode for checking HTML documents"
 msgstr "查看 HTML 文档的模式"
 
 #: modules/filter/modes/markdown.amf:9
-#, fuzzy
-#| msgid "mode for checking Nroff documents"
 msgid "mode for checking Markdown/CommonMark documents"
-msgstr "检查 Nroff 文档的模式"
+msgstr "检查 Markdown/CommonMark 文档的模式"
 
 #: modules/filter/modes/none.amf:5
 msgid "mode to disable all filters"

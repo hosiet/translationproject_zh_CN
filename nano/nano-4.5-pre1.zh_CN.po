@@ -7,10 +7,10 @@
 # Boyuan Yang <073plan@gmail.com>, 2018, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: nano 4.4-pre1\n"
+"Project-Id-Version: nano 4.5-pre1\n"
 "Report-Msgid-Bugs-To: nano-devel@gnu.org\n"
 "POT-Creation-Date: 2019-09-27 11:52+0200\n"
-"PO-Revision-Date: 2019-08-18 14:54-0400\n"
+"PO-Revision-Date: 2019-09-27 12:01-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -1629,15 +1629,15 @@ msgstr "记录与读取搜索/替换的历史字符串"
 
 #: src/nano.c:739
 msgid "Don't look at nanorc files"
-msgstr "不要参考nanorc 文件"
+msgstr "不要参考 nanorc 文件"
 
 #: src/nano.c:742
 msgid "-J <number>"
-msgstr ""
+msgstr "-J <数字>"
 
 #: src/nano.c:742
 msgid "--guidestripe=<number>"
-msgstr ""
+msgstr "--guidestripe=<数字>"
 
 #: src/nano.c:743
 msgid "Show a guiding bar at this column"

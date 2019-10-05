@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-06-24 14:20-0400\n"
+"PO-Revision-Date: 2019-10-02 14:06-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: lib/argmatch.c:134
 #, c-format
@@ -7005,7 +7005,7 @@ msgstr "无效的格式 %s（宽度溢出）"
 #: src/numfmt.c:1091
 #, c-format
 msgid "--format padding overriding --padding"
-msgstr ""
+msgstr "--format 的填充值将覆盖 --padding"
 
 #: src/numfmt.c:1110 src/seq.c:260
 #, c-format
@@ -7020,7 +7020,7 @@ msgstr "格式 %s 中存在无效的精度"
 #: src/numfmt.c:1132
 #, c-format
 msgid "invalid format %s, directive must be %%[0]['][-][N][.][N]f"
-msgstr ""
+msgstr "无效的格式 %s，指令必须为 %%[0]['][-][N][.][N]f"
 
 #: src/numfmt.c:1140 src/seq.c:267
 #, c-format
@@ -7035,7 +7035,7 @@ msgstr "在输入 %s:%s 中有无效后缀"
 #: src/numfmt.c:1212
 #, c-format
 msgid "value/precision too large to be printed: '%Lg/%<PRIuMAX>' (consider using --to)"
-msgstr ""
+msgstr "值/精确度过大无法打印：“%Lg/%<PRIuMAX>”（请考虑使用 --to）"
 
 #: src/numfmt.c:1216
 #, c-format
@@ -7064,10 +7064,9 @@ msgid "multiple field specifications"
 msgstr "%s：无效的区块规格%s"
 
 #: src/numfmt.c:1547
-#, fuzzy, c-format
-#| msgid "invalid date %s"
+#, c-format
 msgid "invalid header value %s"
-msgstr "无效的日期%s"
+msgstr "无效的头部值 %s"
 
 #: src/numfmt.c:1574
 msgid "--grouping cannot be combined with --format"
@@ -7654,14 +7653,13 @@ msgid "cannot specify both printing across and printing in parallel"
 msgstr "无法同时指定相交输出和平行输出参数"
 
 #: src/pr.c:1179
-#, fuzzy, c-format
-#| msgid "`-%c' extra characters or invalid number in the argument: %s"
+#, c-format
 msgid "'-%c' extra characters or invalid number in the argument: %s"
-msgstr "有多余字符\"-%c\"或无效数字出现在参数%s 中"
+msgstr "“-%c”有多余字符或无效数字出现在参数中：%s"
 
 #: src/pr.c:1281
 msgid "page width too narrow"
-msgstr "过窄"
+msgstr "页宽过窄"
 
 #: src/pr.c:2337
 #, c-format
@@ -7746,13 +7744,6 @@ msgstr ""
 "\t\t\t\t--sep-string[=字符串] 设置分隔符\n"
 
 #: src/pr.c:2783
-#, fuzzy
-#| msgid ""
-#| "  -l, --length=PAGE_LENGTH\n"
-#| "                    set the page length to PAGE_LENGTH (66) lines\n"
-#| "                    (default number of lines of text 56, and with -F 63)\n"
-#| "  -m, --merge       print all files in parallel, one in each column,\n"
-#| "                    truncate lines, but join lines of full length with -J\n"
 msgid ""
 "  -l, --length=PAGE_LENGTH\n"
 "                    set the page length to PAGE_LENGTH (66) lines\n"
@@ -7760,28 +7751,17 @@ msgid ""
 "                    implies -t if PAGE_LENGTH <= 10\n"
 msgstr ""
 "  -l, --length=页长\n"
-"\t\t\t使用指定页长的行数(默认66)\n"
-"\t\t\t(默认文本行数为56，当启用-F 时为 63)\n"
-"  -m, --merge\t\t在同一行显示所有文件，每个文件占用一栏，分割行，但是当\n"
-"\t\t\t使用-J 时将行合并到完整长度\n"
+"                    使用指定页长的行数（默认为66）\n"
+"                    (默认文本行数为 56,当启用 -F 时为 63)\n"
+"                    如果指定页长小于等于 10 则隐含启用 -t\n"
 
 #: src/pr.c:2789
-#, fuzzy
-#| msgid ""
-#| "  -l, --length=PAGE_LENGTH\n"
-#| "                    set the page length to PAGE_LENGTH (66) lines\n"
-#| "                    (default number of lines of text 56, and with -F 63)\n"
-#| "  -m, --merge       print all files in parallel, one in each column,\n"
-#| "                    truncate lines, but join lines of full length with -J\n"
 msgid ""
 "  -m, --merge       print all files in parallel, one in each column,\n"
 "                    truncate lines, but join lines of full length with -J\n"
 msgstr ""
-"  -l, --length=页长\n"
-"\t\t\t使用指定页长的行数(默认66)\n"
-"\t\t\t(默认文本行数为56，当启用-F 时为 63)\n"
-"  -m, --merge\t\t在同一行显示所有文件，每个文件占用一栏，分割行，但是当\n"
-"\t\t\t使用-J 时将行合并到完整长度\n"
+"  -m, --merge       在同一行显示所有文件，每个文件占用一栏，分割行，但是当\n"
+"                    使用 -J 时将行合并到完整长度\n"
 
 #: src/pr.c:2793
 msgid ""
@@ -7857,6 +7837,8 @@ msgid ""
 "  -t, --omit-header  omit page headers and trailers;\n"
 "                     implied if PAGE_LENGTH <= 10\n"
 msgstr ""
+"  -t, --omit-header  省略页面头部和尾部；\n"
+"                     在所指定<页长>小于等于 10 时默认启用\n"
 
 #: src/pr.c:2826
 msgid ""
@@ -8045,13 +8027,8 @@ msgstr ""
 
 #: src/ptx.c:1818
 #, fuzzy
-#| msgid ""
-#| "Output a permuted index, including context, of the words in the input files.\n"
-#| "\n"
 msgid "Output a permuted index, including context, of the words in the input files.\n"
-msgstr ""
-"输出一串预排的文件索引信息，包括输入文件中各单词的环境。\n"
-"\n"
+msgstr "输出一串预排的文件索引信息，包括输入文件中各单词的环境。\n"
 
 #: src/ptx.c:1825
 msgid ""
@@ -8343,13 +8320,6 @@ msgstr ""
 "  -i                    每次删除前提示确认\n"
 
 #: src/rm.c:140
-#, fuzzy
-#| msgid ""
-#| "  -I                    prompt once before removing more than three files, or\n"
-#| "                          when removing recursively.  Less intrusive than -i,\n"
-#| "                          while still giving protection against most mistakes\n"
-#| "      --interactive[=WHEN]  prompt according to WHEN: never, once (-I), or\n"
-#| "                          always (-i).  Without WHEN, prompt always\n"
 msgid ""
 "  -I                    prompt once before removing more than three files, or\n"
 "                          when removing recursively; less intrusive than -i,\n"
@@ -8357,10 +8327,13 @@ msgid ""
 "      --interactive[=WHEN]  prompt according to WHEN: never, once (-I), or\n"
 "                          always (-i); without WHEN, prompt always\n"
 msgstr ""
-"  -I\t\t\t在删除超过三个文件或者递归删除前要求确认。此选项比-i 提\n"
-"\t\t\t示内容更少，但同样可以阻止大多数错误发生\n"
-"      --interactive[=WHEN]\t根据指定的WHEN 进行确认提示：never，once (-I)，\n"
-"\t\t\t\t或者always (-i)。如果此参数不加WHEN 则总是提示\n"
+"  -I                    在删除超过三个文件或者递归删除前提示一次并要求确认；\n"
+"                          此选项比 -i 提示内容更少，但同样可以阻止大多数\n"
+"                          错误发生\n"
+"      --interactive[=场景]  根据指定的<场景>进行确认提示：never（从不）、\n"
+"                            once（一次，等效于使用 -I）或者 always（总是，\n"
+"                            等效于使用 -i）。如果使用此参数没有指定<场景>则\n"
+"                            总是提示\n"
 
 #: src/rm.c:147
 msgid ""
@@ -8378,6 +8351,10 @@ msgid ""
 "                              with 'all', reject any command line argument\n"
 "                              on a separate device from its parent\n"
 msgstr ""
+"      --no-preserve-root  不要对“/”特殊处理\n"
+"      --preserve-root[=all]  不要删除“/”（默认行为）；\n"
+"                              如添加了“all”参数，将拒绝处理与父目录位于\n"
+"                              不同设备上的命令行参数\n"
 
 #: src/rm.c:158
 msgid ""
@@ -8400,14 +8377,7 @@ msgstr ""
 "的目录，以及其下所有的内容。\n"
 
 #: src/rm.c:170
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "To remove a file whose name starts with a `-', for example `-foo',\n"
-#| "use one of these commands:\n"
-#| "  %s -- -foo\n"
-#| "\n"
-#| "  %s ./-foo\n"
+#, c-format
 msgid ""
 "\n"
 "To remove a file whose name starts with a '-', for example '-foo',\n"
@@ -8417,8 +8387,10 @@ msgid ""
 "  %s ./-foo\n"
 msgstr ""
 "\n"
-"要删除第一个字符为\"-\"的文件 (例如\"-foo\")，请使用以下方法之一：\n"
+"要删除文件名第一个字符为“-”的文件（例如“-foo”），请使用\n"
+"以下方法之一：\n"
 "  %s -- -foo\n"
+"\n"
 "  %s ./-foo\n"
 
 #: src/rm.c:179
@@ -8477,19 +8449,14 @@ msgstr ""
 "                  忽略仅由目录非空产生的所有错误\n"
 
 #: src/rmdir.c:171
-#, fuzzy
-#| msgid ""
-#| "  -p, --parents   remove DIRECTORY and its ancestors; e.g., `rmdir -p a/b/c' is\n"
-#| "                    similar to `rmdir a/b/c a/b a'\n"
-#| "  -v, --verbose   output a diagnostic for every directory processed\n"
 msgid ""
 "  -p, --parents   remove DIRECTORY and its ancestors; e.g., 'rmdir -p a/b/c' is\n"
 "                    similar to 'rmdir a/b/c a/b a'\n"
 "  -v, --verbose   output a diagnostic for every directory processed\n"
 msgstr ""
-"  -p, --parents\t\t删除指定目录及其上级文件夹，例如\"rmdir -p a/b/c'\"\n"
-"\t\t\t与\"rmdir a/b/c a/b a'\" 基本相同\n"
-"  -v, --verbose\t\t输出处理的目录详情\n"
+"  -p, --parents   删除指定目录及其各个上级文件夹，例如“rmdir -p a/b/c'”\n"
+"                    与“rmdir a/b/c a/b a'”类似\n"
+"  -v, --verbose   输出每个被处理目录的详情和诊断信息\n"
 
 #: src/rmdir.c:241
 #, c-format
@@ -9410,21 +9377,19 @@ msgid "^ no match for key\n"
 msgstr "^ 没有匹配项\n"
 
 #: src/sort.c:2460
-#, fuzzy, c-format
-#| msgid "obsolescent key `%s' used; consider `%s' instead"
+#, c-format
 msgid "obsolescent key %s used; consider %s instead"
-msgstr "使用了旧的值%s，考虑转为使用%s"
+msgstr "使用了旧的值 %s；考虑转为使用 %s"
 
 #: src/sort.c:2467
 #, c-format
 msgid "key %lu has zero width and will be ignored"
-msgstr "值%lu 宽度为零，忽略"
+msgstr "值 %lu 宽度为零，忽略"
 
 #: src/sort.c:2476
-#, fuzzy, c-format
-#| msgid "leading blanks are significant in key %lu; consider also specifying `b'"
+#, c-format
 msgid "leading blanks are significant in key %lu; consider also specifying 'b'"
-msgstr "值%lu 开头有大量空格，考虑同时指定\"b\""
+msgstr "值 %lu 开头有大量空格，考虑同时指定\"b\""
 
 #: src/sort.c:2489
 #, c-format
@@ -9734,10 +9699,9 @@ msgid "empty record separator"
 msgstr ""
 
 #: src/split.c:1423
-#, fuzzy, c-format
-#| msgid "multi-character tab %s"
+#, c-format
 msgid "multi-character separator %s"
-msgstr "多字符标签%s"
+msgstr "多字符分隔符 %s"
 
 #: src/split.c:1431
 #, fuzzy
@@ -10107,6 +10071,8 @@ msgid ""
 "--terse --file-system is equivalent to the following FORMAT:\n"
 "    %s"
 msgstr ""
+"--terse --file-system 与下列<格式>等效：\n"
+"    %s"
 
 #: src/stdbuf.c:91
 #, c-format

@@ -2,13 +2,13 @@
 # Copyright (C) 2013 Free Software Foundation, Inc.
 # This file is distributed under the same license as the man-db package.
 # Wylmer Wang <wantinghard@gmail.com>, 2013.
-# Boyuan Yang <073plan@gmail.com>, 2017.
+# Boyuan Yang <073plan@gmail.com>, 2017, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: man-db-manpages-2.8.0-pre2\n"
 "POT-Creation-Date: 2019-10-01 10:31+0100\n"
-"PO-Revision-Date: 2018-01-23 10:06+0800\n"
+"PO-Revision-Date: 2019-10-01 13:17-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 2.0.5\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Poedit-Bookmarks: -1,102,-1,-1,-1,-1,-1,-1,-1,-1\n"
 
 #. type: TH
@@ -147,10 +147,9 @@ msgstr "不按终端宽度截断输出。通常会将输出截短为终端宽度
 
 #. type: TP
 #: ../../man/man1/apropos.man1:103 ../../man/man1/whatis.man1:107
-#, fuzzy, no-wrap
-#| msgid "B<-s> I<list>, B<--sections> I<list>, B<--section> I<list>"
+#, no-wrap
 msgid "B<-s> I<list\\/>, B<--sections=>I<list\\/>, B<--section=>I<list>"
-msgstr "B<-s> I<列表>, B<--sections> I<列表>, B<--section> I<列表>"
+msgstr "B<-s> I<列表\\/>, B<--sections=>I<列表\\/>, B<--section=>I<列表>"
 
 #
 #. type: Plain text
@@ -419,16 +418,7 @@ msgstr "示例"
 
 #. type: Plain text
 #: ../../man/man1/lexgrog.man1:116
-#, fuzzy, no-wrap
-#| msgid ""
-#| "  $ lexgrog man.1\n"
-#| "  man.1: \"man - an interface to the on-line reference manuals\"\n"
-#| "  $ lexgrog -fw man.1\n"
-#| "  man.1 (t): \"man - an interface to the on-line reference manuals\"\n"
-#| "  $ lexgrog -c whatis.cat1 \n"
-#| "  whatis.cat1: \"whatis - display manual page descriptions\"\n"
-#| "  $ lexgrog broken.1\n"
-#| "  broken.1: parse failed\n"
+#, no-wrap
 msgid ""
 "  $ lexgrog man.1\n"
 "  man.1: \"man - an interface to the system reference manuals\"\n"
@@ -440,10 +430,10 @@ msgid ""
 "  broken.1: parse failed\n"
 msgstr ""
 "  $ lexgrog man.1\n"
-"  man.1: \"man - an interface to the on-line reference manuals\"\n"
+"  man.1: \"man - an interface to the system reference manuals\"\n"
 "  $ lexgrog -fw man.1\n"
-"  man.1 (t): \"man - an interface to the on-line reference manuals\"\n"
-"  $ lexgrog -c whatis.cat1 \n"
+"  man.1 (t): \"man - an interface to the system reference manuals\"\n"
+"  $ lexgrog -c whatis.cat1\n"
 "  whatis.cat1: \"whatis - display manual page descriptions\"\n"
 "  $ lexgrog broken.1\n"
 "  broken.1: parse failed\n"
@@ -548,13 +538,11 @@ msgstr "Colin Watson 编写了命令行前端的当前实现，以及本 man 手
 
 #. type: Plain text
 #: ../../man/man1/man.man1:18
-#, fuzzy
-#| msgid "%man% - an interface to the on-line reference manuals"
 msgid "%man% - an interface to the system reference manuals"
-msgstr "%man% - 在线参考手册的接口"
+msgstr "%man% - 系统参考手册的接口"
 
-#.  The general command line
-#.  The apropos command line
+#. The general command line
+#. The apropos command line
 #. type: Plain text
 #: ../../man/man1/man.man1:25
 #, fuzzy
@@ -562,7 +550,7 @@ msgstr "%man% - 在线参考手册的接口"
 msgid "B<%man%> [\\|I<man options>\\|] [\\|[\\|I<section>\\|] I<page>\\ \\|.\\|.\\|.\\|]\\ .\\|.\\|.\\&"
 msgstr "B<%man%> B<-f> [\\|I<whatis> I<选项>\\|] I<页> \\&.\\|.\\|.\\&"
 
-#.  The --global-apropos command line
+#. The --global-apropos command line
 #. type: Plain text
 #: ../../man/man1/man.man1:32
 #, fuzzy
@@ -570,7 +558,7 @@ msgstr "B<%man%> B<-f> [\\|I<whatis> I<选项>\\|] I<页> \\&.\\|.\\|.\\&"
 msgid "B<%man%> B<-k> [\\|I<apropos options>\\|] I<regexp> \\&.\\|.\\|.\\&"
 msgstr "B<%man%> B<-k> [\\|I<apropos> I<选项>\\|] I<正则表达式> \\&.\\|.\\|.\\&"
 
-#.  The whatis command line
+#. The whatis command line
 #. type: Plain text
 #: ../../man/man1/man.man1:39
 #, fuzzy
@@ -578,13 +566,13 @@ msgstr "B<%man%> B<-k> [\\|I<apropos> I<选项>\\|] I<正则表达式> \\&.\\|.\
 msgid "B<%man%> B<-K> [\\|I<man options>\\|] [\\|I<section>\\|] I<term>\\ .\\|.\\|.\\&"
 msgstr "B<%man%> B<-f> [\\|I<whatis> I<选项>\\|] I<页> \\&.\\|.\\|.\\&"
 
-#.  The --local command line
+#. The --local command line
 #. type: Plain text
 #: ../../man/man1/man.man1:47
 msgid "B<%man%> B<-f> [\\|I<whatis> I<options>\\|] I<page> \\&.\\|.\\|.\\&"
 msgstr "B<%man%> B<-f> [\\|I<whatis> I<选项>\\|] I<页> \\&.\\|.\\|.\\&"
 
-#.  The --where/--where-cat command line
+#. The --where/--where-cat command line
 #. type: Plain text
 #: ../../man/man1/man.man1:54
 #, fuzzy
@@ -637,10 +625,9 @@ msgstr "特殊文件(通常位于 I</dev\\/>)"
 
 #. type: tbl table
 #: ../../man/man1/man.man1:110
-#, fuzzy, no-wrap
-#| msgid "File formats and conventions eg I</etc/passwd>"
+#, no-wrap
 msgid "File formats and conventions, e.g.\\& I</etc/passwd>"
-msgstr "文件格式和规范，如 I</etc/passwd>"
+msgstr "文件格式和规范，如 \\& I</etc/passwd>"
 
 #. type: tbl table
 #: ../../man/man1/man.man1:113
@@ -774,7 +761,7 @@ msgstr "B<%man%>I<\\ ls>"
 #. type: Plain text
 #: ../../man/man1/man.man1:194
 msgid "Display the manual page for the I<item> (program)  I<ls>."
-msgstr "显示 I<项目> (程序)  I<ls> 对应的手册页"
+msgstr "显示 I<项目> (程序)  I<ls> 对应的手册页。"
 
 #. type: TP
 #: ../../man/man1/man.man1:194
@@ -893,7 +880,7 @@ msgid "This package supports manual pages in multiple languages, controlled by y
 msgstr "此包提供了国际化支持。本地语言的手册页(如果系统上有)可以通过使用 I<locale> 功能来访问。要启用本地语言支持，需要将 $B<LC_MESSAGES> 或 $B<LANG> 或其他系统相关的环境变量设置为您的语言区域代码；该代码通常以基于 B<POSIX 1003.1> 的格式指定："
 
 #
-#.  Need a \c to make sure we don't get a space where we don't want one
+#. Need a \c to make sure we don't get a space where we don't want one
 #. type: Plain text
 #: ../../man/man1/man.man1:329
 msgid "E<lt>I<language>E<gt>[\\|B<_>E<lt>I<territory>E<gt>\\|[\\|B<.>E<lt>I<character-set>E<gt>\\|[\\|B<,>E<lt>I<version>E<gt>\\|]\\|]\\|]"
@@ -957,7 +944,7 @@ msgstr "其中 B<字符串> 可以是下面 B<-p> 选项所描述的任何字符
 msgid "If none of the above methods provide any filter information, a default set is used."
 msgstr "如果以上方法都没有提供过滤程序信息，将使用默认程序集。"
 
-#.  ********************************************************************
+#. ********************************************************************
 #. type: Plain text
 #: ../../man/man1/man.man1:412
 msgid "A formatting pipeline is formed from the filters and the primary formatter (B<nroff> or [B<tg>]B<roff> with B<-t>)  and executed.  Alternatively, if an executable program I<mandb_nfmt> (or I<mandb_tfmt> with B<-t>)  exists in the man tree root, it is executed instead.  It gets passed the manual source file, the preprocessor string, and optionally the device specified with B<-T> or B<-E> as arguments."
@@ -1018,9 +1005,9 @@ msgstr "在所有手册中搜索文本。这是蛮力搜索，需要花费一定
 msgid "Note that this searches the I<sources> of the manual pages, not the rendered text, and so may include false positives due to things like comments in source files.  Searching the rendered text would be much slower."
 msgstr "注意，这种做法应用于搜索手册页的 I<资源>，而非渲染后的文本，所以可能会包含一些不相干的内容（如源文件中的注释）。若要搜索渲染后的文本，速度会比较慢。"
 
-#.  Compressed nroff source files with a supported compression
-#.  extension will be decompressed by man prior to being displaying via the
-#.  usual filters.
+#. Compressed nroff source files with a supported compression
+#. extension will be decompressed by man prior to being displaying via the
+#. usual filters.
 #. type: Plain text
 #: ../../man/man1/man.man1:498
 #, fuzzy

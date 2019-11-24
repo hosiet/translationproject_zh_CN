@@ -7,10 +7,10 @@
 # Boyuan Yang <073plan@gmail.com>, 2018, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: nano 4.5-pre1\n"
+"Project-Id-Version: nano 4.6-pre1\n"
 "Report-Msgid-Bugs-To: nano-devel@gnu.org\n"
 "POT-Creation-Date: 2019-11-24 13:30+0100\n"
-"PO-Revision-Date: 2019-09-27 12:01-0400\n"
+"PO-Revision-Date: 2019-11-24 15:39-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: src/browser.c:67
 #, c-format
@@ -360,10 +360,9 @@ msgid "Writing..."
 msgstr "正在写入..."
 
 #: src/files.c:1843 src/files.c:1851
-#, fuzzy, c-format
-#| msgid "Error writing temp file: %s"
+#, c-format
 msgid "Error reading temp file: %s"
-msgstr "写入临时文件%s 出错"
+msgstr "读取临时文件出错：%s"
 
 #: src/files.c:1911
 #, c-format
@@ -824,7 +823,7 @@ msgstr "跳至下一个 linter 信息"
 
 #: src/global.c:698
 msgid "Invoke a program to format/arrange/manipulate the buffer"
-msgstr ""
+msgstr "调用其它程序来格式化/修改/操作缓冲区"
 
 #. TRANSLATORS: Try to keep the next eleven strings at most 10 characters.
 #: src/global.c:713
@@ -2040,7 +2039,7 @@ msgstr "“%s”中的错误"
 
 #: src/rcfile.c:182
 msgid "Problems with history file"
-msgstr ""
+msgstr "历史文件存在的问题"
 
 #: src/rcfile.c:186
 #, c-format
@@ -2466,21 +2465,18 @@ msgid "Finished checking spelling"
 msgstr "拼写检查结束"
 
 #: src/text.c:2561 src/text.c:2860
-#, fuzzy, c-format
-#| msgid "Error invoking \"%s\""
+#, c-format
 msgid "Error invoking '%s'"
-msgstr "调用 \"%s\" 错误"
+msgstr "调用 '%s' 错误"
 
 #: src/text.c:2564
 #, c-format
 msgid "Program '%s' complained"
-msgstr ""
+msgstr "程序“%s”提示"
 
 #: src/text.c:2572
-#, fuzzy
-#| msgid "Nothing to undo"
 msgid "Nothing changed"
-msgstr "没有可重做的操作"
+msgstr "数据未被修改"
 
 #. TRANSLATORS: The next two go with Undid/Redid messages.
 #: src/text.c:2599
@@ -2488,14 +2484,12 @@ msgid "spelling correction"
 msgstr "拼写检查"
 
 #: src/text.c:2599
-#, fuzzy
-#| msgid "Finished formatting"
 msgid "formatting"
-msgstr "格式化完成"
+msgstr "正在格式化"
 
 #: src/text.c:2615
 msgid "Buffer has been processed"
-msgstr ""
+msgstr "缓冲区已处理"
 
 #: src/text.c:2681
 #, c-format
@@ -2503,10 +2497,8 @@ msgid "%s: %s"
 msgstr "%s: %s"
 
 #: src/text.c:2705
-#, fuzzy
-#| msgid "No linter defined for this type of file!"
 msgid "No linter is defined for this type of file"
-msgstr "没有为该类型文件而定义的代码语法检查器！"
+msgstr "没有为该类型文件而定义的代码语法检查器"
 
 #: src/text.c:2715
 msgid "Save modified buffer before linting?"
@@ -2539,10 +2531,8 @@ msgid "At last message"
 msgstr "在最后一条消息"
 
 #: src/text.c:3037
-#, fuzzy
-#| msgid "No linter defined for this type of file!"
 msgid "No formatter is defined for this type of file"
-msgstr "没有为该类型文件而定义的代码语法检查器！"
+msgstr "没有为该类型文件而定义的代码语法检查器"
 
 #: src/text.c:3113
 #, c-format

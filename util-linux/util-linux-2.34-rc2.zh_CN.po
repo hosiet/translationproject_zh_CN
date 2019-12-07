@@ -55,21 +55,21 @@ msgstr "参数不够"
 #: disk-utils/sfdisk.c:1570 disk-utils/swaplabel.c:65 libfdisk/src/bsd.c:641
 #: login-utils/islocal.c:87 login-utils/last.c:668 login-utils/sulogin.c:444
 #: login-utils/sulogin.c:481 login-utils/utmpdump.c:134
-#: login-utils/utmpdump.c:355 login-utils/utmpdump.c:375 login-utils/vipw.c:261
-#: login-utils/vipw.c:279 misc-utils/findmnt.c:1106 misc-utils/logger.c:1241
-#: misc-utils/mcookie.c:115 misc-utils/uuidd.c:198 sys-utils/blkdiscard.c:181
-#: sys-utils/blkzone.c:96 sys-utils/dmesg.c:524 sys-utils/eject.c:497
-#: sys-utils/eject.c:693 sys-utils/fallocate.c:399 sys-utils/fsfreeze.c:116
-#: sys-utils/fstrim.c:86 sys-utils/hwclock.c:229 sys-utils/hwclock.c:869
-#: sys-utils/hwclock-rtc.c:398 sys-utils/hwclock-rtc.c:433
-#: sys-utils/ldattach.c:392 sys-utils/lscpu.c:517 sys-utils/nsenter.c:129
-#: sys-utils/rfkill.c:192 sys-utils/rfkill.c:553 sys-utils/rtcwake.c:137
-#: sys-utils/rtcwake.c:290 sys-utils/setpriv.c:290 sys-utils/setpriv.c:659
-#: sys-utils/setpriv.c:682 sys-utils/swapon.c:375 sys-utils/swapon.c:518
-#: sys-utils/switch_root.c:167 sys-utils/unshare.c:110 sys-utils/unshare.c:125
-#: sys-utils/wdctl.c:322 sys-utils/wdctl.c:378 sys-utils/zramctl.c:515
-#: term-utils/agetty.c:2869 term-utils/mesg.c:143 term-utils/script.c:540
-#: term-utils/script.c:548 term-utils/script.c:633
+#: login-utils/utmpdump.c:355 login-utils/utmpdump.c:375
+#: login-utils/vipw.c:261 login-utils/vipw.c:279 misc-utils/findmnt.c:1106
+#: misc-utils/logger.c:1241 misc-utils/mcookie.c:115 misc-utils/uuidd.c:198
+#: sys-utils/blkdiscard.c:181 sys-utils/blkzone.c:96 sys-utils/dmesg.c:524
+#: sys-utils/eject.c:497 sys-utils/eject.c:693 sys-utils/fallocate.c:399
+#: sys-utils/fsfreeze.c:116 sys-utils/fstrim.c:86 sys-utils/hwclock.c:229
+#: sys-utils/hwclock.c:869 sys-utils/hwclock-rtc.c:398
+#: sys-utils/hwclock-rtc.c:433 sys-utils/ldattach.c:392 sys-utils/lscpu.c:517
+#: sys-utils/nsenter.c:129 sys-utils/rfkill.c:192 sys-utils/rfkill.c:553
+#: sys-utils/rtcwake.c:137 sys-utils/rtcwake.c:290 sys-utils/setpriv.c:290
+#: sys-utils/setpriv.c:659 sys-utils/setpriv.c:682 sys-utils/swapon.c:375
+#: sys-utils/swapon.c:518 sys-utils/switch_root.c:167 sys-utils/unshare.c:110
+#: sys-utils/unshare.c:125 sys-utils/wdctl.c:322 sys-utils/wdctl.c:378
+#: sys-utils/zramctl.c:515 term-utils/agetty.c:2869 term-utils/mesg.c:143
+#: term-utils/script.c:540 term-utils/script.c:548 term-utils/script.c:633
 #: term-utils/scriptreplay.c:198 term-utils/scriptreplay.c:201
 #: term-utils/wall.c:418 text-utils/colcrt.c:282 text-utils/more.c:361
 #: text-utils/rev.c:139 text-utils/ul.c:230
@@ -476,7 +476,8 @@ msgstr "写脚本文件 %s 失败"
 msgid "Select label type"
 msgstr "选择标签类型"
 
-#: disk-utils/cfdisk.c:2124 disk-utils/fdisk.c:1087 disk-utils/fdisk-menu.c:488
+#: disk-utils/cfdisk.c:2124 disk-utils/fdisk.c:1087
+#: disk-utils/fdisk-menu.c:488
 msgid "Device does not contain a recognized partition table."
 msgstr "设备不包含可识别的分区表。"
 
@@ -739,8 +740,8 @@ msgstr ""
 "将继续 ... "
 
 #: disk-utils/fdformat.c:145 disk-utils/fsck.minix.c:183
-#: disk-utils/swaplabel.c:123 misc-utils/wipefs.c:641 sys-utils/blkdiscard.c:85
-#: sys-utils/tunelp.c:95
+#: disk-utils/swaplabel.c:123 misc-utils/wipefs.c:641
+#: sys-utils/blkdiscard.c:85 sys-utils/tunelp.c:95
 #, c-format
 msgid " %s [options] <device>\n"
 msgstr " %s [选项] <设备>\n"
@@ -1073,21 +1074,21 @@ msgstr "不支持的擦除模式"
 msgid "The device properties (sector size and geometry) should be used with one specified device only."
 msgstr "设备属性(扇区大小和几何属性)只能用于某个指定的设备。"
 
-#: disk-utils/fdisk.c:1046 disk-utils/fdisk.c:1061 disk-utils/fsck.cramfs.c:694
-#: disk-utils/mkfs.bfs.c:192 disk-utils/mkfs.cramfs.c:786
-#: disk-utils/partx.c:974 disk-utils/raw.c:136 disk-utils/raw.c:149
-#: disk-utils/raw.c:161 disk-utils/raw.c:202 misc-utils/cal.c:519
-#: misc-utils/findfs.c:58 misc-utils/look.c:149 misc-utils/whereis.c:586
-#: misc-utils/whereis.c:597 misc-utils/whereis.c:608 misc-utils/whereis.c:650
-#: schedutils/chrt.c:504 schedutils/ionice.c:262 schedutils/taskset.c:188
-#: sys-utils/chcpu.c:355 sys-utils/chmem.c:422 sys-utils/dmesg.c:1470
-#: sys-utils/ipcmk.c:134 sys-utils/ldattach.c:321 sys-utils/losetup.c:913
-#: sys-utils/lscpu.c:2349 sys-utils/lsmem.c:631 sys-utils/mount.c:809
-#: sys-utils/mount.c:817 sys-utils/mount.c:864 sys-utils/mount.c:877
-#: sys-utils/mount.c:949 sys-utils/mountpoint.c:179 sys-utils/pivot_root.c:71
-#: sys-utils/swapoff.c:229 sys-utils/swapon.c:993 sys-utils/switch_root.c:249
-#: sys-utils/umount.c:583 term-utils/setterm.c:1179 text-utils/col.c:233
-#: text-utils/more.c:1986
+#: disk-utils/fdisk.c:1046 disk-utils/fdisk.c:1061
+#: disk-utils/fsck.cramfs.c:694 disk-utils/mkfs.bfs.c:192
+#: disk-utils/mkfs.cramfs.c:786 disk-utils/partx.c:974 disk-utils/raw.c:136
+#: disk-utils/raw.c:149 disk-utils/raw.c:161 disk-utils/raw.c:202
+#: misc-utils/cal.c:519 misc-utils/findfs.c:58 misc-utils/look.c:149
+#: misc-utils/whereis.c:586 misc-utils/whereis.c:597 misc-utils/whereis.c:608
+#: misc-utils/whereis.c:650 schedutils/chrt.c:504 schedutils/ionice.c:262
+#: schedutils/taskset.c:188 sys-utils/chcpu.c:355 sys-utils/chmem.c:422
+#: sys-utils/dmesg.c:1470 sys-utils/ipcmk.c:134 sys-utils/ldattach.c:321
+#: sys-utils/losetup.c:913 sys-utils/lscpu.c:2349 sys-utils/lsmem.c:631
+#: sys-utils/mount.c:809 sys-utils/mount.c:817 sys-utils/mount.c:864
+#: sys-utils/mount.c:877 sys-utils/mount.c:949 sys-utils/mountpoint.c:179
+#: sys-utils/pivot_root.c:71 sys-utils/swapoff.c:229 sys-utils/swapon.c:993
+#: sys-utils/switch_root.c:249 sys-utils/umount.c:583
+#: term-utils/setterm.c:1179 text-utils/col.c:233 text-utils/more.c:1986
 msgid "bad usage"
 msgstr "错误用法"
 
@@ -11844,8 +11845,8 @@ msgstr "解析偏移失败"
 msgid "failed to parse step"
 msgstr "解析步长失败"
 
-#: sys-utils/blkdiscard.c:175 sys-utils/blkzone.c:406 sys-utils/fallocate.c:376
-#: sys-utils/fsfreeze.c:110 sys-utils/fstrim.c:447
+#: sys-utils/blkdiscard.c:175 sys-utils/blkzone.c:406
+#: sys-utils/fallocate.c:376 sys-utils/fsfreeze.c:110 sys-utils/fstrim.c:447
 msgid "unexpected number of arguments"
 msgstr "参数数量异常"
 

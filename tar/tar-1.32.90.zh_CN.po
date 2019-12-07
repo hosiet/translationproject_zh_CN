@@ -4,15 +4,14 @@
 # Wang Li <charles@linux.net.cn>, 2002.
 # Rongjun Mu <rongjunmu+i18n@gmail.com>, 2004.
 # Ji ZhengYu <zhengyuji@gmail.com>, 2016.
-# Boyuan Yang <073plan@gmail.com>, 2018.
+# Boyuan Yang <073plan@gmail.com>, 2018, 2019.
 #
-#: src/create.c:1590
 msgid ""
 msgstr ""
-"Project-Id-Version: tar 1.30\n"
+"Project-Id-Version: tar 1.32.90\n"
 "Report-Msgid-Bugs-To: bug-tar@gnu.org\n"
 "POT-Creation-Date: 2019-11-27 18:52+0200\n"
-"PO-Revision-Date: 2018-10-21 09:49-0400\n"
+"PO-Revision-Date: 2019-12-06 19:10-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -21,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.4\n"
 
 #: gnu/argmatch.c:134
 #, c-format
@@ -627,7 +626,7 @@ msgstr "无法向终端写入归档内容(缺少 -f 选项?)"
 
 #: src/buffer.c:713
 msgid "Invalid value for record_size"
-msgstr "record_size 的无效值"
+msgstr "record_size 的值无效"
 
 #: src/buffer.c:716
 msgid "No archive name given"
@@ -829,7 +828,7 @@ msgstr "设备号不同"
 #: src/compare.c:472
 #, c-format
 msgid "Verify "
-msgstr "校验"
+msgstr "校验 "
 
 #: src/compare.c:479
 #, c-format
@@ -2450,7 +2449,7 @@ msgstr "时间标记超出允许范围"
 #: src/xheader.c:188
 #, c-format
 msgid "Malformed pax option: %s"
-msgstr ""
+msgstr "格式错误的 pax 选项：%s"
 
 #: src/xheader.c:207
 #, c-format
@@ -2464,7 +2463,7 @@ msgstr "不能覆盖关键字 %s"
 
 #: src/xheader.c:493
 msgid "can't update global extended header record"
-msgstr ""
+msgstr "无法更新全局扩展头记录"
 
 #: src/xheader.c:703
 msgid "Malformed extended header: missing length"
@@ -2630,17 +2629,15 @@ msgstr "同步执行选项:"
 
 #: tests/genfile.c:165
 msgid "N"
-msgstr ""
+msgstr "N"
 
 #: tests/genfile.c:166
-#, fuzzy
-#| msgid "Execute ARGS. Useful with --checkpoint and one of --cut, --append, --touch, --unlink"
 msgid "Execute ARGS. Trigger checkpoints every Nth record (default 1). Useful with --checkpoint and one of --cut, --append, --touch, --unlink"
-msgstr "执行 ARGS。与 --checkpoint 或 --cut，--append，--touch 中的一个一起使用时有用"
+msgstr "执行 ARGS。每 N 个记录触发一次检查点（默认为 1）。与 --checkpoint 或 --cut，--append，--touch 或 --unlink 中的一个共同使用时有用"
 
 #: tests/genfile.c:169
 msgid "Perform given action (see below) upon reaching checkpoint NUMBER"
-msgstr "只要达到 checkpoint NUMBER 指定的数值就执行指定的操作(见下)"
+msgstr "只要达到检查点 NUMBER 指定的数值就执行指定的操作（见下）"
 
 #: tests/genfile.c:172
 msgid "Set date for next --touch option"
@@ -2648,7 +2645,7 @@ msgstr "为下一个 --touch 选项设定日期"
 
 #: tests/genfile.c:175
 msgid "Display executed checkpoints and exit status of COMMAND"
-msgstr "显示执行的 checkpoints 以及 COMMAND 的退出状态"
+msgstr "显示执行的检查点以及 COMMAND 的退出状态"
 
 #: tests/genfile.c:180
 msgid "Synchronous execution actions. These are executed when checkpoint number given by --checkpoint option is reached."

@@ -6,10 +6,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: procps-ng 3.3.16-rc2\n"
+"Project-Id-Version: procps-ng 3.3.16-pre2\n"
 "Report-Msgid-Bugs-To: procps@freelists.org\n"
 "POT-Creation-Date: 2019-10-29 07:52+1100\n"
-"PO-Revision-Date: 2019-12-17 13:22-0500\n"
+"PO-Revision-Date: 2019-12-17 13:37-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -825,9 +825,8 @@ msgid ""
 msgstr "需要选择语句"
 
 #: ps/help.c:111
-#, fuzzy
 msgid " -C <command>         command name\n"
-msgstr "标准命令"
+msgstr " -C <命令>            命令名称\n"
 
 #: ps/help.c:112
 msgid " -G, --Group <GID>    real group id or name\n"
@@ -935,6 +934,8 @@ msgid ""
 " -o, o, --format <format>\n"
 "                      user-defined format\n"
 msgstr ""
+" -o, o, --format <格式>\n"
+"                      用户定义的格式\n"
 
 #: ps/help.c:142
 msgid "  s                   signal format\n"
@@ -1227,15 +1228,15 @@ msgstr "不支持的 SysV 选项"
 
 #: ps/parser.c:511
 msgid "cannot happen - problem #1"
-msgstr ""
+msgstr "不应发生 - 问题 #1"
 
 #: ps/parser.c:515
 msgid "cannot happen - problem #2"
-msgstr ""
+msgstr "不应发生 - 问题 #2"
 
 #: ps/parser.c:517
 msgid "second chance parse failed, not BSD or SysV"
-msgstr ""
+msgstr "第二次解析同样失败，并非 BSD 或 SysV"
 
 #: ps/parser.c:534
 #, fuzzy
@@ -1278,7 +1279,7 @@ msgstr ""
 
 #: ps/parser.c:739
 msgid "embedded '-' among BSD options makes no sense"
-msgstr ""
+msgstr "BSD 选项中嵌入的 '-' 不合理"
 
 #: ps/parser.c:745
 #, fuzzy
@@ -1286,9 +1287,8 @@ msgid "unsupported option (BSD syntax)"
 msgstr "不支持旧语法：%s\n"
 
 #: ps/parser.c:831 ps/parser.c:843
-#, fuzzy
 msgid "unknown gnu long option"
-msgstr "%s：不明选项 -%c\n"
+msgstr "未知的 gnu 长选项"
 
 #: ps/parser.c:851
 msgid "list of real groups must follow --Group"
@@ -1479,11 +1479,11 @@ msgstr ""
 
 #: ps/sortformat.c:760
 msgid "bug: must reset the list first"
-msgstr ""
+msgstr "错误：必须首先重置列表"
 
 #: ps/sortformat.c:798
 msgid "tell <procps@freelists.org> what you expected"
-msgstr ""
+msgstr "请向 <procps@freelists.org> 报告问题和您期望的结果"
 
 #: ps/sortformat.c:808
 msgid "tell <procps@freelists.org> what you want (-L/-T, -m/m/H, and $PS_FORMAT)"
@@ -1508,7 +1508,7 @@ msgstr ""
 
 #: ps/sortformat.c:890
 msgid "internal error: no PID or PPID for -j option"
-msgstr ""
+msgstr "内部错误：没有用于 -j 选项的 PID 或 PPID"
 
 #: ps/sortformat.c:892
 #, fuzzy
@@ -1890,9 +1890,8 @@ msgid "  -p, --load[=<file>]  read values from file\n"
 msgstr ""
 
 #: sysctl.c:123
-#, fuzzy
 msgid "  -f                   alias of -p\n"
-msgstr "(p)"
+msgstr "  -f                   -p 的别名\n"
 
 #: sysctl.c:124
 msgid "      --system         read values from all system directories\n"
@@ -1913,19 +1912,16 @@ msgid "  -w, --write          enable writing a value to variable\n"
 msgstr ""
 
 #: sysctl.c:129
-#, fuzzy
 msgid "  -o                   does nothing\n"
-msgstr "不起作用。为向前兼容保留的选项。"
+msgstr "  -o                   没有效果\n"
 
 #: sysctl.c:130
-#, fuzzy
 msgid "  -x                   does nothing\n"
-msgstr "不起作用。为向前兼容保留的选项。"
+msgstr "  -x                   没有效果\n"
 
 #: sysctl.c:131
-#, fuzzy
 msgid "  -d                   alias of -h\n"
-msgstr "栏位别名"
+msgstr "  -d                   -h 的别名\n"
 
 #: sysctl.c:177 sysctl.c:233
 #, fuzzy, c-format
@@ -2040,9 +2036,9 @@ msgid "screen too small"
 msgstr ""
 
 #: tload.c:96
-#, fuzzy, c-format
+#, c-format
 msgid " %s [options] [tty]\n"
-msgstr "不是一个 tty"
+msgstr " %s [选项] [tty]\n"
 
 #: tload.c:98
 msgid " -d, --delay <secs>  update delay in seconds\n"
@@ -2711,12 +2707,15 @@ msgid ""
 msgstr "用法：%s [选项] 输入文件\n"
 
 #: top/top_nls.c:333
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  %s\n"
 "Usage:\n"
 "  %s%s"
-msgstr "用法：%s [选项] 输入文件\n"
+msgstr ""
+"  %s\n"
+"用法：\n"
+"  %s%s"
 
 #: top/top_nls.c:336
 #, fuzzy, c-format

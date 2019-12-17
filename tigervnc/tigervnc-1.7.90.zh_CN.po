@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the tigervnc package.
 # Mingcong Bai <jeffbai@aosc.xyz>, 2015.
 # Mingye Wang (Arthur2e5) <arthur200126@gmail.com>, 2016.
+# Boyuan Yang <073plan@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: tigervnc 1.7.90\n"
 "Report-Msgid-Bugs-To: tigervnc-devel@googlegroups.com\n"
 "POT-Creation-Date: 2017-04-19 13:05+0000\n"
-"PO-Revision-Date: 2017-11-15 10:05+0800\n"
+"PO-Revision-Date: 2019-12-17 16:01-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
-"X-Generator: Poedit 2.0.4\n"
+"X-Generator: Poedit 2.2.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: vncviewer/CConn.cxx:110
@@ -140,7 +141,7 @@ msgstr "占用鼠标失败"
 
 #: vncviewer/DesktopWindow.cxx:1002
 msgid "Invalid screen layout computed for resize request!"
-msgstr "大小改变请求计算得无效的屏幕布局！"
+msgstr "大小改变请求计算得到了无效的屏幕布局！"
 
 #: vncviewer/FLTKPixelBuffer.cxx:33
 msgid "Not enough memory for framebuffer"

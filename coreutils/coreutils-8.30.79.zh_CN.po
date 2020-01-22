@@ -7,14 +7,14 @@
 # Funda Wang <fundawang@linux.net.cn>, 2004, 2005.
 # Ji ZhengYu <zhengyuji@gmail.com>, 2009.
 # Aron Xu <happyaron.xu@gmail.com>, 2009, 2010, 2011, 2015.
-# Boyuan Yang <073plan@gmail.com>, 2018, 2019.
+# Boyuan Yang <073plan@gmail.com>, 2018, 2019, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: coreutils 8.30.79\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2019-03-04 01:47-0800\n"
-"PO-Revision-Date: 2019-10-02 14:06-0400\n"
+"PO-Revision-Date: 2020-01-22 15:42-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -338,8 +338,8 @@ msgstr "”"
 msgid "%s: end of file"
 msgstr "%s：文件结束"
 
-#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:803 src/od.c:953
-#: src/tac.c:251 src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:824
+#: lib/randread.c:128 src/du.c:1073 src/md5sum.c:803 src/od.c:953 src/tac.c:251
+#: src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:824
 #, c-format
 msgid "%s: read error"
 msgstr "%s：读取出错"
@@ -853,17 +853,16 @@ msgid "%s%s argument '%s' too large"
 msgstr "%s%s 参数\"%s\"太大"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37
-#: src/comm.c:39 src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40
-#: src/dd.c:45 src/df.c:48 src/dirname.c:32 src/du.c:54 src/env.c:39
-#: src/expand.c:49 src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42
-#: src/install.c:51 src/ln.c:52 src/ls.c:131 src/mkdir.c:39 src/mkfifo.c:36
-#: src/mknod.c:37 src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53
-#: src/pathchk.c:32 src/pinky.c:38 src/printenv.c:44 src/printf.c:68
-#: src/rm.c:41 src/rmdir.c:37 src/stty.c:68 src/sum.c:39 src/tac.c:58
-#: src/tail.c:77 src/tee.c:38 src/touch.c:45 src/tty.c:44 src/uname.c:61
-#: src/unexpand.c:50 src/uniq.c:43 src/uptime.c:46 src/users.c:36 src/wc.c:51
-#: src/who.c:51 src/yes.c:32
+#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37 src/comm.c:39
+#: src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40 src/dd.c:45
+#: src/df.c:48 src/dirname.c:32 src/du.c:54 src/env.c:39 src/expand.c:49
+#: src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42 src/install.c:51
+#: src/ln.c:52 src/ls.c:131 src/mkdir.c:39 src/mkfifo.c:36 src/mknod.c:37
+#: src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53 src/pathchk.c:32
+#: src/pinky.c:38 src/printenv.c:44 src/printf.c:68 src/rm.c:41 src/rmdir.c:37
+#: src/stty.c:68 src/sum.c:39 src/tac.c:58 src/tail.c:77 src/tee.c:38
+#: src/touch.c:45 src/tty.c:44 src/uname.c:61 src/unexpand.c:50 src/uniq.c:43
+#: src/uptime.c:46 src/users.c:36 src/wc.c:51 src/who.c:51 src/yes.c:32
 msgid "David MacKenzie"
 msgstr "David MacKenzie"
 
@@ -927,9 +926,9 @@ msgstr "缺少操作数"
 #: src/hostname.c:111 src/install.c:985 src/join.c:970 src/link.c:84
 #: src/ln.c:593 src/logname.c:70 src/mknod.c:182 src/mv.c:451 src/nproc.c:115
 #: src/od.c:1866 src/ptx.c:2082 src/seq.c:624 src/shuf.c:491 src/sort.c:4600
-#: src/split.c:1554 src/tr.c:1768 src/tsort.c:559 src/tty.c:113
-#: src/uname.c:252 src/uniq.c:533 src/uniq.c:550 src/unlink.c:80
-#: src/uptime.c:251 src/users.c:145 src/wc.c:758 src/who.c:831 src/whoami.c:78
+#: src/split.c:1554 src/tr.c:1768 src/tsort.c:559 src/tty.c:113 src/uname.c:252
+#: src/uniq.c:533 src/uniq.c:550 src/unlink.c:80 src/uptime.c:251
+#: src/users.c:145 src/wc.c:758 src/who.c:831 src/whoami.c:78
 #, c-format
 msgid "extra operand %s"
 msgstr "额外的操作数 %s"
@@ -1797,8 +1796,8 @@ msgstr "  --output-delimiter=STR\t依照STR 分列\n"
 msgid "  --total           output a summary\n"
 msgstr "  --total           输出一份摘要信息\n"
 
-#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945
-#: src/paste.c:452 src/tail.c:312
+#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945 src/paste.c:452
+#: src/tail.c:312
 msgid "  -z, --zero-terminated    line delimiter is NUL, not newline\n"
 msgstr "  -z, --zero-terminated    以 NUL 字符而非换行符作为行尾分隔符\n"
 
@@ -6774,6 +6773,8 @@ msgid ""
 "      --field=FIELDS   replace the numbers in these input fields (default=1)\n"
 "                         see FIELDS below\n"
 msgstr ""
+"      --field=域       将这些输入域中的数字进行替换（默认=1)\n"
+"                         请见下面给出的域的详细信息\n"
 
 #: src/numfmt.c:901
 msgid ""
@@ -6905,16 +6906,6 @@ msgstr ""
 "               ...\n"
 
 #: src/numfmt.c:979
-#, fuzzy
-#| msgid ""
-#| "Each range is one of:\n"
-#| "\n"
-#| "  N     N'th byte, character or field, counted from 1\n"
-#| "  N-    from N'th byte, character or field, to end of line\n"
-#| "  N-M   from N'th to M'th (included) byte, character or field\n"
-#| "  -M    from first to M'th (included) byte, character or field\n"
-#| "\n"
-#| "With no FILE, or when FILE is -, read standard input.\n"
 msgid ""
 "\n"
 "FIELDS supports cut(1) style field ranges:\n"
@@ -6925,13 +6916,14 @@ msgid ""
 "  -    all fields\n"
 "Multiple fields/ranges can be separated with commas\n"
 msgstr ""
-"每种参数格式表示范围如下：\n"
-"    N\t从第1 个开始数的第N 个字节、字符或域\n"
-"    N-\t从第N 个开始到所在行结束的所有字符、字节或域\n"
-"    N-M\t从第N 个开始到第M 个之间(包括第M 个)的所有字符、字节或域\n"
-"    -M\t从第1 个开始到第M 个之间(包括第M 个)的所有字符、字节或域\n"
 "\n"
-"当没有文件参数，或者文件不存在时，从标准输入读取\n"
+"参数中的域支持 cut(1) 风格的域范围：\n"
+"  N    从第 1 个开始数的第 N 个域\n"
+"  N-   从第 N 个开始到所在行结束的域\n"
+"  N-M  从第 N 个开始到第 M 个之间（包括头尾）的域\n"
+"  -M   从第 1 个开始到第 M 个之间（包括头尾）的域\n"
+"  -    所有域\n"
+"多个域/范围可以使用逗号分隔\n"
 
 #: src/numfmt.c:989
 #, c-format
@@ -7121,14 +7113,6 @@ msgstr ""
 "　或：%s --traditional [选项]... [文件] [[+]偏移量[.][b] [+][标签][.][b]]\n"
 
 #: src/od.c:328
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Write an unambiguous representation, octal bytes by default,\n"
-#| "of FILE to standard output.  With more than one FILE argument,\n"
-#| "concatenate them in the listed order to form the input.\n"
-#| "With no FILE, or when FILE is -, read standard input.\n"
-#| "\n"
 msgid ""
 "\n"
 "Write an unambiguous representation, octal bytes by default,\n"
@@ -7136,10 +7120,8 @@ msgid ""
 "concatenate them in the listed order to form the input.\n"
 msgstr ""
 "\n"
-"将指定文件以八进制形式(默认)转储到标准输出。如果指定了多于一个的文件\n"
-"参数，程序会自动将输入的内容整合为列表并以同样的形式输出。\n"
-"如果没有指定文件，或指定文件为\"-\"，程序从标准输入读取数据。\n"
-"\n"
+"以无歧义的表示方式将指定文件输出至标准输出，默认为八进制字节形式。\n"
+"如果指定了多于一个文件，将它们以列出的顺序连接起来作为输入。\n"
 
 #: src/od.c:336
 #, fuzzy
@@ -7618,16 +7600,12 @@ msgid "invalid page range %s"
 msgstr "页码范围%s 无效"
 
 #: src/pr.c:978
-#, fuzzy
-#| msgid "`-l PAGE_LENGTH' invalid number of lines: %s"
 msgid "'-l PAGE_LENGTH' invalid number of lines"
-msgstr "\"-l 页长\"中含有无效的行号：%s"
+msgstr "“-l 页长”中含有无效的行号"
 
 #: src/pr.c:993
-#, fuzzy
-#| msgid "`-N NUMBER' invalid starting line number: %s"
 msgid "'-N NUMBER' invalid starting line number"
-msgstr "\"-N 编号\"中含有无效的起始行号：%s"
+msgstr "“-N 编号”中含有无效的起始行号"
 
 #: src/pr.c:997
 msgid "'-o MARGIN' invalid line offset"
@@ -8180,15 +8158,6 @@ msgstr ""
 "\t\t\t\t所有组件都必须存在\n"
 
 #: src/readlink.c:75
-#, fuzzy
-#| msgid ""
-#| "  -m, --canonicalize-missing    canonicalize by following every symlink in\n"
-#| "                                every component of the given name recursively,\n"
-#| "                                without requirements on components existence\n"
-#| "  -n, --no-newline              do not output the trailing newline\n"
-#| "  -q, --quiet,\n"
-#| "  -s, --silent                  suppress most error messages\n"
-#| "  -v, --verbose                 report error messages\n"
 msgid ""
 "  -m, --canonicalize-missing    canonicalize by following every symlink in\n"
 "                                every component of the given name recursively,\n"
@@ -8199,17 +8168,19 @@ msgid ""
 "  -v, --verbose                 report error messages\n"
 "  -z, --zero                    end each output line with NUL, not newline\n"
 msgstr ""
-"  -m, --canonicalize-missing\t递归跟随给出文件名的所有符号链接以标准化，\n"
-"\t\t\t\t但不对组件存在性作出要求\n"
-"  -n, --no-newline\t不输出尾随的新行\n"
+"  -m, --canonicalize-missing    递归跟随给出文件名的所有符号链接以标准化，\n"
+"                                但不对各组件的存在性作出要求\n"
+"  -n, --no-newline              不输出末尾的新行\n"
 "  -q, --quiet,\n"
-"  -s, --silent\t\t缩减大多数的错误消息\n"
-"  -v, --verbose\t\t报告所有错误消息\n"
+"  -s, --silent                  缩减大多数的错误消息（默认启用）\n"
+"  -v, --verbose                 报告错误消息\n"
+"  -z, --zero                    以空字符（NUL）而非换行符结束每个输出行\n"
+"\n"
 
 #: src/readlink.c:152
 #, c-format
 msgid "ignoring --no-newline with multiple arguments"
-msgstr ""
+msgstr "忽略带有多个参数时的 --no-newline 选项"
 
 #: src/realpath.c:72
 msgid ""
@@ -9081,14 +9052,8 @@ msgid "cannot read realtime clock"
 msgstr "无法读取实时时钟"
 
 #: src/sort.c:424
-#, fuzzy
-#| msgid ""
-#| "Write sorted concatenation of all FILE(s) to standard output.\n"
-#| "\n"
 msgid "Write sorted concatenation of all FILE(s) to standard output.\n"
-msgstr ""
-"串联排序所有指定文件并将结果写到标准输出。\n"
-"\n"
+msgstr "串联排序所有指定文件并将结果写到标准输出。\n"
 
 #: src/sort.c:431
 msgid ""
@@ -9492,16 +9457,13 @@ msgid "no input from %s"
 msgstr "没有来自 %s 的输入"
 
 #: src/sort.c:4692
-#, fuzzy, c-format
-#| msgid "using %s sorting rules"
+#, c-format
 msgid "text ordering performed using %s sorting rules"
-msgstr "使用%s 排序规则"
+msgstr "使用 %s 排序规则进行了文字排序"
 
 #: src/sort.c:4696
-#, fuzzy
-#| msgid "using simple byte comparison"
 msgid "text ordering performed using simple byte comparison"
-msgstr "使用简单字节比较"
+msgstr "使用简单字节比较进行了文字排序"
 
 #: src/sort.c:4728
 #, c-format
@@ -9519,20 +9481,12 @@ msgid "Usage: %s [OPTION]... [FILE [PREFIX]]\n"
 msgstr "用法：%s [选项]... [文件 [前缀]]\n"
 
 #: src/split.c:230
-#, fuzzy
-#| msgid ""
-#| "Output fixed-size pieces of INPUT to PREFIXaa, PREFIXab, ...; default\n"
-#| "size is 1000 lines, and default PREFIX is `x'.  With no INPUT, or when INPUT\n"
-#| "is -, read standard input.\n"
-#| "\n"
 msgid ""
 "Output pieces of FILE to PREFIXaa, PREFIXab, ...;\n"
 "default size is 1000 lines, and default PREFIX is 'x'.\n"
 msgstr ""
-"将输入内容拆分为固定大小的分片并输出到\"前缀aa\"、\"前缀ab\",...；\n"
-"默认以 1000 行为拆分单位，默认前缀为\"x\"。如果不指定文件，或\n"
-"者文件为\"-\"，则从标准输入读取数据。\n"
-"\n"
+"将文件拆分并输出为“前缀aa”、“前缀ab”等等文件；\n"
+"默认以 1000 行为拆分单位，默认前缀为“x”。\n"
 
 #: src/split.c:238
 #, fuzzy, c-format
@@ -9666,12 +9620,12 @@ msgstr "正在等待子进程"
 #: src/split.c:571
 #, c-format
 msgid "with FILE=%s, signal %s from command: %s"
-msgstr ""
+msgstr "带 FILE=%s，信号 %s 来自命令：%s"
 
 #: src/split.c:579
 #, c-format
 msgid "with FILE=%s, exit %d from command: %s"
-msgstr ""
+msgstr "带 FILE=%s，退出状态 %d 来自命令：%s"
 
 #: src/split.c:586
 #, c-format
@@ -9697,7 +9651,7 @@ msgstr "无效的后缀长度"
 
 #: src/split.c:1412
 msgid "empty record separator"
-msgstr ""
+msgstr "空的记录分隔符"
 
 #: src/split.c:1423
 #, c-format
@@ -9705,10 +9659,8 @@ msgid "multi-character separator %s"
 msgstr "多字符分隔符 %s"
 
 #: src/split.c:1431
-#, fuzzy
-#| msgid "multiplexed character special file"
 msgid "multiple separator characters specified"
-msgstr "复用字符特殊文件"
+msgstr "指定了多个分隔用字符"
 
 #: src/split.c:1462
 #, c-format
@@ -10339,7 +10291,7 @@ msgstr ""
 #: src/stty.c:626
 #, c-format
 msgid " * [-]drain      wait for transmission before applying settings (%s by default)\n"
-msgstr ""
+msgstr " * [-]drain      应用设置前等待传输（默认 %s）\n"
 
 #: src/stty.c:628
 msgid "on"
@@ -10544,7 +10496,7 @@ msgstr ""
 
 #: src/stty.c:727
 msgid " * bsN           backspace delay style, N in [0..1]\n"
-msgstr ""
+msgstr " * bsN           退格延迟风格，N 取值在 [0..1] 范围内\n"
 
 #: src/stty.c:732
 msgid " * crN           carriage return delay style, N in [0..3]\n"
@@ -10556,7 +10508,7 @@ msgstr ""
 
 #: src/stty.c:742
 msgid " * nlN           newline delay style, N in [0..1]\n"
-msgstr ""
+msgstr " * nlN           新行延迟风格，N 取值在 [0..1] 范围内\n"
 
 #: src/stty.c:747
 msgid " * [-]ocrnl      translate carriage return to newline\n"
@@ -10588,7 +10540,7 @@ msgstr ""
 
 #: src/stty.c:781
 msgid "   [-]opost      postprocess output\n"
-msgstr ""
+msgstr "   [-]opost      对输出进行后处理\n"
 
 #: src/stty.c:785
 msgid ""
@@ -10646,7 +10598,7 @@ msgstr ""
 
 #: src/stty.c:825
 msgid " * [-]echoke     same as [-]crtkill\n"
-msgstr ""
+msgstr " * [-]echoke     与 [-]crtkill 相同\n"
 
 #: src/stty.c:829
 msgid "   [-]echonl     echo newline even if not echoing other characters\n"
@@ -10658,11 +10610,11 @@ msgstr ""
 
 #: src/stty.c:838
 msgid " * [-]extproc    enable \"LINEMODE\"; useful with high latency links\n"
-msgstr ""
+msgstr " * [-]extproc    启用“行模式”（LINEMODE）；在高延迟连接下有用\n"
 
 #: src/stty.c:843
 msgid " * [-]flusho     discard output\n"
-msgstr ""
+msgstr " * [-]flusho     丢弃输出\n"
 
 #: src/stty.c:847
 #, c-format
@@ -10670,6 +10622,8 @@ msgid ""
 "   [-]icanon     enable special characters: %s\n"
 "   [-]iexten     enable non-POSIX special characters\n"
 msgstr ""
+"   [-]icanon     启用特殊字符：%s\n"
+"   [-]iexten     启用非 POSIX 特殊字符\n"
 
 #: src/stty.c:858
 #, fuzzy
@@ -10695,7 +10649,7 @@ msgstr " * [-]prterase   与 [-]echoprt 相同\n"
 
 #: src/stty.c:868
 msgid " * [-]tostop     stop background jobs that try to write to the terminal\n"
-msgstr ""
+msgstr " * [-]tostop     停止尝试写入终端的后台任务\n"
 
 #: src/stty.c:873
 msgid " * [-]xcase      with icanon, escape with '\\' for uppercase characters\n"
@@ -10711,7 +10665,7 @@ msgstr ""
 
 #: src/stty.c:882
 msgid " * [-]LCASE      same as [-]lcase\n"
-msgstr ""
+msgstr " * [-]LCASE      与 [-]lcase 相同\n"
 
 #: src/stty.c:886
 #, fuzzy
@@ -10761,7 +10715,7 @@ msgstr ""
 
 #: src/stty.c:920
 msgid " * [-]decctlq    same as [-]ixany\n"
-msgstr ""
+msgstr " * [-]decctlq    与 [-]ixany 相同\n"
 
 #: src/stty.c:924
 msgid ""
@@ -10779,6 +10733,8 @@ msgid ""
 "   litout        same as -parenb -istrip -opost cs8\n"
 "   -litout       same as parenb istrip opost cs7\n"
 msgstr ""
+"   litout        与 -parenb -istrip -opost cs8 相同\n"
+"   -litout       与 parenb istrip opost cs7 相同\n"
 
 #: src/stty.c:938
 #, c-format
@@ -12114,14 +12070,12 @@ msgid "invalid repeat count %s in [c*n] construct"
 msgstr "在参数结构 [c*n] 中有无效的重复次数%s"
 
 #: src/tr.c:888
-#, fuzzy, c-format
-#| msgid "missing character class name `[::]'"
+#, c-format
 msgid "missing character class name '[::]'"
 msgstr "缺失字符种类名\"[::]\""
 
 #: src/tr.c:891
-#, fuzzy, c-format
-#| msgid "missing equivalence class character `[==]'"
+#, c-format
 msgid "missing equivalence class character '[==]'"
 msgstr "缺失类型等值的字符\"[==]\""
 
@@ -12696,13 +12650,6 @@ msgstr ""
 "  -l, --lines\t\t输出行数统计\n"
 
 #: src/wc.c:139
-#, fuzzy
-#| msgid ""
-#| "      --files0-from=F    read input from the files specified by\n"
-#| "                           NUL-terminated names in file F;\n"
-#| "                           If F is - then read names from standard input\n"
-#| "  -L, --max-line-length  print the length of the longest line\n"
-#| "  -w, --words            print the word counts\n"
 msgid ""
 "      --files0-from=F    read input from the files specified by\n"
 "                           NUL-terminated names in file F;\n"
@@ -12710,10 +12657,10 @@ msgid ""
 "  -L, --max-line-length  print the maximum display width\n"
 "  -w, --words            print the word counts\n"
 msgstr ""
-"      --files0-from=文件\t从指定文件读取以NUL 终止的名称，如果该文件被\n"
-"\t\t\t\t\t指定为\"-\"则从标准输入读文件名\n"
-"  -L, --max-line-length\t显示最长行的长度\n"
-"  -w, --words\t\t\t显示单词计数\n"
+"      --files0-from=文件 从指定文件读取以空字符（NUL）终止的名称；\n"
+"                         如果该文件被指定为 - 则从标准输入读文件名\n"
+"  -L, --max-line-length  显示最长行的长度\n"
+"  -w, --words            显示单词计数\n"
 
 #: src/who.c:213
 msgid " old "

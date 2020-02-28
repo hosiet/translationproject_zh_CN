@@ -11,10 +11,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: coreutils 8.30.79\n"
+"Project-Id-Version: coreutils 8.31.90\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2020-02-27 17:02+0000\n"
-"PO-Revision-Date: 2020-01-22 15:42-0500\n"
+"PO-Revision-Date: 2020-02-28 14:41-0500\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 
 #: lib/argmatch.c:132
 #, c-format
@@ -338,8 +338,8 @@ msgstr "”"
 msgid "%s: end of file"
 msgstr "%s：文件结束"
 
-#: lib/randread.c:128 src/du.c:1074 src/md5sum.c:803 src/od.c:954
-#: src/tac.c:251 src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:824
+#: lib/randread.c:128 src/du.c:1074 src/md5sum.c:803 src/od.c:954 src/tac.c:251
+#: src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:824
 #, c-format
 msgid "%s: read error"
 msgstr "%s：读取出错"
@@ -660,23 +660,15 @@ msgstr "(C)"
 
 #. TRANSLATORS: The %s placeholder is the web address of the GPL license.
 #: lib/version-etc.c:88
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\n"
-#| "This is free software: you are free to change and redistribute it.\n"
-#| "There is NO WARRANTY, to the extent permitted by law.\n"
-#| "\n"
+#, c-format
 msgid ""
 "License GPLv3+: GNU GPL version 3 or later <%s>.\n"
 "This is free software: you are free to change and redistribute it.\n"
 "There is NO WARRANTY, to the extent permitted by law.\n"
 msgstr ""
-"\n"
-"许可证 GPLv3+：GNU 通用公共许可证第 3 版或更新版本<https://gnu.org/licenses/gpl.html>。\n"
+"许可证 GPLv3+：GNU 通用公共许可证第 3 版或更新版本<%s>。\n"
 "本软件是自由软件：您可以自由修改和重新发布它。\n"
 "在法律范围内没有其他保证。\n"
-"\n"
 
 #. TRANSLATORS: %s denotes an author name.
 #: lib/version-etc.c:105
@@ -791,14 +783,9 @@ msgstr ""
 #. "Report translation bugs to <...>\n" with the address for translation
 #. bugs (typically your translation team's web or email address).
 #: lib/version-etc.c:249
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Report bugs to: %s\n"
+#, c-format
 msgid "Report bugs to: %s\n"
-msgstr ""
-"\n"
-"请向<%s> 报告软件错误。请向 <i18n-zh@googlegroups.com> 报告翻译错误。\n"
+msgstr "请向< %s> 报告软件错误。请向 <i18n-zh@googlegroups.com> 报告翻译错误。\n"
 
 #: lib/version-etc.c:251
 #, c-format
@@ -811,10 +798,9 @@ msgid "%s home page: <%s>\n"
 msgstr "%s 的主页：<%s>\n"
 
 #: lib/version-etc.c:260
-#, fuzzy, c-format
-#| msgid "General help using GNU software: <https://www.gnu.org/gethelp/>\n"
+#, c-format
 msgid "General help using GNU software: <%s>\n"
-msgstr "GNU 软件一般性帮助：<https://www.gnu.org/gethelp/>\n"
+msgstr "GNU 软件一般性帮助：<%s>\n"
 
 #: lib/xbinary-io.c:37
 #, c-format
@@ -857,17 +843,16 @@ msgid "%s%s argument '%s' too large"
 msgstr "%s%s 参数\"%s\"太大"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37
-#: src/comm.c:39 src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40
-#: src/dd.c:45 src/df.c:49 src/dirname.c:32 src/du.c:55 src/env.c:39
-#: src/expand.c:49 src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42
-#: src/install.c:51 src/ln.c:52 src/ls.c:137 src/mkdir.c:39 src/mkfifo.c:36
-#: src/mknod.c:37 src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53
-#: src/pathchk.c:32 src/pinky.c:38 src/printenv.c:44 src/printf.c:68
-#: src/rm.c:41 src/rmdir.c:37 src/stty.c:68 src/sum.c:39 src/tac.c:58
-#: src/tail.c:77 src/tee.c:38 src/touch.c:45 src/tty.c:44 src/uname.c:61
-#: src/unexpand.c:50 src/uniq.c:41 src/uptime.c:46 src/users.c:36 src/wc.c:51
-#: src/who.c:51 src/yes.c:32
+#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37 src/comm.c:39
+#: src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40 src/dd.c:45
+#: src/df.c:49 src/dirname.c:32 src/du.c:55 src/env.c:39 src/expand.c:49
+#: src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42 src/install.c:51
+#: src/ln.c:52 src/ls.c:137 src/mkdir.c:39 src/mkfifo.c:36 src/mknod.c:37
+#: src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53 src/pathchk.c:32
+#: src/pinky.c:38 src/printenv.c:44 src/printf.c:68 src/rm.c:41 src/rmdir.c:37
+#: src/stty.c:68 src/sum.c:39 src/tac.c:58 src/tail.c:77 src/tee.c:38
+#: src/touch.c:45 src/tty.c:44 src/uname.c:61 src/unexpand.c:50 src/uniq.c:41
+#: src/uptime.c:46 src/users.c:36 src/wc.c:51 src/who.c:51 src/yes.c:32
 msgid "David MacKenzie"
 msgstr "David MacKenzie"
 
@@ -931,9 +916,9 @@ msgstr "缺少操作数"
 #: src/hostname.c:111 src/install.c:985 src/join.c:969 src/link.c:84
 #: src/ln.c:593 src/logname.c:70 src/mknod.c:182 src/mv.c:451 src/nproc.c:115
 #: src/od.c:1871 src/ptx.c:2082 src/seq.c:639 src/shuf.c:491 src/sort.c:4596
-#: src/split.c:1554 src/tr.c:1768 src/tsort.c:559 src/tty.c:113
-#: src/uname.c:252 src/uniq.c:520 src/uniq.c:537 src/unlink.c:80
-#: src/uptime.c:252 src/users.c:145 src/wc.c:758 src/who.c:831 src/whoami.c:78
+#: src/split.c:1554 src/tr.c:1768 src/tsort.c:559 src/tty.c:113 src/uname.c:252
+#: src/uniq.c:520 src/uniq.c:537 src/unlink.c:80 src/uptime.c:252
+#: src/users.c:145 src/wc.c:758 src/who.c:831 src/whoami.c:78
 #, c-format
 msgid "extra operand %s"
 msgstr "额外的操作数 %s"
@@ -1801,8 +1786,8 @@ msgstr "  --output-delimiter=STR\t依照STR 分列\n"
 msgid "  --total           output a summary\n"
 msgstr "  --total           输出一份摘要信息\n"
 
-#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945
-#: src/paste.c:452 src/tail.c:312
+#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945 src/paste.c:452
+#: src/tail.c:312
 msgid "  -z, --zero-terminated    line delimiter is NUL, not newline\n"
 msgstr "  -z, --zero-terminated    以 NUL 字符而非换行符作为行尾分隔符\n"
 
@@ -3156,19 +3141,6 @@ msgstr ""
 "\n"
 
 #: src/dd.c:596
-#, fuzzy
-#| msgid ""
-#| "  ascii     from EBCDIC to ASCII\n"
-#| "  ebcdic    from ASCII to EBCDIC\n"
-#| "  ibm       from ASCII to alternate EBCDIC\n"
-#| "  block     pad newline-terminated records with spaces to cbs-size\n"
-#| "  unblock   replace trailing spaces in cbs-size records with newline\n"
-#| "  lcase     change upper case to lower case\n"
-#| "  ucase     change lower case to upper case\n"
-#| "  sparse    try to seek rather than write the output for NUL input blocks\n"
-#| "  swab      swap every pair of input bytes\n"
-#| "  sync      pad every input block with NULs to ibs-size; when used\n"
-#| "            with block or unblock, pad with spaces rather than NULs\n"
 msgid ""
 "  ascii     from EBCDIC to ASCII\n"
 "  ebcdic    from ASCII to EBCDIC\n"
@@ -3189,7 +3161,7 @@ msgstr ""
 "  unblock   将 cbs 大小的块中尾部的空格替换为一个换行符\n"
 "  lcase     将大写字符转换为小写\n"
 "  ucase     将小写字符转换为大写\n"
-"  sparse    为 NUL 输入数据块尝试寻址（seek）而非写至输出\n"
+"  sparse    尝试寻址（seek）而非写入全空（NUL）的输出块\n"
 "  swab      交换每一对输入数据字节\n"
 "  sync      将每个输入数据块以 NUL 空字符填充至 ibs 的大小；当配合\n"
 "            block 或 unblock 使用时，会以空格代替 NUL 字符来填充\n"
@@ -5541,7 +5513,7 @@ msgstr "无法识别的前缀：%s"
 #: src/ls.c:2808
 #, c-format
 msgid "unparsable value for LS_COLORS environment variable"
-msgstr "LS_COLORS 环境变量中存在无法解些的值"
+msgstr "LS_COLORS 环境变量中存在无法解析的值"
 
 #: src/ls.c:2838 src/stat.c:1046
 #, c-format
@@ -5830,15 +5802,11 @@ msgstr ""
 "                                 TIME_STYLE 的相关内容\n"
 
 #: src/ls.c:5473
-#, fuzzy
-#| msgid ""
-#| "  -t                         sort by modification time, newest first\n"
-#| "  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8\n"
 msgid ""
 "  -t                         sort by time, newest first; see --time\n"
 "  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8\n"
 msgstr ""
-"  -t                         按修改时间排序，最新的最前\n"
+"  -t                         按时间排序，最新的最前；参见 --time\n"
 "  -T, --tabsize=COLS         指定制表符（Tab）的宽度，而非默认8字符\n"
 
 #: src/ls.c:5477
@@ -6013,13 +5981,7 @@ msgstr ""
 "\n"
 
 #: src/md5sum.c:285
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "The sums are computed as described in %s.  When checking, the input\n"
-#| "should be a former output of this program.  The default mode is to print a\n"
-#| "line with checksum, a space, a character indicating input mode ('*' for binary,\n"
-#| "' ' for text or where binary is insignificant), and name for each FILE.\n"
+#, c-format
 msgid ""
 "\n"
 "The sums are computed as described in %s.  When checking, the input\n"
@@ -6034,6 +5996,8 @@ msgstr ""
 "程序先前输出的格式相同。默认的输出模式时输出一行校验和的校验结果、一个空格\n"
 "以及一个指示输入模式的字符（“*”代表二进制，“ ”代表纯文本或者二进制特性\n"
 "不明显的数据），并同时显示每个文件的名称。\n"
+"\n"
+"注意：GNU 系统上二进制模式和文本模式没有区别。\n"
 
 #: src/md5sum.c:697
 #, c-format
@@ -6545,12 +6509,6 @@ msgstr ""
 "  -w, --number-width=数字\t为行号使用指定的栏数\n"
 
 #: src/nl.c:206
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "By default, selects -v1 -i1 -l1 -sTAB -w6 -nrn -hn -bt -fn.  CC are\n"
-#| "two delimiter characters for separating logical pages, a missing\n"
-#| "second character implies :.  Type \\\\ for \\.  STYLE is one of:\n"
 msgid ""
 "\n"
 "Default options are: -bt -d'\\:' -fn -hn -i1 -l1 -n'rn' -s<TAB> -v1 -w6\n"
@@ -6559,9 +6517,10 @@ msgid ""
 "a missing second character implies ':'.\n"
 msgstr ""
 "\n"
-"默认的选项设置是-v1 -i1 -l1 -sTAB -w6 -nrn -hn -bt -fn。CC 是用于分隔\n"
-"逻辑页数的两个分界符，其中缺失的第二个字符暗含了\":\"，如果您要指定\"\\\"，\n"
-"请输入\"\\\\\"。可用的样式如下：\n"
+"默认的选项设置是：-bt -d'\\:' -fn -hn -i1 -l1 -n'rn' -s<TAB> -v1 -w6\n"
+"\n"
+"CC 是用于构建逻辑分页符的两个分界符号；如第二个符号缺失，则认为默认\n"
+"使用 \":\"。\n"
 
 #: src/nl.c:213
 #, fuzzy
@@ -6830,22 +6789,28 @@ msgid ""
 "      --from=UNIT      auto-scale input numbers to UNITs; default is 'none';\n"
 "                         see UNIT below\n"
 msgstr ""
+"      --from=UNIT      将输入数字自动使用指定的单位进行缩放；默认为 none；\n"
+"                         详情请见下面的“单位”相关内容\n"
 
 #: src/numfmt.c:909
 msgid "      --from-unit=N    specify the input unit size (instead of the default 1)\n"
-msgstr ""
+msgstr "      --from-unit=N    指定输入的单位大小（默认为 1）\n"
 
 #: src/numfmt.c:912
 msgid ""
 "      --grouping       use locale-defined grouping of digits, e.g. 1,000,000\n"
 "                         (which means it has no effect in the C/POSIX locale)\n"
 msgstr ""
+"      --grouping       使用时间和区域设置所定义的方法对数字进行分组，例如\n"
+"                         1,000,000（即该设置在 C/POSIX 的区域设置下无作用）\n"
 
 #: src/numfmt.c:916
 msgid ""
 "      --header[=N]     print (without converting) the first N header lines;\n"
 "                         N defaults to 1 if not specified\n"
 msgstr ""
+"      --header[=N]     原样输出起始的 N 行头部内容（不进行转换）；\n"
+"                         如未指定 N，默认取值为 1\n"
 
 #: src/numfmt.c:920
 msgid ""
@@ -6869,16 +6834,20 @@ msgid ""
 "      --round=METHOD   use METHOD for rounding when scaling; METHOD can be:\n"
 "                         up, down, from-zero (default), towards-zero, nearest\n"
 msgstr ""
+"      --round=方法     缩放时使用指定方法四舍五入；指定的方法可以是：\n"
+"                         up, down, from-zero（默认）, towards-zero, nearest\n"
 
 #: src/numfmt.c:935
 msgid ""
 "      --suffix=SUFFIX  add SUFFIX to output numbers, and accept optional\n"
 "                         SUFFIX in input numbers\n"
 msgstr ""
+"      --suffix=后缀    将指定的后缀添加到输出数字之后，并接受输入数字中\n"
+"                         存在该后缀的情况\n"
 
 #: src/numfmt.c:939
 msgid "      --to=UNIT        auto-scale output numbers to UNITs; see UNIT below\n"
-msgstr ""
+msgstr "      --to=UNIT        将输出数字使用指定单位自动缩放；详见下方“单位”内容\n"
 
 #: src/numfmt.c:942
 msgid "      --to-unit=N      the output unit size (instead of the default 1)\n"
@@ -7092,10 +7061,8 @@ msgid "invalid padding value %s"
 msgstr "无效的填充值 %s"
 
 #: src/numfmt.c:1513
-#, fuzzy
-#| msgid "%s: invalid field specification %s"
 msgid "multiple field specifications"
-msgstr "%s：无效的区块规格%s"
+msgstr "无效的域规格"
 
 #: src/numfmt.c:1547
 #, c-format
@@ -7117,15 +7084,13 @@ msgid "no conversion option specified"
 msgstr "未指定转换选项"
 
 #: src/numfmt.c:1590
-#, fuzzy
-#| msgid "file operands cannot be combined with --files0-from"
 msgid "grouping cannot be combined with --to"
-msgstr "文件操作数不能于--files0-from 参数一起使用"
+msgstr "分组操作不能和 --to 共同使用"
 
 #: src/numfmt.c:1592
 #, c-format
 msgid "grouping has no effect in this locale"
-msgstr ""
+msgstr "当前区域设置下分组没有效果"
 
 #: src/numfmt.c:1605
 #, c-format
@@ -7225,14 +7190,6 @@ msgstr ""
 "      --traditional\t\t接受传统形式提交的参数\n"
 
 #: src/od.c:368
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Traditional format specifications may be intermixed; they accumulate:\n"
-#| "  -a   same as -t a,  select named characters, ignoring high-order bit\n"
-#| "  -b   same as -t o1, select octal bytes\n"
-#| "  -c   same as -t c,  select ASCII characters or backslash escapes\n"
-#| "  -d   same as -t u2, select unsigned decimal 2-byte units\n"
 msgid ""
 "\n"
 "\n"
@@ -7243,11 +7200,12 @@ msgid ""
 "  -d   same as -t u2, select unsigned decimal 2-byte units\n"
 msgstr ""
 "\n"
+"\n"
 "传统格式命令可混合使用，不同的格式可叠加：\n"
-"  -a\t即 -t a， 使用命名的字符，忽略高阶位\n"
-"  -b\t即 -t o1，使用八进制单字节字符\n"
-"  -c\t即 -t c， 使用ASCII 字符，或者反斜杠正名的特殊字符\n"
-"  -d\t即 -t u2，使用无符号十进制双字节字符\n"
+"  -a   即 -t a， 使用命名的字符，忽略高阶位\n"
+"  -b   即 -t o1，使用八进制单字节字符\n"
+"  -c   即 -t c， 使用可打印字符或者反斜杠转义的特殊字符\n"
+"  -d   即 -t u2，使用无符号十进制双字节字符\n"
 
 #: src/od.c:377
 msgid ""
@@ -7420,19 +7378,10 @@ msgid "standard input is closed"
 msgstr "标准输入已关闭"
 
 #: src/paste.c:440
-#, fuzzy
-#| msgid ""
-#| "Write lines consisting of the sequentially corresponding lines from\n"
-#| "each FILE, separated by TABs, to standard output.\n"
-#| "With no FILE, or when FILE is -, read standard input.\n"
-#| "\n"
 msgid ""
 "Write lines consisting of the sequentially corresponding lines from\n"
 "each FILE, separated by TABs, to standard output.\n"
-msgstr ""
-"将每个指定文件里的每一行整合到对应一行里写到标准输出，之间用制表符分隔。\n"
-"如果没有指定文件，或指定文件为\"-\"，程序将从标准输入读取数据。\n"
-"\n"
+msgstr "将每个指定文件里的各行整合到对应一行里写到标准输出，之间用制表符分隔。\n"
 
 #: src/paste.c:448
 msgid ""
@@ -7630,10 +7579,8 @@ msgid "integer overflow"
 msgstr "整数溢出"
 
 #: src/pr.c:917
-#, fuzzy
-#| msgid "`--pages=FIRST_PAGE[:LAST_PAGE]' missing argument"
 msgid "'--pages=FIRST_PAGE[:LAST_PAGE]' missing argument"
-msgstr "\"--pages=首页[:末页]\"缺失参数"
+msgstr "\"--pages=首页[:末页]\" 缺失参数"
 
 #: src/pr.c:919
 #, c-format
@@ -7653,16 +7600,12 @@ msgid "'-o MARGIN' invalid line offset"
 msgstr "“-o 页边距”中含有无效的行偏移量"
 
 #: src/pr.c:1035
-#, fuzzy
-#| msgid "`-w PAGE_WIDTH' invalid number of characters: %s"
 msgid "'-w PAGE_WIDTH' invalid number of characters"
-msgstr "\"-w \"中含有无效的字符数：%s"
+msgstr "\"-w 页面宽度\" 中含有无效的字符数"
 
 #: src/pr.c:1044
-#, fuzzy
-#| msgid "`-W PAGE_WIDTH' invalid number of characters: %s"
 msgid "'-W PAGE_WIDTH' invalid number of characters"
-msgstr "\"-w \"中含有无效的字符数：%s"
+msgstr "\"-w 页面宽度\" 中含有无效的字符数"
 
 #: src/pr.c:1073
 msgid "cannot specify number of columns when printing in parallel"
@@ -10358,18 +10301,22 @@ msgid ""
 "   [-]clocal     disable modem control signals\n"
 "   [-]cread      allow input to be received\n"
 msgstr ""
+"\n"
+"控制设置：\n"
+"   [-]clocal     禁用调制解调器控制信号\n"
+"   [-]cread      允许接收输入\n"
 
 #: src/stty.c:658
 msgid " * [-]crtscts    enable RTS/CTS handshaking\n"
-msgstr ""
+msgstr " * [-]crtscts    启用 RTS/CTS 握手\n"
 
 #: src/stty.c:663
 msgid " * [-]cdtrdsr    enable DTR/DSR handshaking\n"
-msgstr ""
+msgstr " * [-]cdtrdsr    启用 DTR/DSR 握手\n"
 
 #: src/stty.c:667
 msgid "   csN           set character size to N bits, N in [5..8]\n"
-msgstr ""
+msgstr "   csN           将字符大小设置为 N 比特，N 取值在 [5..8] 之间\n"
 
 #: src/stty.c:670
 #, fuzzy
@@ -10449,10 +10396,8 @@ msgid " * [-]iutf8      assume input characters are UTF-8 encoded\n"
 msgstr " * [-]iutf8\t假定输入字符都是UTF-8 编码\n"
 
 #: src/stty.c:707
-#, fuzzy
-#| msgid " * [-]iutf8      assume input characters are UTF-8 encoded\n"
 msgid " * [-]iuclc      translate uppercase characters to lowercase\n"
-msgstr " * [-]iutf8\t假定输入字符都是UTF-8 编码\n"
+msgstr " * [-]iuclc      将大写字符转换为小写\n"
 
 #: src/stty.c:712
 msgid " * [-]ixany      let any character restart output, not only start character\n"
@@ -10553,6 +10498,9 @@ msgid ""
 "Local settings:\n"
 "   [-]crterase   echo erase characters as backspace-space-backspace\n"
 msgstr ""
+"\n"
+"本地设置：\n"
+"   [-]crterase   将清除字符回显输出为退格-空格-退格\n"
 
 #: src/stty.c:802
 #, fuzzy
@@ -10662,22 +10610,12 @@ msgid " * [-]LCASE      same as [-]lcase\n"
 msgstr " * [-]LCASE      与 [-]lcase 相同\n"
 
 #: src/stty.c:886
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Combination settings:\n"
-#| " * [-]LCASE      same as [-]lcase\n"
-#| "   cbreak        same as -icanon\n"
-#| "   -cbreak       same as icanon\n"
 msgid ""
 "   cbreak        same as -icanon\n"
 "   -cbreak       same as icanon\n"
 msgstr ""
-"\n"
-"综合设置：\n"
-" * [-]LCASE\t等于[-]lcase\n"
-"   cbreak\t等于-icanon\n"
-"   -cbreak\t等于icanon\n"
+"   cbreak        与 -icanon 相同\n"
+"   -cbreak       与 icanon 相同\n"
 
 #: src/stty.c:890
 #, fuzzy

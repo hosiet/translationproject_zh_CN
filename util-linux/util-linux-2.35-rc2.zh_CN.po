@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the util-linux package.
 # Ray Wang <wanglei1123@gmail.com>, 2008.
 # Wylmer Wang <wantinghard@gmail.com>, 2012, 2013, 2014, 2015, 2016.
-# Boyuan Yang <073plan@gmail.com>, 2019.
+# Boyuan Yang <073plan@gmail.com>, 2019, 2020.
 msgid ""
 msgstr ""
-"Project-Id-Version: util-linux-2.34-rc2\n"
+"Project-Id-Version: util-linux-2.35-rc2\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2020-01-08 10:30+0100\n"
-"PO-Revision-Date: 2019-12-07 12:48-0500\n"
+"PO-Revision-Date: 2020-03-08 17:09-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Bugs: Report translation errors to the Language-Team address.\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 
 #: disk-utils/addpart.c:15
 #, c-format
@@ -478,8 +478,7 @@ msgstr "写脚本文件 %s 失败"
 msgid "Select label type"
 msgstr "选择标签类型"
 
-#: disk-utils/cfdisk.c:2122 disk-utils/fdisk.c:1093
-#: disk-utils/fdisk-menu.c:489
+#: disk-utils/cfdisk.c:2122 disk-utils/fdisk.c:1093 disk-utils/fdisk-menu.c:489
 msgid "Device does not contain a recognized partition table."
 msgstr "设备不包含可识别的分区表。"
 
@@ -679,10 +678,9 @@ msgid "Display or manipulate a disk partition table.\n"
 msgstr "显示或操作磁盘分区表。\n"
 
 #: disk-utils/cfdisk.c:2639
-#, fuzzy, c-format
-#| msgid " -L, --color[=<when>]     colorize output (auto, always or never)\n"
+#, c-format
 msgid " -L, --color[=<when>]     colorize output (%s, %s or %s)\n"
-msgstr " -L, --color[=<何时>]     彩色输出(auto自动，always总是或never从不)\n"
+msgstr " -L, --color[=<时机>]     彩色输出（%s, %s 或 %s）\n"
 
 #: disk-utils/cfdisk.c:2642
 msgid " -z, --zero               start with zeroed partition table\n"
@@ -744,8 +742,8 @@ msgstr ""
 "将继续 ... "
 
 #: disk-utils/fdformat.c:146 disk-utils/fsck.minix.c:183
-#: disk-utils/swaplabel.c:123 misc-utils/wipefs.c:641
-#: sys-utils/blkdiscard.c:85 sys-utils/tunelp.c:95
+#: disk-utils/swaplabel.c:123 misc-utils/wipefs.c:641 sys-utils/blkdiscard.c:85
+#: sys-utils/tunelp.c:95
 #, c-format
 msgid " %s [options] <device>\n"
 msgstr " %s [选项] <设备>\n"
@@ -957,10 +955,9 @@ msgid "BLKGETSIZE ioctl failed on %s"
 msgstr "对 %s 进行 BLKGETSIZE ioctl 失败"
 
 #: disk-utils/fdisk.c:802
-#, fuzzy, c-format
-#| msgid "Device already contains a %s signature; it will be removed by a write command."
+#, c-format
 msgid "The device contains '%s' signature and it will be removed by a write command. See fdisk(8) man page and --wipe option for more details."
-msgstr "设备已包含一个 %s 签名；写入命令会将其移除。"
+msgstr "设备已包含一个 '%s' 签名，写入命令会将其移除。请参见 fdisk(8) 的手册页和 --wipe 选项以了解更多细节。"
 
 #: disk-utils/fdisk.c:807
 #, fuzzy, c-format
@@ -990,10 +987,9 @@ msgid " -c, --compatibility[=<mode>]  mode is 'dos' or 'nondos' (default)\n"
 msgstr " -c, --compatibility[=<模式>]  模式，为“dos”或“nondos”(默认)\n"
 
 #: disk-utils/fdisk.c:832
-#, fuzzy, c-format
-#| msgid " -L, --color[=<when>]          colorize output (auto, always or never)\n"
+#, c-format
 msgid " -L, --color[=<when>]          colorize output (%s, %s or %s)\n"
-msgstr " -L, --color[=<时机>]          彩色输出(auto, always 或 never)\n"
+msgstr " -L, --color[=<时机>]          彩色输出（%s, %s 或 %s）\n"
 
 #: disk-utils/fdisk.c:835
 msgid " -l, --list                    display partitions and exit\n"
@@ -1020,10 +1016,9 @@ msgid "     --bytes                   print SIZE in bytes rather than in human r
 msgstr "     -b, --bytes                   以字节为单位而非易读的格式来打印 SIZE\n"
 
 #: disk-utils/fdisk.c:842
-#, fuzzy, c-format
-#| msgid " -w, --wipe <mode>             wipe signatures (auto, always or never)\n"
+#, c-format
 msgid " -w, --wipe <mode>             wipe signatures (%s, %s or %s)\n"
-msgstr " -w, --wipe <模式>             擦除签名(auto, always 或 never)\n"
+msgstr " -w, --wipe <模式>             擦除签名（%s, %s 或 %s）\n"
 
 #: disk-utils/fdisk.c:844 disk-utils/sfdisk.c:1966
 #, fuzzy, c-format
@@ -1086,21 +1081,21 @@ msgstr "不支持的擦除模式"
 msgid "The device properties (sector size and geometry) should be used with one specified device only."
 msgstr "设备属性(扇区大小和几何属性)只能用于某个指定的设备。"
 
-#: disk-utils/fdisk.c:1052 disk-utils/fdisk.c:1067
-#: disk-utils/fsck.cramfs.c:693 disk-utils/mkfs.bfs.c:192
-#: disk-utils/mkfs.cramfs.c:786 disk-utils/partx.c:973 disk-utils/raw.c:136
-#: disk-utils/raw.c:149 disk-utils/raw.c:161 disk-utils/raw.c:202
-#: misc-utils/cal.c:519 misc-utils/findfs.c:58 misc-utils/look.c:149
-#: misc-utils/whereis.c:586 misc-utils/whereis.c:597 misc-utils/whereis.c:608
-#: misc-utils/whereis.c:650 schedutils/chrt.c:504 schedutils/ionice.c:262
-#: schedutils/taskset.c:188 sys-utils/chcpu.c:355 sys-utils/chmem.c:422
-#: sys-utils/dmesg.c:1489 sys-utils/ipcmk.c:134 sys-utils/ldattach.c:321
-#: sys-utils/losetup.c:913 sys-utils/lscpu.c:2391 sys-utils/lsmem.c:631
-#: sys-utils/mount.c:812 sys-utils/mount.c:820 sys-utils/mount.c:867
-#: sys-utils/mount.c:880 sys-utils/mount.c:952 sys-utils/mountpoint.c:189
-#: sys-utils/pivot_root.c:71 sys-utils/swapoff.c:229 sys-utils/swapon.c:993
-#: sys-utils/switch_root.c:249 sys-utils/umount.c:596
-#: term-utils/setterm.c:1200 text-utils/col.c:233 text-utils/more.c:1986
+#: disk-utils/fdisk.c:1052 disk-utils/fdisk.c:1067 disk-utils/fsck.cramfs.c:693
+#: disk-utils/mkfs.bfs.c:192 disk-utils/mkfs.cramfs.c:786
+#: disk-utils/partx.c:973 disk-utils/raw.c:136 disk-utils/raw.c:149
+#: disk-utils/raw.c:161 disk-utils/raw.c:202 misc-utils/cal.c:519
+#: misc-utils/findfs.c:58 misc-utils/look.c:149 misc-utils/whereis.c:586
+#: misc-utils/whereis.c:597 misc-utils/whereis.c:608 misc-utils/whereis.c:650
+#: schedutils/chrt.c:504 schedutils/ionice.c:262 schedutils/taskset.c:188
+#: sys-utils/chcpu.c:355 sys-utils/chmem.c:422 sys-utils/dmesg.c:1489
+#: sys-utils/ipcmk.c:134 sys-utils/ldattach.c:321 sys-utils/losetup.c:913
+#: sys-utils/lscpu.c:2391 sys-utils/lsmem.c:631 sys-utils/mount.c:812
+#: sys-utils/mount.c:820 sys-utils/mount.c:867 sys-utils/mount.c:880
+#: sys-utils/mount.c:952 sys-utils/mountpoint.c:189 sys-utils/pivot_root.c:71
+#: sys-utils/swapoff.c:229 sys-utils/swapon.c:993 sys-utils/switch_root.c:249
+#: sys-utils/umount.c:596 term-utils/setterm.c:1200 text-utils/col.c:233
+#: text-utils/more.c:1986
 msgid "bad usage"
 msgstr "错误用法"
 
@@ -7523,9 +7518,8 @@ msgstr ""
 "\n"
 "%s 开始 %s"
 
-#: login-utils/last.c:964 term-utils/scriptlive.c:85
-#: term-utils/scriptlive.c:89 term-utils/scriptreplay.c:79
-#: term-utils/scriptreplay.c:83
+#: login-utils/last.c:964 term-utils/scriptlive.c:85 term-utils/scriptlive.c:89
+#: term-utils/scriptreplay.c:79 term-utils/scriptreplay.c:83
 msgid "failed to parse number"
 msgstr "解析数字失败"
 
@@ -11919,9 +11913,8 @@ msgstr "解析偏移失败"
 msgid "failed to parse step"
 msgstr "解析步长失败"
 
-#: sys-utils/blkdiscard.c:175 sys-utils/blkzone.c:406
-#: sys-utils/fallocate.c:376 sys-utils/fsfreeze.c:110 sys-utils/fstrim.c:478
-#: sys-utils/umount.c:586
+#: sys-utils/blkdiscard.c:175 sys-utils/blkzone.c:406 sys-utils/fallocate.c:376
+#: sys-utils/fsfreeze.c:110 sys-utils/fstrim.c:478 sys-utils/umount.c:586
 msgid "unexpected number of arguments"
 msgstr "参数数量异常"
 
@@ -18827,20 +18820,16 @@ msgid "mount %s failed"
 msgstr "挂载 %s 失败"
 
 #: sys-utils/unshare.c:581
-#, fuzzy
-#| msgid "crypt failed"
 msgid "capget failed"
-msgstr "crypt 失败"
+msgstr "capget 失败"
 
 #: sys-utils/unshare.c:589
-#, fuzzy
-#| msgid "reset failed"
 msgid "capset failed"
-msgstr "reset 失败"
+msgstr "capset 失败"
 
 #: sys-utils/unshare.c:601
 msgid "prctl(PR_CAP_AMBIENT) failed"
-msgstr ""
+msgstr "prctl(PR_CAP_AMBIENT) 失败"
 
 #: sys-utils/wdctl.c:72
 msgid "Card previously reset the CPU"
@@ -18949,10 +18938,9 @@ msgid "The default device is %s.\n"
 msgstr "默认设备为 %s。\n"
 
 #: sys-utils/wdctl.c:231
-#, fuzzy, c-format
-#| msgid "The default device is %s.\n"
+#, c-format
 msgid "No default device is available.\n"
-msgstr "默认设备为 %s。\n"
+msgstr "没有可用的默认设备。\n"
 
 #: sys-utils/wdctl.c:329
 #, c-format
@@ -18986,10 +18974,9 @@ msgid "%s: failed to get information about watchdog"
 msgstr "%s：获取看门狗信息失败"
 
 #: sys-utils/wdctl.c:503
-#, fuzzy, c-format
-#| msgid "cannot write intro command to %s"
+#, c-format
 msgid "cannot read information about %s"
-msgstr "无法向 %s 写入 intro 命令"
+msgstr "无法读取有关 %s 的信息"
 
 #: sys-utils/wdctl.c:513 sys-utils/wdctl.c:516 sys-utils/wdctl.c:519
 #, c-format
@@ -19022,10 +19009,8 @@ msgid "version"
 msgstr "版本："
 
 #: sys-utils/wdctl.c:690
-#, fuzzy
-#| msgid "The default device is %s.\n"
 msgid "No default device is available."
-msgstr "默认设备为 %s。\n"
+msgstr "无可用默认设备。"
 
 #: sys-utils/zramctl.c:75
 msgid "zram device name"
@@ -19282,10 +19267,9 @@ msgid "failed to create reload file: %s: %m"
 msgstr "未能创建 reload 文件︰%s：%m"
 
 #: term-utils/agetty.c:1988
-#, fuzzy, c-format
-#| msgid "%s: failed to get terminal attributes: %m"
+#, c-format
 msgid "failed to get terminal attributes: %m"
-msgstr "%s：获取终端属性失败：%m"
+msgstr "获取终端属性失败：%m"
 
 #: term-utils/agetty.c:2010
 msgid "[press ENTER to login]"
@@ -19565,16 +19549,12 @@ msgid "Make a typescript of a terminal session.\n"
 msgstr "创建终端会话的 typescript。\n"
 
 #: term-utils/script.c:196
-#, fuzzy
-#| msgid " -f, --file <file>        log the contents of this file\n"
 msgid " -I, --log-in <file>           log stdin to file\n"
-msgstr " -f, --file <文件>       记录指定文件的内容\n"
+msgstr " -I, --log-in <文件>           将标准输入记录到文件\n"
 
 #: term-utils/script.c:197
-#, fuzzy
-#| msgid " -a, --all         all (default)\n"
 msgid " -O, --log-out <file>          log stdout to file (default)\n"
-msgstr " -a, --all         全部(默认)\n"
+msgstr " -O, --log-out <文件>          将标准输出记录到文件（默认）\n"
 
 #: term-utils/script.c:198
 #, fuzzy
@@ -19716,22 +19696,19 @@ msgid "log multiple streams is mutually exclusive with 'classic' format"
 msgstr "--task 与 <名字空间> 互斥"
 
 #: term-utils/script.c:938
-#, fuzzy, c-format
-#| msgid "Script started on %s ["
+#, c-format
 msgid "Script started"
-msgstr "脚本启动于 %s ["
+msgstr "脚本已启动"
 
 #: term-utils/script.c:940
-#, fuzzy, c-format
-#| msgid "Script done, file is %s\n"
+#, c-format
 msgid ", output log file is '%s'"
-msgstr "脚本完成，文件为  %s\n"
+msgstr "，输出日志文件为“%s”"
 
 #: term-utils/script.c:942
-#, fuzzy, c-format
-#| msgid "Script done, file is %s\n"
+#, c-format
 msgid ", input log file is '%s'"
-msgstr "脚本完成，文件为  %s\n"
+msgstr "，输入日志文件为“%s”"
 
 #: term-utils/script.c:944
 #, fuzzy, c-format
@@ -19740,16 +19717,14 @@ msgid ", timing file is '%s'"
 msgstr "读时序文件 %s 失败"
 
 #: term-utils/script.c:945
-#, fuzzy, c-format
-#| msgid "\n"
+#, c-format
 msgid ".\n"
-msgstr "\n"
+msgstr "。\n"
 
 #: term-utils/script.c:1051
-#, fuzzy, c-format
-#| msgid "Script done, file is %s\n"
+#, c-format
 msgid "Script done.\n"
-msgstr "脚本完成，文件为  %s\n"
+msgstr "脚本已完成。\n"
 
 #: term-utils/scriptlive.c:60
 #, fuzzy, c-format
@@ -19854,7 +19829,7 @@ msgstr " -f, --from <N>    从磁道 N 开始(默认 0)\n"
 
 #: term-utils/scriptreplay.c:62
 msgid " -s, --typescript <file> deprecated alias to -O\n"
-msgstr ""
+msgstr " -s, --typescript <文件> 已不建议使用的 -O 的别名\n"
 
 #: term-utils/scriptreplay.c:65
 #, fuzzy
@@ -19870,13 +19845,12 @@ msgstr " -t, --type <name>      名字空间类型(mnt, net, ipc, user, pid, uts
 
 #: term-utils/scriptreplay.c:69
 msgid " -c, --cr-mode <type>    CR char mode (auto, never, always)\n"
-msgstr ""
+msgstr " -c, --cr-mode <类型>    CR 字符模式（auto, never, always）\n"
 
 #: term-utils/scriptreplay.c:191
-#, fuzzy, c-format
-#| msgid "unsupported label '%s'"
+#, c-format
 msgid "unsupported mode name: '%s'"
-msgstr "不支持的标签：“%s”"
+msgstr "不支持的模式名称：“%s”"
 
 #: term-utils/scriptreplay.c:224
 #, fuzzy, c-format
@@ -19885,16 +19859,13 @@ msgid "unsupported stream name: '%s'"
 msgstr "不受支持的源标记︰ %s"
 
 #: term-utils/scriptreplay.c:255
-#, fuzzy
-#| msgid "no file specified"
 msgid "data log file not specified"
-msgstr "未指定文件"
+msgstr "未指定数据日志文件"
 
 #: term-utils/scriptreplay.c:304
-#, fuzzy, c-format
-#| msgid "klogctl error"
+#, c-format
 msgid "%s: log file error"
-msgstr "klogctl 出错"
+msgstr "%s：日志文件错误"
 
 #: term-utils/scriptreplay.c:306
 #, c-format
@@ -20022,28 +19993,20 @@ msgid "        <color>: black blue cyan green grey magenta red white yellow\n"
 msgstr "                 <颜色>：black blue cyan green grey magenta red white yellow\n"
 
 #: term-utils/setterm.c:414
-#, fuzzy
-#| msgid " --bold          [on|off]          bold\n"
 msgid " --bold on|off                 bold\n"
-msgstr " --bold          [on|off]          粗体\n"
+msgstr " --bold on|off                 粗体\n"
 
 #: term-utils/setterm.c:415
-#, fuzzy
-#| msgid " --half-bright   [on|off]          dim\n"
 msgid " --half-bright on|off          dim\n"
-msgstr " -half-bright    [on|off]          变暗\n"
+msgstr " --half-bright on|off          变暗\n"
 
 #: term-utils/setterm.c:416
-#, fuzzy
-#| msgid " --blink         [on|off]          blink\n"
 msgid " --blink on|off                blink\n"
-msgstr " --blink         [on|off]          闪烁\n"
+msgstr " --blink on|off                闪烁\n"
 
 #: term-utils/setterm.c:417
-#, fuzzy
-#| msgid " --underline     [on|off]          underline\n"
 msgid " --underline on|off            underline\n"
-msgstr " --underline     [on|off]          下划线\n"
+msgstr " --underline on|off            下划线\n"
 
 #: term-utils/setterm.c:418
 #, fuzzy
@@ -20401,10 +20364,9 @@ msgid "bad -l argument"
 msgstr "-l 参数有误"
 
 #: text-utils/col.c:246
-#, fuzzy, c-format
-#| msgid "failed to unlink %s"
+#, c-format
 msgid "failed on line %d"
-msgstr "unlink %s 失败"
+msgstr "在 %d 行失败"
 
 #: text-utils/col.c:344
 #, c-format

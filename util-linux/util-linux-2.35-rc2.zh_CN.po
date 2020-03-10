@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: util-linux-2.35-rc2\n"
 "Report-Msgid-Bugs-To: util-linux@vger.kernel.org\n"
 "POT-Creation-Date: 2020-01-08 10:30+0100\n"
-"PO-Revision-Date: 2020-03-08 17:09-0400\n"
+"PO-Revision-Date: 2020-03-10 11:23-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -19533,11 +19533,11 @@ msgstr "更改 %s 模式失败"
 
 #: term-utils/mesg.c:166
 msgid "write access to your terminal is allowed"
-msgstr "允许了写您的终端"
+msgstr "对您的终端的写访问已被允许"
 
 #: term-utils/mesg.c:173
 msgid "write access to your terminal is denied"
-msgstr "拒绝了写您的终端"
+msgstr "对您的终端的写访问已被拒绝"
 
 #: term-utils/script.c:190
 #, c-format
@@ -19546,7 +19546,7 @@ msgstr " %s [选项] [文件]\n"
 
 #: term-utils/script.c:193
 msgid "Make a typescript of a terminal session.\n"
-msgstr "创建终端会话的 typescript。\n"
+msgstr "创建终端会话的打字稿（typescript）。\n"
 
 #: term-utils/script.c:196
 msgid " -I, --log-in <file>           log stdin to file\n"
@@ -19557,72 +19557,52 @@ msgid " -O, --log-out <file>          log stdout to file (default)\n"
 msgstr " -O, --log-out <文件>          将标准输出记录到文件（默认）\n"
 
 #: term-utils/script.c:198
-#, fuzzy
-#| msgid " -f, --file <file>        log the contents of this file\n"
 msgid " -B, --log-io <file>           log stdin and stdout to file\n"
-msgstr " -f, --file <文件>       记录指定文件的内容\n"
+msgstr " -B, --log-io <文件>           将标准输入和标准输出记录到文件\n"
 
 #: term-utils/script.c:201
-#, fuzzy
-#| msgid " -f, --file <file>        log the contents of this file\n"
 msgid " -T, --log-timing <file>       log timing information to file\n"
-msgstr " -f, --file <文件>       记录指定文件的内容\n"
+msgstr " -T, --log-timing <文件>       将时序信息记录到文件\n"
 
 #: term-utils/script.c:202
 msgid " -t[<file>], --timing[=<file>] deprecated alias to -T (default file is stderr)\n"
-msgstr ""
+msgstr " -t[<文件>], --timing[=<文件>] 到 -T 的已不建议使用的别名（默认文件为标准错误）\n"
 
 #: term-utils/script.c:203
 msgid " -m, --logging-format <name>   force to 'classic' or 'advanced' format\n"
-msgstr ""
+msgstr " -m, --logging-format <名称>   强制使用“classic”或“advanced”格式\n"
 
 #: term-utils/script.c:206
-#, fuzzy
-#| msgid " -a, --append              append partitions to existing partition table\n"
 msgid " -a, --append                  append to the log file\n"
-msgstr " -a, --append              将分区附加到已有分区表\n"
+msgstr " -a, --append                  附加到日志文件\n"
 
 #: term-utils/script.c:207
-#, fuzzy
-#| msgid " -c, --command <command>  run a single command string through the shell\n"
 msgid " -c, --command <command>       run command rather than interactive shell\n"
-msgstr " -c, --command <命令>      通过 shell 运行单个命令字符串\n"
+msgstr " -c, --command <命令>          运行指定命令而非启动交互式 shell\n"
 
 #: term-utils/script.c:208
-#, fuzzy
-#| msgid " -r, --reset                  reset the port\n"
 msgid " -e, --return                  return exit code of the child process\n"
-msgstr " -r, --reset                  重置端口\n"
+msgstr " -e, --return                  返回子进程的退出值\n"
 
 #: term-utils/script.c:209
-#, fuzzy
-#| msgid " -t, --table                      create a table\n"
 msgid " -f, --flush                   run flush after each write\n"
-msgstr " -t, --table                      创建表格\n"
+msgstr " -f, --flush                   每次写入后清空缓冲区\n"
 
 #: term-utils/script.c:210
-#, fuzzy
-#| msgid "     --raw                 use raw status output format\n"
 msgid "     --force                   use output file even when it is a link\n"
-msgstr "     --raw                 使用原生状态输出格式\n"
+msgstr "     --force                   强制使用指定输出文件，无论目标文件是链接与否\n"
 
 #: term-utils/script.c:211
-#, fuzzy
-#| msgid " -L, --color[=<when>]          colorize output (auto, always or never)\n"
 msgid " -E, --echo <when>             echo input (auto, always or never)\n"
-msgstr " -L, --color[=<时机>]          彩色输出(auto, always 或 never)\n"
+msgstr " -E, --echo <时机>             回显输入（, always 或 never）\n"
 
 #: term-utils/script.c:212
-#, fuzzy
-#| msgid " -o, --output <list>    define which output columns to use\n"
 msgid " -o, --output-limit <size>     terminate if output files exceed size\n"
-msgstr " -o, --output <list>    定义使用哪个输出列\n"
+msgstr " -o, --output-limit <大小>     在输出文件超出指定大小时终止\n"
 
 #: term-utils/script.c:213
-#, fuzzy
-#| msgid " -q, --quiet             turn on quiet mode\n"
 msgid " -q, --quiet                   be quiet\n"
-msgstr " -q, --quiet             开启安静模式\n"
+msgstr " -q, --quiet                   开启安静模式\n"
 
 #: term-utils/script.c:296
 #, c-format
@@ -19653,8 +19633,7 @@ msgid "<not executed on terminal>"
 msgstr "<未在终端上执行>"
 
 #: term-utils/script.c:680
-#, fuzzy, c-format
-#| msgid "Script terminated, max output file size %<PRIu64> exceeded.\n"
+#, c-format
 msgid "Script terminated, max output files size %<PRIu64> exceeded.\n"
 msgstr "脚本已终止，已超过最大输出文件大小 %<PRIu64>。\n"
 
@@ -19674,26 +19653,22 @@ msgstr ""
 "程序没有启动。"
 
 #: term-utils/script.c:827
-#, fuzzy, c-format
-#| msgid "unsupported color mode"
+#, c-format
 msgid "unssuported echo mode: '%s'"
-msgstr "不支持的颜色模式"
+msgstr "不支持的回显模式：“%s”"
 
 #: term-utils/script.c:852
 msgid "failed to parse output limit size"
 msgstr "解析输出大小限制失败"
 
 #: term-utils/script.c:863
-#, fuzzy, c-format
-#| msgid "unsupported option format: %s"
+#, c-format
 msgid "unssuported logging format: '%s'"
-msgstr "不支持的参数格式：%s"
+msgstr "不支持的日志格式：“%s”"
 
 #: term-utils/script.c:911
-#, fuzzy
-#| msgid "--task is mutually exclusive with <namespace>"
 msgid "log multiple streams is mutually exclusive with 'classic' format"
-msgstr "--task 与 <名字空间> 互斥"
+msgstr "无法在使用“classic”（经典）格式时同时记录多个流"
 
 #: term-utils/script.c:938
 #, c-format
@@ -19711,10 +19686,9 @@ msgid ", input log file is '%s'"
 msgstr "，输入日志文件为“%s”"
 
 #: term-utils/script.c:944
-#, fuzzy, c-format
-#| msgid "failed to read timing file %s"
+#, c-format
 msgid ", timing file is '%s'"
-msgstr "读时序文件 %s 失败"
+msgstr "，时序文件为“%s”"
 
 #: term-utils/script.c:945
 #, c-format
@@ -19734,13 +19708,11 @@ msgstr " %s [-t] timingfile [typescript] [divisor]\n"
 
 #: term-utils/scriptlive.c:64
 msgid "Execute terminal typescript.\n"
-msgstr ""
+msgstr "执行终端打字稿（typescript）。\n"
 
 #: term-utils/scriptlive.c:67 term-utils/scriptreplay.c:56
-#, fuzzy
-#| msgid " -t, --time <time_t>      time to wake\n"
 msgid " -t, --timing <file>     script timing log file\n"
-msgstr " -t, --time <time_t>      指定唤醒时刻\n"
+msgstr " -t, --timing <文件>     script timing log file\n"
 
 #: term-utils/scriptlive.c:68
 msgid " -T, --log-timing <file> alias to -t\n"
@@ -19748,9 +19720,8 @@ msgstr ""
 
 #: term-utils/scriptlive.c:69 term-utils/scriptreplay.c:58
 #, fuzzy
-#| msgid " -f, --issue-file <file>    display issue file\n"
 msgid " -I, --log-in <file>     script stdin log file\n"
-msgstr " -f, --issue-file <文件>    指定要显示的预登录消息(issue)文件\n"
+msgstr " -I, --log-in <文件>     脚本标准输入日志文件\n"
 
 #: term-utils/scriptlive.c:70 term-utils/scriptreplay.c:60
 msgid " -B, --log-io <file>     script stdin and stdout log file\n"
@@ -19819,13 +19790,11 @@ msgstr "使用定时信息回话终端 typescript。\n"
 
 #: term-utils/scriptreplay.c:57
 msgid " -T, --log-timing <file> aliast to -t\n"
-msgstr ""
+msgstr " -T, --log-timing <文件> 到 -t 的别名\n"
 
 #: term-utils/scriptreplay.c:59
-#, fuzzy
-#| msgid " -f, --from <N>    start at the track N (default 0)\n"
 msgid " -O, --log-out <file>    script stdout log file (default)\n"
-msgstr " -f, --from <N>    从磁道 N 开始(默认 0)\n"
+msgstr ""
 
 #: term-utils/scriptreplay.c:62
 msgid " -s, --typescript <file> deprecated alias to -O\n"
@@ -19838,10 +19807,8 @@ msgid "     --summary           display overview about recorded session and exit
 msgstr " -V          显示版本信息并退出\n"
 
 #: term-utils/scriptreplay.c:68
-#, fuzzy
-#| msgid " -t, --type <name>      namespace type (mnt, net, ipc, user, pid, uts, cgroup)\n"
 msgid " -x, --stream <name>     stream type (out, in, signal or info)\n"
-msgstr " -t, --type <name>      名字空间类型(mnt, net, ipc, user, pid, uts, cgroup)\n"
+msgstr " -x, --stream <name>     流类型（out, in, signal 或 info）\n"
 
 #: term-utils/scriptreplay.c:69
 msgid " -c, --cr-mode <type>    CR char mode (auto, never, always)\n"
@@ -19853,10 +19820,9 @@ msgid "unsupported mode name: '%s'"
 msgstr "不支持的模式名称：“%s”"
 
 #: term-utils/scriptreplay.c:224
-#, fuzzy, c-format
-#| msgid "unsupported source tag: %s"
+#, c-format
 msgid "unsupported stream name: '%s'"
-msgstr "不受支持的源标记︰ %s"
+msgstr "不支持的流名称：“%s”"
 
 #: term-utils/scriptreplay.c:255
 msgid "data log file not specified"
@@ -19870,7 +19836,7 @@ msgstr "%s：日志文件错误"
 #: term-utils/scriptreplay.c:306
 #, c-format
 msgid "%s: line %d: timing file error"
-msgstr ""
+msgstr "%s：行 %d：时序文件错误"
 
 #: term-utils/setterm.c:237
 #, c-format
@@ -19886,10 +19852,8 @@ msgid "Set the attributes of a terminal.\n"
 msgstr "设置终端属性。\n"
 
 #: term-utils/setterm.c:388
-#, fuzzy
-#| msgid " --term          <terminal_name>   override TERM environment variable\n"
 msgid " --term <terminal_name>        override TERM environment variable\n"
-msgstr " --term          <终端名>          替换 TERM 环境变量\n"
+msgstr " --term <终端_名称>            替换 TERM 环境变量\n"
 
 #: term-utils/setterm.c:389
 #, fuzzy
@@ -19910,10 +19874,8 @@ msgid " --initialize                  display init string, and use default setti
 msgstr " --initialize                      显示初始化字符串，并使用默认设置\n"
 
 #: term-utils/setterm.c:392
-#, fuzzy
-#| msgid " --default                         use default terminal settings\n"
 msgid " --default                     use default terminal settings\n"
-msgstr " --default                         使用默认终端设置\n"
+msgstr " --default                     使用默认终端设置\n"
 
 #: term-utils/setterm.c:393
 #, fuzzy
@@ -19952,45 +19914,32 @@ msgid " --inversescreen on|off        swap colors for the whole screen\n"
 msgstr " --inversescreen [on|off]          交换整个屏幕的颜色\n"
 
 #: term-utils/setterm.c:403
-#, fuzzy
-#| msgid " --msg           [on|off]          send kernel messages to console\n"
 msgid " --msg on|off                  send kernel messages to console\n"
-msgstr " --msg           [on|off]          将内核消息发送到终端\n"
+msgstr " --msg on|off                  将内核消息发送到控制台\n"
 
 #: term-utils/setterm.c:404
-#, fuzzy
-#| msgid " --msglevel      0-8               kernel console log level\n"
 msgid " --msglevel <0-8>              kernel console log level\n"
-msgstr " --msglevel      0-8               内核终端日志记录级别\n"
+msgstr " --msglevel <0-8>              内核控制台日志记录级别\n"
 
 #: term-utils/setterm.c:407
-#, fuzzy
-#| msgid " --foreground    default|<color>   set foreground color\n"
 msgid " --foreground default|<color>  set foreground color\n"
-msgstr " --foreground    default|<颜色>    设置前景色\n"
+msgstr " --foreground default|<颜色>   设置前景色\n"
 
 #: term-utils/setterm.c:408
-#, fuzzy
-#| msgid " --background    default|<color>   set background color\n"
 msgid " --background default|<color>  set background color\n"
-msgstr " --background    default|<颜色>    设置背景色\n"
+msgstr " --background default|<颜色>   设置背景色\n"
 
 #: term-utils/setterm.c:409
-#, fuzzy
-#| msgid " --ulcolor       [bright] <color>  set underlined text color\n"
 msgid " --ulcolor [bright] <color>    set underlined text color\n"
-msgstr " --ulcolor       [bright] <颜色>   设置下划线颜色\n"
+msgstr " --ulcolor [bright] <颜色>     设置下划线文本颜色\n"
 
 #: term-utils/setterm.c:410
-#, fuzzy
 msgid " --hbcolor [bright] <color>    set half-bright text color\n"
-msgstr " --hbcolor       [bright] <颜色>   设置粗体字颜色\n"
+msgstr " --hbcolor [bright] <颜色>     设置半亮度文本颜色\n"
 
 #: term-utils/setterm.c:411
-#, fuzzy
-#| msgid "                 <color>: black blue cyan green grey magenta red white yellow\n"
 msgid "        <color>: black blue cyan green grey magenta red white yellow\n"
-msgstr "                 <颜色>：black blue cyan green grey magenta red white yellow\n"
+msgstr "         <颜色>：black blue cyan green grey magenta red white yellow\n"
 
 #: term-utils/setterm.c:414
 msgid " --bold on|off                 bold\n"
@@ -20009,16 +19958,12 @@ msgid " --underline on|off            underline\n"
 msgstr " --underline on|off            下划线\n"
 
 #: term-utils/setterm.c:418
-#, fuzzy
-#| msgid " --reverse       [on|off]          swap foreground and background colors\n"
 msgid " --reverse  on|off             swap foreground and background colors\n"
-msgstr " --reverse       [on|off]          交换前景色和背景色\n"
+msgstr " --reverse  on|off             交换前景色和背景色\n"
 
 #: term-utils/setterm.c:421
-#, fuzzy
-#| msgid " --clear         [all|rest]        clear screen and set cursor position\n"
 msgid " --clear[=<all|rest>]          clear screen and set cursor position\n"
-msgstr " --clear         [all|rest]        清屏并设置光标位置\n"
+msgstr " --clear[=<all|rest>]          清屏并设置光标位置\n"
 
 #: term-utils/setterm.c:422
 #, fuzzy
@@ -20057,40 +20002,28 @@ msgid " --append <number>             append vcsa<number> console dump to file\n
 msgstr " --append        [<数字>]          将 vcsa<数字> 终端转储追加到文件\n"
 
 #: term-utils/setterm.c:430
-#, fuzzy
-#| msgid " --file          <filename>        name of the dump file\n"
 msgid " --file <filename>             name of the dump file\n"
-msgstr " -f, --file      <文件名>          转储文件的名字\n"
+msgstr " --file <文件名>               转储文件的名字\n"
 
 #: term-utils/setterm.c:433
-#, fuzzy
-#| msgid " --powersave     [on|vsync|hsync|powerdown|off]\n"
 msgid " --powersave on|vsync|hsync|powerdown|off\n"
-msgstr " -powersave      [on|vsync|hsync|powerdown|off]\n"
+msgstr " --powersave on|vsync|hsync|powerdown|off\n"
 
 #: term-utils/setterm.c:434
-#, fuzzy
-#| msgid "                                   set vesa powersaving features\n"
 msgid "                               set vesa powersaving features\n"
-msgstr "                                   设置 vesa 节能功能\n"
+msgstr "                               设置 vesa 节能功能\n"
 
 #: term-utils/setterm.c:435
-#, fuzzy
-#| msgid " --powerdown     [0-60]            set vesa powerdown interval in minutes\n"
 msgid " --powerdown[=<0-60>]          set vesa powerdown interval in minutes\n"
-msgstr " --powerdown     [0-60]            设置 vesa 关闭电源间隔(分钟)\n"
+msgstr " --powerdown[=<0-60>]          设置 vesa 关闭电源间隔（分钟）\n"
 
 #: term-utils/setterm.c:438
-#, fuzzy
-#| msgid " --blength       [0-2000]          duration of the bell in milliseconds\n"
 msgid " --blength[=<0-2000>]          duration of the bell in milliseconds\n"
-msgstr " --blength       [0-2000]          响铃持续时间(毫秒)\n"
+msgstr " --blength[=<0-2000>]          响铃持续时间（毫秒）\n"
 
 #: term-utils/setterm.c:439
-#, fuzzy
-#| msgid " --bfreq         <number>          bell frequency in Hertz\n"
 msgid " --bfreq[=<number>]            bell frequency in Hertz\n"
-msgstr " --bfreq         <数字>            响铃频率，单位为 Hz\n"
+msgstr " --bfreq[=<数字>]            响铃频率，单位为 Hz\n"
 
 #: term-utils/setterm.c:452
 msgid "duplicate use of an option"
@@ -20315,19 +20248,7 @@ msgid "Filter out reverse line feeds.\n"
 msgstr "过滤反换行。\n"
 
 #: text-utils/col.c:138
-#, fuzzy, c-format
-#| msgid ""
-#| "\n"
-#| "Options:\n"
-#| " -b, --no-backspaces    do not output backspaces\n"
-#| " -f, --fine             permit forward half line feeds\n"
-#| " -p, --pass             pass unknown control sequences\n"
-#| " -h, --tabs             convert spaces to tabs\n"
-#| " -x, --spaces           convert tabs to spaces\n"
-#| " -l, --lines NUM        buffer at least NUM lines\n"
-#| " -V, --version          output version information and exit\n"
-#| " -H, --help             display this help and exit\n"
-#| "\n"
+#, c-format
 msgid ""
 "\n"
 "Options:\n"
@@ -20346,9 +20267,6 @@ msgstr ""
 " -h, --tabs             将空格转换为制表符\n"
 " -x, --spaces           将制表符转换为空格\n"
 " -l, --lines NUM        缓冲至少 NUM 行\n"
-" -V, --version          输出版本信息并退出\n"
-" -H, --help             显示此帮助并退出\n"
-"\n"
 
 #: text-utils/col.c:151 text-utils/colrm.c:69
 #, c-format
@@ -20422,52 +20340,37 @@ msgid "second argument"
 msgstr "第二个参数"
 
 #: text-utils/column.c:235
-#, fuzzy
-#| msgid "failed to parse end"
 msgid "failed to parse column"
-msgstr "解析 终点 失败"
+msgstr "解析列失败"
 
 #: text-utils/column.c:245
-#, fuzzy, c-format
-#| msgid "undefined mountpoint"
+#, c-format
 msgid "undefined column name '%s'"
-msgstr "未定义的挂载点"
+msgstr "未定义的列名称“%s”"
 
 #: text-utils/column.c:321
-#, fuzzy
-#| msgid "failed to parse --timeout"
 msgid "failed to parse --table-order list"
-msgstr "解析 --timeout 失败"
+msgstr "解析 --table-order 列表失败"
 
 #: text-utils/column.c:397
-#, fuzzy
-#| msgid "failed to parse start"
 msgid "failed to parse --table-right list"
-msgstr "解析 起点 失败"
+msgstr "解析 --table-right 列表失败"
 
 #: text-utils/column.c:401
-#, fuzzy
-#| msgid "failed to parse --timeout"
 msgid "failed to parse --table-trunc list"
-msgstr "解析 --timeout 失败"
+msgstr "解析 --table-trunc 列表失败"
 
 #: text-utils/column.c:405
-#, fuzzy
-#| msgid "failed to parse --timeout"
 msgid "failed to parse --table-noextreme list"
-msgstr "解析 --timeout 失败"
+msgstr "解析 --table-noextreme 列表失败"
 
 #: text-utils/column.c:409
-#, fuzzy
-#| msgid "failed to parse start"
 msgid "failed to parse --table-wrap list"
-msgstr "解析 起点 失败"
+msgstr "解析 --table-wrap 列表失败"
 
 #: text-utils/column.c:413
-#, fuzzy
-#| msgid "failed to parse --timeout"
 msgid "failed to parse --table-hide list"
-msgstr "解析 --timeout 失败"
+msgstr "解析 --table-hide 列表失败"
 
 #: text-utils/column.c:444
 #, c-format
@@ -20610,7 +20513,7 @@ msgstr ""
 
 #: text-utils/column.c:812
 msgid "option --table required for all --table-*"
-msgstr ""
+msgstr "所有 --table-* 均需要 --table 选项"
 
 #: text-utils/column.c:815
 msgid "option --table-columns required for --json"

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.31.90\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2020-02-27 17:02+0000\n"
-"PO-Revision-Date: 2020-02-28 14:41-0500\n"
+"PO-Revision-Date: 2020-05-07 21:50-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -338,8 +338,8 @@ msgstr "”"
 msgid "%s: end of file"
 msgstr "%s：文件结束"
 
-#: lib/randread.c:128 src/du.c:1074 src/md5sum.c:803 src/od.c:954
-#: src/tac.c:251 src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:824
+#: lib/randread.c:128 src/du.c:1074 src/md5sum.c:803 src/od.c:954 src/tac.c:251
+#: src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:824
 #, c-format
 msgid "%s: read error"
 msgstr "%s：读取出错"
@@ -843,17 +843,16 @@ msgid "%s%s argument '%s' too large"
 msgstr "%s%s 参数\"%s\"太大"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37
-#: src/comm.c:39 src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40
-#: src/dd.c:45 src/df.c:49 src/dirname.c:32 src/du.c:55 src/env.c:39
-#: src/expand.c:49 src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42
-#: src/install.c:51 src/ln.c:52 src/ls.c:137 src/mkdir.c:39 src/mkfifo.c:36
-#: src/mknod.c:37 src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53
-#: src/pathchk.c:32 src/pinky.c:38 src/printenv.c:44 src/printf.c:68
-#: src/rm.c:41 src/rmdir.c:37 src/stty.c:68 src/sum.c:39 src/tac.c:58
-#: src/tail.c:77 src/tee.c:38 src/touch.c:45 src/tty.c:44 src/uname.c:61
-#: src/unexpand.c:50 src/uniq.c:41 src/uptime.c:46 src/users.c:36 src/wc.c:51
-#: src/who.c:51 src/yes.c:32
+#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37 src/comm.c:39
+#: src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40 src/dd.c:45
+#: src/df.c:49 src/dirname.c:32 src/du.c:55 src/env.c:39 src/expand.c:49
+#: src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42 src/install.c:51
+#: src/ln.c:52 src/ls.c:137 src/mkdir.c:39 src/mkfifo.c:36 src/mknod.c:37
+#: src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53 src/pathchk.c:32
+#: src/pinky.c:38 src/printenv.c:44 src/printf.c:68 src/rm.c:41 src/rmdir.c:37
+#: src/stty.c:68 src/sum.c:39 src/tac.c:58 src/tail.c:77 src/tee.c:38
+#: src/touch.c:45 src/tty.c:44 src/uname.c:61 src/unexpand.c:50 src/uniq.c:41
+#: src/uptime.c:46 src/users.c:36 src/wc.c:51 src/who.c:51 src/yes.c:32
 msgid "David MacKenzie"
 msgstr "David MacKenzie"
 
@@ -917,9 +916,9 @@ msgstr "缺少操作数"
 #: src/hostname.c:111 src/install.c:985 src/join.c:969 src/link.c:84
 #: src/ln.c:593 src/logname.c:70 src/mknod.c:182 src/mv.c:451 src/nproc.c:115
 #: src/od.c:1871 src/ptx.c:2082 src/seq.c:639 src/shuf.c:491 src/sort.c:4596
-#: src/split.c:1554 src/tr.c:1768 src/tsort.c:559 src/tty.c:113
-#: src/uname.c:252 src/uniq.c:520 src/uniq.c:537 src/unlink.c:80
-#: src/uptime.c:252 src/users.c:145 src/wc.c:758 src/who.c:831 src/whoami.c:78
+#: src/split.c:1554 src/tr.c:1768 src/tsort.c:559 src/tty.c:113 src/uname.c:252
+#: src/uniq.c:520 src/uniq.c:537 src/unlink.c:80 src/uptime.c:252
+#: src/users.c:145 src/wc.c:758 src/who.c:831 src/whoami.c:78
 #, c-format
 msgid "extra operand %s"
 msgstr "额外的操作数 %s"
@@ -1787,8 +1786,8 @@ msgstr "  --output-delimiter=STR\t依照STR 分列\n"
 msgid "  --total           output a summary\n"
 msgstr "  --total           输出一份摘要信息\n"
 
-#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945
-#: src/paste.c:452 src/tail.c:312
+#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945 src/paste.c:452
+#: src/tail.c:312
 msgid "  -z, --zero-terminated    line delimiter is NUL, not newline\n"
 msgstr "  -z, --zero-terminated    以 NUL 字符而非换行符作为行尾分隔符\n"
 
@@ -5765,15 +5764,6 @@ msgstr ""
 "  -s, --size\t\t\t以块数形式显示每个文件分配的尺寸\n"
 
 #: src/ls.c:5458
-#, fuzzy
-#| msgid ""
-#| "  -S                         sort by file size, largest first\n"
-#| "      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),\n"
-#| "                               time (-t), version (-v), extension (-X)\n"
-#| "      --time=WORD            with -l, show time as WORD instead of default\n"
-#| "                               modification time: atime or access or use (-u);\n"
-#| "                               ctime or status (-c); also use specified time\n"
-#| "                               as sort key if --sort=time (newest first)\n"
 msgid ""
 "  -S                         sort by file size, largest first\n"
 "      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),\n"
@@ -5790,11 +5780,14 @@ msgstr ""
 "                               none（无，-U）、size（大小，-S）、\n"
 "                               time（时间，-t）、version（版本，-v）、\n"
 "                               extension（扩展名，-X）\n"
-"      --time=关键字          和 -l 同时使用时显示给定关键字所代表的时间\n"
-"                               而非默认文件修改时间：atime 或 access 或\n"
-"                               use（-u）；ctime 或 status（-c）；另外加上\n"
-"                               --sort=time 选项时会以指定时间作为排序关键字\n"
-"                               （最新的最靠前）\n"
+"      --time=关键字          改变默认使用的文件变更时间类型；\n"
+"                               访问时间（-u）：atime, access, use；\n"
+"                               修改时间（-c）：ctime, status；\n"
+"                               创建时间：birth, creation；\n"
+"                             和 -l 同时使用时，关键字指定要显示的时间类型；\n"
+"                             和 --sort=time 选项同时使用时会以指定时间作为\n"
+"                             排序关键字（最新的最靠前）\n"
+"\n"
 
 #: src/ls.c:5470
 msgid "      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below\n"
@@ -6474,14 +6467,6 @@ msgstr ""
 "  -f, --footer-numbering=样式     使用指定样式编号文件的页脚行目\n"
 
 #: src/nl.c:192
-#, fuzzy
-#| msgid ""
-#| "  -h, --header-numbering=STYLE    use STYLE for numbering header lines\n"
-#| "  -i, --line-increment=NUMBER     line number increment at each line\n"
-#| "  -l, --join-blank-lines=NUMBER   group of NUMBER empty lines counted as one\n"
-#| "  -n, --number-format=FORMAT      insert line numbers according to FORMAT\n"
-#| "  -p, --no-renumber               do not reset line numbers at logical pages\n"
-#| "  -s, --number-separator=STRING   add STRING after (possible) line number\n"
 msgid ""
 "  -h, --header-numbering=STYLE    use STYLE for numbering header lines\n"
 "  -i, --line-increment=NUMBER     line number increment at each line\n"
@@ -6490,24 +6475,20 @@ msgid ""
 "  -p, --no-renumber               do not reset line numbers for each section\n"
 "  -s, --number-separator=STRING   add STRING after (possible) line number\n"
 msgstr ""
-"  -h, --header-numbering=样式\t使用指定样式编号文件的页眉行目\n"
-"  -i, --page-increment=数值\t设置每一行遍历后的自动递增值\n"
-"  -l, --join-blank-lines=数值\t设置数值为多少的若干空行被视作一行\n"
-"  -n, --number-format=格式\t根据指定格式插入行号\n"
-"  -p, --no-renumber\t\t在逻辑页数切换时不将行号值复位\n"
-"  -s, --number-separator=字符串\t可能的话在行号后添加字符串\n"
+"  -h, --header-numbering=样式     使用指定样式编号文件的页眉行目\n"
+"  -i, --line-increment=数值       设置每一行遍历后的自动递增值\n"
+"  -l, --join-blank-lines=数值     设置数值为多少的若干空行被视作一行\n"
+"  -n, --number-format=格式        根据指定格式插入行号\n"
+"  -p, --no-renumber               在切换至下一节时不将行号值复位\n"
+"  -s, --number-separator=字符串   可能的话在行号后添加字符串\n"
 
 #: src/nl.c:200
-#, fuzzy
-#| msgid ""
-#| "  -v, --starting-line-number=NUMBER  first line number on each logical page\n"
-#| "  -w, --number-width=NUMBER       use NUMBER columns for line numbers\n"
 msgid ""
 "  -v, --starting-line-number=NUMBER  first line number for each section\n"
 "  -w, --number-width=NUMBER       use NUMBER columns for line numbers\n"
 msgstr ""
-"  -v, --starting-line-number=数字\t每个逻辑页上的第一行的行号\n"
-"  -w, --number-width=数字\t为行号使用指定的栏数\n"
+"  -v, --starting-line-number=数字    每一节第一行的行号\n"
+"  -w, --number-width=数字        为行号使用指定的列数\n"
 
 #: src/nl.c:206
 msgid ""
@@ -6524,21 +6505,6 @@ msgstr ""
 "使用 \":\"。\n"
 
 #: src/nl.c:213
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "  a         number all lines\n"
-#| "  t         number only nonempty lines\n"
-#| "  n         number no lines\n"
-#| "  pBRE      number only lines that contain a match for the basic regular\n"
-#| "            expression, BRE\n"
-#| "\n"
-#| "FORMAT is one of:\n"
-#| "\n"
-#| "  ln   left justified, no leading zeros\n"
-#| "  rn   right justified, no leading zeros\n"
-#| "  rz   right justified, leading zeros\n"
-#| "\n"
 msgid ""
 "\n"
 "STYLE is one of:\n"
@@ -6550,17 +6516,12 @@ msgid ""
 "         expression, BRE\n"
 msgstr ""
 "\n"
-"  a\t对所有行编号\n"
-"  t\t对非空行编号\n"
-"  n\t不编行号\n"
-"  pBRE\t只对符合正则表达式BRE 的行编号\n"
+"所指定的<样式>是下列之一：\n"
 "\n"
-"FORMAT 是下列之一:\n"
-"\n"
-"  ln\t左对齐，空格不用0 填充\n"
-"  rn \t右对齐，空格不用0 填充\n"
-"  rz \t右对齐，空格用0 填充\n"
-"\n"
+"  a      对所有行编号\n"
+"  t      对非空行编号\n"
+"  n      不编行号\n"
+"  pBRE   只对匹配给定的基本正则表达式<BRE>的行编号\n"
 
 #: src/nl.c:223
 msgid ""
@@ -6829,6 +6790,10 @@ msgid ""
 "                         the default is to automatically pad if a whitespace\n"
 "                         is found\n"
 msgstr ""
+"      --padding=N      将输出填充至 N 字符长度；若 N 值为正，则使用\n"
+"                         右对齐；若 N 值为负，则使用左对齐。\n"
+"                         如果输出宽度大于给定的 N 的绝对值则不填充。\n"
+"                         默认行为是在将要出现空白时自动填充\n"
 
 #: src/numfmt.c:931
 msgid ""
@@ -6946,6 +6911,12 @@ msgid ""
 "will zero pad the number. Optional negative values (%-10f) will left align.\n"
 "Optional precision (%.1f) will override the input determined precision.\n"
 msgstr ""
+"\n"
+"选项中所给出的<格式>必须适用于输出一个浮点型参数 '%f'。\n"
+"可选的单引号（%'f）将启用 --grouping（如果当前语言区域支持）。\n"
+"可选的宽度值（%10f）会填充输出。可选的零（%010f）宽度会使用零对\n"
+"数字进行填充。可选的负值（%-10f）会启用左对齐。\n"
+"可选的精度（%.1f）会覆盖由输入所确定的具体精度。\n"
 
 #: src/numfmt.c:997
 #, c-format
@@ -6958,6 +6929,14 @@ msgid ""
 "diagnosed, but the exit status is 0.  With --invalid='ignore' conversion\n"
 "errors are not diagnosed and the exit status is 0.\n"
 msgstr ""
+"\n"
+"如果所有输入数字均成功转换，退出状态值将为 0。\n"
+"默认情况下，%s 将会在第一个转换错误出现时停止并将退出状态设为 2。\n"
+"如果使用了 --invalid='fail'，程序每当遇到转换错误时都将输出警告并\n"
+"最后将退出状态设为 2。如果使用了 --invalid='warn'，程序会在遇到转换\n"
+"错误时输出诊断信息，但最后的退出状态值将为 0。如果使用了\n"
+"--invalid='ignore'，程序在遇到转换错误时将不输出诊断信息，最后的\n"
+"退出状态值也将为 0。\n"
 
 #: src/numfmt.c:1006
 #, c-format
@@ -10645,6 +10624,8 @@ msgid ""
 "   dec           same as %s intr ^c erase 0177\n"
 "                 kill ^u\n"
 msgstr ""
+"   dec           等效于 %s intr ^c erase 0177\n"
+"                 kill ^u\n"
 
 #: src/stty.c:920
 msgid " * [-]decctlq    same as [-]ixany\n"
@@ -10659,7 +10640,7 @@ msgstr ""
 
 #: src/stty.c:930
 msgid " * [-]lcase      same as xcase iuclc olcuc\n"
-msgstr ""
+msgstr " * [-]lcase      与 xcase iuclc olcuc 相同\n"
 
 #: src/stty.c:934
 msgid ""
@@ -12413,12 +12394,6 @@ msgstr ""
 "若域中为先空字符(通常包括空格以及制表符)，然后非空字符，域中字符前的空字符将被跳过。\n"
 
 #: src/uniq.c:214
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Note: 'uniq' does not detect repeated lines unless they are adjacent.\n"
-#| "You may want to sort the input first, or use 'sort -u' without 'uniq'.\n"
-#| "Also, comparisons honor the rules specified by 'LC_COLLATE'.\n"
 msgid ""
 "\n"
 "Note: 'uniq' does not detect repeated lines unless they are adjacent.\n"
@@ -12427,7 +12402,6 @@ msgstr ""
 "\n"
 "提示：\"uniq\" 不会检查重复的行，除非它们是相邻的行。\n"
 "您也许需要事先对输入排序，或使用 \"sort -u\" 而非 \"uniq\"。\n"
-"另外，比较操作将服从 \"LC_COLLATE\" 环境变量所指定的规则。\n"
 
 #: src/uniq.c:425
 msgid "too many repeated lines"
@@ -12452,9 +12426,8 @@ msgstr "--group 和 -c/-d/-D/-u 不兼容"
 
 #: src/uniq.c:648
 #, fuzzy, c-format
-#| msgid "printing all duplicated lines and repeat counts is meaningless"
 msgid "grouping and printing repeat counts is meaningless"
-msgstr "同时输出重复的行和重复计数是没有意义的"
+msgstr "同时输出重复重复计数是没有意义的"
 
 #: src/uniq.c:655
 #, c-format

@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: coreutils 8.31.90\n"
 "Report-Msgid-Bugs-To: bug-coreutils@gnu.org\n"
 "POT-Creation-Date: 2020-02-27 17:02+0000\n"
-"PO-Revision-Date: 2020-05-07 21:50-0400\n"
+"PO-Revision-Date: 2020-05-12 10:12-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
@@ -338,8 +338,8 @@ msgstr "”"
 msgid "%s: end of file"
 msgstr "%s：文件结束"
 
-#: lib/randread.c:128 src/du.c:1074 src/md5sum.c:803 src/od.c:954 src/tac.c:251
-#: src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:824
+#: lib/randread.c:128 src/du.c:1074 src/md5sum.c:803 src/od.c:954
+#: src/tac.c:251 src/tac.c:357 src/tac.c:515 src/tac.c:596 src/wc.c:824
 #, c-format
 msgid "%s: read error"
 msgstr "%s：读取出错"
@@ -843,16 +843,17 @@ msgid "%s%s argument '%s' too large"
 msgstr "%s%s 参数\"%s\"太大"
 
 #. This is a proper name. See the gettext manual, section Names.
-#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37 src/comm.c:39
-#: src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40 src/dd.c:45
-#: src/df.c:49 src/dirname.c:32 src/du.c:55 src/env.c:39 src/expand.c:49
-#: src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42 src/install.c:51
-#: src/ln.c:52 src/ls.c:137 src/mkdir.c:39 src/mkfifo.c:36 src/mknod.c:37
-#: src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53 src/pathchk.c:32
-#: src/pinky.c:38 src/printenv.c:44 src/printf.c:68 src/rm.c:41 src/rmdir.c:37
-#: src/stty.c:68 src/sum.c:39 src/tac.c:58 src/tail.c:77 src/tee.c:38
-#: src/touch.c:45 src/tty.c:44 src/uname.c:61 src/unexpand.c:50 src/uniq.c:41
-#: src/uptime.c:46 src/users.c:36 src/wc.c:51 src/who.c:51 src/yes.c:32
+#: src/basename.c:29 src/chgrp.c:38 src/chmod.c:39 src/chown.c:37
+#: src/comm.c:39 src/cp.c:48 src/csplit.c:45 src/cut.c:46 src/date.c:40
+#: src/dd.c:45 src/df.c:49 src/dirname.c:32 src/du.c:55 src/env.c:39
+#: src/expand.c:49 src/fold.c:36 src/groups.c:36 src/head.c:47 src/id.c:42
+#: src/install.c:51 src/ln.c:52 src/ls.c:137 src/mkdir.c:39 src/mkfifo.c:36
+#: src/mknod.c:37 src/mv.c:43 src/nice.c:40 src/nl.c:42 src/paste.c:53
+#: src/pathchk.c:32 src/pinky.c:38 src/printenv.c:44 src/printf.c:68
+#: src/rm.c:41 src/rmdir.c:37 src/stty.c:68 src/sum.c:39 src/tac.c:58
+#: src/tail.c:77 src/tee.c:38 src/touch.c:45 src/tty.c:44 src/uname.c:61
+#: src/unexpand.c:50 src/uniq.c:41 src/uptime.c:46 src/users.c:36 src/wc.c:51
+#: src/who.c:51 src/yes.c:32
 msgid "David MacKenzie"
 msgstr "David MacKenzie"
 
@@ -916,9 +917,9 @@ msgstr "缺少操作数"
 #: src/hostname.c:111 src/install.c:985 src/join.c:969 src/link.c:84
 #: src/ln.c:593 src/logname.c:70 src/mknod.c:182 src/mv.c:451 src/nproc.c:115
 #: src/od.c:1871 src/ptx.c:2082 src/seq.c:639 src/shuf.c:491 src/sort.c:4596
-#: src/split.c:1554 src/tr.c:1768 src/tsort.c:559 src/tty.c:113 src/uname.c:252
-#: src/uniq.c:520 src/uniq.c:537 src/unlink.c:80 src/uptime.c:252
-#: src/users.c:145 src/wc.c:758 src/who.c:831 src/whoami.c:78
+#: src/split.c:1554 src/tr.c:1768 src/tsort.c:559 src/tty.c:113
+#: src/uname.c:252 src/uniq.c:520 src/uniq.c:537 src/unlink.c:80
+#: src/uptime.c:252 src/users.c:145 src/wc.c:758 src/who.c:831 src/whoami.c:78
 #, c-format
 msgid "extra operand %s"
 msgstr "额外的操作数 %s"
@@ -940,7 +941,7 @@ msgstr "用法：%s [选项]... [文件]\n"
 
 #: src/basenc.c:106
 msgid "basenc encode or decode FILE, or standard input, to standard output.\n"
-msgstr "baseenc 可以编码/解码文件或标准输入输出。\n"
+msgstr "basenc 可以编码/解码文件或标准输入输出。\n"
 
 #: src/basenc.c:110
 #, c-format
@@ -1240,7 +1241,7 @@ msgstr ""
 "  -u, --user=用户        设置指定<用户>的目标安全上下文\n"
 "  -r, --role=角色        设置指定<角色>的目标安全上下文\n"
 "  -t, --type=类型        设置指定<类型>的目标安全上下文\n"
-"  -l, --range=范围      设置指定<范围>的目标安全上下文\n"
+"  -l, --range=范围       设置指定<范围>的目标安全上下文\n"
 "\n"
 
 #: src/chcon.c:377 src/chgrp.c:134 src/chmod.c:390 src/chown.c:111
@@ -1255,7 +1256,9 @@ msgstr ""
 msgid ""
 "      --reference=RFILE  use RFILE's security context rather than specifying\n"
 "                         a CONTEXT value\n"
-msgstr "      --reference=参考文件  使用指定<参考文件>的安全上下文，而非指定<环境>值\n"
+msgstr ""
+"      --reference=参考文件  使用指定<参考文件>的安全上下文，而非\n"
+"                            指定的<上下文>值\n"
 
 #: src/chcon.c:385 src/chgrp.c:142 src/chown.c:119
 msgid "  -R, --recursive        operate on files and directories recursively\n"
@@ -1571,7 +1574,7 @@ msgstr ""
 "      --from=当前所有者:当前所属组\n"
 "                         \t只当每个文件的所有者和组符合选项所指定时才更改所\n"
 "\t\t\t\t有者和组。其中一个可以省略，这时已省略的属性就不\n"
-"\t\t\t\t需要符合原有的属性。\n"
+"\t\t\t\t需要符合原有的属性\n"
 
 #: src/chown.c:115
 msgid ""
@@ -1753,7 +1756,9 @@ msgid ""
 "and column three contains lines common to both files.\n"
 msgstr ""
 "\n"
-"如果不附带选项，程序会生成三列输出。第一列包含文件1 特有的行，第二列包含 文件2 特有的行，而第三列包含两个文件共有的行。\n"
+"如果不附带选项，程序会生成三列输出。\n"
+"第一列包含文件1 特有的行，第二列包含 文件2 特有的行，\n"
+"而第三列包含两个文件共有的行。\n"
 
 #: src/comm.c:129
 msgid ""
@@ -1780,14 +1785,14 @@ msgstr ""
 
 #: src/comm.c:141
 msgid "  --output-delimiter=STR  separate columns with STR\n"
-msgstr "  --output-delimiter=STR\t依照STR 分列\n"
+msgstr "  --output-delimiter=STR\t按照指定的 STR 分隔各列\n"
 
 #: src/comm.c:144
 msgid "  --total           output a summary\n"
 msgstr "  --total           输出一份摘要信息\n"
 
-#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945 src/paste.c:452
-#: src/tail.c:312
+#: src/comm.c:147 src/cut.c:178 src/head.c:134 src/numfmt.c:945
+#: src/paste.c:452 src/tail.c:312
 msgid "  -z, --zero-terminated    line delimiter is NUL, not newline\n"
 msgstr "  -z, --zero-terminated    以 NUL 字符而非换行符作为行尾分隔符\n"
 
@@ -1809,7 +1814,7 @@ msgid ""
 msgstr ""
 "\n"
 "示例：\n"
-"  %s -12 文件1 文件2  只打印在文件1 和文件2 中都有的行\n"
+"  %s -12 文件1 文件2  只打印在文件1 和文件2 中都有的行。\n"
 "  %s -3  文件1 文件2  打印在文件1 中有，而文件2 中没有的行。反之亦然。\n"
 
 #: src/comm.c:238
@@ -2341,7 +2346,7 @@ msgid ""
 msgstr ""
 "\n"
 "当指定了 --reflink[=always] 参数时，将进行轻量级复制，此时数据块只在被修改时\n"
-"进行复制，如果无法如此操作则复制将会失败。或者如果指定了 --reflink=auto，程序\n"
+"进行复制。如果这样的复制失败，或无法实行，或者指定了 --reflink=auto，程序\n"
 "将会回退到标准复制操作。使用 --reflink=never 可以确保永远进行标准复制。\n"
 
 #: src/cp.c:247
@@ -2652,9 +2657,9 @@ msgid ""
 "  -c, --characters=LIST   select only these characters\n"
 "  -d, --delimiter=DELIM   use DELIM instead of TAB for field delimiter\n"
 msgstr ""
-"  -b, --bytes=列表\t\t只选中指定的这些字节\n"
-"  -c, --characters=列表\t\t只选中指定的这些字符\n"
-"  -d, --delimiter=分界符\t使用指定分界符代替制表符作为区域分界\n"
+"  -b, --bytes=列表        只选中指定的这些字节\n"
+"  -c, --characters=列表   只选中指定的这些字符\n"
+"  -d, --delimiter=分界符  使用指定分界符代替制表符作为区域分界\n"
 
 #: src/cut.c:163
 msgid ""
@@ -2663,15 +2668,15 @@ msgid ""
 "                            the -s option is specified\n"
 "  -n                      (ignored)\n"
 msgstr ""
-"  -f, --fields=列表\t\t只选中指定的这些域；并打印所有不包含分界符的\n"
-"\t\t\t\t行，除非-s 选项被指定\n"
-"  -n\t\t\t\t(忽略)\n"
+"  -f, --fields=列表       只选中指定的这些域；并打印所有不包含分界符\n"
+"                            的行，除非同时指定了 -s 选项\n"
+"  -n                      （忽略）\n"
 
 #: src/cut.c:169
 msgid ""
 "      --complement        complement the set of selected bytes, characters\n"
 "                            or fields\n"
-msgstr "      --complement\t\t补全选中的字节、字符或域\n"
+msgstr "      --complement        补全选中的字节、字符或域\n"
 
 #: src/cut.c:173
 msgid ""
@@ -3574,7 +3579,7 @@ msgid ""
 "  -h, --human-readable  print sizes in powers of 1024 (e.g., 1023M)\n"
 "  -H, --si              print sizes in powers of 1000 (e.g., 1.1G)\n"
 msgstr ""
-"  -a, --all             包含虚拟、重复和无法访问的文件系统\n"
+"  -a, --all             包含伪（pseudo）、重复和无法访问的文件系统\n"
 "  -B, --block-size=大小  使用指定字节数的块。例如，'-BM' 将以\n"
 "                           1,048,576 字节为单位显示大小。\n"
 "                           参见 SIZE 格式。\n"
@@ -3590,7 +3595,7 @@ msgid ""
 msgstr ""
 "  -i, --inodes\t\t显示inode 信息而非块使用量\n"
 "  -k\t\t\t即--block-size=1K\n"
-"  -l, --local\t\t只显示本机的文件系统\n"
+"  -l, --local\t\t只列出本地的文件系统\n"
 "      --no-sync\t\t取得使用量数据前不进行同步动作(默认)\n"
 
 #: src/df.c:1536
@@ -3603,7 +3608,7 @@ msgstr ""
 "      --output[=域列表]      使用给定域列表定义的输出格式，\n"
 "                               或者在缺省情况下输出所有域。\n"
 "  -P, --portability     使用 POSIX 兼容的输出格式\n"
-"      --sync            取得使用量数据前先调用同步（sync）动作\n"
+"      --sync            取得使用量数据前先进行同步（sync）\n"
 
 #: src/df.c:1542
 msgid ""
@@ -3618,9 +3623,9 @@ msgid ""
 "  -x, --exclude-type=TYPE   limit listing to file systems not of type TYPE\n"
 "  -v                    (ignored)\n"
 msgstr ""
-"  -t, --type=类型       只显示指定文件系统为指定类型的信息\n"
+"  -t, --type=类型       只显示是指定类型的文件系统的信息\n"
 "  -T, --print-type      显示文件系统类型\n"
-"  -x, --exclude-type=类型   只显示文件系统不是指定类型的信息\n"
+"  -x, --exclude-type=类型   只显示不是指定类型的文件系统的信息\n"
 "  -v                    （忽略）\n"
 
 #: src/df.c:1556
@@ -3874,8 +3879,8 @@ msgid ""
 "      --exclude=PATTERN    exclude files that match PATTERN\n"
 "  -x, --one-file-system    skip directories on different file systems\n"
 msgstr ""
-"  -X, --exclude-from=文件  排除所有与指定<文件>所提供模式匹配的文件\n"
-"      --exclude=模式       排除所有与所给<模式>匹配的文件\n"
+"  -X, --exclude-from=文件  排除所有与指定文件所提供模式匹配的文件\n"
+"      --exclude=模式       排除所有与所给模式匹配的文件\n"
 "  -x, --one-file-system    跳过位于不同文件系统上的目录\n"
 
 #: src/du.c:696
@@ -4050,7 +4055,7 @@ msgstr ""
 
 #: src/env.c:133
 msgid "      --block-signal[=SIG]    block delivery of SIG signal(s) to COMMAND\n"
-msgstr "      --block-signal[=信号]   阻挡向指定<命令>传递指定的信号\n"
+msgstr "      --block-signal[=信号]   阻挡向指定命令传递指定的信号\n"
 
 #: src/env.c:136
 msgid "      --default-signal[=SIG]  reset handling of SIG signal(s) to the default\n"
@@ -4754,7 +4759,7 @@ msgid ""
 "\n"
 msgstr ""
 "输出指定<用户>的用户和用户组信息，\n"
-"或（当没有指定用户信息时）默认使用当前用户信息 。\n"
+"或（当没有指定用户信息时）默认使用当前用户信息。\n"
 "\n"
 
 #: src/id.c:102
@@ -5356,12 +5361,12 @@ msgid ""
 "can hold arbitrary text; if later resolved, a relative link is\n"
 "interpreted in relation to its parent directory.\n"
 msgstr ""
-"在第一种格式中，创建具有指定<链接名>且指向指定<目标>的链接。\n"
-"在第二种格式中，在当前目录创建指向<目标>位置的链接。\n"
-"在第三、四种格式中，在指定<目录>中创建指向指定<目标>的链接。\n"
+"在第一种格式中，创建具有指定链接名且指向指定目标的链接。\n"
+"在第二种格式中，在当前目录创建指向目标位置的链接。\n"
+"在第三、四种格式中，在指定目录中创建指向指定目标的链接。\n"
 "默认创建硬链接，当使用--symbolic 时创建符号链接。\n"
 "默认情况下，创建每个目标时不应存在与新链接的名称相同的文件。\n"
-"创建硬链接时，每个指定的<目标>都必须存在。符号链接可以指向任意的位置；\n"
+"创建硬链接时，每个指定的目标都必须存在。符号链接可以指向任意的位置；\n"
 "当链接解析正常时，将其解析为一个相对于其父目录的相对链接。\n"
 
 #: src/ln.c:429
@@ -5376,7 +5381,7 @@ msgstr ""
 "      --backup[=CONTROL]      为每个已存在的目标文件创建备份文件\n"
 "  -b                          类似--backup，但不接受任何参数\n"
 "  -d, -F, --directory         允许超级用户尝试创建指向目录的硬链接\n"
-"                              （注意：此操作可能因系统限制而失败)\n"
+"                              （注意：此操作可能因系统限制而失败）\n"
 "  -f, --force                 强行删除任何已存在的目标文件\n"
 
 #: src/ln.c:437
@@ -5391,8 +5396,8 @@ msgid ""
 msgstr ""
 "  -i, --interactive           删除目标文件前进行确认\n"
 "  -L, --logical               如目标为符号链接，本次创建链接时将其解引用\n"
-"  -n, --no-dereference        如果给定<链接名>是一个链接至某目录的符号链接，\n"
-"                                将其作为普通文件处理\n"
+"  -n, --no-dereference        如果给定的链接名是一个链接至某目录的\n"
+"                                符号链接，将其作为普通文件处理\n"
 "  -P, --physical              创建直接指向符号链接文件的硬链接\n"
 "  -r, --relative              创建相对于链接位置的符号链接\n"
 "  -s, --symbolic              创建符号链接而非硬链接\n"
@@ -5406,8 +5411,8 @@ msgid ""
 "  -v, --verbose               print name of each linked file\n"
 msgstr ""
 "  -S, --suffix=后缀           自行指定备份文件的后缀\n"
-"  -t, --target-directory=目录  在指定<目录>中创建链接\n"
-"  -T, --no-target-directory   总是将给定的<链接名>当作普通文件\n"
+"  -t, --target-directory=目录  在指定的目录中创建链接\n"
+"  -T, --no-target-directory   总是将给定的链接名当作普通文件\n"
 "  -v, --verbose               列出每个链接的文件名称\n"
 
 #: src/ln.c:456
@@ -5418,8 +5423,8 @@ msgid ""
 "behavior when a TARGET is a symbolic link, defaulting to %s.\n"
 msgstr ""
 "\n"
-"使用 -s 选项会忽略 -L 和 -P。\n"
-"否则当<目标>为一个符号链接（默认为 %s）时，会由最后一个指定的选项来控制行为。\n"
+"使用 -s 选项会忽略 -L 和 -P。否则当给定的目标为一个符号链接\n"
+"（默认为 %s）时，会由最后一个指定的选项来控制行为。\n"
 
 #: src/ln.c:572
 msgid "cannot do --relative without --symbolic"
@@ -6667,7 +6672,7 @@ msgid ""
 "\n"
 msgstr ""
 "打印当前进程可用的处理器数，\n"
-"此数目可能小于实际工作数\n"
+"此数目可能小于实际在线的处理器数量\n"
 "\n"
 
 #: src/nproc.c:63
@@ -6675,7 +6680,7 @@ msgid ""
 "      --all      print the number of installed processors\n"
 "      --ignore=N  if possible, exclude N processing units\n"
 msgstr ""
-"      --all      打印所拥有的处理器数目\n"
+"      --all      打印已安装的处理器数目\n"
 "      --ignore=N  可能的话，排除 N 个处理单元\n"
 
 #: src/numfmt.c:694
@@ -7110,15 +7115,6 @@ msgstr ""
 "如果指定了多于一个文件，将它们以列出的顺序连接起来作为输入。\n"
 
 #: src/od.c:337
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "If first and second call formats both apply, the second format is assumed\n"
-#| "if the last operand begins with + or (if there are 2 operands) a digit.\n"
-#| "An OFFSET operand means -j OFFSET.  LABEL is the pseudo-address\n"
-#| "at first byte printed, incremented when dump is progressing.\n"
-#| "For OFFSET and LABEL, a 0x or 0X prefix indicates hexadecimal;\n"
-#| "suffixes may be . for octal and b for multiply by 512.\n"
 msgid ""
 "\n"
 "If first and second call formats both apply, the second format is assumed\n"
@@ -7129,9 +7125,9 @@ msgid ""
 "suffixes may be . for octal and b for multiply by 512.\n"
 msgstr ""
 "\n"
-"如果两个调用格式都适用，系统会在最后一个运算量以\"+\"或数字开始\n"
-"(如果有两个运算量)的情况下采用第二种格式。\n"
-"偏移量是指 -j 偏移量。标签是第一个字节的伪地址，\n"
+"如果两个调用格式都适用，系统会在最后一个运算符以\"+\"或数字开始\n"
+"（如果有两个运算符）的情况下采用第二种格式。\n"
+"仅给出偏移量等效于 -j 偏移量。标签是所打印的第一个字节的伪地址，\n"
 "随着累积过程递增。偏移量和标签如果冠以\"0x\"或\"0X\"前缀则\n"
 "表示十六进制数；后缀\".\"代表八进制数，后缀\"b\"表示乘以 512。\n"
 
@@ -7142,6 +7138,11 @@ msgid ""
 "      --endian={big|little}   swap input bytes according the specified order\n"
 "  -j, --skip-bytes=BYTES      skip BYTES input bytes first\n"
 msgstr ""
+"  -A, --address-radix=基数    指定文件偏移量的输出格式；这里给出的基数\n"
+"                                可以是 [doxn]，分别代表十进制、八进制、\n"
+"                                十六进制或无基数\n"
+"      --endian={big|little}   根据给定的顺序交换输入字节\n"
+"  -j, --skip-bytes=字节数     处理前先跳过指定数量的字节\n"
 
 #: src/od.c:355
 #, fuzzy
@@ -7969,9 +7970,8 @@ msgstr ""
 "　或：%s -G [选项]... [输入 [输出]]\n"
 
 #: src/ptx.c:1818
-#, fuzzy
 msgid "Output a permuted index, including context, of the words in the input files.\n"
-msgstr "输出一串预排的文件索引信息，包括输入文件中各单词的环境。\n"
+msgstr "输出一串预排的文件索引信息，包括输入文件中各单词的上下文。\n"
 
 #: src/ptx.c:1825
 msgid ""
@@ -7986,15 +7986,10 @@ msgid ""
 "  -F, --flag-truncation=STRING   use STRING for flagging line truncations.\n"
 "                                 The default is '/'\n"
 msgstr ""
+"  -F, --flag-truncation=字符串   使用指定字符串标记行的截断位置。\n"
+"                                 默认值为 '/'\n"
 
 #: src/ptx.c:1833
-#, fuzzy
-#| msgid ""
-#| "  -M, --macro-name=STRING        macro name to use instead of `xx'\n"
-#| "  -O, --format=roff              generate output as roff directives\n"
-#| "  -R, --right-side-refs          put references at right, not counted in -w\n"
-#| "  -S, --sentence-regexp=REGEXP   for end of lines or end of sentences\n"
-#| "  -T, --format=tex               generate output as TeX directives\n"
 msgid ""
 "  -M, --macro-name=STRING        macro name to use instead of 'xx'\n"
 "  -O, --format=roff              generate output as roff directives\n"
@@ -8002,11 +7997,11 @@ msgid ""
 "  -S, --sentence-regexp=REGEXP   for end of lines or end of sentences\n"
 "  -T, --format=tex               generate output as TeX directives\n"
 msgstr ""
-"  -M, --macro-name=字符串\t指定代替\"xx\"的宏名\n"
-"  -O, --format=roff\t\t生成roff 格式输出\n"
-"  -R, --right-side-refs\t\t将关联引用放置在右侧，不能和-w 选项叠加\n"
-"  -S, --sentence-regexp=正则表达式\t用于匹配行末或句末\n"
-"  -T, --format=tex\t\t生成TeX 格式输出\n"
+"  -M, --macro-name=字符串        指定代替 'xx' 的宏名\n"
+"  -O, --format=roff              生成roff 格式输出\n"
+"  -R, --right-side-refs          将关联引用放置在右侧，不能和-w 选项叠加\n"
+"  -S, --sentence-regexp=正则     用于匹配行末或句末\n"
+"  -T, --format=tex               生成 TeX 格式输出\n"
 
 #: src/ptx.c:1840
 msgid ""
@@ -8169,6 +8164,15 @@ msgid ""
 "  -z, --zero                   end each output line with NUL, not newline\n"
 "\n"
 msgstr ""
+"  -e, --canonicalize-existing  路径中所有部分均必须存在\n"
+"  -m, --canonicalize-missing   路径中的各个部分若不存在则视为目录\n"
+"  -L, --logical                在解析符号链接之前先处理路径中的 '..' 部分\n"
+"  -P, --physical               遇到符号链接则立即解析（默认）\n"
+"  -q, --quiet                  不输出大多数错误消息\n"
+"      --relative-to=目录       相对于指定的目录输出解析后的路径\n"
+"      --relative-base=目录     输出绝对路径，除非其位于指定目录的子目录\n"
+"  -s, --strip, --no-symlinks   不要解析符号链接\n"
+"  -z, --zero                   以空字符（NUL）而非换行符结束每个输出行\n"
 
 #: src/relpath.c:130
 msgid "generating relative path"
@@ -9959,9 +9963,9 @@ msgid ""
 "  -o, --output=MODE  adjust standard output stream buffering\n"
 "  -e, --error=MODE   adjust standard error stream buffering\n"
 msgstr ""
-"  -i, --input=MODE   调整标准输入流缓冲区\n"
-"  -o, --output=MODE  调整标准输出流缓冲区\n"
-"  -e, --error=MODE   调整标准错误流缓冲区\n"
+"  -i, --input=模式   调整标准输入流缓冲区\n"
+"  -o, --output=模式  调整标准输出流缓冲区\n"
+"  -e, --error=模式   调整标准错误流缓冲区\n"
 
 #: src/stdbuf.c:105
 msgid ""
@@ -9970,7 +9974,7 @@ msgid ""
 "This option is invalid with standard input.\n"
 msgstr ""
 "\n"
-"若 MODE 是 \"L\"，则相应的流将是行缓冲模式。\n"
+"若<模式>是 \"L\"，则相应的流将是行缓冲模式。\n"
 "标准输入流下此选项无效。\n"
 
 #: src/stdbuf.c:108
@@ -9979,7 +9983,7 @@ msgid ""
 "If MODE is '0' the corresponding stream will be unbuffered.\n"
 msgstr ""
 "\n"
-"若 MODE 是 \"0\"，则相应的流将不缓冲。\n"
+"若<模式>是 \"0\"，则相应的流将不缓冲。\n"
 
 #: src/stdbuf.c:111
 #, fuzzy
@@ -10069,8 +10073,9 @@ msgid ""
 "settings.  The underlying system defines which settings are available.\n"
 msgstr ""
 "\n"
-"可选- 在设置前的指示中，* 标记出了非POSIX 标准的设置。以下系\n"
-"统定义象征了哪些设置是有效的。\n"
+"设置字符串之前可能出现的“-”字符代表禁用该项设置。下文中出现的\n"
+"星号 * 标记代表这项设置不符合 POSIX 标准。各项设置是否可用最终\n"
+"由实际系统特性所决定。\n"
 
 #: src/stty.c:555
 msgid ""
@@ -10082,50 +10087,33 @@ msgstr ""
 
 #: src/stty.c:559
 msgid " * discard CHAR  CHAR will toggle discarding of output\n"
-msgstr ""
+msgstr " * discard 字符  给定的字符将触发对输出内容的丢弃\n"
 
 #: src/stty.c:564
 msgid " * dsusp CHAR    CHAR will send a terminal stop signal once input flushed\n"
-msgstr ""
+msgstr " * dsusp 字符    给定的字符在输入刷新后将发送终端停止信号\n"
 
 #: src/stty.c:568
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Special characters:\n"
-#| " * dsusp CHAR    CHAR will send a terminal stop signal once input flushed\n"
-#| "   eof CHAR      CHAR will send an end of file (terminate the input)\n"
-#| "   eol CHAR      CHAR will end the line\n"
 msgid ""
 "   eof CHAR      CHAR will send an end of file (terminate the input)\n"
 "   eol CHAR      CHAR will end the line\n"
 msgstr ""
-"\n"
-"特殊字符：\n"
-" * dsusp 字符\t每当输入刷新时会发送一个用于终端阻塞信号的字符\n"
-"   eof\t字符\t表示文件末尾而发送的字符(用于终止输入)\n"
-"   eol\t字符\t为表示行尾而发送的字符\n"
+"   eof 字符      表示文件末尾而发送的字符（用于终止输入）\n"
+"   eol 字符      为表示行尾而发送的字符\n"
 
 #: src/stty.c:573
 msgid " * eol2 CHAR     alternate CHAR for ending the line\n"
-msgstr ""
+msgstr " * eol2 字符     为表示行尾而发送的另一个可选字符\n"
 
 #: src/stty.c:577
-#, fuzzy
-#| msgid ""
-#| " * eol2 CHAR     alternate CHAR for ending the line\n"
-#| "   erase CHAR    CHAR will erase the last character typed\n"
-#| "   intr CHAR     CHAR will send an interrupt signal\n"
-#| "   kill CHAR     CHAR will erase the current line\n"
 msgid ""
 "   erase CHAR    CHAR will erase the last character typed\n"
 "   intr CHAR     CHAR will send an interrupt signal\n"
 "   kill CHAR     CHAR will erase the current line\n"
 msgstr ""
-" * eol2 字符\t为表示行尾而发送的另一个可选字符\n"
-"   erase 字符\t擦除前一个输入文字的字符\n"
-"   intr 字符\t用于发送中断信号的字符\n"
-"   kill 字符\t用于擦除当前终端行的字符\n"
+"   erase 字符    擦除前一个输入文字的字符\n"
+"   intr 字符     用于发送中断信号的字符\n"
+"   kill 字符     用于擦除当前终端行的字符\n"
 
 #: src/stty.c:583
 msgid " * lnext CHAR    CHAR will enter the next character quoted\n"
@@ -10137,11 +10125,11 @@ msgstr ""
 
 #: src/stty.c:592
 msgid "   quit CHAR     CHAR will send a quit signal\n"
-msgstr ""
+msgstr "   quit 字符     给定的字符将发送一个退出（quit）信号\n"
 
 #: src/stty.c:596
 msgid " * rprnt CHAR    CHAR will redraw the current line\n"
-msgstr ""
+msgstr " * rprnt 字符    给定的字符将触发重新绘制当前行\n"
 
 #: src/stty.c:600
 #, fuzzy
@@ -10166,16 +10154,9 @@ msgstr ""
 
 #: src/stty.c:611
 msgid " * werase CHAR   CHAR will erase the last word typed\n"
-msgstr ""
+msgstr " * werase 字符   给定的字符将擦除前一个键入的单词\n"
 
 #: src/stty.c:615
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Special settings:\n"
-#| "   N             set the input and output speeds to N bauds\n"
-#| " * cols N        tell the kernel that the terminal has N columns\n"
-#| " * columns N     same as cols N\n"
 msgid ""
 "\n"
 "Special settings:\n"
@@ -10183,27 +10164,15 @@ msgid ""
 msgstr ""
 "\n"
 "特殊设置：\n"
-"   N\t\t设置输入输出速度为N 波特\n"
-" * cols N\t统治内核终端上有N 栏\n"
-" * columns N\t等于cols N\n"
+"   N             设置输入输出速度为 N 波特\n"
 
 #: src/stty.c:621
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Special settings:\n"
-#| "   N             set the input and output speeds to N bauds\n"
-#| " * cols N        tell the kernel that the terminal has N columns\n"
-#| " * columns N     same as cols N\n"
 msgid ""
 " * cols N        tell the kernel that the terminal has N columns\n"
 " * columns N     same as cols N\n"
 msgstr ""
-"\n"
-"特殊设置：\n"
-"   N\t\t设置输入输出速度为N 波特\n"
-" * cols N\t统治内核终端上有N 栏\n"
-" * columns N\t等于cols N\n"
+" * cols N        告知内核对应终端的宽度为 N 列\n"
+" * columns N     等效于 cols N\n"
 
 #: src/stty.c:626
 #, c-format
@@ -11518,13 +11487,6 @@ msgstr ""
 "  -k 文件\t\t指定文件存在且设置了粘附位\n"
 
 #: src/test.c:752
-#, fuzzy
-#| msgid ""
-#| "  -L FILE     FILE exists and is a symbolic link (same as -h)\n"
-#| "  -O FILE     FILE exists and is owned by the effective user ID\n"
-#| "  -p FILE     FILE exists and is a named pipe\n"
-#| "  -r FILE     FILE exists and read permission is granted\n"
-#| "  -s FILE     FILE exists and has a size greater than zero\n"
 msgid ""
 "  -L FILE     FILE exists and is a symbolic link (same as -h)\n"
 "  -N FILE     FILE exists and has been modified since it was last read\n"
@@ -11533,11 +11495,12 @@ msgid ""
 "  -r FILE     FILE exists and read permission is granted\n"
 "  -s FILE     FILE exists and has a size greater than zero\n"
 msgstr ""
-"  -L 文件\t\t指定文件存在且为符号链接(等于-h)\n"
-"  -O 文件\t\t指定文件存在且属主ID 有效\n"
-"  -p 文件\t\t指定文件存在且为命名管道\n"
-"  -r 文件\t\t指定文件存在且具备读取权限\n"
-"  -s 文件\t\t指定文件存在且其大小大于0\n"
+"  -L 文件     指定文件存在且为符号链接（等效于-h）\n"
+"  -N 文件     指定文件存在且自上次读取以来已被修改\n"
+"  -O 文件     指定文件存在且为有效用户 ID 所拥有\n"
+"  -p 文件     指定文件存在且为命名管道\n"
+"  -r 文件     指定文件存在且具备读取权限\n"
+"  -s 文件     指定文件存在且其大小大于零\n"
 
 #: src/test.c:760
 msgid ""
@@ -12088,16 +12051,6 @@ msgid "Usage: %s OPTION... FILE...\n"
 msgstr "用法：%s 选项... 文件...\n"
 
 #: src/truncate.c:71
-#, fuzzy
-#| msgid ""
-#| "Shrink or extend the size of each FILE to the specified size\n"
-#| "\n"
-#| "A FILE argument that does not exist is created.\n"
-#| "\n"
-#| "If a FILE is larger than the specified size, the extra data is lost.\n"
-#| "If a FILE is shorter, it is extended and the extended part (hole)\n"
-#| "reads as zero bytes.\n"
-#| "\n"
 msgid ""
 "Shrink or extend the size of each FILE to the specified size\n"
 "\n"
@@ -12107,13 +12060,12 @@ msgid ""
 "If a FILE is shorter, it is extended and the sparse extended part (hole)\n"
 "reads as zero bytes.\n"
 msgstr ""
-"将文件缩减或扩展至指定大小。\n"
+"将文件缩减或扩展至指定大小\n"
 "\n"
 "如果指定文件不存在则创建。\n"
 "\n"
 "如果指定文件超出指定大小则超出的数据将丢失。\n"
-"如果指定文件小于指定大小则用0 补足。\n"
-"\n"
+"如果指定文件小于指定大小则将用零字节填充扩展部分（空洞）。\n"
 
 #: src/truncate.c:83
 msgid "  -c, --no-create        do not create any files\n"
